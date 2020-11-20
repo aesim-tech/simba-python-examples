@@ -20,7 +20,7 @@ PWM.Frequency = 5000
 PWM.DutyCycle = 0.5
 PWM.Amplitude = 1
 
-D1 = circuit.AddDevice("Diode (Ideal)", 16, 9)
+D1 = circuit.AddDevice("Diode", 16, 9)
 D1.RotateLeft()
 
 L1 = circuit.AddDevice("Inductor", 20, 5)
