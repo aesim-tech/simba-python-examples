@@ -1,8 +1,8 @@
 # simba-python-examples
-Collection of simple Python script examples using the SIMBA Python API (aesim.simba)
+Collection of sample Python scripts and notebooks using SIMBA's Python API (aesim.simba)
 
 ## What is SIMBA?
-SIMBA is a lightweight but powerful Power Electronics simulation environment.
+SIMBA is a modern and powerful Power Electronics simulation environment.
 ➡ https://www.simba.io
 
 ## SIMBA Python API 
