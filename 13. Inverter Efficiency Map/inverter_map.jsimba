@@ -1290,7 +1290,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
-            "Name": "G1",
+            "Name": "Normalized1",
             "ID": "8a021b51-fd72-4d5c-b9ee-537abd593a2f",
             "Parameters": {
               "Value": "vnorm"
@@ -1304,7 +1304,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
-            "Name": "G1",
+            "Name": "Normalized2",
             "ID": "4813d52b-37dc-43dc-9429-572a404e5fc0",
             "Parameters": {
               "Value": "vnorm"
@@ -1318,7 +1318,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
-            "Name": "G2",
+            "Name": "Normalized3",
             "ID": "a0539c27-242a-47e4-8cdc-4d5940b9578c",
             "Parameters": {
               "Value": "vnorm"
