@@ -12,6 +12,7 @@ import numpy as np
 import math
 from aesim.simba import Design, JsonProjectRepository
 from datetime import datetime
+from scipy.spatial import ConvexHull
 
 #############################
 #   SIMULATION PARAMETERS   #
@@ -133,7 +134,6 @@ def show_heatmap(x, y, z):
     fig, (ax1) = plt.subplots(nrows=1)
     
     # Creating outer plot
-    from scipy.spatial import ConvexHull
     points = np.column_stack((x, y))
     hull = ConvexHull(points)
     ax1.plot(points[hull.vertices,0], points[hull.vertices,1], 'k--', lw=2)
