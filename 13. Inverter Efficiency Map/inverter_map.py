@@ -3,6 +3,8 @@ These scripts calculate the efficiency map of the PMSM inverter modeled in "inve
 Id and Iq references are calculated for each point with MTPA and flux weakening algorithm.
 
 Make sure to run 'pip install -r requirements.txt' to ensure you have the required packages.
+
+##### Requires aesim.simba version 2022.12.13 or higher #####
 """
 
 import numpy,multiprocessing, tqdm, os
