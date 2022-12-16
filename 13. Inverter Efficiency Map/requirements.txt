@@ -1,0 +1,5 @@
+tqdm
+aesim.simba >= 2022.12.05b1
+numpy
+matplotlib
+scipy
