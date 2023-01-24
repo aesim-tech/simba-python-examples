@@ -42,7 +42,7 @@ circuit.AddConnection(C1.N, g.Pin)
 circuit.AddConnection(R1.N, g.Pin)
 
 #%%  Save Design in Project File
-filepath = os.path.join(pathlib.Path().absolute(), "Buck Converter.simba")
+filepath = os.path.join(pathlib.Path().absolute(), "Buck Converter.jsimba")
 if(os.path.isfile(filepath)): os.remove(filepath) # Remove file if it already exists
 project = ProjectRepository(filepath) # Create project file if it doesn't exist.
 project.AddDesign(design)

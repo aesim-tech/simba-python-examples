@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 import matplotlib.tri as tri
 import numpy as np
 import math
-from aesim.simba import Design, JsonProjectRepository
+from aesim.simba import Design, ProjectRepository
 from datetime import datetime
 from scipy.spatial import ConvexHull
 
@@ -59,7 +59,7 @@ def run_simulation(id_ref, iq_ref, speed_ref, case_temperature, Rg, sim_number, 
 
     # Read the jsimba file
     with lock:
-        project = JsonProjectRepository(os.path.join(os.getcwd() , "inverter_map.jsimba"))
+        project = ProjectRepository(os.path.join(os.getcwd() , "inverter_map.jsimba"))
     
     simba_full_design = project.GetDesignByName('Full Design')
 
