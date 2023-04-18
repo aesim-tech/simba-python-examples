@@ -65,7 +65,7 @@ def run_job_star(args):
 # %% Create the jobs and start the calculatiom 
 if __name__ == "__main__": # Called only in main thread.
     print("1. Initialization")
-    numberOfPoints = 100 # Run 100 simulations
+    numberOfPoints = 200 # Run 200 simulations
     duty_cycles = np.arange(0.00, 0.9, 0.9/numberOfPoints)
 
     pool = multiprocessing.Pool()
