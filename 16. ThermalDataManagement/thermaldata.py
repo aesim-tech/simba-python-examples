@@ -1,6 +1,6 @@
 #%% Load modules
-import os, re
-from aesim.simba import ProjectRepository, DesignExamples
+import os
+from aesim.simba import ProjectRepository, ThermalData
 import matplotlib.pyplot as plt
 
 
@@ -36,8 +36,8 @@ def plot_bar(Tab1 = [],
                 plot.bar(Tab2_abscisse, Tab2, width = largeur_barre, color = 'yellow', # Barres cat 2
                         edgecolor = ['black' for i in Tab1], linewidth = 2)
 
-        plot.xticks([dxticks+r + largeur_barre / mxticks for r in range(len(Tab1))], # Etiquettes
-                Etiquette)
+        plot.xticks([dxticks + r - largeur_barre / mxticks for r in range(len(Tab1))], # Etiquettes
+                Etiquette, rotation = 45)
 
         FigAxe.set_ylabel(ylabel)
 
@@ -57,44 +57,50 @@ script_folder = os.path.realpath(os.path.dirname(__file__))
 file_path = os.path.join(script_folder, "thermal_buck_4pythonexp.jsimba")
 project = ProjectRepository(file_path)
 design = project.GetDesignByName('Design')
+# design = DesignExamples.Buck_Thermal()
 design.TransientAnalysis.StopAtSteadyState = True
 igbt = design.Circuit.GetDeviceByName('IGBT1')
+for scope in igbt.Scopes:
+    if scope.Name == 'Junction Temperature (°)' or scope.Name == 'Average Total Losses (W)':
+        scope.Enabled = True
 
 igbt_xml_list = [filename for filename in os.listdir('./ThermalDataFile/') if filename.endswith('IGBT.xml')]
 
+junction_temps = []
+Losses = []
+igbt_references = []
 
 #%% Get the job object and solve the system
-job = design.TransientAnalysis.NewJob()
-status = job.Run()
+for igbt_xml in igbt_xml_list:
+    igbt.ThermalData = ThermalData('ThermalDataFile/'+ igbt_xml)
+    igbt_references.append(igbt.ThermalData.Name)
 
-#%% Get results
-t = job.TimePoints
-Tj = job.GetSignalByName('IGBT1 - Junction Temperature (°)').DataPoints[-1]
-Losses = job.GetSignalByName('IGBT1 - Average Total Losses (W)').DataPoints[-1]
+    job = design.TransientAnalysis.NewJob()
+    status = job.Run()
 
-#%% Plot Curve
-fig = plt.figure(figsize = (16, 9))
+    Tj = job.GetSignalByName('IGBT1 - Junction Temperature (°)').DataPoints[-1]
+    Loss = job.GetSignalByName('IGBT1 - Average Total Losses (W)').DataPoints[-1]
+    junction_temps.append(Tj)
+    Losses.append(Loss)
+
+#%% Plot data
+fig = plt.figure(figsize = (16, 16))
 # Losses
 ax1 = fig.add_subplot(211)
-plot_bar(Tab1 = [Losses], 
+plot_bar(Tab1 = Losses, 
         largeur_barre = 0.1,
-        Etiquette = [igbt.ThermalData.Name],
+        Etiquette = igbt_references,
         ylabel = 'Losses (W)',
-        xlim = [0, 1],
-        Tab1_abscisse = [0.5], 
-        dxticks= 0.5,
         mxticks = 32,
         FigAxe = ax1)
+plt.subplots_adjust(hspace = 0.4)
 
 # Junction temperature
 ax2 = fig.add_subplot(212)
-plot_bar(Tab1 = [Tj], 
+plot_bar(Tab1 = junction_temps, 
         largeur_barre = 0.1,
-        Etiquette = [igbt.ThermalData.Name],
-        xlim = [0, 1], ylim = [0, 150],
-        Tab1_abscisse = [0.5], 
-        dxticks= 0.5,
+        Etiquette = igbt_references,
+        ylabel='Junction temperatures (°)',
         mxticks = 32,
         FigAxe = ax2)
-
 # %%
