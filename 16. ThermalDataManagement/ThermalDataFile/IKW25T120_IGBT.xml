@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SemiconductorLibrary xmlns="http://www.plexim.com/xml/semiconductors/" version="1.0">
+    <Package class="IGBT" vendor="Infineon" partnumber="IKW25T120">
+        <SemiconductorData type="IGBT">
+            <TurnOnLoss>
+                <CurrentAxis>0 2.5 6.25 12.5 25 50 100 </CurrentAxis>
+                <VoltageAxis> 0 600</VoltageAxis>
+                <TemperatureAxis> 25 150</TemperatureAxis>
+                <Energy scale="1">
+                    <Temperature>
+                        <Voltage> 0 0 0 0 0 0 0 </Voltage>
+                        <Voltage> 6.11E-04 6.31E-04 7.21E-04 1.00E-03 2.00E-03 5.54E-03 1.81E-02 </Voltage>
+                    </Temperature>
+                    <Temperature>
+                        <Voltage> 0 0 0 0 0 0 0 </Voltage>
+                        <Voltage> 0.000888309 0.000918502 0.001049156 0.00145846 0.002909314 0.008052135 0.026281811 </Voltage>
+                    </Temperature>
+                </Energy>
+            </TurnOnLoss>
+            <TurnOffLoss>
+                <CurrentAxis>0 2.5 6.25 12.5 25 50 100 </CurrentAxis>
+                <VoltageAxis> 0 600</VoltageAxis>
+                <TemperatureAxis> 25 150</TemperatureAxis>
+                <Energy scale="1">
+                    <Temperature>
+                        <Voltage> 0 0 0 0 0 0 0 </Voltage>
+                        <Voltage> 8.38E-04 9.75E-04 1.18E-03 1.52E-03 2.20E-03 3.56E-03 6.27E-03 </Voltage>
+                    </Temperature>
+                    <Temperature>
+                        <Voltage> 0 0 0 0 0 0 0 </Voltage>
+                        <Voltage> 0.001756218 0.002042873 0.002471436 0.003184511 0.004608524 0.007452281 0.013131273 </Voltage>
+                    </Temperature>
+                </Energy>
+            </TurnOffLoss>
+            <ConductionLoss>
+                <CurrentAxis>0 2.5 6.25 12.5 25 50 100 </CurrentAxis>
+                <TemperatureAxis> 25 150</TemperatureAxis>
+                <VoltageDrop scale="1">
+                    <Temperature> 0.870996105 0.985626667 1.128528061 1.346061986 1.747344014 2.487583799 3.853094591 </Temperature>
+                    <Temperature> 0.79519195 0.898404461 1.072545432 1.381043393 2.032681058 3.409129852 6.316591137 </Temperature>
+                </VoltageDrop>
+            </ConductionLoss>
+        </SemiconductorData>
+        <ThermalModel>
+            <Branch type="Foster">
+                <RTauElement R="0.229" Tau="1.10E-01"/>
+				<RTauElement R="0.192" Tau="1.56E-02"/>
+				<RTauElement R="0.174" Tau="1.35E-03"/>
+				<RTauElement R="0.055" Tau="1.52E-04"/>
+            </Branch>
+        </ThermalModel>
+        <Comment>
+            <Line></Line>
+        </Comment>
+    </Package>
+</SemiconductorLibrary>
