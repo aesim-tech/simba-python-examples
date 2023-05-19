@@ -43,10 +43,10 @@ def run_job(simulation_number, duty_cycle, calculated_voltages):
 
     # Retrieve results
     t = np.array(job.TimePoints)
-    Vout = np.array(job.GetSignalByName('R1 - Instantaneous Voltage').DataPoints)
+    Vout = np.array(job.GetSignalByName('Rload - Voltage').DataPoints)
 
     # Average output voltage for t > 2ms
-    indices = np.where(t >= 0.002)
+    indices = np.where(t >= 0.005)
     Vout = np.take(Vout, indices)
 
     # Save Voltage in the results

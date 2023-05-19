@@ -18,10 +18,10 @@ for dutycycle in dutycycles:
 
     # Retrieve results
     t = np.array(job.TimePoints)
-    Vout = np.array(job.GetSignalByName('R1 - Instantaneous Voltage').DataPoints)
+    Vout = np.array(job.GetSignalByName('Rload - Voltage').DataPoints)
 
-    # Average output voltage for t > 2ms
-    indices = np.where(t >= 0.002)
+    # Average output voltage for t > 5ms
+    indices = np.where(t >= 0.005)
     Vout = np.take(Vout, indices)
     Vout = np.average(Vout)
     
@@ -34,5 +34,3 @@ ax.set_title(BuckBoostConverter.Name)
 ax.set_ylabel('Vout (V)')
 ax.set_xlabel('Duty Cycle')
 ax.plot(dutycycles,Vouts)
-
-# %%
