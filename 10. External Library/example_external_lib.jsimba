@@ -1,0 +1,632 @@
+{
+  "Designs": [
+    {
+      "Id": "ae5a055f-50f7-4ba0-aa28-8dd4cc8f6596",
+      "Name": "DC-DC SR Buck Converter (External Lib)",
+      "Circuit": {
+        "Id": "cf58951c-71ae-4450-9207-67cd21363af7",
+        "Devices": [
+          {
+            "LibraryName": "External Library",
+            "Top": -2,
+            "Left": 8,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "C2",
+            "ID": "cbc360cc-5e50-4316-885f-09c4d8b5a0af",
+            "Parameters": {
+              "NumberOfInputs": "3",
+              "NumberOfOutputs": "1",
+              "LibraryFilePath": "C:\\Users\\emman\\Desktop\\External Lib\\library.dll",
+              "SamplingTime": "none"
+            },
+            "EnabledScopes": [
+              "inputs[0]",
+              "inputs[1]",
+              "inputs[2]",
+              "outputs[0]"
+            ]
+          },
+          {
+            "LibraryName": "Voltage Probe",
+            "Top": -17,
+            "Left": 59,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "VP1",
+            "ID": "62d79853-ab7c-4cd9-9417-d4f626c94eed",
+            "Parameters": {
+              "Gain": "1",
+              "SamplingTime": "none"
+            },
+            "EnabledScopes": [
+              "Out"
+            ]
+          },
+          {
+            "LibraryName": "DC Current Source",
+            "Top": -16,
+            "Left": 55,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "DC2",
+            "ID": "622fb473-139d-445e-aded-722948ad448c",
+            "Parameters": {
+              "Current": "-5"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Capacitor",
+            "Top": -13,
+            "Left": 49,
+            "Angle": 90,
+            "HF": false,
+            "VF": false,
+            "Name": "C3",
+            "ID": "bc887a59-2efd-4882-a4fd-bcef918f667a",
+            "Parameters": {
+              "Value": "100e-6",
+              "Vinit": "0"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Current Probe",
+            "Top": -17,
+            "Left": 45,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "CP1",
+            "ID": "66ec9822-06ae-4306-b0b4-a3ee1cf6896d",
+            "Parameters": {
+              "Gain": "1",
+              "SamplingTime": "none"
+            },
+            "EnabledScopes": [
+              "Out"
+            ]
+          },
+          {
+            "LibraryName": "Resistor",
+            "Top": -17,
+            "Left": 39,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "R1",
+            "ID": "dc4de02d-adb3-4575-8e23-339134dcb1f9",
+            "Parameters": {
+              "Value": "0.01"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Inductor",
+            "Top": -17,
+            "Left": 33,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "L1",
+            "ID": "b248ae16-96ca-41d5-8eff-05ffe5dd6b72",
+            "Parameters": {
+              "Value": "100e-6",
+              "Iinit": "0"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Not",
+            "Top": 3,
+            "Left": 31,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "NOT1",
+            "ID": "43af24cd-e6e8-4c74-962f-9ad1d87b3133",
+            "Parameters": {
+              "SamplingTime": "none"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Ground",
+            "Top": -8,
+            "Left": 16,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "Ground1",
+            "ID": "3383e32c-4f11-474f-bd2a-f3196a8c922d",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Diode",
+            "Top": -21,
+            "Left": 26,
+            "Angle": 270,
+            "HF": false,
+            "VF": false,
+            "Name": "D1",
+            "ID": "eb162d52-9132-4bc0-964d-5c90ba200e5a",
+            "Parameters": {
+              "Rd": "0.01",
+              "Vf": "1",
+              "LossCalculationFrequency": "1k"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Comparator",
+            "Top": 3,
+            "Left": 25,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "COMP1",
+            "ID": "214b320c-11d0-4ed0-a9b8-599a9e58f408",
+            "Parameters": {
+              "SamplingTime": "none"
+            },
+            "EnabledScopes": [
+              "Out",
+              "Input 2",
+              "Input 1"
+            ]
+          },
+          {
+            "LibraryName": "MOSFET",
+            "Top": -15,
+            "Left": 24,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "T2",
+            "ID": "fdd46e15-fe08-42b7-9530-103d3a6b9df6",
+            "Parameters": {
+              "Ron": "0.01",
+              "LossCalculationFrequency": "1k"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "MOSFET",
+            "Top": -23,
+            "Left": 24,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "T1",
+            "ID": "ef2c8b33-1570-49f0-92c8-a9720997c1c9",
+            "Parameters": {
+              "Ron": "0.01",
+              "LossCalculationFrequency": "1k"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Triangular Wave",
+            "Top": 4,
+            "Left": 20,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "TRI1",
+            "ID": "b2fff2ea-1d3e-4594-9c1c-88e273f0484d",
+            "Parameters": {
+              "Amplitude": "300",
+              "Frequency": "100k",
+              "DutyCycle": "0.5",
+              "Offset": "0",
+              "PhaseShift": "0",
+              "SamplingTime": "none"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "DC Voltage Source",
+            "Top": -20,
+            "Left": 15,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "DC1",
+            "ID": "09f2f909-c660-4d9a-aef3-6dc9b4e778b0",
+            "Parameters": {
+              "Voltage": "10"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Zero-Crossing Detector",
+            "Top": 0,
+            "Left": 4,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "ZX1",
+            "ID": "40b24ccf-5ebb-4129-ad40-ffde647a2070",
+            "Parameters": {
+              "SamplingTime": "none"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Square Wave",
+            "Top": 0,
+            "Left": 0,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "C1",
+            "ID": "a63e9173-d1cd-40ad-a44a-2e3fcb2778f7",
+            "Parameters": {
+              "Amplitude": "1",
+              "Frequency": "100e3",
+              "DutyCycle": "0.5",
+              "Offset": "-0.5",
+              "PhaseShift": "0",
+              "SamplingTime": "none"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Diode",
+            "Top": -13,
+            "Left": 26,
+            "Angle": 270,
+            "HF": false,
+            "VF": false,
+            "Name": "D2",
+            "ID": "cf76c5b0-4775-47c0-8e17-e4a0bef4835e",
+            "Parameters": {
+              "Rd": "0.01",
+              "Vf": "1",
+              "LossCalculationFrequency": "1k"
+            },
+            "EnabledScopes": []
+          }
+        ],
+        "Connectors": [
+          {
+            "Segments": [
+              {
+                "StartX": 35,
+                "StartY": 5,
+                "EndX": 36,
+                "EndY": 5
+              },
+              {
+                "StartX": 36,
+                "StartY": -7,
+                "EndX": 36,
+                "EndY": 5
+              },
+              {
+                "StartX": 24,
+                "StartY": -12,
+                "EndX": 23,
+                "EndY": -12
+              },
+              {
+                "StartX": 23,
+                "StartY": -7,
+                "EndX": 36,
+                "EndY": -7
+              },
+              {
+                "StartX": 23,
+                "StartY": -12,
+                "EndX": 23,
+                "EndY": -7
+              }
+            ],
+            "Name": "C7"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 4,
+                "StartY": 4,
+                "EndX": 4,
+                "EndY": 21
+              },
+              {
+                "StartX": 4,
+                "StartY": 21,
+                "EndX": 64,
+                "EndY": 21
+              },
+              {
+                "StartX": 64,
+                "StartY": -16,
+                "EndX": 64,
+                "EndY": 21
+              },
+              {
+                "StartX": 63,
+                "StartY": -16,
+                "EndX": 64,
+                "EndY": -16
+              },
+              {
+                "StartX": 8,
+                "StartY": 4,
+                "EndX": 4,
+                "EndY": 4
+              }
+            ],
+            "Name": "C3"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 7,
+                "StartY": 18,
+                "EndX": 47,
+                "EndY": 18
+              },
+              {
+                "StartX": 47,
+                "StartY": -15,
+                "EndX": 47,
+                "EndY": 18
+              },
+              {
+                "StartX": 8,
+                "StartY": 6,
+                "EndX": 7,
+                "EndY": 6
+              },
+              {
+                "StartX": 7,
+                "StartY": 6,
+                "EndX": 7,
+                "EndY": 18
+              }
+            ],
+            "Name": "C1"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 20,
+                "StartY": 4,
+                "EndX": 25,
+                "EndY": 4
+              }
+            ],
+            "Name": "C2"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 17,
+                "StartY": -20,
+                "EndX": 17,
+                "EndY": -24
+              },
+              {
+                "StartX": 26,
+                "StartY": -23,
+                "EndX": 26,
+                "EndY": -24
+              },
+              {
+                "StartX": 17,
+                "StartY": -24,
+                "EndX": 26,
+                "EndY": -24
+              },
+              {
+                "StartX": 26,
+                "StartY": -24,
+                "EndX": 29,
+                "EndY": -24
+              },
+              {
+                "StartX": 29,
+                "StartY": -23,
+                "EndX": 29,
+                "EndY": -24
+              }
+            ],
+            "Name": "C10"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 52,
+                "StartY": -8,
+                "EndX": 57,
+                "EndY": -8
+              },
+              {
+                "StartX": 17,
+                "StartY": -12,
+                "EndX": 17,
+                "EndY": -8
+              },
+              {
+                "StartX": 26,
+                "StartY": -9,
+                "EndX": 26,
+                "EndY": -8
+              },
+              {
+                "StartX": 29,
+                "StartY": -9,
+                "EndX": 29,
+                "EndY": -8
+              },
+              {
+                "StartX": 52,
+                "StartY": -9,
+                "EndX": 52,
+                "EndY": -8
+              },
+              {
+                "StartX": 17,
+                "StartY": -8,
+                "EndX": 26,
+                "EndY": -8
+              },
+              {
+                "StartX": 26,
+                "StartY": -8,
+                "EndX": 29,
+                "EndY": -8
+              },
+              {
+                "StartX": 29,
+                "StartY": -8,
+                "EndX": 52,
+                "EndY": -8
+              }
+            ],
+            "Name": "C5"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 52,
+                "StartY": -15,
+                "EndX": 52,
+                "EndY": -16
+              },
+              {
+                "StartX": 57,
+                "StartY": -16,
+                "EndX": 59,
+                "EndY": -16
+              },
+              {
+                "StartX": 49,
+                "StartY": -16,
+                "EndX": 52,
+                "EndY": -16
+              },
+              {
+                "StartX": 52,
+                "StartY": -16,
+                "EndX": 57,
+                "EndY": -16
+              }
+            ],
+            "Name": "C11"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 24,
+                "StartY": 6,
+                "EndX": 25,
+                "EndY": 6
+              }
+            ],
+            "Name": "C8"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 29,
+                "StartY": -17,
+                "EndX": 29,
+                "EndY": -16
+              },
+              {
+                "StartX": 29,
+                "StartY": -16,
+                "EndX": 29,
+                "EndY": -15
+              },
+              {
+                "StartX": 26,
+                "StartY": -16,
+                "EndX": 29,
+                "EndY": -16
+              },
+              {
+                "StartX": 29,
+                "StartY": -16,
+                "EndX": 33,
+                "EndY": -16
+              },
+              {
+                "StartX": 26,
+                "StartY": -16,
+                "EndX": 26,
+                "EndY": -15
+              },
+              {
+                "StartX": 26,
+                "StartY": -17,
+                "EndX": 26,
+                "EndY": -16
+              }
+            ],
+            "Name": "C4"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 30,
+                "StartY": -5,
+                "EndX": 30,
+                "EndY": 5
+              },
+              {
+                "StartX": 22,
+                "StartY": -20,
+                "EndX": 22,
+                "EndY": -5
+              },
+              {
+                "StartX": 24,
+                "StartY": -20,
+                "EndX": 22,
+                "EndY": -20
+              },
+              {
+                "StartX": 22,
+                "StartY": -5,
+                "EndX": 30,
+                "EndY": -5
+              },
+              {
+                "StartX": 29,
+                "StartY": 5,
+                "EndX": 30,
+                "EndY": 5
+              },
+              {
+                "StartX": 30,
+                "StartY": 5,
+                "EndX": 31,
+                "EndY": 5
+              }
+            ],
+            "Name": "C9"
+          }
+        ],
+        "Name": "Top Circuit",
+        "Variables": []
+      },
+      "TransientAnalysis": {
+        "EndTime": 0.005,
+        "FixedTimeStep": false,
+        "StopAtSteadyState": false,
+        "TimeStep": 1E-09
+      }
+    }
+  ],
+  "Libraries": [],
+  "TestBenches": [],
+  "ThermalData": []
+}

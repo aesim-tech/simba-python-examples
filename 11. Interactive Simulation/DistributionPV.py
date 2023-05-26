@@ -42,7 +42,7 @@ tableau_V_charge = []
 
 def circuit():
     # Obtention du projet
-    filepath = os.path.join(os.path.dirname(__file__), "DistributionPV.simba")
+    filepath = os.path.join(os.path.dirname(__file__), "DistributionPV.jsimba")
     print("loading model: " + filepath)
     # Ouverture du projet
     project = ProjectRepository(filepath)
