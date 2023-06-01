@@ -27,7 +27,7 @@ numberOfPoints = 200    # Run 200 simulations
 # %% Define the functions to be run in parallel
 def run_job(simulation_number, duty_cycle, calculated_voltages):
     """
-    This process-safe function:
+    This thread-safe function:
     - Loads the buck-boost design example
     - Changes the duty cycle value
     - Runs the simulation
@@ -36,7 +36,7 @@ def run_job(simulation_number, duty_cycle, calculated_voltages):
     Args:
         simulation_number (int): number of the current run
         duty_cycle (float): duty-cycle to 
-        calculated_voltages ([float]): process-safe list used to store results
+        calculated_voltages ([float]): thread-safe list used to store results
     """
 
     BuckBoostConverter = DesignExamples.BuckBoostConverter()
