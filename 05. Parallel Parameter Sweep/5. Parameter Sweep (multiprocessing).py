@@ -1,5 +1,5 @@
 """
-This simple scripts shows how the SIMBA python module can be used to run calculations on parralel threads and accelerate simulation.
+This simple scripts shows how the SIMBA python module can be used to run calculations on parallel processes and accelerate simulation.
 
 Make sure to run 'pip install -r requirements.txt' to ensure you have the required packages.
 """
@@ -9,6 +9,20 @@ from datetime import datetime
 import multiprocessing, tqdm #tqdm is for the progress bar
 import matplotlib.pyplot as plt
 import numpy as np
+
+#############################
+#         PARAMETERS        #
+#############################
+
+# %% Set main parameters
+duty_cycle_min = 0
+duty_cycle_max = 0.9
+numberOfPoints = 200    # Run 200 simulations
+
+
+#############################
+#           METHODS         #
+#############################
 
 # %% Define the functions to be run in parallel
 def run_job(simulation_number, duty_cycle, calculated_voltages):
@@ -35,7 +49,6 @@ def run_job(simulation_number, duty_cycle, calculated_voltages):
     job = BuckBoostConverter.TransientAnalysis.NewJob()
 
     # Start job and log if error.
-    job.Run()
     status = job.Run()
     if str(status) != "OK": 
         print (job.Summary()[:-1])
@@ -63,19 +76,13 @@ def run_job_star(args):
 #############################
 
 # %% Create the jobs and start the calculatiom 
-if __name__ == "__main__": # Called only in main thread.
+if __name__ == "__main__": # Called only in main thread
     print("1. Initialization")
-    numberOfPoints = 200 # Run 200 simulations
-    duty_cycles = np.arange(0.00, 0.9, 0.9/numberOfPoints)
+    duty_cycles = np.arange(duty_cycle_min, duty_cycle_max, duty_cycle_max / numberOfPoints)
 
-    pool = multiprocessing.Pool()
     manager = multiprocessing.Manager()
     calculated_voltages = manager.list(range(len(duty_cycles)))
-    jobs=[]
-    pool_args = []
-
-    for i in range(len(duty_cycles)):
-        pool_args.append((i, duty_cycles[i], calculated_voltages ));
+    pool_args = [[i, duty_cycles[i], calculated_voltages] for i in range(numberOfPoints)]
 
     # Create and start the processing pool
     print("2. Running...")
@@ -91,5 +98,5 @@ if __name__ == "__main__": # Called only in main thread.
     ax.set_ylabel('Vout (V)')
     ax.set_xlabel('Duty Cycle')
     ax.plot(duty_cycles, calculated_voltages)
-    path= "buck_boost_parametric_sweep_"+datetime.now().strftime("%Y%m%d_%H:%M:%S")+".png"
+    path= "buck_boost_parametric_sweep_"+datetime.now().strftime("%m%d%Y%H%M%S")+".png"
     fig.savefig(path) 
