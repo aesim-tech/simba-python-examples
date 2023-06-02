@@ -1,8 +1,10 @@
 # Parallel parameter sweep
 
-[Download **multiprocessing python script** here](5.%20Parameter%20Sweep%20(multiprocessing).py)
+[Download **multiprocessing python script**](5.%20Parameter%20Sweep%20(multiprocessing).py)
 
-[Download **multithreading python script** here](5.%20Parameter%20Sweep%20(multiprocessing).py)
+[Download **multithreading python script**](5.%20Parameter%20Sweep%20(multiprocessing).py)
+
+[Download **python module requirements**](requirements.txt)
 
 These two examples scripts respectively show how the SIMBA python module can be used to run calculations on parallel processes and threads and accelerate simulation.
 

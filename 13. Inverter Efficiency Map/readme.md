@@ -4,6 +4,9 @@
 
 [Download **Simba model**](inverter_map.jsimba)
 
+[Download **python module requirements**](requirements.txt)
+
+
 ## Motor drive inverter model
 
 ### Inverter & motor model in SIMBA
