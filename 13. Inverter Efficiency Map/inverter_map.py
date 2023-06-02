@@ -7,11 +7,12 @@ Make sure to run 'pip install -r requirements.txt' to ensure you have the requir
 ##### Requires aesim.simba version 2022.12.13 or higher #####
 """
 
-import numpy,multiprocessing, tqdm, os
+import numpy,multiprocessing, os
 import matplotlib.pyplot as plt
 import matplotlib.tri as tri
 import numpy as np
 import math
+from tqdm import tqdm
 from aesim.simba import Design, ProjectRepository
 from datetime import datetime
 from scipy.spatial import ConvexHull
@@ -26,8 +27,8 @@ bus_voltage = 400.0;            # Bus Voltage [V]
 max_speed_ref = 4000            # RPM
 max_current_ref = 10.0          # A
 
-number_of_speed_points = 15     # Total number of simulations is number_of_speed_points * number_of_current_points
-number_of_current_points = 15   # Total number of simulations is number_of_speed_points * number_of_current_points
+number_of_speed_points = 4     # Total number of simulations is number_of_speed_points * number_of_current_points
+number_of_current_points = 4   # Total number of simulations is number_of_speed_points * number_of_current_points
 relative_minimum_speed = 0.2    # fraction of max_speed_ref
 relative_minimum_current = 0.2  # fraction of max_torque_ref
 simulation_time = 1             # time simulated in each run
@@ -153,7 +154,6 @@ def show_heatmap(x, y, z):
     fig.savefig(path)
     plt.show()
 
-    
 def SelectIdIq(ref_idiq, current_ref, speed_ref):
     """
     Calculate Id and Iq references calculated with MTPA and flux weakening algorithm.
@@ -216,7 +216,7 @@ def SelectIdIq(ref_idiq, current_ref, speed_ref):
 #############################
 
 # Distribute and run the calculations. Results are saved in result_dict
-if __name__ == "__main__": # Called only in main thread.
+if __name__ == "__main__": # Called only in main thread. It confirms that the code is under main function
 
     #initialization
     min_speed_ref = relative_minimum_speed * max_speed_ref;
@@ -245,7 +245,7 @@ if __name__ == "__main__": # Called only in main thread.
 
     # Create and start the processing pool
     pool = multiprocessing.Pool()
-    for _ in tqdm.tqdm(pool.imap(run_simulation_star, pool_args), total=len(pool_args)):
+    for _ in tqdm(pool.imap(run_simulation_star, pool_args), total=len(pool_args)):
         pass
 
     # plot the efficency map
