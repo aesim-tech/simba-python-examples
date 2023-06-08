@@ -10,7 +10,7 @@ This example describes how the Scipy package of Python is used in a buck convert
 * No overshoot (overshoot = 0, non-linear constraint)
 * Minimize rise time
 
-![Buck-Converter](buck.png)
+![Buck-Converter](fig/buck.png)
 
 ## Scipy module
 
@@ -58,6 +58,6 @@ and those below constraints have been respected:
 
 Finally the output voltage is having this shape:
 
-![result](result.png)
+![result](fig/result.png)
 
 To conclude, this example retrieves the optimized parameters and corresponding metrics from the optimization result and the simulation history dictionary. It then prints these values to display the results of the optimization process, including the optimized parameters (Ki, Kp, Kd) and the corresponding rise time, error, and overshoot.

@@ -12,17 +12,17 @@
 ### Inverter & motor model in SIMBA
 The motor drive inverter model consists of a 3-phase 2-level voltage source inverter (VSI) that supplies a permanent magnet synchronous motor (PMSM). The PMSM is connected to a load that imposes a constant speed, meaning that the motor must be able to produce enough torque to maintain the desired speed.
 
-![](Inverter_et_Motor.png)
+![Inverter and Motor](fig/Inverter_et_Motor.png)
 
 ### Control
 PMSMs have a strong coupling between the d- and q-axis currents, so a decoupling network is required to linearise and remove the coupling effect. The control system consists of two PI controllers and a decoupling network. The calculated reference voltages are fed into the sinusoidal PWM modulator to generate voltage signals for  the motor windings. The duty cycle of the PWM signal determines the magnitude of the voltage applied to the motor.
 
-![](Drawing.jpg)
+![Drawing](fig/Drawing.jpg)
 
 ### Thermal modeling
 To model the thermal performance of MOSFETs in an inverter, their package temperature is held constant and data is extracted from the .xml files provided by the manufacturer. This data, which includes parameters such as thermal impedance, conduction losses and switching losses, plays a crucial role in determining the power dissipation during operation. In this particular case, Wolfspeed C2M0025120D transistors were used.
 
-![](Thermal%20Impedance.png)
+![Themal Impedance](fig/Thermal%20Impedance.png)
 
 ## Python script
 This script uses the architecture presented in the tutorial *Parallel (multiprocessing) computing* and also available on [Github repository](https://github.com/aesim-tech/simba-python-examples/tree/main/05.%20Parallel%20Parameter%20Sweep)).
@@ -109,10 +109,8 @@ Rs = 0.814                      # Motor Stator Resistance [Ohm]
 ```
 Each run took approximately 10 seconds, and thanks to the use of the Python multiprocessing library, all cases were run in parallel, resulting in a total run time of only 5 minutes on a 10-core CPU. 
 
-![](Progress_bar.png)
+![](fig/Progress_bar.png)
 
 The resulting efficiency map of the PMSM inverter, is shown below:
 
-![](Results_225_points.png)
-
-The python script and the Simba simulation file can be downloaded [here on Github](https://github.com/aesim-tech/simba-python-examples/tree/main/13.%20Inverter%20Efficiency%20Map).
+![](fig/Results_225_points.png)

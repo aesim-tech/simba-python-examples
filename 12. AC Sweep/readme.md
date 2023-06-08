@@ -17,7 +17,7 @@ Below are presented the details and results of the buck converter in current con
 ## Buck converter model
  Below provided figure shows the method adopted to perform AC sweep for Buck Converter in CCM mode of operation.
 
- <img src="buck_ac_sweep.jpg" alt="myimage" width="600">
+![buck_ac_sweep](fig/buck_ac_sweep.png)
 
 ## CCM Transfer functions
 
@@ -50,8 +50,9 @@ job = acsweep.NewJob();
 
 The figure presented below shows the results for the comparison between the theoritical reference and SIMBA in terms of the magnitude and phase plot for control to output voltage.
 
-<img src="buck_control_to_out_ccm_mag.png" alt="myimage" width="400">
-<img src="buck_control_to_out_ccm_phase.png" alt="myimage" width="400">
+![buck_control_to_out_ccm_mag](fig/buck_control_to_out_ccm_mag.png)
+![buck_control_to_out_ccm_phase](fig/buck_control_to_out_ccm_phase.png)
+
 
 ### Input voltage to output voltage
 
@@ -84,9 +85,9 @@ job = acsweep.NewJob();
 
 The figure presented below shows the results for the comparsion between the theoritical reference and SIMBA in terms of the magnitude and phase plot for **input to output voltage**.
 
-<img src="buck_input_to_out_ccm_mag.png" alt="myimage" width="400">
+![buck_input_to_out_ccm_mag](fig/buck_input_to_out_ccm_mag.png)
+![buck_input_to_out_ccm_phase](fig/buck_input_to_out_ccm_phase.png)
 
-<img src="buck_input_to_out_ccm_phase.png" alt="myimage" width="400">
 
 ## DCM Transfer functions
 
@@ -122,9 +123,8 @@ job = acsweep.NewJob();
 ```
 The figure presented below shows the results for the comparsion between the theoritical reference and SIMBA in terms of the magnitude and phase plot for **control to output voltage**.
 
-<img src="buck_control_to_out_dcm_mag.png" alt="myimage" width="400">
-<img src="buck_control_to_out_dcm_phase.png" alt="myimage" width="400">
-
+![buck_control_to_out_dcm_mag](fig/buck_control_to_out_dcm_mag.png)
+![buck_control_to_out_dcm_phase](fig/buck_control_to_out_dcm_phase.png)
 
 ### Input voltage to output voltage
 
@@ -153,5 +153,5 @@ status = job.Run();
 
 The figure presented below shows the results for the comparsion between the theoritical reference and SIMBA in terms of the magnitude and phase plot for **input to output voltage**.
 
-<img src="buck_input_to_out_dcm_mag.png" alt="myimage" width="400">
-<img src="buck_input_to_out_dcm_phase.png" alt="myimage" width="400">
+![buck_input_to_out_dcm_mag](fig/buck_input_to_out_dcm_mag.png)
+![buck_input_to_out_dcm_phase](fig/buck_input_to_out_dcm_phase.png)

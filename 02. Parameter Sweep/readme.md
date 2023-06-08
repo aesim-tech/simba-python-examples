@@ -9,10 +9,10 @@ This example proposes a sweep of the duty cycle of a buck boost conveter for a t
 
 The circuit model is directly loaded from the collection of design examples.
 
-![Buck Boost](buckboost.png)
+![Buck Boost](fig/buckboost.png)
 
 The script uses a **for loop** to scan 30 values of the duty cycle between 0 and 0.9. At each simulation the average value of the output voltage (in steady state) is computed and store in a python list.
 
 Then the average value of the ouptut voltage depending on this duty cycle variation is displayed.
 
-![Output voltage](out_vs_duty.png)
+![Output voltage](fig/out_vs_duty.png)

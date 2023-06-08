@@ -6,7 +6,7 @@
 
 This example shows a combined use of *python control toolbox* and *Simba* to design and check a DC power flow control between two switching legs.
 
-![dc_power_flow_control](dc_power_flow_control.png)
+![dc_power_flow_control](fig/dc_power_flow_control.png)
 
 In a first step, the current control of a single leg is considered: continuous and discrete controllers are designed and then checked with Simba simulations. Secondly, the controller is used to control the power flow between the two switching legs.
 
@@ -14,11 +14,12 @@ In a first step, the current control of a single leg is considered: continuous a
 
 ### Design of a continuous controller
 
-<img src="dc_single_leg_current_control.png" alt="drawing" width="300">
+![dc_single_leg_current_control](fig/dc_single_leg_current_control.png)
+
 
 The controller is considered with a compensation of the output voltage as shown below:
 
-<img src="current_control_with_voltage_compensation.png" alt="drawing" width="500">
+![current_control_with_voltage_compensation](fig/current_control_with_voltage_compensation.png)
 
 The closed loop transfer function can then be computed:
 
@@ -46,7 +47,7 @@ for xi in [0.7, 0.9, 1.1, 1.4]:
 show(step_response_sweep)
 ```
 
-![step responses](step_responses.png)
+![step responses](fig/step_responses.png)
 
 
 The pole-zero maps can also be plotted to evalute the evolution of the imaginary part of the poles with the following command:
@@ -76,7 +77,7 @@ for xi in [0.7, 0.9, 1.1, 1.4]:
     green_color += 75
 show(simba_sweep)
 ```
-![step responses simba](step_responses_simba.png)
+![step responses simba](fig/step_responses_simba.png)
 
 
 ### Design of a discrete controller
@@ -105,7 +106,7 @@ status = discrete_job.Run()
 
 The results got with this discrete controller can be compared with the continuous controller:
 
-![step responses simba discrete](step_responses_simba_discrete.png)
+![step responses simba discrete](fig/step_responses_simba_discrete.png)
 
 ## Step 2: DC Power flow control
 
@@ -114,13 +115,11 @@ Indeed, the current reference is first directly derived from the power reference
 
 Figure below shows this control model which provides the duty cycles for each leg.
 
-![dc power flow control model](dc_power_flow_control_model.png)
+![dc power flow control model](fig/dc_power_flow_control_model.png)
 
 Figure below shows some results with the power reference and the estimated transferred power.
 
-![dc power flow results](dc_power_flow_control_results.png)
-
-The complete example with notebook and Simba file is available on [Github here](https://github.com/aesim-tech/simba-python-examples/tree/main/08.%20Direct%20Current%20Power%20Flow%20Control).
+![dc power flow results](fig/dc_power_flow_control_results.png)
 
 
 ## Acknowledgments

@@ -6,7 +6,7 @@ This example shows how to read and use sampled signals which have been created w
 
 The circuit model used in this example is a flyback converter which is directly loaded from the collection of design examples.
 
-![flyback](flyback.png)
+![flyback](fig/flyback.png)
 
 The main steps of this example are the following:
 
@@ -48,4 +48,4 @@ sampled_signal_time = [sampled_signal.SamplingTime*i for i in range(len(sampled_
 
 Results are shown below: 
 
-![SampledSignal](SampledSignal.png)
+![SampledSignal](fig/SampledSignal.png)

@@ -14,8 +14,8 @@ Make sure to run 'pip install -r requirements.txt' to ensure you have the requir
 
 These scripts use a buck-boost circuit from the collection of design examples.
 
-![buck boost](buckboost.png)
+![buck boost](fig/buckboost.png)
 
  These scripts propose a sweep of the duty cycle to run 200 simulations in parallel and then plot the average value of the output voltage depending on the duty cycle.
 
-![buck_boost_parametric_sweep](buck_boost_parametric_sweep.png)
+![buck_boost_parametric_sweep](fig/buck_boost_parametric_sweep.png)

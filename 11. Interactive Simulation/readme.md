@@ -15,7 +15,7 @@ It proposes a graphical interface (as shown in the screenshot below) for a *pseu
 
 *Pseudo real time simulation* is performed with successive simulations whose results are added one after the other. Each simulation is fast enough to offer pseudo-real-time rendering.
 
-![gui_dcgrid](gui_dcgrid.png)
+![gui_dcgrid](fig/gui_dcgrid.png)
 
 The graphical user interface has been realised with the [tkinter](https://docs.python.org/fr/3/library/tkinter.html) python package. It allows to user to:
 
@@ -24,4 +24,4 @@ The graphical user interface has been realised with the [tkinter](https://docs.p
 * get an estimation of the battery state of charge,
 * get the currents and voltages of the total load(I_LOAD), the solar panel (I_PV), the battery (I_BATT) and of the grid trhorugh the active front end converter (I_AFE), as shown in the figure below.
 
-![DC grid currents and voltages](dc_grid_currents_voltages.png)
+![DC grid currents and voltages](fig/dc_grid_currents_voltages.png)

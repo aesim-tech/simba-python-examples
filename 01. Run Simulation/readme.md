@@ -7,7 +7,7 @@ This example launches a simulation of the **Flyback** circuit and plots the outp
 
 The circuit model is directly loaded from the collection of design examples.
 
-![Flyback circuit](flyback.png)
+![Flyback circuit](fig/flyback.png)
 
 The main steps of this script example are the following:
 
@@ -18,4 +18,4 @@ The main steps of this script example are the following:
 5. Plot the output voltage depending on time
 
 
-![Output voltage](output_voltage.png)
+![Output voltage](fig/output_voltage.png)

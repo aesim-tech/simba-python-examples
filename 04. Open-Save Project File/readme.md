@@ -13,8 +13,8 @@ Simba Python module gives user flexibility to design any circuit. The example sh
    The user can perform all operations on the model and run the simulation using Simba Python module.
 4. *Get and plot results*
 
-![DC-DC Buck Converter](buck.png)
+![DC-DC Buck Converter](fig/buck.png)
 
 The results for the simulation can be retrieved and plotted. In this example *Output voltage Vs Time axis* is plotted.
 
-![Output voltage Vs Time](VoutVsTime.png)
+![Output voltage Vs Time](fig/VoutVsTime.png)

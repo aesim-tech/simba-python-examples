@@ -21,7 +21,7 @@ This example shows a design of DC-DC Full Bridge LLC Resonant Converter for 3.3 
 
 The Resonant converter is a power electronics DC-DC converter which uses a resonant circuit at the intermediate stage for conversion as shown below. It is a three stage converter where the input stage consists of a combination of switches to provide **switched DC supply** to the next stage. The next stage consists of a resonant tank cicuit and a transformer which converts switched DC waveform to the AC waveform. The last stage consists of a rectifier and a filter circuit which converts the AC waveform at the output of the transformer to the fixed DC at the load. This type of converter reduces the switching losses & switching noise with the help of soft switching.
 
-![LLC circuit description](LLC_circuit_description.png)
+![LLC circuit description](fig/LLC_circuit_description.png)
 
 There are two ways to proceed for designing the converter:
 
@@ -36,7 +36,7 @@ On the other hand, the time-domain approach is a modern one where the resonant g
 
 The first step to go ahead is to create a open loop model of the converter as shown below. Further, non-linearities like ESR, ESL values and switch on-state voltage drops can be added to get more accuracy.
 
-![LLC-openloop](LLC-openloop.png)
+![LLC-openloop](fig/LLC-openloop.png)
 
 Here, $f_{in}$ is the normalized frequency. Lr and Cr are the inductor and capacitor values of the resonant tank respectively. Lm is the value of magnetizing inductance of the transformer.
 
@@ -169,11 +169,11 @@ for _ in tqdm.tqdm(pool.imap(run_simulation_star, pool_args), total=len(pool_arg
 
 The curves that are plotted using Matplotlib for 8000 iterations, are shown below. It is to to be noted that in each plot minimum gain and maximum gain as per the calculation are also marked which is based on the requirement of the converter. It will be helpful for the selection of frequency ranges for converter operation to counter the line and load regulation.
 
-![LLC_curves-1](LLC_curves-1.png)
+![LLC_curves-1](fig/LLC_curves-1.png)
 
 In the next step, from the above curves, there is a need to plot Peak_gain vs Qe (load) curve to reach the final design values. It can be plotted by considering the peak value from the above curves and plotting it w.r.t load for Ln ranges which is shown below.
 
-<img src="LLC_peak_curve-1.png" alt="drawing" width="500">
+![LLC_peak_curve-1](fig/LLC_peak_curve-1.png)
 
 Now, suppose the nominal load Qe = 0.35 is chosen and the peak gain requirement for the converter specification is 1.25.
 

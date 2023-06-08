@@ -8,7 +8,7 @@ This example shows a combined use of python notebook and Simba to handle a pre-d
 
 The goal is to evaluate the influence of the DC bus voltage value (through the modulation index) on the waveforms and the frequency spectrum of the output voltage (for example to design an AC filter).
 
-![three phase inverter](three-phase-inverter.png)
+![three phase inverter](fig/three-phase-inverter.png)
 
 This example can be divided into three steps:
 
@@ -51,9 +51,9 @@ for dc_bus_voltage, modulation_index in zip(dc_bus_voltages, modulation_indices)
 ```
 Waveforms of output voltage and line current can be plotted.
 
-![Line-line voltage](line_line_voltage.png)
+![Line-line voltage](fig/line_line_voltage.png)
 
-![Line current](line_current.png)
+![Line current](fig/line_current.png)
 
 ## Step 3: Perform a Fast Fourier Transform with numpy
 
@@ -89,7 +89,4 @@ for time, u12 in zip(res_time, res_u12):
     width *= 0.5
 ``` 
 
-![voltage frequency spectrum](voltage_frequency_spectrum.png)
-
-
-The complete example with notebook and Simba file is available on [Github here](https://github.com/aesim-tech/simba-python-examples/tree/main/06.%20Three-phase-inverter%20%20parameter%20sweep).
+![voltage frequency spectrum](fig/voltage_frequency_spectrum.png)
