@@ -2,7 +2,7 @@
 
 [Download python script here](4.%20Open-Save%20Project%20File.py)
 
-Simba Python module gives user flexibility to design any circuit. The example shows the creation of a simple buck chopper from scratch with the different steps:
+Simba Python module gives user flexibility to design any circuit. The example shows the creation of a simple buck chopper from scratch, how to save or re-open the design with the different steps:
 
 1. *Design and circuit creation*:
    A user specific component placement gives exact configration, for connection in proper aspect ratio and resolution. Each connection is added according to the topology configuration.

@@ -3,7 +3,7 @@
 [Download **python script**](1.%20Run%20Simulation.py)
 
 
-This circuit launches a simulation of the **Flyback** circuit and plots the output voltage.
+This example launches a simulation of the **Flyback** circuit and plots the output voltage.
 
 The circuit model is directly loaded from the collection of design examples.
 
