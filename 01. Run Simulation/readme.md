@@ -1,3 +1,9 @@
+---
+tags:
+  - Python Script
+  - Basic Topologies
+---
+
 # Run a simulation with Simba python module
 
 [Download **python script**](1.%20Run%20Simulation.py)
