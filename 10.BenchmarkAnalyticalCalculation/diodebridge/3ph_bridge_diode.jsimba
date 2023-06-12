@@ -1,0 +1,785 @@
+{
+  "Designs": [
+    {
+      "Id": "a66b2bc7-5019-40aa-8a0e-191963d72131",
+      "Name": "AC_DC_bridge_diode",
+      "Circuit": {
+        "Id": "b093884b-b1ed-415d-9787-13840a31e4e0",
+        "Devices": [
+          {
+            "LibraryName": "Ground",
+            "Top": 28,
+            "Left": 6,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "Ground1",
+            "ID": "85e6a612-8dc0-43bb-b6b2-4b3335c1aece",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Diode",
+            "Top": 1,
+            "Left": 31,
+            "Angle": 270,
+            "HF": false,
+            "VF": false,
+            "Name": "D1",
+            "ID": "1dd082b5-98f9-41be-8ef4-f843bf3cff37",
+            "Parameters": {
+              "Rd": "0",
+              "Vf": "0",
+              "LossCalculationFrequency": "1k"
+            },
+            "EnabledScopes": [
+              "Voltage"
+            ]
+          },
+          {
+            "LibraryName": "Diode",
+            "Top": 20,
+            "Left": 31,
+            "Angle": 270,
+            "HF": false,
+            "VF": false,
+            "Name": "D2",
+            "ID": "8080ae92-4b65-423d-bf5d-5800957d655f",
+            "Parameters": {
+              "Rd": "0",
+              "Vf": "0",
+              "LossCalculationFrequency": "1k"
+            },
+            "EnabledScopes": [
+              "Voltage"
+            ]
+          },
+          {
+            "LibraryName": "Diode",
+            "Top": 1,
+            "Left": 39,
+            "Angle": 270,
+            "HF": false,
+            "VF": false,
+            "Name": "D3",
+            "ID": "1cc9d587-97f0-47f8-af65-93931332dde7",
+            "Parameters": {
+              "Rd": "0",
+              "Vf": "0",
+              "LossCalculationFrequency": "1k"
+            },
+            "EnabledScopes": [
+              "Voltage"
+            ]
+          },
+          {
+            "LibraryName": "Diode",
+            "Top": 20,
+            "Left": 39,
+            "Angle": 270,
+            "HF": false,
+            "VF": false,
+            "Name": "D4",
+            "ID": "67a8377e-e912-432b-9d78-7ea032d71ab6",
+            "Parameters": {
+              "Rd": "0",
+              "Vf": "0",
+              "LossCalculationFrequency": "1k"
+            },
+            "EnabledScopes": [
+              "Voltage"
+            ]
+          },
+          {
+            "LibraryName": "Diode",
+            "Top": 1,
+            "Left": 47,
+            "Angle": 270,
+            "HF": false,
+            "VF": false,
+            "Name": "D5",
+            "ID": "26e89989-46f9-4365-9544-fdebedbaee1d",
+            "Parameters": {
+              "Rd": "0",
+              "Vf": "0",
+              "LossCalculationFrequency": "1k"
+            },
+            "EnabledScopes": [
+              "Voltage"
+            ]
+          },
+          {
+            "LibraryName": "Diode",
+            "Top": 20,
+            "Left": 47,
+            "Angle": 270,
+            "HF": false,
+            "VF": false,
+            "Name": "D6",
+            "ID": "6cb9a7dc-cac1-4fbc-84db-a590a3bef3ee",
+            "Parameters": {
+              "Rd": "0",
+              "Vf": "0",
+              "LossCalculationFrequency": "1k"
+            },
+            "EnabledScopes": [
+              "Voltage"
+            ]
+          },
+          {
+            "LibraryName": "AC Voltage Source",
+            "Top": 10,
+            "Left": 5,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "AC1",
+            "ID": "3ccda855-e6ce-440d-be18-29e53cb45caf",
+            "Parameters": {
+              "Frequency": "50",
+              "Amplitude": "380",
+              "Phase": "0"
+            },
+            "EnabledScopes": [
+              "Current"
+            ]
+          },
+          {
+            "LibraryName": "AC Voltage Source",
+            "Top": 14,
+            "Left": 11,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "AC2",
+            "ID": "01a52415-b607-4d74-97f9-ae6e8b566bb0",
+            "Parameters": {
+              "Frequency": "50",
+              "Amplitude": "380",
+              "Phase": "120"
+            },
+            "EnabledScopes": [
+              "Voltage"
+            ]
+          },
+          {
+            "LibraryName": "AC Voltage Source",
+            "Top": 18,
+            "Left": 17,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "AC3",
+            "ID": "27033b3c-871e-4ac4-aa86-b47ee4831090",
+            "Parameters": {
+              "Frequency": "50",
+              "Amplitude": "380",
+              "Phase": "-120"
+            },
+            "EnabledScopes": [
+              "Voltage"
+            ]
+          },
+          {
+            "LibraryName": "DC Current Source",
+            "Top": 6,
+            "Left": 60,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "DC1",
+            "ID": "6e18ad6f-d210-4626-8715-c95dfe1f899d",
+            "Parameters": {
+              "Current": "-10"
+            },
+            "EnabledScopes": [
+              "Voltage"
+            ]
+          }
+        ],
+        "Connectors": [
+          {
+            "Segments": [
+              {
+                "StartX": 34,
+                "StartY": -1,
+                "EndX": 42,
+                "EndY": -1
+              },
+              {
+                "StartX": 42,
+                "StartY": -1,
+                "EndX": 50,
+                "EndY": -1
+              },
+              {
+                "StartX": 50,
+                "StartY": -1,
+                "EndX": 62,
+                "EndY": -1
+              },
+              {
+                "StartX": 62,
+                "StartY": 6,
+                "EndX": 62,
+                "EndY": -1
+              }
+            ],
+            "Name": "C5"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 34,
+                "StartY": 24,
+                "EndX": 42,
+                "EndY": 24
+              },
+              {
+                "StartX": 42,
+                "StartY": 24,
+                "EndX": 50,
+                "EndY": 24
+              },
+              {
+                "StartX": 50,
+                "StartY": 24,
+                "EndX": 62,
+                "EndY": 24
+              },
+              {
+                "StartX": 62,
+                "StartY": 14,
+                "EndX": 62,
+                "EndY": 24
+              }
+            ],
+            "Name": "C6"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 7,
+                "StartY": 10,
+                "EndX": 7,
+                "EndY": 9
+              },
+              {
+                "StartX": 7,
+                "StartY": 9,
+                "EndX": 34,
+                "EndY": 9
+              },
+              {
+                "StartX": 34,
+                "StartY": 5,
+                "EndX": 34,
+                "EndY": 9
+              },
+              {
+                "StartX": 34,
+                "StartY": 9,
+                "EndX": 34,
+                "EndY": 18
+              }
+            ],
+            "Name": "C2"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 13,
+                "StartY": 22,
+                "EndX": 7,
+                "EndY": 22
+              },
+              {
+                "StartX": 19,
+                "StartY": 26,
+                "EndX": 7,
+                "EndY": 26
+              },
+              {
+                "StartX": 7,
+                "StartY": 18,
+                "EndX": 7,
+                "EndY": 22
+              },
+              {
+                "StartX": 7,
+                "StartY": 22,
+                "EndX": 7,
+                "EndY": 26
+              },
+              {
+                "StartX": 7,
+                "StartY": 26,
+                "EndX": 7,
+                "EndY": 28
+              }
+            ],
+            "Name": "C1"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 13,
+                "StartY": 14,
+                "EndX": 13,
+                "EndY": 13
+              },
+              {
+                "StartX": 13,
+                "StartY": 13,
+                "EndX": 42,
+                "EndY": 13
+              },
+              {
+                "StartX": 42,
+                "StartY": 5,
+                "EndX": 42,
+                "EndY": 13
+              },
+              {
+                "StartX": 42,
+                "StartY": 13,
+                "EndX": 42,
+                "EndY": 18
+              }
+            ],
+            "Name": "C3"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 19,
+                "StartY": 18,
+                "EndX": 19,
+                "EndY": 17
+              },
+              {
+                "StartX": 19,
+                "StartY": 17,
+                "EndX": 50,
+                "EndY": 17
+              },
+              {
+                "StartX": 50,
+                "StartY": 5,
+                "EndX": 50,
+                "EndY": 17
+              },
+              {
+                "StartX": 50,
+                "StartY": 17,
+                "EndX": 50,
+                "EndY": 18
+              }
+            ],
+            "Name": "C4"
+          }
+        ],
+        "Name": "Top Circuit",
+        "Variables": []
+      },
+      "TransientAnalysis": {
+        "EndTime": 0.08,
+        "FixedTimeStep": false,
+        "StopAtSteadyState": false,
+        "TimeStep": 1E-06
+      }
+    },
+    {
+      "Id": "27444e3e-4f94-4353-9481-f461c4c6e43a",
+      "Name": "AC_DC_bridge_diode1",
+      "Circuit": {
+        "Id": "bf3d0827-7174-4bb1-8cf9-33bbbb2cbe26",
+        "Devices": [
+          {
+            "LibraryName": "Ground",
+            "Top": 28,
+            "Left": 6,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "Ground1",
+            "ID": "b0295572-ce61-4f4a-9981-f0c3f2e5a7ef",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Diode",
+            "Top": 1,
+            "Left": 31,
+            "Angle": 270,
+            "HF": false,
+            "VF": false,
+            "Name": "D1",
+            "ID": "e0c3b90c-7a17-4400-bfdc-7af51ae8af2f",
+            "Parameters": {
+              "Rd": "0",
+              "Vf": "0",
+              "LossCalculationFrequency": "1k"
+            },
+            "EnabledScopes": [
+              "Voltage"
+            ]
+          },
+          {
+            "LibraryName": "Diode",
+            "Top": 20,
+            "Left": 31,
+            "Angle": 270,
+            "HF": false,
+            "VF": false,
+            "Name": "D2",
+            "ID": "8c4d4167-5433-4f20-baf2-bbb9a614f5e0",
+            "Parameters": {
+              "Rd": "0",
+              "Vf": "0",
+              "LossCalculationFrequency": "1k"
+            },
+            "EnabledScopes": [
+              "Voltage"
+            ]
+          },
+          {
+            "LibraryName": "Diode",
+            "Top": 1,
+            "Left": 39,
+            "Angle": 270,
+            "HF": false,
+            "VF": false,
+            "Name": "D3",
+            "ID": "19077362-45cb-43d3-b8a4-b0858165aed5",
+            "Parameters": {
+              "Rd": "0",
+              "Vf": "0",
+              "LossCalculationFrequency": "1k"
+            },
+            "EnabledScopes": [
+              "Voltage"
+            ]
+          },
+          {
+            "LibraryName": "Diode",
+            "Top": 20,
+            "Left": 39,
+            "Angle": 270,
+            "HF": false,
+            "VF": false,
+            "Name": "D4",
+            "ID": "dbd65d13-6e2a-44b0-a502-23e0845fcef8",
+            "Parameters": {
+              "Rd": "0",
+              "Vf": "0",
+              "LossCalculationFrequency": "1k"
+            },
+            "EnabledScopes": [
+              "Voltage"
+            ]
+          },
+          {
+            "LibraryName": "Diode",
+            "Top": 1,
+            "Left": 47,
+            "Angle": 270,
+            "HF": false,
+            "VF": false,
+            "Name": "D5",
+            "ID": "602f0074-7d57-46c4-92cc-37ccf3dabcd1",
+            "Parameters": {
+              "Rd": "0",
+              "Vf": "0",
+              "LossCalculationFrequency": "1k"
+            },
+            "EnabledScopes": [
+              "Voltage"
+            ]
+          },
+          {
+            "LibraryName": "Diode",
+            "Top": 20,
+            "Left": 47,
+            "Angle": 270,
+            "HF": false,
+            "VF": false,
+            "Name": "D6",
+            "ID": "730d0ccf-4a18-46ec-b782-5ec7120839bf",
+            "Parameters": {
+              "Rd": "0",
+              "Vf": "0",
+              "LossCalculationFrequency": "1k"
+            },
+            "EnabledScopes": [
+              "Voltage"
+            ]
+          },
+          {
+            "LibraryName": "AC Voltage Source",
+            "Top": 10,
+            "Left": 5,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "AC1",
+            "ID": "c60ff108-7af0-44c3-b2f4-2bdd4d0027e7",
+            "Parameters": {
+              "Frequency": "50",
+              "Amplitude": "380",
+              "Phase": "0"
+            },
+            "EnabledScopes": [
+              "Current"
+            ]
+          },
+          {
+            "LibraryName": "AC Voltage Source",
+            "Top": 14,
+            "Left": 11,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "AC2",
+            "ID": "0b0e7c90-9f5f-467e-a3dc-c609bd12a230",
+            "Parameters": {
+              "Frequency": "50",
+              "Amplitude": "380",
+              "Phase": "120"
+            },
+            "EnabledScopes": [
+              "Voltage"
+            ]
+          },
+          {
+            "LibraryName": "AC Voltage Source",
+            "Top": 18,
+            "Left": 17,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "AC3",
+            "ID": "f50cc4a7-bb56-485f-af2d-0b9296af984d",
+            "Parameters": {
+              "Frequency": "50",
+              "Amplitude": "380",
+              "Phase": "-120"
+            },
+            "EnabledScopes": [
+              "Voltage"
+            ]
+          },
+          {
+            "LibraryName": "Resistor",
+            "Top": 8,
+            "Left": 59,
+            "Angle": 90,
+            "HF": false,
+            "VF": false,
+            "Name": "R1",
+            "ID": "138308c2-8cc1-4e56-a862-459e54ae46dc",
+            "Parameters": {
+              "Value": "20"
+            },
+            "EnabledScopes": [
+              "Voltage"
+            ]
+          }
+        ],
+        "Connectors": [
+          {
+            "Segments": [
+              {
+                "StartX": 34,
+                "StartY": -1,
+                "EndX": 42,
+                "EndY": -1
+              },
+              {
+                "StartX": 42,
+                "StartY": -1,
+                "EndX": 50,
+                "EndY": -1
+              },
+              {
+                "StartX": 50,
+                "StartY": -1,
+                "EndX": 62,
+                "EndY": -1
+              },
+              {
+                "StartX": 62,
+                "StartY": 6,
+                "EndX": 62,
+                "EndY": -1
+              }
+            ],
+            "Name": "C7"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 34,
+                "StartY": 24,
+                "EndX": 42,
+                "EndY": 24
+              },
+              {
+                "StartX": 42,
+                "StartY": 24,
+                "EndX": 50,
+                "EndY": 24
+              },
+              {
+                "StartX": 50,
+                "StartY": 24,
+                "EndX": 62,
+                "EndY": 24
+              },
+              {
+                "StartX": 62,
+                "StartY": 12,
+                "EndX": 62,
+                "EndY": 24
+              }
+            ],
+            "Name": "C5"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 7,
+                "StartY": 10,
+                "EndX": 7,
+                "EndY": 9
+              },
+              {
+                "StartX": 7,
+                "StartY": 9,
+                "EndX": 34,
+                "EndY": 9
+              },
+              {
+                "StartX": 34,
+                "StartY": 5,
+                "EndX": 34,
+                "EndY": 9
+              },
+              {
+                "StartX": 34,
+                "StartY": 9,
+                "EndX": 34,
+                "EndY": 18
+              }
+            ],
+            "Name": "C2"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 19,
+                "StartY": 26,
+                "EndX": 7,
+                "EndY": 26
+              },
+              {
+                "StartX": 13,
+                "StartY": 22,
+                "EndX": 7,
+                "EndY": 22
+              },
+              {
+                "StartX": 7,
+                "StartY": 26,
+                "EndX": 7,
+                "EndY": 28
+              },
+              {
+                "StartX": 7,
+                "StartY": 18,
+                "EndX": 7,
+                "EndY": 22
+              },
+              {
+                "StartX": 7,
+                "StartY": 22,
+                "EndX": 7,
+                "EndY": 26
+              }
+            ],
+            "Name": "C1"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 13,
+                "StartY": 14,
+                "EndX": 13,
+                "EndY": 13
+              },
+              {
+                "StartX": 13,
+                "StartY": 13,
+                "EndX": 42,
+                "EndY": 13
+              },
+              {
+                "StartX": 42,
+                "StartY": 5,
+                "EndX": 42,
+                "EndY": 13
+              },
+              {
+                "StartX": 42,
+                "StartY": 13,
+                "EndX": 42,
+                "EndY": 18
+              }
+            ],
+            "Name": "C3"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 19,
+                "StartY": 18,
+                "EndX": 19,
+                "EndY": 17
+              },
+              {
+                "StartX": 19,
+                "StartY": 17,
+                "EndX": 50,
+                "EndY": 17
+              },
+              {
+                "StartX": 50,
+                "StartY": 5,
+                "EndX": 50,
+                "EndY": 17
+              },
+              {
+                "StartX": 50,
+                "StartY": 17,
+                "EndX": 50,
+                "EndY": 18
+              }
+            ],
+            "Name": "C4"
+          }
+        ],
+        "Name": "Top Circuit - Copy",
+        "Variables": []
+      },
+      "TransientAnalysis": {
+        "EndTime": 0.04,
+        "FixedTimeStep": false,
+        "StopAtSteadyState": false,
+        "TimeStep": 1E-06
+      }
+    }
+  ],
+  "Libraries": [],
+  "TestBenches": [],
+  "ThermalData": []
+}

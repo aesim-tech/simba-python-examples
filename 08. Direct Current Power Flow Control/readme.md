@@ -1,6 +1,6 @@
 ---
 tags:
-  - Python Scripts
+  - Python Notebooks
   - DC-DC
   - Control Design
 ---
