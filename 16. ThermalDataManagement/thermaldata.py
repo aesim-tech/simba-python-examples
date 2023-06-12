@@ -1,6 +1,7 @@
 #%% Load modules
 import os
 from aesim.simba import ProjectRepository, ThermalData
+from datetime import datetime
 import matplotlib.pyplot as plt
 
 
@@ -64,7 +65,8 @@ for scope in igbt.Scopes:
     if scope.Name == 'Junction Temperature (°)' or scope.Name == 'Average Total Losses (W)':
         scope.Enabled = True
 
-igbt_xml_list = [filename for filename in os.listdir('./ThermalDataFile/') if filename.endswith('IGBT.xml')]
+script_folder = os.path.realpath(os.path.dirname(__file__))
+igbt_xml_list = [filename for filename in os.listdir(script_folder + '/ThermalDataFile/') if filename.endswith('IGBT.xml')]
 
 junction_temps = []
 Losses = []
@@ -72,7 +74,7 @@ igbt_references = []
 
 #%% Get the job object and solve the system
 for igbt_xml in igbt_xml_list:
-    igbt.ThermalData = ThermalData('ThermalDataFile/'+ igbt_xml)
+    igbt.ThermalData = ThermalData(script_folder + '/ThermalDataFile/' + igbt_xml)
     igbt_references.append(igbt.ThermalData.Name)
 
     job = design.TransientAnalysis.NewJob()
@@ -103,4 +105,8 @@ plot_bar(Tab1 = junction_temps,
         ylabel='Junction temperatures (°)',
         mxticks = 32,
         FigAxe = ax2)
+
+# Save figure
+path= script_folder + "/igbt_ref_parametric_sweep_"+datetime.now().strftime("%m%d%Y%H%M%S")+".png"
+fig.savefig(path)
 # %%
