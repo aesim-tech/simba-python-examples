@@ -58,7 +58,6 @@ script_folder = os.path.realpath(os.path.dirname(__file__))
 file_path = os.path.join(script_folder, "thermal_buck_4pythonexp.jsimba")
 project = ProjectRepository(file_path)
 design = project.GetDesignByName('Design')
-# design = DesignExamples.Buck_Thermal()
 design.TransientAnalysis.StopAtSteadyState = True
 igbt = design.Circuit.GetDeviceByName('IGBT1')
 for scope in igbt.Scopes:
