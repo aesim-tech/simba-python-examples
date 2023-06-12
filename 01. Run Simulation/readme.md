@@ -1,7 +1,8 @@
 ---
 tags:
-  - Python Script
-  - Basic Topologies
+  - Python Scripts
+  - DC-DC
+  - Python Basics
 ---
 
 # Run a simulation with Simba python module

@@ -1,3 +1,11 @@
+---
+tags:
+  - Python Scripts
+  - DC-DC
+  - Optimization
+  - Control Design
+---
+
 # Buck converter PID Parameters optimization using Scipy
 
 [Download **python notebook**](buck_opti.ipynb)

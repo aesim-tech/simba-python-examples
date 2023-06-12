@@ -1,3 +1,9 @@
+---
+tags:
+  - Python Scripts
+  - Python Basics
+---
+
 # Read and use sampled signals (Multi Time-Steps Solver)
 
 [Download **python script**](15.%20Sampled%20Signals.py)

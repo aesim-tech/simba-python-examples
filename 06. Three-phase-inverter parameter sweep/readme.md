@@ -1,3 +1,10 @@
+---
+tags:
+  - Python Scripts
+  - DC-AC
+  - Parameter Sweep
+---
+
 # Three-phase inverter parameter sweep
 
 [Download **python notebook** here](Three-phase-inverter_parametersweep.ipynb)

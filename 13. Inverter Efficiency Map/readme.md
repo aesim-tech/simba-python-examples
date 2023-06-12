@@ -1,3 +1,11 @@
+---
+tags:
+  - Python Scripts
+  - Motor Drives
+  - Parameter Sweep
+  - Thermal
+---
+
 # Efficiency map of a motor drive inverter
 
 [Download **python script**](inverter_map.py)

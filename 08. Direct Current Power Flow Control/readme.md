@@ -1,3 +1,10 @@
+---
+tags:
+  - Python Scripts
+  - DC-DC
+  - Control Design
+---
+
 # DC Power Flow Control
 
 [Download **python notebook**](direct_current_power_flow_control.ipynb)

@@ -1,3 +1,11 @@
+---
+tags:
+  - Python Scripts
+  - Power Supplies
+  - Parameter Sweep
+  - Converter Design
+---
+
 # DC-DC Full Bridge LLC Resonant Converter
 
 [Download **python script**](LLC_Resonant_Converter.py)

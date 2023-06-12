@@ -1,3 +1,10 @@
+---
+tags:
+  - Python Scripts
+  - DC-DC
+  - Python Basics
+---
+
 # Create a circuit in Python using SIMBA Python module
 
 [Download **python script**](3.%20Create%20Circuit.py)

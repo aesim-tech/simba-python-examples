@@ -1,3 +1,10 @@
+---
+tags:
+  - Python Scripts
+  - DC-DC
+  - Python Basics
+---
+
 # Create a Simple Circuit, Save and Open using Simba Python Module
 
 [Download python script here](4.%20Open-Save%20Project%20File.py)

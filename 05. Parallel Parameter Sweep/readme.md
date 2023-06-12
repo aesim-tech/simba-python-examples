@@ -1,3 +1,10 @@
+---
+tags:
+  - Python Scripts
+  - DC-DC
+  - Parameter Sweep
+---
+
 # Parallel parameter sweep
 
 [Download **multiprocessing python script**](5.%20Parameter%20Sweep%20(multiprocessing).py)

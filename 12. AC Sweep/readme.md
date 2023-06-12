@@ -1,3 +1,10 @@
+---
+tags:
+  - Python Notebooks
+  - AC Analysis
+  - Benchmark
+---
+
 # AC sweep examples
 
 [Download **python notebook**](ACSweepExamples.ipynb)

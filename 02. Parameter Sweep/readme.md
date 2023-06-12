@@ -1,3 +1,10 @@
+---
+tags:
+  - Python Scripts
+  - DC-DC
+  - Python Basics
+---
+
 # Perform a Parameter Sweep with Simba python module
 
 [Download python script](2.%20Parameter%20Sweep.py)

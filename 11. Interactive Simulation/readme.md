@@ -1,3 +1,9 @@
+---
+tags:
+  - Python GUI
+  - Pseudo Real-Time Simulation
+---
+
 # Pseudo real-time simulation of DC grids
 
 [Download **python script**](DistributionPV.py)
