@@ -7,7 +7,7 @@ tags:
 
 # Create a Simple Circuit, Save and Open using Simba Python Module
 
-[Download python script here](4.%20Open-Save%20Project%20File.py)
+[Download **python script**](4.%20Open-Save%20Project%20File.py)
 
 Simba Python module gives user flexibility to design any circuit. The example shows the creation of a simple buck chopper from scratch, how to save or re-open the design with the different steps:
 

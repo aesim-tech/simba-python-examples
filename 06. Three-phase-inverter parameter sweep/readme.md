@@ -7,9 +7,9 @@ tags:
 
 # Three-phase inverter parameter sweep
 
-[Download **python notebook** here](Three-phase-inverter_parametersweep.ipynb)
+[Download **python notebook**](Three-phase-inverter_parametersweep.ipynb)
 
-[Download **Simba model** here](Three-phase-inverter.jsimba)
+[Download **Simba model**](Three-phase-inverter.jsimba)
 
 This example shows a combined use of python notebook and Simba to handle a pre-design phase of a three-phase inverter.
 
