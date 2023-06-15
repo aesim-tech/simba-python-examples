@@ -27,8 +27,8 @@ bus_voltage = 400.0;            # Bus Voltage [V]
 max_speed_ref = 4000            # RPM
 max_current_ref = 10.0          # A
 
-number_of_speed_points = 4     # Total number of simulations is number_of_speed_points * number_of_current_points
-number_of_current_points = 4   # Total number of simulations is number_of_speed_points * number_of_current_points
+number_of_speed_points = 10    # Total number of simulations is number_of_speed_points * number_of_current_points
+number_of_current_points = 10   # Total number of simulations is number_of_speed_points * number_of_current_points
 relative_minimum_speed = 0.2    # fraction of max_speed_ref
 relative_minimum_current = 0.2  # fraction of max_torque_ref
 simulation_time = 1             # time simulated in each run
