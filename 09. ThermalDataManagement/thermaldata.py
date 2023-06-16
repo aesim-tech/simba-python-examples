@@ -3,6 +3,7 @@ import os
 from aesim.simba import ProjectRepository, ThermalData
 from datetime import datetime
 import matplotlib.pyplot as plt
+import matplotlib as mpl
 
 
 #%% plot histogram
@@ -38,7 +39,7 @@ def plot_bar(Tab1 = [],
                         edgecolor = ['black' for i in Tab1], linewidth = 2)
 
         plot.xticks([dxticks + r - largeur_barre / mxticks for r in range(len(Tab1))], # Etiquettes
-                Etiquette, rotation = 45)
+                Etiquette, rotation = 22.5)
 
         FigAxe.set_ylabel(ylabel)
 
@@ -52,6 +53,7 @@ def plot_bar(Tab1 = [],
 
         if show == True :
                 plot.show()
+
 
 #%% Load project and igbt device
 script_folder = os.path.realpath(os.path.dirname(__file__))
@@ -85,6 +87,7 @@ for igbt_xml in igbt_xml_list:
     Losses.append(Loss)
 
 #%% Plot data
+mpl.rcParams['font.size'] = 15  # Set the default font size here
 fig = plt.figure(figsize = (16, 16))
 # Losses
 ax1 = fig.add_subplot(211)
