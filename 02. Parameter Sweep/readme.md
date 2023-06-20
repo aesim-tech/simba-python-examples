@@ -5,7 +5,7 @@ tags:
   - Python Basics
 ---
 
-# Perform a Parameter Sweep with Simba python module
+# Perform a Parameter Sweep with Simba Python Library
 
 [Download **python script**](2.%20Parameter%20Sweep.py)
 

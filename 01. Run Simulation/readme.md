@@ -5,7 +5,7 @@ tags:
   - Python Basics
 ---
 
-# Run a simulation with Simba python module
+# Run a simulation with Simba Python Library
 
 [Download **python script**](1.%20Run%20Simulation.py)
 
@@ -18,7 +18,7 @@ The circuit model is directly loaded from the collection of design examples.
 
 The main steps of this script example are the following:
 
-1. Load python modules: aesim.simba and matplotlib
+1. Load Python Libraries: aesim.simba and matplotlib
 2. Load the design from the collection of design examples
 3. Run a transient simulation
 4. Get the output voltage

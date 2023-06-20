@@ -12,7 +12,7 @@ tags:
 
 [Download **Simba model**](inverter_map.jsimba)
 
-[Download **python module requirements**](requirements.txt)
+[Download **Python Library requirements**](requirements.txt)
 
 
 ## Motor drive inverter model

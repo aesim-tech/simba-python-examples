@@ -11,9 +11,9 @@ tags:
 
 [Download **multithreading python script**](5.%20Parameter%20Sweep%20(multiprocessing).py)
 
-[Download **python module requirements**](requirements.txt)
+[Download **Python Library requirements**](requirements.txt)
 
-These two examples scripts respectively show how the SIMBA python module can be used to run calculations on parallel processes and threads and accelerate simulation.
+These two examples scripts respectively show how the SIMBA Python Library can be used to run calculations on parallel processes and threads and accelerate simulation.
 
 Make sure to run 'pip install -r requirements.txt' to ensure you have the required packages.
 
