@@ -15,7 +15,7 @@ A benchmark has been realized in order to compare SIMBA simulation results vs an
 
 ## DC-DC Buck converter
 
-[Download **Python notebook**](buckchopper/Buck_simba_th.ipynb)
+[Download **Python notebook**](buckchopper/Buck_simba_th.ipynb) and its [figure](buckchopper/fig/buck.png)
 
 [Download **Simba Model**](buckchopper/buck.jsimba)
 
@@ -68,7 +68,7 @@ The relative difference is negligeable which shows the reliability and robustnes
 
 ## Flyback
 
-[Download **Python notebook**](flyback/flyback_simba_th.ipynb)
+[Download **Python notebook**](flyback/flyback_simba_th.ipynb) and its [figure](flyback/fig/flyback.png)
 
 [Download **Simba Model**](flyback/flyback_converter.jsimba)
 
@@ -108,7 +108,7 @@ Therefore the comparison between SIMBA and Theory for the average output voltage
 
 ## 3 phase Bridge Diode
 
-[Download **Python notebook**](diodebridge/Bridge_simba_th.ipynb)
+[Download **Python notebook**](diodebridge/Bridge_simba_th.ipynb) and its [figure](diodebridge/fig/diode_bridge.png)
 
 [Download **Simba Model**](diodebridge/3ph_bridge_diode.jsimba)
 

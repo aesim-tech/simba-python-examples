@@ -8,7 +8,7 @@ tags:
 
 # Buck converter PID Parameters optimization using Scipy
 
-[Download **python notebook**](buck_opti.ipynb)
+[Download **python notebook**](buck_opti.ipynb) and its [figure](fig/buck.png)
 
 [Download **Simba model**](Buck.jsimba)
 

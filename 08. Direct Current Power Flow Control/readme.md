@@ -7,7 +7,9 @@ tags:
 
 # DC Power Flow Control
 
-[Download **python notebook**](direct_current_power_flow_control.ipynb)
+[Download **python notebook**](direct_current_power_flow_control.ipynb) and its
+[figure 1](fig/dc_power_flow_control.png) and
+[figure 2](fig/current_control_with_voltage_compensation.png) 
 
 [Download **Simba model**](direct_current_power_flow_control.jsimba)
 
