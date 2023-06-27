@@ -5,9 +5,9 @@ tags:
   - Python Basics
 ---
 
-# Perform a Parameter Sweep with Simba python module
+# Perform a Parameter Sweep with Simba Python Library
 
-[Download python script](2.%20Parameter%20Sweep.py)
+[Download **python script**](2.%20Parameter%20Sweep.py)
 
 
 When doing a transient, AC, or DC sweep analysis, a parametric sweep can be used to move a parameter across a range of values. A voltage or current source, temperature or a model parameter are examples of variables that may be changed.

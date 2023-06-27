@@ -12,7 +12,7 @@ tags:
 
 [Download **Simba model**](LLC_Resonant_Converter.jsimba)
 
-[Download **python module requirements**](requirements.txt)
+[Download **Python Library requirements**](requirements.txt)
 
 This example shows a design of DC-DC Full Bridge LLC Resonant Converter for 3.3 kW on-board charger applications with specs as below:
 

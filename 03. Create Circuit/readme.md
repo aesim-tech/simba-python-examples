@@ -5,7 +5,7 @@ tags:
   - Python Basics
 ---
 
-# Create a circuit in Python using SIMBA Python module
+# Create a circuit in Python using SIMBA Python Library
 
 [Download **python script**](3.%20Create%20Circuit.py)
 

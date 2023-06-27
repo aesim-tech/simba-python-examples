@@ -1,5 +1,5 @@
 """
-This simple scripts shows how the SIMBA python module can be used to run calculations on parallel threads and accelerate simulation.
+This simple scripts shows how the SIMBA Python Library can be used to run calculations on parallel threads and accelerate simulation.
 
 Make sure to run 'pip install -r requirements.txt' to ensure you have the required packages.
 """
