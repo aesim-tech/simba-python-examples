@@ -7,7 +7,6 @@ import numpy as np
 import copy
 
 #%% Load functions
-
 def steadystate_signal(horizon_time, time, *signals):
     """steadystate_signal() returns time ndarray and a list of signals on the horizon_time"""
 
@@ -28,18 +27,17 @@ def average_value(time, waveform):
 
 def run_single_analysis(design, param, analysis_name, overshoot):
     """
-    run Simba simulation of the circuit and store sensitivity result in a dictionnary whose key is the analysis name
+    run Simba simulation of the circuit and store overshoot result in a dictionnary whose key is the analysis name
 
     :param: Simba circuit
     :param: dictionnary of circuit parameters
     :param: analysis name (string)
-    :sensitivity: dictionnary to store sensitivity results
+    :overshoot: dictionnary to store overshoot results
     """
     
-    log = True
+    log = False
     for key in param.keys():
         design.Circuit.GetDeviceByName(key).Value = param[key]
-    #design.Circuit.GetDeviceByName(analysis_name).Value = param[analysis_name] * (1 + rel_perturbation)
     job = design.TransientAnalysis.NewJob()
     status = job.Run()
     t = job.TimePoints
@@ -58,11 +56,35 @@ def run_single_analysis(design, param, analysis_name, overshoot):
     
     # Perform overshoot calculation and store results
     overshoot[analysis_name] = vout_max - Vout_average
-
-    # Print results
-    if log:
+    
+    if log: # Print intermediate results
         print("\n{0}Run analysis: " + analysis_name +
               "\n(Vout)max = {0:.4f} V (Vout)average = {0:.4f} V Overshoot = {0:.4f}".format(vout_max, Vout_average, overshoot[analysis_name]))
+
+def compute_sensitivity(nominal_param, rel_perturbation, overshoot, sensitivity):
+    """
+    compute sensitivity for each circuit parameter
+
+    :param: nominal circuit parameters
+    :param: relative perturbation
+    :overshoot: dictionnary of overshoot results
+    :sensitvity: dictionnary of sensitvity results
+    """
+    for key in nominal_param.keys():
+        sensitivity[key] = abs((overshoot[key] - overshoot['nominal']) / (nominal_param[key] * rel_perturbation)) * (nominal_param[key] / overshoot['nominal'])
+
+def write_report(sensitivity):
+    report_list = ['\n################################\n' +
+                   '# Sensitivity Analysis Report \n' +
+                   '# Date: ' + datetime.now().strftime("%m-%d-%Y \n# Hour: %H:%M:%S") + "\n" +
+                   '################################\n\n' ]
+    for key in sensitivity.keys():
+        report_list.append('Sensitivity of ' + key + ' is {0:.4f}'.format(sensitivity[key]) + "\n")
+    report_to_print = ''.join(str(e) for e in report_list)
+    print(report_to_print)
+    file = open(script_folder + '/report' + datetime.now().strftime("%m%d%Y%H%M") + '.txt', 'w')
+    file.write(report_to_print)
+    file.close()
 
 def plot_bar(Tab1 = [], 
         Tab2 = [], 
@@ -113,34 +135,24 @@ script_folder = os.path.realpath(os.path.dirname(__file__))
 file_path = os.path.join(script_folder, "sensitivity.jsimba")
 project = JsonProjectRepository(file_path)
 RLC = project.GetDesignByName('RLC')
-# Create empty dict to store results
-overshoot = dict()
-# Set relative perturbation
-rel_perturbation = 0.1
 
-#%% Nominal simulation
-
+#%% Run simulations
 nominal_param = {'R1':100, 'C1':1e-6, 'L1':2.5e-2, 'R2':1e3}
+overshoot = dict()
 run_single_analysis(RLC, nominal_param, 'nominal', overshoot)
 
+rel_perturbation = 0.1
 for key in nominal_param.keys():
     perturb_param = copy.deepcopy(nominal_param)
     perturb_param[key] = nominal_param[key] * (1 + rel_perturbation)
     run_single_analysis(RLC, perturb_param, key, overshoot)
 
-
-#%% Sensitivity param
-report_list = ['\n################################\n' +
-                   '# Sensitivity Analysis Report \n' +
-                   '# Date: ' + datetime.now().strftime("%m-%d-%Y \n# Hour: %H:%M:%S") + "\n" +
-                   '################################\n\n' ]
+#%% Sensitivity computation
 sensitivity = dict()
-for key in nominal_param.keys():
-    sensitivity[key] = abs((overshoot[key] - overshoot['nominal']) / (nominal_param[key] * rel_perturbation)) * (nominal_param[key] / overshoot['nominal'])
-    report_list.append('Sensitivity of ' + key + ' is {0:.4f}'.format(sensitivity[key]) + "\n")
+compute_sensitivity(nominal_param, rel_perturbation, overshoot, sensitivity)
 
-report_to_print = ''.join(str(e) for e in report_list)
-
+#%% Print report
+write_report(sensitivity)
 
 #%% Plot figure with both graphs and Histogram
 fig = plt.figure(figsize = (16, 9))
@@ -156,7 +168,3 @@ plot_bar(Tab1 = [sensitivity['R2'], sensitivity['R1'], sensitivity['C1'], sensit
 
 fig.tight_layout()
 plt.show()
-
-file = open(script_folder + '/report' + datetime.now().strftime("%m%d%Y%H%M") + '.txt', 'w')
-file.write(report_to_print)
-file.close()
