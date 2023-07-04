@@ -1,0 +1,320 @@
+{
+  "Designs": [
+    {
+      "Id": "405fe5ba-7bc0-448f-83ae-62238a089e5d",
+      "Name": "Design 1",
+      "Circuit": {
+        "Id": "41bcdccd-dbe1-49de-a6cb-edf14d2635ab",
+        "Devices": [
+          {
+            "LibraryName": "Resistor",
+            "Top": 7,
+            "Left": 49,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "R2",
+            "ID": "e5027bda-5149-4c6c-8398-b66b27c75f3e",
+            "Parameters": {
+              "Value": "100"
+            },
+            "EnabledScopes": [
+              "Current",
+              "Voltage"
+            ]
+          },
+          {
+            "LibraryName": "Inductor",
+            "Top": 7,
+            "Left": 56,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "L1",
+            "ID": "787a022b-7713-4bf9-86a8-e06c1a071613",
+            "Parameters": {
+              "Value": "25m",
+              "Iinit": "0"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Capacitor",
+            "Top": 13,
+            "Left": 62,
+            "Angle": 90,
+            "HF": false,
+            "VF": false,
+            "Name": "C1",
+            "ID": "047654b4-3699-473c-a89b-b79c1ddf52a4",
+            "Parameters": {
+              "Value": "1E-06",
+              "Vinit": "0"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Resistor",
+            "Top": 13,
+            "Left": 67,
+            "Angle": 90,
+            "HF": false,
+            "VF": false,
+            "Name": "R1",
+            "ID": "14365726-fde6-4984-b575-1ddb7e795a93",
+            "Parameters": {
+              "Value": "1k"
+            },
+            "EnabledScopes": [
+              "Current",
+              "Voltage"
+            ]
+          },
+          {
+            "LibraryName": "DC Voltage Source",
+            "Top": 10,
+            "Left": 36,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "DC1",
+            "ID": "a55107a2-17fd-4742-9f28-4e1762feaa0c",
+            "Parameters": {
+              "Voltage": "10"
+            },
+            "EnabledScopes": [
+              "Current",
+              "Voltage"
+            ]
+          },
+          {
+            "LibraryName": "Controlled Switch",
+            "Top": 6,
+            "Left": 40,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "SW1",
+            "ID": "d5cb1592-3346-4075-894b-322bdf82f28d",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Square Wave",
+            "Top": -1,
+            "Left": 34,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "C2",
+            "ID": "0087c3b3-ed72-44f1-96d2-c5331354ca23",
+            "Parameters": {
+              "Amplitude": "10",
+              "Frequency": "90",
+              "DutyCycle": "0.5",
+              "Offset": "0",
+              "PhaseShift": "0",
+              "SamplingTime": "none"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Ground",
+            "Top": 19,
+            "Left": 40,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "Ground1",
+            "ID": "fb895339-4b89-4dc4-b685-03c84ab60abf",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Differential Voltage Meter",
+            "Top": 12,
+            "Left": 45,
+            "Angle": 90,
+            "HF": false,
+            "VF": false,
+            "Name": "V1",
+            "ID": "6c39c953-6483-4da5-87ea-6fc93252f1e4",
+            "Parameters": {
+              "SamplingTime": "none"
+            },
+            "EnabledScopes": [
+              "Voltage"
+            ]
+          }
+        ],
+        "Connectors": [
+          {
+            "Segments": [
+              {
+                "StartX": 55,
+                "StartY": 8,
+                "EndX": 56,
+                "EndY": 8
+              }
+            ],
+            "Name": "C2"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 65,
+                "StartY": 11,
+                "EndX": 65,
+                "EndY": 8
+              },
+              {
+                "StartX": 70,
+                "StartY": 11,
+                "EndX": 70,
+                "EndY": 8
+              },
+              {
+                "StartX": 62,
+                "StartY": 8,
+                "EndX": 65,
+                "EndY": 8
+              },
+              {
+                "StartX": 65,
+                "StartY": 8,
+                "EndX": 70,
+                "EndY": 8
+              }
+            ],
+            "Name": "C4"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 47,
+                "StartY": 11,
+                "EndX": 47,
+                "EndY": 8
+              },
+              {
+                "StartX": 46,
+                "StartY": 8,
+                "EndX": 47,
+                "EndY": 8
+              },
+              {
+                "StartX": 47,
+                "StartY": 8,
+                "EndX": 49,
+                "EndY": 8
+              }
+            ],
+            "Name": "C6"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 38,
+                "StartY": 10,
+                "EndX": 38,
+                "EndY": 8
+              },
+              {
+                "StartX": 38,
+                "StartY": 8,
+                "EndX": 40,
+                "EndY": 8
+              }
+            ],
+            "Name": "C5"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 43,
+                "StartY": 6,
+                "EndX": 43,
+                "EndY": 1
+              },
+              {
+                "StartX": 43,
+                "StartY": 1,
+                "EndX": 38,
+                "EndY": 1
+              }
+            ],
+            "Name": "C1"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 38,
+                "StartY": 18,
+                "EndX": 38,
+                "EndY": 19
+              },
+              {
+                "StartX": 38,
+                "StartY": 19,
+                "EndX": 41,
+                "EndY": 19
+              },
+              {
+                "StartX": 65,
+                "StartY": 17,
+                "EndX": 65,
+                "EndY": 19
+              },
+              {
+                "StartX": 70,
+                "StartY": 17,
+                "EndX": 70,
+                "EndY": 19
+              },
+              {
+                "StartX": 47,
+                "StartY": 15,
+                "EndX": 47,
+                "EndY": 19
+              },
+              {
+                "StartX": 65,
+                "StartY": 19,
+                "EndX": 70,
+                "EndY": 19
+              },
+              {
+                "StartX": 41,
+                "StartY": 19,
+                "EndX": 47,
+                "EndY": 19
+              },
+              {
+                "StartX": 47,
+                "StartY": 19,
+                "EndX": 65,
+                "EndY": 19
+              }
+            ],
+            "Name": "C7"
+          }
+        ],
+        "Name": "Top Circuit",
+        "Variables": []
+      },
+      "TransientAnalysis": {
+        "EndTime": 0.03,
+        "FixedTimeStep": false,
+        "StopAtSteadyState": false,
+        "TimeStep": 1E-06,
+        "BaseFrequencyParameterEnabled": false,
+        "NumberOfBasePeriodsSavedParameterEnabled": false,
+        "BaseFrequency": 60,
+        "NumberOfBasePeriodsSaved": 1
+      }
+    }
+  ],
+  "Libraries": [],
+  "TestBenches": [],
+  "ThermalData": []
+}
