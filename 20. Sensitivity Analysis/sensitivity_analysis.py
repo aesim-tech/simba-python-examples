@@ -132,7 +132,7 @@ def plot_bar(Tab1 = [],
 
 #%% Get project
 script_folder = os.path.realpath(os.path.dirname(__file__))
-file_path = os.path.join(script_folder, "sensitivity.jsimba")
+file_path = os.path.join(script_folder, "sensitivity_analysis.jsimba")
 project = JsonProjectRepository(file_path)
 RLC = project.GetDesignByName('RLC')
 

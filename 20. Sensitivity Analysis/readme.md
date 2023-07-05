@@ -7,9 +7,9 @@ tags:
 
 # Sensitivity Analysis
 
-[Download **Python script**](sensitivity.py)
+[Download **Python script**](sensitivity_analysis.py)
 
-[Download **Simba Model**](sensitivity.jsimba)
+[Download **Simba Model**](sensitivity_analysis.jsimba)
 
 The sensitivity analysis is used to determine how sensitive a specified design performance measurement is to variations in design parameters.
 
