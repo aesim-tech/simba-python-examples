@@ -6,25 +6,7 @@ import os
 import numpy as np
 import copy
 
-#%% Load functions
-def steadystate_signal(horizon_time, time, *signals):
-    """steadystate_signal() returns time ndarray and a list of signals on the horizon_time"""
-
-    steadystate_maskarray = np.ma.where(time > time[-1] - horizon_time)
-    steadystate_time = time[steadystate_maskarray]
-    steadystate_signal_list = [signal[steadystate_maskarray] for signal in signals]
-    return steadystate_time, *steadystate_signal_list
-
-def average_value(time, waveform):
-    """average_value() returns the average value of a time waveform equal time steps are not required"""
-
-    cum_sum = 0
-    range_idx = range(0, len(time)-1, 1)
-
-    for idx in range_idx:
-        cum_sum += (time[idx + 1] - time[idx]) * (waveform[idx+1] + waveform[idx]) /2
-    return (1 / (time[-1] - time[0]) * cum_sum)
-
+#%%  Methods
 def run_single_analysis(design, param, analysis_name, overshoot):
     """
     run Simba simulation of the circuit and store overshoot result in a dictionnary whose key is the analysis name
@@ -41,25 +23,16 @@ def run_single_analysis(design, param, analysis_name, overshoot):
     job = design.TransientAnalysis.NewJob()
     status = job.Run()
     t = job.TimePoints
-    Vout = job.GetSignalByName('R2 - Voltage').DataPoints
-    vout_max = max(Vout)
-
-    # steady state between 0.0050 and 0.0060
-    horizon_time = 0.001  
-    t, Vout = steadystate_signal(horizon_time,
-                                 np.array(job.TimePoints),
-                                 np.array(job.GetSignalByName('R2 - Voltage').DataPoints))
-
-    # Perform average calculation between 0.0050 and 0.0060
-    Vout = np.array(Vout)
-    Vout_average = average_value(t, Vout)
+    vout = job.GetSignalByName('R2 - Voltage').DataPoints
+    vout_max = max(vout)
+    vout_final = vout[-1]
     
     # Perform overshoot calculation and store results
-    overshoot[analysis_name] = vout_max - Vout_average
+    overshoot[analysis_name] = vout_max - vout_final
     
     if log: # Print intermediate results
         print("\n{0}Run analysis: " + analysis_name +
-              "\n(Vout)max = {0:.4f} V (Vout)average = {0:.4f} V Overshoot = {0:.4f}".format(vout_max, Vout_average, overshoot[analysis_name]))
+              "\n(vout)max = {0:.4f} V (vout)average = {0:.4f} V Overshoot = {0:.4f}".format(vout_max, vout_final, overshoot[analysis_name]))
 
 def compute_sensitivity(nominal_param, rel_perturbation, overshoot, sensitivity):
     """
@@ -80,6 +53,7 @@ def write_report(sensitivity):
                    '################################\n\n' ]
     for key in sensitivity.keys():
         report_list.append('Sensitivity of ' + key + ' is {0:.4f}'.format(sensitivity[key]) + "\n")
+    report_list.append('\nThe most sensitive parameter for overshoot measurement is the parameter which has the highest sensitivity value')
     report_to_print = ''.join(str(e) for e in report_list)
     print(report_to_print)
     file = open(script_folder + '/report' + datetime.now().strftime("%m%d%Y%H%M") + '.txt', 'w')

@@ -61,9 +61,9 @@ The Python script used for performing the sensitivity analysis will do the follo
 * Calculate the maximum value of output voltage (Vout = VR2)
 * Perform calculation of the average output voltage at the steady state
 * Perform calculation of the overshoot for R2 signal (output voltage)
-* Perform the sensitivity calculation for each component based on the "normalized sensitivity" equation mentionned above
+* Perform the sensitivity calculation for each component based on the "normalized sensitivity" equation mentioned above
 * Plot the sensitivity values for each component in a graph
-* Create a report mentionning the parameter which has the biggest impact for overshoot measurement
+* Create a report mentioning the parameter which has the biggest impact for overshoot measurement
 
 ## Conclusion
 
