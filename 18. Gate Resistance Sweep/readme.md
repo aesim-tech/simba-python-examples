@@ -7,7 +7,7 @@ tags:
 
 # Peform a sweep of the gate resistance of a power semiconductor switch
 
-[Download **Python Script**](Rg_sweep.py)
+[Download **Python Script**](gate_resistance_sweep.py)
 
 [Download **Simba Model**](thermal_buck_Rg_4pythonexp.jsimba)
 
