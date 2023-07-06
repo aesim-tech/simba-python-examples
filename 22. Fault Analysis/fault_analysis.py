@@ -56,14 +56,13 @@ file.write(report_to_print)
 file.close()
 
 #%% Plot figures
-mpl.rcParams['font.size'] = 15  # Set the default font 
+mpl.rcParams['font.size'] = 15  # Set the default font
 fig = plt.figure(figsize = (16, 9))
-plt.plot(tnom, vout_nom, "g")
-plt.plot(tfault, Vout_fault, "r")
-
+plt.plot(tnom, vout_nom, "g", label="nominal case")
+plt.plot(tfault, Vout_fault, "r", label="fault case")
+plt.legend(loc="upper right")
 plt.xlabel('time')
-plt.ylabel('vout_nominal')
-plt.title("nominal output voltage")
-
+plt.ylabel('Vout')
+plt.title("output voltage without and with fault injection")
 fig.tight_layout()
 plt.show()
