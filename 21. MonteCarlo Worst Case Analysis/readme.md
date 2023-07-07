@@ -47,11 +47,13 @@ circuit = {
 ```
 A great number of components can be added. The values for the components are distributed using uniform distribution with mean value as a nominal value and variance as the tolerance range.
 
-After running the script, its influence on the peak overshoot value at the load can be seen in the result.
+After running the script, its influence on the peak overshoot coule be observed.
 
-![result iout](fig/result_iout.png)
+![result](fig/result.png)
 
-![result vout](fig/result_vout.png)
+The 2 graphs at the top show the overall uniform distribution for peak measurement on output voltage and inductor current vs number of iterations.
+
+The 4 graphs at the bottom show the dependency between output voltage/inductor current vs R2/L1 values for all the iterations. 
 
 As it can be seen, within the tolerance range of the components, peak overshoot value varies within the range and hence worst case values can be seen and reliabilty analysis can be done.
 
