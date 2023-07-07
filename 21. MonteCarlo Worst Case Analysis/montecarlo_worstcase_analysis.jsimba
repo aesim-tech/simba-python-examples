@@ -18,10 +18,7 @@
             "Parameters": {
               "Value": "100"
             },
-            "EnabledScopes": [
-              "Current",
-              "Voltage"
-            ]
+            "EnabledScopes": []
           },
           {
             "LibraryName": "Inductor",
@@ -36,7 +33,9 @@
               "Value": "25m",
               "Iinit": "0"
             },
-            "EnabledScopes": []
+            "EnabledScopes": [
+              "Current"
+            ]
           },
           {
             "LibraryName": "Capacitor",
@@ -66,7 +65,6 @@
               "Value": "1k"
             },
             "EnabledScopes": [
-              "Current",
               "Voltage"
             ]
           },
@@ -83,8 +81,8 @@
               "Voltage": "10"
             },
             "EnabledScopes": [
-              "Current",
-              "Voltage"
+              "Voltage",
+              "Current"
             ]
           },
           {
@@ -306,11 +304,7 @@
         "EndTime": 0.03,
         "FixedTimeStep": false,
         "StopAtSteadyState": false,
-        "TimeStep": 1E-06,
-        "BaseFrequencyParameterEnabled": false,
-        "NumberOfBasePeriodsSavedParameterEnabled": false,
-        "BaseFrequency": 60,
-        "NumberOfBasePeriodsSaved": 1
+        "TimeStep": 1E-06
       }
     }
   ],

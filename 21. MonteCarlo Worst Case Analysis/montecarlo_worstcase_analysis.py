@@ -47,12 +47,13 @@ for iter in iterations:
     status = job.Run()
     L1_values.append(circuit_values['inductor'])
     R2_values.append(circuit_values['resistor'])
-    peak_voltages.append(max(np.array(job.GetSignalByName('R2 - Voltage').DataPoints)))
-    peak_currents.append(max(np.array(job.GetSignalByName('R2 - Current').DataPoints)))
+    peak_voltages.append(max(np.array(job.GetSignalByName('R1 - Voltage').DataPoints))) 
+    peak_currents.append(max(np.array(job.GetSignalByName('L1 - Current').DataPoints)))
 
 #%% Create a dataframe to store results
 results = pd.DataFrame({"peak_voltages":peak_voltages, "peak_currents":peak_currents, "L1":L1_values, "R2":R2_values})
 results
+print(results)
 
 #%% Plot figures 
 fig1 = plt.figure("Figure 1")
@@ -64,7 +65,31 @@ plt.title("Output Voltage")
 fig2 = plt.figure("Figure 2")
 plt.plot(iterations, peak_currents, linestyle='', color='red', marker='o', markerfacecolor='purple')
 plt.xlabel('iteration')
-plt.ylabel('Iout_peak')
-plt.title("Output Current")
+plt.ylabel('IL1_peak')
+plt.title("Inductor Current")
+
+fig3 = plt.figure("Figure 3")
+plt.plot(R2_values, peak_currents, linestyle='', color='red', marker='o', markerfacecolor='purple')
+plt.xlabel('R2_values')
+plt.ylabel('IL1_peak')
+plt.title("Inductor current vs R2 values dependency")
+
+fig4 = plt.figure("Figure 4")
+plt.plot(L1_values, peak_currents, linestyle='', color='red', marker='o', markerfacecolor='purple')
+plt.xlabel('L1_values')
+plt.ylabel('IL1_peak')
+plt.title("Inductor current vs L1 values dependency")
+
+fig5 = plt.figure("Figure 5")
+plt.plot(R2_values, peak_voltages, linestyle='', color='red', marker='o', markerfacecolor='purple')
+plt.xlabel('R2_values')
+plt.ylabel('Vout_peak')
+plt.title(" output voltage vs R2 values dependency")
+
+fig6 = plt.figure("Figure 6")
+plt.plot(L1_values, peak_voltages, linestyle='', color='red', marker='o', markerfacecolor='purple')
+plt.xlabel('L1_values')
+plt.ylabel('Vout_peak')
+plt.title("output voltage vs L1 values dependency")
 
 plt.show()

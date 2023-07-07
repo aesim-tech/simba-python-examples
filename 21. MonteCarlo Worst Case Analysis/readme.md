@@ -32,7 +32,7 @@ Write a Python script to:
 
 * define the number of iterations,
 * define nominal and tolerance values of the  components whose tolerance value has to be checked,
-* create the set of values according a normal distribution,
+* create the set of values according a uniform distribution,
 * run the simulations,
 * store and plot resultds
 
@@ -45,7 +45,7 @@ circuit = {
            'resistor' : {'nominal': 100, 'tolerance': 0.3}
           }
 ```
-A great number of components can be added. The values for the components are distributed using normal distribution with mean value as a nominal value and variance as the tolerance range.
+A great number of components can be added. The values for the components are distributed using uniform distribution with mean value as a nominal value and variance as the tolerance range.
 
 After running the script, its influence on the peak overshoot value at the load can be seen in the result.
 
