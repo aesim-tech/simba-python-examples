@@ -7,6 +7,8 @@ tags:
 
 # Import MAT File
 
+[Download **Python script**](import_mat_file.py)
+
 This example shows how to import a .mat file using **scipy.io** module. The .mat file contains several standardised drive cycles and has been downloaded [here](https://imee.pl/pub/drive-cycles).
 
 The main steps of this script example are the following:

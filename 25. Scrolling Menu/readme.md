@@ -7,7 +7,7 @@ tags:
 
 # Thermal Data Selection using Scrolling Menu
 
-[Download **Python script**](scrolling_menu_thermal.ipynb)
+[Download **Python notebook**](scrolling_menu_thermal.ipynb)
 
 [Download **Simba Model**](scrolling_menu_thermal_buck.jsimba)
 

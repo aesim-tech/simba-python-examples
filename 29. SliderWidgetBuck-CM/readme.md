@@ -8,7 +8,7 @@ tags:
 
 # Buck Converter PI-Tuning using Slider Widget
 
-[Download **Python script**](SliderWidget_BuckAverageCM.ipynb)
+[Download **Python notebook**](SliderWidget_BuckAverageCM.ipynb)
 
 [Download **Simba Model**](SliderWidget_BuckAverageCM.jsimba)
 

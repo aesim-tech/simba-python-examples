@@ -6,7 +6,7 @@ tags:
 
 # Run Simba from Matlab with Simba python library
 
-[Download **Python script**](Flyback.py)
+[Download **Python script**](flyback_script.py)
 
 [Download **Matlab file**](start.m) (not mandatory)
 
