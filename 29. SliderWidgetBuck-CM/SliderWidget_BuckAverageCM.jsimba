@@ -1,0 +1,682 @@
+{
+  "Designs": [
+    {
+      "Id": "31aa7f4e-e7de-4ae6-a354-ac3101f6aeeb",
+      "Name": "DC-DC Buck Average Current-Mode IGBT",
+      "Circuit": {
+        "Id": "f4f918c1-df66-4dfe-9a6a-adf2bbe869d3",
+        "Devices": [
+          {
+            "LibraryName": "PID",
+            "Top": 10,
+            "Left": 17,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "PID1",
+            "ID": "72129d1c-d853-4f92-ae29-954f75b98d05",
+            "Parameters": {
+              "Kp": "1.5",
+              "Kd": "0",
+              "Ki": "15000",
+              "SamplingTime": "none"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Comparator",
+            "Top": 13,
+            "Left": 34,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "COMP1",
+            "ID": "c59ad06d-fcc7-42bf-bb67-990f8a2a02a0",
+            "Parameters": {
+              "SamplingTime": "none"
+            },
+            "EnabledScopes": [
+              "Input 1",
+              "Input 2",
+              "Out"
+            ]
+          },
+          {
+            "LibraryName": "Limiter",
+            "Top": 10,
+            "Left": 26,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "Lim1",
+            "ID": "66024795-c16c-4332-a399-87f2d2fbc65d",
+            "Parameters": {
+              "LowLimit": "0",
+              "HighLimit": "1",
+              "SamplingTime": "none"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Sum",
+            "Top": 10,
+            "Left": 11,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "SUM1",
+            "ID": "61b567b9-9cff-4e43-8a48-b26bf779f7e3",
+            "Parameters": {
+              "NumberOfInputs": "2",
+              "Gains": "[1 -1]",
+              "SamplingTime": "none"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Constant",
+            "Top": 9,
+            "Left": -2,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "C1",
+            "ID": "d39aff01-129a-4adb-b794-ae51c001035b",
+            "Parameters": {
+              "Value": "2.4",
+              "SamplingTime": "none"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Triangular Wave",
+            "Top": 19,
+            "Left": 25,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "TRI1",
+            "ID": "71f1c627-c8d4-4e2f-83bc-29ff1f12c86b",
+            "Parameters": {
+              "Amplitude": "1",
+              "Frequency": "20k",
+              "DutyCycle": "1",
+              "Offset": "0",
+              "PhaseShift": "0",
+              "SamplingTime": "none"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Current Probe",
+            "Top": -7,
+            "Left": 27,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "CP1",
+            "ID": "57e0db16-538a-43e8-927c-6808b2737712",
+            "Parameters": {
+              "Gain": "1",
+              "SamplingTime": "none"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Capacitor",
+            "Top": -3,
+            "Left": 29,
+            "Angle": 90,
+            "HF": false,
+            "VF": false,
+            "Name": "C2",
+            "ID": "86bdcf7c-0c08-4776-ad6a-55741922022f",
+            "Parameters": {
+              "Value": "47\u00B5",
+              "Vinit": "0"
+            },
+            "EnabledScopes": [
+              "Voltage",
+              "Current"
+            ]
+          },
+          {
+            "LibraryName": "Inductor",
+            "Top": -7,
+            "Left": 21,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "L1",
+            "ID": "65ae3086-7504-49fc-9368-4390f4aee5d2",
+            "Parameters": {
+              "Value": "1m",
+              "Iinit": "0"
+            },
+            "EnabledScopes": [
+              "Voltage",
+              "Current"
+            ]
+          },
+          {
+            "LibraryName": "Resistor",
+            "Top": -3,
+            "Left": 35,
+            "Angle": 90,
+            "HF": false,
+            "VF": false,
+            "Name": "R1",
+            "ID": "1bc15813-fbb8-4a4b-ba38-afb0824e0d96",
+            "Parameters": {
+              "Value": "5"
+            },
+            "EnabledScopes": [
+              "Voltage",
+              "Current"
+            ]
+          },
+          {
+            "LibraryName": "Diode",
+            "Top": -10,
+            "Left": 9,
+            "Angle": 180,
+            "HF": false,
+            "VF": false,
+            "Name": "D1",
+            "ID": "f3d4baa5-dfe3-4ff2-856e-6912f09096b9",
+            "Parameters": {
+              "Rd": "1m",
+              "Vf": "3",
+              "LossCalculationFrequency": "1k"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Diode",
+            "Top": -3,
+            "Left": 17,
+            "Angle": 270,
+            "HF": false,
+            "VF": false,
+            "Name": "D2",
+            "ID": "8d5e4ccb-3c38-4529-b96a-39bfb3e801fb",
+            "Parameters": {
+              "Rd": "0",
+              "Vf": "0",
+              "LossCalculationFrequency": "1k"
+            },
+            "EnabledScopes": [
+              "Voltage",
+              "Current"
+            ]
+          },
+          {
+            "LibraryName": "IGBT",
+            "Top": -9,
+            "Left": 10,
+            "Angle": 270,
+            "HF": false,
+            "VF": false,
+            "Name": "IGBT1",
+            "ID": "02a21084-5a36-42ed-8034-7a25cfe70553",
+            "Parameters": {
+              "Ron": "0",
+              "Vf": "0",
+              "LossCalculationFrequency": "1k"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "DC Voltage Source",
+            "Top": -6,
+            "Left": 3,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "DC1",
+            "ID": "1f3097ac-a71a-4c82-8b02-6f933b1bace1",
+            "Parameters": {
+              "Voltage": "50"
+            },
+            "EnabledScopes": [
+              "Voltage",
+              "Current"
+            ]
+          },
+          {
+            "LibraryName": "Ground",
+            "Top": 2,
+            "Left": 4,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "Ground1",
+            "ID": "471acf55-414a-4c5b-8e0b-c8548c037b01",
+            "Parameters": {},
+            "EnabledScopes": []
+          }
+        ],
+        "Connectors": [
+          {
+            "Segments": [
+              {
+                "StartX": 2,
+                "StartY": 11,
+                "EndX": 11,
+                "EndY": 11
+              }
+            ],
+            "Name": "C1"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 9,
+                "StartY": -9,
+                "EndX": 9,
+                "EndY": -6
+              },
+              {
+                "StartX": 5,
+                "StartY": -6,
+                "EndX": 9,
+                "EndY": -6
+              }
+            ],
+            "Name": "C4"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 20,
+                "StartY": 1,
+                "EndX": 20,
+                "EndY": 2
+              },
+              {
+                "StartX": 32,
+                "StartY": 1,
+                "EndX": 32,
+                "EndY": 2
+              },
+              {
+                "StartX": 38,
+                "StartY": 1,
+                "EndX": 38,
+                "EndY": 2
+              },
+              {
+                "StartX": 5,
+                "StartY": 2,
+                "EndX": 20,
+                "EndY": 2
+              },
+              {
+                "StartX": 20,
+                "StartY": 2,
+                "EndX": 32,
+                "EndY": 2
+              },
+              {
+                "StartX": 32,
+                "StartY": 2,
+                "EndX": 38,
+                "EndY": 2
+              }
+            ],
+            "Name": "C12"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 8,
+                "StartY": 13,
+                "EndX": 8,
+                "EndY": 25
+              },
+              {
+                "StartX": 11,
+                "StartY": 13,
+                "EndX": 8,
+                "EndY": 13
+              },
+              {
+                "StartX": 8,
+                "StartY": 25,
+                "EndX": 42,
+                "EndY": 25
+              },
+              {
+                "StartX": 42,
+                "StartY": 4,
+                "EndX": 42,
+                "EndY": 25
+              },
+              {
+                "StartX": 29,
+                "StartY": -5,
+                "EndX": 29,
+                "EndY": 4
+              },
+              {
+                "StartX": 29,
+                "StartY": 4,
+                "EndX": 42,
+                "EndY": 4
+              }
+            ],
+            "Name": "C3"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 15,
+                "StartY": 12,
+                "EndX": 17,
+                "EndY": 12
+              }
+            ],
+            "Name": "C2"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 25,
+                "StartY": 12,
+                "EndX": 26,
+                "EndY": 12
+              }
+            ],
+            "Name": "C8"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 29,
+                "StartY": 21,
+                "EndX": 33,
+                "EndY": 21
+              },
+              {
+                "StartX": 33,
+                "StartY": 16,
+                "EndX": 33,
+                "EndY": 21
+              },
+              {
+                "StartX": 34,
+                "StartY": 16,
+                "EndX": 33,
+                "EndY": 16
+              }
+            ],
+            "Name": "C9"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 30,
+                "StartY": 12,
+                "EndX": 33,
+                "EndY": 12
+              },
+              {
+                "StartX": 33,
+                "StartY": 12,
+                "EndX": 33,
+                "EndY": 14
+              },
+              {
+                "StartX": 34,
+                "StartY": 14,
+                "EndX": 33,
+                "EndY": 14
+              }
+            ],
+            "Name": "C11"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 32,
+                "StartY": -5,
+                "EndX": 32,
+                "EndY": -6
+              },
+              {
+                "StartX": 38,
+                "StartY": -5,
+                "EndX": 38,
+                "EndY": -6
+              },
+              {
+                "StartX": 31,
+                "StartY": -6,
+                "EndX": 32,
+                "EndY": -6
+              },
+              {
+                "StartX": 32,
+                "StartY": -6,
+                "EndX": 38,
+                "EndY": -6
+              }
+            ],
+            "Name": "C13"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 38,
+                "StartY": 15,
+                "EndX": 40,
+                "EndY": 15
+              },
+              {
+                "StartX": 40,
+                "StartY": 5,
+                "EndX": 40,
+                "EndY": 15
+              },
+              {
+                "StartX": 12,
+                "StartY": 5,
+                "EndX": 40,
+                "EndY": 5
+              },
+              {
+                "StartX": 12,
+                "StartY": -4,
+                "EndX": 12,
+                "EndY": 5
+              }
+            ],
+            "Name": "C5"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 20,
+                "StartY": -5,
+                "EndX": 20,
+                "EndY": -6
+              },
+              {
+                "StartX": 15,
+                "StartY": -9,
+                "EndX": 15,
+                "EndY": -6
+              },
+              {
+                "StartX": 15,
+                "StartY": -6,
+                "EndX": 20,
+                "EndY": -6
+              },
+              {
+                "StartX": 20,
+                "StartY": -6,
+                "EndX": 21,
+                "EndY": -6
+              }
+            ],
+            "Name": "C6"
+          }
+        ],
+        "Name": "Top Circuit",
+        "Variables": []
+      },
+      "TransientAnalysis": {
+        "EndTime": 0.0008,
+        "FixedTimeStep": false,
+        "StopAtSteadyState": false,
+        "TimeStep": 2E-07,
+        "BaseFrequencyParameterEnabled": false,
+        "NumberOfBasePeriodsSavedParameterEnabled": false,
+        "BaseFrequency": 0,
+        "NumberOfBasePeriodsSaved": 0
+      }
+    }
+  ],
+  "Libraries": [],
+  "TestBenches": [],
+  "ThermalData": [
+    {
+      "Name": "Diode-1200",
+      "Manufacturer": null,
+      "PartNumber": null,
+      "Comment": null,
+      "ConductionLossesGateDependency": false,
+      "SemiconductorType": "MosfetThermalDataSemiconductorType",
+      "ThermalImpedanceType": null,
+      "ConductionLosses": [
+        {
+          "Temperature": 25,
+          "IVSerialized": "[0 0.678693; 2.5 0.970181; 6.25 1.1557; 12.5 1.37106; 25 1.68366; 50 2.13739; 100 2.7598]"
+        },
+        {
+          "Temperature": 150,
+          "IVSerialized": "[0 0.448255; 2.5 0.75788; 6.25 0.977812; 12.5 1.25504; 25 1.6774; 50 2.32087; 100 3.30119]"
+        }
+      ],
+      "ConductionLossesGateOff": [],
+      "TurnOnLosses": [],
+      "TurnOffLosses": [
+        {
+          "Temperature": 25,
+          "Voltage": 0,
+          "EISerialized": "[0 0; 100 0]"
+        },
+        {
+          "Temperature": 150,
+          "Voltage": 0,
+          "EISerialized": "[0 0; 100 0]"
+        },
+        {
+          "Temperature": 25,
+          "Voltage": -600,
+          "EISerialized": "[0 0; 2.5 0.0001513; 6.25 0.0002728; 12.5 0.000426; 25 0.0006651; 50 0.001039; 100 0.001622]"
+        },
+        {
+          "Temperature": 150,
+          "Voltage": -600,
+          "EISerialized": "[0 0.0001165; 2.5 0.0005279; 6.25 0.0008002; 12.5 0.00112; 25 0.001591; 50 0.0022281; 100 0.003295]"
+        }
+      ],
+      "CustomVariables": [],
+      "Constants": [],
+      "Custom1DTables": [],
+      "Custom2DTables": [],
+      "Custom3DTables": [],
+      "ConductionLossComputationMethod": 0,
+      "ConductionLossComputationFormula": null,
+      "ConductionLossComputationMethodGateOff": 0,
+      "ConductionLossComputationFormulaGateOff": null,
+      "TurnOnLossComputationMethod": "FormulaComputationMethodType",
+      "TurnOnLossComputationFormula": null,
+      "TurnOffLossComputationMethod": "FormulaComputationMethodType",
+      "TurnOffLossComputationFormula": null,
+      "ThermalImpedanceDataSerialized": "[]",
+      "ID": "50218fdd-78b7-4989-b1d7-c820fce32540"
+    },
+    {
+      "Name": "IGBT-1200",
+      "Manufacturer": null,
+      "PartNumber": null,
+      "Comment": null,
+      "ConductionLossesGateDependency": false,
+      "SemiconductorType": "MosfetThermalDataSemiconductorType",
+      "ThermalImpedanceType": null,
+      "ConductionLosses": [
+        {
+          "Temperature": 25,
+          "IVSerialized": "[0 0.870996; 2.5 0.985627; 6.25 1.12853; 12.5 1.34606; 25 1.74734; 50 2.48758; 100 3.85309]"
+        },
+        {
+          "Temperature": 150,
+          "IVSerialized": "[0 0.795192; 2.5 0.898404; 6.25 1.07255; 12.5 1.38104; 25 2.03268; 50 3.40913; 100 6.31659]"
+        }
+      ],
+      "ConductionLossesGateOff": [],
+      "TurnOnLosses": [
+        {
+          "Temperature": 25,
+          "Voltage": 600,
+          "EISerialized": "[0 0.000611; 2.5 0.000631; 6.25 0.000721; 12.5 0.001; 25 0.002; 50 0.00554; 100 0.0181]"
+        },
+        {
+          "Temperature": 150,
+          "Voltage": 600,
+          "EISerialized": "[0 0.000888309; 2.5 0.000918502; 6.25 0.00104916; 12.5 0.00145846; 25 0.00290931; 50 0.00805214; 100 0.0262818]"
+        },
+        {
+          "Temperature": 25,
+          "Voltage": 0,
+          "EISerialized": "[0 0; 100 0]"
+        },
+        {
+          "Temperature": 150,
+          "Voltage": 0,
+          "EISerialized": "[0 0; 100 0]"
+        }
+      ],
+      "TurnOffLosses": [
+        {
+          "Temperature": 25,
+          "Voltage": 0,
+          "EISerialized": "[0 0; 100 0]"
+        },
+        {
+          "Temperature": 150,
+          "Voltage": 0,
+          "EISerialized": "[0 0; 100 0]"
+        },
+        {
+          "Temperature": 150,
+          "Voltage": 600,
+          "EISerialized": "[0 0.00175622; 2.5 0.00204287; 6.25 0.00247144; 12.5 0.00318451; 25 0.00460852; 50 0.00745228; 100 0.0131313]"
+        },
+        {
+          "Temperature": 25,
+          "Voltage": 600,
+          "EISerialized": "[0 0.000838; 2.5 0.000975; 6.25 0.00118; 12.5 0.00152; 25 0.0022; 50 0.00356; 100 0.00627]"
+        }
+      ],
+      "CustomVariables": [],
+      "Constants": [],
+      "Custom1DTables": [],
+      "Custom2DTables": [],
+      "Custom3DTables": [],
+      "ConductionLossComputationMethod": 0,
+      "ConductionLossComputationFormula": null,
+      "ConductionLossComputationMethodGateOff": 0,
+      "ConductionLossComputationFormulaGateOff": null,
+      "TurnOnLossComputationMethod": "FormulaComputationMethodType",
+      "TurnOnLossComputationFormula": null,
+      "TurnOffLossComputationMethod": "FormulaComputationMethodType",
+      "TurnOffLossComputationFormula": null,
+      "ThermalImpedanceDataSerialized": "[]",
+      "ID": "d2b5d30d-0ec8-4a04-9563-dfff10daf7fe"
+    }
+  ]
+}

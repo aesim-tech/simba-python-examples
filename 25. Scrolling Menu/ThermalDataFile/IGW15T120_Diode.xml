@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SemiconductorLibrary xmlns="http://www.plexim.com/xml/semiconductors/" version="1.0">
+    <Package class="Diode" vendor="Infineon" partnumber="IGW15T120">
+         <SemiconductorData type="Diode">
+            <TurnOnLoss>
+                <CurrentAxis> 0 </CurrentAxis>
+                <VoltageAxis> 0 </VoltageAxis>
+                <TemperatureAxis> 25 </TemperatureAxis>
+                <Energy scale="1e-06">
+                    <Temperature>
+                        <Voltage> 0 </Voltage>
+                    </Temperature>
+                </Energy>
+            </TurnOnLoss>
+            <TurnOffLoss>
+                <CurrentAxis> 0 1.5 3.75 7.5 15 30 60 </CurrentAxis>
+                <VoltageAxis> -600.0 0</VoltageAxis>
+                <TemperatureAxis> 25 150 </TemperatureAxis>
+                <Energy scale="1">
+                    <Temperature>
+                        <Voltage> 0.000E+00 9.081E-05 1.637E-04 2.556E-04 3.991E-04 6.232E-04 9.731E-04 </Voltage>
+                        <Voltage> 0 0 0 0 0 0 0 </Voltage>
+                    </Temperature>
+                    <Temperature>
+                        <Voltage> 6.989E-05 3.168E-04 4.801E-04 6.723E-04 9.545E-04 1.369E-03 1.977E-03 </Voltage>
+                        <Voltage> 0 0 0 0 0 0 0 </Voltage>
+                    </Temperature>
+                </Energy>
+            </TurnOffLoss>
+            <ConductionLoss>
+                <CurrentAxis>0 1.5 3.75 7.5 15 30 60 </CurrentAxis>
+                <TemperatureAxis> 25 150 </TemperatureAxis>
+                <VoltageDrop scale="1">
+                    <Temperature> 0.706466077 0.97433232 1.153524159 1.365090494 1.676778748 2.135970748 2.812471351 </Temperature>
+                    <Temperature> 0.466530121 0.763166327 0.985344709 1.258437204 1.675279532 2.31153842 3.282709877 </Temperature>
+                </VoltageDrop>
+            </ConductionLoss>
+        </SemiconductorData>
+        <ThermalModel>
+            <Branch type="Foster">
+                <RTauElement R="0.36" Tau="7.30E-02"/>
+				<RTauElement R="0.477" Tau="8.13E-03"/>
+				<RTauElement R="0.434" Tau="1.09E-03"/>
+				<RTauElement R="0.224" Tau="1.55E-04"/>
+            </Branch>
+        </ThermalModel>
+        <Comment>
+            <Line></Line>
+        </Comment>
+    </Package>
+</SemiconductorLibrary>
