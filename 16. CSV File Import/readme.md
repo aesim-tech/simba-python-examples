@@ -1,43 +1,48 @@
 ---
 tags:
-  - Python Notebooks
+  - Python Script
   - File Importation
 ---
 
 # CSV File importation
 
-[Download **Python notebook**](DAB_simba.py)
+[Download **Python notebook**](import_csv_file.py)
 
-[Download **Simba Model**](DAB_2.jsimba)
-
-[Download **SIMBA CSV file**](Vout_DAB_2.csv)
+[Download **SIMBA CSV file**](ArtUrban.csv)
 
 File importation is possible by using Python language.
 
-In this way this python script example helps to understand how to import any CSV files, load the datas imported and displayed them into a graph.
+This python script example shows two *different ways* to import a CSV file of a standardised drive cycle (Artemis Urban Road):
 
-It can be useful when we want to compare severals results obtained from external measurements or if several datas parameters need to be analyzed carefully.
+* with CSV module and the reader function,
+* with pandas module and the read_csv function.
 
-The power converter topology used for this example is a DAB: Dual Active Bridge
+For each way, data are loaded and displayed in a graph.
 
+This feature can be used for different cases:
 
-### SIMBA circuit
+* to compare several results obtained from external measurements,
+* to load external input data,
+* ...
 
-Below the DAB power converter designed and simulated inside SIMBA Desktop.
+## CSV file considered: Artemis Urban Road drive cycle
 
-![DAB](fig/DAB_SIMBA.png)
-
-
-### Python Script
-
-Beforehand, the DAB converter has been simulated into SIMBA Desktop and then the output voltage values (**VP1**) has been exported inside a CSV file.
-
-Once the CSV file is ready, it will be injected inside the python script in order to perform a transient analysis and plot the output voltage (VP1).
-
-Moreover we will calculate the average output voltage by using a function called **average_value**.
-
-Below the result of VP1 once the simulation is over through Python script
+This CSV file has been created from another python example [Import MAT File](../31.%20Import%20MAT%20File/readme.md) which loads several standardised drive cycles.
 
 ![result](fig/result.png)
 
-If you compare this plot with the original circuit in SIMBA desktop you'll observe the same behavior.
+## Use case example
+
+This example shows then a computation of the tractive force from the following relation:
+
+$$m \dfrac{dv}{dt} = F_t - a + b * v + c * v^2$$
+
+with:
+
+* $v$: velocity (m / s)
+* $F_t$: tractive force (N)
+* $a$: rolling resistance on flat land (N)
+* $b$: component of the rolling resistance (N / (m / s))
+* $c$: aerodynamic drag (N / (m / s²))
+
+![tractive force](fig/tractive_force.png)

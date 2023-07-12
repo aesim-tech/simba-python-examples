@@ -41,16 +41,14 @@ plt.title('ArtUrban drive cycle extracted with Pandas')
 plt.show()
 
 
-
-
-# %%
+#%% Example of use: computation of the tractive force
 speed_ms = speed * 1e3 / 3600
 acceleration = np.diff(speed_ms) / np.diff(time)
 acceleration = np.insert(acceleration, 0, 0)
 
 mass = 2057    # mass (kg)
 a = 178.7      # rolling resistance on flat land (N)
-b = 3.3084     # compononent of the rolling resistance (N / (m / s))
+b = 3.3084     # component of the rolling resistance (N / (m / s))
 c = 0.5231952  # aerodynamic drag (N / (m / s²))
 tractive_force = acceleration * mass + a + b * speed + c * speed**2
 

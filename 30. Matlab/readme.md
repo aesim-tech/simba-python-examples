@@ -16,18 +16,21 @@ A Python script named "Flyback.py" is executed from Matlab by using the command 
 
 More information about the **pyrunfile** function could been found [there](https://fr.mathworks.com/help/matlab/ref/pyrunfile.html)
 
+## Procedure to follow before running a python script
+
 Below the procedure to follow before to run the python script into Matlab:
 
-* First you need to make sure that the Python version that you are using is compatible with the Matlab version installed in your computer:
-[Matlab/Python_version](https://fr.mathworks.com/support/requirements/python-compatibility.html)
-
+* First you need to make sure that the Python version that you are using is compatible with the Matlab version installed in your computer: [Matlab/Python_version](https://fr.mathworks.com/support/requirements/python-compatibility.html)
 * An environment variable with the following syntax could be set in the OS settings for easier manipulation: **system variable**
+  
+PYHOME        <span style='color:red'>C:\Users\JohnDoe\AppData\Local\Programs\Python\Python310</span>  
 
-PYHOME        <span style='color:red'>C:\Users\amc\AppData\Local\Programs\Python\Python310</span>  (the path needs to be changed depending on your python installation location)
+This path needs to be changed depending on your python installation location
 
 PYTHONPATH    %PY_HOME%\Lib;%PY_HOME%\DLLs;%PY_HOME%\Lib\lib-tk;%PY_HOME%\Scripts\;%PY_HOME%\Lib\site-packages
 
-* the Matlab file **start.m** could be run only if some issues appear with the initialisation of TCL.
+
+* The Matlab file **start.m** could be run only if some issues appear with the initialisation of TCL.
 
 In that case you'll need to edit this file and change the installation path of <span style='color:red'>tcl8.6</span> and <span style='color:red'>tk8.6</span> (could be changed according to your Python version installed):
 
@@ -55,18 +58,20 @@ Below the Flyback power converter used for this case. This example comes from th
 The Python script run from Matlab will do the following tasks:
 
 * Load the flyback power converter from existing SIMBA collection of examples
-* Run a transient analysis
-* Retrieve the ouput voltage which is equal to the voltage accross R2 (VR2)
-* create an array named **result** which host both time and VR2 values
+* Run a transient analysis and get the ouput voltage accross R2 resistance
+* Create an array named **result** which host both time and voltage values
 * Plot the output voltage VR2 by using matplotlib module
 
 ## Matlab GUI
 
 Open Matlab and in the **Command window**, feel free to type:
 
+```
 py.math.sqrt(4)
+```
 
-You should see the answer : ans = 2
+
+You should see the answer : *ans = 2*
 
 Now you can run the syntax below:
 

@@ -29,7 +29,7 @@ fig.tight_layout(pad=0)
 plt.show()
 
 #%% Option to write cvs files 
-write_csv_files = True
+write_csv_files = False
 if write_csv_files:
     import pandas as pd
     for key in drive_cycles.keys():
