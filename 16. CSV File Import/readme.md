@@ -27,7 +27,7 @@ This feature can be used for different cases:
 
 ## CSV file considered: Artemis Urban Road drive cycle
 
-This CSV file has been created from another python example [Import MAT File](../31.%20Import%20MAT%20File/readme.md) which loads several standardised drive cycles.
+This CSV file has been created from another python example [Import MAT File](../31.%20MAT%20File%20Import/readme.md) which loads several standardised drive cycles.
 
 ![result](fig/result.png)
 
