@@ -1,0 +1,571 @@
+{
+  "Designs": [
+    {
+      "Id": "060c7bfe-69c2-4236-a086-4076c656970d",
+      "Name": "Design",
+      "Circuit": {
+        "Id": "91c470ee-d443-4c26-bac4-73de90393ddd",
+        "Devices": [
+          {
+            "LibraryName": "DC Voltage Source",
+            "Top": 10,
+            "Left": -1,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "DC1",
+            "ID": "eca659c1-14a2-4047-a9a5-6be0ac550ee1",
+            "Parameters": {
+              "Voltage": "600"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Ground",
+            "Top": 23,
+            "Left": 0,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "Ground1",
+            "ID": "2abe7088-e838-4d3a-9549-c2272f3852a3",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Square Wave",
+            "Top": 6,
+            "Left": 6,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "C1",
+            "ID": "fec2b43c-33b5-4ae4-b833-585d317fdf5a",
+            "Parameters": {
+              "Amplitude": "1",
+              "Frequency": "fsw",
+              "DutyCycle": "0.5",
+              "Offset": "0",
+              "PhaseShift": "0",
+              "SamplingTime": "none"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "IGBT",
+            "Top": 5,
+            "Left": 10,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "IGBT1",
+            "ID": "20943202-fc30-41f0-8032-b414accc964e",
+            "Parameters": {
+              "Ron": "0",
+              "Vf": "0",
+              "LossCalculationFrequency": "fsw"
+            },
+            "EnabledScopes": [
+              "Junction Temperature (\u00B0)",
+              "Average Conduction Losses (W)",
+              "Average Switching Losses (W)",
+              "Average Total Losses (W)",
+              "Instantaneous Conduction Losses (W)",
+              "Instantaneous Switching Energy (J)"
+            ],
+            "ThermalDataID": "f7e51ad3-0a94-489f-a7ae-eed7f5c2fad2",
+            "LossCalculationFrequency": "fsw",
+            "CustomVariables": []
+          },
+          {
+            "LibraryName": "Diode",
+            "Top": 19,
+            "Left": 9,
+            "Angle": 270,
+            "HF": false,
+            "VF": true,
+            "Name": "D1",
+            "ID": "5c0539e0-d96f-40d7-8fae-848c26fea75d",
+            "Parameters": {
+              "Rd": "0",
+              "Vf": "0",
+              "LossCalculationFrequency": "fsw"
+            },
+            "EnabledScopes": [],
+            "ThermalDataID": "499b85e5-18ca-45e8-af55-dab13da9f6ab",
+            "LossCalculationFrequency": "fsw",
+            "CustomVariables": []
+          },
+          {
+            "LibraryName": "Inductor",
+            "Top": 13,
+            "Left": 17,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "L1",
+            "ID": "41641eb9-1154-46c0-9886-c75adf63a6c0",
+            "Parameters": {
+              "Value": "1.2m",
+              "Iinit": "0"
+            },
+            "EnabledScopes": [
+              "Current"
+            ]
+          },
+          {
+            "LibraryName": "Thermal Capacitor",
+            "Top": 5,
+            "Left": 18,
+            "Angle": 90,
+            "HF": false,
+            "VF": false,
+            "Name": "C2",
+            "ID": "cb50b386-2412-4f73-b7e0-8e675b7143fb",
+            "Parameters": {
+              "Value": "0.05",
+              "Vinit": "25"
+            },
+            "EnabledScopes": [
+              "Temperature"
+            ]
+          },
+          {
+            "LibraryName": "Ground (Thermal)",
+            "Top": 10,
+            "Left": 20,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "Ground2",
+            "ID": "0a98b685-3bdc-4028-b7cf-cf5969d1f5b4",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Thermal Resistor",
+            "Top": 1,
+            "Left": 24,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "Rh",
+            "ID": "7b4227b7-aa10-4c23-b031-4390aa94842a",
+            "Parameters": {
+              "Value": "0.1"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Capacitor",
+            "Top": 18,
+            "Left": 24,
+            "Angle": 90,
+            "HF": false,
+            "VF": false,
+            "Name": "C3",
+            "ID": "6fedd4c1-aead-4d44-82f1-8b2c039c1e22",
+            "Parameters": {
+              "Value": "100u",
+              "Vinit": "0"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Constant Temperature",
+            "Top": 2,
+            "Left": 31,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "T1",
+            "ID": "383deb1d-a19e-450b-a3be-d5eac54f920b",
+            "Parameters": {
+              "Temperature": "25"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Ground (Thermal)",
+            "Top": 10,
+            "Left": 32,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "Ground3",
+            "ID": "bda75b53-914b-4f49-994d-ad596a2a36e5",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Resistor",
+            "Top": 18,
+            "Left": 30,
+            "Angle": 90,
+            "HF": false,
+            "VF": false,
+            "Name": "R2",
+            "ID": "3ac8fc23-9d33-4299-a2ae-42d8d622a888",
+            "Parameters": {
+              "Value": "15"
+            },
+            "EnabledScopes": [
+              "Voltage"
+            ]
+          }
+        ],
+        "Connectors": [
+          {
+            "Segments": [
+              {
+                "StartX": 1,
+                "StartY": 2,
+                "EndX": 12,
+                "EndY": 2
+              },
+              {
+                "StartX": 1,
+                "StartY": 10,
+                "EndX": 1,
+                "EndY": 2
+              },
+              {
+                "StartX": 12,
+                "StartY": 5,
+                "EndX": 12,
+                "EndY": 2
+              }
+            ],
+            "Name": "C1"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 1,
+                "StartY": 18,
+                "EndX": 1,
+                "EndY": 23
+              },
+              {
+                "StartX": 1,
+                "StartY": 23,
+                "EndX": 12,
+                "EndY": 23
+              },
+              {
+                "StartX": 27,
+                "StartY": 22,
+                "EndX": 27,
+                "EndY": 23
+              },
+              {
+                "StartX": 33,
+                "StartY": 22,
+                "EndX": 33,
+                "EndY": 23
+              },
+              {
+                "StartX": 12,
+                "StartY": 23,
+                "EndX": 27,
+                "EndY": 23
+              },
+              {
+                "StartX": 27,
+                "StartY": 23,
+                "EndX": 33,
+                "EndY": 23
+              }
+            ],
+            "Name": "C6"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 17,
+                "StartY": 14,
+                "EndX": 12,
+                "EndY": 14
+              },
+              {
+                "StartX": 12,
+                "StartY": 11,
+                "EndX": 12,
+                "EndY": 14
+              },
+              {
+                "StartX": 12,
+                "StartY": 14,
+                "EndX": 12,
+                "EndY": 17
+              }
+            ],
+            "Name": "C2"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 13,
+                "StartY": 18,
+                "EndX": 16,
+                "EndY": 18
+              },
+              {
+                "StartX": 14,
+                "StartY": 10,
+                "EndX": 16,
+                "EndY": 10
+              },
+              {
+                "StartX": 21,
+                "StartY": 3,
+                "EndX": 21,
+                "EndY": 2
+              },
+              {
+                "StartX": 16,
+                "StartY": 2,
+                "EndX": 21,
+                "EndY": 2
+              },
+              {
+                "StartX": 21,
+                "StartY": 2,
+                "EndX": 24,
+                "EndY": 2
+              },
+              {
+                "StartX": 16,
+                "StartY": 2,
+                "EndX": 16,
+                "EndY": 10
+              },
+              {
+                "StartX": 16,
+                "StartY": 10,
+                "EndX": 16,
+                "EndY": 18
+              }
+            ],
+            "Name": "C5"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 21,
+                "StartY": 9,
+                "EndX": 21,
+                "EndY": 10
+              }
+            ],
+            "Name": "C3"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 27,
+                "StartY": 16,
+                "EndX": 27,
+                "EndY": 14
+              },
+              {
+                "StartX": 33,
+                "StartY": 16,
+                "EndX": 33,
+                "EndY": 14
+              },
+              {
+                "StartX": 23,
+                "StartY": 14,
+                "EndX": 27,
+                "EndY": 14
+              },
+              {
+                "StartX": 27,
+                "StartY": 14,
+                "EndX": 33,
+                "EndY": 14
+              }
+            ],
+            "Name": "C8"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 30,
+                "StartY": 2,
+                "EndX": 33,
+                "EndY": 2
+              }
+            ],
+            "Name": "C7"
+          }
+        ],
+        "Name": "Top Circuit",
+        "Variables": [
+          {
+            "Name": "fsw",
+            "Value": "5k"
+          }
+        ]
+      },
+      "TransientAnalysis": {
+        "EndTime": "0.05",
+        "FixedTimeStep": false,
+        "StopAtSteadyState": true,
+        "TimeStep": "1E-06",
+        "BaseFrequencyParameterEnabled": true,
+        "NumberOfBasePeriodsSavedParameterEnabled": true,
+        "BaseFrequency": "fsw",
+        "NumberOfBasePeriodsSaved": "2"
+      }
+    }
+  ],
+  "Libraries": [],
+  "TestBenches": [],
+  "ThermalData": [
+    {
+      "Name": "Infineon IGW15T120 (IGBT)",
+      "Manufacturer": "Infineon",
+      "PartNumber": "IGW15T120",
+      "Comment": "",
+      "ConductionLossesGateDependency": false,
+      "SemiconductorType": "IGBTThermalDataSemiconductorType",
+      "ThermalImpedanceType": "FosterThermalNetworkType",
+      "ConductionLosses": [
+        {
+          "Temperature": 25,
+          "IVSerialized": "[0 0.904408142; 1.5 0.999197512; 3.75 1.128331105; 7.5 1.333468786; 15 1.726534794; 30 2.479691828; 60 3.922822257]"
+        },
+        {
+          "Temperature": 150,
+          "IVSerialized": "[0 0.718113906; 1.5 0.853667291; 3.75 1.057066166; 7.5 1.396122533; 15 2.074339405; 30 3.430981457; 60 6.144682242]"
+        }
+      ],
+      "ConductionLossesGateOff": [],
+      "TurnOnLosses": [
+        {
+          "Temperature": 25,
+          "Voltage": 0,
+          "EISerialized": "[0 0; 1.5 0; 3.75 0; 7.5 0; 15 0; 30 0; 60 0]"
+        },
+        {
+          "Temperature": 25,
+          "Voltage": 600,
+          "EISerialized": "[0 0.00031; 1.5 0.000328; 3.75 0.000399; 7.5 0.000607; 15 0.0013; 30 0.00361; 60 0.0113]"
+        },
+        {
+          "Temperature": 150,
+          "Voltage": 0,
+          "EISerialized": "[0 0; 1.5 0; 3.75 0; 7.5 0; 15 0; 30 0; 60 0]"
+        },
+        {
+          "Temperature": 150,
+          "Voltage": 600,
+          "EISerialized": "[0 0.000477951; 1.5 0.00050591; 3.75 0.000615301; 7.5 0.000935855; 15 0.00200453; 30 0.005567324; 60 0.017445107]"
+        }
+      ],
+      "TurnOffLosses": [
+        {
+          "Temperature": 25,
+          "Voltage": 0,
+          "EISerialized": "[0 0; 1.5 0; 3.75 0; 7.5 0; 15 0; 30 0; 60 0]"
+        },
+        {
+          "Temperature": 25,
+          "Voltage": 600,
+          "EISerialized": "[0 0.000683; 1.5 0.000757; 3.75 0.000866; 7.5 0.00104; 15 0.0014; 30 0.0021; 60 0.0035]"
+        },
+        {
+          "Temperature": 150,
+          "Voltage": 0,
+          "EISerialized": "[0 0; 1.5 0; 3.75 0; 7.5 0; 15 0; 30 0; 60 0]"
+        },
+        {
+          "Temperature": 150,
+          "Voltage": 600,
+          "EISerialized": "[0 0.000851273; 1.5 0.000943497; 3.75 0.001078962; 7.5 0.001302353; 15 0.001744921; 30 0.002621704; 60 0.004358724]"
+        }
+      ],
+      "CustomVariables": [],
+      "Constants": [],
+      "Custom1DTables": [],
+      "Custom2DTables": [],
+      "Custom3DTables": [],
+      "ConductionLossComputationMethod": 1,
+      "ConductionLossComputationFormula": null,
+      "ConductionLossComputationMethodGateOff": 1,
+      "ConductionLossComputationFormulaGateOff": "",
+      "TurnOnLossComputationMethod": "LookUpTableComputationMethodType",
+      "TurnOnLossComputationFormula": null,
+      "TurnOffLossComputationMethod": "LookUpTableComputationMethodType",
+      "TurnOffLossComputationFormula": null,
+      "ThermalImpedanceDataSerialized": "[0.121 0.173; 0.372 0.0275; 0.381 0.00257; 0.226 0.000271]",
+      "ID": "f7e51ad3-0a94-489f-a7ae-eed7f5c2fad2"
+    },
+    {
+      "Name": "Infineon IGW15T120 (Diode)",
+      "Manufacturer": "Infineon",
+      "PartNumber": "IGW15T120",
+      "Comment": "",
+      "ConductionLossesGateDependency": false,
+      "SemiconductorType": "DiodeThermalDataSemiconductorType",
+      "ThermalImpedanceType": "FosterThermalNetworkType",
+      "ConductionLosses": [
+        {
+          "Temperature": 25,
+          "IVSerialized": "[0 0.706466077; 1.5 0.97433232; 3.75 1.153524159; 7.5 1.365090494; 15 1.676778748; 30 2.135970748; 60 2.812471351]"
+        },
+        {
+          "Temperature": 150,
+          "IVSerialized": "[0 0.466530121; 1.5 0.763166327; 3.75 0.985344709; 7.5 1.258437204; 15 1.675279532; 30 2.31153842; 60 3.282709877]"
+        }
+      ],
+      "ConductionLossesGateOff": [],
+      "TurnOnLosses": [
+        {
+          "Temperature": 25,
+          "Voltage": 0,
+          "EISerialized": "[0 0]"
+        }
+      ],
+      "TurnOffLosses": [
+        {
+          "Temperature": 25,
+          "Voltage": -600,
+          "EISerialized": "[0 0; 1.5 9.081E-05; 3.75 0.0001637; 7.5 0.0002556; 15 0.0003991; 30 0.0006232; 60 0.0009731]"
+        },
+        {
+          "Temperature": 25,
+          "Voltage": 0,
+          "EISerialized": "[0 0; 1.5 0; 3.75 0; 7.5 0; 15 0; 30 0; 60 0]"
+        },
+        {
+          "Temperature": 150,
+          "Voltage": -600,
+          "EISerialized": "[0 6.989E-05; 1.5 0.0003168; 3.75 0.0004801; 7.5 0.0006723; 15 0.0009545; 30 0.001369; 60 0.001977]"
+        },
+        {
+          "Temperature": 150,
+          "Voltage": 0,
+          "EISerialized": "[0 0; 1.5 0; 3.75 0; 7.5 0; 15 0; 30 0; 60 0]"
+        }
+      ],
+      "CustomVariables": [],
+      "Constants": [],
+      "Custom1DTables": [],
+      "Custom2DTables": [],
+      "Custom3DTables": [],
+      "ConductionLossComputationMethod": 1,
+      "ConductionLossComputationFormula": null,
+      "ConductionLossComputationMethodGateOff": 1,
+      "ConductionLossComputationFormulaGateOff": "",
+      "TurnOnLossComputationMethod": "LookUpTableComputationMethodType",
+      "TurnOnLossComputationFormula": null,
+      "TurnOffLossComputationMethod": "LookUpTableComputationMethodType",
+      "TurnOffLossComputationFormula": null,
+      "ThermalImpedanceDataSerialized": "[0.36 0.073; 0.477 0.00813; 0.434 0.00109; 0.224 0.000155]",
+      "ID": "499b85e5-18ca-45e8-af55-dab13da9f6ab"
+    }
+  ]
+}
