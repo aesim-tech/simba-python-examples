@@ -1,6 +1,6 @@
 ---
 tags:
-  - Python script
+  - Python Scripts
   - Matlab
 ---
 

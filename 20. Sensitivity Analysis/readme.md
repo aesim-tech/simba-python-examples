@@ -1,8 +1,7 @@
 ---
 tags:
-  - Python Script
-  - Advanced Analysis
-  - Sensitivity Analysis
+  - Python Scripts
+  - Worst Case Analysis
 ---
 
 # Sensitivity Analysis

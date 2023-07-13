@@ -1,7 +1,7 @@
 ---
 tags:
-  - Python script
-  - File Exportation
+  - Python Scripts
+  - File Import Export
 ---
 
 # CSV File Exportation

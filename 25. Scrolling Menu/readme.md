@@ -1,8 +1,9 @@
 ---
 tags:
-  - Python Notebook
-  - Scrolling menu
-  - Thermal data selection
+  - Python Notebooks
+  - Widgets
+  - Python GUI
+  - Thermal
 ---
 
 # Thermal Data Selection using Scrolling Menu
@@ -48,10 +49,10 @@ The structure of the python script is as follows:
 
 * Initialization of the required modules.
 * Make a list of thermal devices available in the folder.
-* Define a scrolling menu by using Select feature of Ipywidgets.
+* Define a scrolling menu by using Select feature of ipywidgets.
 * In this scrolling menu, provide the list of thermal devices.
 * Define the handle function to be performed on selection of item from the scrolling menu.
-* This defined function performs the thermal simualtion with the device selected from scrolling menu.
+* This defined function performs the thermal simulation with the device selected from scrolling menu.
 * Finally, use the interactive feature of Ipywidgets for interactive simulation.
 
 ## Conclusion

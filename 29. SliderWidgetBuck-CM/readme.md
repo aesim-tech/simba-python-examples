@@ -1,9 +1,9 @@
 ---
 tags:
-  - Python Notebook
-  - Slider Widget
-  - Buck Converter Average Current Mode Control
-  - PI-Tuning
+  - Python Notebooks
+  - Widgets
+  - Python GUI
+  - Control Design
 ---
 
 # Buck Converter PI-Tuning using Slider Widget

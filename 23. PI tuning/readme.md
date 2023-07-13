@@ -1,8 +1,7 @@
 ---
 tags:
-  - Python script
-  - PID Controller
-  - Tune parameters
+  - Python Scripts
+  - Control Design
 ---
 
 # PID controller values tuning

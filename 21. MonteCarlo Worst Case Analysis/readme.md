@@ -1,8 +1,7 @@
 ---
 tags:
-  - Python Script
-  - Advanced Analysis
-  - Monte Carlo Worst Case Analysis
+  - Python Scripts
+  - Worst Case Analysis
 ---
 
 # Monte Carlo Worst Case Analysis on RLC Circuit

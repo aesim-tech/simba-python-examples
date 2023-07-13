@@ -1,8 +1,7 @@
 ---
 tags:
-  - Python Script
-  - Advanced Analysis
-  - Fault Analysis
+  - Python Scripts
+  - Worst Case Analysis
 ---
 
 # Fault Analysis
