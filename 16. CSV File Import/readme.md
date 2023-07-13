@@ -1,7 +1,7 @@
 ---
 tags:
-  - Python Script
-  - File Importation
+  - Python Scripts
+  - File Import Export
 ---
 
 # CSV File importation
