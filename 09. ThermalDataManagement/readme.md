@@ -19,6 +19,7 @@ This python script shows an exploration of different powerswitch references thro
 Electrothermal modeling and analysis are key aspects of power converters especially for power semiconductor switches. Thus, SIMBA thermal analysis focuses on thermal loss of power semiconductors.
 
 A power semiconductor switch dissipates losses which can be split into two categories:
+
 * conduction losses: when the power semiconductor conducts a current.
 * switching losses: when the power semiconductor turns on or turns off.
 
