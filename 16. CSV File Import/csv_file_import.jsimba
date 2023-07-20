@@ -1,0 +1,202 @@
+{
+  "Designs": [
+    {
+      "Id": "d31eed75-3290-44af-9fb5-0238f1c7952b",
+      "Name": "Design",
+      "Circuit": {
+        "Id": "fd78fb29-5e7e-4e28-8d58-7cf2c67cab4b",
+        "Devices": [
+          {
+            "LibraryName": "Controlled Current Source",
+            "Top": 10,
+            "Left": 15,
+            "Angle": 180,
+            "HF": false,
+            "VF": false,
+            "Name": "CCS",
+            "ID": "31a028d7-78c6-43dd-ab35-5b5d96b6e6af",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Gain",
+            "Top": 12,
+            "Left": 22,
+            "Angle": 0,
+            "HF": true,
+            "VF": false,
+            "Name": "dcBus-gain",
+            "ID": "e0ea5353-c00e-465c-8a34-b62c03517b97",
+            "Parameters": {
+              "Value": "1 / Udc",
+              "SamplingTime": "none"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Piecewise Linear",
+            "Top": 12,
+            "Left": 41,
+            "Angle": 0,
+            "HF": true,
+            "VF": false,
+            "Name": "DC-power",
+            "ID": "f0fa6d87-955f-4a95-bc09-8755e7843d94",
+            "Parameters": {
+              "TimeValueMatrix": "[0 0; 10m 0; 11m 10; 20m 10; 21m 4; 25m 4]",
+              "SamplingTime": "none"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Gain",
+            "Top": 12,
+            "Left": 35,
+            "Angle": 0,
+            "HF": true,
+            "VF": false,
+            "Name": "Motor Efficiency",
+            "ID": "7b86fab3-9263-4411-bb06-6f8cf385f194",
+            "Parameters": {
+              "Value": "1 / eff_motor",
+              "SamplingTime": "none"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "DC Voltage Source",
+            "Top": 10,
+            "Left": 6,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "dcBus",
+            "ID": "b2ede4d2-fa08-43c7-bc6c-affa1f46618f",
+            "Parameters": {
+              "Voltage": "Udc"
+            },
+            "EnabledScopes": [
+              "Current",
+              "Voltage"
+            ]
+          },
+          {
+            "LibraryName": "Ground",
+            "Top": 18,
+            "Left": 7,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "Ground1",
+            "ID": "3c1da6a4-4681-4722-a271-81cecd8b4e36",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Gain",
+            "Top": 12,
+            "Left": 28,
+            "Angle": 0,
+            "HF": true,
+            "VF": false,
+            "Name": "Inverter Efficiency",
+            "ID": "4693d826-7af2-4b3f-9567-6b9d0841bf6c",
+            "Parameters": {
+              "Value": "1 / eff_inv",
+              "SamplingTime": "none"
+            },
+            "EnabledScopes": []
+          }
+        ],
+        "Connectors": [
+          {
+            "Segments": [
+              {
+                "StartX": 19,
+                "StartY": 14,
+                "EndX": 22,
+                "EndY": 14
+              }
+            ],
+            "Name": "C2"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 39,
+                "StartY": 14,
+                "EndX": 41,
+                "EndY": 14
+              }
+            ],
+            "Name": "C6"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 17,
+                "StartY": 10,
+                "EndX": 8,
+                "EndY": 10
+              }
+            ],
+            "Name": "C3"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 17,
+                "StartY": 18,
+                "EndX": 8,
+                "EndY": 18
+              }
+            ],
+            "Name": "C7"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 35,
+                "StartY": 14,
+                "EndX": 32,
+                "EndY": 14
+              }
+            ],
+            "Name": "C1"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 26,
+                "StartY": 14,
+                "EndX": 28,
+                "EndY": 14
+              }
+            ],
+            "Name": "C4"
+          }
+        ],
+        "Name": "Top Circuit",
+        "Variables": [
+          {
+            "Name": "Udc",
+            "Value": "650"
+          }
+        ]
+      },
+      "TransientAnalysis": {
+        "EndTime": "50m",
+        "FixedTimeStep": false,
+        "StopAtSteadyState": false,
+        "TimeStep": "1u",
+        "BaseFrequencyParameterEnabled": false,
+        "NumberOfBasePeriodsSavedParameterEnabled": false,
+        "BaseFrequency": "60",
+        "NumberOfBasePeriodsSaved": "1"
+      }
+    }
+  ],
+  "Libraries": [],
+  "TestBenches": [],
+  "ThermalData": []
+}
