@@ -28,6 +28,8 @@ Further, to add devices in the circuit, **circuit.AddDevice()** command can be u
 
 Now, to make connections between the elements, **AddConnection()** class must be used. For example, if the positive terminal of dc voltage source is to be connected to the positive terminal of the controlled switch, "circuit.AddConnection(V1.P, SW1.P)" command can be used. Other connections can be completed in the same way.
 
+In this script, a method *print_pin_names* has been written to get the pin names of a component and to help to access to these pins.
+
 ## Run Simulation and Plot Curves
 
 Finally, the simulation can be run using "design.TransientAnalysis.NewJob()" and "job.run()" and curves can be plotted using "plt.plot" commands. 

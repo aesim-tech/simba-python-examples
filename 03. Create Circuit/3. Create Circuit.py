@@ -9,19 +9,32 @@ design.TransientAnalysis.TimeStep = 1e-6
 design.TransientAnalysis.EndTime = 10e-3
 circuit = design.Circuit
 
+#%% Method to print pin names of a component and to help to access to the pins
+def print_pin_names(device):
+    print('\n# Pins of {0} device:'.format(device.Name))
+    for index, pin in enumerate(device.Pins):
+        if pin.Name in dir(device):
+            print("  Pin named {0} direct access: #YourDeviceObject#.{0}".format(pin.Name))
+        else:
+            print("  Pin named {0} access: #YourDeviceObject#.Pins[{1:0}]".format(pin.Name, index))
+
 #%%  Add devices
 V1 = circuit.AddDevice("DC Voltage Source", 2, 6)
 V1.Voltage = 50
+print_pin_names(V1)
 
 SW1 =circuit.AddDevice("Controlled Switch", 8, 4)
+print_pin_names(SW1)
 
 PWM = circuit.AddDevice("Square Wave", 2, 0)
 PWM.Frequency = 5000
 PWM.DutyCycle = 0.5
 PWM.Amplitude = 1
+print_pin_names(PWM)
 
 D1 = circuit.AddDevice("Diode", 16, 9)
 D1.RotateLeft()
+print_pin_names(D1)
 
 L1 = circuit.AddDevice("Inductor", 20, 5)
 L1.Value = 1E-3
