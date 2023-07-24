@@ -2,14 +2,8 @@
 from aesim.simba import Design
 import matplotlib.pyplot as plt
 
-#%%  Create Design
-design = Design()
-design.Name = "DC/DC - Buck Converter"
-design.TransientAnalysis.TimeStep = 1e-6
-design.TransientAnalysis.EndTime = 10e-3
-circuit = design.Circuit
-
-#%% Method to print pin names of a component and to help to access to the pins
+# Method for printing device pin names.
+# This allows the user to see how the device pins can be used in the code. 
 def print_pin_names(device):
     print('\n# Pins of {0} device:'.format(device.Name))
     for index, pin in enumerate(device.Pins):
@@ -17,6 +11,14 @@ def print_pin_names(device):
             print("  Pin named {0} direct access: #YourDeviceObject#.{0}".format(pin.Name))
         else:
             print("  Pin named {0} access: #YourDeviceObject#.Pins[{1:0}]".format(pin.Name, index))
+
+
+#%%  Create Design
+design = Design()
+design.Name = "DC/DC - Buck Converter"
+design.TransientAnalysis.TimeStep = 1e-6
+design.TransientAnalysis.EndTime = 10e-3
+circuit = design.Circuit
 
 #%%  Add devices
 V1 = circuit.AddDevice("DC Voltage Source", 2, 6)
