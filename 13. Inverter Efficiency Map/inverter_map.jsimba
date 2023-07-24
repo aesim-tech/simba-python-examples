@@ -115,7 +115,8 @@
             "Name": "CP1",
             "ID": "78bc161e-85b5-4e7c-bd5f-d4b459984221",
             "Parameters": {
-              "Gain": "1"
+              "Gain": "1",
+              "SamplingTime": "none"
             },
             "EnabledScopes": []
           },
@@ -129,7 +130,8 @@
             "Name": "CP2",
             "ID": "850bf7a0-723a-4054-b2ae-135642ca4a8d",
             "Parameters": {
-              "Gain": "1"
+              "Gain": "1",
+              "SamplingTime": "none"
             },
             "EnabledScopes": []
           },
@@ -143,7 +145,8 @@
             "Name": "V1",
             "ID": "f46bd593-4a1b-4e05-bdef-60dd31cb910d",
             "Parameters": {
-              "Gain": "1"
+              "Gain": "1",
+              "SamplingTime": "none"
             },
             "EnabledScopes": [
               "Voltage"
@@ -227,7 +230,8 @@
             "Name": "speed_rpm",
             "ID": "66f5d877-be5e-45f0-9179-4858a933c665",
             "Parameters": {
-              "Value": "9.5493"
+              "Value": "9.5493",
+              "SamplingTime": "none"
             },
             "EnabledScopes": [
               "Out"
@@ -309,7 +313,8 @@
             "Name": "CP3",
             "ID": "38efd693-4bea-4917-9eb2-23bf083d8fb5",
             "Parameters": {
-              "Gain": "1"
+              "Gain": "1",
+              "SamplingTime": "none"
             },
             "EnabledScopes": []
           },
@@ -323,7 +328,8 @@
             "Name": "",
             "ID": "e7096b20-4fef-4d73-8b9f-942d8974c1c0",
             "Parameters": {
-              "Gain": "1"
+              "Gain": "1",
+              "SamplingTime": "none"
             },
             "EnabledScopes": []
           },
@@ -337,7 +343,8 @@
             "Name": "",
             "ID": "34c1f1c3-e7b4-40ab-bbdd-a67f03c099da",
             "Parameters": {
-              "Gain": "1"
+              "Gain": "1",
+              "SamplingTime": "none"
             },
             "EnabledScopes": []
           },
@@ -399,7 +406,8 @@
             "Name": "Id_ref",
             "ID": "b5830b56-8603-4f46-88e2-77cefc8086b0",
             "Parameters": {
-              "Value": "0.0"
+              "Value": "0.0",
+              "SamplingTime": "none"
             },
             "EnabledScopes": [
               "Out"
@@ -415,7 +423,8 @@
             "Name": "Iq_ref",
             "ID": "dccf01a4-8c43-471e-bad6-38fbf2e9c7d1",
             "Parameters": {
-              "Value": "5.0"
+              "Value": "5.0",
+              "SamplingTime": "none"
             },
             "EnabledScopes": [
               "Out"
@@ -446,7 +455,8 @@
                   "ID": "fae2b462-a644-45ae-9c07-c1ab4d894988",
                   "Parameters": {
                     "NumberOfInputs": "2",
-                    "Gains": "[1 -1]"
+                    "Gains": "[1 -1]",
+                    "SamplingTime": "none"
                   },
                   "EnabledScopes": [
                     "inputs[0]",
@@ -465,7 +475,8 @@
                   "Parameters": {
                     "Kp": "10",
                     "Kd": "0",
-                    "Ki": "4100"
+                    "Ki": "4100",
+                    "SamplingTime": "none"
                   },
                   "EnabledScopes": [
                     "Out"
@@ -482,7 +493,8 @@
                   "ID": "2ff72e1e-973b-44e5-8e75-9a4a117adc1f",
                   "Parameters": {
                     "NumberOfInputs": "2",
-                    "Gains": "[1 -1]"
+                    "Gains": "[1 -1]",
+                    "SamplingTime": "none"
                   },
                   "EnabledScopes": []
                 },
@@ -532,7 +544,8 @@
                   "Name": "Lq",
                   "ID": "0e416b1c-c37b-4345-b240-dc047be572a3",
                   "Parameters": {
-                    "Value": "6e-3"
+                    "Value": "6e-3",
+                    "SamplingTime": "none"
                   },
                   "EnabledScopes": [
                     "Out"
@@ -560,7 +573,8 @@
                   "Name": "Num pole pairs",
                   "ID": "3266c07d-13c8-4723-a179-dee0bc09699c",
                   "Parameters": {
-                    "Value": "5"
+                    "Value": "5",
+                    "SamplingTime": "none"
                   },
                   "EnabledScopes": []
                 },
@@ -573,7 +587,9 @@
                   "VF": false,
                   "Name": "Product1",
                   "ID": "00dcb544-78bd-40b8-875c-7af9cafab4a6",
-                  "Parameters": {},
+                  "Parameters": {
+                    "SamplingTime": "none"
+                  },
                   "EnabledScopes": []
                 },
                 {
@@ -585,7 +601,9 @@
                   "VF": false,
                   "Name": "Product2",
                   "ID": "ecf40e34-618b-419c-8375-3e415aa90f3e",
-                  "Parameters": {},
+                  "Parameters": {
+                    "SamplingTime": "none"
+                  },
                   "EnabledScopes": []
                 },
                 {
@@ -797,7 +815,8 @@
                   "ID": "2d1ed623-6b58-4f86-b764-c96bc52ea8ac",
                   "Parameters": {
                     "NumberOfInputs": "2",
-                    "Gains": "[1 -1]"
+                    "Gains": "[1 -1]",
+                    "SamplingTime": "none"
                   },
                   "EnabledScopes": [
                     "inputs[0]",
@@ -816,7 +835,8 @@
                   "Parameters": {
                     "Kp": "10",
                     "Kd": "0",
-                    "Ki": "4100"
+                    "Ki": "4100",
+                    "SamplingTime": "none"
                   },
                   "EnabledScopes": [
                     "Out"
@@ -831,7 +851,9 @@
                   "VF": false,
                   "Name": "Product2",
                   "ID": "ffdf4c54-551d-4c8f-a5e3-b0345cc23501",
-                  "Parameters": {},
+                  "Parameters": {
+                    "SamplingTime": "none"
+                  },
                   "EnabledScopes": []
                 },
                 {
@@ -844,7 +866,8 @@
                   "Name": "G1",
                   "ID": "6a3ccdfb-30bc-44ed-bd81-cf1b136d0282",
                   "Parameters": {
-                    "Value": "5"
+                    "Value": "5",
+                    "SamplingTime": "none"
                   },
                   "EnabledScopes": []
                 },
@@ -859,7 +882,8 @@
                   "ID": "ac31a79d-e5fb-40a5-8d9e-6f2e2f86b8ef",
                   "Parameters": {
                     "NumberOfInputs": "2",
-                    "Gains": "[1 1]"
+                    "Gains": "[1 1]",
+                    "SamplingTime": "none"
                   },
                   "EnabledScopes": []
                 },
@@ -920,7 +944,9 @@
                   "VF": false,
                   "Name": "Product1",
                   "ID": "815c2582-85ed-4eb0-86bd-d8ec52869c78",
-                  "Parameters": {},
+                  "Parameters": {
+                    "SamplingTime": "none"
+                  },
                   "EnabledScopes": []
                 },
                 {
@@ -933,23 +959,12 @@
                   "Name": "PM Flux",
                   "ID": "0eef2eec-dd15-48e4-bf5c-98573e0ed2e0",
                   "Parameters": {
-                    "Value": "0.0241"
+                    "Value": "0.0241",
+                    "SamplingTime": "none"
                   },
                   "EnabledScopes": [
                     "Out"
                   ]
-                },
-                {
-                  "LibraryName": "Product",
-                  "Top": 3,
-                  "Left": 10,
-                  "Angle": 0,
-                  "HF": false,
-                  "VF": false,
-                  "Name": "Product3",
-                  "ID": "3dab3b23-0a0d-488c-88dd-8ee8ec8b728e",
-                  "Parameters": {},
-                  "EnabledScopes": []
                 },
                 {
                   "LibraryName": "Constant",
@@ -961,7 +976,8 @@
                   "Name": "Ld",
                   "ID": "81274a91-40d1-4bc7-804a-09a20765392b",
                   "Parameters": {
-                    "Value": "6e-3"
+                    "Value": "6e-3",
+                    "SamplingTime": "none"
                   },
                   "EnabledScopes": [
                     "Out"
@@ -977,6 +993,22 @@
                   "Name": "Id_measured",
                   "ID": "4d7249dc-f071-4371-84a8-38e11294a385",
                   "Parameters": {},
+                  "EnabledScopes": []
+                },
+                {
+                  "LibraryName": "Sum",
+                  "Top": 3,
+                  "Left": 10,
+                  "Angle": 0,
+                  "HF": false,
+                  "VF": false,
+                  "Name": "SUM3",
+                  "ID": "771a2bc0-aee8-45c2-a48e-d384b49b9d08",
+                  "Parameters": {
+                    "NumberOfInputs": "2",
+                    "Gains": "[1 1]",
+                    "SamplingTime": "none"
+                  },
                   "EnabledScopes": []
                 }
               ],
@@ -1225,7 +1257,8 @@
             "Name": "C1",
             "ID": "24cbdbeb-9c3e-4919-a188-53d2e859e958",
             "Parameters": {
-              "Value": "0"
+              "Value": "0",
+              "SamplingTime": "none"
             },
             "EnabledScopes": []
           },
@@ -1238,7 +1271,9 @@
             "VF": false,
             "Name": "Reference voltage (Inv Park 1)",
             "ID": "84a4782e-6c11-4feb-b438-efef65b6a2a6",
-            "Parameters": {},
+            "Parameters": {
+              "SamplingTime": "none"
+            },
             "EnabledScopes": [
               "D",
               "Q",
@@ -1256,7 +1291,9 @@
             "VF": false,
             "Name": "I_measured",
             "ID": "b3ca758b-91bb-46ac-8eea-8752ddaa7321",
-            "Parameters": {},
+            "Parameters": {
+              "SamplingTime": "none"
+            },
             "EnabledScopes": [
               "A",
               "B",
@@ -1279,7 +1316,8 @@
               "Frequency": "20000",
               "DutyCycle": "0",
               "Offset": "-1",
-              "PhaseShift": "0"
+              "PhaseShift": "0",
+              "SamplingTime": "none"
             },
             "EnabledScopes": []
           },
@@ -1293,7 +1331,8 @@
             "Name": "Normalized1",
             "ID": "8a021b51-fd72-4d5c-b9ee-537abd593a2f",
             "Parameters": {
-              "Value": "vnorm"
+              "Value": "vnorm",
+              "SamplingTime": "none"
             },
             "EnabledScopes": []
           },
@@ -1307,7 +1346,8 @@
             "Name": "Normalized2",
             "ID": "4813d52b-37dc-43dc-9429-572a404e5fc0",
             "Parameters": {
-              "Value": "vnorm"
+              "Value": "vnorm",
+              "SamplingTime": "none"
             },
             "EnabledScopes": []
           },
@@ -1321,7 +1361,8 @@
             "Name": "Normalized3",
             "ID": "a0539c27-242a-47e4-8cdc-4d5940b9578c",
             "Parameters": {
-              "Value": "vnorm"
+              "Value": "vnorm",
+              "SamplingTime": "none"
             },
             "EnabledScopes": []
           },
@@ -1334,7 +1375,9 @@
             "VF": false,
             "Name": "COMP1",
             "ID": "9f274a00-eb00-43ba-b008-78303e49588f",
-            "Parameters": {},
+            "Parameters": {
+              "SamplingTime": "none"
+            },
             "EnabledScopes": [
               "Input 1",
               "Input 2",
@@ -1350,7 +1393,9 @@
             "VF": true,
             "Name": "NOT1",
             "ID": "c324b83a-49d0-4138-b9b3-b7ebc745190a",
-            "Parameters": {},
+            "Parameters": {
+              "SamplingTime": "none"
+            },
             "EnabledScopes": []
           },
           {
@@ -1362,7 +1407,9 @@
             "VF": false,
             "Name": "COMP2",
             "ID": "80ae5b23-5ab4-4cc6-8ab7-56b38b666a3d",
-            "Parameters": {},
+            "Parameters": {
+              "SamplingTime": "none"
+            },
             "EnabledScopes": []
           },
           {
@@ -1374,7 +1421,9 @@
             "VF": true,
             "Name": "NOT2",
             "ID": "1e28a1a2-6e2f-4db3-843e-6b3dd7ae4b55",
-            "Parameters": {},
+            "Parameters": {
+              "SamplingTime": "none"
+            },
             "EnabledScopes": []
           },
           {
@@ -1386,7 +1435,9 @@
             "VF": false,
             "Name": "COMP3",
             "ID": "d2100a98-9246-416c-8751-55d55f5dd064",
-            "Parameters": {},
+            "Parameters": {
+              "SamplingTime": "none"
+            },
             "EnabledScopes": []
           },
           {
@@ -1398,7 +1449,9 @@
             "VF": true,
             "Name": "NOT3",
             "ID": "ed7e0734-a5a8-4945-bbf5-045b6d05899a",
-            "Parameters": {},
+            "Parameters": {
+              "SamplingTime": "none"
+            },
             "EnabledScopes": []
           },
           {
@@ -1424,7 +1477,9 @@
                   "VF": false,
                   "Name": "",
                   "ID": "1ddba302-07b1-41dc-80f4-69b96d183477",
-                  "Parameters": {},
+                  "Parameters": {
+                    "SamplingTime": "none"
+                  },
                   "EnabledScopes": []
                 },
                 {
@@ -1438,7 +1493,8 @@
                   "ID": "6949b1ba-c01e-4961-9e5c-ddac11dc1b9b",
                   "Parameters": {
                     "K": "1",
-                    "Tau": "0.05"
+                    "Tau": "0.05",
+                    "SamplingTime": "none"
                   },
                   "EnabledScopes": [
                     "Out"
@@ -2494,6 +2550,7 @@
       "Manufacturer": "Wolfspeed",
       "PartNumber": "C2M0025120D",
       "Comment": "",
+      "ConductionLossesGateDependency": false,
       "SemiconductorType": "MosfetThermalDataSemiconductorType",
       "ThermalImpedanceType": "CauerThermalNetworkType",
       "ConductionLosses": [
@@ -2518,6 +2575,7 @@
           "IVSerialized": "[-99.77 -6.611; -39.05 -2.656; -14.92 -1.022; -5.329 -0.3765; -1.516 -0.12; 0 0; 1.727 0.1488; 6.438 0.4853; 19.28 1.403; 54.32 4.385; 149.9 17.79]"
         }
       ],
+      "ConductionLossesGateOff": [],
       "TurnOnLosses": [
         {
           "Temperature": -55,
@@ -2729,11 +2787,14 @@
           "Description": "External gate resistance"
         }
       ],
+      "Constants": [],
       "Custom1DTables": [],
       "Custom2DTables": [],
       "Custom3DTables": [],
       "ConductionLossComputationMethod": 1,
       "ConductionLossComputationFormula": null,
+      "ConductionLossComputationMethodGateOff": 1,
+      "ConductionLossComputationFormulaGateOff": "",
       "TurnOnLossComputationMethod": "FormulaAndLookUpTableComputationMethodType",
       "TurnOnLossComputationFormula": "E/(5.3e-5*6.8\u002B1.167e-3)*(5.3e-5*Rg\u002B1.167e-3)",
       "TurnOffLossComputationMethod": "FormulaAndLookUpTableComputationMethodType",
