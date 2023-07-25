@@ -1,0 +1,156 @@
+{
+  "Designs": [
+    {
+      "Id": "adcec673-3a16-4ac2-8a74-a707b52e6317",
+      "Name": "Design1",
+      "Circuit": {
+        "Id": "216f4853-c981-4fb4-baf5-1edd2c727dba",
+        "Devices": [
+          {
+            "LibraryName": "Ground",
+            "Top": 20,
+            "Left": 22,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "Ground1",
+            "ID": "887c3501-9e48-4f37-bfbc-1b46a11c6fd3",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Resistor",
+            "Top": 12,
+            "Left": 27,
+            "Angle": 90,
+            "HF": false,
+            "VF": false,
+            "Name": "R2",
+            "ID": "c64f20dd-8915-4361-8389-4e0625807a0b",
+            "Parameters": {
+              "Value": "3"
+            },
+            "EnabledScopes": [
+              "Voltage",
+              "Current"
+            ]
+          },
+          {
+            "LibraryName": "DC Voltage Source",
+            "Top": 9,
+            "Left": 14,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "DC1",
+            "ID": "da0e1a06-d8ce-4a0d-a9e1-c402688e49d2",
+            "Parameters": {
+              "Voltage": "1"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Resistor",
+            "Top": 7,
+            "Left": 20,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "R1",
+            "ID": "a60dcb84-b269-40c9-8b3b-857cb68d2888",
+            "Parameters": {
+              "Value": "3.7"
+            },
+            "EnabledScopes": []
+          }
+        ],
+        "Connectors": [
+          {
+            "Segments": [
+              {
+                "StartX": 30,
+                "StartY": 16,
+                "EndX": 30,
+                "EndY": 18
+              },
+              {
+                "StartX": 23,
+                "StartY": 18,
+                "EndX": 23,
+                "EndY": 20
+              },
+              {
+                "StartX": 16,
+                "StartY": 17,
+                "EndX": 16,
+                "EndY": 18
+              },
+              {
+                "StartX": 16,
+                "StartY": 18,
+                "EndX": 23,
+                "EndY": 18
+              },
+              {
+                "StartX": 23,
+                "StartY": 18,
+                "EndX": 30,
+                "EndY": 18
+              }
+            ],
+            "Name": "C4"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 30,
+                "StartY": 10,
+                "EndX": 30,
+                "EndY": 8
+              },
+              {
+                "StartX": 30,
+                "StartY": 8,
+                "EndX": 26,
+                "EndY": 8
+              }
+            ],
+            "Name": "C3"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 20,
+                "StartY": 8,
+                "EndX": 16,
+                "EndY": 8
+              },
+              {
+                "StartX": 16,
+                "StartY": 9,
+                "EndX": 16,
+                "EndY": 8
+              }
+            ],
+            "Name": "C2"
+          }
+        ],
+        "Name": "Top Circuit",
+        "Variables": []
+      },
+      "TransientAnalysis": {
+        "EndTime": "0.05",
+        "FixedTimeStep": false,
+        "StopAtSteadyState": false,
+        "TimeStep": "1E-06",
+        "BaseFrequencyParameterEnabled": false,
+        "NumberOfBasePeriodsSavedParameterEnabled": false,
+        "BaseFrequency": "60",
+        "NumberOfBasePeriodsSaved": "1"
+      }
+    }
+  ],
+  "Libraries": [],
+  "TestBenches": [],
+  "ThermalData": []
+}
