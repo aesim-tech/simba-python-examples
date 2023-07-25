@@ -1,7 +1,7 @@
 ---
 tags:
   - Python GUI
-  - Pseudo Real-Time Simulation
+  - Interactive simulation
 ---
 
 # Pseudo real-time simulation of DC grids

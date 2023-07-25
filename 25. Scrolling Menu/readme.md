@@ -1,7 +1,6 @@
 ---
 tags:
   - Python Notebooks
-  - Widgets
   - Python GUI
   - Thermal
 ---
