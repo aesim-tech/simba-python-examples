@@ -2,7 +2,7 @@
 tags:
   - Python Scripts
   - DC-DC
-  - Python Basics
+  - Basics
 ---
 
 # Create a Simple Circuit, Save and Open using Simba Python Library

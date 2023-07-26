@@ -2,7 +2,7 @@
 tags:
   - Python Scripts
   - DC-DC
-  - Python Basics
+  - Basics
 ---
 
 # Perform a Parameter Sweep with Simba Python Library
