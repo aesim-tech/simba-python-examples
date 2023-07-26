@@ -1,6 +1,6 @@
 ---
 tags:
-  - Python Scripts
+  - Python
 ---
 
 # Data visualization: Use of Bokeh for interactive plots of waveforms and XY graphs

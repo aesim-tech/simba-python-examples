@@ -1,6 +1,6 @@
 ---
 tags:
-  - Python Scripts
+  - Python
   - Power Supplies
   - Parameter Sweep
   - Converter Design

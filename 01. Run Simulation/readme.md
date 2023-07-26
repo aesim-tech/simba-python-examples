@@ -1,6 +1,6 @@
 ---
 tags:
-  - Python Scripts
+  - Python
   - DC-DC
   - Basics
 ---

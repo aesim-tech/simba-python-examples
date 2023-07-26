@@ -1,6 +1,6 @@
 ---
 tags:
-  - Python Scripts
+  - Python
   - DC-AC
   - Parameter Sweep
 ---

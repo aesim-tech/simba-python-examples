@@ -1,6 +1,6 @@
 ---
 tags:
-  - Python Notebooks
+  - Python
   - File Import Export
 ---
 
