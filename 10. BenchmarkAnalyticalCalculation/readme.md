@@ -1,6 +1,6 @@
 ---
 tags:
-  - Python Notebooks
+  - Python
   - Benchmark
 ---
 

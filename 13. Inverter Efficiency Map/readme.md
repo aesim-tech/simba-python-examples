@@ -1,6 +1,6 @@
 ---
 tags:
-  - Python Scripts
+  - Python
   - Motor Drives
   - Parameter Sweep
   - Thermal

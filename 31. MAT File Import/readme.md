@@ -1,6 +1,6 @@
 ---
 tags:
-  - Python Scripts
+  - Python
   - File Import Export
   - Matlab
 ---

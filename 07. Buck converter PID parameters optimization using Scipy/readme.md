@@ -1,6 +1,6 @@
 ---
 tags:
-  - Python Notebooks
+  - Python
   - DC-DC
   - Optimization
   - Control Design
