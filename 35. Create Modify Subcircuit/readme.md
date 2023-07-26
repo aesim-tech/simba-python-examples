@@ -1,7 +1,7 @@
 ---
 tags:
   - Python Script
-  - Python Basics
+  - Basics
 ---
 
 # How to create, enter and modify a subcircuit ?

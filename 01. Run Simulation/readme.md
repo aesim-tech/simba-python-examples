@@ -2,7 +2,7 @@
 tags:
   - Python Scripts
   - DC-DC
-  - Python Basics
+  - Basics
 ---
 
 # Run a simulation with Simba Python Library

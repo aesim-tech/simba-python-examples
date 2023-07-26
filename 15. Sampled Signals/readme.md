@@ -1,7 +1,7 @@
 ---
 tags:
   - Python Scripts
-  - Python Basics
+  - Basics
 ---
 
 # Read and use sampled signals (Multi Time-Steps Solver)

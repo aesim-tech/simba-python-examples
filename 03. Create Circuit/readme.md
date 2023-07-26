@@ -2,7 +2,7 @@
 tags:
   - Python Scripts
   - DC-DC
-  - Python Basics
+  - Basics
 ---
 
 # Create a circuit in Python using SIMBA Python Library
