@@ -1,6 +1,6 @@
 ---
 tags:
-  - Python Script
+  - Python
   - Interactive simulation
 ---
 
