@@ -6,7 +6,7 @@ tags:
 
 # Interactive simulation with Duty Cycle modification
 
-[Download **Python Notebook**](pseudo_real_time_simulation.ipynb)
+[Download **Python Notebook**](interactive_simulation_dutycycle_modification.ipynb)
 
 
 This python script example helps to understand how to change the value of a parameter during the simulation interactively (pseudo real time).
