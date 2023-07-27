@@ -64,10 +64,10 @@ The pole-zero maps can also be plotted to evalute the evolution of the imaginary
 ``` py
 control.pzmap(tf, plot=True, grid=False, title='Pole Zero Map xi = ' + str(xi))
 ```
+![pole zero 07](fig/pole_zero_xi07.png)
 
-<img src="pole_zero_xi07.png" alt="drawing" width="520">
+![pole zero 14](fig/pole_zero_xi14.png)
 
-<img src="pole_zero_xi14.png" alt="drawing" width="450">
 
 The behavior of the switching leg with this continuous controller is checked with real waveforms thanks to **Simba** simulations:
 
