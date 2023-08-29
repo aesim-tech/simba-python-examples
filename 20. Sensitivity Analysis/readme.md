@@ -15,8 +15,8 @@ The sensitivity analysis is used to determine how sensitive a specified design p
 A performance measurement is in reality a single numeric characteristic of the circuit (risetime, overshoot, bandwidth...)
 
 This analysis requires :
-* a parameter list which specifies the design parameters to be perturbed (varied)
 
+* a parameter list which specifies the design parameters to be perturbed (varied)
 * to specify which analyses/measures to use after each perturbation
 
 To sum up:

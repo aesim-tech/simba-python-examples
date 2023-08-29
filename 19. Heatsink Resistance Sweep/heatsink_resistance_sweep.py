@@ -57,7 +57,7 @@ def plot_bar(Tab1 = [],
 
 #%% Load project and Heat Sink Resistance
 script_folder = os.path.realpath(os.path.dirname(__file__))
-file_path = os.path.join(script_folder, "thermal_buck_4pythonexp.jsimba")
+file_path = os.path.join(script_folder, "thermal_buck_Rth_4pythonexp.jsimba")
 project = ProjectRepository(file_path)
 design = project.GetDesignByName('Design')
 # design = DesignExamples.Buck_Thermal()
