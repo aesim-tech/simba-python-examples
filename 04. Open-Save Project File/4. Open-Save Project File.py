@@ -42,7 +42,8 @@ circuit.AddConnection(C1.N, g.Pin)
 circuit.AddConnection(R1.N, g.Pin)
 
 #%%  Save Design in Project File
-filepath = os.path.join(pathlib.Path().absolute(), "Buck Converter.jsimba")
+current_folder = os.path.dirname(os.path.abspath(__file__))
+filepath = os.path.join(current_folder, "Buck Converter.jsimba")
 if(os.path.isfile(filepath)): os.remove(filepath) # Remove file if it already exists
 project = ProjectRepository(filepath) # Create project file if it doesn't exist.
 project.AddDesign(design)
@@ -66,5 +67,6 @@ ax.set_title(design.Name)
 ax.set_ylabel('Vout (V)')
 ax.set_xlabel('time (s)')
 ax.plot(t,Vout)
+plt.show()
 
 # %%

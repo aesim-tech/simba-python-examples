@@ -85,3 +85,4 @@ if __name__ == "__main__":  # Called only in main thread.
     ax.plot(duty_cycles, calculated_voltages)
     path = "buck_boost_parametric_sweep_" + datetime.now().strftime("%Y%m%d_%H:%M:%S") + ".png"
     fig.savefig(path)
+    plt.show()

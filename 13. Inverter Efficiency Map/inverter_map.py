@@ -60,7 +60,8 @@ def run_simulation(id_ref, iq_ref, speed_ref, case_temperature, Rg, sim_number, 
 
     # Read the jsimba file
     with lock:
-        project = ProjectRepository(os.path.join(os.getcwd() , "inverter_map.jsimba"))
+        current_folder = os.path.dirname(os.path.abspath(__file__))
+        project = ProjectRepository(os.path.join(current_folder , "inverter_map.jsimba"))
     
     simba_full_design = project.GetDesignByName('Full Design')
 

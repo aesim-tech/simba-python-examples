@@ -4,14 +4,15 @@ import matplotlib.pyplot as plt
 import os
 
 # Load SIMBA project
-file_path = os.path.join(os.getcwd(), "DAB.jsimba")
+script_folder = os.path.dirname(os.path.abspath(__file__))
+file_path = os.path.join(script_folder, "DAB.jsimba")
 project = JsonProjectRepository(file_path)
 DAB = project.GetDesignByName('DAB')
 
 # Get the job object and solve the system
 job = DAB.TransientAnalysis.NewJob()
 status = job.Run()
-if status != 'OK':
+if str(status) != 'OK':
     print(job.Summary())
 
 # Get results
@@ -32,8 +33,5 @@ ax.set_ylabel('Vout (V)')
 ax.set_xlabel('time (s)')
 ax.plot(t,Vout)
 ax.legend(["R2 voltage"])
-
-
 fig.tight_layout()
-
 plt.show()

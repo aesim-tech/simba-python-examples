@@ -80,5 +80,5 @@ ax.set_title(design.Name)
 ax.set_ylabel('Vout (V)')
 ax.set_xlabel('time (s)')
 ax.plot(t,Vout)
-
+plt.show()
 # %%

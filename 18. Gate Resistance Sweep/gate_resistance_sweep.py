@@ -103,4 +103,5 @@ plot_bar(Tab1 = junction_temps,
         ylabel='Junction temperatures (°)',
         mxticks = 32,
         FigAxe = ax2)
+plt.show()
 # %%

@@ -5,7 +5,8 @@ import os
 import numpy as np
 
 # Load SIMBA project
-file_path = os.path.join(os.getcwd(), "DC-DC_Average-current_mode_control.jsimba")
+script_folder = os.path.realpath(os.path.dirname(__file__))
+file_path = os.path.join(script_folder, "DC-DC_Average-current_mode_control.jsimba")
 project = JsonProjectRepository(file_path)
 Average_Current_Mode_Control = project.GetDesignByName('Average Current Mode Control')
 
@@ -33,7 +34,8 @@ for kp in kp_c:   # Kp loop
     # Run calculation
     job = Average_Current_Mode_Control.TransientAnalysis.NewJob()
     status = job.Run()
-    print(job.Summary())
+    if str(status) != 'OK':
+        print(job.Summary())
     
     axis_indice = f"{numrows}{numcols}{count+1}"   # axis definition
     ax1 = fig.add_subplot(numrows, numcols, count+1)
@@ -46,7 +48,8 @@ for kp in kp_c:   # Kp loop
         # Run calculation
         job = Average_Current_Mode_Control.TransientAnalysis.NewJob()
         status = job.Run()
-        print(job.Summary())
+        if str(status) != 'OK':
+            print(job.Summary())
     
         # Retrieve results
         t = np.array(job.TimePoints)

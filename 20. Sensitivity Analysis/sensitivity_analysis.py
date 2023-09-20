@@ -9,7 +9,7 @@ import copy
 #%%  Methods
 def run_single_analysis(design, param, analysis_name, overshoot):
     """
-    run Simba simulation of the circuit and store overshoot result in a dictionnary whose key is the analysis name
+    run Simba simulation of the circuit and store overshoot result in a dictionnary with the analysis name as the key.
 
     :param: Simba circuit
     :param: dictionnary of circuit parameters

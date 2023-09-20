@@ -111,4 +111,5 @@ plot_bar(Tab1 = junction_temps,
 # Save figure
 path= script_folder + "/igbt_ref_parametric_sweep_"+datetime.now().strftime("%m%d%Y%H%M%S")+".png"
 fig.savefig(path)
+plt.show()
 # %%
