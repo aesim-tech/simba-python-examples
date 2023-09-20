@@ -19,5 +19,6 @@ ax.set_title(flybackConverter.Name)
 ax.set_ylabel('Vout (V)')
 ax.set_xlabel('time (s)')
 ax.plot(t,Vout)
+plt.show()
 
 # %%
