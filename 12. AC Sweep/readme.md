@@ -9,7 +9,7 @@ tags:
 
 [Download **python notebook**](ACSweepExamples.ipynb)
 
-[Download **Simba model**](ACSweepTest.simba)
+[Download **Simba model**](ACSweepTest.jsimba)
 
 The examples show the validation of AC sweep analysis with analytical equations derived from the book [Transfer Functions of Switching Converters](https://stairwaypress.com/product/transfer-functions-of-switching-converters/) by Christophe P. Basso.
 
