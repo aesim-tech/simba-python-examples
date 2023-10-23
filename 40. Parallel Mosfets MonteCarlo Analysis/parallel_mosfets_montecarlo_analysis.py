@@ -1,4 +1,4 @@
-#%% Load modules
+# Load modules
 import os
 import random
 import multiprocessing
@@ -13,7 +13,7 @@ import pandas as pd
 #         PARAMETERS        #
 #############################
 
-iterations = range(500)
+iterations = range(1000)
 param = {
         'Rdson11' : {'nominal': 60e-3, 'tolerance': 0.1},
         'Rdson12' : {'nominal': 60e-3, 'tolerance': 0.1},
@@ -104,47 +104,3 @@ if __name__ == "__main__": # Called only in main thread. It confirms that the co
     script_folder = os.path.realpath(os.path.dirname(__file__))
     filename = "montecarlo_parallel_mosfets_" + datetime.now().strftime("%Y-%m-%d")
     df.to_pickle(os.path.join(script_folder, filename + ".pkl"))
-    
-    # Plot figures 
-    fig = plt.figure(figsize = (16, 9))
-
-    ax1 = fig.add_subplot(241)
-    plot1 = ax1.plot(iterations, res['Losses11'], linestyle='', color='green', marker='o', markerfacecolor='blue')
-    ax1.set_xlabel('iteration', fontsize = 9)
-    ax1.set_ylabel('Losses', fontsize = 9)
-    ax1.set_title("Losses T11", fontsize = 9)
-
-    ax2 = fig.add_subplot(242)
-    plot1 = ax2.plot(iterations, res['Losses12'], linestyle='', color='red', marker='o', markerfacecolor='purple')
-    ax2.set_xlabel("iteration", fontsize = 9)
-    ax2.set_ylabel("Losses", fontsize = 9)
-    ax2.set_title("Losses T12", fontsize = 9)
-
-    ax3 = fig.add_subplot(245)
-    plot1 = ax3.plot(res['Rdson11'], res['Losses11'], linestyle='', color='red', marker='o', markerfacecolor='purple')
-    ax3.set_xlabel("Rdson", fontsize = 9)
-    ax3.set_ylabel("Losses", fontsize = 9)
-    ax3.set_title("Losses T11 vs Rdson 11", fontsize = 9)
-
-    ax4 = fig.add_subplot(246)
-    plot1 = ax4.plot(res['Rdson12'], res['Losses11'], linestyle='', color='red', marker='o', markerfacecolor='purple')
-    ax4.set_xlabel("Rdson", fontsize = 9)
-    ax4.set_ylabel("Losses", fontsize = 9)
-    ax4.set_title("Losses T12 vs Rdson 11", fontsize = 9)
-
-    ax5 = fig.add_subplot(247)
-    plot1 = ax5.plot(res['Rdson12'], res['Losses11'], linestyle='', color='red', marker='o', markerfacecolor='purple')
-    ax5.set_xlabel("Rdson", fontsize = 9)
-    ax5.set_ylabel("Losses", fontsize = 9)
-    ax5.set_title("Losses T11 vs Rdson 12", fontsize = 9)
-
-    ax6 = fig.add_subplot(248)
-    plot1 = ax6.plot(res['Rdson12'], res['Losses12'], linestyle='', color='red', marker='o', markerfacecolor='purple')
-    ax6.set_xlabel("Rdson", fontsize = 9)
-    ax6.set_ylabel("Losses", fontsize = 9)
-    ax6.set_title("Losses T12 vs Rdson 12", fontsize = 9)
-
-    fig.tight_layout(pad = 2)
-    fig.savefig(os.path.join(script_folder, filename + ".png"))
-    plt.show()
-    
