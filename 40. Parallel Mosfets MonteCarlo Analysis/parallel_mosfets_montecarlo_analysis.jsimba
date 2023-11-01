@@ -100,6 +100,7 @@
             ],
             "ThermalDataID": "ddd06ec7-3701-44f9-92db-b19614c6def2",
             "LossCalculationFrequency": "fsw",
+            "InitialTemperature": "100",
             "CustomVariables": [
               {
                 "Name": "Rgon",
@@ -130,6 +131,7 @@
             "EnabledScopes": [],
             "ThermalDataID": "ddd06ec7-3701-44f9-92db-b19614c6def2",
             "LossCalculationFrequency": "fsw",
+            "InitialTemperature": "100",
             "CustomVariables": [
               {
                 "Name": "Rgon",
@@ -182,13 +184,14 @@
               "Vdf": "3"
             },
             "EnabledScopes": [
+              "Junction Temperature (\u00B0)",
               "Average Conduction Losses (W)",
               "Average Switching Losses (W)",
-              "Average Total Losses (W)",
-              "Junction Temperature (\u00B0)"
+              "Average Total Losses (W)"
             ],
             "ThermalDataID": "ddd06ec7-3701-44f9-92db-b19614c6def2",
             "LossCalculationFrequency": "fsw",
+            "InitialTemperature": "100",
             "CustomVariables": [
               {
                 "Name": "Rgon",
@@ -219,6 +222,7 @@
             "EnabledScopes": [],
             "ThermalDataID": "ddd06ec7-3701-44f9-92db-b19614c6def2",
             "LossCalculationFrequency": "fsw",
+            "InitialTemperature": "100",
             "CustomVariables": [
               {
                 "Name": "Rgon",
@@ -709,7 +713,7 @@
         "VariableFile": ""
       },
       "TransientAnalysis": {
-        "EndTime": "0.11",
+        "EndTime": "0.08",
         "FixedTimeStep": false,
         "SaveInitialPoint": false,
         "StopAtSteadyState": false,
@@ -810,16 +814,17 @@
               "Vdf": "3"
             },
             "EnabledScopes": [
+              "Current",
+              "Junction Temperature (\u00B0)",
               "Average Conduction Losses (W)",
               "Average Switching Losses (W)",
               "Average Total Losses (W)",
-              "Current",
               "Instantaneous Conduction Losses (W)",
-              "Instantaneous Switching Energy (J)",
-              "Junction Temperature (\u00B0)"
+              "Instantaneous Switching Energy (J)"
             ],
             "ThermalDataID": "b7af2a04-14fe-4d59-ab88-6e248a992219",
             "LossCalculationFrequency": "fsw",
+            "InitialTemperature": "25",
             "CustomVariables": [
               {
                 "Name": "Rgon",
@@ -850,6 +855,7 @@
             "EnabledScopes": [],
             "ThermalDataID": "b7af2a04-14fe-4d59-ab88-6e248a992219",
             "LossCalculationFrequency": "fsw",
+            "InitialTemperature": "25",
             "CustomVariables": [
               {
                 "Name": "Rgon",
@@ -902,13 +908,14 @@
               "Vdf": "3"
             },
             "EnabledScopes": [
+              "Junction Temperature (\u00B0)",
               "Average Conduction Losses (W)",
               "Average Switching Losses (W)",
-              "Average Total Losses (W)",
-              "Junction Temperature (\u00B0)"
+              "Average Total Losses (W)"
             ],
             "ThermalDataID": "b7af2a04-14fe-4d59-ab88-6e248a992219",
             "LossCalculationFrequency": "fsw",
+            "InitialTemperature": "25",
             "CustomVariables": [
               {
                 "Name": "Rgon",
@@ -939,6 +946,7 @@
             "EnabledScopes": [],
             "ThermalDataID": "b7af2a04-14fe-4d59-ab88-6e248a992219",
             "LossCalculationFrequency": "fsw",
+            "InitialTemperature": "25",
             "CustomVariables": [
               {
                 "Name": "Rgon",

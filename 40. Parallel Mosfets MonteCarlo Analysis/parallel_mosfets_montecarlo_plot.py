@@ -64,7 +64,7 @@ def plot(df):
 
 # Load dataframe
 script_folder = os.path.realpath(os.path.dirname(__file__))
-filename = "montecarlo_parallel_mosfets_2023-10-23"
+filename = "montecarlo_parallel_mosfets_2023-11-01"
 df = pd.read_pickle(os.path.join(script_folder, filename + ".pkl" ))
 
 # Plot results from dataframe
