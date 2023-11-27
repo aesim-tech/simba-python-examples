@@ -1,0 +1,244 @@
+{
+  "Designs": [
+    {
+      "Id": "938f8983-3c13-440e-963d-1e02646bb1b4",
+      "Name": "JMAG-RT Validation",
+      "Circuit": {
+        "Id": "0667ecee-580b-4195-95b2-4fe61e895375",
+        "Devices": [
+          {
+            "LibraryName": "AC Voltage Source",
+            "Top": 9,
+            "Left": -12,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "VA",
+            "ID": "cf18f63f-57f4-4e11-91a6-0fb2e582dd53",
+            "Parameters": {
+              "Frequency": "RPM/60*(numPoles/2)",
+              "Amplitude": "60",
+              "Phase": "90"
+            },
+            "EnabledScopes": [
+              "Current"
+            ]
+          },
+          {
+            "LibraryName": "AC Voltage Source",
+            "Top": 11,
+            "Left": -7,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "VB",
+            "ID": "a159a85d-0b65-482a-b80f-9c523cc42239",
+            "Parameters": {
+              "Frequency": "RPM/60*(numPoles/2)",
+              "Amplitude": "60",
+              "Phase": "-120\u002B90"
+            },
+            "EnabledScopes": [
+              "Current"
+            ]
+          },
+          {
+            "LibraryName": "AC Voltage Source",
+            "Top": 13,
+            "Left": -2,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "VC",
+            "ID": "e3561ffd-d0a4-4ce7-b68e-5fec7f204ea8",
+            "Parameters": {
+              "Frequency": "RPM/60*(numPoles/2)",
+              "Amplitude": "60",
+              "Phase": "120\u002B90"
+            },
+            "EnabledScopes": [
+              "Current"
+            ]
+          },
+          {
+            "LibraryName": "Ground",
+            "Top": 21,
+            "Left": -6,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "Ground1",
+            "ID": "f875469b-b6df-4cf3-95c5-ed04847dca96",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "JMAG-RT PMSM",
+            "Top": 6,
+            "Left": 3,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "JmagRT_PMSM",
+            "ID": "e8e6b2eb-8802-45a0-9238-11b7573ba72a",
+            "Parameters": {
+              "RttFilePath": "C:\\UnderGitControl\\simba-technical-resources\\docs\\04-PythonExamples\\41. JMAG-RT PMSM Model Validation\\data\\20220613_SPMServo.rtt",
+              "AccuracyType": "1",
+              "J": "0.0001",
+              "B": "0.01",
+              "ConnectionType": "0",
+              "Rs": "0.814",
+              "Offset": "0",
+              "AverageLossCalcFreq": "60",
+              "IronLossType": "3",
+              "UseFilterInductance": "0",
+              "FilterInductanceValue": "1.0u",
+              "ACCopperLossType": "2",
+              "RotorSkewType": "0",
+              "StatorSkewType": "0",
+              "RotorSkewAngle": "0.0",
+              "StatorSkewAngle": "0.0",
+              "RotorSkewSteps": "0",
+              "StatorSkewSteps": "0",
+              "UseCorrection": "0",
+              "CoefInd": "1",
+              "CoefFlux": "1",
+              "CoefTorque": "1",
+              "CoefMag": "1",
+              "CoefMat": "1",
+              "TurnCorr1": "1",
+              "TurnCorr2": "1",
+              "InterpolationType": "0",
+              "TemperatureCorrection": "0"
+            },
+            "EnabledScopes": [
+              "Te"
+            ]
+          },
+          {
+            "LibraryName": "Constant Speed",
+            "Top": 9,
+            "Left": 11,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "W1",
+            "ID": "1cdf63f7-ae05-4394-a92f-8d0e12094368",
+            "Parameters": {
+              "Voltage": "RPM/30*pi "
+            },
+            "EnabledScopes": []
+          }
+        ],
+        "Connectors": [
+          {
+            "Segments": [
+              {
+                "StartX": -10,
+                "StartY": 17,
+                "EndX": -10,
+                "EndY": 21
+              },
+              {
+                "StartX": -5,
+                "StartY": 19,
+                "EndX": -5,
+                "EndY": 21
+              },
+              {
+                "StartX": -10,
+                "StartY": 21,
+                "EndX": -5,
+                "EndY": 21
+              },
+              {
+                "StartX": -5,
+                "StartY": 21,
+                "EndX": 0,
+                "EndY": 21
+              }
+            ],
+            "Name": "C4"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": -10,
+                "StartY": 9,
+                "EndX": -10,
+                "EndY": 8
+              },
+              {
+                "StartX": -10,
+                "StartY": 8,
+                "EndX": 3,
+                "EndY": 8
+              }
+            ],
+            "Name": "C1"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": -5,
+                "StartY": 11,
+                "EndX": -5,
+                "EndY": 10
+              },
+              {
+                "StartX": -5,
+                "StartY": 10,
+                "EndX": 3,
+                "EndY": 10
+              }
+            ],
+            "Name": "C2"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 0,
+                "StartY": 13,
+                "EndX": 0,
+                "EndY": 12
+              },
+              {
+                "StartX": 0,
+                "StartY": 12,
+                "EndX": 3,
+                "EndY": 12
+              }
+            ],
+            "Name": "C3"
+          }
+        ],
+        "Name": "Top Circuit",
+        "Variables": [
+          {
+            "Name": "RPM",
+            "Value": "500"
+          },
+          {
+            "Name": "numPoles",
+            "Value": "10"
+          }
+        ],
+        "VariableFile": ""
+      },
+      "TransientAnalysis": {
+        "EndTime": "0.072",
+        "FixedTimeStep": true,
+        "SaveInitialPoint": true,
+        "StopAtSteadyState": false,
+        "TimeStep": "1.8u",
+        "BaseFrequencyParameterEnabled": false,
+        "NumberOfBasePeriodsSavedParameterEnabled": false,
+        "BaseFrequency": "1",
+        "NumberOfBasePeriodsSaved": "1"
+      }
+    }
+  ],
+  "Libraries": [],
+  "TestBenches": [],
+  "ThermalData": []
+}
