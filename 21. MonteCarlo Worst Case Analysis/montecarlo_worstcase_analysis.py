@@ -29,7 +29,7 @@ circuit = {
            'resistor' : {'nominal': 100, 'tolerance': 0.3}
           }
 
-#%% Load project and igbt device
+#%% Load project
 script_folder = os.path.realpath(os.path.dirname(__file__))
 file_path = os.path.join(script_folder, "montecarlo_worstcase_analysis.jsimba")
 project = ProjectRepository(file_path)

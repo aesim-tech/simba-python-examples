@@ -1,0 +1,2170 @@
+{
+  "Designs": [
+    {
+      "Id": "8931db23-1984-4a57-aaae-2768595b80d6",
+      "Name": "Design 1",
+      "Circuit": {
+        "Id": "34abf628-a46f-4e3e-993c-727ec2286902",
+        "Devices": [
+          {
+            "LibraryName": "DC Voltage Source",
+            "Top": 4,
+            "Left": -2,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "DC1",
+            "ID": "5e8d87f5-8697-4c15-8860-a3107a5d95db",
+            "Parameters": {
+              "Voltage": "800"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Inductor",
+            "Top": 7,
+            "Left": 30,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "L1",
+            "ID": "92121bc4-ea2d-42d8-a75c-f3fb385ce0eb",
+            "Parameters": {
+              "Value": "0.001",
+              "Iinit": "0"
+            },
+            "EnabledScopes": [
+              "Current"
+            ]
+          },
+          {
+            "LibraryName": "Resistor",
+            "Top": 7,
+            "Left": 38,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "R1",
+            "ID": "0fa8ec15-f16e-481f-93cc-a4d14930e7b9",
+            "Parameters": {
+              "Value": "7.5"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Ground",
+            "Top": 16,
+            "Left": -1,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "Ground1",
+            "ID": "e2a85ec1-94d1-4c96-b07b-8d59488b7554",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Ground",
+            "Top": 8,
+            "Left": 44,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "Ground2",
+            "ID": "6697a1dd-4a20-4227-8fa0-f27908430296",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "MOSFET with Diode",
+            "Top": 0,
+            "Left": 10,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "T11",
+            "ID": "6bb72471-9578-4af2-a57e-4f46dde7f040",
+            "Parameters": {
+              "Ron": "60m",
+              "Rdon": "60m",
+              "Vdf": "3"
+            },
+            "EnabledScopes": [
+              "Current",
+              "Junction Temperature (\u00B0)",
+              "Average Conduction Losses (W)",
+              "Average Switching Losses (W)",
+              "Average Total Losses (W)",
+              "Instantaneous Conduction Losses (W)",
+              "Instantaneous Switching Energy (J)"
+            ],
+            "ThermalDataID": "ddd06ec7-3701-44f9-92db-b19614c6def2",
+            "LossCalculationFrequency": "fsw",
+            "InitialTemperature": "100",
+            "CustomVariables": [
+              {
+                "Name": "Rgon",
+                "Value": "20",
+                "Description": "Gate (on) resistance"
+              },
+              {
+                "Name": "Rgoff",
+                "Value": "20",
+                "Description": "Gate (off) resistance"
+              }
+            ]
+          },
+          {
+            "LibraryName": "MOSFET with Diode",
+            "Top": 10,
+            "Left": 10,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "T21",
+            "ID": "9b3da466-9e5c-4d64-8a39-c687c1b6e53c",
+            "Parameters": {
+              "Ron": "60m",
+              "Rdon": "60m",
+              "Vdf": "3"
+            },
+            "EnabledScopes": [],
+            "ThermalDataID": "ddd06ec7-3701-44f9-92db-b19614c6def2",
+            "LossCalculationFrequency": "fsw",
+            "InitialTemperature": "100",
+            "CustomVariables": [
+              {
+                "Name": "Rgon",
+                "Value": "20",
+                "Description": "Gate (on) resistance"
+              },
+              {
+                "Name": "Rgoff",
+                "Value": "20",
+                "Description": "Gate (off) resistance"
+              }
+            ]
+          },
+          {
+            "LibraryName": "Control Output Connector Label",
+            "Top": 12,
+            "Left": 6,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "s21",
+            "ID": "7a318f28-ce93-4a69-bf5e-e4c1e1856452",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Control Output Connector Label",
+            "Top": 2,
+            "Left": 6,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "s11",
+            "ID": "e57d6fcd-fa4e-49c6-a6dc-a7909d297f87",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "MOSFET with Diode",
+            "Top": 0,
+            "Left": 22,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "T12",
+            "ID": "3c2da4ad-103b-421e-a05b-7d53d482bcd8",
+            "Parameters": {
+              "Ron": "60m",
+              "Rdon": "60m",
+              "Vdf": "3"
+            },
+            "EnabledScopes": [
+              "Junction Temperature (\u00B0)",
+              "Average Conduction Losses (W)",
+              "Average Switching Losses (W)",
+              "Average Total Losses (W)"
+            ],
+            "ThermalDataID": "ddd06ec7-3701-44f9-92db-b19614c6def2",
+            "LossCalculationFrequency": "fsw",
+            "InitialTemperature": "100",
+            "CustomVariables": [
+              {
+                "Name": "Rgon",
+                "Value": "20",
+                "Description": "Gate (on) resistance"
+              },
+              {
+                "Name": "Rgoff",
+                "Value": "20",
+                "Description": "Gate (off) resistance"
+              }
+            ]
+          },
+          {
+            "LibraryName": "MOSFET with Diode",
+            "Top": 10,
+            "Left": 22,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "T22",
+            "ID": "e54cff96-589d-4eda-b47b-f5b04a4bb634",
+            "Parameters": {
+              "Ron": "60m",
+              "Rdon": "60m",
+              "Vdf": "3"
+            },
+            "EnabledScopes": [],
+            "ThermalDataID": "ddd06ec7-3701-44f9-92db-b19614c6def2",
+            "LossCalculationFrequency": "fsw",
+            "InitialTemperature": "100",
+            "CustomVariables": [
+              {
+                "Name": "Rgon",
+                "Value": "20",
+                "Description": "Gate (on) resistance"
+              },
+              {
+                "Name": "Rgoff",
+                "Value": "20",
+                "Description": "Gate (off) resistance"
+              }
+            ]
+          },
+          {
+            "LibraryName": "Control Output Connector Label",
+            "Top": 12,
+            "Left": 18,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "s22",
+            "ID": "621d952e-9676-43f0-af35-c6e145829985",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Control Output Connector Label",
+            "Top": 2,
+            "Left": 18,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "s12",
+            "ID": "66ea0e29-9c2b-46c0-ad2e-da312c4f145f",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Thermal Connector Label",
+            "Top": 4,
+            "Left": 26,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "Tc",
+            "ID": "264fb7bd-3a77-4ff4-92d0-c513be47806d",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Thermal Connector Label",
+            "Top": 14,
+            "Left": 26,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "Tc",
+            "ID": "07c9af57-7917-4b1e-a223-2ebbb6995321",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Thermal Connector Label",
+            "Top": 14,
+            "Left": 14,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "Tc",
+            "ID": "596c6464-d03d-451d-8071-61e1c12fc6e9",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Dead time",
+            "Top": 22,
+            "Left": 4,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "DT11",
+            "ID": "e0ffcf92-16d2-4f1d-be04-f2147967040f",
+            "Parameters": {
+              "RisingEdgeDelay": "0",
+              "FallingEdgeDelay": "0",
+              "SamplingTime": "none"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Dead time",
+            "Top": 27,
+            "Left": 4,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "DT12",
+            "ID": "d79fc655-de7a-4376-bae1-7230957d4947",
+            "Parameters": {
+              "RisingEdgeDelay": "0",
+              "FallingEdgeDelay": "0",
+              "SamplingTime": "none"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Not",
+            "Top": 33,
+            "Left": 7,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "NOT1",
+            "ID": "021ece46-84a8-4b9c-9f2e-7fe9c2c5ed8f",
+            "Parameters": {
+              "SamplingTime": "none"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Control Input Connector Label",
+            "Top": 23,
+            "Left": 8,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "s11",
+            "ID": "c6c57227-0e7b-4899-adb6-c7b9aa55c47b",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Control Input Connector Label",
+            "Top": 28,
+            "Left": 8,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "s12",
+            "ID": "25a16191-e040-4cbb-96e1-96b06ce1e63c",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Dead time",
+            "Top": 32,
+            "Left": 13,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "DT21",
+            "ID": "19999b12-d7c2-4179-86a1-46b6be86cc0d",
+            "Parameters": {
+              "RisingEdgeDelay": "0",
+              "FallingEdgeDelay": "0",
+              "SamplingTime": "none"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Dead time",
+            "Top": 37,
+            "Left": 13,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "DT22",
+            "ID": "b4ff00f4-b7f4-4f9c-aa2f-3aff86b2bc16",
+            "Parameters": {
+              "RisingEdgeDelay": "0",
+              "FallingEdgeDelay": "0",
+              "SamplingTime": "none"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Control Input Connector Label",
+            "Top": 33,
+            "Left": 17,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "s21",
+            "ID": "27cfa5eb-f5d8-4a7a-b6cb-e6e719e7f8d9",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Control Input Connector Label",
+            "Top": 38,
+            "Left": 17,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "s22",
+            "ID": "6af53d8a-0efb-4f3a-8d6a-ae7f9d24edc1",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Square Wave",
+            "Top": 22,
+            "Left": -6,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "pwm",
+            "ID": "8aa55ee1-fa8e-4761-8de6-6a1f7c7a9349",
+            "Parameters": {
+              "Amplitude": "1",
+              "Frequency": "fsw",
+              "DutyCycle": "0.45",
+              "Offset": "0",
+              "PhaseShift": "0",
+              "SamplingTime": "none"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Thermal Connector Label",
+            "Top": 4,
+            "Left": 15,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "Tc",
+            "ID": "4438c8ae-204f-466a-a968-04be5c18d549",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Thermal Connector Label",
+            "Top": 18,
+            "Left": 37,
+            "Angle": 0,
+            "HF": true,
+            "VF": false,
+            "Name": "Tc",
+            "ID": "7c91139f-955e-4fe4-a5f4-6c8925a49429",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Constant Temperature",
+            "Top": 19,
+            "Left": 41,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "T1",
+            "ID": "d10476e0-e1d2-4621-9ae8-bd41e7da8f46",
+            "Parameters": {
+              "Temperature": "100"
+            },
+            "EnabledScopes": [
+              "Heat Flow"
+            ]
+          },
+          {
+            "LibraryName": "Ground (Thermal)",
+            "Top": 27,
+            "Left": 42,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "Ground3",
+            "ID": "bfe0fe0f-c939-48cd-bb70-455f16315da4",
+            "Parameters": {},
+            "EnabledScopes": []
+          }
+        ],
+        "Connectors": [
+          {
+            "Segments": [
+              {
+                "StartX": 0,
+                "StartY": 12,
+                "EndX": 0,
+                "EndY": 16
+              },
+              {
+                "StartX": 0,
+                "StartY": 16,
+                "EndX": 12,
+                "EndY": 16
+              },
+              {
+                "StartX": 12,
+                "StartY": 16,
+                "EndX": 24,
+                "EndY": 16
+              }
+            ],
+            "Name": "C9"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 38,
+                "StartY": 8,
+                "EndX": 36,
+                "EndY": 8
+              }
+            ],
+            "Name": "C8"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 44,
+                "StartY": 8,
+                "EndX": 45,
+                "EndY": 8
+              }
+            ],
+            "Name": "C1"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 0,
+                "StartY": 4,
+                "EndX": 0,
+                "EndY": 0
+              },
+              {
+                "StartX": 0,
+                "StartY": 0,
+                "EndX": 12,
+                "EndY": 0
+              },
+              {
+                "StartX": 12,
+                "StartY": 0,
+                "EndX": 24,
+                "EndY": 0
+              }
+            ],
+            "Name": "C2"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 12,
+                "StartY": 6,
+                "EndX": 12,
+                "EndY": 8
+              },
+              {
+                "StartX": 12,
+                "StartY": 8,
+                "EndX": 12,
+                "EndY": 10
+              },
+              {
+                "StartX": 24,
+                "StartY": 6,
+                "EndX": 24,
+                "EndY": 8
+              },
+              {
+                "StartX": 24,
+                "StartY": 8,
+                "EndX": 24,
+                "EndY": 10
+              },
+              {
+                "StartX": 12,
+                "StartY": 8,
+                "EndX": 24,
+                "EndY": 8
+              },
+              {
+                "StartX": 24,
+                "StartY": 8,
+                "EndX": 30,
+                "EndY": 8
+              }
+            ],
+            "Name": "C4"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 7,
+                "StartY": 35,
+                "EndX": 0,
+                "EndY": 35
+              },
+              {
+                "StartX": 0,
+                "StartY": 29,
+                "EndX": 4,
+                "EndY": 29
+              },
+              {
+                "StartX": -2,
+                "StartY": 24,
+                "EndX": 0,
+                "EndY": 24
+              },
+              {
+                "StartX": 0,
+                "StartY": 24,
+                "EndX": 4,
+                "EndY": 24
+              },
+              {
+                "StartX": 0,
+                "StartY": 24,
+                "EndX": 0,
+                "EndY": 29
+              },
+              {
+                "StartX": 0,
+                "StartY": 29,
+                "EndX": 0,
+                "EndY": 35
+              }
+            ],
+            "Name": "C6"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 11,
+                "StartY": 35,
+                "EndX": 12,
+                "EndY": 35
+              },
+              {
+                "StartX": 13,
+                "StartY": 34,
+                "EndX": 12,
+                "EndY": 34
+              },
+              {
+                "StartX": 13,
+                "StartY": 39,
+                "EndX": 12,
+                "EndY": 39
+              },
+              {
+                "StartX": 12,
+                "StartY": 34,
+                "EndX": 12,
+                "EndY": 35
+              },
+              {
+                "StartX": 12,
+                "StartY": 35,
+                "EndX": 12,
+                "EndY": 39
+              }
+            ],
+            "Name": "C7"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 14,
+                "StartY": 5,
+                "EndX": 15,
+                "EndY": 5
+              }
+            ],
+            "Name": "C5"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 41,
+                "StartY": 19,
+                "EndX": 43,
+                "EndY": 19
+              }
+            ],
+            "Name": "C3"
+          }
+        ],
+        "Name": "Top Circuit",
+        "Variables": [
+          {
+            "Name": "fsw",
+            "Value": "50k"
+          }
+        ],
+        "VariableFile": ""
+      },
+      "TransientAnalysis": {
+        "EndTime": "0.08",
+        "FixedTimeStep": false,
+        "SaveInitialPoint": false,
+        "StopAtSteadyState": false,
+        "TimeStep": "2e-8",
+        "BaseFrequencyParameterEnabled": false,
+        "NumberOfBasePeriodsSavedParameterEnabled": false,
+        "BaseFrequency": "fsw",
+        "NumberOfBasePeriodsSaved": "2"
+      }
+    },
+    {
+      "Id": "0f021583-8332-4e7c-b0dc-f534fb0f7b2e",
+      "Name": "Design 2",
+      "Circuit": {
+        "Id": "cf93b8ee-1813-4b39-9aad-733033a37ad6",
+        "Devices": [
+          {
+            "LibraryName": "DC Voltage Source",
+            "Top": 4,
+            "Left": -2,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "DC1",
+            "ID": "7d5211a4-e17d-4abf-9a3f-a6caf1e56d39",
+            "Parameters": {
+              "Voltage": "800"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Ground",
+            "Top": 16,
+            "Left": -1,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "Ground1",
+            "ID": "f12cc3dd-2d6d-4d0f-9f3a-b09be17759f9",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "MOSFET with Diode",
+            "Top": 0,
+            "Left": 10,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "T11",
+            "ID": "0cdee1c3-8b29-4ab9-b136-984625577131",
+            "Parameters": {
+              "Ron": "60m",
+              "Rdon": "60m",
+              "Vdf": "3"
+            },
+            "EnabledScopes": [
+              "Current",
+              "Junction Temperature (\u00B0)",
+              "Average Conduction Losses (W)",
+              "Average Switching Losses (W)",
+              "Average Total Losses (W)",
+              "Instantaneous Conduction Losses (W)",
+              "Instantaneous Switching Energy (J)"
+            ],
+            "ThermalDataID": "ddd06ec7-3701-44f9-92db-b19614c6def2",
+            "LossCalculationFrequency": "fsw",
+            "InitialTemperature": "100",
+            "CustomVariables": [
+              {
+                "Name": "Rgon",
+                "Value": "20",
+                "Description": "Gate (on) resistance"
+              },
+              {
+                "Name": "Rgoff",
+                "Value": "20",
+                "Description": "Gate (off) resistance"
+              }
+            ]
+          },
+          {
+            "LibraryName": "MOSFET with Diode",
+            "Top": 10,
+            "Left": 10,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "T21",
+            "ID": "576bd299-0992-45e5-8358-2f8d888c944f",
+            "Parameters": {
+              "Ron": "60m",
+              "Rdon": "60m",
+              "Vdf": "3"
+            },
+            "EnabledScopes": [],
+            "ThermalDataID": "ddd06ec7-3701-44f9-92db-b19614c6def2",
+            "LossCalculationFrequency": "fsw",
+            "InitialTemperature": "100",
+            "CustomVariables": [
+              {
+                "Name": "Rgon",
+                "Value": "20",
+                "Description": "Gate (on) resistance"
+              },
+              {
+                "Name": "Rgoff",
+                "Value": "20",
+                "Description": "Gate (off) resistance"
+              }
+            ]
+          },
+          {
+            "LibraryName": "Control Output Connector Label",
+            "Top": 12,
+            "Left": 6,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "s21",
+            "ID": "61024ccf-2d38-4df3-92e5-dfee2ef6ef7a",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Control Output Connector Label",
+            "Top": 2,
+            "Left": 6,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "s11",
+            "ID": "878a83dd-0801-4be4-939a-8736070222c8",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "MOSFET with Diode",
+            "Top": 0,
+            "Left": 22,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "T12",
+            "ID": "0c233cbb-c8e2-4f85-ad24-3c81faf58a82",
+            "Parameters": {
+              "Ron": "60m",
+              "Rdon": "60m",
+              "Vdf": "3"
+            },
+            "EnabledScopes": [
+              "Junction Temperature (\u00B0)",
+              "Average Conduction Losses (W)",
+              "Average Switching Losses (W)",
+              "Average Total Losses (W)"
+            ],
+            "ThermalDataID": "ddd06ec7-3701-44f9-92db-b19614c6def2",
+            "LossCalculationFrequency": "fsw",
+            "InitialTemperature": "100",
+            "CustomVariables": [
+              {
+                "Name": "Rgon",
+                "Value": "20",
+                "Description": "Gate (on) resistance"
+              },
+              {
+                "Name": "Rgoff",
+                "Value": "20",
+                "Description": "Gate (off) resistance"
+              }
+            ]
+          },
+          {
+            "LibraryName": "MOSFET with Diode",
+            "Top": 10,
+            "Left": 22,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "T22",
+            "ID": "6bfbbde0-c93f-4274-b992-c2457f47c871",
+            "Parameters": {
+              "Ron": "60m",
+              "Rdon": "60m",
+              "Vdf": "3"
+            },
+            "EnabledScopes": [],
+            "ThermalDataID": "ddd06ec7-3701-44f9-92db-b19614c6def2",
+            "LossCalculationFrequency": "fsw",
+            "InitialTemperature": "100",
+            "CustomVariables": [
+              {
+                "Name": "Rgon",
+                "Value": "20",
+                "Description": "Gate (on) resistance"
+              },
+              {
+                "Name": "Rgoff",
+                "Value": "20",
+                "Description": "Gate (off) resistance"
+              }
+            ]
+          },
+          {
+            "LibraryName": "Control Output Connector Label",
+            "Top": 12,
+            "Left": 18,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "s22",
+            "ID": "54984449-eb90-4d33-9bfe-4ddb4864baf4",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Control Output Connector Label",
+            "Top": 2,
+            "Left": 18,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "s12",
+            "ID": "9d168de1-4fb2-467d-ba62-3600d87d01a0",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Thermal Connector Label",
+            "Top": 4,
+            "Left": 26,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "Tc",
+            "ID": "c6ad2473-8c7a-4d26-be39-7af5310c7d28",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Thermal Connector Label",
+            "Top": 14,
+            "Left": 26,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "Tc",
+            "ID": "349d74cc-5e5c-44f2-9563-5bf3cd4be91b",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Thermal Connector Label",
+            "Top": 14,
+            "Left": 14,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "Tc",
+            "ID": "8e727126-a59a-4ecf-8103-586a8f027048",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Inductor",
+            "Top": 7,
+            "Left": 41,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "L1",
+            "ID": "498684ef-d6e2-427b-ad68-5cf450ded1d7",
+            "Parameters": {
+              "Value": "0.001",
+              "Iinit": "0"
+            },
+            "EnabledScopes": [
+              "Current"
+            ]
+          },
+          {
+            "LibraryName": "Resistor",
+            "Top": 7,
+            "Left": 49,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "R1",
+            "ID": "c592af7e-d22c-4db6-8474-50d7d0649751",
+            "Parameters": {
+              "Value": "7.5"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Ground",
+            "Top": 8,
+            "Left": 55,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "Ground2",
+            "ID": "6fb71c6d-a74b-4c5c-8bb8-e65ae08d3765",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Control Output Connector Label",
+            "Top": 2,
+            "Left": 30,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "s13",
+            "ID": "df5825b7-c742-4cfa-9ef3-bb1b97a8b7a4",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Control Output Connector Label",
+            "Top": 12,
+            "Left": 30,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "s23",
+            "ID": "917e6824-4b12-4b20-a404-f247140b5aa0",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "MOSFET with Diode",
+            "Top": 0,
+            "Left": 34,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "T13",
+            "ID": "f9ce287b-5dcd-400a-9101-ab09b977ff90",
+            "Parameters": {
+              "Ron": "60m",
+              "Rdon": "60m",
+              "Vdf": "3"
+            },
+            "EnabledScopes": [
+              "Junction Temperature (\u00B0)",
+              "Average Conduction Losses (W)",
+              "Average Switching Losses (W)",
+              "Average Total Losses (W)"
+            ],
+            "ThermalDataID": "ddd06ec7-3701-44f9-92db-b19614c6def2",
+            "LossCalculationFrequency": "fsw",
+            "InitialTemperature": "100",
+            "CustomVariables": [
+              {
+                "Name": "Rgon",
+                "Value": "20",
+                "Description": "Gate (on) resistance"
+              },
+              {
+                "Name": "Rgoff",
+                "Value": "20",
+                "Description": "Gate (off) resistance"
+              }
+            ]
+          },
+          {
+            "LibraryName": "MOSFET with Diode",
+            "Top": 10,
+            "Left": 34,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "T23",
+            "ID": "9ebd3f27-7ff4-4983-80da-f646907ca72b",
+            "Parameters": {
+              "Ron": "60m",
+              "Rdon": "60m",
+              "Vdf": "3"
+            },
+            "EnabledScopes": [],
+            "ThermalDataID": "ddd06ec7-3701-44f9-92db-b19614c6def2",
+            "LossCalculationFrequency": "fsw",
+            "InitialTemperature": "100",
+            "CustomVariables": [
+              {
+                "Name": "Rgon",
+                "Value": "20",
+                "Description": "Gate (on) resistance"
+              },
+              {
+                "Name": "Rgoff",
+                "Value": "20",
+                "Description": "Gate (off) resistance"
+              }
+            ]
+          },
+          {
+            "LibraryName": "Thermal Connector Label",
+            "Top": 4,
+            "Left": 38,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "Tc",
+            "ID": "3604013d-20ee-4933-9088-15f95d5e703e",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Thermal Connector Label",
+            "Top": 14,
+            "Left": 38,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "Tc",
+            "ID": "100d5ea3-611f-43ca-b0c3-a26cb3080ae0",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Thermal Connector Label",
+            "Top": 4,
+            "Left": 14,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "Tc",
+            "ID": "1275e7f2-4560-453b-ae50-f6c1a9dad889",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Thermal Connector Label",
+            "Top": 26,
+            "Left": 37,
+            "Angle": 0,
+            "HF": true,
+            "VF": false,
+            "Name": "Tc",
+            "ID": "3e411d58-6147-4fda-818b-763039069317",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Constant Temperature",
+            "Top": 27,
+            "Left": 41,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "T1",
+            "ID": "1a5b022b-3d89-4f84-9da1-14fc06edfea5",
+            "Parameters": {
+              "Temperature": "100"
+            },
+            "EnabledScopes": [
+              "Heat Flow"
+            ]
+          },
+          {
+            "LibraryName": "Ground (Thermal)",
+            "Top": 35,
+            "Left": 42,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "Ground3",
+            "ID": "041f157b-6d89-45ef-8793-3656b7795efb",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Square Wave",
+            "Top": 21,
+            "Left": -6,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "pwm",
+            "ID": "cdb74047-dff3-4b80-9d3e-6a0676bfb318",
+            "Parameters": {
+              "Amplitude": "1",
+              "Frequency": "fsw",
+              "DutyCycle": "0.45",
+              "Offset": "0",
+              "PhaseShift": "0",
+              "SamplingTime": "none"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Dead time",
+            "Top": 21,
+            "Left": 4,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "DT11",
+            "ID": "ca90a3a6-670a-4af4-9722-3c0cf11bc440",
+            "Parameters": {
+              "RisingEdgeDelay": "0",
+              "FallingEdgeDelay": "0",
+              "SamplingTime": "none"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Dead time",
+            "Top": 26,
+            "Left": 4,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "DT12",
+            "ID": "062c9358-5f72-4692-a79a-1d3d1e99baeb",
+            "Parameters": {
+              "RisingEdgeDelay": "0",
+              "FallingEdgeDelay": "0",
+              "SamplingTime": "none"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Dead time",
+            "Top": 31,
+            "Left": 4,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "DT13",
+            "ID": "3cca6bd6-cbbb-4f78-be46-5026a40d2edc",
+            "Parameters": {
+              "RisingEdgeDelay": "0",
+              "FallingEdgeDelay": "0",
+              "SamplingTime": "none"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Control Input Connector Label",
+            "Top": 22,
+            "Left": 8,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "s11",
+            "ID": "24ff3701-636d-4a89-bbaa-839f2457bf0c",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Control Input Connector Label",
+            "Top": 27,
+            "Left": 8,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "s12",
+            "ID": "7d0107b7-edac-4dc4-9937-555aca88b82f",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Control Input Connector Label",
+            "Top": 32,
+            "Left": 8,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "s13",
+            "ID": "61b743a7-d02f-4b3a-b5b3-225ac5b3a78e",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Not",
+            "Top": 35,
+            "Left": 13,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "NOT1",
+            "ID": "283b2037-0341-430d-abc1-0c2c7eac2be3",
+            "Parameters": {
+              "SamplingTime": "none"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Dead time",
+            "Top": 25,
+            "Left": 20,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "DT21",
+            "ID": "2ca76e9f-3baa-4a39-a0c6-53ae703696e6",
+            "Parameters": {
+              "RisingEdgeDelay": "0",
+              "FallingEdgeDelay": "0",
+              "SamplingTime": "none"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Dead time",
+            "Top": 30,
+            "Left": 20,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "DT22",
+            "ID": "6264e701-386d-4fad-a74c-4682876b4ce8",
+            "Parameters": {
+              "RisingEdgeDelay": "0",
+              "FallingEdgeDelay": "0",
+              "SamplingTime": "none"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Dead time",
+            "Top": 35,
+            "Left": 20,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "DT23",
+            "ID": "03b80713-a08d-4d8a-a43d-61c5cd74d887",
+            "Parameters": {
+              "RisingEdgeDelay": "0",
+              "FallingEdgeDelay": "0",
+              "SamplingTime": "none"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Control Input Connector Label",
+            "Top": 26,
+            "Left": 24,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "s21",
+            "ID": "c0b0eba2-7c26-4a32-9824-e2551a8ee78d",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Control Input Connector Label",
+            "Top": 31,
+            "Left": 24,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "s22",
+            "ID": "06dfb437-af44-4764-b841-7a31b8ec0966",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Control Input Connector Label",
+            "Top": 36,
+            "Left": 24,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "s23",
+            "ID": "0367c735-1e03-4b42-afa1-427f6af8fa72",
+            "Parameters": {},
+            "EnabledScopes": []
+          }
+        ],
+        "Connectors": [
+          {
+            "Segments": [
+              {
+                "StartX": 0,
+                "StartY": 12,
+                "EndX": 0,
+                "EndY": 16
+              },
+              {
+                "StartX": 0,
+                "StartY": 16,
+                "EndX": 12,
+                "EndY": 16
+              },
+              {
+                "StartX": 12,
+                "StartY": 16,
+                "EndX": 24,
+                "EndY": 16
+              },
+              {
+                "StartX": 24,
+                "StartY": 16,
+                "EndX": 36,
+                "EndY": 16
+              }
+            ],
+            "Name": "C2"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 0,
+                "StartY": 4,
+                "EndX": 0,
+                "EndY": 0
+              },
+              {
+                "StartX": 12,
+                "StartY": 0,
+                "EndX": 0,
+                "EndY": 0
+              },
+              {
+                "StartX": 12,
+                "StartY": 0,
+                "EndX": 24,
+                "EndY": 0
+              },
+              {
+                "StartX": 24,
+                "StartY": 0,
+                "EndX": 36,
+                "EndY": 0
+              }
+            ],
+            "Name": "C10"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 47,
+                "StartY": 8,
+                "EndX": 49,
+                "EndY": 8
+              }
+            ],
+            "Name": "C1"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 55,
+                "StartY": 8,
+                "EndX": 56,
+                "EndY": 8
+              }
+            ],
+            "Name": "C8"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 12,
+                "StartY": 6,
+                "EndX": 12,
+                "EndY": 8
+              },
+              {
+                "StartX": 12,
+                "StartY": 8,
+                "EndX": 12,
+                "EndY": 10
+              },
+              {
+                "StartX": 36,
+                "StartY": 8,
+                "EndX": 41,
+                "EndY": 8
+              },
+              {
+                "StartX": 36,
+                "StartY": 6,
+                "EndX": 36,
+                "EndY": 8
+              },
+              {
+                "StartX": 36,
+                "StartY": 8,
+                "EndX": 36,
+                "EndY": 10
+              },
+              {
+                "StartX": 12,
+                "StartY": 8,
+                "EndX": 24,
+                "EndY": 8
+              },
+              {
+                "StartX": 24,
+                "StartY": 8,
+                "EndX": 36,
+                "EndY": 8
+              },
+              {
+                "StartX": 24,
+                "StartY": 6,
+                "EndX": 24,
+                "EndY": 8
+              },
+              {
+                "StartX": 24,
+                "StartY": 8,
+                "EndX": 24,
+                "EndY": 10
+              }
+            ],
+            "Name": "C7"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 41,
+                "StartY": 27,
+                "EndX": 43,
+                "EndY": 27
+              }
+            ],
+            "Name": "C3"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 4,
+                "StartY": 28,
+                "EndX": 0,
+                "EndY": 28
+              },
+              {
+                "StartX": 4,
+                "StartY": 33,
+                "EndX": 0,
+                "EndY": 33
+              },
+              {
+                "StartX": 13,
+                "StartY": 37,
+                "EndX": 0,
+                "EndY": 37
+              },
+              {
+                "StartX": -2,
+                "StartY": 23,
+                "EndX": 0,
+                "EndY": 23
+              },
+              {
+                "StartX": 0,
+                "StartY": 23,
+                "EndX": 4,
+                "EndY": 23
+              },
+              {
+                "StartX": 0,
+                "StartY": 23,
+                "EndX": 0,
+                "EndY": 28
+              },
+              {
+                "StartX": 0,
+                "StartY": 28,
+                "EndX": 0,
+                "EndY": 33
+              },
+              {
+                "StartX": 0,
+                "StartY": 33,
+                "EndX": 0,
+                "EndY": 37
+              }
+            ],
+            "Name": "C5"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 20,
+                "StartY": 27,
+                "EndX": 19,
+                "EndY": 27
+              },
+              {
+                "StartX": 20,
+                "StartY": 32,
+                "EndX": 19,
+                "EndY": 32
+              },
+              {
+                "StartX": 17,
+                "StartY": 37,
+                "EndX": 19,
+                "EndY": 37
+              },
+              {
+                "StartX": 19,
+                "StartY": 37,
+                "EndX": 20,
+                "EndY": 37
+              },
+              {
+                "StartX": 19,
+                "StartY": 27,
+                "EndX": 19,
+                "EndY": 32
+              },
+              {
+                "StartX": 19,
+                "StartY": 32,
+                "EndX": 19,
+                "EndY": 37
+              }
+            ],
+            "Name": "C4"
+          }
+        ],
+        "Name": "Top Circuit - Copy",
+        "Variables": [
+          {
+            "Name": "fsw",
+            "Value": "50k"
+          }
+        ],
+        "VariableFile": ""
+      },
+      "TransientAnalysis": {
+        "EndTime": "0.08",
+        "FixedTimeStep": false,
+        "SaveInitialPoint": false,
+        "StopAtSteadyState": false,
+        "TimeStep": "2e-8",
+        "BaseFrequencyParameterEnabled": false,
+        "NumberOfBasePeriodsSavedParameterEnabled": false,
+        "BaseFrequency": "fsw",
+        "NumberOfBasePeriodsSaved": "2"
+      }
+    }
+  ],
+  "Libraries": [],
+  "TestBenches": [],
+  "ThermalData": [
+    {
+      "Name": "Infineon IMBG120R060M1H (MOSFET with Diode)",
+      "Manufacturer": "Infineon",
+      "PartNumber": "IMBG120R060M1H",
+      "Comment": "",
+      "ConductionLossesGateDependency": false,
+      "SemiconductorType": "MOSFETwithDiodeThermalDataSemiconductorType",
+      "ThermalImpedanceType": "FosterThermalNetworkType",
+      "ConductionLosses": [
+        {
+          "Temperature": 25,
+          "IVSerialized": "[-21.514 -1; -16.129 -0.75; -10.748 -0.5; -5.372 -0.25; 0 0; 4.183 0.25; 8.363 0.5; 12.4 0.75; 16.287 1; 20.028 1.25; 23.632 1.5]"
+        },
+        {
+          "Temperature": 175,
+          "IVSerialized": "[-21.514 -2.28; -16.129 -1.71; -10.748 -1.139; -5.372 -0.569; 0 0; 4.183 0.483; 8.363 0.946; 12.4 1.4; 16.287 1.848; 20.028 2.291; 23.632 2.733]"
+        }
+      ],
+      "ConductionLossesGateOff": [],
+      "TurnOnLosses": [
+        {
+          "Temperature": 0,
+          "Voltage": 0,
+          "EISerialized": "[0 0]"
+        }
+      ],
+      "TurnOffLosses": [
+        {
+          "Temperature": 0,
+          "Voltage": 0,
+          "EISerialized": "[0 0]"
+        }
+      ],
+      "CustomVariables": [
+        {
+          "Name": "Rgon",
+          "Value": "",
+          "Description": "Gate (on) resistance"
+        },
+        {
+          "Name": "Rgoff",
+          "Value": "",
+          "Description": "Gate (off) resistance"
+        }
+      ],
+      "Constants": [],
+      "Custom1DTables": [
+        {
+          "Name": "e_rg_on",
+          "Xaxis": [
+            2,
+            4,
+            6,
+            10,
+            30,
+            120
+          ],
+          "Data": [
+            200.231,
+            214.167,
+            229.108,
+            254.481,
+            366.493,
+            842.764
+          ]
+        },
+        {
+          "Name": "e_rg_off",
+          "Xaxis": [
+            2,
+            4,
+            6,
+            10,
+            30,
+            120
+          ],
+          "Data": [
+            36.288,
+            52.022,
+            62.43,
+            91.423,
+            239.967,
+            915.304
+          ]
+        },
+        {
+          "Name": "e_i_on",
+          "Xaxis": [
+            0,
+            3.25,
+            6.5,
+            13,
+            26
+          ],
+          "Data": [
+            0,
+            85.422,
+            122.491,
+            200.231,
+            354.15
+          ]
+        },
+        {
+          "Name": "e_i_off",
+          "Xaxis": [
+            0,
+            3.25,
+            6.5,
+            13,
+            26
+          ],
+          "Data": [
+            0,
+            21.997,
+            23.898,
+            36.288,
+            89.398
+          ]
+        },
+        {
+          "Name": "e_tj_on",
+          "Xaxis": [
+            25,
+            100,
+            175
+          ],
+          "Data": [
+            133.443,
+            169.275,
+            205.106
+          ]
+        },
+        {
+          "Name": "e_tj_off",
+          "Xaxis": [
+            25,
+            100,
+            175
+          ],
+          "Data": [
+            30.087,
+            33.188,
+            36.288
+          ]
+        },
+        {
+          "Name": "e_v_on",
+          "Xaxis": [
+            0,
+            400,
+            600,
+            800
+          ],
+          "Data": [
+            0,
+            136.971,
+            164.393,
+            200.231
+          ]
+        },
+        {
+          "Name": "e_v_off",
+          "Xaxis": [
+            0,
+            400,
+            600,
+            800
+          ],
+          "Data": [
+            0,
+            20.527,
+            27.435,
+            36.288
+          ]
+        },
+        {
+          "Name": "e_rg_rec",
+          "Xaxis": [
+            2,
+            4,
+            6,
+            10,
+            30,
+            120
+          ],
+          "Data": [
+            120,
+            120,
+            120,
+            120,
+            120,
+            120
+          ]
+        },
+        {
+          "Name": "e_i_rec",
+          "Xaxis": [
+            0,
+            3.25,
+            6.5,
+            13,
+            26
+          ],
+          "Data": [
+            0,
+            30,
+            60,
+            120,
+            240
+          ]
+        },
+        {
+          "Name": "e_tj_rec",
+          "Xaxis": [
+            25,
+            100,
+            175
+          ],
+          "Data": [
+            60,
+            92.438,
+            124.875
+          ]
+        },
+        {
+          "Name": "e_v_rec",
+          "Xaxis": [
+            0,
+            400,
+            600,
+            800
+          ],
+          "Data": [
+            0,
+            120,
+            120,
+            120
+          ]
+        }
+      ],
+      "Custom2DTables": [],
+      "Custom3DTables": [],
+      "ConductionLossComputationMethod": 2,
+      "ConductionLossComputationFormula": "v",
+      "ConductionLossComputationMethodGateOff": 1,
+      "ConductionLossComputationFormulaGateOff": "",
+      "TurnOnLossComputationMethod": "FormulaComputationMethodType",
+      "TurnOnLossComputationFormula": "max(lookup(\u0027e_rg_on\u0027, Rgon)*lookup(\u0027e_tj_on\u0027, T)*lookup(\u0027e_i_on\u0027, i)*lookup(\u0027e_v_on\u0027, v)/(lookup(\u0027e_i_on\u0027, 13)^3)*1e-6,0)",
+      "TurnOffLossComputationMethod": "FormulaComputationMethodType",
+      "TurnOffLossComputationFormula": "max(lookup(\u0027e_rg_off\u0027, Rgoff)*lookup(\u0027e_tj_off\u0027, T)*lookup(\u0027e_i_off\u0027, i)*lookup(\u0027e_v_off\u0027, v)/(lookup(\u0027e_i_off\u0027, 13)^3)*1e-6,0) \u002B max(lookup(\u0027e_rg_rec\u0027, Rgon)*lookup(\u0027e_tj_rec\u0027, T)*lookup(\u0027e_i_rec\u0027, -i)*lookup(\u0027e_v_rec\u0027, v)/(lookup(\u0027e_i_rec\u0027, 13)^3)*1e-6,0)",
+      "ThermalImpedanceDataSerialized": "[0.13 0.00018; 0.45 0.0099; 0.22 0.0017; 0.042 1.2E-05]",
+      "ID": "b7af2a04-14fe-4d59-ab88-6e248a992219"
+    },
+    {
+      "Name": "Infineon IMBG120R060M1H (MOSFET with Diode) - Cauer",
+      "Manufacturer": "Infineon",
+      "PartNumber": "IMBG120R060M1H",
+      "Comment": "",
+      "ConductionLossesGateDependency": false,
+      "SemiconductorType": "MOSFETwithDiodeThermalDataSemiconductorType",
+      "ThermalImpedanceType": "CauerThermalNetworkType",
+      "ConductionLosses": [
+        {
+          "Temperature": 25,
+          "IVSerialized": "[-21.514 -1; -16.129 -0.75; -10.748 -0.5; -5.372 -0.25; 0 0; 4.183 0.25; 8.363 0.5; 12.4 0.75; 16.287 1; 20.028 1.25; 23.632 1.5]"
+        },
+        {
+          "Temperature": 175,
+          "IVSerialized": "[-21.514 -2.28; -16.129 -1.71; -10.748 -1.139; -5.372 -0.569; 0 0; 4.183 0.483; 8.363 0.946; 12.4 1.4; 16.287 1.848; 20.028 2.291; 23.632 2.733]"
+        }
+      ],
+      "ConductionLossesGateOff": [],
+      "TurnOnLosses": [
+        {
+          "Temperature": 0,
+          "Voltage": 0,
+          "EISerialized": "[0 0]"
+        }
+      ],
+      "TurnOffLosses": [
+        {
+          "Temperature": 0,
+          "Voltage": 0,
+          "EISerialized": "[0 0]"
+        }
+      ],
+      "CustomVariables": [
+        {
+          "Name": "Rgon",
+          "Value": "",
+          "Description": "Gate (on) resistance"
+        },
+        {
+          "Name": "Rgoff",
+          "Value": "",
+          "Description": "Gate (off) resistance"
+        }
+      ],
+      "Constants": [],
+      "Custom1DTables": [
+        {
+          "Name": "e_rg_on",
+          "Xaxis": [
+            2,
+            4,
+            6,
+            10,
+            30,
+            120
+          ],
+          "Data": [
+            200.231,
+            214.167,
+            229.108,
+            254.481,
+            366.493,
+            842.764
+          ]
+        },
+        {
+          "Name": "e_rg_off",
+          "Xaxis": [
+            2,
+            4,
+            6,
+            10,
+            30,
+            120
+          ],
+          "Data": [
+            36.288,
+            52.022,
+            62.43,
+            91.423,
+            239.967,
+            915.304
+          ]
+        },
+        {
+          "Name": "e_i_on",
+          "Xaxis": [
+            0,
+            3.25,
+            6.5,
+            13,
+            26
+          ],
+          "Data": [
+            0,
+            85.422,
+            122.491,
+            200.231,
+            354.15
+          ]
+        },
+        {
+          "Name": "e_i_off",
+          "Xaxis": [
+            0,
+            3.25,
+            6.5,
+            13,
+            26
+          ],
+          "Data": [
+            0,
+            21.997,
+            23.898,
+            36.288,
+            89.398
+          ]
+        },
+        {
+          "Name": "e_tj_on",
+          "Xaxis": [
+            25,
+            100,
+            175
+          ],
+          "Data": [
+            133.443,
+            169.275,
+            205.106
+          ]
+        },
+        {
+          "Name": "e_tj_off",
+          "Xaxis": [
+            25,
+            100,
+            175
+          ],
+          "Data": [
+            30.087,
+            33.188,
+            36.288
+          ]
+        },
+        {
+          "Name": "e_v_on",
+          "Xaxis": [
+            0,
+            400,
+            600,
+            800
+          ],
+          "Data": [
+            0,
+            136.971,
+            164.393,
+            200.231
+          ]
+        },
+        {
+          "Name": "e_v_off",
+          "Xaxis": [
+            0,
+            400,
+            600,
+            800
+          ],
+          "Data": [
+            0,
+            20.527,
+            27.435,
+            36.288
+          ]
+        },
+        {
+          "Name": "e_rg_rec",
+          "Xaxis": [
+            2,
+            4,
+            6,
+            10,
+            30,
+            120
+          ],
+          "Data": [
+            120,
+            120,
+            120,
+            120,
+            120,
+            120
+          ]
+        },
+        {
+          "Name": "e_i_rec",
+          "Xaxis": [
+            0,
+            3.25,
+            6.5,
+            13,
+            26
+          ],
+          "Data": [
+            0,
+            30,
+            60,
+            120,
+            240
+          ]
+        },
+        {
+          "Name": "e_tj_rec",
+          "Xaxis": [
+            25,
+            100,
+            175
+          ],
+          "Data": [
+            60,
+            92.438,
+            124.875
+          ]
+        },
+        {
+          "Name": "e_v_rec",
+          "Xaxis": [
+            0,
+            400,
+            600,
+            800
+          ],
+          "Data": [
+            0,
+            120,
+            120,
+            120
+          ]
+        }
+      ],
+      "Custom2DTables": [],
+      "Custom3DTables": [],
+      "ConductionLossComputationMethod": 2,
+      "ConductionLossComputationFormula": "v",
+      "ConductionLossComputationMethodGateOff": 1,
+      "ConductionLossComputationFormulaGateOff": "",
+      "TurnOnLossComputationMethod": "FormulaComputationMethodType",
+      "TurnOnLossComputationFormula": "max(lookup(\u0027e_rg_on\u0027, Rgon)*lookup(\u0027e_tj_on\u0027, T)*lookup(\u0027e_i_on\u0027, i)*lookup(\u0027e_v_on\u0027, v)/(lookup(\u0027e_i_on\u0027, 13)^3)*1e-6,0)",
+      "TurnOffLossComputationMethod": "FormulaComputationMethodType",
+      "TurnOffLossComputationFormula": "max(lookup(\u0027e_rg_off\u0027, Rgoff)*lookup(\u0027e_tj_off\u0027, T)*lookup(\u0027e_i_off\u0027, i)*lookup(\u0027e_v_off\u0027, v)/(lookup(\u0027e_i_off\u0027, 13)^3)*1e-6,0) \u002B max(lookup(\u0027e_rg_rec\u0027, Rgon)*lookup(\u0027e_tj_rec\u0027, T)*lookup(\u0027e_i_rec\u0027, -i)*lookup(\u0027e_v_rec\u0027, v)/(lookup(\u0027e_i_rec\u0027, 13)^3)*1e-6,0)",
+      "ThermalImpedanceDataSerialized": "[0.06537194118333987 0.00022742321257246325; 0.17752681760572575 0.0010202840582735084; 0.3225746234382556 0.005627534809069901; 0.2765266177726793 0.02689312659382866]",
+      "ID": "ddd06ec7-3701-44f9-92db-b19614c6def2"
+    }
+  ]
+}
