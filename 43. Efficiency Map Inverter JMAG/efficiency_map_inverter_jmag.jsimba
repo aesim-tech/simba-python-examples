@@ -2735,9 +2735,25 @@
             "EnabledScopes": []
           },
           {
+            "LibraryName": "Product",
+            "Top": -8,
+            "Left": 74,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "Pout",
+            "ID": "3a5a460c-6101-4ba5-8f15-649f48cebd7b",
+            "Parameters": {
+              "SamplingTime": "none"
+            },
+            "EnabledScopes": [
+              "Out"
+            ]
+          },
+          {
             "LibraryName": "Speed Probe",
-            "Top": -3,
-            "Left": 68,
+            "Top": -1,
+            "Left": 62,
             "Angle": 0,
             "HF": false,
             "VF": true,
@@ -2749,9 +2765,23 @@
             "EnabledScopes": []
           },
           {
+            "LibraryName": "Torque Probe",
+            "Top": -4,
+            "Left": 62,
+            "Angle": 0,
+            "HF": false,
+            "VF": true,
+            "Name": "TP1",
+            "ID": "7b659547-1b10-45f0-8eb3-7ef3c155b69c",
+            "Parameters": {
+              "Gain": "1"
+            },
+            "EnabledScopes": []
+          },
+          {
             "LibraryName": "Constant Speed",
-            "Top": -8,
-            "Left": 67,
+            "Top": -4,
+            "Left": 66,
             "Angle": 0,
             "HF": false,
             "VF": false,
@@ -2763,39 +2793,9 @@
             "EnabledScopes": []
           },
           {
-            "LibraryName": "Torque Probe",
-            "Top": -3,
-            "Left": 62,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "TP1",
-            "ID": "7b659547-1b10-45f0-8eb3-7ef3c155b69c",
-            "Parameters": {
-              "Gain": "1"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Product",
-            "Top": 15,
-            "Left": 73,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "Pout",
-            "ID": "0460028e-47d8-48f9-b42c-721bdf2aa5f5",
-            "Parameters": {
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": [
-              "Out"
-            ]
-          },
-          {
             "LibraryName": "First-Order Transfer Function",
-            "Top": 11,
-            "Left": 65,
+            "Top": -9,
+            "Left": 67,
             "Angle": 0,
             "HF": false,
             "VF": false,
@@ -3460,53 +3460,6 @@
             "Segments": [
               {
                 "StartX": 75,
-                "StartY": 5,
-                "EndX": 74,
-                "EndY": 5
-              },
-              {
-                "StartX": 74,
-                "StartY": 1,
-                "EndX": 75,
-                "EndY": 1
-              },
-              {
-                "StartX": 72,
-                "StartY": -2,
-                "EndX": 74,
-                "EndY": -2
-              },
-              {
-                "StartX": 73,
-                "StartY": 18,
-                "EndX": 72,
-                "EndY": 18
-              },
-              {
-                "StartX": 72,
-                "StartY": 18,
-                "EndX": 72,
-                "EndY": -2
-              },
-              {
-                "StartX": 74,
-                "StartY": -2,
-                "EndX": 74,
-                "EndY": 1
-              },
-              {
-                "StartX": 74,
-                "StartY": 1,
-                "EndX": 74,
-                "EndY": 5
-              }
-            ],
-            "Name": "C39"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 75,
                 "StartY": 10,
                 "EndX": 73,
                 "EndY": 10
@@ -3562,47 +3515,6 @@
           {
             "Segments": [
               {
-                "StartX": 67,
-                "StartY": -7,
-                "EndX": 62,
-                "EndY": -7
-              },
-              {
-                "StartX": 66,
-                "StartY": -2,
-                "EndX": 66,
-                "EndY": -6
-              },
-              {
-                "StartX": 66,
-                "StartY": -6,
-                "EndX": 62,
-                "EndY": -6
-              },
-              {
-                "StartX": 62,
-                "StartY": -7,
-                "EndX": 62,
-                "EndY": -6
-              }
-            ],
-            "Name": "C31"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 68,
-                "StartY": 0,
-                "EndX": 68,
-                "EndY": -2
-              },
-              {
-                "StartX": 62,
-                "StartY": -2,
-                "EndX": 62,
-                "EndY": 0
-              },
-              {
                 "StartX": 61,
                 "StartY": 0,
                 "EndX": 62,
@@ -3611,25 +3523,84 @@
               {
                 "StartX": 62,
                 "StartY": 0,
-                "EndX": 68,
-                "EndY": 0
+                "EndX": 62,
+                "EndY": -3
               }
             ],
-            "Name": "C38"
+            "Name": "C31"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 75,
+                "StartY": 5,
+                "EndX": 74,
+                "EndY": 5
+              },
+              {
+                "StartX": 74,
+                "StartY": 1,
+                "EndX": 75,
+                "EndY": 1
+              },
+              {
+                "StartX": 73,
+                "StartY": -5,
+                "EndX": 74,
+                "EndY": -5
+              },
+              {
+                "StartX": 73,
+                "StartY": -2,
+                "EndX": 74,
+                "EndY": -2
+              },
+              {
+                "StartX": 66,
+                "StartY": 0,
+                "EndX": 73,
+                "EndY": 0
+              },
+              {
+                "StartX": 73,
+                "StartY": -5,
+                "EndX": 73,
+                "EndY": -2
+              },
+              {
+                "StartX": 73,
+                "StartY": -2,
+                "EndX": 73,
+                "EndY": 0
+              },
+              {
+                "StartX": 74,
+                "StartY": -2,
+                "EndX": 74,
+                "EndY": 1
+              },
+              {
+                "StartX": 74,
+                "StartY": 1,
+                "EndX": 74,
+                "EndY": 5
+              }
+            ],
+            "Name": "C40"
           },
           {
             "Segments": [
               {
                 "StartX": 64,
-                "StartY": -1,
+                "StartY": -4,
                 "EndX": 64,
-                "EndY": 13
+                "EndY": -7
               },
               {
                 "StartX": 64,
-                "StartY": 13,
-                "EndX": 65,
-                "EndY": 13
+                "StartY": -7,
+                "EndX": 67,
+                "EndY": -7
               }
             ],
             "Name": "C19"
@@ -3637,22 +3608,10 @@
           {
             "Segments": [
               {
-                "StartX": 73,
-                "StartY": 16,
-                "EndX": 70,
-                "EndY": 16
-              },
-              {
-                "StartX": 70,
-                "StartY": 16,
-                "EndX": 70,
-                "EndY": 13
-              },
-              {
-                "StartX": 70,
-                "StartY": 13,
-                "EndX": 69,
-                "EndY": 13
+                "StartX": 74,
+                "StartY": -7,
+                "EndX": 71,
+                "EndY": -7
               }
             ],
             "Name": "C36"
