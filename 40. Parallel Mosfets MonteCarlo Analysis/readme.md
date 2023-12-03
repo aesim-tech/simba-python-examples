@@ -6,7 +6,7 @@ tags:
 
 # Monte Carlo Worst Case Analysis: parallel mosfets - evolution of losses and junction temperature
 
-[Download **Python script**](parallel_mosfets_montecalrlo_analysis.py)
+[Download **Python script**](parallel_mosfets_montecarlo_analysis.py)
 
 [Download **Plot Python script**](parallel_mosfets_montecarlo_plot.py)
 
