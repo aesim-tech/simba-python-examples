@@ -25,7 +25,7 @@ tags:
 
 The motor drive inverter model consists of a 3-phase 2-level voltage source inverter (VSI) that supplies a JMAG permanent magnet synchronous motor (PMSM). The PMSM is connected to a load that imposes a constant speed, meaning that the motor must be able to produce enough torque to maintain the desired speed.
 
-![Inverter and Motor](fig/Inverter_motor.png)
+![Inverter and Motor](fig/inverter_motor.png)
 
 The PMSM model used for this simulation is directly extracted from [JMAG website](https://www.jmag-international.com/) and can be downloaded [here](https://www.jmag-international.com/modellibrary/032/).
 
