@@ -11,12 +11,9 @@ def show_heatmap(fig, ax1, x, y, z, xlabel, ylabel, title, cmap):
     """
     # Create grid values first.
     xi, yi = np.linspace(x.min(), x.max(), 100), np.linspace(y.min(), y.max(), 100)
-
-    # Linearly interpolate the data (x, y) on a grid defined by (xi, yi).
-    # triang = tri.Triangulation(x, y)
     
-    scipy_triang = Delaunay(np.vstack((x, y)).T) #AM
-    triang = tri.Triangulation(x, y, triangles=scipy_triang.simplices) #AM
+    scipy_triang = Delaunay(np.vstack((x, y)).T)
+    triang = tri.Triangulation(x, y, triangles=scipy_triang.simplices)
    
     interpolator = tri.LinearTriInterpolator(triang, z)
     Xi, Yi = np.meshgrid(xi, yi)
