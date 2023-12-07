@@ -43,7 +43,7 @@ This example performs an analysis with:
 
 * 1000 iterations
 * a variation of 10% of two elements for each power mosfet:
-  - the on-resistance $R_{dson} with a nominal value of $\left(R_{dson}\right)_{nominal} = 60 m \Omega$
+  - the on-resistance $R_{dson}$ with a nominal value of $\left(R_{dson}\right)_{nominal} = 60 m \Omega$
   - the gate resistance $R_g$ with a nominal value of $\left(R_{g}\right)_{nominal} = 20 \Omega$
 
 
