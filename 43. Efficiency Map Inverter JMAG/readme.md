@@ -39,7 +39,7 @@ Below the motor specifications:
 
 A DQ control has been implemented (described in [another example](../13. Inverter Efficiency Map/readme.md) which proposes this same principle of getting an inverter efficiency map but with an ideal PMSM).
 
-![Drawing](fig/Drawing.png)
+![Drawing](fig/drawing.png)
 
 Yet, the modulation strategy considered here is a "carrier-based" space vector modulation (or MIN-MAX modulation).
 
