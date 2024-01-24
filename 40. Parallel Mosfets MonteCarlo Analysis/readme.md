@@ -34,7 +34,7 @@ The main model parameters are the following:
 * DC high voltage: 800 V
 * Average load current: around 48 A
 * Switching frequency: 50 kHz
-* Case temperature: 100°C
+* Case temperature: 100 °C
 
 
 ## Python script
@@ -43,8 +43,8 @@ This example performs an analysis with:
 
 * 1000 iterations
 * a variation of 10% of two elements for each power mosfet:
-  - the on-resistance $R_{dson}$ with a nominal value of $\left(R_{dson}\right)_{nominal} = 60 m \Omega$
-  - the gate resistance $R_g$ with a nominal value of $\left(R_{g}\right)_{nominal} = 20 \Omega$
+  - the on-resistance $R_{dson}$ with a nominal value of $\left(R_{dson}\right)_{nominal} = 60 ~m \Omega$
+  - the gate resistance $R_g$ with a nominal value of $\left(R_{g}\right)_{nominal} = 20 ~\Omega$
 
 
 ```py
