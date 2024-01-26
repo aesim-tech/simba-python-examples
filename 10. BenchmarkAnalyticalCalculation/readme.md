@@ -31,7 +31,7 @@ Let's compare the output voltage accross R1 and RMS current through the inductan
 
 #### Output voltage
 
-$<V_{out}> =  D \times V_{in}$
+< $V_{out}$ > $=  D \times V_{in}$
 
 with:
 
@@ -40,7 +40,7 @@ with:
 
 #### Inductance RMS current
 
-$(I_L)_{rms} = \sqrt{\frac{<I_L>^2 + (\Delta_{i_L})^2}{12}}$
+$(I_L)~rms = \sqrt{\frac{<I_L>^2 + (\Delta_{i_L})^2}{12}}$
 
 with: 
 
@@ -48,7 +48,7 @@ with:
 * L = 0.001 H
 * $f_{sw}$ = 5000 Hz
 
-$<I_L> = \frac{D \times Vin}{R}$
+< $I_L$ > $= \frac{D \times Vin}{R}$
 
 $\Delta_{i_L} = \frac{D \times (1-D) \times Vin}{L*f_{sw}}$
 
@@ -83,11 +83,11 @@ For this topology, only the average output voltage accross R2 is compared.
 
 #### Output voltage
 
-$<V_{out}> =  V_{in} \times m \times \frac{D}{1-D}$
+< $V_{out}$ > $=  V_{in} \times m \times \frac{D}{1-D}$
 
 with:
 
-* $V_{in} = 6 V
+* $V_{in}$ = 6 V
 * duty cycle D = 0.25
 * $N_2$ = 2
 * $N_1$ = 1
@@ -123,11 +123,11 @@ For this topology we will compare the output average voltage accross DC1 and the
 
 #### Average Output voltage
 
-$<V_{out}> =  \frac{V_{in} \times 3 \times \sqrt{6}}{\pi*\sqrt{2}}$
+< $V_{out}$ > $=  \frac{V_{in} \times 3 \times \sqrt{6}}{\pi*\sqrt{2}}$
 
 with :
 
-* $V_{in} = 380 V
+* $V_{in}$ = 380 V
 * Input RMS current: $(I_{input})_{rms} = I_{dc} \times \sqrt{\frac{2}{3}} $
 * DC current $I_{dc}$ = 10 A
 
