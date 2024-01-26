@@ -25,7 +25,7 @@ This example shows a design of DC-DC Full Bridge LLC Resonant Converter for 3.3 
     - $(V_o)_{min}$ = 300 V
     - $(V_o)_{max}$ = 420 V
     - $(P_o)_{rated}$ = 3.3 kW
-* Resonant frequency: $f_{res}$ = 200kHz
+* Resonant frequency: $f_{res}$ = 200 kHz
 
 The Resonant converter is a power electronics DC-DC converter which uses a resonant circuit at the intermediate stage for conversion as shown below. It is a three stage converter where the input stage consists of a combination of switches to provide **switched DC supply** to the next stage. The next stage consists of a resonant tank cicuit and a transformer which converts switched DC waveform to the AC waveform. The last stage consists of a rectifier and a filter circuit which converts the AC waveform at the output of the transformer to the fixed DC at the load. This type of converter reduces the switching losses & switching noise with the help of soft switching.
 
