@@ -30,9 +30,9 @@ Below the DAB power converter designed and simulated inside SIMBA Desktop.
 
 The Python script used for showing csv exportation will do the following tasks:
 
-* simulate the transient behavior of a DAB converter (created with SIMBA Desktop) and get ouput voltage (accross R2 resistor)
+* simulate the transient behavior of a DAB converter (created with SIMBA Desktop) and get ouput voltage (accross $R_2$ resistor)
 * create a csv file named **Output_voltage.csv** by opening it in **w** mode (for writing purpose)
-* export time and output voltage (vout = VR2) into the csv file
+* export time and output voltage ($V_{out} = V_{R_2}$) into the csv file
 * plot the output voltage by using matplotlib module
 
 Once the csv file is ready, it will contain all the datas (time and output voltage values) needed.
@@ -44,10 +44,10 @@ Below the result of the output voltage once the simulation is over through SIMBA
 
 ![result](fig/result.png)
 
-As we can see, the last value of the signal is equal to 379,99V. 
+As we can see, the last value of the signal is equal to 379.99 V. 
 
 If we compare this plot with the datas exported into the csv file **Output_voltage.csv** created, you'll observe the same result:
 
 ![result](fig/result1.png)
 
-Both output voltages are close to 380V at t=0.2s 
+Both output voltages are close to 380V at t = 0.2 s 
