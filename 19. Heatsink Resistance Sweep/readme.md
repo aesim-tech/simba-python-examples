@@ -15,12 +15,12 @@ This python example proposes a sweep of the heatsink resistance resistance $R_{t
 
 
 ## How to Proceed
-Create a thermal model in SIMBA GUI and look for a custom variable Rth.
+Create a thermal model in SIMBA GUI and look for a custom variable $R_{th}$.
 
 ![Gui for Rth](fig/GUI_for_Rth.png)
 
 
-Write a Python script to call the model and add sweep range for Rth.
+Write a Python script to call the model and add sweep range for $R_{th$.
 
 ```py
 Rth  = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
