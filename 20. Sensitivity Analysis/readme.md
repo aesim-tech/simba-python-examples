@@ -54,10 +54,10 @@ Below the RLC circuit designed for this sensitivity analysis which will be perfo
 
 The Python script used for performing the sensitivity analysis will do the following tasks:
 
-* Perform a parameter variation of 10% for each of the components R1, L1, C1, R2 and do the below tasks:
+* Perform a parameter variation of 10% for each of the components $R_1$, $L_1$, $C_1$, $R_2$ and do the below tasks:
 * Run a transient analysis of the RLC circuit
 * Get the output voltage across R2 load resistor
-* Calculate the maximum value of output voltage (Vout = VR2)
+* Calculate the maximum value of output voltage ($V_{out} = V_{R_2}$)
 * Perform calculation of the average output voltage at the steady state
 * Perform calculation of the overshoot for R2 signal (output voltage)
 * Perform the sensitivity calculation for each component based on the "normalized sensitivity" equation mentioned above
@@ -72,4 +72,4 @@ Below the Sensitivity rank of such simulation with python
 
 ![result](fig/result.png)
 
-We can clearly observe that the most sensitive parameter for overshoot measurement is R1 (highest sensitivity value)
+We can clearly observe that the most sensitive parameter for overshoot measurement is $R_1$ (highest sensitivity value)
