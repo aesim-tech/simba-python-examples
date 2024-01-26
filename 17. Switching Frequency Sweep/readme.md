@@ -15,11 +15,11 @@ This python example proposes a sweep of the switching frequency to evaluate its 
 
 
 ## How to Proceed
-Create a thermal model in SIMBA GUI and look for a custom variable Fsw
+Create a thermal model in SIMBA GUI and look for a custom variable **Fsw**.
 
 ![design](fig/design.png)
 
-Write a Python script to call the model and add sweep range for Fsw.
+Write a Python script to call the model and add sweep range for **Fsw**.
 
 ```py
 Fsw  = [1000, 2000, 5000, 10000, 25000, 50000, 75000, 100000]

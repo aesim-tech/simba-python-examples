@@ -52,7 +52,7 @@ The circuit used for this example is a simple RLC circuit. Below are shown the c
 
 ### Fault cause
 
-The same circuit will be re used with fault injection: short circuit across R1 is set up.
+The same circuit will be re used with fault injection: short circuit across $R_1$ is set up.
 
 ![RLC](fig/RLC_f.png)
 
@@ -63,7 +63,7 @@ This python script example will propose the following main steps:
 * For each case **nominal** and **fault case**:
   - Run a transient analysis of the RLC circuit
   - Get the output voltage across R2 (load resistor)
-  - Get maximum and final values of output voltage (Vout = R2)
+  - Get maximum and final values of output voltage ($V_{out} = R_2$)
   - Compute overshoot of output voltage
 * Set up a test case to check if the overshoot calculated with fault injection is above the nominal case
 * Write a report

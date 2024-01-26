@@ -26,8 +26,8 @@ Below the Dual Active Bridge circuit used for illustrating this Bokeh Python scr
 The Python script used for showing Bokeh capabilities will do the following tasks:
 
 * Import Bokeh library
-* Run a transient analysis of the DCDC Dual Active Bridge Converter and get the output voltage across **Rload** resistor
-* Plot the output voltage with Bokeh and observe the **time** and **vout** values when the signal is highlighted. 
+* Run a transient analysis of the DCDC Dual Active Bridge Converter and get the output voltage across load resistor $R_{load}$,
+* Plot the output voltage with Bokeh and observe the ***time*** and $V_{out}$ values when the signal is highlighted. 
 
 The following syntax **output_notebook()**  is for Jupyter Notebook. In deed, if this line is disable, a new HTML page will be opened showing the result once the script is run. 
 If this line is enable, the script needs to be run with interactive cell option.

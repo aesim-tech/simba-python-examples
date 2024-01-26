@@ -22,9 +22,9 @@ The main steps of this example are the following:
 It requires *aesim.simba version 2023.01.19 or higher*. Also, matplotlib.pyplot can be imported to view the curves and results.
 
 
-## Add an output voltage probe sampled at 1u
+## Add an output voltage probe sampled at 1 µs
 
-An output voltage probe is added, with a sampling time is set at $1\mu s$:
+An output voltage probe is added, with a sampling time is set at 1 µs:
 
 ```py
 VP1 = flybackConverter.Circuit.AddDevice("Voltage Probe", 50, 50)
@@ -35,8 +35,8 @@ VP1.SamplingTime = 1E-6
 
 After running the simulation, this last step shows the difference of size between:
 
-* the *default* output voltage $V_{out}$ measured accross the resistor R2,
-* the sampled signal (at $1 \mu s$) *sampled_signal_data*  from the voltage probe.
+* the *default* output voltage $V_{out}$ measured accross the resistor $R_2$,
+* the sampled signal at 1 µs *sampled_signal_data*  from the voltage probe.
 
 ```
 len(t): 4750

@@ -33,7 +33,7 @@ The Python script used for showing the interactive modification of duty cycle du
 * import all the necessary libraries including **ipywidgets**
 * load the DC-DC Buck converter from SIMBA design examples
 * create two array **table_t** and **table_Vout**
-* enable both voltage and current scopes for R1 parameter (load resistor)
+* enable both voltage and current scopes for $R_1$ parameter (load resistor)
 * define a number of points (here 1000) which represents the **intermediate time** allowing to set up the sudden change of the duty cycle value.
   This set of points needs to be modified in order to change this “intermediate time”.
 * define a function called **run_simulation** allowing to retrieve the duty cycle, time and output voltage, add datas to the 2 arrays created previously and refresh     thoses arrays once their limits have been reached

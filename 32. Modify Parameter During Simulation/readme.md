@@ -47,4 +47,4 @@ As we can see, the output voltage is impacted a lot by the duty cycle modificati
 
 In our case, we have defined a set of points = 15000 to represents the **intermediate time** when parameter value is modified. In this case, this leads to a time of around 27 ms.
 
-As we can see at t = 27ms, the output voltage increases because the duty cycle value suddenly increases as well.
+As we can see at t = 27 ms, the output voltage increases because the duty cycle value suddenly increases as well.

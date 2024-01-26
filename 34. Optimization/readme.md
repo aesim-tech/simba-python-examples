@@ -17,7 +17,7 @@ The model can be created in SIMBA GUI:
 
 ![Optimization_ckt](fig/Optimization_ckt.png)
 
-It can be seen that a voltage source with its internal resistance R1 supplying power to the load R2. Now, let us consider that R1 has the fixed value of 3 $\Omega$.
+It can be seen that a voltage source with its internal resistance R1 supplying power to the load R2. Now, let us consider that $R_1$ has the fixed value of 3 Ω.
 
 ### Write an Objective Function
 
@@ -29,7 +29,7 @@ To maximize the power delivered to the load, an objective function has to be def
 Here are the main steps of this function:
 
 * load the created model,
-* apply value of resistor R2,
+* apply value of resistor $R_2$,
 * run the simulation,
 * compute and return transferred power.
   
@@ -88,7 +88,7 @@ For this example, a typical run can lead to the results below printed with 4 dig
 
 ```py
 Optimal R_load = 3.0009 Ω
-Transferred Power P = 0.0833
+Transferred Power P = 0.0833 W
 ```
 
-Of course, with a simple example, these results are closed to the theoretical value of 3 $\Omega$. For other more complex problems, the initial guess as well the bounds can also be considered to explore a wider domain.
+Of course, with a simple example, these results are closed to the theoretical value of 3 Ω. For other more complex problems, the initial guess as well the bounds can also be considered to explore a wider domain.
