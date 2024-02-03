@@ -35,6 +35,9 @@ Below the motor specifications:
 
 ![Motor](fig/motor.png)
 
+!!! info
+    For the details of the motor specifications, refer to [JSOL website](https://www.jmag-international.com/modellibrary/032/).
+
 ### Control
 
 A DQ control has been implemented (described in [another example](../13. Inverter Efficiency Map/readme.md) which proposes this same principle of getting an inverter efficiency map but with an ideal PMSM).
