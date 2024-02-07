@@ -11,6 +11,7 @@ from aesim.simba import ProjectRepository
 #############################
 #   SIMULATION PARAMETERS   #
 #############################
+number_of_parallel_simulations = 2 # Number of PSL Solver 
 case_temperature = 80           # Case temperature [Celsius]
 Rg = 4.5                         # Gate resistance [Ohm]
 switching_frequency = 50000;     # Switching Frequency [Hz]
@@ -204,7 +205,7 @@ if __name__ == "__main__": # Called only in main thread. It confirms that the co
                 i=i+1
 
     # Create and start the processing pool
-    pool = multiprocessing.Pool()
+    pool = multiprocessing.Pool(number_of_parallel_simulations)
     for _ in tqdm(pool.imap(run_simulation_star, pool_args), total=len(pool_args)):
         pass
 

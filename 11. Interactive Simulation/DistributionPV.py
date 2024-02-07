@@ -494,5 +494,6 @@ canvas_graphique = FigureCanvasTkAgg(fig, case_graphique)
 canvas_graphique.get_tk_widget().pack(padx=10, pady=10, expand=YES)
 ani = animation.FuncAnimation(fig, affichage, interval=1000)
 
-# afficher la fenetre
-fenetre.mainloop()
+# afficher la fenetre si hors de l'environnement de test
+if os.environ.get("SIMBA_SCRIPT_TEST") == False:
+    fenetre.mainloop()

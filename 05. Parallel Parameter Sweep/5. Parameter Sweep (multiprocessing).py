@@ -15,6 +15,7 @@ import numpy as np
 #############################
 
 # %% Set main parameters
+number_of_parallel_simulations = 2 # Number of available PSL solvers or cores
 duty_cycle_min = 0
 duty_cycle_max = 0.9
 numberOfPoints = 200    # Run 200 simulations
@@ -86,7 +87,7 @@ if __name__ == "__main__": # Called only in main thread
 
     # Create and start the processing pool
     print("2. Running...")
-    pool = multiprocessing.Pool()
+    pool = multiprocessing.Pool(number_of_parallel_simulations)
     for _ in tqdm.tqdm(pool.imap(run_job_star, pool_args), total=len(pool_args)):
         pass
 

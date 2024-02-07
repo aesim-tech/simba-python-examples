@@ -18,6 +18,7 @@ from aesim.simba import ProjectRepository
 #############################
 #   SIMULATION PARAMETERS   #
 #############################
+number_of_parallel_simulations = 2 # Number of PSL Solver 
 VIN = 400
 VIN_RATED = 400
 VIN_MIN = 390
@@ -46,6 +47,10 @@ LN_RANGE = [1, 2, 3, 5, 6, 7, 9, 10]
 Q_RANGE = [0.1, 0.13, 0.17, 0.2, 0.25, 0.3, 0.35, 0.4, 0.7, 1]
 FIN_RANGE= np.logspace(-1, 0.5, num=100)
 
+if os.environ.get("SIMBA_SCRIPT_TEST"): # Accelerate simulation in test environment.
+    LN_RANGE = [7, 9]
+    Q_RANGE = [0.4, 0.7]
+    FIN_RANGE= np.logspace(-1, 0.5, num=5)
 
 #############################
 #           METHODS         #
@@ -173,11 +178,14 @@ if __name__ == "__main__": # Called only in main thread.
                 i=i+1
 
     # Run Actual Simulation
-    pool = multiprocessing.Pool()
+    pool = multiprocessing.Pool(number_of_parallel_simulations)
     for _ in tqdm.tqdm(pool.imap(run_simulation_star, pool_args), total=len(pool_args)):
         pass
         
     # Plot curves
+    if os.environ.get("SIMBA_SCRIPT_TEST"):
+        exit()
+
     freq_L = []
     Q_L = []
     V_max = []

@@ -7,10 +7,10 @@ from aesim.simba import ProjectRepository
 from datetime import datetime
 import pandas as pd
 
-
 #############################
 #         PARAMETERS        #
 #############################
+number_of_parallel_simulations = 2 # Number of PSL Solver 
 
 iterations = range(1000)
 mosfet_index_list = ['11', '12', '13']
@@ -19,6 +19,8 @@ for mosfet_index in mosfet_index_list:
     param['Rdson'+ mosfet_index] = {'nominal': 60e-3, 'tolerance': 0.1}
     param['Rg'+ mosfet_index] = {'nominal': 20, 'tolerance': 0.1}
 
+if os.environ.get("SIMBA_SCRIPT_TEST"): # To accelerate unit tests
+    iterations = range(50)
 
 #############################
 #           METHODS         #
@@ -93,7 +95,7 @@ if __name__ == "__main__": # Called only in main thread
     lock = manager.Lock()
     manager_result_dict = manager.dict()
     pool_args = [[iter, manager_result_dict, lock] for iter in iterations]
-    pool = multiprocessing.Pool()
+    pool = multiprocessing.Pool(number_of_parallel_simulations)
     for _ in tqdm(pool.imap(run_simulation_star, pool_args), total=len(pool_args)):
         pass
     

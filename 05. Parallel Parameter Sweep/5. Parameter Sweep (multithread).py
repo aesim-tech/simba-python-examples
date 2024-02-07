@@ -10,6 +10,9 @@ import threading, tqdm  # tqdm is for the progress bar
 import matplotlib.pyplot as plt
 import numpy as np
 
+number_of_parallel_simulations = 2 # Number of availble PSL Solver or core
+semaphore = threading.Semaphore(number_of_parallel_simulations)
+
 # %% Define the functions to be run in parallel
 def run_job(simulation_number, duty_cycle, calculated_voltages):
     """
@@ -24,33 +27,33 @@ def run_job(simulation_number, duty_cycle, calculated_voltages):
         duty_cycle (float): duty-cycle to 
         calculated_voltages ([float]): thread-safe list used to store results
     """
+    with semaphore:
+        BuckBoostConverter = DesignExamples.BuckBoostConverter()
 
-    BuckBoostConverter = DesignExamples.BuckBoostConverter()
+        # Set duty cycle value
+        PWM = BuckBoostConverter.Circuit.GetDeviceByName('C1')
+        PWM.DutyCycle = duty_cycle
 
-    # Set duty cycle value
-    PWM = BuckBoostConverter.Circuit.GetDeviceByName('C1')
-    PWM.DutyCycle = duty_cycle
+        # create job
+        job = BuckBoostConverter.TransientAnalysis.NewJob()
 
-    # create job
-    job = BuckBoostConverter.TransientAnalysis.NewJob()
+        # Start job and log if error.
+        job.Run()
+        status = job.Run()
+        if str(status) != "OK":
+            print(job.Summary()[:-1])
+            return  # ERROR
 
-    # Start job and log if error.
-    job.Run()
-    status = job.Run()
-    if str(status) != "OK":
-        print(job.Summary()[:-1])
-        return  # ERROR
+        # Retrieve results
+        t = np.array(job.TimePoints)
+        Vout = np.array(job.GetSignalByName('Rload - Voltage').DataPoints)
 
-    # Retrieve results
-    t = np.array(job.TimePoints)
-    Vout = np.array(job.GetSignalByName('Rload - Voltage').DataPoints)
+        # Average output voltage for t > 2ms
+        indices = np.where(t >= 0.005)
+        Vout = np.take(Vout, indices)
 
-    # Average output voltage for t > 2ms
-    indices = np.where(t >= 0.005)
-    Vout = np.take(Vout, indices)
-
-    # Save Voltage in the results
-    calculated_voltages[simulation_number] = np.average(Vout)
+        # Save Voltage in the results
+        calculated_voltages[simulation_number] = np.average(Vout)
 
 
 #############################
@@ -62,7 +65,6 @@ if __name__ == "__main__":  # Called only in main thread.
     print("1. Initialization")
     numberOfPoints = 200  # Run 200 simulations
     duty_cycles = np.arange(0.00, 0.9, 0.9 / numberOfPoints)
-
     calculated_voltages = [None] * len(duty_cycles)
     threads = []
 

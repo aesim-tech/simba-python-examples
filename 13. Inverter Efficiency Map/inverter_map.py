@@ -20,6 +20,7 @@ from scipy.spatial import ConvexHull
 #############################
 #   SIMULATION PARAMETERS   #
 #############################
+number_of_parallel_simulations = 2 # Number of PSL Solver 
 case_temperature = 40           # Case temperature [Celsius]
 Rg = 10                         # Gate resistance [Ohm]
 switching_frequency = 30000;     # Switching Frequency [Hz]
@@ -38,6 +39,10 @@ PM_Wb = 0.0802;                 # PMSM Ke/NPP
 Ld_H = 14.0e-3;                 # Motor Ld [H]
 Lq_H = 14.0e-3;                 # Motor Ld [H]
 Rs = 0.814                      # Motor Stator Resistance [Ohm]
+
+if os.environ.get("SIMBA_SCRIPT_TEST"): # Accelerate simulation in test environment.
+    number_of_speed_points = 2 
+    number_of_current_points = 2
 
 #############################
 #           METHODS         #
@@ -245,7 +250,7 @@ if __name__ == "__main__": # Called only in main thread. It confirms that the co
                 i=i+1
 
     # Create and start the processing pool
-    pool = multiprocessing.Pool()
+    pool = multiprocessing.Pool(number_of_parallel_simulations)
     for _ in tqdm(pool.imap(run_simulation_star, pool_args), total=len(pool_args)):
         pass
 
