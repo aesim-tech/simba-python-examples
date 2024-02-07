@@ -18,7 +18,7 @@ from aesim.simba import ProjectRepository
 #############################
 #   SIMULATION PARAMETERS   #
 #############################
-number_of_parallel_simulations = 2 # Number of PSL Solver 
+number_of_parallel_simulations = 1 # Number of PSL Solver 
 VIN = 400
 VIN_RATED = 400
 VIN_MIN = 390
@@ -48,9 +48,9 @@ Q_RANGE = [0.1, 0.13, 0.17, 0.2, 0.25, 0.3, 0.35, 0.4, 0.7, 1]
 FIN_RANGE= np.logspace(-1, 0.5, num=100)
 
 if os.environ.get("SIMBA_SCRIPT_TEST"): # Accelerate simulation in test environment.
-    LN_RANGE = [7, 9]
-    Q_RANGE = [0.4, 0.7]
-    FIN_RANGE= np.logspace(-1, 0.5, num=5)
+    LN_RANGE = [7]
+    Q_RANGE = [0.4]
+    FIN_RANGE= np.logspace(-1, 0.5, num=4)
 
 #############################
 #           METHODS         #

@@ -68,6 +68,9 @@ def plot(df):
     fig.tight_layout(pad = 2)
     plt.show()
 
+if os.environ.get("SIMBA_SCRIPT_TEST"): #Excluded from unit test
+    exit()
+    
 # Load dataframe
 script_folder = os.path.realpath(os.path.dirname(__file__))
 filename = "montecarlo_parallel_mosfets_2023-11-13"

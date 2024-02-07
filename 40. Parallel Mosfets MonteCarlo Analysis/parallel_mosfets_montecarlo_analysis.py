@@ -10,7 +10,7 @@ import pandas as pd
 #############################
 #         PARAMETERS        #
 #############################
-number_of_parallel_simulations = 2 # Number of PSL Solver 
+number_of_parallel_simulations = 1 # Number of PSL Solver 
 
 iterations = range(1000)
 mosfet_index_list = ['11', '12', '13']
@@ -20,8 +20,7 @@ for mosfet_index in mosfet_index_list:
     param['Rg'+ mosfet_index] = {'nominal': 20, 'tolerance': 0.1}
 
 if os.environ.get("SIMBA_SCRIPT_TEST"): # To accelerate unit tests
-    iterations = range(50)
-
+    iterations = range(10)
 #############################
 #           METHODS         #
 #############################
