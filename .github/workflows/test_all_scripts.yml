@@ -18,13 +18,12 @@ jobs:
       with:
         python-version: '3.X'
 
-    - name: Change to Tests directory
-      run: cd '00. Tests'
-
     - name: Install dependencies
+      working-directory: 00. Tests
       run: pip install -r requirements.txt
 
     - name: Run tests
+      working-directory: 00. Tests
       env:
         SIMBA_DEPLOYMENT_KEY: ${{ secrets.SIMBA_DEPLOYMENT_KEY }}
       run: pytest -x -v
