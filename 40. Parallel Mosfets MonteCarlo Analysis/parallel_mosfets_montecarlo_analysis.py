@@ -3,14 +3,14 @@ import os
 import random
 import multiprocessing
 from tqdm import tqdm
-from aesim.simba import ProjectRepository
+from aesim.simba import ProjectRepository,License
 from datetime import datetime
 import pandas as pd
 
 #############################
 #         PARAMETERS        #
 #############################
-number_of_parallel_simulations = 1 # Number of PSL Solver 
+number_of_parallel_simulations = License.NumberOfAvailableParallelSimulationLicense() # Number of available Parallel Simulation License
 
 iterations = range(1000)
 mosfet_index_list = ['11', '12', '13']

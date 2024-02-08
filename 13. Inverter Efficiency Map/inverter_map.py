@@ -13,14 +13,14 @@ import matplotlib.tri as tri
 import numpy as np
 import math
 from tqdm import tqdm
-from aesim.simba import Design, ProjectRepository
+from aesim.simba import Design, ProjectRepository, License
 from datetime import datetime
 from scipy.spatial import ConvexHull
 
 #############################
 #   SIMULATION PARAMETERS   #
 #############################
-number_of_parallel_simulations = 2 # Number of PSL Solver 
+number_of_parallel_simulations = License.NumberOfAvailableParallelSimulationLicense() # Number of PSL Solver 
 case_temperature = 40           # Case temperature [Celsius]
 Rg = 10                         # Gate resistance [Ohm]
 switching_frequency = 30000;     # Switching Frequency [Hz]

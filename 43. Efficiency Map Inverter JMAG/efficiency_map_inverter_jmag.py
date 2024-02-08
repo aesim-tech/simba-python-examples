@@ -5,13 +5,13 @@ Customization of efficiency map script available in python examples
 import numpy, multiprocessing, os
 import math
 from tqdm import tqdm
-from aesim.simba import ProjectRepository
+from aesim.simba import ProjectRepository, License
 
 
 #############################
 #   SIMULATION PARAMETERS   #
 #############################
-number_of_parallel_simulations = 2 # Number of PSL Solver 
+number_of_parallel_simulations = License.NumberOfAvailableParallelSimulationLicense() # Number of available parallel simulation license
 case_temperature = 80           # Case temperature [Celsius]
 Rg = 4.5                         # Gate resistance [Ohm]
 switching_frequency = 50000;     # Switching Frequency [Hz]

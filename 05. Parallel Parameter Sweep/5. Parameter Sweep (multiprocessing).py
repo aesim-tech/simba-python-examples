@@ -4,7 +4,7 @@ This simple scripts shows how the SIMBA Python Library can be used to run calcul
 Make sure to run 'pip install -r requirements.txt' to ensure you have the required packages.
 """
 # %% Load required modules
-from aesim.simba import DesignExamples
+from aesim.simba import DesignExamples, License
 from datetime import datetime
 import multiprocessing, tqdm #tqdm is for the progress bar
 import matplotlib.pyplot as plt
@@ -15,7 +15,7 @@ import numpy as np
 #############################
 
 # %% Set main parameters
-number_of_parallel_simulations = 2 # Number of available PSL solvers or cores
+number_of_parallel_simulations = License.NumberOfAvailableParallelSimulationLicense() # Number of available parallel simulation license
 duty_cycle_min = 0
 duty_cycle_max = 0.9
 numberOfPoints = 200    # Run 200 simulations

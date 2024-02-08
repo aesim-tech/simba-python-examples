@@ -13,12 +13,12 @@ Before running the script, make sure to install the required packages by executi
 import numpy as np
 import os,multiprocessing, tqdm, math
 import matplotlib.pyplot as plt
-from aesim.simba import ProjectRepository
+from aesim.simba import ProjectRepository, License
 
 #############################
 #   SIMULATION PARAMETERS   #
 #############################
-number_of_parallel_simulations = 1 # Number of PSL Solver 
+number_of_parallel_simulations = License.NumberOfAvailableParallelSimulationLicense() # Number of available parallel simulation license
 VIN = 400
 VIN_RATED = 400
 VIN_MIN = 390
