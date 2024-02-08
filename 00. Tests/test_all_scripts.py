@@ -4,13 +4,34 @@ import os
 import subprocess
 import pytest
 import nbformat
+import sys
 from nbconvert.preprocessors import ExecutePreprocessor, CellExecutionError
+
+# --------------------------------------------------------------------------------------
+# INTERNAL SCRIPT FOR SIMBA TEAM
+# --------------------------------------------------------------------------------------
+# Purpose:
+# This script is developed for internal use by the SIMBA team. It's primary function is
+# to ensure that all tests and notebooks work as expected before any new release.
+# --------------------------------------------------------------------------------------
+
+def get_python_command():
+    if sys.platform.startswith('win'):
+        return 'python'  # On Windows, the command is typically 'python'
+    elif sys.platform.startswith('darwin'):
+        return 'python3' # On macOS (Darwin), the command is typically 'python3'
+    elif sys.platform.startswith('linux'):
+        return 'python3' # On Linux, the command is also typically 'python3'
+    else:
+        return 'python'  # Default to 'python' if the platform is not recognized
+
 
 def run_python_script(path):
     env = os.environ.copy()
     env["MPLBACKEND"] = "Agg"
     env["SIMBA_SCRIPT_TEST"] = "True"
-    subprocess.check_output(["python3", path], stderr=subprocess.STDOUT, universal_newlines=True, env=env)
+    python_command = get_python_command()
+    subprocess.check_output([python_command, path], stderr=subprocess.STDOUT, universal_newlines=True, env=env)
 
 def run_jupyter_notebook(path):
     original_cwd = os.getcwd()  # Save the original current working directory
@@ -34,6 +55,10 @@ def run_jupyter_notebook(path):
         os.chdir(original_cwd)  # Revert back to the original directory
 
 def run_tests_in_folder(folder_path):
+
+    if 'JMAG' in folder_path and not sys.platform.startswith('win'):
+        return # JMAG works only on windows
+    
     for file in os.listdir(folder_path):
         full_path = os.path.join(folder_path, file)
         if file.endswith(".py"):

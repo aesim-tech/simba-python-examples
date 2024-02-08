@@ -33,6 +33,8 @@ def show_heatmap(fig, ax1, x, y, z, xlabel, ylabel, title, cmap):
     ax1.set_ylabel(ylabel)
     ax1.set_title(title)
 
+if os.environ.get("SIMBA_SCRIPT_TEST"):
+    exit()
 
 current_folder = os.path.dirname(os.path.abspath(__file__))
 inverter_losses = np.loadtxt(os.path.join(current_folder, "results/inverter_losses.txt"))

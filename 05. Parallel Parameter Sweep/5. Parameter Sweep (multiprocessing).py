@@ -99,5 +99,5 @@ if __name__ == "__main__": # Called only in main thread
     ax.set_ylabel('Vout (V)')
     ax.set_xlabel('Duty Cycle')
     ax.plot(duty_cycles, calculated_voltages)
-    path= "buck_boost_parametric_sweep_"+datetime.now().strftime("%m%d%Y%H%M%S")+".png"
+    path= "buck_boost_parametric_sweep_"+datetime.now().strftime("%m%d%Y")+".png"
     fig.savefig(path) 

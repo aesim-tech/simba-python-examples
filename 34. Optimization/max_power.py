@@ -31,5 +31,5 @@ result = minimize(objective_function, initial_guess, method='L-BFGS-B', bounds=b
 optimal_R_load = result.x[0]
 max_power = -result.fun  # Convert back to positive power value
 
-print('Optimal R_load = {0:.4f} Ω'.format(optimal_R_load))
+print('Optimal R_load = {0:.4f} Ohm'.format(optimal_R_load))
 print('Transferred Power P = {0:.4f} W'.format(max_power))

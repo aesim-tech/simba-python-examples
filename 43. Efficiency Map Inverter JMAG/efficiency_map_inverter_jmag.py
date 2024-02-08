@@ -27,12 +27,16 @@ simulation_time = 0.5             # time simulated in each run
 
 # Get motor parameters from Simba file
 current_folder = os.path.dirname(os.path.abspath(__file__))
-project = ProjectRepository(os.path.join(current_folder , "wolfspeed_evaluation.jsimba"))
+project = ProjectRepository(os.path.join(current_folder , "efficiency_map_inverter_jmag.jsimba"))
 simba_full_design = project.GetDesignByName('Design')
 Ld_H = float(simba_full_design.Circuit.GetVariableValue("Ld"))
 Lq_H = float(simba_full_design.Circuit.GetVariableValue("Lq"))
 PM_Wb = float(simba_full_design.Circuit.GetVariableValue("Phi_mag"))
 NPP = float(simba_full_design.Circuit.GetVariableValue("NPP"))
+
+if os.environ.get("SIMBA_SCRIPT_TEST"): # Accelerate simulation in test environment.
+    number_of_speed_points = 2 
+    number_of_current_points = 2
 
 #############################
 #           METHODS         #
@@ -56,7 +60,7 @@ def run_simulation(id_ref, iq_ref, speed_ref, case_temperature, Rg, sim_number, 
     # Read the jsimba file
     with lock:
         current_folder = os.path.dirname(os.path.abspath(__file__))
-        project = ProjectRepository(os.path.join(current_folder , "wolfspeed_evaluation.jsimba"))
+        project = ProjectRepository(os.path.join(current_folder , "efficiency_map_inverter_jmag.jsimba"))
     
     simba_full_design = project.GetDesignByName('Design')
 
@@ -178,6 +182,18 @@ def SelectIdIq(ref_idiq, current_ref, speed_ref):
 
 # Distribute and run the calculations. Results are saved in result_dict
 if __name__ == "__main__": # Called only in main thread. It confirms that the code is under main function
+
+    # update rtt path
+    current_folder = os.path.dirname(os.path.abspath(__file__))
+    path_RTT = os.path.join(current_folder, "100k_D_D_I-.rtt")
+
+    # update rtt file path
+
+    project = ProjectRepository(os.path.join(current_folder, 'efficiency_map_inverter_jmag.jsimba'))
+    design = project.GetDesignByName('Design')
+    pmsm = design.Circuit.GetDeviceByName("JmagRTMotor1")
+    pmsm.RttFilePath.UserValue = path_RTT
+    project.Save()
 
     #initialization
     min_speed_ref = relative_minimum_speed * max_speed_ref;

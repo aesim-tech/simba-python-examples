@@ -1,0 +1,13 @@
+tqdm
+aesim.simba >= 2024.2.8
+numpy
+matplotlib
+scipy
+nbconvert
+nbformat
+control
+ipywidgets
+pytest
+notebook
+pandas
+bokeh
