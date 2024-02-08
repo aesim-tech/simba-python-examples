@@ -1,0 +1,30 @@
+name: Automated Unit Tests
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.X'
+
+    - name: Change to Tests directory
+      run: cd '00. Tests'
+
+    - name: Install dependencies
+      run: pip install -r requirements.txt
+
+    - name: Run tests
+      env:
+        SIMBA_DEPLOYMENT_KEY: ${{ secrets.SIMBA_DEPLOYMENT_KEY }}
+      run: pytest -x -v
