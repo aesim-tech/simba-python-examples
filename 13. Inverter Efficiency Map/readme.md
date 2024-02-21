@@ -40,7 +40,9 @@ Its primary objective is to run simulations at various operating points, such as
 ```py
 import multiprocessing
 from tqdm import tqdm
+number_of_parallel_simulations = License.NumberOfAvailableParallelSimulationLicense()
 ```
+
 ### Id, Iq current references calculation
 Current references are calculated using MTPA (Maximum Torque Per Ampere) and FW (Flux Weakening) algorithm according to the targeted operation point. The function `SelectIdIq()` takes in current and speed references, and returns a boolean value indicating whether the Id and Iq references were successfully calculated or not.
 
@@ -73,11 +75,15 @@ for current_ref in current_refs:
 The code loops through each combination of current and speed references and executes a `SelectIdIq()` function to get the desired current reference values. The computed values are added to the `pool_args` if the function returns True.
 
 ```py
-pool = multiprocessing.Pool()
+pool = multiprocessing.Pool(number_of_parallel_simulations)
 for _ in tqdm(pool.imap(run_simulation_star, pool_args), total=len(pool_args)):
     pass
 ```
-The code creates a processing pool using `multiprocessing.Pool()` and starts the simulation using `pool.imap(run_simulation_star, pool_args)`. The `tqdm()` function is used to display a progress bar for the simulation.
+
+!!! note
+    The variable named "number_of_parallel_simulations" allows to set automatically the number of available parallel simulation based on the license of each user. This variable is defined earlier into       the python script directly.
+    
+The code creates a processing pool using `multiprocessing.Pool(number_of_parallel_simulations)` and starts the simulation using `pool.imap(run_simulation_star, pool_args)`. The `tqdm()` function is used to display a progress bar for the simulation.
 
 ```py
 for i in result_dict.items():

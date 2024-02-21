@@ -139,8 +139,7 @@ result_dict[sim_number] = [fin, vout_average]
 ```
 
 ### Main script
-
-This part deals with the multiprocessing computation which is used here to speed up the simulation. To prepare the simulations, the arguments and the future results (a python dictionnary) are stored in a python list which will be managed by the *pool* of the multiprocessing module to distribute the calculations.
+This part deals with the multiprocessing computation which is used here to speed up the simulation. To prepare the simulations, the arguments and the future results (a python dictionnary) are stored in a python list which will be managed by the pool of the multiprocessing module to distribute the calculations based on the number of available parallel simulation license.
 
 
 ``` py
@@ -168,10 +167,13 @@ if __name__ == "__main__": # Called only in main thread.
 Finally, a process *pool* object - from the multiprocessing module - which controls a pool of worker processes is used. The *'tqdm'* module is used to display a progress bar.
 
 ``` py
-pool = multiprocessing.Pool()
+pool = multiprocessing.Pool(number_of_parallel_simulations)
 for _ in tqdm.tqdm(pool.imap(run_simulation_star, pool_args), total=len(pool_args)):
     pass
 ```
+
+!!! note
+    The variable named "number_of_parallel_simulations" allows to set automatically the number of available parallel simulation based on the license of each user. This variable is defined earlier into the python script directly.
 
 ## Final Design From the Plot
 
