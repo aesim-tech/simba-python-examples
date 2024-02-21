@@ -81,7 +81,7 @@ for _ in tqdm(pool.imap(run_simulation_star, pool_args), total=len(pool_args)):
 ```
 
 !!! note
-    The variable named "number_of_parallel_simulations" allows to set automatically the number of available parallel simulation based on the license of each user.
+    The variable named "number_of_parallel_simulations" allows to set automatically the number of available parallel simulation based on the license of each user. This variable is defined earlier into       the python script directly.
     
 The code creates a processing pool using `multiprocessing.Pool(number_of_parallel_simulations)` and starts the simulation using `pool.imap(run_simulation_star, pool_args)`. The `tqdm()` function is used to display a progress bar for the simulation.
 
