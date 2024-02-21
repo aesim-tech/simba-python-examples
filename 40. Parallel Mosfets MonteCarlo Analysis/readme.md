@@ -64,9 +64,13 @@ To perform parallel simulations the multiprocessing library was loaded with *Man
 ...
 Manager = multiprocessing.Manager()
 ...
-Pool = multiprocessing.Pool()
+Pool = multiprocessing.Pool(number_of_parallel_simulations)
 ...
 ```
+
+!!! note
+    The variable named "number_of_parallel_simulations" allows to set automatically the number of available parallel simulation based on the license.
+    This variable is defined earlier into the python script directly.
 
 The results are then stored in a *.pkl* file through a dataframe and can then be used for different post-processing analysis or display.
 
