@@ -1,5 +1,6 @@
 ---
 tags:
+  - Python
   - Python GUI
   - Interactive simulation
 ---
