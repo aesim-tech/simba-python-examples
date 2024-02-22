@@ -27,7 +27,7 @@ The model incorporates key parameters such as Flux, Torque, Advance Angle, and R
 
 In order to focus solely on the comparison of the model and not take into account other factors, like control etc., a very simple circuit was used:
 
-![JMAG-RT model figure](fig/JMAG-RT%20Validation.png)
+![JMAG-RT model figure](fig/jmag-rt_validation.png)
 
 The circuit consists of a JMAG-RT PMSM motor fed directly from an ideal three-phase voltage source. The motor is connected to a load that imposes a constant speed of 500 rpm.
 

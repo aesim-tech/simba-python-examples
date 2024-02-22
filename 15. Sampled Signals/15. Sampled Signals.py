@@ -7,6 +7,7 @@ Simple example showing how to read and use sampled signals (Multi Time-Steps Sol
 #%% Load modules
 from aesim.simba import DesignExamples
 import matplotlib.pyplot as plt
+import os
 
 #%% Load project
 flybackConverter = DesignExamples.DCDC_Flyback()
@@ -14,7 +15,7 @@ flybackConverter = DesignExamples.DCDC_Flyback()
 #%% Add an output voltage probe sampled at 1u 
 VP1 = flybackConverter.Circuit.AddDevice("Voltage Probe",50,50);
 VP1.Name = "VP1"
-VP1.SamplingTime = 1E-6
+VP1.SamplingTime = 5E-6
 R1 = flybackConverter.Circuit.GetDeviceByName("R2")
 C = flybackConverter.Circuit.AddConnection(R1.P,VP1.P)
 for s in VP1.Scopes: s.Enabled = True
@@ -44,6 +45,6 @@ ax.set_title(flybackConverter.Name)
 ax.set_ylabel('Vout (V)')
 ax.set_xlabel('time (s)')
 ax.plot(t,Vout, label="original")
-ax.plot(sampled_signal_time,sampled_signal_data,label="sampled")
+ax.plot(sampled_signal_time, sampled_signal_data, '+', label="sampled")
 ax.legend()
 plt.show()
