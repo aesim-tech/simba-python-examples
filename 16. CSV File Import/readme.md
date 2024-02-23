@@ -59,7 +59,7 @@ with:
 * $b$: component of the rolling resistance (N / (m / s))
 * $c$: aerodynamic drag (N / (m / s²))
 
-This required power to wheel is then loaded into a [piecewise linear control source element](www.simba.io/doc/model_library/Control_Sources_Piecewise%20Linear) to control a current source which models the DC current delivered to the inverter.
+This required power to wheel is then loaded into a [piecewise linear control source element](https://doc.simba.io/model_library/Control_Sources_Piecewise%20Linear){:target="_blank"} to control a current source which models the DC current delivered to the inverter.
 
 Motor and inverter efficiencies are considered with simple gains for the simulation.
 

@@ -8,7 +8,7 @@ tags:
 
 [Download **python script**](15.%20Sampled%20Signals.py)
 
-This example shows how to read and use sampled signals which have been created with the [multi time-step solver](../simulation_engine/#multi-time-step-solver).
+This example shows how to read and use sampled signals which have been created with the [multi time-step solver](https://doc.simba.io/simulation_engine/#multi-time-step-solver){:target="_blank"}.
 
 The circuit model used in this example is a flyback converter which is directly loaded from the collection of design examples.
 
