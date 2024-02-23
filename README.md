@@ -10,6 +10,6 @@ The Simba Python Library (aesim.simba) is a Python package that contains hundred
 ➡ https://pypi.org/project/aesim.simba/
 
 ## API Documentation
-The documentation of the API is available [here](https://www.simba.io/doc/python_api/api_index/).
+The documentation of the API is available [here](https://doc.simba.io/python_api/api_index/)
 
 [![Automated Unit Tests](https://github.com/aesim-tech/simba-python-examples/actions/workflows/test_all_scripts.yml/badge.svg)](https://github.com/aesim-tech/simba-python-examples/actions/workflows/test_all_scripts.yml)
