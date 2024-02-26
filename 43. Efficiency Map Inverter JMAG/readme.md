@@ -27,16 +27,42 @@ The motor drive inverter model consists of a 3-phase 2-level voltage source inve
 
 ![Inverter and Motor](fig/inverter_motor.png)
 
-The PMSM model used for this simulation is directly extracted from [JMAG website](https://www.jmag-international.com/) and can be downloaded [here](https://www.jmag-international.com/modellibrary/032/).
-
-JMAG has the capability to provide real accurate machine model data by the use of **.RTT** file. Thus any JMAG user can extract **.RTT** file and implement a complete drive system in SIMBA.
-
-Below the motor specifications:
-
-![Motor](fig/motor.png)
-
 !!! info
-    For the details of the motor specifications, refer to [JSOL website](https://www.jmag-international.com/modellibrary/032/).
+    For detailed specifications of the motor, refer to [JSOL website](https://www.jmag-international.com/modellibrary/032/), where the PMSM model used for this simulation has been directly extracted. JMAG has the capability to provide real accurate machine model data by the use of **.RTT** file. Thus any JMAG user can extract **.RTT** file and implement a complete drive system in SIMBA. These specifications are summarized below:
+
+| Motor specifications | |
+|---|---|
+| Model | 100k_D_D-I |
+| Model Name | PMSM |
+| Max. Power | 100 kW |
+| DC Voltage | 500 V |
+| RMS Current | 400 A |
+| Number of Poles | 12 |
+| Number of Slots | 72 |
+| Number of Phases | 3 |
+| Rotor | IPM |
+| Stator (Outside Diameter) | 400 mm |
+| Rotor (Outside Diameter) | 260 mm |
+| Number of Turns | 3 |
+| Height | 65 mm |
+| Magnet | Neodymium sintered |
+| Inertia Moment | 1.39e-1 kg / m² |
+| Mass | 62.95 kg |
+| Max. Current | 283 A |
+
+
+| Calculation Results | JMAG Designer |
+|---|---|
+| Average torque | 177 N.m |
+| Ld | 0.19 mH |
+| Lq | 0.34 mH |
+| Inductance | 0.18 mH |
+| Torque Constant | 0.626 N.m / A |
+
+
+
+
+
 
 ### Control
 

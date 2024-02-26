@@ -20,17 +20,17 @@ tags:
 ### Inverter & motor model in SIMBA
 The motor drive inverter model consists of a 3-phase 2-level voltage source inverter (VSI) that supplies a permanent magnet synchronous motor (PMSM). The PMSM is connected to a load that imposes a constant speed, meaning that the motor must be able to produce enough torque to maintain the desired speed.
 
-![Inverter and Motor](fig/Inverter_et_Motor.png)
+![Inverter and Motor](fig/inverter_and_motor.png)
 
 ### Control
 PMSMs have a strong coupling between the d- and q-axis currents, so a decoupling network is required to linearise and remove the coupling effect. The control system consists of two PI controllers and a decoupling network. The calculated reference voltages are fed into the sinusoidal PWM modulator to generate voltage signals for  the motor windings. The duty cycle of the PWM signal determines the magnitude of the voltage applied to the motor.
 
-![Drawing](fig/Drawing.jpg)
+![Drawing](fig/drawing.png)
 
 ### Thermal modeling
-To model the thermal performance of MOSFETs in an inverter, their package temperature is held constant and data is extracted from the .xml files provided by the manufacturer. This data, which includes parameters such as thermal impedance, conduction losses and switching losses, plays a crucial role in determining the power dissipation during operation. In this particular case, Wolfspeed C2M0025120D transistors were used.
+To model the thermal performance of MOSFETs in an inverter, their package temperature is held constant and data is extracted from the .xml files provided by the manufacturer. This data, which includes parameters such as thermal impedance, conduction losses and switching losses, plays a crucial role in determining the power dissipation during operation. In this particular case, Wolfspeed C3M0160120D transistors were used.
 
-![Themal Impedance](fig/Thermal%20Impedance.png)
+![Themal Impedance](fig/thermal_impedance.png)
 
 ## Python script
 This script uses the architecture presented in the tutorial *Parallel (multiprocessing) computing* and also available on [Github repository](https://github.com/aesim-tech/simba-python-examples/tree/main/05.%20Parallel%20Parameter%20Sweep)).
@@ -100,31 +100,32 @@ show_heatmap(s, t, e)
 After the simulation is complete, the code extracts the results from `result_dict`, stores them in arrays t, s, e and uses them to create a heatmap plot using the `show_heatmap()` function.
 
 ## Results
-The efficiency map was generated for a total of 225 speed/torque targets using the following simulation parameters: 
-```python
-case_temperature = 80           # Case temperature [Celsius]
-Rg = 10                         # Gate resistance [Ohm]
-switching_frequency = 50000     # Switching Frequency [Hz]
-bus_voltage = 450               # Bus Voltage [V]
-max_speed_ref = 4000            # [RPM]
-max_current_ref = 10            # [A]
+The efficiency map was generated for a total of 100 speed / torque targets using the following simulation parameters:
 
-number_of_speed_points = 15     # Total number of simulations is number_of_speed_points * number_of_current_points
-number_of_current_points = 15   # Total number of simulations is number_of_speed_points * number_of_current_points
+```python
+ccase_temperature = 100          # Case temperature [Celsius]
+Rg = 5                          # Gate resistance [Ohm]
+switching_frequency = 50000;    # Switching Frequency [Hz]
+bus_voltage = 600.0;            # Bus Voltage [V]
+max_speed_ref = 4000            # RPM
+max_current_ref = 15.0          # A
+
+number_of_speed_points = 10     # Total number of simulations is number_of_speed_points * number_of_current_points
+number_of_current_points = 10   # Total number of simulations is number_of_speed_points * number_of_current_points
 relative_minimum_speed = 0.2    # fraction of max_speed_ref
 relative_minimum_current = 0.2  # fraction of max_torque_ref
-simulation_time = 1             # time simulated in each run
+simulation_time = 0.4           # time simulated in each run
 
-NPP = 5.0                       # PMSM Number of pole pair [-]
-PM_Wb = 0.0802                  # PMSM Ke/NPP [Wb]
-Ld_H = 14.0e-3                  # Motor Ld [H]
-Lq_H = 14.0e-3                  # Motor Ld [H]
+NPP = 5.0;                      # PMSM Number of pole pair
+PM_Wb = 0.0802;                 # PMSM Ke/NPP
+Ld_H = 14.0e-3;                 # Motor Ld [H]
+Lq_H = 14.0e-3;                 # Motor Ld [H]
 Rs = 0.814                      # Motor Stator Resistance [Ohm]
 ```
 Each run took approximately 10 seconds, and thanks to the use of the Python multiprocessing library, all cases were run in parallel, resulting in a total run time of only 5 minutes on a 10-core CPU. 
 
-![](fig/Progress_bar.png)
+![](fig/progress_bar.png)
 
 The resulting efficiency map of the PMSM inverter, is shown below:
 
-![](fig/Results_225_points.png)
+![results ](fig/results_100_points.png)

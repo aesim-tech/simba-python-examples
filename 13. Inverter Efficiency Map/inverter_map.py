@@ -28,8 +28,8 @@ bus_voltage = 600.0;            # Bus Voltage [V]
 max_speed_ref = 4000            # RPM
 max_current_ref = 15.0          # A
 
-number_of_speed_points = 2     # Total number of simulations is number_of_speed_points * number_of_current_points
-number_of_current_points = 2   # Total number of simulations is number_of_speed_points * number_of_current_points
+number_of_speed_points = 10     # Total number of simulations is number_of_speed_points * number_of_current_points
+number_of_current_points = 10   # Total number of simulations is number_of_speed_points * number_of_current_points
 relative_minimum_speed = 0.2    # fraction of max_speed_ref
 relative_minimum_current = 0.2  # fraction of max_torque_ref
 simulation_time = 0.4           # time simulated in each run
@@ -61,7 +61,7 @@ def run_simulation(id_ref, iq_ref, speed_ref, case_temperature, Rg, sim_number, 
     :param: lock, Mutex. Used to avoid race conditions.
     """
 
-    log = True # if true, log simulation results
+    log = False # if true, log simulation results
 
     # Read the jsimba file
     with lock:
@@ -180,7 +180,7 @@ def SelectIdIq(ref_idiq, current_ref, speed_ref):
     		
     Beta_MTPA_rad = 0.0
     if abs(Ld_H - Lq_H) > 1.0e-8:
-        nume = (-1.0*PM_Wb + math.sqrt(PM_Wb*PM_Wb)+8*(Lq_H-Ld_H)*Ia_A*Ia_A)
+        nume = -PM_Wb + math.sqrt(PM_Wb**2 + 8 * (Lq_H - Ld_H)**2  * Ia_A**2)
         deno = 4.0*(Lq_H - Ld_H)*Ia_A
         Beta_MTPA_rad = math.asin(nume/deno) 
     

@@ -373,9 +373,9 @@
               "Vdf": "0"
             },
             "EnabledScopes": [
+              "Junction Temperature (\u00B0)",
               "Average Conduction Losses (W)",
-              "Average Switching Losses (W)",
-              "Junction Temperature (\u00B0)"
+              "Average Switching Losses (W)"
             ],
             "ThermalDataID": "ec69a57d-04d7-4a93-b9d2-a244b5f77fea",
             "LossCalculationFrequency": "Npp * rpm / 60",
@@ -777,23 +777,6 @@
               "Id": "d3f3502f-34a5-02b9-0c60-3b77a38f135f",
               "Devices": [
                 {
-                  "LibraryName": "Sum",
-                  "Top": -4,
-                  "Left": 2,
-                  "Angle": 0,
-                  "HF": false,
-                  "VF": false,
-                  "Disabled": false,
-                  "Name": "SUM1",
-                  "ID": "edcb144f-e99a-415d-a641-b0536887844f",
-                  "Parameters": {
-                    "NumberOfInputs": "2",
-                    "Gains": "[1 -1]",
-                    "SamplingTime": "none"
-                  },
-                  "EnabledScopes": []
-                },
-                {
                   "LibraryName": "PID",
                   "Top": -4,
                   "Left": 9,
@@ -829,32 +812,6 @@
                   "EnabledScopes": []
                 },
                 {
-                  "LibraryName": "Control In Pin",
-                  "Top": -4,
-                  "Left": -4,
-                  "Angle": 0,
-                  "HF": false,
-                  "VF": false,
-                  "Disabled": false,
-                  "Name": "Id_ref",
-                  "ID": "ab74ac4c-8bbf-4cb2-8b9a-fc7e8c131214",
-                  "Parameters": {},
-                  "EnabledScopes": []
-                },
-                {
-                  "LibraryName": "Control In Pin",
-                  "Top": -2,
-                  "Left": -4,
-                  "Angle": 0,
-                  "HF": false,
-                  "VF": false,
-                  "Disabled": false,
-                  "Name": "Id_measured",
-                  "ID": "45c214a8-724b-4496-a5f9-d53cbdd5b140",
-                  "Parameters": {},
-                  "EnabledScopes": []
-                },
-                {
                   "LibraryName": "Control Out Pin",
                   "Top": 5,
                   "Left": 27,
@@ -864,35 +821,6 @@
                   "Disabled": false,
                   "Name": "Vd",
                   "ID": "b33c860c-a07f-4a0a-aee5-0b291d8029a6",
-                  "Parameters": {},
-                  "EnabledScopes": []
-                },
-                {
-                  "LibraryName": "Constant",
-                  "Top": -1,
-                  "Left": -8,
-                  "Angle": 0,
-                  "HF": false,
-                  "VF": false,
-                  "Disabled": false,
-                  "Name": "Lq",
-                  "ID": "3dcb6c1a-f14f-4a16-a39d-6f84e09f437a",
-                  "Parameters": {
-                    "Value": "Lq",
-                    "SamplingTime": "none"
-                  },
-                  "EnabledScopes": []
-                },
-                {
-                  "LibraryName": "Control In Pin",
-                  "Top": 3,
-                  "Left": -7,
-                  "Angle": 0,
-                  "HF": false,
-                  "VF": false,
-                  "Disabled": false,
-                  "Name": "Iq_measured",
-                  "ID": "2e6686b7-6bb8-445c-87ac-4d99489b0546",
                   "Parameters": {},
                   "EnabledScopes": []
                 },
@@ -944,8 +872,8 @@
                 },
                 {
                   "LibraryName": "Control In Pin",
-                  "Top": 18,
-                  "Left": -6,
+                  "Top": 11,
+                  "Left": -3,
                   "Angle": 0,
                   "HF": false,
                   "VF": false,
@@ -954,20 +882,81 @@
                   "ID": "0fa81dcd-4247-4eed-be4b-d39ef40e3c08",
                   "Parameters": {},
                   "EnabledScopes": []
+                },
+                {
+                  "LibraryName": "Constant",
+                  "Top": -1,
+                  "Left": -10,
+                  "Angle": 0,
+                  "HF": false,
+                  "VF": false,
+                  "Disabled": false,
+                  "Name": "Lq",
+                  "ID": "3dcb6c1a-f14f-4a16-a39d-6f84e09f437a",
+                  "Parameters": {
+                    "Value": "Lq",
+                    "SamplingTime": "none"
+                  },
+                  "EnabledScopes": []
+                },
+                {
+                  "LibraryName": "Sum",
+                  "Top": -9,
+                  "Left": 0,
+                  "Angle": 0,
+                  "HF": false,
+                  "VF": false,
+                  "Disabled": false,
+                  "Name": "SUM1",
+                  "ID": "edcb144f-e99a-415d-a641-b0536887844f",
+                  "Parameters": {
+                    "NumberOfInputs": "2",
+                    "Gains": "[1 -1]",
+                    "SamplingTime": "none"
+                  },
+                  "EnabledScopes": []
+                },
+                {
+                  "LibraryName": "Control In Pin",
+                  "Top": -11,
+                  "Left": -5,
+                  "Angle": 0,
+                  "HF": false,
+                  "VF": false,
+                  "Disabled": false,
+                  "Name": "Id_ref",
+                  "ID": "ab74ac4c-8bbf-4cb2-8b9a-fc7e8c131214",
+                  "Parameters": {},
+                  "EnabledScopes": []
+                },
+                {
+                  "LibraryName": "Control In Pin",
+                  "Top": -6,
+                  "Left": -5,
+                  "Angle": 0,
+                  "HF": false,
+                  "VF": false,
+                  "Disabled": false,
+                  "Name": "Id_measured",
+                  "ID": "45c214a8-724b-4496-a5f9-d53cbdd5b140",
+                  "Parameters": {},
+                  "EnabledScopes": []
+                },
+                {
+                  "LibraryName": "Control In Pin",
+                  "Top": 4,
+                  "Left": -7,
+                  "Angle": 0,
+                  "HF": false,
+                  "VF": false,
+                  "Disabled": false,
+                  "Name": "Iq_measured",
+                  "ID": "2e6686b7-6bb8-445c-87ac-4d99489b0546",
+                  "Parameters": {},
+                  "EnabledScopes": []
                 }
               ],
               "Connectors": [
-                {
-                  "Segments": [
-                    {
-                      "StartX": 6,
-                      "StartY": -2,
-                      "EndX": 9,
-                      "EndY": -2
-                    }
-                  ],
-                  "Name": "C1"
-                },
                 {
                   "Segments": [
                     {
@@ -990,28 +979,6 @@
                     }
                   ],
                   "Name": "C2"
-                },
-                {
-                  "Segments": [
-                    {
-                      "StartX": 2,
-                      "StartY": -3,
-                      "EndX": -2,
-                      "EndY": -3
-                    }
-                  ],
-                  "Name": "C3"
-                },
-                {
-                  "Segments": [
-                    {
-                      "StartX": 2,
-                      "StartY": -1,
-                      "EndX": -2,
-                      "EndY": -1
-                    }
-                  ],
-                  "Name": "C4"
                 },
                 {
                   "Segments": [
@@ -1050,49 +1017,44 @@
                 {
                   "Segments": [
                     {
-                      "StartX": -4,
-                      "StartY": 1,
+                      "StartX": 9,
+                      "StartY": 7,
+                      "EndX": 0,
+                      "EndY": 7
+                    },
+                    {
+                      "StartX": 0,
+                      "StartY": 7,
+                      "EndX": 0,
+                      "EndY": 12
+                    },
+                    {
+                      "StartX": 0,
+                      "StartY": 12,
                       "EndX": -1,
-                      "EndY": 1
+                      "EndY": 12
                     }
                   ],
-                  "Name": "C7"
+                  "Name": "C9"
                 },
                 {
                   "Segments": [
                     {
-                      "StartX": -5,
-                      "StartY": 4,
-                      "EndX": -2,
-                      "EndY": 4
+                      "StartX": 6,
+                      "StartY": 2,
+                      "EndX": 6,
+                      "EndY": 5
                     },
-                    {
-                      "StartX": -2,
-                      "StartY": 4,
-                      "EndX": -2,
-                      "EndY": 3
-                    },
-                    {
-                      "StartX": -1,
-                      "StartY": 3,
-                      "EndX": -2,
-                      "EndY": 3
-                    }
-                  ],
-                  "Name": "C8"
-                },
-                {
-                  "Segments": [
                     {
                       "StartX": 3,
                       "StartY": 2,
-                      "EndX": 3,
-                      "EndY": 5
+                      "EndX": 6,
+                      "EndY": 2
                     },
                     {
                       "StartX": 9,
                       "StartY": 5,
-                      "EndX": 3,
+                      "EndX": 6,
                       "EndY": 5
                     }
                   ],
@@ -1101,25 +1063,105 @@
                 {
                   "Segments": [
                     {
-                      "StartX": 4,
-                      "StartY": 7,
-                      "EndX": 4,
-                      "EndY": 19
-                    },
+                      "StartX": -1,
+                      "StartY": 1,
+                      "EndX": -6,
+                      "EndY": 1
+                    }
+                  ],
+                  "Name": "C7"
+                },
+                {
+                  "Segments": [
                     {
                       "StartX": 9,
-                      "StartY": 7,
+                      "StartY": -2,
+                      "EndX": 5,
+                      "EndY": -2
+                    },
+                    {
+                      "StartX": 5,
+                      "StartY": -2,
+                      "EndX": 5,
+                      "EndY": -7
+                    },
+                    {
+                      "StartX": 5,
+                      "StartY": -7,
                       "EndX": 4,
-                      "EndY": 7
+                      "EndY": -7
+                    }
+                  ],
+                  "Name": "C4"
+                },
+                {
+                  "Segments": [
+                    {
+                      "StartX": 0,
+                      "StartY": -8,
+                      "EndX": -2,
+                      "EndY": -8
+                    },
+                    {
+                      "StartX": -2,
+                      "StartY": -8,
+                      "EndX": -2,
+                      "EndY": -10
+                    },
+                    {
+                      "StartX": -2,
+                      "StartY": -10,
+                      "EndX": -3,
+                      "EndY": -10
+                    }
+                  ],
+                  "Name": "C1"
+                },
+                {
+                  "Segments": [
+                    {
+                      "StartX": 0,
+                      "StartY": -6,
+                      "EndX": -2,
+                      "EndY": -6
+                    },
+                    {
+                      "StartX": -2,
+                      "StartY": -6,
+                      "EndX": -2,
+                      "EndY": -5
+                    },
+                    {
+                      "StartX": -2,
+                      "StartY": -5,
+                      "EndX": -3,
+                      "EndY": -5
+                    }
+                  ],
+                  "Name": "C3"
+                },
+                {
+                  "Segments": [
+                    {
+                      "StartX": -1,
+                      "StartY": 3,
+                      "EndX": -4,
+                      "EndY": 3
                     },
                     {
                       "StartX": -4,
-                      "StartY": 19,
-                      "EndX": 4,
-                      "EndY": 19
+                      "StartY": 3,
+                      "EndX": -4,
+                      "EndY": 5
+                    },
+                    {
+                      "StartX": -4,
+                      "StartY": 5,
+                      "EndX": -5,
+                      "EndY": 5
                     }
                   ],
-                  "Name": "C9"
+                  "Name": "C8"
                 }
               ],
               "Name": "",
