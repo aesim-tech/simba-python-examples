@@ -13,7 +13,7 @@ import matplotlib.tri as tri
 import numpy as np
 import math
 from tqdm import tqdm
-from aesim.simba import Design, ProjectRepository, License
+from aesim.simba import ProjectRepository, License
 from datetime import datetime
 from scipy.spatial import ConvexHull
 
@@ -21,18 +21,18 @@ from scipy.spatial import ConvexHull
 #   SIMULATION PARAMETERS   #
 #############################
 number_of_parallel_simulations = License.NumberOfAvailableParallelSimulationLicense() # Number of PSL Solver 
-case_temperature = 80           # Case temperature [Celsius]
-Rg = 2.5                        # Gate resistance [Ohm]
-switching_frequency = 50000;     # Switching Frequency [Hz]
+case_temperature = 100          # Case temperature [Celsius]
+Rg = 5                          # Gate resistance [Ohm]
+switching_frequency = 50000;    # Switching Frequency [Hz]
 bus_voltage = 600.0;            # Bus Voltage [V]
 max_speed_ref = 4000            # RPM
-max_current_ref = 17.0          # A
+max_current_ref = 15.0          # A
 
-number_of_speed_points = 10    # Total number of simulations is number_of_speed_points * number_of_current_points
-number_of_current_points = 10   # Total number of simulations is number_of_speed_points * number_of_current_points
+number_of_speed_points = 2     # Total number of simulations is number_of_speed_points * number_of_current_points
+number_of_current_points = 2   # Total number of simulations is number_of_speed_points * number_of_current_points
 relative_minimum_speed = 0.2    # fraction of max_speed_ref
 relative_minimum_current = 0.2  # fraction of max_torque_ref
-simulation_time = 1             # time simulated in each run
+simulation_time = 0.4           # time simulated in each run
 
 NPP = 5.0;                      # PMSM Number of pole pair
 PM_Wb = 0.0802;                 # PMSM Ke/NPP
@@ -72,7 +72,7 @@ def run_simulation(id_ref, iq_ref, speed_ref, case_temperature, Rg, sim_number, 
 
     # Set Test Target Data
     # operating point
-    simba_full_design.Circuit.SetVariableValue("speed_rads", str(speed_ref * 2.0 * math.pi/60.0))
+    simba_full_design.Circuit.SetVariableValue("rpm", str(speed_ref))
     simba_full_design.Circuit.SetVariableValue("idref", str(id_ref))
     simba_full_design.Circuit.SetVariableValue("iqref", str(iq_ref))
     simba_full_design.Circuit.SetVariableValue("Tcase", str(case_temperature))
@@ -84,11 +84,9 @@ def run_simulation(id_ref, iq_ref, speed_ref, case_temperature, Rg, sim_number, 
     # motor settings
     simba_full_design.Circuit.SetVariableValue("PM_Wb", str(PM_Wb))
     simba_full_design.Circuit.SetVariableValue("Npp", str(NPP))
+    simba_full_design.Circuit.SetVariableValue("Ld", str(Ld_H))
+    simba_full_design.Circuit.SetVariableValue("Lq", str(Lq_H))
     simba_full_design.Circuit.GetDeviceByName("PMSM1").Rs = str(Rs)
-    simba_full_design.Circuit.GetDeviceByName("PMSM1").Ld = str(Ld_H)
-    simba_full_design.Circuit.GetDeviceByName("PMSM1").Lq = str(Lq_H)
-    simba_full_design.Circuit.GetDeviceByName("Q-axis controller").Definition.GetDeviceByName("Ld").Value = Ld_H
-    simba_full_design.Circuit.GetDeviceByName("D-axis controller").Definition.GetDeviceByName("Lq").Value = Lq_H
 
     # mosfet gate resistances Rgon and Rgoff
     for i in range(1, 6):
