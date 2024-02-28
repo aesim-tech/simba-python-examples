@@ -140,7 +140,6 @@ def SelectIdIq(ref_idiq, current_ref, speed_ref):
     		
     Beta_MTPA_rad = 0.0
     if abs(Ld_H - Lq_H) > 1.0e-8:
-        #nume = (-1.0 * PM_Wb + math.sqrt(PM_Wb*PM_Wb) + 8 * (Lq_H - Ld_H) * Ia_A * Ia_A)
         nume = -PM_Wb + math.sqrt(PM_Wb**2 + 8 * (Lq_H - Ld_H)**2  * Ia_A**2)
         deno = 4.0 * (Lq_H - Ld_H) * Ia_A
         Beta_MTPA_rad = math.asin(nume / deno) 

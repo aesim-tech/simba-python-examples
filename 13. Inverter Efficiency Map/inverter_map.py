@@ -13,7 +13,7 @@ import matplotlib.tri as tri
 import numpy as np
 import math
 from tqdm import tqdm
-from aesim.simba import Design, ProjectRepository, License
+from aesim.simba import ProjectRepository, License
 from datetime import datetime
 from scipy.spatial import ConvexHull
 
@@ -21,18 +21,18 @@ from scipy.spatial import ConvexHull
 #   SIMULATION PARAMETERS   #
 #############################
 number_of_parallel_simulations = License.NumberOfAvailableParallelSimulationLicense() # Number of PSL Solver 
-case_temperature = 40           # Case temperature [Celsius]
-Rg = 10                         # Gate resistance [Ohm]
-switching_frequency = 30000;     # Switching Frequency [Hz]
-bus_voltage = 400.0;            # Bus Voltage [V]
+case_temperature = 100          # Case temperature [Celsius]
+Rg = 5                          # Gate resistance [Ohm]
+switching_frequency = 50000;    # Switching Frequency [Hz]
+bus_voltage = 600.0;            # Bus Voltage [V]
 max_speed_ref = 4000            # RPM
-max_current_ref = 10.0          # A
+max_current_ref = 15.0          # A
 
-number_of_speed_points = 10    # Total number of simulations is number_of_speed_points * number_of_current_points
+number_of_speed_points = 10     # Total number of simulations is number_of_speed_points * number_of_current_points
 number_of_current_points = 10   # Total number of simulations is number_of_speed_points * number_of_current_points
 relative_minimum_speed = 0.2    # fraction of max_speed_ref
 relative_minimum_current = 0.2  # fraction of max_torque_ref
-simulation_time = 1             # time simulated in each run
+simulation_time = 0.4           # time simulated in each run
 
 NPP = 5.0;                      # PMSM Number of pole pair
 PM_Wb = 0.0802;                 # PMSM Ke/NPP
@@ -65,34 +65,33 @@ def run_simulation(id_ref, iq_ref, speed_ref, case_temperature, Rg, sim_number, 
 
     # Read the jsimba file
     with lock:
-        current_folder = os.path.dirname(os.path.abspath(__file__))
-        project = ProjectRepository(os.path.join(current_folder , "inverter_map.jsimba"))
+        script_folder = os.path.realpath(os.path.dirname(__file__))
+        project = ProjectRepository(os.path.join(script_folder , "inverter_map.jsimba"))
     
-    simba_full_design = project.GetDesignByName('Full Design')
+    simba_full_design = project.GetDesignByName('1-Full Design')
 
     # Set Test Target Data
     # operating point
-    simba_full_design.Circuit.GetDeviceByName("Constant_speed_load").Voltage = speed_ref * 2.0 * math.pi/60.0;
-    simba_full_design.Circuit.GetDeviceByName("Id_ref").Value = id_ref
-    simba_full_design.Circuit.GetDeviceByName("Iq_ref").Value = iq_ref
-    simba_full_design.Circuit.GetDeviceByName("T_package").Temperature = case_temperature
+    simba_full_design.Circuit.SetVariableValue("rpm", str(speed_ref))
+    simba_full_design.Circuit.SetVariableValue("idref", str(id_ref))
+    simba_full_design.Circuit.SetVariableValue("iqref", str(iq_ref))
+    simba_full_design.Circuit.SetVariableValue("Tcase", str(case_temperature))
     
     # inverter settings
-    simba_full_design.Circuit.GetDeviceByName("carrier").Frequency = switching_frequency
-    simba_full_design.Circuit.GetDeviceByName("VBus").Voltage = bus_voltage
-    simba_full_design.Circuit.GetDeviceByName("Normalized1").Value = 1/(bus_voltage/2.0)
-    simba_full_design.Circuit.GetDeviceByName("Normalized2").Value = 1/(bus_voltage/2.0)
-    simba_full_design.Circuit.GetDeviceByName("Normalized3").Value = 1/(bus_voltage/2.0)
+    simba_full_design.Circuit.SetVariableValue("fsw", str(switching_frequency))
+    simba_full_design.Circuit.SetVariableValue("Vbus", str(bus_voltage))
 
     # motor settings
-    simba_full_design.Circuit.GetDeviceByName("PMSM1").Ke = PM_Wb*NPP
-    simba_full_design.Circuit.GetDeviceByName("PMSM1").Ld = Ld_H
-    simba_full_design.Circuit.GetDeviceByName("PMSM1").Lq = Lq_H
-    simba_full_design.Circuit.GetDeviceByName("PMSM1").NPP = NPP
-    simba_full_design.Circuit.GetDeviceByName("PMSM1").Rs = Rs
+    simba_full_design.Circuit.SetVariableValue("PM_Wb", str(PM_Wb))
+    simba_full_design.Circuit.SetVariableValue("Npp", str(NPP))
+    simba_full_design.Circuit.SetVariableValue("Ld", str(Ld_H))
+    simba_full_design.Circuit.SetVariableValue("Lq", str(Lq_H))
+    simba_full_design.Circuit.GetDeviceByName("PMSM1").Rs = str(Rs)
 
+    # mosfet gate resistances Rgon and Rgoff
     for i in range(1, 6):
         simba_full_design.Circuit.GetDeviceByName("T{0}".format(i)).CustomVariables[0].Value = str(Rg)
+        simba_full_design.Circuit.GetDeviceByName("T{0}".format(i)).CustomVariables[1].Value = str(Rg)
         
     if log: print ("\n{0}> Running Full Model... (Id_ref={1:.2f} A Iq_ref={2:.2f} A speed_ref={3:.2f} RPM)".format(sim_number, id_ref, iq_ref, speed_ref))
 
@@ -154,8 +153,7 @@ def show_heatmap(x, y, z):
     ax1.set(xlim=(0, x.max()), ylim=(0, y.max()))
     ax1.set_xlabel("Speed [RPM]")
     ax1.set_ylabel("Torque [N.m]")
-    ax1.set_title("Inverter Efficiency [%]\nRg={0:.2f}Ω, Fsw={1:.2f}Hz, Vbus={2:.2f}V, T_case={3:.2f}°C".format(Rg,switching_frequency,bus_voltage,case_temperature))
-    #ax1.set_title("Inverter Losses [W]\nRg={0:.2f}Ω, Fsw={1:.2f}Hz, Vbus={2:.2f}V, T_case={3:.2f}°C".format(Rg,switching_frequency,bus_voltage,case_temperature))
+    ax1.set_title("Inverter Losses [W]\nRg={0:.2f}Ω, Fsw={1:.2f}Hz, Vbus={2:.2f}V, T_case={3:.2f}°C".format(Rg,switching_frequency,bus_voltage,case_temperature))
     path= "efficiency_map_"+datetime.now().strftime("%m%d%Y%H%M%S")+".png"
     fig.savefig(path)
     plt.show()
@@ -182,7 +180,7 @@ def SelectIdIq(ref_idiq, current_ref, speed_ref):
     		
     Beta_MTPA_rad = 0.0
     if abs(Ld_H - Lq_H) > 1.0e-8:
-        nume = (-1.0*PM_Wb + math.sqrt(PM_Wb*PM_Wb)+8*(Lq_H-Ld_H)*Ia_A*Ia_A)
+        nume = -PM_Wb + math.sqrt(PM_Wb**2 + 8 * (Lq_H - Ld_H)**2  * Ia_A**2)
         deno = 4.0*(Lq_H - Ld_H)*Ia_A
         Beta_MTPA_rad = math.asin(nume/deno) 
     
