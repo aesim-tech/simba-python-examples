@@ -6,7 +6,7 @@ tags:
   - JMAG
 ---
 
-# Efficiency map of a motor drive inverter
+# Efficiency map of a motor drive inverter with JMAG-RT model
 
 [Download **python script for simulation**](efficiency_map_inverter_jmag.py)
 
