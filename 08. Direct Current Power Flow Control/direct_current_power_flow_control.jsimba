@@ -2,7 +2,7 @@
   "Designs": [
     {
       "Id": "f4cc08bc-9b80-4e07-bf7c-517bc4a63bcf",
-      "Name": "direct_current_continuous_controller",
+      "Name": "1-direct_current_continuous_controller",
       "Circuit": {
         "Id": "27400c14-5dd2-4ae3-a869-cd1f62e761be",
         "Devices": [
@@ -13,6 +13,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "iL",
             "ID": "a3ee8e39-81af-4a99-98c1-cb8ffc966544",
             "Parameters": {},
@@ -25,6 +26,7 @@
             "Angle": 0,
             "HF": false,
             "VF": true,
+            "Disabled": false,
             "Name": "iL",
             "ID": "62596f3d-c1c9-4900-a113-265e6262a846",
             "Parameters": {
@@ -40,6 +42,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "iL",
             "ID": "9d5fabc3-fd5f-405b-a283-5d4fc916d8b2",
             "Parameters": {},
@@ -52,6 +55,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "L1",
             "ID": "8adfc0a6-d835-41d8-bd47-a061800e6d32",
             "Parameters": {
@@ -69,6 +73,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "TRI1",
             "ID": "79f59718-05f7-4791-8e63-774898cb374c",
             "Parameters": {
@@ -88,6 +93,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "COMP1",
             "ID": "2fabb8f5-e3c0-4afe-b36f-9ad00da6deaa",
             "Parameters": {
@@ -102,6 +108,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "pwm",
             "ID": "22d8dd31-6ef4-4525-8b86-6f7712daa24b",
             "Parameters": {},
@@ -114,6 +121,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "SUM1",
             "ID": "9b6c07b5-b229-415b-8b43-9ac5808ff01e",
             "Parameters": {
@@ -130,6 +138,7 @@
             "Angle": 90,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "R1",
             "ID": "99364c52-2730-42df-9f35-ae5c557e4576",
             "Parameters": {
@@ -144,6 +153,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "PI",
             "ID": "75ee559f-d882-4b1c-a661-cf068c6cdfca",
             "Parameters": {
@@ -161,6 +171,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "iRef",
             "ID": "f684455e-a9c8-4e34-9a0d-c67365bcfa11",
             "Parameters": {
@@ -180,6 +191,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "Vs",
             "ID": "7158fe86-19db-48af-8fa5-abb417cd281e",
             "Parameters": {},
@@ -192,6 +204,7 @@
             "Angle": 270,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "Vs_E",
             "ID": "9a36e40f-776b-410f-8f0d-ab59484c28b3",
             "Parameters": {
@@ -207,6 +220,7 @@
             "Angle": 270,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "Vs",
             "ID": "6476c50d-15a2-493f-b440-56d0259261f1",
             "Parameters": {
@@ -222,6 +236,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "",
             "ID": "9e28dfca-0a55-48ef-a080-61d1446356ec",
             "Parameters": {
@@ -238,39 +253,10 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "Vs",
             "ID": "24c9e9e3-4399-4751-b580-6ed03f63651b",
             "Parameters": {},
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "MOSFET",
-            "Top": 3,
-            "Left": 9,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "T2",
-            "ID": "cf957786-6825-4334-a5c7-04e19123f80b",
-            "Parameters": {
-              "Ron": "0",
-              "LossCalculationFrequency": "1k"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "MOSFET",
-            "Top": -5,
-            "Left": 9,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "T1",
-            "ID": "f8a0f63f-927a-495e-9b1a-c092872b4208",
-            "Parameters": {
-              "Ron": "0",
-              "LossCalculationFrequency": "1k"
-            },
             "EnabledScopes": []
           },
           {
@@ -280,6 +266,7 @@
             "Angle": 90,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "",
             "ID": "e3eea61b-dab4-4f7b-8c07-ccb06096bce3",
             "Parameters": {
@@ -294,6 +281,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "pwm",
             "ID": "9498f3f9-7171-4360-bb46-ed41e9e821fa",
             "Parameters": {},
@@ -306,6 +294,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "Ground1",
             "ID": "19828045-bf96-4cc2-9cc6-9fd43581c5c2",
             "Parameters": {},
@@ -318,6 +307,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "DC1",
             "ID": "0c10ac8e-7212-4c78-8812-320b0c61e33e",
             "Parameters": {
@@ -332,6 +322,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "duty_cycle",
             "ID": "7258a546-8381-48f2-94ce-b5db41e74610",
             "Parameters": {
@@ -342,6 +333,40 @@
             "EnabledScopes": [
               "Out"
             ]
+          },
+          {
+            "LibraryName": "Ideal MOSFET with Diode",
+            "Top": -5,
+            "Left": 9,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "T1",
+            "ID": "744175b4-e24c-4eea-b669-ef716708699b",
+            "Parameters": {
+              "Ron": "0",
+              "Rdon": "0",
+              "Vdf": "0"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Ideal MOSFET with Diode",
+            "Top": 3,
+            "Left": 9,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "T2",
+            "ID": "f41c8a8e-0e5e-4a25-8104-9e8dae82f74b",
+            "Parameters": {
+              "Ron": "0",
+              "Rdon": "0",
+              "Vdf": "0"
+            },
+            "EnabledScopes": []
           }
         ],
         "Connectors": [
@@ -355,18 +380,18 @@
               },
               {
                 "StartX": 11,
-                "StartY": 2,
-                "EndX": 11,
-                "EndY": 3
-              },
-              {
-                "StartX": 11,
                 "StartY": 1,
                 "EndX": 11,
                 "EndY": 2
+              },
+              {
+                "StartX": 11,
+                "StartY": 2,
+                "EndX": 11,
+                "EndY": 3
               }
             ],
-            "Name": "C19"
+            "Name": "C20"
           },
           {
             "Segments": [
@@ -499,12 +524,6 @@
                 "EndY": 9
               },
               {
-                "StartX": 11,
-                "StartY": 9,
-                "EndX": 27,
-                "EndY": 9
-              },
-              {
                 "StartX": 0,
                 "StartY": 7,
                 "EndX": 0,
@@ -514,6 +533,12 @@
                 "StartX": 0,
                 "StartY": 9,
                 "EndX": 11,
+                "EndY": 9
+              },
+              {
+                "StartX": 11,
+                "StartY": 9,
+                "EndX": 27,
                 "EndY": 9
               }
             ],
@@ -579,19 +604,19 @@
                 "EndY": -2
               },
               {
-                "StartX": 7,
-                "StartY": -2,
-                "EndX": 9,
-                "EndY": -2
-              },
-              {
                 "StartX": 6,
                 "StartY": -2,
                 "EndX": 7,
                 "EndY": -2
+              },
+              {
+                "StartX": 7,
+                "StartY": -2,
+                "EndX": 9,
+                "EndY": -2
               }
             ],
-            "Name": "C18"
+            "Name": "C4"
           },
           {
             "Segments": [
@@ -608,7 +633,7 @@
                 "EndY": 6
               }
             ],
-            "Name": "C20"
+            "Name": "C19"
           },
           {
             "Segments": [
@@ -640,3118 +665,24 @@
           }
         ],
         "Name": "Top Circuit - Copy",
-        "Variables": []
+        "Variables": [],
+        "VariableFile": ""
       },
       "TransientAnalysis": {
-        "EndTime": 0.02,
+        "EndTime": "0.02",
         "FixedTimeStep": false,
+        "SaveInitialPoint": true,
         "StopAtSteadyState": false,
-        "TimeStep": 1E-09
-      }
-    },
-    {
-      "Id": "b05c35c6-cc0b-4b7b-845f-fe9c7d8cb789",
-      "Name": "direct_current_discrete_controller_zerocompensation",
-      "Circuit": {
-        "Id": "884f38db-bf7c-462a-a4ec-4bf1fc9aff67",
-        "Devices": [
-          {
-            "LibraryName": "Triangular Wave",
-            "Top": 28,
-            "Left": 33,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "TRI1",
-            "ID": "cbbe89aa-de45-4edd-b02f-e1af51959f8a",
-            "Parameters": {
-              "Amplitude": "1",
-              "Frequency": "16k",
-              "DutyCycle": "0.5",
-              "Offset": "0",
-              "PhaseShift": "0",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Control Input Connector Label",
-            "Top": 26,
-            "Left": 46,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "pwm",
-            "ID": "6356c4c8-b1a4-40eb-8419-f2160f8f9db2",
-            "Parameters": {},
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Control Input Connector Label",
-            "Top": -2,
-            "Left": 17,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "iL",
-            "ID": "b8a45440-f823-4ae4-881a-e0a9f5dcbae7",
-            "Parameters": {},
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Current Probe",
-            "Top": 1,
-            "Left": 14,
-            "Angle": 0,
-            "HF": false,
-            "VF": true,
-            "Name": "iL",
-            "ID": "a0a6d63a-f92b-4909-80f4-074627fc4029",
-            "Parameters": {
-              "Gain": "1",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Square Wave",
-            "Top": 20,
-            "Left": -13,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "iRef",
-            "ID": "e6bc8af6-07a3-4406-99a6-9f7e2714d7ec",
-            "Parameters": {
-              "Amplitude": "8",
-              "Frequency": "100",
-              "DutyCycle": "0.5",
-              "Offset": "6",
-              "PhaseShift": "0",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Control Output Connector Label",
-            "Top": 24,
-            "Left": -7,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "iL",
-            "ID": "b88340b4-cf5c-4c7e-a81a-11443f43b154",
-            "Parameters": {},
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Constant",
-            "Top": 32,
-            "Left": -7,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "a1",
-            "ID": "635509f2-80cb-4798-ab95-1ca5fa30f491",
-            "Parameters": {
-              "Value": "0.0785125",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Constant",
-            "Top": 27,
-            "Left": -7,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "a0",
-            "ID": "ad1937e9-3a85-4378-b37b-fc880b298a1d",
-            "Parameters": {
-              "Value": "-0.0628875",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Comparator",
-            "Top": 25,
-            "Left": 39,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "COMP1",
-            "ID": "134fe55c-3f40-4756-96d5-dae41bac4c6d",
-            "Parameters": {
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Limiter",
-            "Top": 24,
-            "Left": 30,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "duty_cycle",
-            "ID": "dc9bedb8-6661-42d5-a0e5-1253d4332a9c",
-            "Parameters": {
-              "LowLimit": "0",
-              "HighLimit": "1",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": [
-              "Out"
-            ]
-          },
-          {
-            "LibraryName": "Resistor",
-            "Top": 4,
-            "Left": 24,
-            "Angle": 90,
-            "HF": false,
-            "VF": false,
-            "Name": "R1",
-            "ID": "ee77e8f9-27b6-41be-9bac-aebacce57d2e",
-            "Parameters": {
-              "Value": "30"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Inductor",
-            "Top": 1,
-            "Left": 19,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "L1",
-            "ID": "df215042-67fa-4d83-bc5f-04a1f89674c9",
-            "Parameters": {
-              "Value": "6m",
-              "Iinit": "0"
-            },
-            "EnabledScopes": [
-              "Current"
-            ]
-          },
-          {
-            "LibraryName": "Sum",
-            "Top": 24,
-            "Left": 22,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "",
-            "ID": "88a10e26-109c-41ec-8318-b835f5b54785",
-            "Parameters": {
-              "NumberOfInputs": "2",
-              "Gains": "[1 1]",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Control Input Connector Label",
-            "Top": -4,
-            "Left": 28,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "Vs",
-            "ID": "0f7c17c5-aebc-4a3e-bc0d-e4a042898f99",
-            "Parameters": {},
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Gain",
-            "Top": 33,
-            "Left": 19,
-            "Angle": 270,
-            "HF": false,
-            "VF": false,
-            "Name": "Vs_E",
-            "ID": "46ba008c-0dfd-46a3-8646-1b86ae448cad",
-            "Parameters": {
-              "Value": "1 / 600",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Control Output Connector Label",
-            "Top": 39,
-            "Left": 16,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "Vs",
-            "ID": "341eea16-2c31-4a18-9ab6-16297687cfb9",
-            "Parameters": {},
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Voltage Probe",
-            "Top": -1,
-            "Left": 25,
-            "Angle": 270,
-            "HF": false,
-            "VF": false,
-            "Name": "Vs",
-            "ID": "ecabf7b6-2ac1-4ae6-8ea1-b24fa1ecded0",
-            "Parameters": {
-              "Gain": "1",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "MOSFET",
-            "Top": 3,
-            "Left": 9,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "T2",
-            "ID": "991f08d4-18e4-4a6a-914c-44d37d3eb945",
-            "Parameters": {
-              "Ron": "0",
-              "LossCalculationFrequency": "1k"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "MOSFET",
-            "Top": -5,
-            "Left": 9,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "T1",
-            "ID": "0087f5d5-d829-4193-8350-cecac0c2450d",
-            "Parameters": {
-              "Ron": "0",
-              "LossCalculationFrequency": "1k"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "DC Voltage Source",
-            "Top": -1,
-            "Left": -2,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "DC1",
-            "ID": "44fc3454-cce2-409b-a9e5-f038d92263b8",
-            "Parameters": {
-              "Voltage": "600"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Control Output Connector Label",
-            "Top": -3,
-            "Left": 2,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "pwm",
-            "ID": "dd38ca2a-23fb-4b3b-bcf5-4f662a9e89c7",
-            "Parameters": {},
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Ground",
-            "Top": 9,
-            "Left": -1,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "Ground1",
-            "ID": "d16b584d-8ee6-4405-87f8-16820a9da3e2",
-            "Parameters": {},
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Not",
-            "Top": 0,
-            "Left": 5,
-            "Angle": 90,
-            "HF": false,
-            "VF": false,
-            "Name": "",
-            "ID": "8cc42b92-50bc-46a3-ae17-b4155500a39f",
-            "Parameters": {
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "C Code",
-            "Top": 17,
-            "Left": 7,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "C1",
-            "ID": "6340c721-baed-4425-bcf0-e74813a71507",
-            "Parameters": {
-              "NumberOfInputs": "6",
-              "NumberOfOutputs": "1",
-              "Code": "#include \u0022simba_library.h\u0022 \r\n#include \u003Cstdlib.h\u003E\r\n\r\n\r\ntypedef struct{\r\n    double duty_cycle;\r\n    double i_ref_prev;\r\n    double i_error_prev;\r\n} model_data;\r\n\r\nmodel_data data; \r\n\r\nvoid initialize() {\r\n\tdata.duty_cycle = 0;\r\n\tdata.i_ref_prev = 0;\r\n\tdata.i_error_prev = 0;\r\n}\r\n\r\nvoid calculate_outputs(double* outputs, double* inputs, double time, double time_step) {\r\n\r\n\tconst double clock = inputs[0];\r\n\tconst double a0 = inputs[3];\r\n\tconst double a1 = inputs[4];\r\n\tconst double Kp = inputs[5];\r\n\tif (clock == 1 || time \u003C 1e-10) // Clock\r\n\t{\r\n\t\t// Current control loop\r\n\t\tdouble i_ref = inputs[1];\r\n\t\tdouble i_mes = inputs[2];\r\n\t\tdouble i_error = i_ref - i_mes;\r\n\t\tdata.duty_cycle = data.duty_cycle \u002B a1 * i_error \u002B a0 * data.i_error_prev - Kp * i_ref \u002B Kp * data.i_ref_prev; \r\n\t\tdata.i_ref_prev = i_ref;\r\n\t\tdata.i_error_prev = i_error;\r\n\t}\r\n\t\r\n\toutputs[0] = data.duty_cycle;\r\n}\r\n\r\nvoid terminate() {\r\n}\r\n\r\n/*\r\n * Function: snapshot (DO NOT MODIFY)\r\n */\r\nvoid* snapshot(snapshot_mode mode, void* snapshot_ptr) {\r\n\tmodel_data* model_data_ptr;\r\n\tswitch (mode) {\r\n\t\tcase SNAPSHOT_CREATE: // Create and return a snapshot of the current model state\r\n\t\t\tmodel_data_ptr = (model_data*)malloc(sizeof(model_data));\r\n\t\t\tif (model_data_ptr == 0) return 0;\r\n\t\t\t*model_data_ptr = data;\r\n\t\t\treturn (void*)model_data_ptr;\r\n\r\n\t\tcase SNAPSHOT_UPDATE:  // Update an existing snapshot with current model data\r\n\t\t\tmodel_data_ptr = (model_data*)snapshot_ptr;\r\n\t\t\t*model_data_ptr = data;\r\n\t\t\treturn snapshot_ptr;\r\n\r\n\t\tcase SNAPSHOT_LOAD:  // Restore model data \r\n\t\t\tmodel_data_ptr = (model_data*)snapshot_ptr;\r\n\t\t\tdata = *model_data_ptr;\r\n\t\t\treturn snapshot_ptr;\r\n\r\n\t\tcase SNAPSHOT_DELETE: // Free the resources allocated in SNAPSHOT_CREATE\r\n\t\t\tfree(snapshot_ptr);\r\n\t\t\treturn 0;\r\n\t}\r\n}",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Zero-Crossing Detector",
-            "Top": 17,
-            "Left": 0,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "ZX1",
-            "ID": "05a500e0-1d6a-43fd-a836-37fe74838dd4",
-            "Parameters": {
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Square Wave",
-            "Top": 17,
-            "Left": -5,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "clock",
-            "ID": "8e5af82f-6266-423b-a53e-4bf5dd950558",
-            "Parameters": {
-              "Amplitude": "1",
-              "Frequency": "16k",
-              "DutyCycle": "0.5",
-              "Offset": "-0.5",
-              "PhaseShift": "0",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Constant",
-            "Top": 37,
-            "Left": -7,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "Kp",
-            "ID": "ee6fa587-c253-4d35-82ad-b8c6e244b8cb",
-            "Parameters": {
-              "Value": "0.0707",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          }
-        ],
-        "Connectors": [
-          {
-            "Segments": [
-              {
-                "StartX": 25,
-                "StartY": 2,
-                "EndX": 27,
-                "EndY": 2
-              }
-            ],
-            "Name": "C7"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 18,
-                "StartY": 2,
-                "EndX": 19,
-                "EndY": 2
-              }
-            ],
-            "Name": "C6"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 27,
-                "StartY": 8,
-                "EndX": 27,
-                "EndY": 9
-              },
-              {
-                "StartX": 11,
-                "StartY": 9,
-                "EndX": 27,
-                "EndY": 9
-              },
-              {
-                "StartX": 0,
-                "StartY": 9,
-                "EndX": 11,
-                "EndY": 9
-              },
-              {
-                "StartX": 0,
-                "StartY": 7,
-                "EndX": 0,
-                "EndY": 9
-              }
-            ],
-            "Name": "C1"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 26,
-                "StartY": 26,
-                "EndX": 30,
-                "EndY": 26
-              }
-            ],
-            "Name": "C20"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 34,
-                "StartY": 26,
-                "EndX": 39,
-                "EndY": 26
-              }
-            ],
-            "Name": "C8"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 37,
-                "StartY": 30,
-                "EndX": 39,
-                "EndY": 30
-              },
-              {
-                "StartX": 39,
-                "StartY": 28,
-                "EndX": 39,
-                "EndY": 30
-              }
-            ],
-            "Name": "C12"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 43,
-                "StartY": 27,
-                "EndX": 46,
-                "EndY": 27
-              }
-            ],
-            "Name": "C10"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 14,
-                "StartY": 2,
-                "EndX": 11,
-                "EndY": 2
-              },
-              {
-                "StartX": 11,
-                "StartY": 2,
-                "EndX": 11,
-                "EndY": 3
-              },
-              {
-                "StartX": 11,
-                "StartY": 1,
-                "EndX": 11,
-                "EndY": 2
-              }
-            ],
-            "Name": "C18"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 7,
-                "StartY": 4,
-                "EndX": 7,
-                "EndY": 6
-              },
-              {
-                "StartX": 9,
-                "StartY": 6,
-                "EndX": 7,
-                "EndY": 6
-              }
-            ],
-            "Name": "C23"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 7,
-                "StartY": 0,
-                "EndX": 7,
-                "EndY": -2
-              },
-              {
-                "StartX": 6,
-                "StartY": -2,
-                "EndX": 7,
-                "EndY": -2
-              },
-              {
-                "StartX": 7,
-                "StartY": -2,
-                "EndX": 9,
-                "EndY": -2
-              }
-            ],
-            "Name": "C4"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 0,
-                "StartY": -1,
-                "EndX": 0,
-                "EndY": -5
-              },
-              {
-                "StartX": 11,
-                "StartY": -5,
-                "EndX": 0,
-                "EndY": -5
-              }
-            ],
-            "Name": "C2"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 16,
-                "StartY": -1,
-                "EndX": 17,
-                "EndY": -1
-              },
-              {
-                "StartX": 16,
-                "StartY": 1,
-                "EndX": 16,
-                "EndY": -1
-              }
-            ],
-            "Name": "C3"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 27,
-                "StartY": -3,
-                "EndX": 28,
-                "EndY": -3
-              },
-              {
-                "StartX": 27,
-                "StartY": -2,
-                "EndX": 27,
-                "EndY": -3
-              }
-            ],
-            "Name": "C22"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 21,
-                "StartY": 37,
-                "EndX": 21,
-                "EndY": 40
-              },
-              {
-                "StartX": 20,
-                "StartY": 40,
-                "EndX": 21,
-                "EndY": 40
-              }
-            ],
-            "Name": "C25"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 21,
-                "StartY": 27,
-                "EndX": 21,
-                "EndY": 33
-              },
-              {
-                "StartX": 22,
-                "StartY": 27,
-                "EndX": 21,
-                "EndY": 27
-              }
-            ],
-            "Name": "C5"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 4,
-                "StartY": 21,
-                "EndX": 4,
-                "EndY": 19
-              },
-              {
-                "StartX": 7,
-                "StartY": 21,
-                "EndX": 4,
-                "EndY": 21
-              }
-            ],
-            "Name": "C16"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 0,
-                "StartY": 19,
-                "EndX": -1,
-                "EndY": 19
-              }
-            ],
-            "Name": "C11"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": -3,
-                "StartY": 39,
-                "EndX": 6,
-                "EndY": 39
-              },
-              {
-                "StartX": 6,
-                "StartY": 26,
-                "EndX": 6,
-                "EndY": 39
-              },
-              {
-                "StartX": 7,
-                "StartY": 26,
-                "EndX": 6,
-                "EndY": 26
-              }
-            ],
-            "Name": "C15"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 21,
-                "StartY": 25,
-                "EndX": 21,
-                "EndY": 24
-              },
-              {
-                "StartX": 22,
-                "StartY": 25,
-                "EndX": 21,
-                "EndY": 25
-              }
-            ],
-            "Name": "C21"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 7,
-                "StartY": 24,
-                "EndX": 4,
-                "EndY": 24
-              },
-              {
-                "StartX": -3,
-                "StartY": 29,
-                "EndX": 4,
-                "EndY": 29
-              },
-              {
-                "StartX": 4,
-                "StartY": 24,
-                "EndX": 4,
-                "EndY": 29
-              }
-            ],
-            "Name": "C17"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": -3,
-                "StartY": 25,
-                "EndX": 3,
-                "EndY": 25
-              },
-              {
-                "StartX": 7,
-                "StartY": 23,
-                "EndX": 3,
-                "EndY": 23
-              },
-              {
-                "StartX": 3,
-                "StartY": 23,
-                "EndX": 3,
-                "EndY": 25
-              }
-            ],
-            "Name": "C9"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 7,
-                "StartY": 22,
-                "EndX": -9,
-                "EndY": 22
-              }
-            ],
-            "Name": "C13"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": -3,
-                "StartY": 34,
-                "EndX": 5,
-                "EndY": 34
-              },
-              {
-                "StartX": 7,
-                "StartY": 25,
-                "EndX": 5,
-                "EndY": 25
-              },
-              {
-                "StartX": 5,
-                "StartY": 25,
-                "EndX": 5,
-                "EndY": 34
-              }
-            ],
-            "Name": "C19"
-          }
-        ],
-        "Name": "Top Circuit - Copy",
-        "Variables": []
-      },
-      "TransientAnalysis": {
-        "EndTime": 0.02,
-        "FixedTimeStep": false,
-        "StopAtSteadyState": false,
-        "TimeStep": 1E-09
-      }
-    },
-    {
-      "Id": "ef6f3987-5ac2-4042-92e1-73aff952f11a",
-      "Name": "regulation_courant_tension_continu",
-      "Circuit": {
-        "Id": "09c55e4b-36ae-484a-91f0-f6ebebb76581",
-        "Devices": [
-          {
-            "LibraryName": "Current Probe",
-            "Top": 1,
-            "Left": 14,
-            "Angle": 0,
-            "HF": false,
-            "VF": true,
-            "Name": "iL",
-            "ID": "45313a52-491c-4bd0-b239-c7f12dcddcab",
-            "Parameters": {
-              "Gain": "1",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Control Output Connector Label",
-            "Top": 28,
-            "Left": -3,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "iL",
-            "ID": "96d5b75b-0e2f-4f25-9191-1e00b7ff72e1",
-            "Parameters": {},
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Ground",
-            "Top": 9,
-            "Left": -1,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "Ground1",
-            "ID": "8ff836ba-e17a-4348-998f-42558799cccd",
-            "Parameters": {},
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "DC Voltage Source",
-            "Top": -1,
-            "Left": -2,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "DC1",
-            "ID": "89f54b3a-4773-4dda-a359-a0525b430ee9",
-            "Parameters": {
-              "Voltage": "300"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Control Output Connector Label",
-            "Top": -3,
-            "Left": 2,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "pwm",
-            "ID": "3fb955f2-d124-4250-962b-cee3ee57c1c5",
-            "Parameters": {},
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Sum",
-            "Top": 22,
-            "Left": -20,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "",
-            "ID": "fdd5708a-ef51-4b22-bcb0-44079820a855",
-            "Parameters": {
-              "NumberOfInputs": "2",
-              "Gains": "[1 -1]",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Control Input Connector Label",
-            "Top": 1,
-            "Left": 40,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "Vs",
-            "ID": "e42c653f-8cde-4148-b853-becc5aaa1282",
-            "Parameters": {},
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Sum",
-            "Top": 24,
-            "Left": 20,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "",
-            "ID": "4bd72f6e-ac65-460b-9c34-c1d797e5c184",
-            "Parameters": {
-              "NumberOfInputs": "2",
-              "Gains": "[1 1]",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Voltage Probe",
-            "Top": 1,
-            "Left": 36,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "Vs",
-            "ID": "49714649-766e-4a51-acec-4a39fb7f040c",
-            "Parameters": {
-              "Gain": "1",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": [
-              "Out"
-            ]
-          },
-          {
-            "LibraryName": "Gain",
-            "Top": 30,
-            "Left": 18,
-            "Angle": 270,
-            "HF": false,
-            "VF": false,
-            "Name": "Vs_E",
-            "ID": "a7e85882-cd07-416d-9687-bbc9f4a3440a",
-            "Parameters": {
-              "Value": "1 / 300",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "PID",
-            "Top": 23,
-            "Left": 8,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "PI",
-            "ID": "b4d422a3-e68d-44fa-914c-bb70dbaa0406",
-            "Parameters": {
-              "Kp": "0.1414",
-              "Kd": "0",
-              "Ki": "500",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Resistor",
-            "Top": 4,
-            "Left": 31,
-            "Angle": 90,
-            "HF": false,
-            "VF": false,
-            "Name": "R1",
-            "ID": "69e28863-ed68-4bd4-8c4c-dc855478783d",
-            "Parameters": {
-              "Value": "30"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Sum",
-            "Top": 23,
-            "Left": 2,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "",
-            "ID": "dedfc3aa-5ec4-470a-ba47-741e372e8cca",
-            "Parameters": {
-              "NumberOfInputs": "2",
-              "Gains": "[1 -1]",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Control Input Connector Label",
-            "Top": 28,
-            "Left": 43,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "pwm",
-            "ID": "1b0a6bf5-e447-41fe-8550-49a21e38125b",
-            "Parameters": {},
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Comparator",
-            "Top": 27,
-            "Left": 36,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "COMP1",
-            "ID": "41ee5c3d-4ec9-44f8-ae75-a170a9bd0b83",
-            "Parameters": {
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": [
-              "Out"
-            ]
-          },
-          {
-            "LibraryName": "Triangular Wave",
-            "Top": 29,
-            "Left": 30,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "TRI1",
-            "ID": "b6621a11-ed72-4aae-89c6-c345bca90547",
-            "Parameters": {
-              "Amplitude": "1",
-              "Frequency": "8k",
-              "DutyCycle": "0.5",
-              "Offset": "0",
-              "PhaseShift": "0",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Limiter",
-            "Top": 24,
-            "Left": 26,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "duty_cycle",
-            "ID": "33db0f75-5a61-46fb-90a3-fd8e9701ff04",
-            "Parameters": {
-              "LowLimit": "0",
-              "HighLimit": "1",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": [
-              "Out"
-            ]
-          },
-          {
-            "LibraryName": "Inductor",
-            "Top": 1,
-            "Left": 19,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "L1",
-            "ID": "c0b53cf7-0dc4-4ccc-a80a-ef9070a852fd",
-            "Parameters": {
-              "Value": "6m",
-              "Iinit": "0"
-            },
-            "EnabledScopes": [
-              "Current"
-            ]
-          },
-          {
-            "LibraryName": "Control Input Connector Label",
-            "Top": -2,
-            "Left": 16,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "iL",
-            "ID": "d3b28cff-5fa0-4320-a372-e72cb4980ffe",
-            "Parameters": {},
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Control Output Connector Label",
-            "Top": 26,
-            "Left": -25,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "Vs",
-            "ID": "9e1f4fb4-be33-4b77-b54e-6f100b9a1007",
-            "Parameters": {},
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "PID",
-            "Top": 22,
-            "Left": -15,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "PID1",
-            "ID": "8403268b-3e7f-4f44-8c27-07dcd3e66b76",
-            "Parameters": {
-              "Kp": "0.0138",
-              "Kd": "0",
-              "Ki": "1.111",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Limiter",
-            "Top": 22,
-            "Left": -5,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "",
-            "ID": "b169e820-a2a7-4ae1-affd-65e11a14ce25",
-            "Parameters": {
-              "LowLimit": "0",
-              "HighLimit": "10",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Square Wave",
-            "Top": 21,
-            "Left": -28,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "Vref",
-            "ID": "600a4ca9-7cbd-4c94-8f67-4f766dbd4ce0",
-            "Parameters": {
-              "Amplitude": "100",
-              "Frequency": "1",
-              "DutyCycle": "0.5",
-              "Offset": "100",
-              "PhaseShift": "0",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Control Output Connector Label",
-            "Top": 34,
-            "Left": 13,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "Vs",
-            "ID": "448788f2-9df1-4d2b-a6c2-141b055ca31d",
-            "Parameters": {},
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Capacitor",
-            "Top": 5,
-            "Left": 24,
-            "Angle": 90,
-            "HF": false,
-            "VF": false,
-            "Name": "C1",
-            "ID": "6e11d3d1-2089-41b2-a0c6-2b0f6e6f9505",
-            "Parameters": {
-              "Value": "1m",
-              "Vinit": "0"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "MOSFET",
-            "Top": 3,
-            "Left": 9,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "T2",
-            "ID": "cfaa5fcb-9d74-4a69-814e-eba0fd6a20d9",
-            "Parameters": {
-              "Ron": "0",
-              "LossCalculationFrequency": "1k"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "MOSFET",
-            "Top": -5,
-            "Left": 9,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "T1",
-            "ID": "da59cbf7-f932-4768-9c76-68ebf8478ee0",
-            "Parameters": {
-              "Ron": "0",
-              "LossCalculationFrequency": "1k"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Not",
-            "Top": 0,
-            "Left": 5,
-            "Angle": 90,
-            "HF": false,
-            "VF": false,
-            "Name": "",
-            "ID": "50deaba2-23cc-4abb-9e14-fc179a461ae8",
-            "Parameters": {
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          }
-        ],
-        "Connectors": [
-          {
-            "Segments": [
-              {
-                "StartX": 8,
-                "StartY": 25,
-                "EndX": 6,
-                "EndY": 25
-              }
-            ],
-            "Name": "C14"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 30,
-                "StartY": 26,
-                "EndX": 36,
-                "EndY": 26
-              },
-              {
-                "StartX": 36,
-                "StartY": 28,
-                "EndX": 36,
-                "EndY": 26
-              }
-            ],
-            "Name": "C10"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 34,
-                "StartY": 31,
-                "EndX": 36,
-                "EndY": 31
-              },
-              {
-                "StartX": 36,
-                "StartY": 30,
-                "EndX": 36,
-                "EndY": 31
-              }
-            ],
-            "Name": "C8"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 40,
-                "StartY": 29,
-                "EndX": 43,
-                "EndY": 29
-              }
-            ],
-            "Name": "C9"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 24,
-                "StartY": 26,
-                "EndX": 26,
-                "EndY": 26
-              }
-            ],
-            "Name": "C13"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 20,
-                "StartY": 30,
-                "EndX": 20,
-                "EndY": 27
-              }
-            ],
-            "Name": "C7"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 18,
-                "StartY": 2,
-                "EndX": 19,
-                "EndY": 2
-              }
-            ],
-            "Name": "C6"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 16,
-                "StartY": -1,
-                "EndX": 16,
-                "EndY": 1
-              }
-            ],
-            "Name": "C3"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 14,
-                "StartY": 2,
-                "EndX": 11,
-                "EndY": 2
-              },
-              {
-                "StartX": 11,
-                "StartY": 2,
-                "EndX": 11,
-                "EndY": 3
-              },
-              {
-                "StartX": 11,
-                "StartY": 1,
-                "EndX": 11,
-                "EndY": 2
-              }
-            ],
-            "Name": "C4"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 16,
-                "StartY": 25,
-                "EndX": 20,
-                "EndY": 25
-              }
-            ],
-            "Name": "C12"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": -7,
-                "StartY": 24,
-                "EndX": -5,
-                "EndY": 24
-              }
-            ],
-            "Name": "C5"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 2,
-                "StartY": 26,
-                "EndX": 1,
-                "EndY": 26
-              },
-              {
-                "StartX": 1,
-                "StartY": 26,
-                "EndX": 1,
-                "EndY": 29
-              }
-            ],
-            "Name": "C11"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 2,
-                "StartY": 24,
-                "EndX": -1,
-                "EndY": 24
-              }
-            ],
-            "Name": "C15"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": -16,
-                "StartY": 24,
-                "EndX": -15,
-                "EndY": 24
-              }
-            ],
-            "Name": "C19"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": -24,
-                "StartY": 23,
-                "EndX": -20,
-                "EndY": 23
-              }
-            ],
-            "Name": "C20"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 20,
-                "StartY": 35,
-                "EndX": 20,
-                "EndY": 34
-              },
-              {
-                "StartX": 17,
-                "StartY": 35,
-                "EndX": 20,
-                "EndY": 35
-              }
-            ],
-            "Name": "C21"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": -21,
-                "StartY": 25,
-                "EndX": -21,
-                "EndY": 27
-              },
-              {
-                "StartX": -20,
-                "StartY": 25,
-                "EndX": -21,
-                "EndY": 25
-              }
-            ],
-            "Name": "C16"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 27,
-                "StartY": 2,
-                "EndX": 34,
-                "EndY": 2
-              },
-              {
-                "StartX": 25,
-                "StartY": 2,
-                "EndX": 27,
-                "EndY": 2
-              },
-              {
-                "StartX": 27,
-                "StartY": 3,
-                "EndX": 27,
-                "EndY": 2
-              },
-              {
-                "StartX": 36,
-                "StartY": 2,
-                "EndX": 34,
-                "EndY": 2
-              }
-            ],
-            "Name": "C18"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 27,
-                "StartY": 9,
-                "EndX": 34,
-                "EndY": 9
-              },
-              {
-                "StartX": 34,
-                "StartY": 9,
-                "EndX": 34,
-                "EndY": 8
-              },
-              {
-                "StartX": 11,
-                "StartY": 9,
-                "EndX": 0,
-                "EndY": 9
-              },
-              {
-                "StartX": 0,
-                "StartY": 7,
-                "EndX": 0,
-                "EndY": 9
-              },
-              {
-                "StartX": 11,
-                "StartY": 9,
-                "EndX": 27,
-                "EndY": 9
-              }
-            ],
-            "Name": "C2"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 0,
-                "StartY": -1,
-                "EndX": 0,
-                "EndY": -5
-              },
-              {
-                "StartX": 11,
-                "StartY": -5,
-                "EndX": 0,
-                "EndY": -5
-              }
-            ],
-            "Name": "C22"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 7,
-                "StartY": 6,
-                "EndX": 9,
-                "EndY": 6
-              },
-              {
-                "StartX": 7,
-                "StartY": 4,
-                "EndX": 7,
-                "EndY": 6
-              }
-            ],
-            "Name": "C1"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 7,
-                "StartY": -2,
-                "EndX": 6,
-                "EndY": -2
-              },
-              {
-                "StartX": 7,
-                "StartY": 0,
-                "EndX": 7,
-                "EndY": -2
-              },
-              {
-                "StartX": 9,
-                "StartY": -2,
-                "EndX": 7,
-                "EndY": -2
-              }
-            ],
-            "Name": "C17"
-          }
-        ],
-        "Name": "Top Circuit - Copy - Copy",
-        "Variables": []
-      },
-      "TransientAnalysis": {
-        "EndTime": 2,
-        "FixedTimeStep": false,
-        "StopAtSteadyState": false,
-        "TimeStep": 1E-07
-      }
-    },
-    {
-      "Id": "4d08d788-c1e3-432e-914b-79536bb3167e",
-      "Name": "regulation_courant_tension_discret",
-      "Circuit": {
-        "Id": "f8e08417-e9d3-427f-843e-74e7244ffd9b",
-        "Devices": [
-          {
-            "LibraryName": "Constant",
-            "Top": 36,
-            "Left": -2,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "a0_v",
-            "ID": "9a2f7457-7816-46bc-8dd1-283af421252b",
-            "Parameters": {
-              "Value": "-0.0137",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "IGBT",
-            "Top": -5,
-            "Left": 9,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "IGBT1",
-            "ID": "3a806171-1e8e-4cd9-8596-c1cfe50de545",
-            "Parameters": {
-              "Ron": "0",
-              "Vf": "0",
-              "LossCalculationFrequency": "1k"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Square Wave",
-            "Top": 17,
-            "Left": -5,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "clock",
-            "ID": "467732f6-e7fc-47e0-875d-2966550f4070",
-            "Parameters": {
-              "Amplitude": "1",
-              "Frequency": "8k",
-              "DutyCycle": "0.5",
-              "Offset": "-0.5",
-              "PhaseShift": "0",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Zero-Crossing Detector",
-            "Top": 17,
-            "Left": 1,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "ZX1",
-            "ID": "18728112-fe25-482e-aa58-25baf53223d2",
-            "Parameters": {
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "DC Voltage Source",
-            "Top": -1,
-            "Left": 0,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "DC1",
-            "ID": "4ae65728-da02-4799-a527-3e34dc6b051b",
-            "Parameters": {
-              "Voltage": "300"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Ground",
-            "Top": 9,
-            "Left": 1,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "Ground1",
-            "ID": "03aa2188-64e8-40d0-95ef-9dda020f05fe",
-            "Parameters": {},
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Control Output Connector Label",
-            "Top": -3,
-            "Left": 4,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "pwm",
-            "ID": "ef23a905-889e-4000-8699-c287b287bb24",
-            "Parameters": {},
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Triangular Wave",
-            "Top": 27,
-            "Left": 33,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "TRI1",
-            "ID": "f15b9d30-c4f0-4269-9f75-e08872c91f5b",
-            "Parameters": {
-              "Amplitude": "1",
-              "Frequency": "8k",
-              "DutyCycle": "0.5",
-              "Offset": "0",
-              "PhaseShift": "0",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Diode",
-            "Top": 5,
-            "Left": 8,
-            "Angle": 270,
-            "HF": false,
-            "VF": false,
-            "Name": "D1",
-            "ID": "8355f889-b9f6-4d9c-94c4-1cc3c9fa3f72",
-            "Parameters": {
-              "Rd": "0",
-              "Vf": "0",
-              "LossCalculationFrequency": "1k"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Constant",
-            "Top": 41,
-            "Left": -2,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "a1_v",
-            "ID": "b41fb18e-21bb-4a17-9a0f-26550859dda4",
-            "Parameters": {
-              "Value": "0.01386",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Control Input Connector Label",
-            "Top": -2,
-            "Left": 16,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "iL",
-            "ID": "b23eddca-6d6a-4d72-b188-307716747186",
-            "Parameters": {},
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Current Probe",
-            "Top": 1,
-            "Left": 14,
-            "Angle": 0,
-            "HF": false,
-            "VF": true,
-            "Name": "iL",
-            "ID": "c25f3100-7b01-4053-b056-f35840c5c427",
-            "Parameters": {
-              "Gain": "1",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": [
-              "Out"
-            ]
-          },
-          {
-            "LibraryName": "Constant",
-            "Top": 30,
-            "Left": -2,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "a1",
-            "ID": "e7421e77-206f-4bfd-b3ec-ce7921dc339a",
-            "Parameters": {
-              "Value": "0.17",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Constant",
-            "Top": 25,
-            "Left": -2,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "a0",
-            "ID": "a74bf11e-0213-4fff-acf3-73a5d394c0ac",
-            "Parameters": {
-              "Value": "-0.11",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Comparator",
-            "Top": 24,
-            "Left": 39,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "COMP1",
-            "ID": "de2ff0a1-9c2c-4c80-95b7-9431462d0afc",
-            "Parameters": {
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Control Input Connector Label",
-            "Top": 25,
-            "Left": 46,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "pwm",
-            "ID": "fd57b409-8647-4963-a5e8-b9bc02a8a87b",
-            "Parameters": {},
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Resistor",
-            "Top": 4,
-            "Left": 30,
-            "Angle": 90,
-            "HF": false,
-            "VF": false,
-            "Name": "R1",
-            "ID": "3c44afd5-3ca5-47f3-84a4-368523185c53",
-            "Parameters": {
-              "Value": "30"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Square Wave",
-            "Top": 17,
-            "Left": -15,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "Vref",
-            "ID": "858e5d17-1eed-4322-86b8-550ce1dc479f",
-            "Parameters": {
-              "Amplitude": "100",
-              "Frequency": "1",
-              "DutyCycle": "0.5",
-              "Offset": "100",
-              "PhaseShift": "0",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Control Output Connector Label",
-            "Top": 34,
-            "Left": -8,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "iL",
-            "ID": "b167e065-e638-420a-857c-2e948eeae424",
-            "Parameters": {},
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "C Code",
-            "Top": 17,
-            "Left": 11,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "C1",
-            "ID": "d243d6f3-a50c-4dce-99c8-3388880762b4",
-            "Parameters": {
-              "NumberOfInputs": "7",
-              "NumberOfOutputs": "1",
-              "Code": "#include \u0022simba_library.h\u0022 \r\n#include \u003Cstdlib.h\u003E\r\n\r\n\r\ntypedef struct{\r\n    double duty_cycle;\r\n    double i_ref;\r\n    double i_error_prev;\r\n    double v_error_prev;\r\n} model_data;\r\n\r\nmodel_data data; \r\n\r\nvoid initialize() {\r\n\tdata.duty_cycle = 0;\r\n\tdata.i_ref = 0;\r\n\tdata.i_error_prev = 0;\r\n\tdata.v_error_prev = 0;\r\n}\r\n\r\nvoid calculate_outputs(double* outputs, double* inputs, double time, double time_step) {\r\n\r\n\tconst double clock = inputs[0];\r\n\tconst double a0 = inputs[2];\r\n\tconst double a1 = inputs[3];\r\n\tconst double a0_v = inputs[5];\r\n\tconst double a1_v = inputs[6];\r\n\tif (clock == 1 || time \u003C 1e-10) // Clock\r\n\t{\r\n\t\t// Voltage control loop\r\n\t\tdouble v_error = inputs[1];\r\n\t\tdata.i_ref = data.i_ref \u002B a1_v * v_error \u002B a0_v * data.v_error_prev;\r\n\t\tdata.v_error_prev = v_error;\r\n\t\tif (data.i_ref \u003E 10)\r\n\t\t\tdata.i_ref = 10;\r\n\t\tif (data.i_ref \u003C 0)\r\n\t\t\tdata.i_ref = 0;\r\n\t\t// Current control loop\r\n\t\tdouble i_mes = inputs[4];\r\n\t\tdouble i_error = data.i_ref - i_mes;\r\n\t\tdata.duty_cycle = data.duty_cycle \u002B a1 * i_error \u002B a0 * data.i_error_prev;\r\n\t\tdata.i_error_prev = i_error;\r\n\t\tif (data.duty_cycle \u003E 1)\r\n\t\t\tdata.duty_cycle = 1;\r\n\t\tif (data.duty_cycle \u003C 0)\r\n\t\t\tdata.duty_cycle = 0;\r\n\t}\r\n\t\r\n\toutputs[0] = data.duty_cycle;\r\n}\r\n\r\nvoid terminate() {\r\n}\r\n\r\n/*\r\n * Function: snapshot (DO NOT MODIFY)\r\n */\r\nvoid* snapshot(snapshot_mode mode, void* snapshot_ptr) {\r\n\tmodel_data* model_data_ptr;\r\n\tswitch (mode) {\r\n\t\tcase SNAPSHOT_CREATE: // Create and return a snapshot of the current model state\r\n\t\t\tmodel_data_ptr = (model_data*)malloc(sizeof(model_data));\r\n\t\t\tif (model_data_ptr == 0) return 0;\r\n\t\t\t*model_data_ptr = data;\r\n\t\t\treturn (void*)model_data_ptr;\r\n\r\n\t\tcase SNAPSHOT_UPDATE:  // Update an existing snapshot with current model data\r\n\t\t\tmodel_data_ptr = (model_data*)snapshot_ptr;\r\n\t\t\t*model_data_ptr = data;\r\n\t\t\treturn snapshot_ptr;\r\n\r\n\t\tcase SNAPSHOT_LOAD:  // Restore model data \r\n\t\t\tmodel_data_ptr = (model_data*)snapshot_ptr;\r\n\t\t\tdata = *model_data_ptr;\r\n\t\t\treturn snapshot_ptr;\r\n\r\n\t\tcase SNAPSHOT_DELETE: // Free the resources allocated in SNAPSHOT_CREATE\r\n\t\t\tfree(snapshot_ptr);\r\n\t\t\treturn 0;\r\n\t}\r\n}",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Sum",
-            "Top": 21,
-            "Left": -8,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "SUM1",
-            "ID": "600c90a8-9f9d-4663-848e-52dfccd23820",
-            "Parameters": {
-              "NumberOfInputs": "2",
-              "Gains": "[1 -1]",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Voltage Probe",
-            "Top": 1,
-            "Left": 35,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "Vs",
-            "ID": "4a932463-ae94-4be6-ab24-120fd9514b31",
-            "Parameters": {
-              "Gain": "1",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": [
-              "Out"
-            ]
-          },
-          {
-            "LibraryName": "Control Input Connector Label",
-            "Top": 1,
-            "Left": 40,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "Vs",
-            "ID": "dc971241-8120-4d46-bed8-04d7cd4e5230",
-            "Parameters": {},
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Inductor",
-            "Top": 1,
-            "Left": 19,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "L1",
-            "ID": "63cc30cd-a49b-45c7-bc42-392b9e427409",
-            "Parameters": {
-              "Value": "6m",
-              "Iinit": "0"
-            },
-            "EnabledScopes": [
-              "Current"
-            ]
-          },
-          {
-            "LibraryName": "Control Output Connector Label",
-            "Top": 25,
-            "Left": -15,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "Vs",
-            "ID": "8de61c3f-6277-4bf4-a751-e470cd4b8a05",
-            "Parameters": {},
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Capacitor",
-            "Top": 4,
-            "Left": 24,
-            "Angle": 90,
-            "HF": false,
-            "VF": false,
-            "Name": "C2",
-            "ID": "444ad369-14f4-4748-949a-65ffefff3eea",
-            "Parameters": {
-              "Value": "1m",
-              "Vinit": "0"
-            },
-            "EnabledScopes": []
-          }
-        ],
-        "Connectors": [
-          {
-            "Segments": [
-              {
-                "StartX": 11,
-                "StartY": 25,
-                "EndX": 4,
-                "EndY": 25
-              },
-              {
-                "StartX": 2,
-                "StartY": 32,
-                "EndX": 4,
-                "EndY": 32
-              },
-              {
-                "StartX": 4,
-                "StartY": 25,
-                "EndX": 4,
-                "EndY": 32
-              }
-            ],
-            "Name": "C16"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 6,
-                "StartY": 22,
-                "EndX": 11,
-                "EndY": 22
-              },
-              {
-                "StartX": 5,
-                "StartY": 19,
-                "EndX": 6,
-                "EndY": 19
-              },
-              {
-                "StartX": 6,
-                "StartY": 19,
-                "EndX": 6,
-                "EndY": 22
-              }
-            ],
-            "Name": "C11"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": -1,
-                "StartY": 19,
-                "EndX": 1,
-                "EndY": 19
-              }
-            ],
-            "Name": "C14"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 14,
-                "StartY": 2,
-                "EndX": 11,
-                "EndY": 2
-              },
-              {
-                "StartX": 11,
-                "StartY": 1,
-                "EndX": 11,
-                "EndY": 2
-              },
-              {
-                "StartX": 11,
-                "StartY": 2,
-                "EndX": 11,
-                "EndY": 3
-              }
-            ],
-            "Name": "C4"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 8,
-                "StartY": -2,
-                "EndX": 9,
-                "EndY": -2
-              }
-            ],
-            "Name": "C1"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 2,
-                "StartY": 7,
-                "EndX": 2,
-                "EndY": 9
-              },
-              {
-                "StartX": 2,
-                "StartY": 9,
-                "EndX": 11,
-                "EndY": 9
-              },
-              {
-                "StartX": 33,
-                "StartY": 9,
-                "EndX": 33,
-                "EndY": 8
-              },
-              {
-                "StartX": 27,
-                "StartY": 9,
-                "EndX": 33,
-                "EndY": 9
-              },
-              {
-                "StartX": 11,
-                "StartY": 9,
-                "EndX": 27,
-                "EndY": 9
-              },
-              {
-                "StartX": 27,
-                "StartY": 8,
-                "EndX": 27,
-                "EndY": 9
-              }
-            ],
-            "Name": "C18"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 11,
-                "StartY": -5,
-                "EndX": 2,
-                "EndY": -5
-              },
-              {
-                "StartX": 2,
-                "StartY": -1,
-                "EndX": 2,
-                "EndY": -5
-              }
-            ],
-            "Name": "C2"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 18,
-                "StartY": 2,
-                "EndX": 19,
-                "EndY": 2
-              }
-            ],
-            "Name": "C6"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 16,
-                "StartY": -1,
-                "EndX": 16,
-                "EndY": 1
-              }
-            ],
-            "Name": "C3"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 11,
-                "StartY": 28,
-                "EndX": 10,
-                "EndY": 28
-              },
-              {
-                "StartX": 2,
-                "StartY": 43,
-                "EndX": 10,
-                "EndY": 43
-              },
-              {
-                "StartX": 10,
-                "StartY": 28,
-                "EndX": 10,
-                "EndY": 43
-              }
-            ],
-            "Name": "C20"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 43,
-                "StartY": 26,
-                "EndX": 46,
-                "EndY": 26
-              }
-            ],
-            "Name": "C8"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 39,
-                "StartY": 27,
-                "EndX": 39,
-                "EndY": 29
-              },
-              {
-                "StartX": 37,
-                "StartY": 29,
-                "EndX": 39,
-                "EndY": 29
-              }
-            ],
-            "Name": "C10"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 27,
-                "StartY": 25,
-                "EndX": 39,
-                "EndY": 25
-              }
-            ],
-            "Name": "C12"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 11,
-                "StartY": 26,
-                "EndX": 6,
-                "EndY": 26
-              },
-              {
-                "StartX": -4,
-                "StartY": 35,
-                "EndX": 6,
-                "EndY": 35
-              },
-              {
-                "StartX": 6,
-                "StartY": 26,
-                "EndX": 6,
-                "EndY": 35
-              }
-            ],
-            "Name": "C5"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 2,
-                "StartY": 27,
-                "EndX": 3,
-                "EndY": 27
-              },
-              {
-                "StartX": 11,
-                "StartY": 24,
-                "EndX": 3,
-                "EndY": 24
-              },
-              {
-                "StartX": 3,
-                "StartY": 24,
-                "EndX": 3,
-                "EndY": 27
-              }
-            ],
-            "Name": "C17"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 2,
-                "StartY": 38,
-                "EndX": 8,
-                "EndY": 38
-              },
-              {
-                "StartX": 11,
-                "StartY": 27,
-                "EndX": 8,
-                "EndY": 27
-              },
-              {
-                "StartX": 8,
-                "StartY": 27,
-                "EndX": 8,
-                "EndY": 38
-              }
-            ],
-            "Name": "C19"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 27,
-                "StartY": 2,
-                "EndX": 33,
-                "EndY": 2
-              },
-              {
-                "StartX": 25,
-                "StartY": 2,
-                "EndX": 27,
-                "EndY": 2
-              },
-              {
-                "StartX": 33,
-                "StartY": 2,
-                "EndX": 35,
-                "EndY": 2
-              }
-            ],
-            "Name": "C22"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": -8,
-                "StartY": 26,
-                "EndX": -8,
-                "EndY": 24
-              },
-              {
-                "StartX": -11,
-                "StartY": 26,
-                "EndX": -8,
-                "EndY": 26
-              }
-            ],
-            "Name": "C9"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 11,
-                "StartY": 23,
-                "EndX": -4,
-                "EndY": 23
-              }
-            ],
-            "Name": "C13"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": -8,
-                "StartY": 19,
-                "EndX": -8,
-                "EndY": 22
-              },
-              {
-                "StartX": -11,
-                "StartY": 19,
-                "EndX": -8,
-                "EndY": 19
-              }
-            ],
-            "Name": "C7"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 39,
-                "StartY": 2,
-                "EndX": 40,
-                "EndY": 2
-              }
-            ],
-            "Name": "C15"
-          }
-        ],
-        "Name": "Top Circuit - Copy - Copy",
-        "Variables": []
-      },
-      "TransientAnalysis": {
-        "EndTime": 1,
-        "FixedTimeStep": false,
-        "StopAtSteadyState": false,
-        "TimeStep": 1E-08
-      }
-    },
-    {
-      "Id": "5f7d567c-b2ec-41ac-b943-f61ca52f80e9",
-      "Name": "direct_current_continuous_zerocompensation",
-      "Circuit": {
-        "Id": "054dba59-44d0-4a86-96ba-aa366001b57a",
-        "Devices": [
-          {
-            "LibraryName": "PID",
-            "Top": 23,
-            "Left": 8,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "PI",
-            "ID": "173e8a9b-bee5-432e-8bee-2a824233584d",
-            "Parameters": {
-              "Kp": "0.0707",
-              "Kd": "0",
-              "Ki": "250",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "MOSFET",
-            "Top": 3,
-            "Left": 9,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "T2",
-            "ID": "a42ad068-0047-4f68-8724-67d8cc47e7fa",
-            "Parameters": {
-              "Ron": "0",
-              "LossCalculationFrequency": "1k"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "DC Voltage Source",
-            "Top": -1,
-            "Left": -2,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "DC1",
-            "ID": "ce40d182-deb6-4ae6-8f91-4018811ecce1",
-            "Parameters": {
-              "Voltage": "600"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Ground",
-            "Top": 9,
-            "Left": -1,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "Ground1",
-            "ID": "fa8b4c52-a1f0-4f11-9575-32614a5b760b",
-            "Parameters": {},
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Control Output Connector Label",
-            "Top": -3,
-            "Left": 2,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "pwm",
-            "ID": "262ce73b-7c9f-444c-aaa9-0aba4b7213cc",
-            "Parameters": {},
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Not",
-            "Top": 0,
-            "Left": 5,
-            "Angle": 90,
-            "HF": false,
-            "VF": false,
-            "Name": "",
-            "ID": "27e5a0aa-3ffa-4d42-b08c-21c91eea8e49",
-            "Parameters": {
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "MOSFET",
-            "Top": -5,
-            "Left": 9,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "T1",
-            "ID": "811d7a2b-68d1-4482-bb7e-da8907c25c6a",
-            "Parameters": {
-              "Ron": "0",
-              "LossCalculationFrequency": "1k"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Gain",
-            "Top": 17,
-            "Left": 8,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "zero_compensation",
-            "ID": "a4ed0bd0-5912-45ee-9463-9fcab57ef0d9",
-            "Parameters": {
-              "Value": "0.0707",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Control Input Connector Label",
-            "Top": -4,
-            "Left": 28,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "Vs",
-            "ID": "ce7cd3fb-857c-48fd-bcff-308148febb9d",
-            "Parameters": {},
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Control Input Connector Label",
-            "Top": 28,
-            "Left": 43,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "pwm",
-            "ID": "ea91a65b-55e9-4f97-9cb9-a9677c48e732",
-            "Parameters": {},
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Voltage Probe",
-            "Top": -1,
-            "Left": 25,
-            "Angle": 270,
-            "HF": false,
-            "VF": false,
-            "Name": "Vs",
-            "ID": "5ffd6b85-cdc3-4ce5-b8ca-322a6228b323",
-            "Parameters": {
-              "Gain": "1",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Gain",
-            "Top": 30,
-            "Left": 18,
-            "Angle": 270,
-            "HF": false,
-            "VF": false,
-            "Name": "Vs_E",
-            "ID": "148ce0a9-0c73-4a65-84b8-0762246c27db",
-            "Parameters": {
-              "Value": " 1 / 600",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Control Output Connector Label",
-            "Top": 35,
-            "Left": 14,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "Vs",
-            "ID": "1f61e1bc-d11c-48b1-9e2a-2d418a248166",
-            "Parameters": {},
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Square Wave",
-            "Top": 22,
-            "Left": -7,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "iRef",
-            "ID": "367445e2-b47f-46e4-9045-69c0bf5f3c9c",
-            "Parameters": {
-              "Amplitude": "8",
-              "Frequency": "100",
-              "DutyCycle": "0.5",
-              "Offset": "6",
-              "PhaseShift": "0",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Resistor",
-            "Top": 4,
-            "Left": 24,
-            "Angle": 90,
-            "HF": false,
-            "VF": false,
-            "Name": "R1",
-            "ID": "6e06abb4-348f-4e0d-84b6-49bb3bd9b21b",
-            "Parameters": {
-              "Value": "30"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Sum",
-            "Top": 23,
-            "Left": 2,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "",
-            "ID": "ca14889a-eb99-45b4-95f1-2a25ead8c02d",
-            "Parameters": {
-              "NumberOfInputs": "2",
-              "Gains": "[1 -1]",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Comparator",
-            "Top": 27,
-            "Left": 36,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "COMP1",
-            "ID": "9e0e520f-8e28-4c7f-952f-43d2086fb854",
-            "Parameters": {
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Triangular Wave",
-            "Top": 29,
-            "Left": 30,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "TRI1",
-            "ID": "57bab0fc-c5c3-4564-835d-d37c66b9bb8f",
-            "Parameters": {
-              "Amplitude": "1",
-              "Frequency": "16k",
-              "DutyCycle": "0.5",
-              "Offset": "0",
-              "PhaseShift": "0",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Limiter",
-            "Top": 23,
-            "Left": 26,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "duty_cycle",
-            "ID": "4d5e32a3-6755-4b07-aa92-00454470a92a",
-            "Parameters": {
-              "LowLimit": "0",
-              "HighLimit": "1",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": [
-              "Out"
-            ]
-          },
-          {
-            "LibraryName": "Inductor",
-            "Top": 1,
-            "Left": 19,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "L1",
-            "ID": "a54799b4-9c5c-4297-afad-12b93f53712c",
-            "Parameters": {
-              "Value": "6m",
-              "Iinit": "0"
-            },
-            "EnabledScopes": [
-              "Current"
-            ]
-          },
-          {
-            "LibraryName": "Control Input Connector Label",
-            "Top": -2,
-            "Left": 17,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "iL",
-            "ID": "7d041517-5046-47f0-b3d4-b5934466136b",
-            "Parameters": {},
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Current Probe",
-            "Top": 1,
-            "Left": 14,
-            "Angle": 0,
-            "HF": false,
-            "VF": true,
-            "Name": "iL",
-            "ID": "aeb78202-0ae7-4d8a-b572-c711af53361d",
-            "Parameters": {
-              "Gain": "1",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Control Output Connector Label",
-            "Top": 25,
-            "Left": -3,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "iL",
-            "ID": "0197d0c7-7ef0-42ee-ad5f-906cf7145c6b",
-            "Parameters": {},
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Sum",
-            "Top": 22,
-            "Left": 20,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "",
-            "ID": "ce6ee8b2-7f97-428f-85f3-76e5e219df9a",
-            "Parameters": {
-              "NumberOfInputs": "3",
-              "Gains": "[-1 1 1]",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          }
-        ],
-        "Connectors": [
-          {
-            "Segments": [
-              {
-                "StartX": 25,
-                "StartY": 2,
-                "EndX": 27,
-                "EndY": 2
-              }
-            ],
-            "Name": "C15"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 7,
-                "StartY": 4,
-                "EndX": 7,
-                "EndY": 6
-              },
-              {
-                "StartX": 9,
-                "StartY": 6,
-                "EndX": 7,
-                "EndY": 6
-              }
-            ],
-            "Name": "C20"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 0,
-                "StartY": -1,
-                "EndX": 0,
-                "EndY": -5
-              },
-              {
-                "StartX": 11,
-                "StartY": -5,
-                "EndX": 0,
-                "EndY": -5
-              }
-            ],
-            "Name": "C2"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 27,
-                "StartY": -2,
-                "EndX": 27,
-                "EndY": -3
-              },
-              {
-                "StartX": 28,
-                "StartY": -3,
-                "EndX": 27,
-                "EndY": -3
-              }
-            ],
-            "Name": "C17"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 16,
-                "StartY": 1,
-                "EndX": 16,
-                "EndY": -1
-              },
-              {
-                "StartX": 17,
-                "StartY": -1,
-                "EndX": 16,
-                "EndY": -1
-              }
-            ],
-            "Name": "C3"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 7,
-                "StartY": 0,
-                "EndX": 7,
-                "EndY": -2
-              },
-              {
-                "StartX": 6,
-                "StartY": -2,
-                "EndX": 7,
-                "EndY": -2
-              },
-              {
-                "StartX": 7,
-                "StartY": -2,
-                "EndX": 9,
-                "EndY": -2
-              }
-            ],
-            "Name": "C18"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 1,
-                "StartY": 26,
-                "EndX": 2,
-                "EndY": 26
-              }
-            ],
-            "Name": "C11"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 36,
-                "StartY": 30,
-                "EndX": 36,
-                "EndY": 31
-              },
-              {
-                "StartX": 34,
-                "StartY": 31,
-                "EndX": 36,
-                "EndY": 31
-              }
-            ],
-            "Name": "C8"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 18,
-                "StartY": 2,
-                "EndX": 19,
-                "EndY": 2
-              }
-            ],
-            "Name": "C6"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 40,
-                "StartY": 29,
-                "EndX": 43,
-                "EndY": 29
-              }
-            ],
-            "Name": "C9"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 11,
-                "StartY": 2,
-                "EndX": 11,
-                "EndY": 3
-              },
-              {
-                "StartX": 14,
-                "StartY": 2,
-                "EndX": 11,
-                "EndY": 2
-              },
-              {
-                "StartX": 11,
-                "StartY": 1,
-                "EndX": 11,
-                "EndY": 2
-              }
-            ],
-            "Name": "C19"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 0,
-                "StartY": 7,
-                "EndX": 0,
-                "EndY": 9
-              },
-              {
-                "StartX": 27,
-                "StartY": 8,
-                "EndX": 27,
-                "EndY": 9
-              },
-              {
-                "StartX": 11,
-                "StartY": 9,
-                "EndX": 27,
-                "EndY": 9
-              },
-              {
-                "StartX": 0,
-                "StartY": 9,
-                "EndX": 11,
-                "EndY": 9
-              }
-            ],
-            "Name": "C1"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 18,
-                "StartY": 36,
-                "EndX": 20,
-                "EndY": 36
-              },
-              {
-                "StartX": 20,
-                "StartY": 34,
-                "EndX": 20,
-                "EndY": 36
-              }
-            ],
-            "Name": "C16"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 8,
-                "StartY": 19,
-                "EndX": 0,
-                "EndY": 19
-              },
-              {
-                "StartX": 0,
-                "StartY": 19,
-                "EndX": 0,
-                "EndY": 24
-              },
-              {
-                "StartX": 0,
-                "StartY": 24,
-                "EndX": 2,
-                "EndY": 24
-              },
-              {
-                "StartX": -3,
-                "StartY": 24,
-                "EndX": 0,
-                "EndY": 24
-              }
-            ],
-            "Name": "C7"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 20,
-                "StartY": 30,
-                "EndX": 20,
-                "EndY": 27
-              }
-            ],
-            "Name": "C13"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 12,
-                "StartY": 19,
-                "EndX": 18,
-                "EndY": 19
-              },
-              {
-                "StartX": 20,
-                "StartY": 23,
-                "EndX": 18,
-                "EndY": 23
-              },
-              {
-                "StartX": 18,
-                "StartY": 19,
-                "EndX": 18,
-                "EndY": 23
-              }
-            ],
-            "Name": "C4"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 30,
-                "StartY": 25,
-                "EndX": 34,
-                "EndY": 25
-              },
-              {
-                "StartX": 36,
-                "StartY": 28,
-                "EndX": 34,
-                "EndY": 28
-              },
-              {
-                "StartX": 34,
-                "StartY": 25,
-                "EndX": 34,
-                "EndY": 28
-              }
-            ],
-            "Name": "C14"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 6,
-                "StartY": 25,
-                "EndX": 8,
-                "EndY": 25
-              }
-            ],
-            "Name": "C5"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 16,
-                "StartY": 25,
-                "EndX": 20,
-                "EndY": 25
-              }
-            ],
-            "Name": "C12"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 24,
-                "StartY": 25,
-                "EndX": 26,
-                "EndY": 25
-              }
-            ],
-            "Name": "C10"
-          }
-        ],
-        "Name": "Top Circuit - Copy - Copy",
-        "Variables": []
-      },
-      "TransientAnalysis": {
-        "EndTime": 0.02,
-        "FixedTimeStep": false,
-        "StopAtSteadyState": false,
-        "TimeStep": 1E-09
+        "TimeStep": "1E-09",
+        "BaseFrequencyParameterEnabled": false,
+        "NumberOfBasePeriodsSavedParameterEnabled": false,
+        "BaseFrequency": "60",
+        "NumberOfBasePeriodsSaved": "1"
       }
     },
     {
       "Id": "eb7964af-d52c-4fb1-8086-d6bc2926210e",
-      "Name": "direct_current_discrete_controller",
+      "Name": "2-direct_current_discrete_controller",
       "Circuit": {
         "Id": "343108f0-18b4-4620-8017-4f858781f2ef",
         "Devices": [
@@ -3762,6 +693,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "",
             "ID": "4be97343-5ea7-4e5c-b140-dae75b42c474",
             "Parameters": {
@@ -3778,6 +710,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "Vs",
             "ID": "0667cbe5-5744-4d8a-a380-b520a27d8dae",
             "Parameters": {},
@@ -3790,6 +723,7 @@
             "Angle": 270,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "Vs_E",
             "ID": "3880fa7a-507b-49d3-b678-32d4e86e616b",
             "Parameters": {
@@ -3805,6 +739,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "Vs",
             "ID": "fcd6b2ff-d42f-460e-bd3e-af0fdbd53b5a",
             "Parameters": {},
@@ -3817,6 +752,7 @@
             "Angle": 270,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "Vs",
             "ID": "4b753eeb-46f9-4fd5-a82f-9460966579e2",
             "Parameters": {
@@ -3832,39 +768,10 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "pwm",
             "ID": "61982a71-1f43-44ab-933e-64e807d3c34f",
             "Parameters": {},
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "MOSFET",
-            "Top": 3,
-            "Left": 9,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "T2",
-            "ID": "f8cffb23-3375-48ba-8efd-2aebc5906840",
-            "Parameters": {
-              "Ron": "0",
-              "LossCalculationFrequency": "1k"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "MOSFET",
-            "Top": -5,
-            "Left": 9,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "T1",
-            "ID": "83a38baf-0c30-4bec-8375-546f83018729",
-            "Parameters": {
-              "Ron": "0",
-              "LossCalculationFrequency": "1k"
-            },
             "EnabledScopes": []
           },
           {
@@ -3874,6 +781,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "DC1",
             "ID": "267f6661-f1f3-48e4-8b7f-16fc3f9debe7",
             "Parameters": {
@@ -3888,6 +796,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "L1",
             "ID": "2dc51b1d-173b-4b19-b333-45d11256169e",
             "Parameters": {
@@ -3905,11 +814,13 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "C1",
             "ID": "9ad94fec-0909-4500-bf78-af2d0ed6c0da",
             "Parameters": {
               "NumberOfInputs": "4",
               "NumberOfOutputs": "1",
+              "OptionalAdditionalIncludeDirectory": "",
               "Code": "#include \u0022simba_library.h\u0022 \r\n#include \u003Cstdlib.h\u003E\r\n\r\n\r\ntypedef struct{\r\n    double duty_cycle;\r\n    double i_error_prev;\r\n} model_data;\r\n\r\nmodel_data data; \r\n\r\nvoid initialize() {\r\n\tdata.duty_cycle = 0;\r\n\tdata.i_error_prev = 0;\r\n}\r\n\r\nvoid calculate_outputs(double* outputs, double* inputs, double time, double time_step) {\r\n\r\n\tconst double clock = inputs[0];\r\n\tconst double a0 = inputs[2];\r\n\tconst double a1 = inputs[3];\r\n\tif (clock == 1 || time \u003C 1e-10) // Clock\r\n\t{\r\n\t\t// Current control loop\r\n\t\tdouble i_error = inputs[1];\r\n\t\tdata.duty_cycle = data.duty_cycle \u002B a1 * i_error \u002B a0 * data.i_error_prev; \t\t\r\n\t\tdata.i_error_prev = i_error;\r\n\t}\r\n\t\r\n\toutputs[0] = data.duty_cycle;\r\n}\r\n\r\nvoid terminate() {\r\n}\r\n\r\n/*\r\n * Function: snapshot (DO NOT MODIFY)\r\n */\r\nvoid* snapshot(snapshot_mode mode, void* snapshot_ptr) {\r\n\tmodel_data* model_data_ptr;\r\n\tswitch (mode) {\r\n\t\tcase SNAPSHOT_CREATE: // Create and return a snapshot of the current model state\r\n\t\t\tmodel_data_ptr = (model_data*)malloc(sizeof(model_data));\r\n\t\t\tif (model_data_ptr == 0) return 0;\r\n\t\t\t*model_data_ptr = data;\r\n\t\t\treturn (void*)model_data_ptr;\r\n\r\n\t\tcase SNAPSHOT_UPDATE:  // Update an existing snapshot with current model data\r\n\t\t\tmodel_data_ptr = (model_data*)snapshot_ptr;\r\n\t\t\t*model_data_ptr = data;\r\n\t\t\treturn snapshot_ptr;\r\n\r\n\t\tcase SNAPSHOT_LOAD:  // Restore model data \r\n\t\t\tmodel_data_ptr = (model_data*)snapshot_ptr;\r\n\t\t\tdata = *model_data_ptr;\r\n\t\t\treturn snapshot_ptr;\r\n\r\n\t\tcase SNAPSHOT_DELETE: // Free the resources allocated in SNAPSHOT_CREATE\r\n\t\t\tfree(snapshot_ptr);\r\n\t\t\treturn 0;\r\n\t}\r\n}",
               "SamplingTime": "none"
             },
@@ -3922,6 +833,7 @@
             "Angle": 90,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "R1",
             "ID": "eae93bd4-9b3b-4bf1-bb5e-92c060e11f75",
             "Parameters": {
@@ -3936,6 +848,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "ZX1",
             "ID": "2d3ca8ad-869f-48d5-8cd7-84a70caace0b",
             "Parameters": {
@@ -3950,6 +863,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "COMP1",
             "ID": "8932bbf6-4693-4f28-9262-19dcb6f0cc29",
             "Parameters": {
@@ -3964,6 +878,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "SUM1",
             "ID": "c33bdc0b-0419-4afb-9f60-f5154a4e3bce",
             "Parameters": {
@@ -3980,6 +895,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "a0",
             "ID": "aba960e6-04bf-4ada-86fa-8f1b936bd59e",
             "Parameters": {
@@ -3995,6 +911,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "a1",
             "ID": "b543ee6f-e9fb-4488-a63a-21e235aba75c",
             "Parameters": {
@@ -4010,6 +927,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "iL",
             "ID": "dcd6a3c7-810d-48c2-8bff-8e7a0488fae2",
             "Parameters": {},
@@ -4022,6 +940,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "iRef",
             "ID": "6d767b09-aa03-4b8d-b282-0a010f3d1eca",
             "Parameters": {
@@ -4041,6 +960,7 @@
             "Angle": 0,
             "HF": false,
             "VF": true,
+            "Disabled": false,
             "Name": "iL",
             "ID": "3eef790c-f228-48d0-a161-02ba13dea3a0",
             "Parameters": {
@@ -4056,6 +976,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "iL",
             "ID": "e5b493ec-e841-4131-8139-271fba0abf18",
             "Parameters": {},
@@ -4068,6 +989,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "pwm",
             "ID": "9cc04718-d4c8-455d-ac84-0035af869376",
             "Parameters": {},
@@ -4080,6 +1002,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "TRI1",
             "ID": "612db5dc-f6ea-42f2-b4d4-57e6b5443598",
             "Parameters": {
@@ -4099,6 +1022,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "Ground1",
             "ID": "e04a1b20-9b81-4060-87f3-5b02d7df3024",
             "Parameters": {},
@@ -4111,6 +1035,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "clock",
             "ID": "dd020164-693a-4986-b31c-50717e656959",
             "Parameters": {
@@ -4130,6 +1055,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "duty_cycle",
             "ID": "a32b7996-d30f-4380-b406-38275b4ef816",
             "Parameters": {
@@ -4148,10 +1074,45 @@
             "Angle": 90,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "",
             "ID": "d7ebef9a-9027-41a1-a615-fc12d5e4cf64",
             "Parameters": {
               "SamplingTime": "none"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Ideal MOSFET with Diode",
+            "Top": -5,
+            "Left": 9,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "T1",
+            "ID": "f8744daf-811e-4e6b-85e3-35ab66de10dc",
+            "Parameters": {
+              "Ron": "0",
+              "Rdon": "0",
+              "Vdf": "0"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Ideal MOSFET with Diode",
+            "Top": 3,
+            "Left": 9,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "T2",
+            "ID": "c9175259-b75a-433d-890e-f8370abe924a",
+            "Parameters": {
+              "Ron": "0",
+              "Rdon": "0",
+              "Vdf": "0"
             },
             "EnabledScopes": []
           }
@@ -4240,19 +1201,19 @@
                 "EndY": -2
               },
               {
-                "StartX": 7,
-                "StartY": -2,
-                "EndX": 9,
-                "EndY": -2
-              },
-              {
                 "StartX": 6,
                 "StartY": -2,
                 "EndX": 7,
                 "EndY": -2
+              },
+              {
+                "StartX": 7,
+                "StartY": -2,
+                "EndX": 9,
+                "EndY": -2
               }
             ],
-            "Name": "C4"
+            "Name": "C24"
           },
           {
             "Segments": [
@@ -4269,7 +1230,7 @@
                 "EndY": 6
               }
             ],
-            "Name": "C23"
+            "Name": "C18"
           },
           {
             "Segments": [
@@ -4281,18 +1242,18 @@
               },
               {
                 "StartX": 11,
-                "StartY": 2,
-                "EndX": 11,
-                "EndY": 3
-              },
-              {
-                "StartX": 11,
                 "StartY": 1,
                 "EndX": 11,
                 "EndY": 2
+              },
+              {
+                "StartX": 11,
+                "StartY": 2,
+                "EndX": 11,
+                "EndY": 3
               }
             ],
-            "Name": "C18"
+            "Name": "C23"
           },
           {
             "Segments": [
@@ -4482,6 +1443,12 @@
                 "EndY": 9
               },
               {
+                "StartX": 27,
+                "StartY": 8,
+                "EndX": 27,
+                "EndY": 9
+              },
+              {
                 "StartX": 0,
                 "StartY": 9,
                 "EndX": 11,
@@ -4490,12 +1457,6 @@
               {
                 "StartX": 11,
                 "StartY": 9,
-                "EndX": 27,
-                "EndY": 9
-              },
-              {
-                "StartX": 27,
-                "StartY": 8,
                 "EndX": 27,
                 "EndY": 9
               }
@@ -4532,65 +1493,27 @@
           }
         ],
         "Name": "Top Circuit - Copy - Copy",
-        "Variables": []
+        "Variables": [],
+        "VariableFile": ""
       },
       "TransientAnalysis": {
-        "EndTime": 0.02,
+        "EndTime": "0.02",
         "FixedTimeStep": false,
+        "SaveInitialPoint": true,
         "StopAtSteadyState": false,
-        "TimeStep": 1E-09
+        "TimeStep": "1E-09",
+        "BaseFrequencyParameterEnabled": false,
+        "NumberOfBasePeriodsSavedParameterEnabled": false,
+        "BaseFrequency": "60",
+        "NumberOfBasePeriodsSaved": "1"
       }
     },
     {
       "Id": "b6d002fa-ef6f-472f-a37e-6a1917010800",
-      "Name": "direct_current_power_flow_control",
+      "Name": "3-direct_current_power_flow_control",
       "Circuit": {
         "Id": "171e74e9-0e09-4283-97f9-af2c1c62553d",
         "Devices": [
-          {
-            "LibraryName": "Control Input Connector Label",
-            "Top": -8,
-            "Left": 19,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "Vs",
-            "ID": "ae6d56ab-88d9-46ea-b6f7-7444ce6c5d3f",
-            "Parameters": {},
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "MOSFET",
-            "Top": -9,
-            "Left": -8,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "T1",
-            "ID": "dcaeeb24-f6a1-4887-bdc3-093d01156e02",
-            "Parameters": {
-              "Ron": "0",
-              "LossCalculationFrequency": "1k"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Voltage Probe",
-            "Top": -5,
-            "Left": 16,
-            "Angle": 270,
-            "HF": false,
-            "VF": false,
-            "Name": "Vs",
-            "ID": "f57332ef-50a3-442c-ae84-5d068da268ee",
-            "Parameters": {
-              "Gain": "1",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": [
-              "Out"
-            ]
-          },
           {
             "LibraryName": "Control Output Connector Label",
             "Top": -7,
@@ -4598,24 +1521,10 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "pwm_l",
             "ID": "ab835c2f-aecb-4faf-89fd-92fa1e859736",
             "Parameters": {},
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "MOSFET",
-            "Top": -1,
-            "Left": -8,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "T2",
-            "ID": "794b67f7-870a-4e0f-bb48-c80573df4457",
-            "Parameters": {
-              "Ron": "0",
-              "LossCalculationFrequency": "1k"
-            },
             "EnabledScopes": []
           },
           {
@@ -4625,6 +1534,7 @@
             "Angle": 0,
             "HF": false,
             "VF": true,
+            "Disabled": false,
             "Name": "SUM2",
             "ID": "93d571be-bb90-42c1-b007-7db15efb8382",
             "Parameters": {
@@ -4641,6 +1551,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "DC1",
             "ID": "f25e94cc-5c73-4d74-bfbd-5f160c39d13e",
             "Parameters": {
@@ -4655,6 +1566,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "iL",
             "ID": "1714c631-357b-4e02-b0c3-c4828ff6d410",
             "Parameters": {},
@@ -4667,57 +1579,15 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "Alpha",
             "ID": "3f33b1b8-147e-46fd-b4e8-53a4c97f3425",
             "Parameters": {
               "NumberOfInputs": "4",
               "NumberOfOutputs": "1",
+              "OptionalAdditionalIncludeDirectory": "",
               "Code": "#include \u0022simba_library.h\u0022 \r\n#include \u003Cstdlib.h\u003E\r\n\r\n\r\ntypedef struct{\r\n    double duty_cycle;\r\n    double i_error_prev;\r\n} model_data;\r\n\r\nmodel_data data; \r\n\r\nvoid initialize() {\r\n\tdata.duty_cycle = 0;\r\n\tdata.i_error_prev = 0;\r\n}\r\n\r\nvoid calculate_outputs(double* outputs, double* inputs, double time, double time_step) {\r\n\r\n\tconst double clock = inputs[0];\r\n\tconst double a0 = inputs[2];\r\n\tconst double a1 = inputs[3];\r\n\tif (clock == 1 || time \u003C 1e-10) // Clock\r\n\t{\r\n\t\t// Current control loop\r\n\t\tdouble i_error = inputs[1];\r\n\t\tdata.duty_cycle = data.duty_cycle \u002B a1 * i_error \u002B a0 * data.i_error_prev; \t\t\r\n\t\tdata.i_error_prev = i_error;\r\n\t}\r\n\t\r\n\toutputs[0] = data.duty_cycle;\r\n}\r\n\r\nvoid terminate() {\r\n}\r\n\r\n/*\r\n * Function: snapshot (DO NOT MODIFY)\r\n */\r\nvoid* snapshot(snapshot_mode mode, void* snapshot_ptr) {\r\n\tmodel_data* model_data_ptr;\r\n\tswitch (mode) {\r\n\t\tcase SNAPSHOT_CREATE: // Create and return a snapshot of the current model state\r\n\t\t\tmodel_data_ptr = (model_data*)malloc(sizeof(model_data));\r\n\t\t\tif (model_data_ptr == 0) return 0;\r\n\t\t\t*model_data_ptr = data;\r\n\t\t\treturn (void*)model_data_ptr;\r\n\r\n\t\tcase SNAPSHOT_UPDATE:  // Update an existing snapshot with current model data\r\n\t\t\tmodel_data_ptr = (model_data*)snapshot_ptr;\r\n\t\t\t*model_data_ptr = data;\r\n\t\t\treturn snapshot_ptr;\r\n\r\n\t\tcase SNAPSHOT_LOAD:  // Restore model data \r\n\t\t\tmodel_data_ptr = (model_data*)snapshot_ptr;\r\n\t\t\tdata = *model_data_ptr;\r\n\t\t\treturn snapshot_ptr;\r\n\r\n\t\tcase SNAPSHOT_DELETE: // Free the resources allocated in SNAPSHOT_CREATE\r\n\t\t\tfree(snapshot_ptr);\r\n\t\t\treturn 0;\r\n\t}\r\n}",
               "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Not",
-            "Top": -3,
-            "Left": 30,
-            "Angle": 90,
-            "HF": false,
-            "VF": false,
-            "Name": "",
-            "ID": "8910bd30-9a35-47c3-8989-02ecd2fbf105",
-            "Parameters": {
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "MOSFET",
-            "Top": -1,
-            "Left": 26,
-            "Angle": 0,
-            "HF": true,
-            "VF": false,
-            "Name": "T4",
-            "ID": "d8d8bba0-c9cd-4c2a-b3f1-02748a04ac8f",
-            "Parameters": {
-              "Ron": "0",
-              "LossCalculationFrequency": "1k"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "MOSFET",
-            "Top": -9,
-            "Left": 26,
-            "Angle": 0,
-            "HF": true,
-            "VF": false,
-            "Name": "T3",
-            "ID": "6b93eaa8-0e60-490a-baf1-933ed164f8dc",
-            "Parameters": {
-              "Ron": "0",
-              "LossCalculationFrequency": "1k"
             },
             "EnabledScopes": []
           },
@@ -4728,6 +1598,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "DC2",
             "ID": "87569212-e7c5-4e76-b5f1-7615cf9b07d0",
             "Parameters": {
@@ -4742,6 +1613,7 @@
             "Angle": 90,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "",
             "ID": "ba8f0282-b63a-40f7-972e-f9be7c89b1ed",
             "Parameters": {
@@ -4756,6 +1628,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "duty_cycle_left",
             "ID": "22f65893-18b8-4f68-a2db-18340e59aad6",
             "Parameters": {
@@ -4774,6 +1647,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "clock",
             "ID": "5dc5fa62-c5b0-4e43-91e8-c8d7165253b6",
             "Parameters": {
@@ -4789,29 +1663,13 @@
             ]
           },
           {
-            "LibraryName": "Inductor",
-            "Top": -3,
-            "Left": 5,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "L1",
-            "ID": "6627d04f-20e2-4f03-a167-b13458182f60",
-            "Parameters": {
-              "Value": "6m",
-              "Iinit": "0"
-            },
-            "EnabledScopes": [
-              "Current"
-            ]
-          },
-          {
             "LibraryName": "Ground",
             "Top": 5,
             "Left": -18,
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "Ground1",
             "ID": "dfe47a5e-ac8c-470e-a702-aa30cf73e24a",
             "Parameters": {},
@@ -4824,36 +1682,10 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "pwm_l",
             "ID": "e5a57b3e-458b-4919-899b-d63f4a8d1ff1",
             "Parameters": {},
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Control Input Connector Label",
-            "Top": -8,
-            "Left": 3,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "iL",
-            "ID": "b25ededd-ec38-477c-8704-36a63cd9df6b",
-            "Parameters": {},
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Current Probe",
-            "Top": -3,
-            "Left": 0,
-            "Angle": 0,
-            "HF": false,
-            "VF": true,
-            "Name": "iL",
-            "ID": "04380dbc-12f8-45c8-957a-ce1947af61e9",
-            "Parameters": {
-              "Gain": "1",
-              "SamplingTime": "none"
-            },
             "EnabledScopes": []
           },
           {
@@ -4863,6 +1695,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "a1",
             "ID": "4bd2930a-53cc-4444-9600-bb301f97508f",
             "Parameters": {
@@ -4878,6 +1711,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "a0",
             "ID": "987bf381-0a60-4948-b402-da3bcec80a10",
             "Parameters": {
@@ -4893,6 +1727,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "SUM1",
             "ID": "18b1da9f-bb6a-492d-97c6-c4bf16f76cdd",
             "Parameters": {
@@ -4909,6 +1744,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "COMP1",
             "ID": "945f4807-9866-41c2-af79-690a7317f637",
             "Parameters": {
@@ -4923,6 +1759,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "ZX1",
             "ID": "fbcbce7e-6e40-413b-9d7c-3d7d4aff9572",
             "Parameters": {
@@ -4937,6 +1774,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "TRI1",
             "ID": "2de1a554-934f-463a-afa3-c2ac0610c120",
             "Parameters": {
@@ -4956,6 +1794,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "iL_ref",
             "ID": "83073530-fe78-4b2a-b273-589f24f745ce",
             "Parameters": {
@@ -4972,6 +1811,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "PowerRef",
             "ID": "302ac38f-92ee-43ab-b4d5-4b6df9ee49b4",
             "Parameters": {
@@ -4989,6 +1829,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "G1",
             "ID": "ef6c5f4a-b21e-4759-930f-69ff0a823954",
             "Parameters": {
@@ -5004,6 +1845,7 @@
             "Angle": 270,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "",
             "ID": "c4be4889-a803-4ab1-89f4-b019761b1ad8",
             "Parameters": {
@@ -5019,6 +1861,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "Vb_left",
             "ID": "de8da84c-0951-41ea-87e1-c220755bbcff",
             "Parameters": {},
@@ -5031,6 +1874,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "Vb_right",
             "ID": "a074210d-53c6-4f6d-b4db-596e91594784",
             "Parameters": {},
@@ -5043,6 +1887,7 @@
             "Angle": 270,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "",
             "ID": "bf0fb636-a29f-4319-90c4-4971e3ef1ae3",
             "Parameters": {
@@ -5058,6 +1903,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "COMP2",
             "ID": "b602ab27-d598-4b06-b7a0-d349ae8ba799",
             "Parameters": {
@@ -5072,6 +1918,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "Vb_right",
             "ID": "ec53e6cb-f964-47c3-aba5-bdd588486505",
             "Parameters": {},
@@ -5084,6 +1931,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "Div1",
             "ID": "387c582f-0ef5-480c-9de2-92da69e2cc06",
             "Parameters": {
@@ -5098,6 +1946,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "SUM5",
             "ID": "a4360d64-b21f-420f-b8ab-4f09875694d0",
             "Parameters": {
@@ -5114,6 +1963,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "TRI2",
             "ID": "da5489dc-35b7-4265-b1be-547dbd19a622",
             "Parameters": {
@@ -5133,6 +1983,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "duty_cycle_right",
             "ID": "3cbb8051-b0e3-4a3f-aa28-8082565f940d",
             "Parameters": {
@@ -5151,6 +2002,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "Vb_left",
             "ID": "0ba25d3c-39c0-4d06-bc48-67a7a9a88165",
             "Parameters": {},
@@ -5163,6 +2015,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "pwm_r",
             "ID": "7e67c7f2-07b5-45d5-a8f0-830626bafc12",
             "Parameters": {},
@@ -5175,6 +2028,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "sigma_Vb",
             "ID": "57a5223c-1e95-4571-9886-fd8aca00e3b5",
             "Parameters": {},
@@ -5187,36 +2041,11 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "Div2",
             "ID": "a554bcb9-f1ad-4084-8cc7-22270a4070e5",
             "Parameters": {
               "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Control Output Connector Label",
-            "Top": -7,
-            "Left": 35,
-            "Angle": 0,
-            "HF": true,
-            "VF": false,
-            "Name": "pwm_r",
-            "ID": "005e984e-4af5-4d10-930a-a8fccca73eaa",
-            "Parameters": {},
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Resistor",
-            "Top": -3,
-            "Left": 11,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "R1",
-            "ID": "6f5eb9ae-f3e3-4250-b434-e9f853b1265c",
-            "Parameters": {
-              "Value": "1e-2"
             },
             "EnabledScopes": []
           },
@@ -5227,6 +2056,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "Vb_left",
             "ID": "b2696d28-7598-42ef-96ef-30b8f8ed3fa7",
             "Parameters": {},
@@ -5239,6 +2069,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "SUM3",
             "ID": "d4ba8bdc-91e3-424d-9b14-3ef68365b6eb",
             "Parameters": {
@@ -5255,6 +2086,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "sigma_Vb",
             "ID": "8779886d-2b77-4e3d-b481-19a1a600287c",
             "Parameters": {},
@@ -5267,6 +2099,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "Vb_right",
             "ID": "30716c15-fa30-4e23-9984-7cf4a49bb4a8",
             "Parameters": {},
@@ -5279,6 +2112,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "sigma_Vb",
             "ID": "f42c24f5-185b-438f-af4d-22eb435aa34b",
             "Parameters": {},
@@ -5291,6 +2125,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "Vb_left",
             "ID": "a7840b45-994c-4c6e-bc97-16e95a453288",
             "Parameters": {},
@@ -5303,6 +2138,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "Product1",
             "ID": "01df1f87-2e09-49f6-a6ef-d8140b004fb8",
             "Parameters": {
@@ -5317,6 +2153,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "sigma_Vb",
             "ID": "f75fefb2-29ff-463d-889d-d68f5ff85418",
             "Parameters": {},
@@ -5329,6 +2166,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "Div3",
             "ID": "6beae151-f3d6-4a43-9643-9d43d9912122",
             "Parameters": {
@@ -5343,6 +2181,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "Vb_right",
             "ID": "a9847296-c012-4cf9-8fce-ffda638b7b0c",
             "Parameters": {},
@@ -5355,6 +2194,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "Power_K",
             "ID": "6c9ab3e4-e8c1-4d4d-ba94-4009f6267d87",
             "Parameters": {},
@@ -5367,6 +2207,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "Power_K",
             "ID": "f7312f59-0a01-4815-b3d5-316dd71e5e8e",
             "Parameters": {},
@@ -5379,6 +2220,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "PowerEstimated",
             "ID": "927baf16-d704-4794-a937-7a2288aa8b4e",
             "Parameters": {
@@ -5395,6 +2237,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "Power_K",
             "ID": "76d5e27f-8019-46ca-8895-c00047673cd2",
             "Parameters": {},
@@ -5407,8 +2250,198 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "iL",
             "ID": "6fcf238d-e7c5-4479-a484-908e3b1eb34b",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Ideal MOSFET with Diode",
+            "Top": -9,
+            "Left": -8,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "T1",
+            "ID": "f6bc2208-8ce2-463e-a7a6-1b47d56966dd",
+            "Parameters": {
+              "Ron": "0",
+              "Rdon": "0",
+              "Vdf": "0"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Ideal MOSFET with Diode",
+            "Top": -1,
+            "Left": -8,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "T2",
+            "ID": "3e622533-08db-40ce-a7fc-c6ef17df1d76",
+            "Parameters": {
+              "Ron": "0",
+              "Rdon": "0",
+              "Vdf": "0"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Ideal MOSFET with Diode",
+            "Top": -9,
+            "Left": 26,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "T3",
+            "ID": "ca7b8a72-7021-4481-bae3-4b3f0d3dd116",
+            "Parameters": {
+              "Ron": "0",
+              "Rdon": "0",
+              "Vdf": "0"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Ideal MOSFET with Diode",
+            "Top": -1,
+            "Left": 26,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "T4",
+            "ID": "986bb05b-fc7c-4b57-bac0-1a62ee228d74",
+            "Parameters": {
+              "Ron": "0",
+              "Rdon": "0",
+              "Vdf": "0"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Current Probe",
+            "Top": -3,
+            "Left": -2,
+            "Angle": 0,
+            "HF": false,
+            "VF": true,
+            "Disabled": false,
+            "Name": "iL",
+            "ID": "04380dbc-12f8-45c8-957a-ce1947af61e9",
+            "Parameters": {
+              "Gain": "1",
+              "SamplingTime": "none"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Control Input Connector Label",
+            "Top": -8,
+            "Left": 1,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "iL",
+            "ID": "b25ededd-ec38-477c-8704-36a63cd9df6b",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Inductor",
+            "Top": -3,
+            "Left": 3,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "L1",
+            "ID": "6627d04f-20e2-4f03-a167-b13458182f60",
+            "Parameters": {
+              "Value": "6m",
+              "Iinit": "0"
+            },
+            "EnabledScopes": [
+              "Current"
+            ]
+          },
+          {
+            "LibraryName": "Resistor",
+            "Top": -3,
+            "Left": 9,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "R1",
+            "ID": "6f5eb9ae-f3e3-4250-b434-e9f853b1265c",
+            "Parameters": {
+              "Value": "1e-2"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Voltage Probe",
+            "Top": -5,
+            "Left": 14,
+            "Angle": 270,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "Vs",
+            "ID": "f57332ef-50a3-442c-ae84-5d068da268ee",
+            "Parameters": {
+              "Gain": "1",
+              "SamplingTime": "none"
+            },
+            "EnabledScopes": [
+              "Out"
+            ]
+          },
+          {
+            "LibraryName": "Control Input Connector Label",
+            "Top": -8,
+            "Left": 17,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "Vs",
+            "ID": "12070531-d48a-4287-b663-a442b244f7b3",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Not",
+            "Top": 0,
+            "Left": 22,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "NOT1",
+            "ID": "8910bd30-9a35-47c3-8989-02ecd2fbf105",
+            "Parameters": {
+              "SamplingTime": "none"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Control Output Connector Label",
+            "Top": 1,
+            "Left": 16,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "pwm_r",
+            "ID": "005e984e-4af5-4d10-930a-a8fccca73eaa",
             "Parameters": {},
             "EnabledScopes": []
           }
@@ -5417,19 +2450,19 @@
           {
             "Segments": [
               {
-                "StartX": -8,
-                "StartY": 2,
-                "EndX": -10,
-                "EndY": 2
-              },
-              {
                 "StartX": -10,
                 "StartY": 0,
                 "EndX": -10,
                 "EndY": 2
+              },
+              {
+                "StartX": -8,
+                "StartY": 2,
+                "EndX": -10,
+                "EndY": 2
               }
             ],
-            "Name": "C6"
+            "Name": "C3"
           },
           {
             "Segments": [
@@ -5457,22 +2490,28 @@
                 "EndY": -6
               },
               {
-                "StartX": -10,
-                "StartY": -6,
-                "EndX": -8,
-                "EndY": -6
-              },
-              {
                 "StartX": -11,
                 "StartY": -6,
                 "EndX": -10,
                 "EndY": -6
+              },
+              {
+                "StartX": -10,
+                "StartY": -6,
+                "EndX": -8,
+                "EndY": -6
               }
             ],
-            "Name": "C1"
+            "Name": "C27"
           },
           {
             "Segments": [
+              {
+                "StartX": -2,
+                "StartY": -2,
+                "EndX": -6,
+                "EndY": -2
+              },
               {
                 "StartX": -6,
                 "StartY": -3,
@@ -5484,15 +2523,9 @@
                 "StartY": -2,
                 "EndX": -6,
                 "EndY": -1
-              },
-              {
-                "StartX": 0,
-                "StartY": -2,
-                "EndX": -6,
-                "EndY": -2
               }
             ],
-            "Name": "C3"
+            "Name": "C36"
           },
           {
             "Segments": [
@@ -5503,21 +2536,15 @@
                 "EndY": 5
               },
               {
-                "StartX": -17,
-                "StartY": 5,
-                "EndX": -6,
-                "EndY": 5
-              },
-              {
-                "StartX": 28,
-                "StartY": 5,
-                "EndX": 40,
-                "EndY": 5
-              },
-              {
                 "StartX": 40,
                 "StartY": 3,
                 "EndX": 40,
+                "EndY": 5
+              },
+              {
+                "StartX": -17,
+                "StartY": 5,
+                "EndX": -6,
                 "EndY": 5
               },
               {
@@ -5525,49 +2552,15 @@
                 "StartY": 5,
                 "EndX": 28,
                 "EndY": 5
+              },
+              {
+                "StartX": 28,
+                "StartY": 5,
+                "EndX": 40,
+                "EndY": 5
               }
             ],
             "Name": "C18"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 32,
-                "StartY": -3,
-                "EndX": 32,
-                "EndY": -6
-              },
-              {
-                "StartX": 30,
-                "StartY": -6,
-                "EndX": 32,
-                "EndY": -6
-              },
-              {
-                "StartX": 32,
-                "StartY": -6,
-                "EndX": 35,
-                "EndY": -6
-              }
-            ],
-            "Name": "C42"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 30,
-                "StartY": 2,
-                "EndX": 32,
-                "EndY": 2
-              },
-              {
-                "StartX": 32,
-                "StartY": 1,
-                "EndX": 32,
-                "EndY": 2
-              }
-            ],
-            "Name": "C36"
           },
           {
             "Segments": [
@@ -6116,1107 +3109,45 @@
           {
             "Segments": [
               {
+                "StartX": 15,
+                "StartY": -2,
+                "EndX": 16,
+                "EndY": -2
+              },
+              {
+                "StartX": 16,
+                "StartY": -2,
+                "EndX": 28,
+                "EndY": -2
+              },
+              {
+                "StartX": 28,
+                "StartY": -3,
+                "EndX": 28,
+                "EndY": -2
+              },
+              {
                 "StartX": 28,
                 "StartY": -2,
                 "EndX": 28,
                 "EndY": -1
-              },
-              {
-                "StartX": 28,
-                "StartY": -3,
-                "EndX": 28,
-                "EndY": -2
-              },
-              {
-                "StartX": 18,
-                "StartY": -2,
-                "EndX": 28,
-                "EndY": -2
-              },
-              {
-                "StartX": 17,
-                "StartY": -2,
-                "EndX": 18,
-                "EndY": -2
               }
             ],
-            "Name": "C24"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 18,
-                "StartY": -6,
-                "EndX": 18,
-                "EndY": -7
-              },
-              {
-                "StartX": 19,
-                "StartY": -7,
-                "EndX": 18,
-                "EndY": -7
-              }
-            ],
-            "Name": "C51"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 2,
-                "StartY": -7,
-                "EndX": 3,
-                "EndY": -7
-              },
-              {
-                "StartX": 2,
-                "StartY": -3,
-                "EndX": 2,
-                "EndY": -7
-              }
-            ],
-            "Name": "C23"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 5,
-                "StartY": -2,
-                "EndX": 4,
-                "EndY": -2
-              }
-            ],
-            "Name": "C4"
-          }
-        ],
-        "Name": "Top Circuit - Copy - Copy - Copy",
-        "Variables": []
-      },
-      "TransientAnalysis": {
-        "EndTime": 0.02,
-        "FixedTimeStep": false,
-        "StopAtSteadyState": false,
-        "TimeStep": 1E-09
-      }
-    },
-    {
-      "Id": "39c229d2-0e3d-42b2-880b-8c77c4dcb4e0",
-      "Name": "direct_current_power_flow_control - Copy",
-      "Circuit": {
-        "Id": "8caea58b-5772-4d15-80b0-ffceba5ad887",
-        "Devices": [
-          {
-            "LibraryName": "Zero-Crossing Detector",
-            "Top": 17,
-            "Left": 0,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "ZX1",
-            "ID": "a2baf1e9-9702-4cdd-9a55-024077a4a57b",
-            "Parameters": {
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Current Probe",
-            "Top": -3,
-            "Left": -3,
-            "Angle": 0,
-            "HF": false,
-            "VF": true,
-            "Name": "iL",
-            "ID": "f65ab592-34e4-4376-982a-dcf2795f7ceb",
-            "Parameters": {
-              "Gain": "1",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Constant",
-            "Top": 32,
-            "Left": 0,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "a1",
-            "ID": "a5a2f8a9-8d33-4d1f-ad7f-235dd8fb9447",
-            "Parameters": {
-              "Value": "0.1478125",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Constant",
-            "Top": 26,
-            "Left": -2,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "a0",
-            "ID": "51b0b8b4-d546-4044-9271-93d42546b96e",
-            "Parameters": {
-              "Value": "-0.1321875",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Sum",
-            "Top": 22,
-            "Left": -9,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "SUM1",
-            "ID": "11c3c594-04d1-4054-913d-96986ef46064",
-            "Parameters": {
-              "NumberOfInputs": "2",
-              "Gains": "[1 -1]",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Comparator",
-            "Top": 25,
-            "Left": 39,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "COMP1",
-            "ID": "ef2c4def-6e46-407c-99de-337c523203aa",
-            "Parameters": {
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Control Input Connector Label",
-            "Top": -6,
-            "Left": 0,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "iL",
-            "ID": "fa34494d-2b71-4407-928d-5410fe242aeb",
-            "Parameters": {},
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Triangular Wave",
-            "Top": 28,
-            "Left": 33,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "TRI1",
-            "ID": "ad290a76-4ff8-4de1-b277-32af3649b87a",
-            "Parameters": {
-              "Amplitude": "1",
-              "Frequency": "16k",
-              "DutyCycle": "0.5",
-              "Offset": "0",
-              "PhaseShift": "0",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Control Output Connector Label",
-            "Top": 49,
-            "Left": -19,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "sample",
-            "ID": "2ecb5eac-fd25-4096-9a7d-07b30d3145dc",
-            "Parameters": {},
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Constant",
-            "Top": 26,
-            "Left": -21,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "vLv_average",
-            "ID": "abbb6e24-c4ac-4e39-b219-3ef92c2fa775",
-            "Parameters": {
-              "Value": "0.5 * 300",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Division",
-            "Top": 21,
-            "Left": -16,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "",
-            "ID": "57992027-94be-4aff-b830-b63d9843bde9",
-            "Parameters": {
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Control Output Connector Label",
-            "Top": 57,
-            "Left": -20,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "iL",
-            "ID": "d331ce92-9f90-44de-9fec-a6313ec09283",
-            "Parameters": {},
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Product",
-            "Top": 54,
-            "Left": -12,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "Pinst",
-            "ID": "87584943-08c0-46dc-8992-fcedfec16815",
-            "Parameters": {
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": [
-              "Out"
-            ]
-          },
-          {
-            "LibraryName": "Control Output Connector Label",
-            "Top": 53,
-            "Left": -20,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "Vs",
-            "ID": "f47a7952-529d-41c4-a8a0-e9f4fab7c515",
-            "Parameters": {},
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Piecewise Linear",
-            "Top": 20,
-            "Left": -28,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "PowerRef",
-            "ID": "47e55fab-ceb9-4b94-bd7b-0c045c501fbb",
-            "Parameters": {
-              "TimeValueMatrix": "[0 450; 5m 450; 5.01m 1000; 8m 1000; 8.01m 250; 12m 250; 12.01m -250; 16m -250; 16.01m 300; 20m 300]",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": [
-              "Out"
-            ]
-          },
-          {
-            "LibraryName": "Control Input Connector Label",
-            "Top": 16,
-            "Left": 6,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "sample",
-            "ID": "a1f37636-19c3-498c-a92b-6c4eaf241a42",
-            "Parameters": {},
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Control Input Connector Label",
-            "Top": 26,
-            "Left": 46,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "pwm",
-            "ID": "8c3946fb-57f6-46b1-b2d5-ae08589330aa",
-            "Parameters": {},
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Square Wave",
-            "Top": -8,
-            "Left": 24,
-            "Angle": 180,
-            "HF": false,
-            "VF": false,
-            "Name": "alpha",
-            "ID": "04ae20d7-2408-4d88-bc6b-991c8aa43866",
-            "Parameters": {
-              "Amplitude": "1",
-              "Frequency": "16k",
-              "DutyCycle": "0.5",
-              "Offset": "0",
-              "PhaseShift": "90",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Ground",
-            "Top": 5,
-            "Left": -18,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "Ground1",
-            "ID": "beff6f33-5943-4d21-ba50-637e452278e4",
-            "Parameters": {},
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "MOSFET",
-            "Top": -9,
-            "Left": -8,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "T1",
-            "ID": "f7335a6c-6466-4671-aff7-c9a1a94c0ab0",
-            "Parameters": {
-              "Ron": "0",
-              "LossCalculationFrequency": "1k"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Square Wave",
-            "Top": 17,
-            "Left": -5,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "clock",
-            "ID": "3253c896-5a54-43be-bf19-621c041d144a",
-            "Parameters": {
-              "Amplitude": "1",
-              "Frequency": "16k",
-              "DutyCycle": "0.5",
-              "Offset": "-0.5",
-              "PhaseShift": "0",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": [
-              "Out"
-            ]
-          },
-          {
-            "LibraryName": "Control Input Connector Label",
-            "Top": -8,
-            "Left": 11,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "Vs",
-            "ID": "3c8eee89-d610-410b-8af2-419e966fdad2",
-            "Parameters": {},
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Gain",
-            "Top": 31,
-            "Left": 19,
-            "Angle": 270,
-            "HF": false,
-            "VF": false,
-            "Name": "Vs_E",
-            "ID": "14f688c6-3c57-4a9b-92da-7fcbc5a23b56",
-            "Parameters": {
-              "Value": "1 / 600",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "C Code",
-            "Top": 49,
-            "Left": -5,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "PowerAverage_code",
-            "ID": "d51f60f5-95fd-43c4-a1d9-fcf60c5334f1",
-            "Parameters": {
-              "NumberOfInputs": "2",
-              "NumberOfOutputs": "1",
-              "Code": "#include \u0022simba_library.h\u0022 \r\n#include \u003Cstdlib.h\u003E\r\n\r\n\r\ntypedef struct{\r\n    double buffer;\r\n    double time_interval;\r\n    double average_value;\r\n} model_data;\r\n\r\nmodel_data data; \r\n\r\nvoid initialize() {\r\n\tdata.buffer = 0;\r\n\tdata.time_interval = 0;\r\n\tdata.average_value;\r\n}\r\n\r\nvoid calculate_outputs(double* outputs, double* inputs, double time, double time_step) {\r\n\r\n\tconst double clock = inputs[0];\r\n\tdata.buffer = data.buffer \u002B time_step * inputs[1];\r\n\tdata.time_interval = data.time_interval \u002B time_step;\r\n\tif (clock == 1 || time \u003C 1e-10)\r\n\t{\r\n\t\tdata.average_value = data.buffer / data.time_interval;\r\n\t\tdata.buffer = 0;\r\n\t\tdata.time_interval = 0;\r\n\t}\r\n\t\r\n\toutputs[0] = data.average_value;\r\n}\r\n\r\nvoid terminate() {\r\n}\r\n\r\n/*\r\n * Function: snapshot (DO NOT MODIFY)\r\n */\r\nvoid* snapshot(snapshot_mode mode, void* snapshot_ptr) {\r\n\tmodel_data* model_data_ptr;\r\n\tswitch (mode) {\r\n\t\tcase SNAPSHOT_CREATE: // Create and return a snapshot of the current model state\r\n\t\t\tmodel_data_ptr = (model_data*)malloc(sizeof(model_data));\r\n\t\t\tif (model_data_ptr == 0) return 0;\r\n\t\t\t*model_data_ptr = data;\r\n\t\t\treturn (void*)model_data_ptr;\r\n\r\n\t\tcase SNAPSHOT_UPDATE:  // Update an existing snapshot with current model data\r\n\t\t\tmodel_data_ptr = (model_data*)snapshot_ptr;\r\n\t\t\t*model_data_ptr = data;\r\n\t\t\treturn snapshot_ptr;\r\n\r\n\t\tcase SNAPSHOT_LOAD:  // Restore model data \r\n\t\t\tmodel_data_ptr = (model_data*)snapshot_ptr;\r\n\t\t\tdata = *model_data_ptr;\r\n\t\t\treturn snapshot_ptr;\r\n\r\n\t\tcase SNAPSHOT_DELETE: // Free the resources allocated in SNAPSHOT_CREATE\r\n\t\t\tfree(snapshot_ptr);\r\n\t\t\treturn 0;\r\n\t}\r\n}",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": [
-              "outputs[0]"
-            ]
-          },
-          {
-            "LibraryName": "Control Output Connector Label",
-            "Top": 37,
-            "Left": 16,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "Vs",
-            "ID": "dca15c19-85de-44eb-809a-e288e4251d75",
-            "Parameters": {},
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Voltage Probe",
-            "Top": -5,
-            "Left": 8,
-            "Angle": 270,
-            "HF": false,
-            "VF": false,
-            "Name": "Vs",
-            "ID": "bc7dda26-f753-4fd3-b204-b01aede81043",
-            "Parameters": {
-              "Gain": "1",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": [
-              "Out"
-            ]
-          },
-          {
-            "LibraryName": "Control Output Connector Label",
-            "Top": -7,
-            "Left": -15,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "pwm",
-            "ID": "b51eb25a-9ba6-494f-8d4f-7a00e59aa8e7",
-            "Parameters": {},
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "MOSFET",
-            "Top": -1,
-            "Left": -8,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "T2",
-            "ID": "908dc602-5c7e-4509-add4-865ee7f486be",
-            "Parameters": {
-              "Ron": "0",
-              "LossCalculationFrequency": "1k"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Sum",
-            "Top": 24,
-            "Left": 22,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "",
-            "ID": "9ff30d38-6c8d-4aa8-8311-d36510f57f0f",
-            "Parameters": {
-              "NumberOfInputs": "2",
-              "Gains": "[1 1]",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "DC Voltage Source",
-            "Top": -5,
-            "Left": -19,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "DC1",
-            "ID": "ca492f76-2466-4f09-898b-0b267d46a090",
-            "Parameters": {
-              "Voltage": "600"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Control Output Connector Label",
-            "Top": 26,
-            "Left": -14,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "iL",
-            "ID": "3c592af4-4dab-4bee-91fa-9ad0c06f6457",
-            "Parameters": {},
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "C Code",
-            "Top": 19,
-            "Left": 7,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "C1",
-            "ID": "605c7b64-ea46-4a84-a439-d399cbcd5a3e",
-            "Parameters": {
-              "NumberOfInputs": "4",
-              "NumberOfOutputs": "1",
-              "Code": "#include \u0022simba_library.h\u0022 \r\n#include \u003Cstdlib.h\u003E\r\n\r\n\r\ntypedef struct{\r\n    double duty_cycle;\r\n    double i_error_prev;\r\n} model_data;\r\n\r\nmodel_data data; \r\n\r\nvoid initialize() {\r\n\tdata.duty_cycle = 0;\r\n\tdata.i_error_prev = 0;\r\n}\r\n\r\nvoid calculate_outputs(double* outputs, double* inputs, double time, double time_step) {\r\n\r\n\tconst double clock = inputs[0];\r\n\tconst double a0 = inputs[2];\r\n\tconst double a1 = inputs[3];\r\n\tif (clock == 1 || time \u003C 1e-10) // Clock\r\n\t{\r\n\t\t// Current control loop\r\n\t\tdouble i_error = inputs[1];\r\n\t\tdata.duty_cycle = data.duty_cycle \u002B a1 * i_error \u002B a0 * data.i_error_prev; \t\t\r\n\t\tdata.i_error_prev = i_error;\r\n\t}\r\n\t\r\n\toutputs[0] = data.duty_cycle;\r\n}\r\n\r\nvoid terminate() {\r\n}\r\n\r\n/*\r\n * Function: snapshot (DO NOT MODIFY)\r\n */\r\nvoid* snapshot(snapshot_mode mode, void* snapshot_ptr) {\r\n\tmodel_data* model_data_ptr;\r\n\tswitch (mode) {\r\n\t\tcase SNAPSHOT_CREATE: // Create and return a snapshot of the current model state\r\n\t\t\tmodel_data_ptr = (model_data*)malloc(sizeof(model_data));\r\n\t\t\tif (model_data_ptr == 0) return 0;\r\n\t\t\t*model_data_ptr = data;\r\n\t\t\treturn (void*)model_data_ptr;\r\n\r\n\t\tcase SNAPSHOT_UPDATE:  // Update an existing snapshot with current model data\r\n\t\t\tmodel_data_ptr = (model_data*)snapshot_ptr;\r\n\t\t\t*model_data_ptr = data;\r\n\t\t\treturn snapshot_ptr;\r\n\r\n\t\tcase SNAPSHOT_LOAD:  // Restore model data \r\n\t\t\tmodel_data_ptr = (model_data*)snapshot_ptr;\r\n\t\t\tdata = *model_data_ptr;\r\n\t\t\treturn snapshot_ptr;\r\n\r\n\t\tcase SNAPSHOT_DELETE: // Free the resources allocated in SNAPSHOT_CREATE\r\n\t\t\tfree(snapshot_ptr);\r\n\t\t\treturn 0;\r\n\t}\r\n}",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Not",
-            "Top": -3,
-            "Left": 20,
-            "Angle": 90,
-            "HF": false,
-            "VF": false,
-            "Name": "",
-            "ID": "cdc132ef-96b9-4bc8-b348-5621bd90f434",
-            "Parameters": {
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "MOSFET",
-            "Top": -1,
-            "Left": 16,
-            "Angle": 0,
-            "HF": true,
-            "VF": false,
-            "Name": "T4",
-            "ID": "48bdd91b-b85e-47de-95a8-6d66170627c5",
-            "Parameters": {
-              "Ron": "0",
-              "LossCalculationFrequency": "1k"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "MOSFET",
-            "Top": -9,
-            "Left": 16,
-            "Angle": 0,
-            "HF": true,
-            "VF": false,
-            "Name": "T3",
-            "ID": "a7a0999f-fe2f-460d-b20d-9b60a8c1d0d1",
-            "Parameters": {
-              "Ron": "0",
-              "LossCalculationFrequency": "1k"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "DC Voltage Source",
-            "Top": -5,
-            "Left": 28,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "DC2",
-            "ID": "4796798b-0273-4bac-a5c5-bdebd4a8624d",
-            "Parameters": {
-              "Voltage": "300"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Not",
-            "Top": -4,
-            "Left": -12,
-            "Angle": 90,
-            "HF": false,
-            "VF": false,
-            "Name": "",
-            "ID": "597e1068-75fe-464f-a8c3-100e77775318",
-            "Parameters": {
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Limiter",
-            "Top": 24,
-            "Left": 30,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "duty_cycle",
-            "ID": "90275072-b922-4015-af99-7518d413e5cd",
-            "Parameters": {
-              "LowLimit": "0",
-              "HighLimit": "1",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": [
-              "Out"
-            ]
-          },
-          {
-            "LibraryName": "Inductor",
-            "Top": -3,
-            "Left": 2,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "L1",
-            "ID": "55f25ea2-2687-408e-b7b8-9b47fd268a3e",
-            "Parameters": {
-              "Value": "6m",
-              "Iinit": "0"
-            },
-            "EnabledScopes": [
-              "Current"
-            ]
-          },
-          {
-            "LibraryName": "Gain",
-            "Top": 52,
-            "Left": 10,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Name": "PowerAverage",
-            "ID": "51cd403b-fd2c-4fe5-849e-667a9f4d27f3",
-            "Parameters": {
-              "Value": "1",
-              "SamplingTime": "none"
-            },
-            "EnabledScopes": [
-              "Out"
-            ]
-          }
-        ],
-        "Connectors": [
-          {
-            "Segments": [
-              {
-                "StartX": 21,
-                "StartY": 35,
-                "EndX": 21,
-                "EndY": 38
-              },
-              {
-                "StartX": 20,
-                "StartY": 38,
-                "EndX": 21,
-                "EndY": 38
-              }
-            ],
-            "Name": "C21"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 11,
-                "StartY": -7,
-                "EndX": 10,
-                "EndY": -7
-              },
-              {
-                "StartX": 10,
-                "StartY": -6,
-                "EndX": 10,
-                "EndY": -7
-              }
-            ],
-            "Name": "C24"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 18,
-                "StartY": -9,
-                "EndX": 30,
-                "EndY": -9
-              },
-              {
-                "StartX": 30,
-                "StartY": -5,
-                "EndX": 30,
-                "EndY": -9
-              }
-            ],
-            "Name": "C28"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 8,
-                "StartY": -2,
-                "EndX": 10,
-                "EndY": -2
-              },
-              {
-                "StartX": 10,
-                "StartY": -2,
-                "EndX": 18,
-                "EndY": -2
-              },
-              {
-                "StartX": 18,
-                "StartY": -3,
-                "EndX": 18,
-                "EndY": -2
-              },
-              {
-                "StartX": 18,
-                "StartY": -2,
-                "EndX": 18,
-                "EndY": -1
-              }
-            ],
-            "Name": "C18"
+            "Name": "C42"
           },
           {
             "Segments": [
               {
                 "StartX": 1,
-                "StartY": -2,
-                "EndX": 2,
-                "EndY": -2
-              }
-            ],
-            "Name": "C3"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": -10,
-                "StartY": 27,
-                "EndX": -10,
-                "EndY": 25
-              },
-              {
-                "StartX": -9,
-                "StartY": 25,
-                "EndX": -10,
-                "EndY": 25
-              }
-            ],
-            "Name": "C9"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": -16,
-                "StartY": 24,
-                "EndX": -17,
-                "EndY": 24
-              },
-              {
-                "StartX": -17,
-                "StartY": 28,
-                "EndX": -17,
-                "EndY": 24
-              }
-            ],
-            "Name": "C22"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 22,
-                "StartY": -6,
-                "EndX": 24,
-                "EndY": -6
-              },
-              {
-                "StartX": 20,
-                "StartY": -6,
-                "EndX": 22,
-                "EndY": -6
-              },
-              {
-                "StartX": 22,
-                "StartY": -3,
-                "EndX": 22,
-                "EndY": -6
-              }
-            ],
-            "Name": "C27"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": -24,
-                "StartY": 22,
-                "EndX": -16,
-                "EndY": 22
-              }
-            ],
-            "Name": "C13"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 7,
-                "StartY": 22,
-                "EndX": 5,
-                "EndY": 22
-              },
-              {
-                "StartX": 5,
-                "StartY": 19,
-                "EndX": 5,
-                "EndY": 22
-              },
-              {
-                "StartX": 5,
-                "StartY": 17,
-                "EndX": 5,
-                "EndY": 19
-              },
-              {
-                "StartX": 6,
-                "StartY": 17,
-                "EndX": 5,
-                "EndY": 17
-              },
-              {
-                "StartX": 4,
-                "StartY": 19,
-                "EndX": 5,
-                "EndY": 19
-              }
-            ],
-            "Name": "C30"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": -12,
-                "StartY": 50,
-                "EndX": -12,
-                "EndY": 52
-              },
-              {
-                "StartX": -5,
-                "StartY": 52,
-                "EndX": -12,
-                "EndY": 52
-              },
-              {
-                "StartX": -15,
-                "StartY": 50,
-                "EndX": -12,
-                "EndY": 50
-              }
-            ],
-            "Name": "C31"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": -16,
-                "StartY": 54,
-                "EndX": -12,
-                "EndY": 54
-              },
-              {
-                "StartX": -12,
-                "StartY": 55,
-                "EndX": -12,
-                "EndY": 54
-              }
-            ],
-            "Name": "C32"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": -16,
-                "StartY": 58,
-                "EndX": -12,
-                "EndY": 58
-              },
-              {
-                "StartX": -12,
-                "StartY": 57,
-                "EndX": -12,
-                "EndY": 58
-              }
-            ],
-            "Name": "C15"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": -5,
-                "StartY": 55,
-                "EndX": -5,
-                "EndY": 56
-              },
-              {
-                "StartX": -8,
-                "StartY": 56,
-                "EndX": -5,
-                "EndY": 56
-              }
-            ],
-            "Name": "C35"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 5,
-                "StartY": 54,
-                "EndX": 10,
-                "EndY": 54
-              }
-            ],
-            "Name": "C33"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": -1,
-                "StartY": 19,
+                "StartY": -7,
                 "EndX": 0,
-                "EndY": 19
-              }
-            ],
-            "Name": "C14"
-          },
-          {
-            "Segments": [
+                "EndY": -7
+              },
               {
                 "StartX": 0,
-                "StartY": -5,
-                "EndX": -1,
-                "EndY": -5
-              },
-              {
-                "StartX": -1,
                 "StartY": -3,
-                "EndX": -1,
-                "EndY": -5
-              }
-            ],
-            "Name": "C4"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": -9,
-                "StartY": 23,
-                "EndX": -12,
-                "EndY": 23
-              }
-            ],
-            "Name": "C25"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 22,
-                "StartY": 1,
-                "EndX": 22,
-                "EndY": 2
-              },
-              {
-                "StartX": 20,
-                "StartY": 2,
-                "EndX": 22,
-                "EndY": 2
-              }
-            ],
-            "Name": "C29"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": -17,
-                "StartY": 5,
-                "EndX": -6,
-                "EndY": 5
-              },
-              {
-                "StartX": -6,
-                "StartY": 5,
-                "EndX": 18,
-                "EndY": 5
-              },
-              {
-                "StartX": 30,
-                "StartY": 3,
-                "EndX": 30,
-                "EndY": 5
-              },
-              {
-                "StartX": 18,
-                "StartY": 5,
-                "EndX": 30,
-                "EndY": 5
-              },
-              {
-                "StartX": -17,
-                "StartY": 3,
-                "EndX": -17,
-                "EndY": 5
-              }
-            ],
-            "Name": "C7"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 7,
-                "StartY": 26,
-                "EndX": 2,
-                "EndY": 26
-              },
-              {
-                "StartX": 2,
-                "StartY": 28,
-                "EndX": 2,
-                "EndY": 26
-              }
-            ],
-            "Name": "C17"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 43,
-                "StartY": 27,
-                "EndX": 46,
-                "EndY": 27
-              }
-            ],
-            "Name": "C10"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": -6,
-                "StartY": -3,
-                "EndX": -6,
-                "EndY": -2
-              },
-              {
-                "StartX": -6,
-                "StartY": -2,
-                "EndX": -6,
-                "EndY": -1
-              },
-              {
-                "StartX": -3,
-                "StartY": -2,
-                "EndX": -6,
-                "EndY": -2
+                "EndX": 0,
+                "EndY": -7
               }
             ],
             "Name": "C23"
@@ -7224,164 +3155,75 @@
           {
             "Segments": [
               {
-                "StartX": -10,
-                "StartY": -4,
-                "EndX": -10,
-                "EndY": -6
-              },
+                "StartX": 2,
+                "StartY": -2,
+                "EndX": 3,
+                "EndY": -2
+              }
+            ],
+            "Name": "C4"
+          },
+          {
+            "Segments": [
               {
-                "StartX": -11,
+                "StartX": 16,
                 "StartY": -6,
-                "EndX": -10,
-                "EndY": -6
+                "EndX": 16,
+                "EndY": -7
               },
               {
-                "StartX": -10,
+                "StartX": 16,
+                "StartY": -7,
+                "EndX": 17,
+                "EndY": -7
+              }
+            ],
+            "Name": "C49"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 21,
                 "StartY": -6,
-                "EndX": -8,
-                "EndY": -6
-              }
-            ],
-            "Name": "C1"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 37,
-                "StartY": 30,
-                "EndX": 39,
-                "EndY": 30
-              },
-              {
-                "StartX": 39,
-                "StartY": 28,
-                "EndX": 39,
-                "EndY": 30
-              }
-            ],
-            "Name": "C12"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 34,
-                "StartY": 26,
-                "EndX": 39,
-                "EndY": 26
-              }
-            ],
-            "Name": "C8"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": -6,
-                "StartY": -9,
-                "EndX": -17,
-                "EndY": -9
-              },
-              {
-                "StartX": -17,
-                "StartY": -5,
-                "EndX": -17,
-                "EndY": -9
-              }
-            ],
-            "Name": "C2"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 26,
-                "StartY": 26,
-                "EndX": 30,
-                "EndY": 26
-              }
-            ],
-            "Name": "C20"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": -8,
-                "StartY": 2,
-                "EndX": -10,
+                "EndX": 21,
                 "EndY": 2
               },
               {
-                "StartX": -10,
-                "StartY": 0,
-                "EndX": -10,
+                "StartX": 26,
+                "StartY": -6,
+                "EndX": 21,
+                "EndY": -6
+              },
+              {
+                "StartX": 20,
+                "StartY": 2,
+                "EndX": 21,
+                "EndY": 2
+              },
+              {
+                "StartX": 21,
+                "StartY": 2,
+                "EndX": 22,
                 "EndY": 2
               }
             ],
             "Name": "C6"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 7,
-                "StartY": 24,
-                "EndX": -5,
-                "EndY": 24
-              }
-            ],
-            "Name": "C16"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 19,
-                "StartY": 25,
-                "EndX": 22,
-                "EndY": 25
-              }
-            ],
-            "Name": "C11"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 7,
-                "StartY": 28,
-                "EndX": 4,
-                "EndY": 28
-              },
-              {
-                "StartX": 4,
-                "StartY": 34,
-                "EndX": 4,
-                "EndY": 28
-              }
-            ],
-            "Name": "C19"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 22,
-                "StartY": 27,
-                "EndX": 21,
-                "EndY": 27
-              },
-              {
-                "StartX": 21,
-                "StartY": 31,
-                "EndX": 21,
-                "EndY": 27
-              }
-            ],
-            "Name": "C5"
           }
         ],
-        "Name": "Top Circuit - Copy - Copy - Copy - Copy",
-        "Variables": []
+        "Name": "Top Circuit - Copy - Copy - Copy",
+        "Variables": [],
+        "VariableFile": ""
       },
       "TransientAnalysis": {
-        "EndTime": 0.02,
+        "EndTime": "0.02",
         "FixedTimeStep": false,
+        "SaveInitialPoint": true,
         "StopAtSteadyState": false,
-        "TimeStep": 1E-09
+        "TimeStep": "1E-09",
+        "BaseFrequencyParameterEnabled": false,
+        "NumberOfBasePeriodsSavedParameterEnabled": false,
+        "BaseFrequency": "60",
+        "NumberOfBasePeriodsSaved": "1"
       }
     }
   ],
