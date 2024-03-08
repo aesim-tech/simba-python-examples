@@ -41,7 +41,7 @@ def compute_sensitivity(nominal_param, rel_perturbation, overshoot, sensitivity)
     :param: nominal circuit parameters
     :param: relative perturbation
     :overshoot: dictionnary of overshoot results
-    :sensitvity: dictionnary of sensitvity results
+    :sensitivity: dictionnary of sensitivity results
     """
     for key in nominal_param.keys():
         sensitivity[key] = abs((overshoot[key] - overshoot['nominal']) / (nominal_param[key] * rel_perturbation)) * (nominal_param[key] / overshoot['nominal'])
