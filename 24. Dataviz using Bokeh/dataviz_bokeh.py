@@ -3,30 +3,34 @@ from aesim.simba import DesignExamples
 from bokeh.plotting import figure
 from bokeh.io import show, output_notebook
 
-#%% Load project
-DAB = DesignExamples.DCDC_Dual_Active_Bridge_Converter()
+#%% Load SIMBA project
+forward = DesignExamples.DCDC_Forward_Converter()
 
-#%% Get the job object and solve the system
-job = DAB.TransientAnalysis.NewJob()
+#%% Config the solver, get the job object,  solve the system
+forward.TransientAnalysis.StopAtSteadyState = True
+forward.TransientAnalysis.BaseFrequencyParameterEnabled = True
+forward.TransientAnalysis.BaseFrequency = 200e3
+forward.TransientAnalysis.NumberOfBasePeriodsSavedParameterEnabled = True
+forward.TransientAnalysis.NumberOfBasePeriodsSaved = 4
+job = forward.TransientAnalysis.NewJob()
 status = job.Run()
 
 #%% Get results
 t = job.TimePoints
-Vout = job.GetSignalByName('Vout - Out').DataPoints
+Vds = job.GetSignalByName('T1 - Voltage').DataPoints
 
 #%% Plot Curve
 
 TOOLTIPS = [       #allows to display interactively t and vout values by using x and y position.
     ("index", "$index"),
-    ("(t, vout)", "($x, $y)"),
+    ("(t, Vmosfet)", "($x, $y)"),
     ]
-p = figure(title="Dual Active Bridge", 
+p = figure(title=" converter", 
            x_axis_label='time (s)', 
-           y_axis_label='Vout (V)',
+           y_axis_label='Vds (V)',
+           active_drag='box_zoom',
            tooltips = TOOLTIPS)
-p.line(t, Vout, legend_label="Output voltage", line_width=4)
+p.line(t, Vds, legend_label="Mosfet Vds voltage", line_width=1)
 p.legend.location = "bottom_right"
 #output_notebook()  # For Jupyter Notebook: if this line is disable, a new HTML page will be opened showing the result. If this line is enable, run the script with interactive cell
 show(p)
-
-# %%
