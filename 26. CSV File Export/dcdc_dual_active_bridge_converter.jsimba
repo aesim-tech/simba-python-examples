@@ -1,0 +1,1628 @@
+{
+  "Designs": [
+    {
+      "Id": "42920c4c-534d-431e-a4a1-32bdbedaadfb",
+      "Name": "DAB",
+      "Circuit": {
+        "Id": "17f5323d-4227-4417-b2d1-c7912e5bceee",
+        "Devices": [
+          {
+            "LibraryName": "DC Voltage Source",
+            "Top": -1,
+            "Left": 23,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "DC1",
+            "ID": "722e434a-6ec3-488d-8f76-f916a00605d3",
+            "Parameters": {
+              "Voltage": "95"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Ground",
+            "Top": 13,
+            "Left": 24,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "Ground1",
+            "ID": "08501d13-7857-4f4c-bc17-bb80e40577e5",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Control Output Connector Label",
+            "Top": -5,
+            "Left": 28,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "Q1",
+            "ID": "9d6a5f92-36ec-4971-9f50-700fd51101c2",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Control Output Connector Label",
+            "Top": 9,
+            "Left": 28,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "!Q1",
+            "ID": "0a5bbbb5-0e01-4f19-951e-8771572a3f4a",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "MOSFET",
+            "Top": -7,
+            "Left": 32,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "T1",
+            "ID": "7d48f8f3-d655-46b9-9610-88bebd3bcfde",
+            "Parameters": {
+              "Ron": "50m"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "MOSFET",
+            "Top": 7,
+            "Left": 32,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "T2",
+            "ID": "95bc64d8-461c-4cb5-bc5c-a056bfcf626f",
+            "Parameters": {
+              "Ron": "50m"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Diode",
+            "Top": -5,
+            "Left": 34,
+            "Angle": 270,
+            "HF": false,
+            "VF": false,
+            "Name": "D1",
+            "ID": "327eb099-a82b-4612-be6a-e49eaab9249e",
+            "Parameters": {
+              "Rd": "5m",
+              "Vf": "4.5"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Diode",
+            "Top": 9,
+            "Left": 34,
+            "Angle": 270,
+            "HF": false,
+            "VF": false,
+            "Name": "D2",
+            "ID": "a860060c-5d66-4bf4-866c-fb1b00ef9a84",
+            "Parameters": {
+              "Rd": "5m",
+              "Vf": "4.5"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Control Output Connector Label",
+            "Top": -5,
+            "Left": 40,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "!Q1",
+            "ID": "94b1b703-f851-49b6-ac48-8c1208a5bddd",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Control Output Connector Label",
+            "Top": 9,
+            "Left": 40,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "Q1",
+            "ID": "5eda58d0-459f-4992-aeaf-d4c82bbaf6f5",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "MOSFET",
+            "Top": -7,
+            "Left": 44,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "T3",
+            "ID": "4dde9920-27bb-4e52-ab98-c4d2ab91a4e9",
+            "Parameters": {
+              "Ron": "50m"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "MOSFET",
+            "Top": 7,
+            "Left": 44,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "T4",
+            "ID": "5f08a47d-24da-466a-aef2-323c0db85a7f",
+            "Parameters": {
+              "Ron": "50m"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Differential Voltage Meter",
+            "Top": 2,
+            "Left": 46,
+            "Angle": 90,
+            "HF": false,
+            "VF": false,
+            "Name": "V1",
+            "ID": "8acd9a9f-fe34-4dcd-ab1c-c3bb187dbf98",
+            "Parameters": {
+              "SamplingTime": "none"
+            },
+            "EnabledScopes": [
+              "Voltage"
+            ]
+          },
+          {
+            "LibraryName": "Diode",
+            "Top": -5,
+            "Left": 46,
+            "Angle": 270,
+            "HF": false,
+            "VF": false,
+            "Name": "D3",
+            "ID": "ef5c20d9-7b0e-46f2-a98e-6a3cc872a8f9",
+            "Parameters": {
+              "Rd": "5m",
+              "Vf": "4.5"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Diode",
+            "Top": 9,
+            "Left": 46,
+            "Angle": 270,
+            "HF": false,
+            "VF": false,
+            "Name": "D4",
+            "ID": "e74272d4-fa6b-4e1c-ade4-b156cffff95a",
+            "Parameters": {
+              "Rd": "5m",
+              "Vf": "4.5"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Inductor",
+            "Top": -1,
+            "Left": 51,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "L1",
+            "ID": "f12ee3ba-5171-407f-a62f-e54f2eb4efdf",
+            "Parameters": {
+              "Value": "2.052u",
+              "Iinit": "0"
+            },
+            "EnabledScopes": [
+              "Current"
+            ]
+          },
+          {
+            "LibraryName": "Ideal Transformer, 2 Winding",
+            "Top": 1,
+            "Left": 57,
+            "Angle": 270,
+            "HF": false,
+            "VF": false,
+            "Name": "TX1",
+            "ID": "c67679ba-237d-49ad-8488-80c1993a5c4e",
+            "Parameters": {
+              "Ratio": "4"
+            },
+            "EnabledScopes": [
+              "W1 - Voltage"
+            ]
+          },
+          {
+            "LibraryName": "Control Output Connector Label",
+            "Top": -5,
+            "Left": 61,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "Q2",
+            "ID": "a29e91f1-37c3-408d-abdf-f87a20f3ffe1",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Control Output Connector Label",
+            "Top": 9,
+            "Left": 61,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "!Q2",
+            "ID": "08a3996b-d827-44d5-89eb-f7969c17e61f",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "MOSFET",
+            "Top": -7,
+            "Left": 65,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "T5",
+            "ID": "c7bc0c43-ac5b-4753-94f3-adc10e73e99a",
+            "Parameters": {
+              "Ron": "65m"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "MOSFET",
+            "Top": 7,
+            "Left": 65,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "T6",
+            "ID": "1496a27f-a74a-4ac6-b493-a2f01e86b4a1",
+            "Parameters": {
+              "Ron": "65m"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Diode",
+            "Top": -5,
+            "Left": 67,
+            "Angle": 270,
+            "HF": false,
+            "VF": false,
+            "Name": "D5",
+            "ID": "104f1892-d2a8-4bb4-9080-eb3a63856395",
+            "Parameters": {
+              "Rd": "5m",
+              "Vf": "4.4"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Diode",
+            "Top": 9,
+            "Left": 67,
+            "Angle": 270,
+            "HF": false,
+            "VF": false,
+            "Name": "D6",
+            "ID": "8cab7c50-78e9-4499-ad6a-4bbfe7b4be9c",
+            "Parameters": {
+              "Rd": "5m",
+              "Vf": "4.4"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Control Output Connector Label",
+            "Top": -5,
+            "Left": 73,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "!Q2",
+            "ID": "63470ef2-e150-417d-be37-1c00379ee5cf",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Control Output Connector Label",
+            "Top": 9,
+            "Left": 73,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "Q2",
+            "ID": "112b72e4-f89c-4b91-83fa-a33206e329fd",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "MOSFET",
+            "Top": -7,
+            "Left": 77,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "T7",
+            "ID": "49c98f5d-febf-4661-ae6c-b6679459ff32",
+            "Parameters": {
+              "Ron": "65m"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "MOSFET",
+            "Top": 7,
+            "Left": 77,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "T8",
+            "ID": "659d0fc5-c6e0-4c20-ac14-10bbd25df71b",
+            "Parameters": {
+              "Ron": "65m"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Diode",
+            "Top": -5,
+            "Left": 79,
+            "Angle": 270,
+            "HF": false,
+            "VF": false,
+            "Name": "D7",
+            "ID": "12122560-9f0c-4f4c-ad88-4b916c3ffe27",
+            "Parameters": {
+              "Rd": "5m",
+              "Vf": "4.4"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Diode",
+            "Top": 9,
+            "Left": 79,
+            "Angle": 270,
+            "HF": false,
+            "VF": false,
+            "Name": "D8",
+            "ID": "0286aac2-bb68-4c5b-a628-209a13ba2c8a",
+            "Parameters": {
+              "Rd": "5m",
+              "Vf": "4.4"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Resistor",
+            "Top": -3,
+            "Left": 84,
+            "Angle": 90,
+            "HF": false,
+            "VF": false,
+            "Name": "R1",
+            "ID": "fe9b46f8-7f19-4535-8457-264117c173f7",
+            "Parameters": {
+              "Value": "3.2m"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Capacitor",
+            "Top": 7,
+            "Left": 84,
+            "Angle": 90,
+            "HF": false,
+            "VF": false,
+            "Name": "C10",
+            "ID": "bf83e877-e455-44bd-8f2c-5d65f793ace5",
+            "Parameters": {
+              "Value": "30u",
+              "Vinit": "0"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Ground",
+            "Top": 13,
+            "Left": 86,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "Ground2",
+            "ID": "0cff1fb3-449a-452e-ad52-add645920660",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Current Meter",
+            "Top": -8,
+            "Left": 88,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "A1",
+            "ID": "c335142b-e070-4214-9ec9-3917f933c4c5",
+            "Parameters": {
+              "SamplingTime": "none"
+            },
+            "EnabledScopes": [
+              "Current"
+            ]
+          },
+          {
+            "LibraryName": "Resistor",
+            "Top": 2,
+            "Left": 89,
+            "Angle": 90,
+            "HF": false,
+            "VF": false,
+            "Name": "R2",
+            "ID": "b7e13309-376c-4920-85e8-1d813f659460",
+            "Parameters": {
+              "Value": "144.4"
+            },
+            "EnabledScopes": [
+              "Voltage"
+            ]
+          },
+          {
+            "LibraryName": "Differential Voltage Meter",
+            "Top": 3,
+            "Left": 55,
+            "Angle": 90,
+            "HF": false,
+            "VF": false,
+            "Name": "V2",
+            "ID": "b04f7ddd-9870-4229-b8a4-554707387ef8",
+            "Parameters": {
+              "SamplingTime": "none"
+            },
+            "EnabledScopes": [
+              "Voltage"
+            ]
+          },
+          {
+            "LibraryName": "Control Output Connector Label",
+            "Top": 39,
+            "Left": 27,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "Vout",
+            "ID": "eba04fa4-bf03-4e4c-ba18-6040825ff750",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Constant",
+            "Top": 43,
+            "Left": 27,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "C1",
+            "ID": "4b31df17-bea8-4d6d-a26e-edc6c04efa45",
+            "Parameters": {
+              "Value": "380",
+              "SamplingTime": "none"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Sum",
+            "Top": 42,
+            "Left": 33,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "SUM1",
+            "ID": "caa1ddbf-eeb3-4d95-abca-56d1e8d437c0",
+            "Parameters": {
+              "NumberOfInputs": "2",
+              "Gains": "[-1 1]",
+              "SamplingTime": "none"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "C Code",
+            "Top": 39,
+            "Left": 39,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "C3",
+            "ID": "9ef83c27-29f9-47b8-b44b-2b7a07fcff03",
+            "Parameters": {
+              "NumberOfInputs": "1",
+              "NumberOfOutputs": "1",
+              "OptionalAdditionalIncludeDirectory": "",
+              "Code": "#include \u0022simba_library.h\u0022 \r\n#include \u003Cstdlib.h\u003E\r\n\r\n\r\ntypedef struct{\r\n    double duty_cycle;\r\n    double Verror;\r\n    double Verror_prev;\r\n} model_data;\r\n\r\nmodel_data data; \r\n\r\nvoid initialize() {\r\n\tdata.duty_cycle = 0;\r\n\tdata.Verror = 0;\r\n\tdata.Verror_prev = 0;\r\n}\r\n\r\nvoid calculate_outputs(double* outputs, double* inputs, double time, double time_step) {\r\n\r\n\t//const double clock = inputs[0];\r\n\t//if (clock == 1 || time \u003C 1e-10) // Clock\r\n\t{\r\n\t\t// Voltage control loop\r\n\t\tdouble Verror = inputs[0];\r\n\t\tdata.duty_cycle = data.duty_cycle \u002B 0.00167595 * (Verror - data.Verror_prev) \u002B 0.11173 * 2e-4 * Verror; \t\t\r\n\t\tdata.Verror_prev = Verror;\r\n\t}\r\n\t\r\n\toutputs[0] = data.duty_cycle;\r\n}\r\n\r\nvoid terminate() {\r\n}\r\n\r\n/*\r\n * Function: snapshot (DO NOT MODIFY)\r\n */\r\nvoid* snapshot(snapshot_mode mode, void* snapshot_ptr) {\r\n\tmodel_data* model_data_ptr;\r\n\tswitch (mode) {\r\n\t\tcase SNAPSHOT_CREATE: // Create and return a snapshot of the current model state\r\n\t\t\tmodel_data_ptr = (model_data*)malloc(sizeof(model_data));\r\n\t\t\tif (model_data_ptr == 0) return 0;\r\n\t\t\t*model_data_ptr = data;\r\n\t\t\treturn (void*)model_data_ptr;\r\n\r\n\t\tcase SNAPSHOT_UPDATE:  // Update an existing snapshot with current model data\r\n\t\t\tmodel_data_ptr = (model_data*)snapshot_ptr;\r\n\t\t\t*model_data_ptr = data;\r\n\t\t\treturn snapshot_ptr;\r\n\r\n\t\tcase SNAPSHOT_LOAD:  // Restore model data \r\n\t\t\tmodel_data_ptr = (model_data*)snapshot_ptr;\r\n\t\t\tdata = *model_data_ptr;\r\n\t\t\treturn snapshot_ptr;\r\n\r\n\t\tcase SNAPSHOT_DELETE: // Free the resources allocated in SNAPSHOT_CREATE\r\n\t\t\tfree(snapshot_ptr);\r\n\t\t\treturn 0;\r\n\t}\r\n}",
+              "SamplingTime": "100u"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Limiter",
+            "Top": 42,
+            "Left": 49,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "Lim1",
+            "ID": "e383b4d4-79b6-4c18-9e40-bc30880da610",
+            "Parameters": {
+              "LowLimit": "-1",
+              "HighLimit": "1",
+              "SamplingTime": "none"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Gain",
+            "Top": 42,
+            "Left": 57,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "G1",
+            "ID": "2011ef88-2a5f-47d3-925e-5be709a2adb4",
+            "Parameters": {
+              "Value": "-0.5",
+              "SamplingTime": "none"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Sum",
+            "Top": 46,
+            "Left": 64,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "SUM2",
+            "ID": "ce0c9aec-9d5a-4796-b25d-88f33418e970",
+            "Parameters": {
+              "NumberOfInputs": "2",
+              "Gains": "[1 1]",
+              "SamplingTime": "none"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Constant",
+            "Top": 19,
+            "Left": 71,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "C7",
+            "ID": "5bfc311d-cc73-4219-8c49-8a349fad5ffe",
+            "Parameters": {
+              "Value": "250k",
+              "SamplingTime": "none"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Constant",
+            "Top": 24,
+            "Left": 71,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "C5",
+            "ID": "36ddaf08-b768-4273-8d7f-b1dd7cd4f236",
+            "Parameters": {
+              "Value": "0.5",
+              "SamplingTime": "none"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Constant",
+            "Top": 29,
+            "Left": 71,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "C6",
+            "ID": "1e8c0004-4ae7-4a9d-a022-9137abfbbde3",
+            "Parameters": {
+              "Value": "0",
+              "SamplingTime": "none"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Constant",
+            "Top": 36,
+            "Left": 71,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "C9",
+            "ID": "5462c515-989c-4c5e-b2b2-7b675998e601",
+            "Parameters": {
+              "Value": "250k",
+              "SamplingTime": "none"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Constant",
+            "Top": 41,
+            "Left": 71,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "C8",
+            "ID": "317eee56-8d6d-4fa3-8be7-fb6879397da9",
+            "Parameters": {
+              "Value": "0.5",
+              "SamplingTime": "none"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Gain",
+            "Top": 46,
+            "Left": 71,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "G2",
+            "ID": "af6cc11c-342e-457b-9551-4978f684f8dc",
+            "Parameters": {
+              "Value": "360",
+              "SamplingTime": "none"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Controlled PWM Generator",
+            "Top": 23,
+            "Left": 78,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "PWM1",
+            "ID": "4fd837d4-1677-47f0-9321-7e5a2d2f3760",
+            "Parameters": {
+              "RiseTime": "0",
+              "FallTime": "0",
+              "SamplingTime": "none"
+            },
+            "EnabledScopes": [
+              "Out"
+            ]
+          },
+          {
+            "LibraryName": "Controlled PWM Generator",
+            "Top": 40,
+            "Left": 78,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "PWM2",
+            "ID": "911da84f-6547-40db-91ee-0115f6a2eb36",
+            "Parameters": {
+              "RiseTime": "0",
+              "FallTime": "0",
+              "SamplingTime": "none"
+            },
+            "EnabledScopes": [
+              "Out"
+            ]
+          },
+          {
+            "LibraryName": "Not",
+            "Top": 46,
+            "Left": 89,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "NOT2",
+            "ID": "519435cf-53f0-4704-911e-c83911fa2a09",
+            "Parameters": {
+              "SamplingTime": "none"
+            },
+            "EnabledScopes": [
+              "Out"
+            ]
+          },
+          {
+            "LibraryName": "Not",
+            "Top": 29,
+            "Left": 90,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "NOT1",
+            "ID": "0d703e78-5f22-4f00-8cf2-1b5817bee23a",
+            "Parameters": {
+              "SamplingTime": "none"
+            },
+            "EnabledScopes": [
+              "Out"
+            ]
+          },
+          {
+            "LibraryName": "Control Input Connector Label",
+            "Top": 42,
+            "Left": 93,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "Q2",
+            "ID": "d7866c14-b3a2-45f0-8380-0703504156da",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Control Input Connector Label",
+            "Top": 47,
+            "Left": 93,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "!Q2",
+            "ID": "0fc36fc4-607c-4048-8f6a-f14e05b8d668",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Control Input Connector Label",
+            "Top": 25,
+            "Left": 94,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "Q1",
+            "ID": "acb19455-9477-41bf-89f7-711fccd37427",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Control Input Connector Label",
+            "Top": 30,
+            "Left": 94,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "!Q1",
+            "ID": "3df1054f-6ff2-4fbc-a247-3e76abee82b6",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Constant",
+            "Top": 50,
+            "Left": 57,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "C4",
+            "ID": "d525a5e0-465c-4eb4-acaa-64ed1ba01564",
+            "Parameters": {
+              "Value": "1",
+              "SamplingTime": "none"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Differential Voltage Probe",
+            "Top": 2,
+            "Left": 100,
+            "Angle": 90,
+            "HF": false,
+            "VF": true,
+            "Name": "VP1",
+            "ID": "3e6e77cc-3ddf-4286-8621-9f64f67aa711",
+            "Parameters": {
+              "Gain": "1",
+              "SamplingTime": "auto"
+            },
+            "EnabledScopes": [
+              "Out"
+            ]
+          },
+          {
+            "LibraryName": "Control Input Connector Label",
+            "Top": 2,
+            "Left": 103,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Name": "Vout",
+            "ID": "2243dc77-d8cd-495c-b61a-4c678b916473",
+            "Parameters": {},
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Switch",
+            "Top": -5,
+            "Left": 94,
+            "Angle": 90,
+            "HF": false,
+            "VF": false,
+            "Name": "SW1",
+            "ID": "0c89beb2-b465-4f37-bab6-b18026afef7e",
+            "Parameters": {
+              "State": "1",
+              "T1": "100m"
+            },
+            "EnabledScopes": []
+          },
+          {
+            "LibraryName": "Resistor",
+            "Top": 2,
+            "Left": 94,
+            "Angle": 90,
+            "HF": false,
+            "VF": false,
+            "Name": "R3",
+            "ID": "80ecca51-8d24-4b49-84b8-f78a2573860b",
+            "Parameters": {
+              "Value": "144.4"
+            },
+            "EnabledScopes": []
+          }
+        ],
+        "Connectors": [
+          {
+            "Segments": [
+              {
+                "StartX": 34,
+                "StartY": -7,
+                "EndX": 25,
+                "EndY": -7
+              },
+              {
+                "StartX": 25,
+                "StartY": -1,
+                "EndX": 25,
+                "EndY": -7
+              },
+              {
+                "StartX": 34,
+                "StartY": -7,
+                "EndX": 37,
+                "EndY": -7
+              },
+              {
+                "StartX": 37,
+                "StartY": -7,
+                "EndX": 46,
+                "EndY": -7
+              },
+              {
+                "StartX": 46,
+                "StartY": -7,
+                "EndX": 49,
+                "EndY": -7
+              }
+            ],
+            "Name": "C9"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 25,
+                "StartY": 7,
+                "EndX": 25,
+                "EndY": 13
+              },
+              {
+                "StartX": 25,
+                "StartY": 13,
+                "EndX": 34,
+                "EndY": 13
+              },
+              {
+                "StartX": 34,
+                "StartY": 13,
+                "EndX": 37,
+                "EndY": 13
+              },
+              {
+                "StartX": 37,
+                "StartY": 13,
+                "EndX": 46,
+                "EndY": 13
+              },
+              {
+                "StartX": 46,
+                "StartY": 13,
+                "EndX": 49,
+                "EndY": 13
+              }
+            ],
+            "Name": "C10"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 34,
+                "StartY": -1,
+                "EndX": 37,
+                "EndY": -1
+              },
+              {
+                "StartX": 34,
+                "StartY": 7,
+                "EndX": 37,
+                "EndY": 7
+              },
+              {
+                "StartX": 48,
+                "StartY": 1,
+                "EndX": 48,
+                "EndY": 0
+              },
+              {
+                "StartX": 34,
+                "StartY": 0,
+                "EndX": 48,
+                "EndY": 0
+              },
+              {
+                "StartX": 48,
+                "StartY": 0,
+                "EndX": 51,
+                "EndY": 0
+              },
+              {
+                "StartX": 34,
+                "StartY": -1,
+                "EndX": 34,
+                "EndY": 0
+              },
+              {
+                "StartX": 34,
+                "StartY": 0,
+                "EndX": 34,
+                "EndY": 7
+              }
+            ],
+            "Name": "C6"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 46,
+                "StartY": -1,
+                "EndX": 49,
+                "EndY": -1
+              },
+              {
+                "StartX": 46,
+                "StartY": 7,
+                "EndX": 49,
+                "EndY": 7
+              },
+              {
+                "StartX": 48,
+                "StartY": 5,
+                "EndX": 48,
+                "EndY": 6
+              },
+              {
+                "StartX": 46,
+                "StartY": -1,
+                "EndX": 46,
+                "EndY": 6
+              },
+              {
+                "StartX": 46,
+                "StartY": 6,
+                "EndX": 46,
+                "EndY": 7
+              },
+              {
+                "StartX": 46,
+                "StartY": 6,
+                "EndX": 48,
+                "EndY": 6
+              },
+              {
+                "StartX": 48,
+                "StartY": 6,
+                "EndX": 57,
+                "EndY": 6
+              },
+              {
+                "StartX": 57,
+                "StartY": 6,
+                "EndX": 59,
+                "EndY": 6
+              }
+            ],
+            "Name": "C7"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 57,
+                "StartY": 0,
+                "EndX": 59,
+                "EndY": 0
+              },
+              {
+                "StartX": 57,
+                "StartY": 2,
+                "EndX": 57,
+                "EndY": 0
+              }
+            ],
+            "Name": "C19"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 61,
+                "StartY": 0,
+                "EndX": 67,
+                "EndY": 0
+              },
+              {
+                "StartX": 67,
+                "StartY": -1,
+                "EndX": 70,
+                "EndY": -1
+              },
+              {
+                "StartX": 67,
+                "StartY": 7,
+                "EndX": 70,
+                "EndY": 7
+              },
+              {
+                "StartX": 67,
+                "StartY": -1,
+                "EndX": 67,
+                "EndY": 0
+              },
+              {
+                "StartX": 67,
+                "StartY": 0,
+                "EndX": 67,
+                "EndY": 7
+              }
+            ],
+            "Name": "C17"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 61,
+                "StartY": 6,
+                "EndX": 79,
+                "EndY": 6
+              },
+              {
+                "StartX": 79,
+                "StartY": 0,
+                "EndX": 82,
+                "EndY": 0
+              },
+              {
+                "StartX": 79,
+                "StartY": 7,
+                "EndX": 82,
+                "EndY": 7
+              },
+              {
+                "StartX": 82,
+                "StartY": -1,
+                "EndX": 82,
+                "EndY": 0
+              },
+              {
+                "StartX": 79,
+                "StartY": 6,
+                "EndX": 79,
+                "EndY": 7
+              },
+              {
+                "StartX": 79,
+                "StartY": -1,
+                "EndX": 79,
+                "EndY": 0
+              },
+              {
+                "StartX": 79,
+                "StartY": 0,
+                "EndX": 79,
+                "EndY": 6
+              }
+            ],
+            "Name": "C22"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 67,
+                "StartY": -7,
+                "EndX": 70,
+                "EndY": -7
+              },
+              {
+                "StartX": 70,
+                "StartY": -7,
+                "EndX": 79,
+                "EndY": -7
+              },
+              {
+                "StartX": 79,
+                "StartY": -7,
+                "EndX": 82,
+                "EndY": -7
+              },
+              {
+                "StartX": 87,
+                "StartY": -5,
+                "EndX": 87,
+                "EndY": -7
+              },
+              {
+                "StartX": 82,
+                "StartY": -7,
+                "EndX": 87,
+                "EndY": -7
+              },
+              {
+                "StartX": 87,
+                "StartY": -7,
+                "EndX": 88,
+                "EndY": -7
+              }
+            ],
+            "Name": "C23"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 87,
+                "StartY": 1,
+                "EndX": 87,
+                "EndY": 5
+              }
+            ],
+            "Name": "C24"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 31,
+                "StartY": 40,
+                "EndX": 32,
+                "EndY": 40
+              },
+              {
+                "StartX": 32,
+                "StartY": 40,
+                "EndX": 32,
+                "EndY": 43
+              },
+              {
+                "StartX": 33,
+                "StartY": 43,
+                "EndX": 32,
+                "EndY": 43
+              }
+            ],
+            "Name": "C1"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 31,
+                "StartY": 45,
+                "EndX": 33,
+                "EndY": 45
+              }
+            ],
+            "Name": "C2"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 37,
+                "StartY": 44,
+                "EndX": 39,
+                "EndY": 44
+              }
+            ],
+            "Name": "C3"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 53,
+                "StartY": 44,
+                "EndX": 57,
+                "EndY": 44
+              }
+            ],
+            "Name": "C4"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 61,
+                "StartY": 44,
+                "EndX": 62,
+                "EndY": 44
+              },
+              {
+                "StartX": 62,
+                "StartY": 44,
+                "EndX": 62,
+                "EndY": 47
+              },
+              {
+                "StartX": 64,
+                "StartY": 47,
+                "EndX": 62,
+                "EndY": 47
+              }
+            ],
+            "Name": "C8"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 68,
+                "StartY": 48,
+                "EndX": 71,
+                "EndY": 48
+              }
+            ],
+            "Name": "C11"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 75,
+                "StartY": 21,
+                "EndX": 76,
+                "EndY": 21
+              },
+              {
+                "StartX": 76,
+                "StartY": 21,
+                "EndX": 76,
+                "EndY": 24
+              },
+              {
+                "StartX": 78,
+                "StartY": 24,
+                "EndX": 76,
+                "EndY": 24
+              }
+            ],
+            "Name": "C12"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 75,
+                "StartY": 26,
+                "EndX": 78,
+                "EndY": 26
+              }
+            ],
+            "Name": "C13"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 75,
+                "StartY": 31,
+                "EndX": 76,
+                "EndY": 31
+              },
+              {
+                "StartX": 76,
+                "StartY": 28,
+                "EndX": 76,
+                "EndY": 31
+              },
+              {
+                "StartX": 78,
+                "StartY": 28,
+                "EndX": 76,
+                "EndY": 28
+              }
+            ],
+            "Name": "C20"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 75,
+                "StartY": 38,
+                "EndX": 76,
+                "EndY": 38
+              },
+              {
+                "StartX": 76,
+                "StartY": 38,
+                "EndX": 76,
+                "EndY": 41
+              },
+              {
+                "StartX": 78,
+                "StartY": 41,
+                "EndX": 76,
+                "EndY": 41
+              }
+            ],
+            "Name": "C15"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 75,
+                "StartY": 43,
+                "EndX": 78,
+                "EndY": 43
+              }
+            ],
+            "Name": "C16"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 75,
+                "StartY": 48,
+                "EndX": 76,
+                "EndY": 48
+              },
+              {
+                "StartX": 76,
+                "StartY": 45,
+                "EndX": 76,
+                "EndY": 48
+              },
+              {
+                "StartX": 78,
+                "StartY": 45,
+                "EndX": 76,
+                "EndY": 45
+              }
+            ],
+            "Name": "C14"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 89,
+                "StartY": 26,
+                "EndX": 89,
+                "EndY": 31
+              },
+              {
+                "StartX": 90,
+                "StartY": 31,
+                "EndX": 89,
+                "EndY": 31
+              },
+              {
+                "StartX": 86,
+                "StartY": 26,
+                "EndX": 89,
+                "EndY": 26
+              },
+              {
+                "StartX": 89,
+                "StartY": 26,
+                "EndX": 94,
+                "EndY": 26
+              }
+            ],
+            "Name": "C21"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 88,
+                "StartY": 43,
+                "EndX": 88,
+                "EndY": 48
+              },
+              {
+                "StartX": 89,
+                "StartY": 48,
+                "EndX": 88,
+                "EndY": 48
+              },
+              {
+                "StartX": 86,
+                "StartY": 43,
+                "EndX": 88,
+                "EndY": 43
+              },
+              {
+                "StartX": 88,
+                "StartY": 43,
+                "EndX": 93,
+                "EndY": 43
+              }
+            ],
+            "Name": "C26"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 64,
+                "StartY": 49,
+                "EndX": 62,
+                "EndY": 49
+              },
+              {
+                "StartX": 62,
+                "StartY": 49,
+                "EndX": 62,
+                "EndY": 52
+              },
+              {
+                "StartX": 62,
+                "StartY": 52,
+                "EndX": 61,
+                "EndY": 52
+              }
+            ],
+            "Name": "C5"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 92,
+                "StartY": -7,
+                "EndX": 92,
+                "EndY": 0
+              },
+              {
+                "StartX": 92,
+                "StartY": -7,
+                "EndX": 97,
+                "EndY": -7
+              },
+              {
+                "StartX": 102,
+                "StartY": 1,
+                "EndX": 102,
+                "EndY": -7
+              },
+              {
+                "StartX": 102,
+                "StartY": -7,
+                "EndX": 97,
+                "EndY": -7
+              }
+            ],
+            "Name": "C28"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 97,
+                "StartY": -1,
+                "EndX": 97,
+                "EndY": 0
+              }
+            ],
+            "Name": "C18"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 97,
+                "StartY": 6,
+                "EndX": 97,
+                "EndY": 13
+              },
+              {
+                "StartX": 67,
+                "StartY": 13,
+                "EndX": 70,
+                "EndY": 13
+              },
+              {
+                "StartX": 70,
+                "StartY": 13,
+                "EndX": 79,
+                "EndY": 13
+              },
+              {
+                "StartX": 79,
+                "StartY": 13,
+                "EndX": 82,
+                "EndY": 13
+              },
+              {
+                "StartX": 82,
+                "StartY": 13,
+                "EndX": 87,
+                "EndY": 13
+              },
+              {
+                "StartX": 87,
+                "StartY": 11,
+                "EndX": 87,
+                "EndY": 13
+              },
+              {
+                "StartX": 92,
+                "StartY": 6,
+                "EndX": 92,
+                "EndY": 13
+              },
+              {
+                "StartX": 102,
+                "StartY": 5,
+                "EndX": 102,
+                "EndY": 13
+              },
+              {
+                "StartX": 97,
+                "StartY": 13,
+                "EndX": 102,
+                "EndY": 13
+              },
+              {
+                "StartX": 87,
+                "StartY": 13,
+                "EndX": 92,
+                "EndY": 13
+              },
+              {
+                "StartX": 92,
+                "StartY": 13,
+                "EndX": 97,
+                "EndY": 13
+              }
+            ],
+            "Name": "C25"
+          }
+        ],
+        "Name": "Top Circuit",
+        "Variables": [],
+        "VariableFile": ""
+      },
+      "TransientAnalysis": {
+        "EndTime": "0.2",
+        "FixedTimeStep": false,
+        "SaveInitialPoint": true,
+        "StopAtSteadyState": false,
+        "TimeStep": "1E-09",
+        "BaseFrequencyParameterEnabled": false,
+        "NumberOfBasePeriodsSavedParameterEnabled": false,
+        "BaseFrequency": "60",
+        "NumberOfBasePeriodsSaved": "1"
+      }
+    }
+  ],
+  "Libraries": [],
+  "TestBenches": [],
+  "ThermalData": []
+}
