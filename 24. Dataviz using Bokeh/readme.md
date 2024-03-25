@@ -7,8 +7,6 @@ tags:
 
 [Download **Python script**](dataviz_bokeh.py)
 
-[Download **Simba Model**](DAB.jsimba)
-
 Bokeh is an interactive visualization library for modern web browsers. It provides elegant, concise construction of versatile graphics and affords high-performance interactivity across large or streaming datasets. 
 
 Bokeh can help anyone who wants to create interactive plots, dashboards, and data applications quickly and easily.
@@ -18,7 +16,7 @@ More information about **Bokeh** could be found [here](https://bokeh.org/).
 
 ## SIMBA circuit
 
-Below the Forward converter circuit used for illustrating this Bokeh Python script. This example comes from the existing SIMBA collection of design examples.
+Below the Forward converter circuit used for illustrating this Bokeh Python script. This example comes from the existing SIMBA collection of *design examples*.
 
 ![Forward](fig/forward.png)
 
