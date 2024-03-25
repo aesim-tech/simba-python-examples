@@ -16,9 +16,9 @@ More information about **Bokeh** could be found [here](https://bokeh.org/).
 
 ## SIMBA circuit
 
-Below the Dual Active Bridge circuit used for illustrating this Bokeh Python script. This example comes from the existing SIMBA collection of design examples.
+Below the Forward converter circuit used for illustrating this Bokeh Python script. This example comes from the existing SIMBA collection of *design examples*.
 
-![DAB](fig/DAB.png)
+![Forward](fig/forward.png)
 
 
 ## Python Script
@@ -26,10 +26,10 @@ Below the Dual Active Bridge circuit used for illustrating this Bokeh Python scr
 The Python script used for showing Bokeh capabilities will do the following tasks:
 
 * Import Bokeh library
-* Run a transient analysis of the DCDC Dual Active Bridge Converter and get the output voltage across load resistor $R_{load}$,
-* Plot the output voltage with Bokeh and observe the ***time*** and $V_{out}$ values when the signal is highlighted. 
+* Run a transient analysis of the Forward Converter and get the voltage across the mosfet $T_{1}$,
+* Plot the output voltage with Bokeh and observe the ***time*** and $V_{ds}$ values when the signal is highlighted. 
 
-The following syntax **output_notebook()**  is for Jupyter Notebook. In deed, if this line is disable, a new HTML page will be opened showing the result once the script is run. 
+The following syntax **output_notebook()**  is for Jupyter Notebook. In deed, if this line is disabled, a new HTML page will be opened showing the result once the script is run. 
 If this line is enable, the script needs to be run with interactive cell option.
 
 
@@ -37,8 +37,8 @@ If this line is enable, the script needs to be run with interactive cell option.
 
 Below the simulation result once the script has been executed. 
 
-![result](fig/result2.png)
+![result](fig/vmosfet.png)
 
-We can clearly observe time and output voltage values on the figure.
+We can clearly observe time and voltage values on the figure.
 
-It is also important to say that a valid internet connexion is required when using bokeh library.
+It is also important to say that a valid internet connection is required when using bokeh library.

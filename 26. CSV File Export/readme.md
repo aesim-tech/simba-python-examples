@@ -8,15 +8,13 @@ tags:
 
 [Download **Python script**](csv_file_export.py)
 
-[Download **Simba Model**](DAB.jsimba)
-
 File exportation is possible by using Python language.
 
 In this way this python script example helps to understand how to export any csv files from results obtained by running a SIMBA circuit (.jsimba).
 
 It can be useful when we want to compare several results obtained from external measurements or if several data parameters need to be analyzed carefully between simulation and reality.
 
-The power converter topology used for this example is a DAB: Dual Active Bridge
+The power converter topology used for this example is the Dual Active Bridge (DAB) from the SIMBA collection of the *design examples.*
 
 
 ## SIMBA circuit
@@ -44,7 +42,7 @@ Below the result of the output voltage once the simulation is over through SIMBA
 
 ![result](fig/result.png)
 
-As we can see, the last value of the signal is equal to 379.99 V. 
+As we can see, the last value of the signal is equal to 380.005 V. 
 
 If we compare this plot with the datas exported into the csv file **Output_voltage.csv** created, you'll observe the same result:
 

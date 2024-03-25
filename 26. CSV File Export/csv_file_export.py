@@ -1,13 +1,9 @@
 # Load modules
-from aesim.simba import JsonProjectRepository
+from aesim.simba import DesignExamples
 import matplotlib.pyplot as plt
-import os
 
 # Load SIMBA project
-script_folder = os.path.dirname(os.path.abspath(__file__))
-file_path = os.path.join(script_folder, "DAB.jsimba")
-project = JsonProjectRepository(file_path)
-DAB = project.GetDesignByName('DAB')
+DAB = DesignExamples.DCDC_Dual_Active_Bridge_Converter()
 
 # Get the job object and solve the system
 job = DAB.TransientAnalysis.NewJob()
