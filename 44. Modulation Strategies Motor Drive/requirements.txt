@@ -1,0 +1,4 @@
+aesim.simba
+numpy
+matplotlib
+os
