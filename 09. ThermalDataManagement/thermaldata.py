@@ -68,7 +68,7 @@ for scope in igbt.Scopes:
         scope.Enabled = True
 
 with ZipFile(os.path.join(script_folder, 'ThermalDataFile.zip'), 'r') as zip_ref:
-    zip_ref.extractall()
+    zip_ref.extractall(script_folder)
 igbt_xml_list = [filename for filename in os.listdir(script_folder + '/ThermalDataFile/') if filename.endswith('IGBT.xml')]
 
 junction_temps = []
