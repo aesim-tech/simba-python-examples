@@ -11,6 +11,8 @@ tags:
 
 [Download **Simba Model**](thermal_buck_4pythonexp.jsimba)
 
+[Download **Thermal Data Archive**](ThermalDataFile.zip)
+
 This python script shows an exploration of different powerswitch references through their thermal data description.
 
 
