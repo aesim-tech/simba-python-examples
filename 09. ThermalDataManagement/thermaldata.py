@@ -4,6 +4,7 @@ from aesim.simba import ProjectRepository, ThermalData
 from datetime import datetime
 import matplotlib.pyplot as plt
 import matplotlib as mpl
+from zipfile import ZipFile
 
 
 #%% plot histogram
@@ -66,7 +67,8 @@ for scope in igbt.Scopes:
     if scope.Name == 'Junction Temperature (°)' or scope.Name == 'Average Total Losses (W)':
         scope.Enabled = True
 
-script_folder = os.path.realpath(os.path.dirname(__file__))
+with ZipFile(os.path.join(script_folder, 'ThermalDataFile.zip'), 'r') as zip_ref:
+    zip_ref.extractall()
 igbt_xml_list = [filename for filename in os.listdir(script_folder + '/ThermalDataFile/') if filename.endswith('IGBT.xml')]
 
 junction_temps = []
