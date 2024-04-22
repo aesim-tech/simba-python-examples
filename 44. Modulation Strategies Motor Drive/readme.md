@@ -118,9 +118,11 @@ In this example the motor losses are obtained thanks to the JMAG-RT model.
 
 ## Results
 
-A second python script is available to display results. A first figure shows results displayed as bargraphs as shown below:
+A second python script is available to display results. A first figure shows results displayed as bargraphs (and thus the influence of the switching frequency) as shown below:
 
 ![bargraph](fig/bargraph.png)
+
+A second figure shows results displayed as histograms (and thus which losses are dominant) as shown below:
 
 ![histogram](fig/histogram.png)
 
