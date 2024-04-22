@@ -94,7 +94,7 @@ In DPWM modulation the phase leg is clamped 30° symmetricaly from maximal volta
 To model the thermal performance of MOSFETs in an inverter, their package temperature is held constant and data is extracted from the **.xml** files provided by the manufacturer. In this particular case, Wolfspeed **CAB006M12GM3** mosfets were used and can be downloaded [here](https://assets.wolfspeed.com/uploads/2023/05/Wolfspeed_CAB006M12GM3_data_sheet.pdf).
 
 
-## Main python
+## Main python script
 
 The python script named [`modulation_strategies_motor_drive.py`](modulation_strategies_motor_drive.py) is used to perform simulations for various operating points and switching frequencies and finally display the losses according to each different scenario. 
 
