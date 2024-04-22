@@ -1,4 +1,3 @@
-#%% Load modules
 import os, multiprocessing
 from tqdm import tqdm
 from aesim.simba import ProjectRepository, License
@@ -11,28 +10,33 @@ from datetime import datetime
 #         PARAMETERS        #
 #############################
 number_of_parallel_simulations = License.NumberOfAvailableParallelSimulationLicense() # Number of available Parallel Simulation License
-number_of_parallel_simulations = 2
+number_of_parallel_simulations = 1
 
 # Define two operating points
-rpm_speed_refs = {'op_point1': 2000, 'op_point2': 4000}
-torque_refs = {'op_point1': 250, 'op_point2': 20}
-id_refs = {'op_point1': -157.47, 'op_point2': -19.32}
-iq_refs = {'op_point1': 157.03, 'op_point2': 11.52}
+# op_points = {
+#     'speed': [2000, 4000],
+#     'torque': [250, 20],
+#     'id_ref': [-157.47, -19.32],
+#     'iq_ref': [157.03, 11.52]
+# }
+rpm_speed_refs = [2000, 4000]
+torque_refs = [250, 20]
+id_refs = [-157.47, -19.32]
+iq_refs = [157.03, 11.52]
 
 # Define modulation strategies and switching frequencies
-# modulations = ['SVPWM', 'DPWM', 'SPWM']
-# switching_frequencies = [2e4, 4e4, 6e4]
-modulations = ['SVPWM', 'DPWM']
-switching_frequencies = [2e4, 4e4]
+modulations = ['SVPWM', 'DPWM', 'SPWM']
+switching_frequencies = [2e4, 4e4, 6e4]
 
 if os.environ.get("SIMBA_SCRIPT_TEST"): # To accelerate unit tests
-    pass
+    modulations = ['SVPWM']
+    switching_frequencies = [2e4]
 
 #############################
 #           METHODS         #
 #############################
 
-def run_simulation(torque_ref, id_ref, iq_ref, rpm_speed_ref, fpwm, modulation_key, sim_number, manager_result_dict, lock):
+def run_simulation(id_ref, iq_ref, rpm_speed_ref, fpwm, modulation_key, sim_number, manager_result_dict, lock):
     """
     Run SIMBA Simulation and place the results in "manager_result_dict"
     """ 
@@ -77,7 +81,7 @@ def run_simulation(torque_ref, id_ref, iq_ref, rpm_speed_ref, fpwm, modulation_k
     if log:
         print(f"Check speed = {rpm_speed_ref} rpm for {modulation_key} - {round(fpwm/1000)} kHz", conduction_losses, switching_losses, copper_losses, iron_losses)
 
-    manager_result_dict[sim_number] = [rpm_speed_ref, torque_ref, modulation_key, fpwm, conduction_losses, switching_losses, copper_losses, iron_losses]
+    manager_result_dict[sim_number] = [rpm_speed_ref, modulation_key, fpwm, conduction_losses, switching_losses, copper_losses, iron_losses]
 
 def run_simulation_star(args):
     """
@@ -99,11 +103,11 @@ if __name__ == "__main__": # Called only in main thread. It confirms that the co
     # Create all scenarii
     pool_args = []
     sim_nb = 0
-    #for op_key in ['op_point1', 'op_point2']:
-    for op_key in ['op_point1']:
+    # for op_index in range(len(op_points)):
+    for id_ref, iq_ref, rpm_speed_ref in zip(id_refs, iq_refs, rpm_speed_refs):
         for mod_key in modulations:
             for fpwm in switching_frequencies:
-                pool_args.append((torque_refs[op_key], id_refs[op_key], iq_refs[op_key], rpm_speed_refs[op_key], fpwm, mod_key, sim_nb, manager_result_dict, lock))
+                pool_args.append((id_ref, iq_ref, rpm_speed_ref, fpwm, mod_key, sim_nb, manager_result_dict, lock))
                 sim_nb += 1
     
     # Start process pool
@@ -114,7 +118,6 @@ if __name__ == "__main__": # Called only in main thread. It confirms that the co
     # Store results in dedicated dictionnary
     res = dict()
     res['speed'] = []
-    res['torque'] = []
     res['modulation'] = []
     res['fpwm'] = []
     res['conduction'] = []

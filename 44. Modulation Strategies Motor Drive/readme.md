@@ -4,11 +4,14 @@ tags:
   - Motor Drives
   - Thermal
   - JMAG
+  - Control
 ---
 
 # Modulation Strategies of a Motor Drive Inverter (including JMAG-RT model)
 
 [Download **python script for simulation**](modulation_strategies_motor_drive.py)
+
+[Download **python script for plotting**](modulation_strategies_motor_drive_plot.py)
 
 [Download **Simba model**](modulation_strategies_motor_drive.jsimba)
 
@@ -95,18 +98,18 @@ To model the thermal performance of MOSFETs in an inverter, their package temper
 
 ## Python script
 
-The python script named [`modulation_strategies_motor_drive.py`](modulation_strategies_motor_drive.py) is used to perform simulations for various operating points and switching frequencies and finally display the losses according to each different scenarios. 
+The python script named [`modulation_strategies_motor_drive.py`](modulation_strategies_motor_drive.py) is used to perform simulations for various operating points and switching frequencies and finally display the losses according to each different scenario. 
 
-Let's consider those operating points mentionned below for performing the simulation:
+Let's consider the operating points mentionned below for performing the simulation:
 
 ![operating](fig/operating.png)
 
-The python script's objective is to run simulation at those 2 operating points, such as different speed and torque levels (induced by different Id and Iq values).
+The python script aims to run a simulation at those 2 operating points, with different speed and torque levels (induced by different Id and Iq values).
 
 Two loops have been considered into the script:
 
-* one **Speed** loop allowing to drive the motor at 2000 and 4000 rpm
-* one **Frequency** loop (inside Speed loop) allowing to modify the switching frequency at 20, 40 and 60Khz.
+* one **Speed** loop to drive the motor at 2000 and 4000 rpm
+* one **Frequency** loop (nested in the Speed loop) to modify the switching frequency at 20, 40 and 60 kHz.
 
 The final goal is to obtain the losses of the complete drive (motor + inverter) in steady-state, plot and compare them for different modulation strategies and operating points. 
 
@@ -115,16 +118,17 @@ In this example the motor losses are obtained thanks to the JMAG-RT model.
 
 ## Results
 
-Once the Python script has completed all the scenarios, the **Loss comparison** picture for different modulation strategies, operating points and frequencies is shown below:
+A second python script is available to display results. A first figure shows results displayed as bargraphs as shown below:
 
- 
-![](fig/comparison.png)
+![bargraph](fig/bargraph.png)
 
-When comparing these images, several conclusions can be provided such as:
+![histogram](fig/histogram.png)
+
+When comparing these figures, several conclusions can be provided such as:
 
 At operating point B (high load & load speed: Torque = 250 N.m and Speed = 2000 rpm):
 
-* device conduction losses & Copper losses become dominant,
+* device conduction losses & and especially copper losses become dominant,
 * increasing the switching frequency between 20 and 60 kHz leads to higher losses of the overall system (mainly due to device switching losses)
 
 
@@ -133,6 +137,6 @@ At operating point D (low load & high speed: Torque = 20 N.m and Speed = 4000 rp
 * iron losses become dominant,
 * increasing the switching frequency between 20 and 60 kHz leads to lower losses of the entire system (mainly due to motor iron losses which decrease as the current ripple decreases)
 
-For each operating points, **SVPWM** and **SPWM** provide very close results
+For each operating points, **SVPWM** and **SPWM** provide very close results.
 
-**A combination of SIMBA and JMAG-RT enables detailed and fast loss evaluation of the entire drive system.**
+A combination of **SIMBA** and **JMAG-RT** leads detailed and fast **loss evaluation** of the entire **drive system**.
