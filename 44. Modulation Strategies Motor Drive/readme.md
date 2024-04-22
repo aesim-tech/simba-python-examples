@@ -46,15 +46,13 @@ The motor drive inverter model consists of a 3-phase 2-level voltage source inve
 | Magnet | NdFeB, Br=1.2 (T)  |
 
 
-### Control
+### Control & Modulation Strategy
 
 A DQ control has been implemented (described in [another example](../13. Inverter Efficiency Map/readme.md) allowing to realize the closed control loop for driving the motor drive inverter.
 
 ![Drawing](fig/drawing.png)
 
-#### Modulation strategy
-
-Several modulation strategies have been considered in this example. In fact, this example is intended to use different modulation strategies and compare the losses of both inverter (conduction and switching losses) and motor (iron and copper losses). Of course, different switching frequencies will be used (20, 40 and 60 kHz). Thefore, a relation between frequency and modulation strategy can be easily highlighted. 
+Several modulation strategies have been considered to evaluate their influence on losses of both inverter (conduction and switching losses) and motor (iron and copper losses). Different switching frequencies have also be used (20, 40 and 60 kHz). Therefore, a relation between frequency and modulation strategy can be easily highlighted. 
 
 In this traction motor drive system, 3 modulation strategies will be used:
 
@@ -96,7 +94,7 @@ In DPWM modulation the phase leg is clamped 30° symmetricaly from maximal volta
 To model the thermal performance of MOSFETs in an inverter, their package temperature is held constant and data is extracted from the **.xml** files provided by the manufacturer. In this particular case, Wolfspeed **CAB006M12GM3** mosfets were used and can be downloaded [here](https://assets.wolfspeed.com/uploads/2023/05/Wolfspeed_CAB006M12GM3_data_sheet.pdf).
 
 
-## Python script
+## Main python
 
 The python script named [`modulation_strategies_motor_drive.py`](modulation_strategies_motor_drive.py) is used to perform simulations for various operating points and switching frequencies and finally display the losses according to each different scenario. 
 
@@ -118,7 +116,7 @@ In this example the motor losses are obtained thanks to the JMAG-RT model.
 
 ## Results
 
-A second python script is available to display results. A first figure shows results displayed as bargraphs (and thus the influence of the switching frequency) as shown below:
+A second python script named [`modulation_strategies_motor_drive_plot.py`](modulation_strategies_motor_drive_plot.py) is available to display results. A first figure shows results displayed as bargraphs (and thus the influence of the switching frequency) as shown below:
 
 ![bargraph](fig/bargraph.png)
 
