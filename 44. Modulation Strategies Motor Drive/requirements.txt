@@ -1,4 +1,7 @@
+os
+multiprocessing
+tqdm
 aesim.simba
 numpy
-matplotlib
-os
+pandas
+datetime
