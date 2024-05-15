@@ -102,8 +102,11 @@ def run_simulation(Lr, Cr, Lm, fin, sim_number, result_dict, lock):
     simba_transfo = LLC_open_loop.Circuit.GetDeviceByName('Transfo')
 
     # Apply parameters
+    fsw = F_RES*fin
     LLC_open_loop.TransientAnalysis.TimeStep = 1e-8
     LLC_open_loop.TransientAnalysis.StopAtSteadyState = True
+    LLC_open_loop.TransientAnalysis.BaseFrequency = fsw
+    LLC_open_loop.TransientAnalysis.BaseFrequencyParameterEnabled = True
     simba_vin.Voltage = VIN_RATED
     simba_Rout.Value = RO
     simba_fres.value = F_RES
@@ -125,7 +128,6 @@ def run_simulation(Lr, Cr, Lm, fin, sim_number, result_dict, lock):
     if log: print (job.Summary()[:-1])
 
     #extract steady state results
-    fsw = F_RES*fin
     horizon_time = 3 / fsw
     time, vout_res = steadystate_signal(
         horizon_time,

@@ -2071,21 +2071,6 @@
             "ID": "325e6423-b788-4596-bc0a-aeed6559bdd8",
             "Parameters": {},
             "EnabledScopes": []
-          },
-          {
-            "LibraryName": "Capacitor",
-            "Top": -29,
-            "Left": 1,
-            "Angle": 90,
-            "HF": false,
-            "VF": false,
-            "Name": "C1",
-            "ID": "c3f261ce-7c3b-48e0-b8f6-5740740397b1",
-            "Parameters": {
-              "Value": "1E-03",
-              "Vinit": "400"
-            },
-            "EnabledScopes": []
           }
         ],
         "Connectors": [
@@ -2745,9 +2730,9 @@
         ]
       },
       "TransientAnalysis": {
-        "EndTime": 0.03,
+        "EndTime": 0.001,
         "FixedTimeStep": false,
-        "StopAtSteadyState": false,
+        "StopAtSteadyState": true,
         "TimeStep": 4E-08
       }
     }
