@@ -103,7 +103,7 @@ def run_simulation(Lr, Cr, Lm, fin, sim_number, result_dict, lock):
 
     # Apply parameters
     fsw = F_RES*fin
-    LLC_open_loop.TransientAnalysis.TimeStep = 1e-8
+    LLC_open_loop.TransientAnalysis.TimeStep = 2e-8
     LLC_open_loop.TransientAnalysis.StopAtSteadyState = True
     LLC_open_loop.TransientAnalysis.BaseFrequency = fsw
     LLC_open_loop.TransientAnalysis.BaseFrequencyParameterEnabled = True

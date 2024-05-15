@@ -1625,9 +1625,7 @@
               "Gain": "1",
               "SamplingTime": "auto"
             },
-            "EnabledScopes": [
-              "Current"
-            ]
+            "EnabledScopes": []
           },
           {
             "LibraryName": "Differential Voltage Meter",
@@ -1641,9 +1639,7 @@
             "Parameters": {
               "SamplingTime": "auto"
             },
-            "EnabledScopes": [
-              "Voltage"
-            ]
+            "EnabledScopes": []
           },
           {
             "LibraryName": "Differential Voltage Probe",
@@ -1658,9 +1654,7 @@
               "Gain": "1/420",
               "SamplingTime": "auto"
             },
-            "EnabledScopes": [
-              "Voltage"
-            ]
+            "EnabledScopes": []
           },
           {
             "LibraryName": "Capacitor",
@@ -1675,9 +1669,7 @@
               "Value": "2.0097371983254867e-08",
               "Vinit": "0"
             },
-            "EnabledScopes": [
-              "Voltage"
-            ]
+            "EnabledScopes": []
           },
           {
             "LibraryName": "Capacitor",
@@ -1692,10 +1684,7 @@
               "Value": "2u",
               "Vinit": "0"
             },
-            "EnabledScopes": [
-              "Voltage",
-              "Current"
-            ]
+            "EnabledScopes": []
           },
           {
             "LibraryName": "Inductor",
@@ -1710,10 +1699,7 @@
               "Value": "3.1509464018313186e-05",
               "Iinit": "0"
             },
-            "EnabledScopes": [
-              "Voltage",
-              "Current"
-            ]
+            "EnabledScopes": []
           },
           {
             "LibraryName": "Inductor",
@@ -1728,9 +1714,7 @@
               "Value": "0.00012603785607325275",
               "Iinit": "0"
             },
-            "EnabledScopes": [
-              "Current"
-            ]
+            "EnabledScopes": []
           },
           {
             "LibraryName": "Resistor",
@@ -1745,8 +1729,7 @@
               "Value": "53.45454545454545"
             },
             "EnabledScopes": [
-              "Voltage",
-              "Current"
+              "Voltage"
             ]
           },
           {
@@ -1827,10 +1810,7 @@
               "Vf": "2",
               "LossCalculationFrequency": "1k"
             },
-            "EnabledScopes": [
-              "Voltage",
-              "Current"
-            ]
+            "EnabledScopes": []
           },
           {
             "LibraryName": "Diode",
@@ -1846,10 +1826,7 @@
               "Vf": "2",
               "LossCalculationFrequency": "1k"
             },
-            "EnabledScopes": [
-              "Voltage",
-              "Current"
-            ]
+            "EnabledScopes": []
           },
           {
             "LibraryName": "Diode",
@@ -1967,12 +1944,7 @@
             "Parameters": {
               "Ratio": "0.9"
             },
-            "EnabledScopes": [
-              "W1 - Voltage",
-              "W1 - Current",
-              "W2 - Voltage",
-              "W2 - Current"
-            ]
+            "EnabledScopes": []
           },
           {
             "LibraryName": "Control Input Connector Label",
