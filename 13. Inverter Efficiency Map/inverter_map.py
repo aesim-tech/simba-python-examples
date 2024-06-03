@@ -7,15 +7,14 @@ Make sure to run 'pip install -r requirements.txt' to ensure you have the requir
 ##### Requires aesim.simba version 2022.12.13 or higher #####
 """
 
-import numpy,multiprocessing, os
-import matplotlib.pyplot as plt
-import matplotlib.tri as tri
-import numpy as np
+import multiprocessing, os
 import math
+import numpy as np
+import pandas as pd
 from tqdm import tqdm
 from aesim.simba import ProjectRepository, License
 from datetime import datetime
-from scipy.spatial import ConvexHull
+
 
 #############################
 #   SIMULATION PARAMETERS   #
@@ -127,36 +126,6 @@ def run_simulation_star(args):
     """
     return run_simulation(*args)
 
-def show_heatmap(x, y, z):
-    """
-    Show the efficiency points and add a contour plot for efficiency values
-    """
-    # Create grid values first.
-    xi, yi = np.linspace(x.min(), x.max(), 100), np.linspace(y.min(), y.max(), 100)
-
-    # Linearly interpolate the data (x, y) on a grid defined by (xi, yi).
-    triang = tri.Triangulation(x, y)
-    interpolator = tri.LinearTriInterpolator(triang, z)
-    Xi, Yi = np.meshgrid(xi, yi)
-    zi = interpolator(Xi, Yi)
-    fig, (ax1) = plt.subplots(nrows=1)
-    
-    # Creating outer plot
-    points = np.column_stack((x, y))
-    hull = ConvexHull(points)
-    ax1.plot(points[hull.vertices,0], points[hull.vertices,1], 'k--', lw=2)
-
-    cntr1 = ax1.contourf(xi, yi, zi, levels=100, cmap="PiYG")
-
-    fig.colorbar(cntr1, ax=ax1)
-    ax1.plot(x, y, 'ko', ms=1)
-    ax1.set(xlim=(0, x.max()), ylim=(0, y.max()))
-    ax1.set_xlabel("Speed [RPM]")
-    ax1.set_ylabel("Torque [N.m]")
-    ax1.set_title("Inverter Losses [W]\nRg={0:.2f}Ω, Fsw={1:.2f}Hz, Vbus={2:.2f}V, T_case={3:.2f}°C".format(Rg,switching_frequency,bus_voltage,case_temperature))
-    path= "efficiency_map_"+datetime.now().strftime("%m%d%Y%H%M%S")+".png"
-    fig.savefig(path)
-    plt.show()
 
 def SelectIdIq(ref_idiq, current_ref, speed_ref):
     """
@@ -226,8 +195,8 @@ if __name__ == "__main__": # Called only in main thread. It confirms that the co
     min_speed_ref = relative_minimum_speed * max_speed_ref;
     min_current_ref = relative_minimum_current * max_current_ref;
     
-    speed_refs = numpy.arange(min_speed_ref, max_speed_ref, (max_speed_ref - min_speed_ref)/number_of_speed_points)
-    current_refs = numpy.arange(min_current_ref, max_current_ref, (max_current_ref - min_current_ref)/number_of_current_points)
+    speed_refs = np.arange(min_speed_ref, max_speed_ref, (max_speed_ref - min_speed_ref)/number_of_speed_points)
+    current_refs = np.arange(min_current_ref, max_current_ref, (max_current_ref - min_current_ref)/number_of_current_points)
     
     manager = multiprocessing.Manager()
     result_dict = manager.dict()
@@ -260,7 +229,17 @@ if __name__ == "__main__": # Called only in main thread. It confirms that the co
         t.append(i[1][1])
         s.append(i[1][2])
         e.append(i[1][3])
-    t= numpy.array(t)
-    s= numpy.array(s)
-    e= numpy.array(e)
-    show_heatmap(s, t, e)
+
+    # Store results and parameters in dataframes
+    data = pd.DataFrame({'torque': t, 'speed': s, 'efficiency': e}, index=None)
+    parameters = pd.Series(
+        {'case_temperature': case_temperature,
+         'Rg': Rg,
+         'switching_frequency': switching_frequency,
+         'bus_voltage': bus_voltage,
+         'max_speed_ref': max_speed_ref,
+         'max_current_ref': max_current_ref})
+    script_folder = os.path.realpath(os.path.dirname(__file__))
+    timestamp = datetime.now().strftime("%Y-%m-%d")
+    data.to_pickle(os.path.join(script_folder, "map_data_" + timestamp + ".pkl"))
+    parameters.to_pickle(os.path.join(script_folder, "map_parameters_" + timestamp + ".pkl"))
