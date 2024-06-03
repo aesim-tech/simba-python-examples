@@ -70,7 +70,7 @@ for op_index, speed_key in enumerate(speed_refs):
         axs[mod_item_index, op_index].set_ylim(0, ymax*1.25)
         axs[mod_item_index, op_index].grid(visible=True, which="major", axis='y')
 
-fig.tight_layout()
+fig.tight_layout(pad = 2)
 
 plt.show()
 
