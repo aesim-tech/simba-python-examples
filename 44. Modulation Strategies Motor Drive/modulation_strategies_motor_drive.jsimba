@@ -4045,9 +4045,9 @@
               "Name": "JmagRTMotor"
             },
             "EnabledScopes": [
-              "Te",
+              "Copper Loss (average)",
               "Iron Loss (average)",
-              "Copper Loss (average)"
+              "Te"
             ],
             "ParametersDisplayAttributes": {
               "IronLossType": {
@@ -5957,7 +5957,10 @@
               "Vdf": "4.7",
               "Name": "T2"
             },
-            "EnabledScopes": [],
+            "EnabledScopes": [
+              "Average Conduction Losses (W)",
+              "Average Switching Losses (W)"
+            ],
             "ThermalDataID": "19d47263-66b7-4e04-a484-ccfec734340f",
             "LossCalculationFrequency": "(RPM*NPP)/60",
             "InitialTemperature": "95",
@@ -6028,7 +6031,10 @@
               "Vdf": "4.7",
               "Name": "T3"
             },
-            "EnabledScopes": [],
+            "EnabledScopes": [
+              "Average Conduction Losses (W)",
+              "Average Switching Losses (W)"
+            ],
             "ThermalDataID": "19d47263-66b7-4e04-a484-ccfec734340f",
             "LossCalculationFrequency": "(RPM*NPP)/60",
             "InitialTemperature": "95",
@@ -11425,7 +11431,10 @@
               "Vdf": "4.7",
               "Name": "T2"
             },
-            "EnabledScopes": [],
+            "EnabledScopes": [
+              "Average Conduction Losses (W)",
+              "Average Switching Losses (W)"
+            ],
             "ThermalDataID": "19d47263-66b7-4e04-a484-ccfec734340f",
             "LossCalculationFrequency": "(RPM*NPP)/60",
             "InitialTemperature": "95",
@@ -11495,77 +11504,6 @@
               "Rdon": "0",
               "Vdf": "4.7",
               "Name": "T3"
-            },
-            "EnabledScopes": [],
-            "ThermalDataID": "19d47263-66b7-4e04-a484-ccfec734340f",
-            "LossCalculationFrequency": "(RPM*NPP)/60",
-            "InitialTemperature": "95",
-            "CustomVariables": [
-              {
-                "Name": "Rgon",
-                "Value": "5",
-                "Description": "External turn-on gate resistance"
-              },
-              {
-                "Name": "Rgoff",
-                "Value": "2",
-                "Description": "External turn-off gate resistance"
-              }
-            ],
-            "ParametersDisplayAttributes": {
-              "Ron": {
-                "IsVisible": false,
-                "Suffix": "",
-                "RelativeLocation": "1 0",
-                "UnrotatedWidth": 2,
-                "UnrotatedHeight": 1,
-                "FontSize": 12,
-                "Color": "#0081BC"
-              },
-              "Rdon": {
-                "IsVisible": false,
-                "Suffix": "",
-                "RelativeLocation": "1 1",
-                "UnrotatedWidth": 2,
-                "UnrotatedHeight": 1,
-                "FontSize": 12,
-                "Color": "#0081BC"
-              },
-              "Vdf": {
-                "IsVisible": false,
-                "Suffix": "",
-                "RelativeLocation": "1 2",
-                "UnrotatedWidth": 2,
-                "UnrotatedHeight": 1,
-                "FontSize": 12,
-                "Color": "#0081BC"
-              },
-              "Name": {
-                "IsVisible": true,
-                "Suffix": "",
-                "RelativeLocation": "3 2",
-                "UnrotatedWidth": 3,
-                "UnrotatedHeight": 2,
-                "FontSize": 12,
-                "Color": "#0081BC"
-              }
-            }
-          },
-          {
-            "LibraryName": "Ideal MOSFET with Diode",
-            "Top": -2,
-            "Left": 4,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Disabled": false,
-            "Name": "T6",
-            "ID": "11893b30-b894-4f46-97cd-103eb89e5a58",
-            "Parameters": {
-              "Ron": "2.6m",
-              "Rdon": "0",
-              "Vdf": "4.7",
-              "Name": "T6"
             },
             "EnabledScopes": [
               "Average Conduction Losses (W)",
@@ -11862,6 +11800,80 @@
                 "Color": "#E59400"
               }
             }
+          },
+          {
+            "LibraryName": "Ideal MOSFET with Diode",
+            "Top": -1,
+            "Left": 4,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "T6",
+            "ID": "11893b30-b894-4f46-97cd-103eb89e5a58",
+            "Parameters": {
+              "Ron": "2.6m",
+              "Rdon": "0",
+              "Vdf": "4.7",
+              "Name": "T6"
+            },
+            "EnabledScopes": [
+              "Average Conduction Losses (W)",
+              "Average Switching Losses (W)"
+            ],
+            "ThermalDataID": "19d47263-66b7-4e04-a484-ccfec734340f",
+            "LossCalculationFrequency": "(RPM*NPP)/60",
+            "InitialTemperature": "95",
+            "CustomVariables": [
+              {
+                "Name": "Rgon",
+                "Value": "5",
+                "Description": "External turn-on gate resistance"
+              },
+              {
+                "Name": "Rgoff",
+                "Value": "2",
+                "Description": "External turn-off gate resistance"
+              }
+            ],
+            "ParametersDisplayAttributes": {
+              "Ron": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 0",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              },
+              "Rdon": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              },
+              "Vdf": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 2",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              },
+              "Name": {
+                "IsVisible": true,
+                "Suffix": "",
+                "RelativeLocation": "3 2",
+                "UnrotatedWidth": 3,
+                "UnrotatedHeight": 2,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              }
+            }
           }
         ],
         "Connectors": [
@@ -11876,14 +11888,32 @@
               {
                 "StartX": -2,
                 "StartY": 4,
-                "EndX": 6,
+                "EndX": 4,
                 "EndY": 4
               },
               {
-                "StartX": 6,
+                "StartX": 4,
+                "StartY": 4,
+                "EndX": 4,
+                "EndY": 5
+              },
+              {
+                "StartX": 4,
+                "StartY": 5,
+                "EndX": 6,
+                "EndY": 5
+              },
+              {
+                "StartX": 16,
                 "StartY": 4,
                 "EndX": 16,
-                "EndY": 4
+                "EndY": 5
+              },
+              {
+                "StartX": 16,
+                "StartY": 5,
+                "EndX": 6,
+                "EndY": 5
               },
               {
                 "StartX": 16,
@@ -12389,7 +12419,7 @@
                 "StartX": 6,
                 "StartY": -7,
                 "EndX": 6,
-                "EndY": -2
+                "EndY": -1
               },
               {
                 "StartX": 6,
@@ -12404,7 +12434,7 @@
                 "EndY": -7
               }
             ],
-            "Name": "C2"
+            "Name": "C34"
           },
           {
             "Segments": [
@@ -12450,12 +12480,6 @@
                 "EndY": -9
               },
               {
-                "StartX": 8,
-                "StartY": 3,
-                "EndX": 9,
-                "EndY": 3
-              },
-              {
                 "StartX": 18,
                 "StartY": 3,
                 "EndX": 19,
@@ -12474,15 +12498,21 @@
                 "EndY": 8
               },
               {
-                "StartX": 29,
-                "StartY": -9,
-                "EndX": 29,
-                "EndY": 3
+                "StartX": 8,
+                "StartY": 4,
+                "EndX": 9,
+                "EndY": 4
               },
               {
-                "StartX": 29,
-                "StartY": 3,
-                "EndX": 29,
+                "StartX": 9,
+                "StartY": -9,
+                "EndX": 9,
+                "EndY": 4
+              },
+              {
+                "StartX": 9,
+                "StartY": 4,
+                "EndX": 9,
                 "EndY": 6
               },
               {
@@ -12504,15 +12534,15 @@
                 "EndY": 6
               },
               {
-                "StartX": 9,
+                "StartX": 29,
                 "StartY": -9,
-                "EndX": 9,
+                "EndX": 29,
                 "EndY": 3
               },
               {
-                "StartX": 9,
+                "StartX": 29,
                 "StartY": 3,
-                "EndX": 9,
+                "EndX": 29,
                 "EndY": 6
               },
               {
@@ -12528,7 +12558,7 @@
                 "EndY": 6
               }
             ],
-            "Name": "C13"
+            "Name": "C35"
           },
           {
             "Segments": [
@@ -12551,6 +12581,17 @@
               }
             ],
             "Name": "C33"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 4,
+                "StartY": 1,
+                "EndX": 4,
+                "EndY": 2
+              }
+            ],
+            "Name": "C2"
           }
         ],
         "Name": "Top Circuit - Copy - Copy",
@@ -18106,7 +18147,10 @@
               "Vdf": "4.7",
               "Name": "T2"
             },
-            "EnabledScopes": [],
+            "EnabledScopes": [
+              "Average Conduction Losses (W)",
+              "Average Switching Losses (W)"
+            ],
             "ThermalDataID": "19d47263-66b7-4e04-a484-ccfec734340f",
             "LossCalculationFrequency": "(RPM*NPP)/60",
             "InitialTemperature": "95",
@@ -18177,7 +18221,10 @@
               "Vdf": "4.7",
               "Name": "T3"
             },
-            "EnabledScopes": [],
+            "EnabledScopes": [
+              "Average Conduction Losses (W)",
+              "Average Switching Losses (W)"
+            ],
             "ThermalDataID": "19d47263-66b7-4e04-a484-ccfec734340f",
             "LossCalculationFrequency": "(RPM*NPP)/60",
             "InitialTemperature": "95",
@@ -18486,7 +18533,10 @@
               "Vdf": "4.7",
               "Name": "T6"
             },
-            "EnabledScopes": [],
+            "EnabledScopes": [
+              "Average Conduction Losses (W)",
+              "Average Switching Losses (W)"
+            ],
             "ThermalDataID": "19d47263-66b7-4e04-a484-ccfec734340f",
             "LossCalculationFrequency": "(RPM*NPP)/60",
             "InitialTemperature": "95",

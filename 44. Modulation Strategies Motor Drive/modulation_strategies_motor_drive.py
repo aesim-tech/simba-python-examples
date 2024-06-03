@@ -10,7 +10,6 @@ from datetime import datetime
 #         PARAMETERS        #
 #############################
 number_of_parallel_simulations = License.NumberOfAvailableParallelSimulationLicense() # Number of available Parallel Simulation License
-number_of_parallel_simulations = 1
 
 # Define two operating points
 rpm_speed_refs = [2000, 4000]
