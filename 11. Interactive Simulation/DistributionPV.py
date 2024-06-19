@@ -492,8 +492,14 @@ case_choix_V.pack()
 [ax1,ax2,fig,ln_I, ln_I_PV,ln_I_AFE,ln_I_charge,ln_I_bat,ln_V,ln_V_PV,ln_V_AFE,ln_V_charge,ln_V_bat] = initialisation_graphe()
 canvas_graphique = FigureCanvasTkAgg(fig, case_graphique)
 canvas_graphique.get_tk_widget().pack(padx=10, pady=10, expand=YES)
-ani = animation.FuncAnimation(fig, affichage, interval=1000)
 
-# afficher la fenetre si hors de l'environnement de test
-if os.environ.get("SIMBA_SCRIPT_TEST") == False:
-    fenetre.mainloop()
+def update_plot():
+    affichage(None)  # Assuming affichage function can handle being called without an argument or handle it appropriately
+    canvas_graphique.draw()
+    fenetre.after(1000, update_plot)
+
+if os.environ.get("SIMBA_SCRIPT_TEST"):
+    exit()
+
+fenetre.after(1000, update_plot)
+fenetre.mainloop()
