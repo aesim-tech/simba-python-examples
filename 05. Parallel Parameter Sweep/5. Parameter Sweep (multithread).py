@@ -64,7 +64,7 @@ def run_job(simulation_number, duty_cycle, calculated_voltages):
 if __name__ == "__main__":  # Called only in main thread.
     print("1. Initialization")
     numberOfPoints = 200  # Run 200 simulations
-    duty_cycles = np.arange(0.00, 0.9, 0.9 / numberOfPoints)
+    duty_cycles = np.arange(0.00, 0.9, 0.9 / numberOfPoints).tolist()
     calculated_voltages = [None] * len(duty_cycles)
     threads = []
 

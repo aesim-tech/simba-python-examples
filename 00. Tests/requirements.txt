@@ -1,6 +1,6 @@
 tqdm
 aesim.simba >= 2024.2.8
-numpy <= 1.26
+numpy
 matplotlib
 scipy
 nbconvert

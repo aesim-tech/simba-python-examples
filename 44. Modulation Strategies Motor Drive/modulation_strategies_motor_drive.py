@@ -50,7 +50,7 @@ def run_simulation(id_ref, iq_ref, rpm_speed_ref, fpwm, modulation_key, sim_numb
     
     # Set speeds and id, iq references
     speed_source_rads = design.Circuit.GetDeviceByName('W1')
-    speed_source_rads.Voltage = (rpm_speed_ref*np.pi/30)
+    speed_source_rads.Voltage = float(rpm_speed_ref*np.pi/30)
     id_ref_block = design.Circuit.GetDeviceByName('Id_ref')
     id_ref_block.Value = id_ref
     iq_ref_block = design.Circuit.GetDeviceByName('Iq_ref')
@@ -62,7 +62,7 @@ def run_simulation(id_ref, iq_ref, rpm_speed_ref, fpwm, modulation_key, sim_numb
     job = design.TransientAnalysis.NewJob()
     status = job.Run()
     if str(status) != "OK" or log: 
-        print (job.Summary()[:-1])
+        print (job.Summary())
 
     # Get inverter Losses
     conduction_losses = sum([job.GetSignalByName('T' + str(n) + ' - Average Conduction Losses (W)').DataPoints[-1] for n in range(1, 7)])

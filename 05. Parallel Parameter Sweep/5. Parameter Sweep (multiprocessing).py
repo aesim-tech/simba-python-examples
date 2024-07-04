@@ -79,7 +79,7 @@ def run_job_star(args):
 # %% Create the jobs and start the calculatiom 
 if __name__ == "__main__": # Called only in main thread
     print("1. Initialization")
-    duty_cycles = np.arange(duty_cycle_min, duty_cycle_max, duty_cycle_max / numberOfPoints)
+    duty_cycles = np.arange(duty_cycle_min, duty_cycle_max, duty_cycle_max / numberOfPoints).tolist()
 
     manager = multiprocessing.Manager()
     calculated_voltages = manager.list(range(len(duty_cycles)))

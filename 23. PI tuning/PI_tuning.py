@@ -12,8 +12,8 @@ Average_Current_Mode_Control = project.GetDesignByName('Average Current Mode Con
 
 
 # PI definition 
-kp_c = np.arange(1, 7, 1)   # Kp values 
-ki_c = np.arange (1000, 100000, 20000)  # Ki values
+kp_c = np.arange(1, 7, 1).tolist()   # Kp values 
+ki_c = np.arange (1000, 100000, 20000).tolist()  # Ki values
 Vouts = []
 
 # plot file creation + sweep of PI

@@ -5,7 +5,7 @@ from aesim.simba import DesignExamples
 
 #%% Calculating Vout=f(dutycycle)
 BuckBoostConverter = DesignExamples.BuckBoostConverter()
-dutycycles = np.arange(0.00, 0.9, 0.9/30)
+dutycycles = np.arange(0.00, 0.9, 0.9/30).tolist()
 Vouts = []
 for dutycycle in dutycycles:
     # Set duty cycle value

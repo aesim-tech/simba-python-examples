@@ -9,9 +9,11 @@ def objective_function(R_load):
     current_folder = os.path.dirname(os.path.abspath(__file__))
     project = ProjectRepository(os.path.join(current_folder , "max_power.jsimba"))
     design = project.GetDesignByName('Design 1')
-    design.Circuit.GetDeviceByName('R2').Value = R_load[0]
+    design.Circuit.GetDeviceByName('R2').Value = float(R_load[0])
     job = design.TransientAnalysis.NewJob()
     status = job.Run()
+    if str(status) != "OK": 
+        raise Exception(job.Summary())
     Iout = job.GetSignalByName('R2 - Current').DataPoints
     power = Iout[-1]**2*R_load
     project.Save()

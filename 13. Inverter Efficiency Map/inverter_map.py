@@ -195,8 +195,8 @@ if __name__ == "__main__": # Called only in main thread. It confirms that the co
     min_speed_ref = relative_minimum_speed * max_speed_ref;
     min_current_ref = relative_minimum_current * max_current_ref;
     
-    speed_refs = np.arange(min_speed_ref, max_speed_ref, (max_speed_ref - min_speed_ref)/number_of_speed_points)
-    current_refs = np.arange(min_current_ref, max_current_ref, (max_current_ref - min_current_ref)/number_of_current_points)
+    speed_refs = np.arange(min_speed_ref, max_speed_ref, (max_speed_ref - min_speed_ref)/number_of_speed_points).tolist()
+    current_refs = np.arange(min_current_ref, max_current_ref, (max_current_ref - min_current_ref)/number_of_current_points).tolist()
     
     manager = multiprocessing.Manager()
     result_dict = manager.dict()
