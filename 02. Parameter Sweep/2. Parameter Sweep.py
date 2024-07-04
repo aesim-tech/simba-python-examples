@@ -15,6 +15,8 @@ for dutycycle in dutycycles:
     # Run calculation
     job = BuckBoostConverter.TransientAnalysis.NewJob()
     status = job.Run()
+    if str(status) != "OK": 
+        raise Exception(job.Summary())
 
     # Retrieve results
     t = np.array(job.TimePoints)
