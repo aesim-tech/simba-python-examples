@@ -8,14 +8,7 @@ from datetime import datetime
 import pandas as pd
 import os
 
-#%% To export a figure on a dark bakcground
-COLOR = 'white'
-mpl.rcParams['text.color'] = COLOR
-mpl.rcParams['axes.labelcolor'] = COLOR
-mpl.rcParams['xtick.color'] = COLOR
-mpl.rcParams['ytick.color'] = COLOR
-mpl.rcParams["lines.color"] = COLOR
-mpl.rc('axes',edgecolor=COLOR)
+COLOR = 'black'
 
 #%% Heatmap plot function
 def show_heatmap(x, y, z, parameters):
@@ -55,6 +48,4 @@ data = pd.read_pickle(os.path.join(script_folder, 'map_data_2024-05-02.pkl'))
 parameters = pd.read_pickle(os.path.join(script_folder, 'map_parameters_2024-05-02.pkl'))
 fig = show_heatmap(data['speed'], data['torque'], data['efficiency'], parameters)
 
-#%% save fig
-plt.savefig(os.path.join(script_folder, 'eff_map.svg'), transparent=True)
 plt.show()
