@@ -1,5 +1,5 @@
 tqdm
-aesim.simba >= 2024.2.8
+aesim.simba >= 2024.9.6
 numpy
 matplotlib
 scipy
