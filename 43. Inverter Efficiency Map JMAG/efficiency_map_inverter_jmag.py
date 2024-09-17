@@ -67,8 +67,8 @@ def run_simulation(id_ref, iq_ref, speed_ref, case_temperature, Rg, sim_number, 
     # Set Test Target Data
     # operating point
     simba_full_design.Circuit.SetVariableValue("RPM", str(speed_ref))
-    simba_full_design.Circuit.GetDeviceByName("Id_ref").Value = id_ref
-    simba_full_design.Circuit.GetDeviceByName("Iq_ref").Value = iq_ref
+    simba_full_design.Circuit.GetDeviceByName("Id_ref").Value = str(id_ref)
+    simba_full_design.Circuit.GetDeviceByName("Iq_ref").Value = str(iq_ref)
     
     # inverter settings
     simba_full_design.Circuit.SetVariableValue("Tcase", str(case_temperature))
