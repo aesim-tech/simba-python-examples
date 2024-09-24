@@ -8,43 +8,47 @@ tags:
 
 [Download **Python script**](flyback_script.py)
 
-[Download **Matlab file**](start.m) (not mandatory)
 
-This case shows the cability to run and launch a Python script from Matlab with the SIMBA Python library.
+This case shows the capability to run a Python script from Matlab with the SIMBA Python library: a python script named *"Flyback.py"* is run from *Matlab* with the command: `pyrunfile(file_name.py)`.
 
-A Python script named "Flyback.py" is executed from Matlab by using the command **pyrunfile(file_name.py)**
+!!! information "More information [here about the pyrunfile](https://fr.mathworks.com/help/matlab/ref/pyrunfile.html) function."
 
-More information about the **pyrunfile** function could been found [there](https://fr.mathworks.com/help/matlab/ref/pyrunfile.html)
+## Set-up procedure
 
-## Procedure to follow before running a python script
+Here is the procedure to follow before running a python script from Matlab:
 
-Below the procedure to follow before to run the python script into Matlab:
+1. Check the Python version that you are using is compatible with the Matlab version installed in your computer on this [Mathworks webpage](https://fr.mathworks.com/support/requirements/python-compatibility.html).
+2. Set the PYTHONPATH environment variable:
+     * for easier manipulation, a *system* environment variable named PYHOME can first be set - according to your python installation location - in the OS settings:
+     ```
+     PYHOME C:/Users/JohnDoe/AppData/Local/Programs/Python/Python310
+     ```
+     * then, the PYTHONPATH environment variable can be defined:
+     ```
+     PYTHONPATH  %PY_HOME%/Lib;%PY_HOME%/DLLs;%PY_HOME%/Lib/lib-tk;%PY_HOME%/Scripts/;%PY_HOME%/Lib/site-packages
+     ```
 
-* First you need to make sure that the Python version that you are using is compatible with the Matlab version installed in your computer: [Matlab/Python_version](https://fr.mathworks.com/support/requirements/python-compatibility.html)
-* An environment variable with the following syntax could be set in the OS settings for easier manipulation: **system variable**
-  
-PYHOME        <span style='color:red'>C:\Users\JohnDoe\AppData\Local\Programs\Python\Python310</span>  
+??? tip "How to resolve a possible error *Tclerror* when calling python from Matlab?"
 
-This path needs to be changed depending on your python installation location
+    TCL uses hard coded location of *tcl_library_path* to find its initialization files which does not work when Python is loaded by Matlab.
+    More information could be found [there](https://fr.mathworks.com/matlabcentral/answers/1842093-how-to-resolve-error-calling-python-from-matlab).
 
-PYTHONPATH    %PY_HOME%\Lib;%PY_HOME%\DLLs;%PY_HOME%\Lib\lib-tk;%PY_HOME%\Scripts\;%PY_HOME%\Lib\site-packages
+    In such cases, it is possible to run in a Matlab console the following commands to set the <span style='color:red'>tcl8.6</span> and <span style='color:red'>tk8.6</span> library paths:
 
+    ```
+    setenv('TCL_LIBRARY', 'C:/Users/JohnDoe/AppData/Local/Programs/Python/Python310/tcl/tcl8.6');
+    setenv('TK_LIBRARY', 'C:/Users/JohnDoe/AppData/Local/Programs/Python/Python310/tcl/tk8.6');
+    py.tkinter.Tk;
+    ```
+    These lines have be changed according to your Python installation.
 
-* The Matlab file **start.m** could be run only if some issues appear with the initialisation of TCL.
+    As these commands have to be run every time you run Matlab, it is possible to write them in an initialization script, such as the *start.m* file. An example of this startup file can be [downloaded here](start.m).
 
-In that case you'll need to edit this file and change the installation path of <span style='color:red'>tcl8.6</span> and <span style='color:red'>tk8.6</span> (could be changed according to your Python version installed):
+    Matlab can be restarted to run its startup file or this startup file can be run manually:
 
-setenv('TCL_LIBRARY', <span style='color:red'>'C:\Users\amc\AppData\Local\Programs\Python\Python310\tcl\tcl8.6')</span>;
-
-setenv('TK_LIBRARY', <span style='color:red'>'C:\Users\amc\AppData\Local\Programs\Python\Python310\tcl\tk8.6')</span>;
-
-py.tkinter.Tk;
-
-Once the file is modified according to your environment, please feel free to run this file in Matlab by using the following syntax:
-
-**run("set_location_path\start.m")**
-
-More information could be found [there](https://fr.mathworks.com/matlabcentral/answers/1842093-how-to-resolve-error-calling-python-from-matlab)
+    ```
+    run("<set_location_path>/start.m")
+    ```
 
 ## SIMBA circuit
 
@@ -57,37 +61,40 @@ Below the Flyback power converter used for this case. This example comes from th
 
 The Python script run from Matlab will do the following tasks:
 
-* Load the flyback power converter from existing SIMBA collection of examples
-* Run a transient analysis and get the ouput voltage accross R2 resistance
-* Create an array named **result** which host both time and voltage values
-* Plot the output voltage VR2 by using matplotlib module
+* Load the flyback power converter from existing SIMBA collection of examples,
+* Run a transient analysis and get the ouput voltage accross $R_2$ resistance,
+* Create an array named **result** which contains both time and voltage vectors,
+* Plot the output voltage $V_{R_2}$ with matplotlib module.
+
 
 ## Matlab GUI
 
-Open Matlab and in the **Command window**, feel free to type:
+
+To check the previous set-up, the following line can be run in a matlab command window:
 
 ```
 py.math.sqrt(4)
 ```
+You should get the answer : *ans = 2*
 
+Now let's run the command below to simulate a flyback converter:
 
-You should see the answer : *ans = 2*
-
-Now you can run the syntax below:
-
-run(<span style='color:red'>"D:\OneDrive - Powersys\Disque E\SIMBA\Python\Script\Matlab\start.m"</span>)   (only if you face some issues with TCL init + change location_path)
-
-pyrunfile(<span style='color:red'>"D:\OneDrive - Powersys\Disque E\SIMBA\Python\Script\Matlab\Flyback.py"</span>) (feel free to change the path of the "Flyback.py" file depending on your computer)
+```
+pyrunfile("<filepath>/Flyback.py")
+```
 
 Once executed you should obtain this behavior:
 
 ![result](fig/result.png)
 
+
 ## Conclusion
 
 We can also type this below command in order to display in Matlab the array defined in the script which host both time and output voltage values:
 
-result= pyrunfile(<span style='color:red'>"D:\OneDrive - Powersys\Disque E\SIMBA\Python\Script\Matlab\Flyback.py","result")</span>
+```
+result = pyrunfile("<filepath>/Flyback.py","result")
+```
 
 Once executed you should obtain this behavior:
 
