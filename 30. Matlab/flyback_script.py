@@ -5,6 +5,7 @@ import numpy as np
 
 #%% Load project
 flybackConverter = DesignExamples.DCDC_Flyback()
+flybackConverter.TransientAnalysis.CompressScopes = True
 
 #%% Get the job object and solve the system
 job = flybackConverter.TransientAnalysis.NewJob()
@@ -12,15 +13,8 @@ status = job.Run()
 
 #%% Get results
 t = job.TimePoints
-Vout = job.GetSignalByName('R2 - Instantaneous Voltage').DataPoints
+R2_signal = job.GetSignalByName('R2 - Instantaneous Voltage') 
+t = R2_signal.TimePoints
+vout = R2_signal.DataPoints
 
-result = np.array([t, Vout])  # the time and Vout datas are stored into an array to retrieve datas into Matlab
-
-#%% Plot Curve
-fig, ax = plt.subplots()
-ax.set_title(flybackConverter.Name)
-ax.set_ylabel('Vout (V)')
-ax.set_xlabel('time (s)')
-ax.plot(t,Vout)
-plt.show()
-# %%
+result = np.array([t, vout])  # compressed time and vout data are stored into an array to be sent to Matlab
