@@ -2,33 +2,75 @@ import os
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.tri as tri
-from scipy.spatial import ConvexHull, Delaunay
 from datetime import datetime
+from scipy.spatial import ConvexHull, Delaunay
+import numpy as np
+import matplotlib.pyplot as plt
+import matplotlib.tri as tri
+from scipy.spatial import ConvexHull
 
 def show_heatmap(fig, ax1, x, y, z, xlabel, ylabel, title, cmap):
     """
-    Show the efficiency points and add a contour plot for efficiency values
+    Display a heatmap with tricontourf to fill the entire area defined by the data points.
     """
-    # Create grid values first.
-    xi, yi = np.linspace(x.min(), x.max(), 100), np.linspace(y.min(), y.max(), 100)
+    # Ensure inputs are numpy arrays
+    x = np.asarray(x)
+    y = np.asarray(y)
+    z = np.asarray(z)
     
-    scipy_triang = Delaunay(np.vstack((x, y)).T)
-    triang = tri.Triangulation(x, y, triangles=scipy_triang.simplices)
-   
-    interpolator = tri.LinearTriInterpolator(triang, z)
-    Xi, Yi = np.meshgrid(xi, yi)
-    zi = interpolator(Xi, Yi)
+    # Remove NaNs and Infs from data
+    valid_mask = (~np.isnan(x) & ~np.isnan(y) & ~np.isnan(z) &
+                  ~np.isinf(x) & ~np.isinf(y) & ~np.isinf(z))
+    x_clean, y_clean, z_clean = x[valid_mask], y[valid_mask], z[valid_mask]
     
-    # Creating outer plot
-    points = np.column_stack((x, y))
-    hull = ConvexHull(points)
-    ax1.plot(points[hull.vertices,0], points[hull.vertices,1], 'k--', lw=2)
-
-    cntr1 = ax1.contourf(xi, yi, zi, levels=100, cmap=cmap)
-
+    # Remove duplicate points
+    points = np.column_stack((x_clean, y_clean))
+    unique_points, unique_indices = np.unique(points, axis=0, return_index=True)
+    x_unique = unique_points[:, 0]
+    y_unique = unique_points[:, 1]
+    z_unique = z_clean[unique_indices]
+    
+    # Check if there are enough points for triangulation
+    if len(x_unique) < 3:
+        print("Not enough unique points to perform triangulation.")
+        return
+    
+    # Create triangulation
+    triang = tri.Triangulation(x_unique, y_unique)
+    
+    # Plot Convex Hull if possible
+    try:
+        hull = ConvexHull(points)
+        # Close the convex hull path by appending the first vertex index
+        hull_vertices = np.append(hull.vertices, hull.vertices[0])
+        ax1.plot(points[hull_vertices, 0], points[hull_vertices, 1], 'k--', lw=1)
+    except Exception as e:
+        print(f"An error occurred during ConvexHull calculation: {e}")
+    
+    # Create tricontourf plot
+    cntr1 = ax1.tricontourf(triang, z_unique, levels=100, cmap=cmap)
+    
+    # Add colorbar
     fig.colorbar(cntr1, ax=ax1)
-    ax1.plot(x, y, 'ko', ms=1)
-    ax1.set(xlim=(0, x.max()), ylim=(0, y.max()))
+    
+    # Plot original data points
+    ax1.plot(x_unique, y_unique, 'ko', ms=1)
+    
+    zoom_out = 0.1
+    # Calculate axis limits and zoom out
+    x_min, x_max = x_unique.min(), x_unique.max()
+    y_min, y_max = y_unique.min(), y_unique.max()
+    x_range = x_max - x_min
+    y_range = y_max - y_min
+
+    # Adjust the limits to zoom out
+    x_buffer = x_range * zoom_out
+    y_buffer = y_range * zoom_out
+
+    ax1.set_xlim(x_min - x_buffer, x_max + x_buffer)
+    ax1.set_ylim(y_min - y_buffer, y_max + y_buffer)
+    
+    # Set labels and title
     ax1.set_xlabel(xlabel)
     ax1.set_ylabel(ylabel)
     ax1.set_title(title)
