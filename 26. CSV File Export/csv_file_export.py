@@ -17,8 +17,9 @@ if str(status) != 'OK':
     print(job.Summary())
 
 # Get results
-t = job.TimePoints
-Vout = job.GetSignalByName('R2 - Voltage').DataPoints
+Vout_signal = job.GetSignalByName('R2 - Voltage')
+t = Vout_signal.TimePoints
+Vout = Vout_signal.DataPoints
 
 # create and export results into csv file
 file = open('Output_voltage.csv', 'w')

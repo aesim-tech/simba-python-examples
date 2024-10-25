@@ -25,8 +25,9 @@ job = flybackConverter.TransientAnalysis.NewJob()
 status = job.Run()
 
 #%% Get results
-t = job.TimePoints
-Vout = job.GetSignalByName('R2 - Instantaneous Voltage').DataPoints
+Vout_signal = job.GetSignalByName('R2 - Instantaneous Voltage')
+t = Vout_signal.TimePoints
+Vout =Vout_signal.DataPoints
 sampled_signal = job.GetSignalByName('VP1 - Out')
 sampled_signal_data = sampled_signal.DataPoints
 

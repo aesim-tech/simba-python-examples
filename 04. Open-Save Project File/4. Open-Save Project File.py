@@ -58,15 +58,14 @@ job = design.TransientAnalysis.NewJob()
 status = job.Run()
 
 #%% Get results
-t = job.TimePoints
-Vout = job.GetSignalByName('R1 - Instantaneous Voltage').DataPoints
+Vout = job.GetSignalByName('R1 - Instantaneous Voltage')
 
 #%% Plot Curve
 fig, ax = plt.subplots()
 ax.set_title(design.Name)
 ax.set_ylabel('Vout (V)')
 ax.set_xlabel('time (s)')
-ax.plot(t,Vout)
+ax.plot(Vout.TimePoints,Vout.DataPoints)
 plt.show()
 
 # %%

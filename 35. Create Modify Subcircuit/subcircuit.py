@@ -56,10 +56,12 @@ for signal in job2.Signals:
     print(' - ' + signal.get_Name())
 
 # Get results
-t = job1.TimePoints
-t2 = job2.TimePoints
-Vout = job1.GetSignalByName('R2 - Instantaneous Voltage').DataPoints        # without subcircuit
-Vout2 = job2.GetSignalByName('Sc1:R2 - Instantaneous Voltage').DataPoints  # with subcircuit
+signal1 = job1.GetSignalByName('R2 - Instantaneous Voltage');
+signal2 = job2.GetSignalByName('Sc1:R2 - Instantaneous Voltage')
+t1 = signal1.TimePoints
+t2 = signal2.TimePoints
+Vout1 = signal1.DataPoints  # without subcircuit
+Vout2 = signal2.DataPoints  # with subcircuit
 
 
 #%% Plot Curve
@@ -67,7 +69,7 @@ fig, ax = plt.subplots()
 ax.set_title("Output voltage depending on Resistor value (R2)")
 ax.set_ylabel('Vout (V)')
 ax.set_xlabel('time (s)')
-ax.plot(t,Vout, 'b')
+ax.plot(t1,Vout1, 'b')
 ax.plot(t2,Vout2, '+r')
 ax.legend(["R2 = 3 ohms", "R2 = 6 ohms"])
 

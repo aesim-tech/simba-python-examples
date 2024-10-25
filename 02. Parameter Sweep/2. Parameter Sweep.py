@@ -19,8 +19,9 @@ for dutycycle in dutycycles:
         raise Exception(job.Summary())
 
     # Retrieve results
-    t = np.array(job.TimePoints)
-    Vout = np.array(job.GetSignalByName('Rload - Voltage').DataPoints)
+    Vout_signal = job.GetSignalByName('Rload - Voltage')
+    t = np.array(Vout_signal.TimePoints)
+    Vout = np.array(Vout_signal.DataPoints)
 
     # Average output voltage for t > 5ms
     indices = np.where(t >= 0.005)

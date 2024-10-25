@@ -16,7 +16,7 @@ RLC = project.GetDesignByName('RLC')
 #%% Nominal case
 job = RLC.TransientAnalysis.NewJob()
 status = job.Run()
-tnom = job.TimePoints
+tnom = job.GetSignalByName('R2 - Voltage').TimePoints
 vout_nom = job.GetSignalByName('R2 - Voltage').DataPoints
 
 vout_nom_max = max(vout_nom)
@@ -28,7 +28,7 @@ R1 = RLC.Circuit.GetDeviceByName('R1')
 RLC.Circuit.AddConnection(R1.P, R1.N)
 job = RLC.TransientAnalysis.NewJob()
 status = job.Run()
-tfault = job.TimePoints
+tfault = job.GetSignalByName('R2 - Voltage').TimePoints
 Vout_fault = job.GetSignalByName('R2 - Voltage').DataPoints
 
 vout_fault_max = max(Vout_fault)

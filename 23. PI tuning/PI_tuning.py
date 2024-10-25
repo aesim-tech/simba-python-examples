@@ -52,8 +52,9 @@ for kp in kp_c:   # Kp loop
             print(job.Summary())
     
         # Retrieve results
-        t = np.array(job.TimePoints)
-        Vout = np.array(job.GetSignalByName('R1 - Instantaneous Voltage').DataPoints)
+        Vout_signal = job.GetSignalByName('R1 - Instantaneous Voltage')
+        t = np.array(Vout_signal.TimePoints)
+        Vout = np.array(Vout_signal.DataPoints)
 
         ax1.plot(t,Vout, label= 'ki = ' + str("{:.1e}".format(ki)))
         ax1.legend(fontsize=8) 

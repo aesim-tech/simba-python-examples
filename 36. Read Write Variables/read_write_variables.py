@@ -12,8 +12,9 @@ job = Thyristor_bridge.TransientAnalysis.NewJob()
 status = job.Run()
 
 #%% Get results
-t = job.TimePoints
-Vout = job.GetSignalByName('Udc - Instantaneous Voltage').DataPoints
+Vout_signal = job.GetSignalByName('Udc - Instantaneous Voltage')
+t = Vout_signal.TimePoints
+Vout = Vout_signal.DataPoints
 
 
 #%% New assignment for "fgrid" value inside the "design variables" window
@@ -24,8 +25,9 @@ job2 = Thyristor_bridge.TransientAnalysis.NewJob()
 status = job2.Run()
 
 #%% Get results for the new job2
-t2 = job2.TimePoints
-Vout1 = job2.GetSignalByName('Udc - Instantaneous Voltage').DataPoints
+Vout_signal2 = job2.GetSignalByName('Udc - Instantaneous Voltage')
+t2 = Vout_signal2.TimePoints
+Vout2 = Vout_signal2.DataPoints
 
 #%% Plot Curve
 fig, ax = plt.subplots()
@@ -33,7 +35,7 @@ ax.set_title(Thyristor_bridge.Name)
 ax.set_ylabel('Vout (V)')
 ax.set_xlabel('time (s)')
 ax.plot(t,Vout, 'b')
-ax.plot(t2,Vout1, 'r')
+ax.plot(t2,Vout2, 'r')
 ax.legend(["fgrid = 50 Hz", "fgrid = 60 Hz"])
 
 plt.show()

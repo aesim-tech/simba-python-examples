@@ -13,10 +13,24 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "Ground1",
             "ID": "887c3501-9e48-4f37-bfbc-1b46a11c6fd3",
-            "Parameters": {},
-            "EnabledScopes": []
+            "Parameters": {
+              "Name": "Ground1"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "4 3",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 2,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              }
+            }
           },
           {
             "LibraryName": "Resistor",
@@ -25,12 +39,34 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "R1",
             "ID": "dd765f0e-4db0-4d9a-9f21-9ca81d6fc197",
             "Parameters": {
-              "Value": "3"
+              "Value": "3",
+              "Name": "R1"
             },
-            "EnabledScopes": []
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Value": {
+                "IsVisible": true,
+                "Suffix": "\u03A9",
+                "RelativeLocation": "2 2",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              },
+              "Name": {
+                "IsVisible": true,
+                "Suffix": "",
+                "RelativeLocation": "2 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              }
+            }
           },
           {
             "LibraryName": "Resistor",
@@ -39,15 +75,37 @@
             "Angle": 90,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "R2",
             "ID": "c64f20dd-8915-4361-8389-4e0625807a0b",
             "Parameters": {
-              "Value": "3.0008712258027934"
+              "Value": "3.000879055150673",
+              "Name": "R2"
             },
             "EnabledScopes": [
               "Voltage",
               "Current"
-            ]
+            ],
+            "ParametersDisplayAttributes": {
+              "Value": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 2",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "Black"
+              },
+              "Name": {
+                "IsVisible": true,
+                "Suffix": "",
+                "RelativeLocation": "2 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              }
+            }
           },
           {
             "LibraryName": "DC Voltage Source",
@@ -56,12 +114,34 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "DC1",
             "ID": "da0e1a06-d8ce-4a0d-a9e1-c402688e49d2",
             "Parameters": {
-              "Voltage": "1"
+              "Voltage": "1",
+              "Name": "DC1"
             },
-            "EnabledScopes": []
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Voltage": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "2 2",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              },
+              "Name": {
+                "IsVisible": true,
+                "Suffix": "",
+                "RelativeLocation": "4 3",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 2,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              }
+            }
           }
         ],
         "Connectors": [
@@ -143,6 +223,7 @@
         "EndTime": "0.05",
         "FixedTimeStep": false,
         "SaveInitialPoint": true,
+        "CompressScopes": true,
         "StopAtSteadyState": false,
         "TimeStep": "1E-06",
         "BaseFrequencyParameterEnabled": false,

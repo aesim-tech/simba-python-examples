@@ -129,10 +129,11 @@ def run_simulation(Lr, Cr, Lm, fin, sim_number, result_dict, lock):
 
     #extract steady state results
     horizon_time = 3 / fsw
+    vout_signal = job.GetSignalByName('Ro - Instantaneous Voltage')
     time, vout_res = steadystate_signal(
         horizon_time,
-        np.array(job.TimePoints),
-        np.array(job.GetSignalByName('Ro - Instantaneous Voltage').DataPoints)
+        np.array(vout_signal.TimePoints),
+        np.array(vout_signal.DataPoints)
         )
     
     # calculate the average of the steady state output voltage using the trapezoidal rule

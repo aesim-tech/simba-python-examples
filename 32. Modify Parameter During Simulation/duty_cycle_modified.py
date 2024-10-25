@@ -28,15 +28,13 @@ PWM.DutyCycle=0.7
 status = job.Run()
 
 #%% Get results
-t= job.TimePoints
-Vout = job.GetSignalByName('R1 - Voltage').DataPoints
-
+Vout_signal = job.GetSignalByName('R1 - Voltage')
 
 #%% Plot Curve
 fig, ax = plt.subplots()
 ax.set_title(Buck.Name)
 ax.set_ylabel('Vout (V)')
 ax.set_xlabel('time (s)')
-ax.plot(np.array(t),np.array(Vout))
+ax.plot(np.array(Vout_signal.TimePoints),np.array(Vout_signal.DataPoints))
 
 plt.show()
