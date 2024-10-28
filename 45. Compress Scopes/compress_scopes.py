@@ -17,6 +17,7 @@ for scope in C1.Scopes:
 
 flybackConverter.TransientAnalysis.EndTime = "40u"
 flybackConverter.TransientAnalysis.StopAtSteadyState = False
+flybackConverter.TransientAnalysis.CompressScopes = False
 
 # Solve the system without compression
 job1 = flybackConverter.TransientAnalysis.NewJob()
