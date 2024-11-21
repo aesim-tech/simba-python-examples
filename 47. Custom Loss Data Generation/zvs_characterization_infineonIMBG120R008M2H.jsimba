@@ -1,0 +1,3718 @@
+{
+  "Designs": [
+    {
+      "Id": "34a909dd-f734-4191-a599-8142e0f91473",
+      "Name": "Design - Tc",
+      "Circuit": {
+        "Id": "b7b7d95e-cae4-490a-b652-a18b4ecd1151",
+        "Devices": [
+          {
+            "LibraryName": "Electrical Connector Label",
+            "Top": 14,
+            "Left": 5,
+            "Angle": 180,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "Source_HS",
+            "ID": "6d56e53f-161e-4e07-abef-607d2b50e60c",
+            "Parameters": {
+              "Name": "Source_HS"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              }
+            }
+          },
+          {
+            "LibraryName": "Inductor",
+            "Top": -8,
+            "Left": 2,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "L_sigma1",
+            "ID": "000c07c2-9c98-4961-aa67-3ebb5769c092",
+            "Parameters": {
+              "Value": "7.5n",
+              "Iinit": "0",
+              "Name": "L_sigma1"
+            },
+            "EnabledScopes": [
+              "Current"
+            ],
+            "ParametersDisplayAttributes": {
+              "Value": {
+                "IsVisible": true,
+                "Suffix": "H",
+                "RelativeLocation": "2 2",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              },
+              "Iinit": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "2 4",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              },
+              "Name": {
+                "IsVisible": true,
+                "Suffix": "",
+                "RelativeLocation": "2 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 14,
+                "Color": "#0081BC"
+              }
+            }
+          },
+          {
+            "LibraryName": "Differential Voltage Meter",
+            "Top": 2,
+            "Left": 24,
+            "Angle": 90,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "VDS_HS",
+            "ID": "a77aa17d-69e0-47ca-a8c4-e3bc347466af",
+            "Parameters": {
+              "SamplingTime": "none",
+              "Name": "VDS_HS"
+            },
+            "EnabledScopes": [
+              "Voltage"
+            ],
+            "ParametersDisplayAttributes": {
+              "SamplingTime": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "2 3",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              },
+              "Name": {
+                "IsVisible": true,
+                "Suffix": "",
+                "RelativeLocation": "1 -4",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 4,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              }
+            }
+          },
+          {
+            "LibraryName": "Constant",
+            "Top": 54,
+            "Left": -9,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "DutyCycle",
+            "ID": "72858ff8-27e6-4628-bb71-10409d7cb07b",
+            "Parameters": {
+              "Value": "0.5",
+              "SamplingTime": "none",
+              "Name": "DutyCycle"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Value": {
+                "IsVisible": true,
+                "Suffix": "",
+                "RelativeLocation": "1 1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 2,
+                "FontSize": 12,
+                "Color": "#04B404"
+              },
+              "SamplingTime": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 4",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              },
+              "Name": {
+                "IsVisible": true,
+                "Suffix": "",
+                "RelativeLocation": "1 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              }
+            }
+          },
+          {
+            "LibraryName": "Constant",
+            "Top": 52,
+            "Left": -5,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "Frequency",
+            "ID": "41d18d90-9ff0-4ce2-8761-1953beea978c",
+            "Parameters": {
+              "Value": "fsw",
+              "SamplingTime": "none",
+              "Name": "Frequency"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Value": {
+                "IsVisible": true,
+                "Suffix": "",
+                "RelativeLocation": "1 1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 2,
+                "FontSize": 12,
+                "Color": "#04B404"
+              },
+              "SamplingTime": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 4",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              },
+              "Name": {
+                "IsVisible": true,
+                "Suffix": "",
+                "RelativeLocation": "1 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              }
+            }
+          },
+          {
+            "LibraryName": "Constant",
+            "Top": 56,
+            "Left": -5,
+            "Angle": 0,
+            "HF": false,
+            "VF": true,
+            "Disabled": false,
+            "Name": "PhaseShift",
+            "ID": "ffe49d87-d5ad-4554-ad8c-37cea3492123",
+            "Parameters": {
+              "Value": "0",
+              "SamplingTime": "none",
+              "Name": "PhaseShift"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Value": {
+                "IsVisible": true,
+                "Suffix": "",
+                "RelativeLocation": "1 1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 2,
+                "FontSize": 12,
+                "Color": "#04B404"
+              },
+              "SamplingTime": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 4",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              },
+              "Name": {
+                "IsVisible": true,
+                "Suffix": "",
+                "RelativeLocation": "1 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              }
+            }
+          },
+          {
+            "LibraryName": "Controlled PWM Generator",
+            "Top": 53,
+            "Left": -1,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "PWM",
+            "ID": "73be346c-c78a-4b95-a238-330908c337a3",
+            "Parameters": {
+              "RiseTime": "5n",
+              "FallTime": "5n",
+              "MinimalFrequency": "1",
+              "SamplingTime": "none",
+              "Name": "PWM"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "RiseTime": {
+                "IsVisible": false,
+                "Suffix": "s",
+                "RelativeLocation": "3 6",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              },
+              "FallTime": {
+                "IsVisible": false,
+                "Suffix": "s",
+                "RelativeLocation": "3 7",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              },
+              "MinimalFrequency": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "3 8",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              },
+              "SamplingTime": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "3 8",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              },
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "3 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              }
+            }
+          },
+          {
+            "LibraryName": "Not",
+            "Top": 62,
+            "Left": 6,
+            "Angle": 90,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "NOT1",
+            "ID": "0e7fa955-7688-4b98-a6bf-265295b651a8",
+            "Parameters": {
+              "SamplingTime": "none",
+              "Name": "NOT1"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "SamplingTime": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 4",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              },
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              }
+            }
+          },
+          {
+            "LibraryName": "Dead time",
+            "Top": 54,
+            "Left": 9,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "DT2",
+            "ID": "19a06600-1175-4f3a-a2d9-7fffca429f06",
+            "Parameters": {
+              "RisingEdgeDelay": "dead_time",
+              "FallingEdgeDelay": "0",
+              "SamplingTime": "none",
+              "Name": "DT2"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "RisingEdgeDelay": {
+                "IsVisible": false,
+                "Suffix": "s",
+                "RelativeLocation": "1 4",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              },
+              "FallingEdgeDelay": {
+                "IsVisible": false,
+                "Suffix": "s",
+                "RelativeLocation": "1 5",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              },
+              "SamplingTime": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 6",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              },
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              }
+            }
+          },
+          {
+            "LibraryName": "Dead time",
+            "Top": 69,
+            "Left": 9,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "DT1",
+            "ID": "6bf5aec3-faa2-4245-9fa7-8623646d51eb",
+            "Parameters": {
+              "RisingEdgeDelay": "dead_time",
+              "FallingEdgeDelay": "0",
+              "SamplingTime": "none",
+              "Name": "DT1"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "RisingEdgeDelay": {
+                "IsVisible": false,
+                "Suffix": "s",
+                "RelativeLocation": "1 4",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              },
+              "FallingEdgeDelay": {
+                "IsVisible": false,
+                "Suffix": "s",
+                "RelativeLocation": "1 5",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              },
+              "SamplingTime": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 6",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              },
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              }
+            }
+          },
+          {
+            "LibraryName": "Gain",
+            "Top": 54,
+            "Left": 13,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "G1",
+            "ID": "6bca6af6-8fb8-40bf-8d05-5e36488cc815",
+            "Parameters": {
+              "Value": "23",
+              "SamplingTime": "none",
+              "Name": "G1"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Value": {
+                "IsVisible": true,
+                "Suffix": "",
+                "RelativeLocation": "1 1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 2,
+                "FontSize": 12,
+                "Color": "#04B404"
+              },
+              "SamplingTime": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "4 5",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              },
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              }
+            }
+          },
+          {
+            "LibraryName": "Constant",
+            "Top": 58,
+            "Left": 13,
+            "Angle": 0,
+            "HF": false,
+            "VF": true,
+            "Disabled": false,
+            "Name": "C2",
+            "ID": "b0c5b629-a88c-40cc-8714-e536a9287664",
+            "Parameters": {
+              "Value": "5",
+              "SamplingTime": "none",
+              "Name": "C2"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Value": {
+                "IsVisible": true,
+                "Suffix": "",
+                "RelativeLocation": "1 1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 2,
+                "FontSize": 12,
+                "Color": "#04B404"
+              },
+              "SamplingTime": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 4",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              },
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              }
+            }
+          },
+          {
+            "LibraryName": "Gain",
+            "Top": 69,
+            "Left": 13,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "G2",
+            "ID": "adb33175-30dd-4991-a8b9-2409490a01d3",
+            "Parameters": {
+              "Value": "23",
+              "SamplingTime": "none",
+              "Name": "G2"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Value": {
+                "IsVisible": true,
+                "Suffix": "",
+                "RelativeLocation": "1 1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 2,
+                "FontSize": 12,
+                "Color": "#04B404"
+              },
+              "SamplingTime": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "4 5",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              },
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              }
+            }
+          },
+          {
+            "LibraryName": "Constant",
+            "Top": 73,
+            "Left": 13,
+            "Angle": 0,
+            "HF": false,
+            "VF": true,
+            "Disabled": false,
+            "Name": "C1",
+            "ID": "fbb8328b-69fd-4e55-8e35-c511588810b9",
+            "Parameters": {
+              "Value": "5",
+              "SamplingTime": "none",
+              "Name": "C1"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Value": {
+                "IsVisible": true,
+                "Suffix": "",
+                "RelativeLocation": "1 1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 2,
+                "FontSize": 12,
+                "Color": "#04B404"
+              },
+              "SamplingTime": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 4",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              },
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              }
+            }
+          },
+          {
+            "LibraryName": "Sum",
+            "Top": 56,
+            "Left": 19,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "SUM1",
+            "ID": "8e575072-be0e-4d8e-a224-7325fc790053",
+            "Parameters": {
+              "NumberOfInputs": "2",
+              "Gains": "[1 -1]",
+              "SamplingTime": "none",
+              "Name": "SUM1"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "NumberOfInputs": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 4",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              },
+              "Gains": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "0 5",
+                "UnrotatedWidth": 3,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              },
+              "SamplingTime": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 6",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              },
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              }
+            }
+          },
+          {
+            "LibraryName": "Sum",
+            "Top": 71,
+            "Left": 19,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "SUM2",
+            "ID": "9a821baa-99ba-4a0a-a234-a0181c42ea90",
+            "Parameters": {
+              "NumberOfInputs": "2",
+              "Gains": "[1 -1]",
+              "SamplingTime": "none",
+              "Name": "SUM2"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "NumberOfInputs": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 4",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              },
+              "Gains": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "0 5",
+                "UnrotatedWidth": 3,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              },
+              "SamplingTime": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 6",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              },
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              }
+            }
+          },
+          {
+            "LibraryName": "Controlled Voltage Source",
+            "Top": 54,
+            "Left": 23,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "Vgate_HS",
+            "ID": "7d3f1229-7a3f-494f-8087-2b6afd0ea415",
+            "Parameters": {
+              "Name": "Vgate_HS"
+            },
+            "EnabledScopes": [
+              "Voltage"
+            ],
+            "ParametersDisplayAttributes": {
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "4 3",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 2,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              }
+            }
+          },
+          {
+            "LibraryName": "Controlled Voltage Source",
+            "Top": 69,
+            "Left": 23,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "Vgate_LS",
+            "ID": "5ebb3c34-8738-4079-8bde-9a29411dce62",
+            "Parameters": {
+              "Name": "Vgate_LS"
+            },
+            "EnabledScopes": [
+              "Voltage"
+            ],
+            "ParametersDisplayAttributes": {
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "4 3",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 2,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              }
+            }
+          },
+          {
+            "LibraryName": "Inductor",
+            "Top": 53,
+            "Left": 27,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "Lg1_lead",
+            "ID": "de91530d-4db2-459b-b450-5aa13e64284e",
+            "Parameters": {
+              "Value": "Lg_lead",
+              "Iinit": "0",
+              "Name": "Lg1_lead"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Value": {
+                "IsVisible": true,
+                "Suffix": "H",
+                "RelativeLocation": "2 2",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              },
+              "Iinit": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "2 4",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              },
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "2 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 14,
+                "Color": "#0081BC"
+              }
+            }
+          },
+          {
+            "LibraryName": "Inductor",
+            "Top": 61,
+            "Left": 27,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "Lg2_lead",
+            "ID": "e9f51f39-4d93-4101-9b6a-048c0f935b99",
+            "Parameters": {
+              "Value": "Lg_lead",
+              "Iinit": "0",
+              "Name": "Lg2_lead"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Value": {
+                "IsVisible": true,
+                "Suffix": "H",
+                "RelativeLocation": "2 2",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              },
+              "Iinit": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "2 4",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              },
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "2 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 14,
+                "Color": "#0081BC"
+              }
+            }
+          },
+          {
+            "LibraryName": "Inductor",
+            "Top": 68,
+            "Left": 27,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "L4",
+            "ID": "29ea091b-dd15-4d9c-bd97-63954b2db727",
+            "Parameters": {
+              "Value": "Lg_lead",
+              "Iinit": "0",
+              "Name": "L4"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Value": {
+                "IsVisible": true,
+                "Suffix": "H",
+                "RelativeLocation": "2 2",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              },
+              "Iinit": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "2 4",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              },
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "2 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 14,
+                "Color": "#0081BC"
+              }
+            }
+          },
+          {
+            "LibraryName": "Inductor",
+            "Top": 76,
+            "Left": 27,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "L5",
+            "ID": "eaedffd4-b473-44a8-afeb-197ed218e6a1",
+            "Parameters": {
+              "Value": "Lg_lead",
+              "Iinit": "0",
+              "Name": "L5"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Value": {
+                "IsVisible": true,
+                "Suffix": "H",
+                "RelativeLocation": "2 2",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              },
+              "Iinit": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "2 4",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              },
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "2 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 14,
+                "Color": "#0081BC"
+              }
+            }
+          },
+          {
+            "LibraryName": "Resistor",
+            "Top": 53,
+            "Left": 36,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "Rg_HS",
+            "ID": "e2bbc725-f00c-4958-b0f1-1ddc0a29932e",
+            "Parameters": {
+              "Value": "Rg_ext",
+              "Name": "Rg_HS"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Value": {
+                "IsVisible": true,
+                "Suffix": "\u03A9",
+                "RelativeLocation": "2 2",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              },
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "0 2",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 14,
+                "Color": "#0081BC"
+              }
+            }
+          },
+          {
+            "LibraryName": "Resistor",
+            "Top": 68,
+            "Left": 36,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "Rg_LS",
+            "ID": "5bd14beb-3428-4110-aca1-842e7d0496f7",
+            "Parameters": {
+              "Value": "Rg_ext",
+              "Name": "Rg_LS"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Value": {
+                "IsVisible": true,
+                "Suffix": "\u03A9",
+                "RelativeLocation": "2 2",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              },
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "0 2",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 14,
+                "Color": "#0081BC"
+              }
+            }
+          },
+          {
+            "LibraryName": "Differential Voltage Meter",
+            "Top": 57,
+            "Left": 43,
+            "Angle": 90,
+            "HF": false,
+            "VF": true,
+            "Disabled": false,
+            "Name": "VGS_HS",
+            "ID": "696d6afa-40e2-401d-b546-e83e899e163d",
+            "Parameters": {
+              "SamplingTime": "none",
+              "Name": "VGS_HS"
+            },
+            "EnabledScopes": [
+              "Voltage"
+            ],
+            "ParametersDisplayAttributes": {
+              "SamplingTime": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "2 3",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              },
+              "Name": {
+                "IsVisible": true,
+                "Suffix": "",
+                "RelativeLocation": "1 -3",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 3,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              }
+            }
+          },
+          {
+            "LibraryName": "Electrical Connector Label",
+            "Top": 53,
+            "Left": 46,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "G_HS",
+            "ID": "0511f137-6d6c-4a17-8e5b-90ca5bfcf14b",
+            "Parameters": {
+              "Name": "G_HS"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              }
+            }
+          },
+          {
+            "LibraryName": "Electrical Connector Label",
+            "Top": 61,
+            "Left": 46,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "SS_HS",
+            "ID": "5483c4c6-c78c-44c2-b2cd-0b7986a1e49b",
+            "Parameters": {
+              "Name": "SS_HS"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              }
+            }
+          },
+          {
+            "LibraryName": "Electrical Connector Label",
+            "Top": 68,
+            "Left": 46,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "G_LS",
+            "ID": "caef3e97-619b-4761-9cba-d4ee54a43663",
+            "Parameters": {
+              "Name": "G_LS"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              }
+            }
+          },
+          {
+            "LibraryName": "Differential Voltage Meter",
+            "Top": 25,
+            "Left": 25,
+            "Angle": 90,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "VDS_LS",
+            "ID": "69e1c64b-ab4e-41cc-a127-6b9ef6c19f99",
+            "Parameters": {
+              "SamplingTime": "none",
+              "Name": "VDS_LS"
+            },
+            "EnabledScopes": [
+              "Voltage"
+            ],
+            "ParametersDisplayAttributes": {
+              "SamplingTime": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "2 3",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              },
+              "Name": {
+                "IsVisible": true,
+                "Suffix": "",
+                "RelativeLocation": "1 -3",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 3,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              }
+            }
+          },
+          {
+            "LibraryName": "Current Meter",
+            "Top": 16,
+            "Left": 16,
+            "Angle": 90,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "i_LS",
+            "ID": "237a0fb5-9235-4aa4-aeec-d453b0bf765f",
+            "Parameters": {
+              "SamplingTime": "none",
+              "Name": "i_LS"
+            },
+            "EnabledScopes": [
+              "Current"
+            ],
+            "ParametersDisplayAttributes": {
+              "SamplingTime": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "2 3",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              },
+              "Name": {
+                "IsVisible": true,
+                "Suffix": "",
+                "RelativeLocation": "1 -2",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 2,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              }
+            }
+          },
+          {
+            "LibraryName": "Current Meter",
+            "Top": -8,
+            "Left": 13,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "i_HS",
+            "ID": "ac85cf43-dafd-4d08-9c69-522af4da108c",
+            "Parameters": {
+              "SamplingTime": "none",
+              "Name": "i_HS"
+            },
+            "EnabledScopes": [
+              "Current"
+            ],
+            "ParametersDisplayAttributes": {
+              "SamplingTime": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "2 3",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              },
+              "Name": {
+                "IsVisible": true,
+                "Suffix": "",
+                "RelativeLocation": "-1 1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 2,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              }
+            }
+          },
+          {
+            "LibraryName": "Ground",
+            "Top": 16,
+            "Left": -6,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "Ground1",
+            "ID": "5fc4d5b2-9b8f-4794-9eff-c44c60a96a8b",
+            "Parameters": {
+              "Name": "Ground1"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "4 3",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 2,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              }
+            }
+          },
+          {
+            "LibraryName": "Ground",
+            "Top": 15,
+            "Left": 43,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "Ground2",
+            "ID": "b0ce3d7b-5991-4f42-8d0a-cccaec4d9f1f",
+            "Parameters": {
+              "Name": "Ground2"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "4 3",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 2,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              }
+            }
+          },
+          {
+            "LibraryName": "Electrical Connector Label",
+            "Top": 76,
+            "Left": 46,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "SS_LS",
+            "ID": "0fd9f7cb-383c-4bc3-8cae-38d204975a0a",
+            "Parameters": {
+              "Name": "SS_LS"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              }
+            }
+          },
+          {
+            "LibraryName": "Inductor",
+            "Top": 38,
+            "Left": 0,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "L_sigma2",
+            "ID": "1c51e4c0-f94d-4402-9565-90e9694ac9d8",
+            "Parameters": {
+              "Value": "7.5n",
+              "Iinit": "0",
+              "Name": "L_sigma2"
+            },
+            "EnabledScopes": [
+              "Current"
+            ],
+            "ParametersDisplayAttributes": {
+              "Value": {
+                "IsVisible": true,
+                "Suffix": "H",
+                "RelativeLocation": "2 2",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              },
+              "Iinit": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "2 4",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              },
+              "Name": {
+                "IsVisible": true,
+                "Suffix": "",
+                "RelativeLocation": "2 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 14,
+                "Color": "#0081BC"
+              }
+            }
+          },
+          {
+            "LibraryName": "SPICE Netlist",
+            "Top": -3,
+            "Left": 14,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "N1",
+            "ID": "7daebb31-df69-4a95-bd65-7fd6cdabb6bf",
+            "Parameters": {
+              "Netlist": "\r\n\r\n* Main Switch MOSFET\r\nXmain D G S SS TJ TC IMBG120R008M2H_L3\r\n\r\n*  ********************************************************************************************************************\r\n*  COPYRIGHT: INFINEON Technologies AG\r\n*  ********************************************************************************************************************\r\n*  COMMENT:\r\n*  - The models for Infineon Power MOSFET are evaluated with                                                          *\r\n*  - SIMetrixTM-Spice simulator. The Infineon Power MOSFET models                                                     *\r\n*    are tested, verified and provided in Spice simulation code.                                                      *\r\n*  ********************************************************************************************************************\r\n*  ********************************************************************************************************************\r\n*   INFINEON Power Transistors                                                                                        *\r\n*   Content:        SPICE Simulation Model Library                                                                    *\r\n*   Device:         CoolSiC 1200V SiC Trench MOSFET G2                                                                *\r\n*   Package:        D2PAK                                                                                 *\r\n*   Model Types:    L3                                                                                                *\r\n*   Technology:     1200V                                                                                             *\r\n*   Date:           2024-03-05                                                                                        *\r\n*   Version:        2.0                                                                                               *\r\n*  ********************************************************************************************************************\r\n*  *******************************************************************\r\n*   Infineon  | Terminals   |  Usage suggestion                      *\r\n*   Level     |             |                                        *\r\n*   -----------------------------------------------------------------*\r\n*   L3        | DRAIN,      |  Self-heating effects,                 *\r\n*             | GATE,       |  modeling of heat flow                 *\r\n*             | SOURCE,     |  including thermal models of           *\r\n*             | SOURCESENSE |  TO package.                           *\r\n*             | Tj, Tcase   |                                        *\r\n*  *******************************************************************\r\n*   Detailed Information:                                            *\r\n*                                                                    *\r\n*   The model files are available on the Infineon web page:          *\r\n*   http://www.infineon.com                                          *\r\n*                                                                    *\r\n*   This library contains models of the following INFINEON           *\r\n*   CoolSiC transistors:                                             *\r\n*                                                                    *\r\n* Product         Device Type       Package        L3-model name     *\r\n* IMBG120R008M2H  CoolSiC MOSFET    PG-TO263-7     IMBG120R008M2H_L3 *\r\n* IMBG120R012M2H  CoolSiC MOSFET    PG-TO263-7     IMBG120R012M2H_L3 *\r\n* IMBG120R017M2H  CoolSiC MOSFET    PG-TO263-7     IMBG120R017M2H_L3 *\r\n* IMBG120R022M2H  CoolSiC MOSFET    PG-TO263-7     IMBG120R022M2H_L3 *\r\n* IMBG120R026M2H  CoolSiC MOSFET    PG-TO263-7     IMBG120R026M2H_L3 *\r\n* IMBG120R040M2H  CoolSiC MOSFET    PG-TO263-7     IMBG120R040M2H_L3 *\r\n* IMBG120R053M2H  CoolSiC MOSFET    PG-TO263-7     IMBG120R053M2H_L3 *\r\n* IMBG120R078M2H  CoolSiC MOSFET    PG-TO263-7     IMBG120R078M2H_L3 *\r\n* IMBG120R116M2H  CoolSiC MOSFET    PG-TO263-7     IMBG120R116M2H_L3 *\r\n* IMBG120R181M2H  CoolSiC MOSFET    PG-TO263-7     IMBG120R181M2H_L3 *\r\n* IMBG120R234M2H  CoolSiC MOSFET    PG-TO263-7     IMBG120R234M2H_L3 *\r\n* *********************************************************************************************************************\r\n* *********************************************************************************************************************\r\n* DISCLAIMER\r\n*\r\n* INFINEON\uFFFDS MODEL TERMS OF USE\r\n*\r\n* BY DOWNLOADING AND/OR USING THIS INFINEON MODEL (\uFFFDMODEL\uFFFD), THE USER (INCLUDING YOU) AGREES TO BE BOUND BY THE TERMS\r\n* MODEL BUT OF USE HERE STATED. IF USER DOES NOT AGREE TO ALL TERMS OF USE HERE STATED, USER SHALL NOT DOWNLOAD, USE\r\n* OR COPY THE IMMEDIATELY DELETE IT (TO THE EXTENT THAT IT WAS DOWNLOADED ALREADY).\r\n*\r\n* 1.  SCOPE OF USE\r\n* 1.1 Any use of this Model provided by Infineon Technologies AG is subject to these Terms of Use.\r\n* 1.2 This Model, provided by Infineon, does not fully represent all of the specifications and operating\r\n*     characteristics of the product to which this Model relates.\r\n* 1.3 This Model only describes the characteristics of a typical product. In all cases, the current data sheet\r\n*     information for a given product is the final design guideline and the only actual performance specification.\r\n*     Although this Model can be a useful tool to evaluate the product performance, it cannot simulate the exact\r\n*     product performance under all conditions and it is also not intended to replace bread-boarding for final\r\n*     verification.\r\n* 2.  IMPORTANT NOTICE\r\n* 2.1 Infineon Technologies AG (\uFFFDInfineon\uFFFD) is not and cannot be aware of the specific application of the Infineon\uFFFDs\r\n*     Model by User. However, Model may from time to time be used by User in potentially harmful and/or\r\n*     life-endangering applications such as traffic, logistic, medical, nuclear or military applications or in other\r\n*     applications where failure of the Model may predictably cause damage to persons\uFFFD life or health or to property\r\n*     (hereinafter \u0022Critical Applications\u0022).\r\n* 2.2 User acknowledges that Infineon has not specifically designed or qualified the Model for Critical Applications\r\n*     that the Model may contain errors and bugs and that User is required to qualify the Model for Critical\r\n*     Applications pursuant to the applicable local quality, safety and legal requirements before permitting or giving\r\n*     access to any such use.\r\n* 3.  CONFIDENTIAL INFORMATION\r\n*     User shall treat ideas, concepts and information incorporated in the Model, the documentation and the content of\r\n*     this Terms of Use (together hereinafter \u0022Confidential Information\u0022) confidential, not disclose it to any third\r\n*     party unless otherwise agreed in writing between User and Infineon, not use it for any other purposes than using\r\n*     the Model for simulation and testing purposes only.\r\n* 4.  WARRANTY\r\n* 4.1 User acknowledges that the Model is provided by Infineon under this Terms of Use is provided free of charge and\r\n*     \u0022AS IS\u0022 without any warranty or liability of any kind and Infineon hereby expressly disclaims any warranties or\r\n*     representations, whether express, implied, statutory or otherwise, including but not limited to warranties of\r\n*     workmanship, merchantability, fitness for a particular purpose, defects in the Model, or non-infringement of\r\n*     third parties intellectual property rights.\r\n* 4.2 Infineon reserves the right to make corrections, deletions, modifications, enhancements, improvements and other\r\n*     changes to the Model at any time or to move or discontinue any Model without notice.\r\n* 5.  LIABILITY\r\n* 5.1 Nothing in this Terms of Use shall limit or exclude Infineon\u0027s liability under mandatory liability laws, for\r\n*     injuries to life, body or health, for fraudulent concealment of defects in the software, or in cases of\r\n*     Infineon\u0027s intentional misconduct or gross negligence.\r\n* 5.2 Without prejudice to Sections 5.1, in cases of Infineon\u0027s slight negligent breach of obligations that restrict\r\n*     essential rights or duties arising from the nature of this Terms of Use in a way that there is a risk of\r\n*     non-achievement of the purpose of this Terms of Use or of an obligation whose observance User regularly may\r\n*     trust in and whereas compliance with only makes proper execution of this Terms of Use possible, Infineon\u0027s\r\n*     liability shall be limited to the typically, foreseeable damage.\r\n* 5.3 Without prejudice to Sections 8.1 and 8.2, Infineon\u0027s liability under this Agreement shall be excluded in all\r\n*     other cases.\r\n* 6.  EXPORT REGULATIONS\r\n*     The User shall comply with all applicable national and international laws and regulations, in particular the\r\n*     applicable export control regulations and sanction programs. The User also agrees not to export, re-export or\r\n*     transfer any software or technology developed with or using information, software or technology offered by\r\n*     Infineon, in violation of any applicable laws or regulations of the competent authorities. Further, the User\r\n*     shall neither use any products, information, software and technology offered by Infineon in or in connection\r\n*     with nuclear technology or weapons of mass destruction (nuclear, biological or chemical) and carriers thereof\r\n*     nor supply military consignees.\r\n* 7.  TERMINATION OF USE PERMIT\r\n*     If the User violates these Terms of Use, such User\uFFFDs permit to use this Model terminates automatically. In\r\n*     addition, Infineon may terminate the User\uFFFDs permit to use this Model at its discretion and at any time\r\n*     regardless of any violation of these Terms of Use. In any of the foregoing events, the User is obliged to\r\n*     immediately destroy any content that has been downloaded or printed from Infineon\uFFFDs website.\r\n* 8.  MISCELLANEOUS\r\n* 8.1 These Terms of Use are subject to the laws of the Federal Republic of Germany with the exception of the United\r\n*     Nations on Purchase Contracts on the International Sale of Goods dated April 11, 1980 (CISG). The exclusive\r\n*     place of jurisdiction is Munich, Germany.\r\n* 8.2 Should any provision in these Terms of Use be or become invalid, the validity of all other provisions or\r\n*     agreements shall remain unaffected thereby.\r\n* *********************************************************************************************************************\r\n*     SUPPORT : support@infineon.com\r\n* *********************************************************************************************************************\r\n* *********************************************************************************************************************\r\n\r\n\r\n.SUBCKT IMBG120R008M2H_L3 DRAIN GATE SOURCE SOURCESENSE TJ TCASE\r\nL00I6 DRAIN N03YZ 1N\r\nL00I7 GATE N03ZV 3N\r\nL00IQ N040C N0413 0.1N\r\nL00JG SOURCESENSE N040C 1P\r\nR00JR N041Y N040C 1P\r\nL00K7 SOURCE N041Y 1N\r\nX00LG TJ TCASE 0 Z006W\r\nX$M00GX N03YZ N03ZV N0413 N03WU TJ Z00D8 PARAMS: N03WZ=23.04 N042O=4 N043O=1.8 N03XZ=1400 N03Y3=0.001 N03Y9=230 N03YB=0.0 N03YC=0.0\r\nG00MD 0 TJ VALUE={IF(TIME\u003E0,LIMIT(ABS(V(N03WU,0)),0,1E10),0)}\r\nR00MH TJ 0 1E6\r\n.ENDS\r\n\r\n.SUBCKT IMBG120R012M2H_L3 DRAIN GATE SOURCE SOURCESENSE TJ TCASE\r\nL00I6 DRAIN N03YZ 1N\r\nL00I7 GATE N03ZV 3N\r\nL00IQ N040C N0413 0.1N\r\nL00JG SOURCESENSE N040C 1P\r\nR00JR N041Y N040C 1P\r\nL00K7 SOURCE N041Y 1N\r\nX00LG TJ TCASE 0 Z007R\r\nX$M00GX N03YZ N03ZV N0413 N03WU TJ Z00D8 PARAMS: N03WZ=14.54 N042O=6 N043O=2 N03XZ=1400 N03Y3=0.001 N03Y9=180 N03YB=0.0 N03YC=0.0\r\nG00MD 0 TJ VALUE={IF(TIME\u003E0,LIMIT(ABS(V(N03WU,0)),0,1E10),0)}\r\nR00MH TJ 0 1E6\r\n.ENDS\r\n\r\n.SUBCKT IMBG120R017M2H_L3 DRAIN GATE SOURCE SOURCESENSE TJ TCASE\r\nL00I6 DRAIN N03YZ 1N\r\nL00I7 GATE N03ZV 3N\r\nL00IQ N040C N0413 0.1N\r\nL00JG SOURCESENSE N040C 1P\r\nR00JR N041Y N040C 1P\r\nL00K7 SOURCE N041Y 1N\r\nX00LG TJ TCASE 0 Z007W\r\nX$M00GX N03YZ N03ZV N0413 N03WU TJ Z00D8 PARAMS: N03WZ=10.36 N042O=6 N043O=1.3 N03XZ=1400 N03Y3=0.001 N03Y9=180 N03YB=0.0 N03YC=0.0\r\nG00MD 0 TJ VALUE={IF(TIME\u003E0,LIMIT(ABS(V(N03WU,0)),0,1E10),0)}\r\nR00MH TJ 0 1E6\r\n.ENDS\r\n\r\n.SUBCKT IMBG120R022M2H_L3 DRAIN GATE SOURCE SOURCESENSE TJ TCASE\r\nL00I6 DRAIN N03YZ 1N\r\nL00I7 GATE N03ZV 3N\r\nL00IQ N040C N0413 0.1N\r\nL00JG SOURCESENSE N040C 1P\r\nR00JR N041Y N040C 1P\r\nL00K7 SOURCE N041Y 1N\r\nX00LG TJ TCASE 0 Z008H\r\nX$M00GX N03YZ N03ZV N0413 N03WU TJ Z00D8 PARAMS: N03WZ=8.226 N042O=6 N043O=1.3 N03XZ=1400 N03Y3=0.001 N03Y9=180 N03YB=0.0 N03YC=0.0\r\nG00MD 0 TJ VALUE={IF(TIME\u003E0,LIMIT(ABS(V(N03WU,0)),0,1E10),0)}\r\nR00MH TJ 0 1E6\r\n.ENDS\r\n\r\n.SUBCKT IMBG120R026M2H_L3 DRAIN GATE SOURCE SOURCESENSE TJ TCASE\r\nL00I6 DRAIN N03YZ 1P\r\nL00I7 GATE N03ZV 3N\r\nL00IQ N040C N0413 0.5N\r\nL00JG SOURCESENSE N040C 1P\r\nR00JR N041Y N040C 1P\r\nL00K7 SOURCE N041Y 1N\r\nX00LG TJ TCASE 0 Z008N\r\nX$M00GX N03YZ N03ZV N0413 N03WU TJ Z00D8 PARAMS: N03WZ=6.992 N042O=4.5 N043O=1.5 N03XZ=1400 N03Y3=0.001 N03Y9=180 N03YB=0.0 N03YC=0.0\r\nG00MD 0 TJ VALUE={IF(TIME\u003E0,LIMIT(ABS(V(N03WU,0)),0,1E10),0)}\r\nR00MH TJ 0 1E6\r\n.ENDS\r\n\r\n.SUBCKT IMBG120R040M2H_L3 DRAIN GATE SOURCE SOURCESENSE TJ TCASE\r\nL00I6 DRAIN N03YZ 1P\r\nL00I7 GATE N03ZV 3N\r\nL00IQ N040C N0413 0.5N\r\nL00JG SOURCESENSE N040C 1P\r\nR00JR N041Y N040C 1P\r\nL00K7 SOURCE N041Y 1N\r\nX00LG TJ TCASE 0 Z008S\r\nX$M00GX N03YZ N03ZV N0413 N03WU TJ Z00D8 PARAMS: N03WZ=4.490 N042O=3.5 N043O=1.2 N03XZ=1400 N03Y3=0.001 N03Y9=180 N03YB=0.0 N03YC=0.0\r\nG00MD 0 TJ VALUE={IF(TIME\u003E0,LIMIT(ABS(V(N03WU,0)),0,1E10),0)}\r\nR00MH TJ 0 1E6\r\n.ENDS\r\n\r\n.SUBCKT IMBG120R053M2H_L3 DRAIN GATE SOURCE SOURCESENSE TJ TCASE\r\nL00I6 DRAIN N03YZ 1P\r\nL00I7 GATE N03ZV 3N\r\nL00IQ N040C N0413 0.5N\r\nL00JG SOURCESENSE N040C 1P\r\nR00JR N041Y N040C 1P\r\nL00K7 SOURCE N041Y 1N\r\nX00LG TJ TCASE 0 Z009N\r\nX$M00GX N03YZ N03ZV N0413 N03WU TJ Z00D8 PARAMS: N03WZ=3.379 N042O=4.5 N043O=4 N03XZ=1400 N03Y3=0.001 N03Y9=180 N03YB=0.0 N03YC=0.0\r\nG00MD 0 TJ VALUE={IF(TIME\u003E0,LIMIT(ABS(V(N03WU,0)),0,1E10),0)}\r\nR00MH TJ 0 1E6\r\n.ENDS\r\n\r\n.SUBCKT IMBG120R078M2H_L3 DRAIN GATE SOURCE SOURCESENSE TJ TCASE\r\nL00I6 DRAIN N03YZ 1P\r\nL00I7 GATE N03ZV 3N\r\nL00IQ N040C N0413 0.5N\r\nL00JG SOURCESENSE N040C 1P\r\nR00JR N041Y N040C 1P\r\nL00K7 SOURCE N041Y 1N\r\nX00LG TJ TCASE 0 Z009T\r\nX$M00GX N03YZ N03ZV N0413 N03WU TJ Z00D8 PARAMS: N03WZ=2.276 N042O=4.5 N043O=6 N03XZ=1400 N03Y3=0.001 N03Y9=180 N03YB=0.0 N03YC=0.0\r\nG00MD 0 TJ VALUE={IF(TIME\u003E0,LIMIT(ABS(V(N03WU,0)),0,1E10),0)}\r\nR00MH TJ 0 1E6\r\n.ENDS\r\n\r\n.SUBCKT IMBG120R116M2H_L3 DRAIN GATE SOURCE SOURCESENSE TJ TCASE\r\nL00I6 DRAIN N03YZ 1P\r\nL00I7 GATE N03ZV 3N\r\nL00IQ N040C N0413 0.5N\r\nL00JG SOURCESENSE N040C 1P\r\nR00JR N041Y N040C 1P\r\nL00K7 SOURCE N041Y 1N\r\nX00LG TJ TCASE 0 Z009U\r\nX$M00GX N03YZ N03ZV N0413 N03WU TJ Z00D8 PARAMS: N03WZ=1.536 N042O=4.5 N043O=6 N03XZ=1400 N03Y3=0.001 N03Y9=180 N03YB=0.0 N03YC=0.0\r\nG00MD 0 TJ VALUE={IF(TIME\u003E0,LIMIT(ABS(V(N03WU,0)),0,1E10),0)}\r\nR00MH TJ 0 1E6\r\n.ENDS\r\n\r\n.SUBCKT IMBG120R181M2H_L3 DRAIN GATE SOURCE SOURCESENSE TJ TCASE\r\nL00I6 DRAIN N03YZ 1P\r\nL00I7 GATE N03ZV 3N\r\nL00IQ N040C N0413 0.5N\r\nL00JG SOURCESENSE N040C 1P\r\nR00JR N041Y N040C 1P\r\nL00K7 SOURCE N041Y 1N\r\nX00LG TJ TCASE 0 Z00BK\r\nX$M00GX N03YZ N03ZV N0413 N03WU TJ Z00D8 PARAMS: N03WZ=0.979 N042O=4.5 N043O=6 N03XZ=1400 N03Y3=0.001 N03Y9=180 N03YB=0.0 N03YC=0.0\r\nG00MD 0 TJ VALUE={IF(TIME\u003E0,LIMIT(ABS(V(N03WU,0)),0,1E10),0)}\r\nR00MH TJ 0 1E6\r\n.ENDS\r\n\r\n.SUBCKT IMBG120R234M2H_L3 DRAIN GATE SOURCE SOURCESENSE TJ TCASE\r\nL00I6 DRAIN N03YZ 1P\r\nL00I7 GATE N03ZV 3N\r\nL00IQ N040C N0413 0.5N\r\nL00JG SOURCESENSE N040C 1P\r\nR00JR N041Y N040C 1P\r\nL00K7 SOURCE N041Y 1N\r\nX00LG TJ TCASE 0 Z00CL\r\nX$M00GX N03YZ N03ZV N0413 N03WU TJ Z00D8 PARAMS: N03WZ=0.76 N042O=7 N043O=6 N03XZ=1400 N03Y3=0.001 N03Y9=180 N03YB=0.0 N03YC=0.0\r\nG00MD 0 TJ VALUE={IF(TIME\u003E0,LIMIT(ABS(V(N03WU,0)),0,1E10),0)}\r\nR00MH TJ 0 1E6\r\n.ENDS\r\n\r\n.SUBCKT Z006W TJ TCASE N043P\r\nR024L TJ N043R 3.853E-03\r\nR024T N043R N043W 1.428E-02\r\nR0262 N043W N044C 3.416E-02\r\nR0269 N044C TCASE 9.191E-02\r\nC026C TJ N043P 9.422E-04\r\nC026D N043R N043P 3.497E-03\r\nC0277 N043W N043P 1.430E-02\r\nC027C N044C N043P 3.457E-02\r\n.ENDS\r\n\r\n.SUBCKT Z007R TJ TCASE N043P\r\nR024L TJ N043R 6.088E-03\r\nR024T N043R N043W 2.217E-02\r\nR0262 N043W N044C 5.591E-02\r\nR0269 N044C TCASE 1.065E-01\r\nC026C TJ N043P 6.351E-04\r\nC026D N043R N043P 2.436E-03\r\nC0277 N043W N043P 1.028E-02\r\nC027C N044C N043P 2.298E-02\r\n.ENDS\r\n\r\n.SUBCKT Z007W TJ TCASE N043P\r\nR024L TJ N043R 1.295E-02\r\nR024T N043R N043W 3.729E-02\r\nR0262 N043W N044C 1.050E-01\r\nR0269 N044C TCASE 9.275E-02\r\nC026C TJ N043P 6.322E-04\r\nC026D N043R N043P 2.441E-03\r\nC0277 N043W N043P 9.346E-03\r\nC027C N044C N043P 2.451E-02\r\n.ENDS\r\n\r\n.SUBCKT Z008H TJ TCASE N043P\r\nR024L TJ N043R 1.505E-02\r\nR024T N043R N043W 4.806E-02\r\nR0262 N043W N044C 1.401E-01\r\nR0269 N044C TCASE 9.301E-02\r\nC026C TJ N043P 4.570E-04\r\nC026D N043R N043P 1.883E-03\r\nC0277 N043W N043P 7.670E-03\r\nC027C N044C N043P 2.679E-02\r\n.ENDS\r\n\r\n.SUBCKT Z008N TJ TCASE N043P\r\nR024L TJ N043R 1.603E-02\r\nR024T N043R N043W 5.393E-02\r\nR0262 N043W N044C 1.561E-01\r\nR0269 N044C TCASE 1.087E-01\r\nC026C TJ N043P 3.589E04\r\nC026D N043R N043P 1.457E-03\r\nC0277 N043W N043P 6.146E-03\r\nC027C N044C N043P 2.360E-02\r\n.ENDS\r\n\r\n.SUBCKT Z008S TJ TCASE N043P\r\nR024L TJ N043R 2.345E-02\r\nR024T N043R N043W 8.049E-02\r\nR0262 N043W N044C 2.160E-01\r\nR0269 N044C TCASE 1.414E-01\r\nC026C TJ N043P 2.194E-04\r\nC026D N043R N043P 8.701E-04\r\nC0277 N043W N043P 3.637E-03\r\nC027C N044C N043P 1.948E-02\r\n.ENDS\r\n\r\n.SUBCKT Z009N TJ TCASE N043P\r\nR024L TJ N043R 2.920E-02\r\nR024T N043R N043W 1.035E-01\r\nR0262 N043W N044C 2.587E-01\r\nR0269 N044C TCASE 1.708E-01\r\nC026C TJ N043P 1.567E-04\r\nC026D N043R N043P 6.153E-04\r\nC0277 N043W N043P 2.576E-03\r\nC027C N044C N043P 1.629E-02\r\n.ENDS\r\n\r\n.SUBCKT Z009T TJ TCASE N043P\r\nR024L TJ N043R 4.317E-02\r\nR024T N043R N043W 1.520E-01\r\nR0262 N043W N044C 3.212E-01\r\nR0269 N044C TCASE 2.116E-01\r\nC026C TJ N043P 1.051E-04\r\nC026D N043R N043P 4.072E-04\r\nC0277 N043W N043P 1.661E-03\r\nC027C N044C N043P 1.319E-02\r\n.ENDS\r\n\r\n.SUBCKT Z009U TJ TCASE N043P\r\nR024L TJ N043R 6.366E-02\r\nR024T N043R N043W 2.279E-01\r\nR0262 N043W N044C 3.873E-01\r\nR0269 N044C TCASE 2.559E-01\r\nC026C TJ N043P 7.009E-05\r\nC026D N043R N043P 2.725E-04\r\nC0277 N043W N043P 1.140E-03\r\nC027C N044C N043P 1.067E-02\r\n.ENDS\r\n\r\n.SUBCKT Z00BK TJ TCASE N043P\r\nR024L TJ N043R 1.026E-01\r\nR024T N043R N043W 3.723E-01\r\nR0262 N043W N044C 4.614E-01\r\nR0269 N044C TCASE 2.983E-01\r\nC026C TJ N043P 4.522E-05\r\nC026D N043R N043P 1.772E-04\r\nC0277 N043W N043P 8.708E-04\r\nC027C N044C N043P 8.827E-03\r\n.ENDS\r\n\r\n.SUBCKT Z00CL TJ TCASE N043P\r\nR024L TJ N043R 1.311E-01\r\nR024T N043R N043W 4.799E-01\r\nR0262 N043W N044C 5.053E-01\r\nR0269 N044C TCASE 3.193E-01\r\nC026C TJ N043P 3.471E-05\r\nC026D N043R N043P 1.353E-04\r\nC0277 N043W N043P 7.776E-04\r\nC027C N044C N043P 8.118E-03\r\n.ENDS\r\n\r\n.SUBCKT Z00D8 N03YZ N03ZV N0413 N045F TJ PARAMS: N03WZ=100 N042O=100 N043O=100 N03XZ=100 N03Y3=100 N03Y9=100 N03YB=100 N03YC=100\r\n.PARAM N046Q={N03WZ}\r\n.PARAM N047C={N03XZ}\r\n.PARAM N047J={0}\r\n.PARAM N047Q={1.0}\r\n.PARAM N0491={1.0}\r\n.PARAM N04C9={0.0}\r\n.PARAM N04CO={N03YB}\r\n.PARAM N04DB={0.8}\r\n.PARAM N04DZ={1.05}\r\n.PARAM N04E0={1.0}\r\n.PARAM N04EZ={N03YC}\r\n.PARAM N04F7={0.0}\r\nX03CX N04FL N04FO N04FW Z00FM PARAMS: N04GV={N04DB*N046Q}\r\nR03D4 N04FL N04FW 10G\r\nR03DO N03YZ N04FW 10M\r\nX03E0 N04HB N04FO Z00FB PARAMS: N04HD={N04E0*N046Q}\r\nR03E5 N04HB N04FO 10G\r\nR03EW N03YZ N04HB 1500M\r\nX03EY N04FL N03YZ N04HI Z00E5 PARAMS: N04I5={N04DZ*N046Q}\r\nR03F0 N04FL N04HI 10G\r\nR03GT N04HI N04FO 10M\r\nG03H4 N04I7 N04FO VALUE={LIMIT(V(N04IB)*DDT(V(N04HB,N04FO))*CDS*(1-0.00125*V(N04HB,N04FO)),0,1E9)}\r\nV03HF N04I7 N04IE DC=0\r\nR03IL N04IE N04FO 10G\r\nR03JX N03YZ N04IE 2000M\r\n.PARAM N04IR={0.00008\u002B0.0005}\r\n.PARAM N04J4={0.0000048*N03Y9}\r\n.PARAM N04JS={0}\r\n.PARAM N04K8={0.8}\r\n.PARAM N04KA={15}\r\n.PARAM N04KX={12}\r\n.PARAM N04KZ={750}\r\nE03K9 N04L4 0 VALUE={(((-TANH(N04K8*V(N03ZV,N0413)\u002BN04JS)\u002B1))/2)*(N04IR*I(V03R2)/N046Q)}\r\nR03KF N04L4 0 1E6\r\nG03MD N04L4 N04IB VALUE={IF(V(N04HB,N0413)\u003E0,V(N04L4,N04IB)/N04KX,V(N04L4,N04IB)/N04KA)}\r\nC03O2 N04IB 0 1E-8\r\nG03O3 N04IB 0 VALUE={IF(V(N04HB,N0413)\u003EN04KZ,1E4*V(N04IB),0)}\r\nR03OX N04IB 0 1E9\r\n.PARAM N04LT={4E-7*(N03Y3\u002BN04J4*(25-25.0))}\r\n.PARAM CDS={N046Q*N04LT}\r\nV03PD N03ZV N04LU DC=0\r\nG03PF N04LU N04FL VALUE={IF(I(V03PD)\u003E0,V(N04LU,N04FL)/N042O,V(N04LU,N04FL)/N043O)}\r\nX$M00GX N03YZ N04FL N04FO TJ Z00DK PARAMS: N04LZ={N047Q} N04M5={N0491} N04M8={N04CO} N04NE={N046Q} N04NQ={N047C} N04OQ={N04EZ} N04PR={N04F7}\r\nV03PS N04FO N0413 DC=0\r\nX$M03QQ N03YZ N04FL N04PZ TJ Z00E2 PARAMS: N04LZ={N047Q} N04M5={N0491} N04M8={N04CO} N04NE={N046Q} N04Q7={N04C9}\r\nV03R2 N0413 N04PZ DC=0\r\nG03R9 0 N045F VALUE={LIMIT(I(V03PS)*(V(N03YZ,N0413)),-10000K,10000K)}\r\nR03RC 0 N045F 1\r\n.ENDS\r\n\r\n.SUBCKT Z00DK N03YZ N03ZV N0413 TJ PARAMS: N04LZ=100 N04M5=100 N04M8=100 N04NE=100 N04NQ=100 N04OQ=100 N04PR=100\r\n.FUNC N04RI(N04RT){IF(N04RT\u003E=0,IF(N04RT\u003E50,(N04RT-49)*EXP(50),EXP(N04RT)),IF(ABS(N04RT)\u003E50,1/((ABS(N04RT)-49)*EXP(50)),1/EXP(ABS(N04RT))))}\r\n.FUNC N04RY(N04RT){(1-N04RI(-2*N04RT))/(1\u002BN04RI(-2*N04RT))}\r\n.FUNC N04TZ(N04RT){0.5*(N04RI(N04RT)\u002BN04RI(-N04RT))}\r\n.FUNC N04V5(N04VK,N04VO,N04WL)={N04WL-VGSTH(N04VK,N04VO,N04WL)}\r\n.FUNC VGSTH(N04VK,N04VO,N04WL)={N04WT\u002BN04YO*N04RI(N04YZ*(N04VK-25))-N04Z5(N04VK,N04VO,N04WL)\u002BN04M8 }\r\n.FUNC N04Z5(N04VK,N04VO,N04WL)={N04ZC*N04VO\u002BN04ZL*N04RY(N04ZM*N04VO)}\r\n.FUNC N0507(N04VK,N04VO,N04WL)={((N04V5(N04VK,N04VO,N04WL)\u002B0.00001\u002BN050K*LOG(2*N04TZ(N04V5(N04VK,N04VO,N04WL)/N050K))))/2}\r\n.FUNC N050O(N04VK,N04VO,N04WL)={N04M5*(N0513\u002BN0514)*(N0507(N04VK,N04VO,N04WL)**(N0518\u002BN051N*N04RY(N04VO**N0528)))}\r\n.FUNC N053S(N04VK,N04VO,N04WL)={1/((N0513\u002BN0514)*N0507(N04VK,N04VO,N04WL)**N054G)}\r\n.FUNC N054O(N04VK)={N054T\u002BN0553*(N04VK\u002B50)**2.0}\r\n.FUNC N055C(N04VK,N04VO,N04WL)={N050O(N04VK,N04VO,N04WL)*N04RY(N04VO/(N050O(N04VK,N04VO,N04WL)*N053S(N04VK,N04VO,N04WL)))}\r\n.FUNC N055J(N04VK,N04VO,N04WL)={N055C(N04VK,N04VO,N04WL)\u002BN04RI(0.25*(N04VO-VBR))}\r\n.FUNC N0564(N04VK,N04VO)={N04VO/(N054O(N04VK))}\r\n.PARAM N04ZC={0.00208}\r\n\u002BN04ZL={0.0}\r\n\u002BN04ZM={0.02}\r\n\u002BN04WT={1.02559}\r\n\u002BN04YO={4.9739}\r\n\u002BN04YZ={-0.00115}\r\n\u002BN0513={0.21}\r\n\u002BN0514={N04OQ}\r\n\u002BN054G={1.6532}\r\n\u002BN0528={0.2}\r\n\u002BN051N={1.0}\r\n\u002BN0518={1.45}\r\n\u002BN0553={0.0000056}\r\n\u002BN054T={0.071}\r\n\u002BVBR={N04NQ}\r\n\u002BN050K={2}\r\n\u002BN0572={0.0}\r\nG03RM N057G N0413 VALUE={N04NE*N055J(V(TJ,0),V(N057G,N0413),V(N03ZV,N0413))}\r\nG03RU N03YZ N057G VALUE={N04NE*N04LZ*N0564(V(TJ,0),V(N03YZ,N057G))}\r\nR03S3 N057G 0 1E9\r\n.ENDS\r\n\r\n.SUBCKT Z00E2 N03YZ N03ZV N0413 TJ PARAMS: N04LZ=100 N04M5=100 N04M8=100 N04NE=100 N04Q7=100\r\n.FUNC N04RI(N04RT){IF(N04RT\u003E=0,IF(N04RT\u003E50,(N04RT-49)*EXP(50),EXP(N04RT)),IF(ABS(N04RT)\u003E50,1/((ABS(N04RT)-49)*EXP(50)),1/EXP(ABS(N04RT))))}\r\n.FUNC N04RY(N04RT){(1-N04RI(-2*N04RT))/(1\u002BN04RI(-2*N04RT))}\r\n.FUNC N057Q(N04VO,N04VK,N04WL)={(N057V\u002BN0587*(N04VK-25))*(-N04VO-N0588(N04VK,N04WL))**N058F}\r\n.FUNC N0588(N04VK,N04WL)={N058G-(N058H-N058K*(N04VK-25))*(1\u002BN04RY(N0590*N04WL\u002BN059J))\u002BN04Q7}\r\n.PARAM N057V={0.8}\r\n\u002BN058F={2.0}\r\n\u002BN058G={2.7}\r\n\u002BN0587={0.002}\r\n\u002BN058H={0.4}\r\n\u002BN058K={0.0004}\r\n\u002BN0590={1.0}\r\n\u002BN059J={1.0}\r\n\u002BN0513={1.15}\r\n\u002BN054G={1.0}\r\nG03UF N03YZ N0413 VALUE={N04NE*IF(V(N03ZV,N0413)\u003E25,1E-12,IF(V(N03YZ,N0413)\u003E-N0588(V(TJ,0),V(N03ZV,N0413)),1E-12,-N057Q(V(N03YZ,N0413),V(TJ,0),V(N03ZV,N0413))))}\r\n.ENDS\r\n\r\n.SUBCKT Z00E5 N03ZV N03YZ N0413 PARAMS: N04I5=100\r\n.FUNC N04RI(N04RT){IF(N04RT\u003E=0,IF(N04RT\u003E50,(N04RT-49)*EXP(50),EXP(N04RT)),IF(ABS(N04RT)\u003E50,1/((ABS(N04RT)-49)*EXP(50)),1/EXP(ABS(N04RT))))}\r\n.FUNC N04RY(N04RT){(1-N04RI(-2*N04RT))/(1\u002BN04RI(-2*N04RT))}\r\n.PARAM N059O={0.0528}\r\n\u002BN059V={5.5E-09}\r\n\u002BN059Z={1.12E-13}\r\n\u002BN05A0={3.1314}\r\n\u002BN05A2={2.4E-10}\r\n\u002BN05A4={0.31818}\r\n\u002BN05AJ={0.5}\r\n\u002BN05B0={7}\r\n\u002BN05DB={0.6}\r\n\u002BN05DH={2.0E-9}\r\n.FUNC N05DL(N05DN)={N059V }\r\n.FUNC N05EI(N05DN)={-N059Z*N05DN }\r\n.FUNC N05EM(N05DN)={N05A2*(N04RY(N05A4*(N05DN-N05A0))\u002B1.0)}\r\n.FUNC CGS(N05DN)={N05DL(N05DN)\u002BN05EI(N05DN)\u002BN05EM(N05DN)}\r\nG03VP N03ZV N0413 VALUE={N059O*N04I5*DDT(V(N03ZV,N0413))*(CGS(V(N03YZ,N0413))\u002BN05AJ*N05DH*(N04RY(N05DB*(V(N03ZV,N0413)-N05B0))\u002B1.0))}\r\n.ENDS Z00E5\r\n\r\n.SUBCKT Z00FB N03YZ N0413 PARAMS: N04HD=100\r\n.FUNC N04RI(N04RT){IF(N04RT\u003E=0,IF(N04RT\u003E50,(N04RT-49)*EXP(50),EXP(N04RT)),IF(ABS(N04RT)\u003E50,1/((ABS(N04RT)-49)*EXP(50)),1/EXP(ABS(N04RT))))}\r\n.FUNC N04RY(N04RT){(1-N04RI(-2*N04RT))/(1\u002BN04RI(-2*N04RT))}\r\n.PARAM N05EO={11.5}\r\n.PARAM N05G9={4.9895E-12}\r\n.PARAM N05GJ={2.2862E-12}\r\n.PARAM N05GO={-0.0038244}\r\n.PARAM N05I8={1.2317E-11}\r\n.PARAM N05IE={-0.14349}\r\n.PARAM N05IK={1.0575}\r\n.PARAM N05J3={4.3346E-12}\r\n.PARAM N05J4={-0.030623}\r\n.PARAM N05JP={18.7637}\r\n.PARAM N05KG={-4.0274E-12}\r\n.PARAM N05KK={-0.41425}\r\n.FUNC N05KV(N05DN)={N05G9 }\r\n.FUNC N05L8(N05DN)={N05GJ*N04RI(N05GO*N05DN)}\r\n.FUNC N05OO(N05DN)={N05I8*N04RI(N05IE*N05DN)}\r\n.FUNC N05P9(N05DN)={N05J3*N04RI(N05J4*(N05DN-N05IK))}\r\n.FUNC N05PA(N05DN)={N05KG*0.5*(-N04RY(N05KK*(N05DN-N05JP))\u002B1.0)}\r\n.FUNC CDS(N05DN)={N05KV(N05DN)\u002BN05L8(N05DN)\u002BN05OO(N05DN)\u002BN05P9(N05DN)\u002BN05PA(N05DN)}\r\nG03H4 N03YZ N0413 VALUE={N04HD*N05EO*DDT(V(N03YZ,N0413))*IF(V(N03YZ,N0413)\u003E0,CDS(V(N03YZ,N0413)),CDS(0.0))}\r\n.ENDS Z00FB\r\n\r\n.SUBCKT Z00FM N03ZV N0413 N03YZ PARAMS: N04GV=100\r\n.FUNC N04RI(N04RT){IF(N04RT\u003E=0,IF(N04RT\u003E50,(N04RT-49)*EXP(50),EXP(N04RT)),IF(ABS(N04RT)\u003E50,1/((ABS(N04RT)-49)*EXP(50)),1/EXP(ABS(N04RT))))}\r\n.FUNC N04RY(N04RT){(1-N04RI(-2*N04RT))/(1\u002BN04RI(-2*N04RT))}\r\n.PARAM N05PC={1.0}\r\n.PARAM N05PS={10.1246E-13}\r\n.PARAM N05PY={4.312E-11}\r\n.PARAM N05Q1={-0.35325}\r\n.PARAM N05Q2={1.4227E-12}\r\n.PARAM N05QI={-0.0046989}\r\n.PARAM N05RH={2.8161E-12}\r\n.PARAM N05RP={-0.036418}\r\n.PARAM N05RQ={15.7629}\r\n.PARAM N05S4={9.291E-12}\r\n.PARAM N05S7={0.45656}\r\n.PARAM N05SD={11.9961}\r\n.PARAM N05SO={1.2487E-11}\r\n.PARAM N05TW={0.14317}\r\n.FUNC N05U9(N05DN)={N05PS }\r\n.FUNC N05VY(N05DN)={N05PY*N04RI(N05Q1*N05DN)}\r\n.FUNC N05W4(N05DN)={N05Q2*N04RI(N05QI*N05DN)}\r\n.FUNC N05WD(N05DN)={N05RH*N04RI(N05RP*N05DN)}\r\n.FUNC N05WG(N05DN)={N05S4*0.5*(-N04RY(N05S7*(N05DN-N05RQ))\u002B1.0)}\r\n.FUNC N05XJ(N05DN)={N05SO*0.5*(-N04RY(N05TW*(N05DN-N05SD))\u002B1.0)}\r\n.FUNC CGD(N05DN)={N05U9(N05DN)\u002BN05VY(N05DN)\u002BN05W4(N05DN)\u002BN05WD(N05DN)\u002BN05WG(N05DN)\u002BN05XJ(N05DN)}\r\nG03WR N03ZV N03YZ VALUE={N04GV*N05PC*DDT(V(N03ZV,N03YZ))*IF(V(N03YZ,N0413)\u003E0,CGD(V(N03YZ,N0413)),CGD(0.0))}\r\n  .ENDS Z00FM\r\n",
+              "Node_names": "D G S SS TJ TC",
+              "Scope_names": "",
+              "Name": "N1"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Netlist": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 5",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              },
+              "Node_names": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 7",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              },
+              "Scope_names": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 6",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              },
+              "Name": {
+                "IsVisible": true,
+                "Suffix": "",
+                "RelativeLocation": "3 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              }
+            }
+          },
+          {
+            "LibraryName": "SPICE Netlist",
+            "Top": 22,
+            "Left": 16,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "N2",
+            "ID": "9206ea7c-37e7-4ed4-add5-1802e50f1909",
+            "Parameters": {
+              "Netlist": "\r\n\r\n* Main Switch MOSFET\r\nXmain D G S SS TJ TC IMBG120R008M2H_L3\r\n\r\n*  ********************************************************************************************************************\r\n*  COPYRIGHT: INFINEON Technologies AG\r\n*  ********************************************************************************************************************\r\n*  COMMENT:\r\n*  - The models for Infineon Power MOSFET are evaluated with                                                          *\r\n*  - SIMetrixTM-Spice simulator. The Infineon Power MOSFET models                                                     *\r\n*    are tested, verified and provided in Spice simulation code.                                                      *\r\n*  ********************************************************************************************************************\r\n*  ********************************************************************************************************************\r\n*   INFINEON Power Transistors                                                                                        *\r\n*   Content:        SPICE Simulation Model Library                                                                    *\r\n*   Device:         CoolSiC 1200V SiC Trench MOSFET G2                                                                *\r\n*   Package:        D2PAK                                                                                 *\r\n*   Model Types:    L3                                                                                                *\r\n*   Technology:     1200V                                                                                             *\r\n*   Date:           2024-03-05                                                                                        *\r\n*   Version:        2.0                                                                                               *\r\n*  ********************************************************************************************************************\r\n*  *******************************************************************\r\n*   Infineon  | Terminals   |  Usage suggestion                      *\r\n*   Level     |             |                                        *\r\n*   -----------------------------------------------------------------*\r\n*   L3        | DRAIN,      |  Self-heating effects,                 *\r\n*             | GATE,       |  modeling of heat flow                 *\r\n*             | SOURCE,     |  including thermal models of           *\r\n*             | SOURCESENSE |  TO package.                           *\r\n*             | Tj, Tcase   |                                        *\r\n*  *******************************************************************\r\n*   Detailed Information:                                            *\r\n*                                                                    *\r\n*   The model files are available on the Infineon web page:          *\r\n*   http://www.infineon.com                                          *\r\n*                                                                    *\r\n*   This library contains models of the following INFINEON           *\r\n*   CoolSiC transistors:                                             *\r\n*                                                                    *\r\n* Product         Device Type       Package        L3-model name     *\r\n* IMBG120R008M2H  CoolSiC MOSFET    PG-TO263-7     IMBG120R008M2H_L3 *\r\n* IMBG120R012M2H  CoolSiC MOSFET    PG-TO263-7     IMBG120R012M2H_L3 *\r\n* IMBG120R017M2H  CoolSiC MOSFET    PG-TO263-7     IMBG120R017M2H_L3 *\r\n* IMBG120R022M2H  CoolSiC MOSFET    PG-TO263-7     IMBG120R022M2H_L3 *\r\n* IMBG120R026M2H  CoolSiC MOSFET    PG-TO263-7     IMBG120R026M2H_L3 *\r\n* IMBG120R040M2H  CoolSiC MOSFET    PG-TO263-7     IMBG120R040M2H_L3 *\r\n* IMBG120R053M2H  CoolSiC MOSFET    PG-TO263-7     IMBG120R053M2H_L3 *\r\n* IMBG120R078M2H  CoolSiC MOSFET    PG-TO263-7     IMBG120R078M2H_L3 *\r\n* IMBG120R116M2H  CoolSiC MOSFET    PG-TO263-7     IMBG120R116M2H_L3 *\r\n* IMBG120R181M2H  CoolSiC MOSFET    PG-TO263-7     IMBG120R181M2H_L3 *\r\n* IMBG120R234M2H  CoolSiC MOSFET    PG-TO263-7     IMBG120R234M2H_L3 *\r\n* *********************************************************************************************************************\r\n* *********************************************************************************************************************\r\n* DISCLAIMER\r\n*\r\n* INFINEON\uFFFDS MODEL TERMS OF USE\r\n*\r\n* BY DOWNLOADING AND/OR USING THIS INFINEON MODEL (\uFFFDMODEL\uFFFD), THE USER (INCLUDING YOU) AGREES TO BE BOUND BY THE TERMS\r\n* MODEL BUT OF USE HERE STATED. IF USER DOES NOT AGREE TO ALL TERMS OF USE HERE STATED, USER SHALL NOT DOWNLOAD, USE\r\n* OR COPY THE IMMEDIATELY DELETE IT (TO THE EXTENT THAT IT WAS DOWNLOADED ALREADY).\r\n*\r\n* 1.  SCOPE OF USE\r\n* 1.1 Any use of this Model provided by Infineon Technologies AG is subject to these Terms of Use.\r\n* 1.2 This Model, provided by Infineon, does not fully represent all of the specifications and operating\r\n*     characteristics of the product to which this Model relates.\r\n* 1.3 This Model only describes the characteristics of a typical product. In all cases, the current data sheet\r\n*     information for a given product is the final design guideline and the only actual performance specification.\r\n*     Although this Model can be a useful tool to evaluate the product performance, it cannot simulate the exact\r\n*     product performance under all conditions and it is also not intended to replace bread-boarding for final\r\n*     verification.\r\n* 2.  IMPORTANT NOTICE\r\n* 2.1 Infineon Technologies AG (\uFFFDInfineon\uFFFD) is not and cannot be aware of the specific application of the Infineon\uFFFDs\r\n*     Model by User. However, Model may from time to time be used by User in potentially harmful and/or\r\n*     life-endangering applications such as traffic, logistic, medical, nuclear or military applications or in other\r\n*     applications where failure of the Model may predictably cause damage to persons\uFFFD life or health or to property\r\n*     (hereinafter \u0022Critical Applications\u0022).\r\n* 2.2 User acknowledges that Infineon has not specifically designed or qualified the Model for Critical Applications\r\n*     that the Model may contain errors and bugs and that User is required to qualify the Model for Critical\r\n*     Applications pursuant to the applicable local quality, safety and legal requirements before permitting or giving\r\n*     access to any such use.\r\n* 3.  CONFIDENTIAL INFORMATION\r\n*     User shall treat ideas, concepts and information incorporated in the Model, the documentation and the content of\r\n*     this Terms of Use (together hereinafter \u0022Confidential Information\u0022) confidential, not disclose it to any third\r\n*     party unless otherwise agreed in writing between User and Infineon, not use it for any other purposes than using\r\n*     the Model for simulation and testing purposes only.\r\n* 4.  WARRANTY\r\n* 4.1 User acknowledges that the Model is provided by Infineon under this Terms of Use is provided free of charge and\r\n*     \u0022AS IS\u0022 without any warranty or liability of any kind and Infineon hereby expressly disclaims any warranties or\r\n*     representations, whether express, implied, statutory or otherwise, including but not limited to warranties of\r\n*     workmanship, merchantability, fitness for a particular purpose, defects in the Model, or non-infringement of\r\n*     third parties intellectual property rights.\r\n* 4.2 Infineon reserves the right to make corrections, deletions, modifications, enhancements, improvements and other\r\n*     changes to the Model at any time or to move or discontinue any Model without notice.\r\n* 5.  LIABILITY\r\n* 5.1 Nothing in this Terms of Use shall limit or exclude Infineon\u0027s liability under mandatory liability laws, for\r\n*     injuries to life, body or health, for fraudulent concealment of defects in the software, or in cases of\r\n*     Infineon\u0027s intentional misconduct or gross negligence.\r\n* 5.2 Without prejudice to Sections 5.1, in cases of Infineon\u0027s slight negligent breach of obligations that restrict\r\n*     essential rights or duties arising from the nature of this Terms of Use in a way that there is a risk of\r\n*     non-achievement of the purpose of this Terms of Use or of an obligation whose observance User regularly may\r\n*     trust in and whereas compliance with only makes proper execution of this Terms of Use possible, Infineon\u0027s\r\n*     liability shall be limited to the typically, foreseeable damage.\r\n* 5.3 Without prejudice to Sections 8.1 and 8.2, Infineon\u0027s liability under this Agreement shall be excluded in all\r\n*     other cases.\r\n* 6.  EXPORT REGULATIONS\r\n*     The User shall comply with all applicable national and international laws and regulations, in particular the\r\n*     applicable export control regulations and sanction programs. The User also agrees not to export, re-export or\r\n*     transfer any software or technology developed with or using information, software or technology offered by\r\n*     Infineon, in violation of any applicable laws or regulations of the competent authorities. Further, the User\r\n*     shall neither use any products, information, software and technology offered by Infineon in or in connection\r\n*     with nuclear technology or weapons of mass destruction (nuclear, biological or chemical) and carriers thereof\r\n*     nor supply military consignees.\r\n* 7.  TERMINATION OF USE PERMIT\r\n*     If the User violates these Terms of Use, such User\uFFFDs permit to use this Model terminates automatically. In\r\n*     addition, Infineon may terminate the User\uFFFDs permit to use this Model at its discretion and at any time\r\n*     regardless of any violation of these Terms of Use. In any of the foregoing events, the User is obliged to\r\n*     immediately destroy any content that has been downloaded or printed from Infineon\uFFFDs website.\r\n* 8.  MISCELLANEOUS\r\n* 8.1 These Terms of Use are subject to the laws of the Federal Republic of Germany with the exception of the United\r\n*     Nations on Purchase Contracts on the International Sale of Goods dated April 11, 1980 (CISG). The exclusive\r\n*     place of jurisdiction is Munich, Germany.\r\n* 8.2 Should any provision in these Terms of Use be or become invalid, the validity of all other provisions or\r\n*     agreements shall remain unaffected thereby.\r\n* *********************************************************************************************************************\r\n*     SUPPORT : support@infineon.com\r\n* *********************************************************************************************************************\r\n* *********************************************************************************************************************\r\n\r\n\r\n.SUBCKT IMBG120R008M2H_L3 DRAIN GATE SOURCE SOURCESENSE TJ TCASE\r\nL00I6 DRAIN N03YZ 1N\r\nL00I7 GATE N03ZV 3N\r\nL00IQ N040C N0413 0.1N\r\nL00JG SOURCESENSE N040C 1P\r\nR00JR N041Y N040C 1P\r\nL00K7 SOURCE N041Y 1N\r\nX00LG TJ TCASE 0 Z006W\r\nX$M00GX N03YZ N03ZV N0413 N03WU TJ Z00D8 PARAMS: N03WZ=23.04 N042O=4 N043O=1.8 N03XZ=1400 N03Y3=0.001 N03Y9=230 N03YB=0.0 N03YC=0.0\r\nG00MD 0 TJ VALUE={IF(TIME\u003E0,LIMIT(ABS(V(N03WU,0)),0,1E10),0)}\r\nR00MH TJ 0 1E6\r\n.ENDS\r\n\r\n.SUBCKT IMBG120R012M2H_L3 DRAIN GATE SOURCE SOURCESENSE TJ TCASE\r\nL00I6 DRAIN N03YZ 1N\r\nL00I7 GATE N03ZV 3N\r\nL00IQ N040C N0413 0.1N\r\nL00JG SOURCESENSE N040C 1P\r\nR00JR N041Y N040C 1P\r\nL00K7 SOURCE N041Y 1N\r\nX00LG TJ TCASE 0 Z007R\r\nX$M00GX N03YZ N03ZV N0413 N03WU TJ Z00D8 PARAMS: N03WZ=14.54 N042O=6 N043O=2 N03XZ=1400 N03Y3=0.001 N03Y9=180 N03YB=0.0 N03YC=0.0\r\nG00MD 0 TJ VALUE={IF(TIME\u003E0,LIMIT(ABS(V(N03WU,0)),0,1E10),0)}\r\nR00MH TJ 0 1E6\r\n.ENDS\r\n\r\n.SUBCKT IMBG120R017M2H_L3 DRAIN GATE SOURCE SOURCESENSE TJ TCASE\r\nL00I6 DRAIN N03YZ 1N\r\nL00I7 GATE N03ZV 3N\r\nL00IQ N040C N0413 0.1N\r\nL00JG SOURCESENSE N040C 1P\r\nR00JR N041Y N040C 1P\r\nL00K7 SOURCE N041Y 1N\r\nX00LG TJ TCASE 0 Z007W\r\nX$M00GX N03YZ N03ZV N0413 N03WU TJ Z00D8 PARAMS: N03WZ=10.36 N042O=6 N043O=1.3 N03XZ=1400 N03Y3=0.001 N03Y9=180 N03YB=0.0 N03YC=0.0\r\nG00MD 0 TJ VALUE={IF(TIME\u003E0,LIMIT(ABS(V(N03WU,0)),0,1E10),0)}\r\nR00MH TJ 0 1E6\r\n.ENDS\r\n\r\n.SUBCKT IMBG120R022M2H_L3 DRAIN GATE SOURCE SOURCESENSE TJ TCASE\r\nL00I6 DRAIN N03YZ 1N\r\nL00I7 GATE N03ZV 3N\r\nL00IQ N040C N0413 0.1N\r\nL00JG SOURCESENSE N040C 1P\r\nR00JR N041Y N040C 1P\r\nL00K7 SOURCE N041Y 1N\r\nX00LG TJ TCASE 0 Z008H\r\nX$M00GX N03YZ N03ZV N0413 N03WU TJ Z00D8 PARAMS: N03WZ=8.226 N042O=6 N043O=1.3 N03XZ=1400 N03Y3=0.001 N03Y9=180 N03YB=0.0 N03YC=0.0\r\nG00MD 0 TJ VALUE={IF(TIME\u003E0,LIMIT(ABS(V(N03WU,0)),0,1E10),0)}\r\nR00MH TJ 0 1E6\r\n.ENDS\r\n\r\n.SUBCKT IMBG120R026M2H_L3 DRAIN GATE SOURCE SOURCESENSE TJ TCASE\r\nL00I6 DRAIN N03YZ 1P\r\nL00I7 GATE N03ZV 3N\r\nL00IQ N040C N0413 0.5N\r\nL00JG SOURCESENSE N040C 1P\r\nR00JR N041Y N040C 1P\r\nL00K7 SOURCE N041Y 1N\r\nX00LG TJ TCASE 0 Z008N\r\nX$M00GX N03YZ N03ZV N0413 N03WU TJ Z00D8 PARAMS: N03WZ=6.992 N042O=4.5 N043O=1.5 N03XZ=1400 N03Y3=0.001 N03Y9=180 N03YB=0.0 N03YC=0.0\r\nG00MD 0 TJ VALUE={IF(TIME\u003E0,LIMIT(ABS(V(N03WU,0)),0,1E10),0)}\r\nR00MH TJ 0 1E6\r\n.ENDS\r\n\r\n.SUBCKT IMBG120R040M2H_L3 DRAIN GATE SOURCE SOURCESENSE TJ TCASE\r\nL00I6 DRAIN N03YZ 1P\r\nL00I7 GATE N03ZV 3N\r\nL00IQ N040C N0413 0.5N\r\nL00JG SOURCESENSE N040C 1P\r\nR00JR N041Y N040C 1P\r\nL00K7 SOURCE N041Y 1N\r\nX00LG TJ TCASE 0 Z008S\r\nX$M00GX N03YZ N03ZV N0413 N03WU TJ Z00D8 PARAMS: N03WZ=4.490 N042O=3.5 N043O=1.2 N03XZ=1400 N03Y3=0.001 N03Y9=180 N03YB=0.0 N03YC=0.0\r\nG00MD 0 TJ VALUE={IF(TIME\u003E0,LIMIT(ABS(V(N03WU,0)),0,1E10),0)}\r\nR00MH TJ 0 1E6\r\n.ENDS\r\n\r\n.SUBCKT IMBG120R053M2H_L3 DRAIN GATE SOURCE SOURCESENSE TJ TCASE\r\nL00I6 DRAIN N03YZ 1P\r\nL00I7 GATE N03ZV 3N\r\nL00IQ N040C N0413 0.5N\r\nL00JG SOURCESENSE N040C 1P\r\nR00JR N041Y N040C 1P\r\nL00K7 SOURCE N041Y 1N\r\nX00LG TJ TCASE 0 Z009N\r\nX$M00GX N03YZ N03ZV N0413 N03WU TJ Z00D8 PARAMS: N03WZ=3.379 N042O=4.5 N043O=4 N03XZ=1400 N03Y3=0.001 N03Y9=180 N03YB=0.0 N03YC=0.0\r\nG00MD 0 TJ VALUE={IF(TIME\u003E0,LIMIT(ABS(V(N03WU,0)),0,1E10),0)}\r\nR00MH TJ 0 1E6\r\n.ENDS\r\n\r\n.SUBCKT IMBG120R078M2H_L3 DRAIN GATE SOURCE SOURCESENSE TJ TCASE\r\nL00I6 DRAIN N03YZ 1P\r\nL00I7 GATE N03ZV 3N\r\nL00IQ N040C N0413 0.5N\r\nL00JG SOURCESENSE N040C 1P\r\nR00JR N041Y N040C 1P\r\nL00K7 SOURCE N041Y 1N\r\nX00LG TJ TCASE 0 Z009T\r\nX$M00GX N03YZ N03ZV N0413 N03WU TJ Z00D8 PARAMS: N03WZ=2.276 N042O=4.5 N043O=6 N03XZ=1400 N03Y3=0.001 N03Y9=180 N03YB=0.0 N03YC=0.0\r\nG00MD 0 TJ VALUE={IF(TIME\u003E0,LIMIT(ABS(V(N03WU,0)),0,1E10),0)}\r\nR00MH TJ 0 1E6\r\n.ENDS\r\n\r\n.SUBCKT IMBG120R116M2H_L3 DRAIN GATE SOURCE SOURCESENSE TJ TCASE\r\nL00I6 DRAIN N03YZ 1P\r\nL00I7 GATE N03ZV 3N\r\nL00IQ N040C N0413 0.5N\r\nL00JG SOURCESENSE N040C 1P\r\nR00JR N041Y N040C 1P\r\nL00K7 SOURCE N041Y 1N\r\nX00LG TJ TCASE 0 Z009U\r\nX$M00GX N03YZ N03ZV N0413 N03WU TJ Z00D8 PARAMS: N03WZ=1.536 N042O=4.5 N043O=6 N03XZ=1400 N03Y3=0.001 N03Y9=180 N03YB=0.0 N03YC=0.0\r\nG00MD 0 TJ VALUE={IF(TIME\u003E0,LIMIT(ABS(V(N03WU,0)),0,1E10),0)}\r\nR00MH TJ 0 1E6\r\n.ENDS\r\n\r\n.SUBCKT IMBG120R181M2H_L3 DRAIN GATE SOURCE SOURCESENSE TJ TCASE\r\nL00I6 DRAIN N03YZ 1P\r\nL00I7 GATE N03ZV 3N\r\nL00IQ N040C N0413 0.5N\r\nL00JG SOURCESENSE N040C 1P\r\nR00JR N041Y N040C 1P\r\nL00K7 SOURCE N041Y 1N\r\nX00LG TJ TCASE 0 Z00BK\r\nX$M00GX N03YZ N03ZV N0413 N03WU TJ Z00D8 PARAMS: N03WZ=0.979 N042O=4.5 N043O=6 N03XZ=1400 N03Y3=0.001 N03Y9=180 N03YB=0.0 N03YC=0.0\r\nG00MD 0 TJ VALUE={IF(TIME\u003E0,LIMIT(ABS(V(N03WU,0)),0,1E10),0)}\r\nR00MH TJ 0 1E6\r\n.ENDS\r\n\r\n.SUBCKT IMBG120R234M2H_L3 DRAIN GATE SOURCE SOURCESENSE TJ TCASE\r\nL00I6 DRAIN N03YZ 1P\r\nL00I7 GATE N03ZV 3N\r\nL00IQ N040C N0413 0.5N\r\nL00JG SOURCESENSE N040C 1P\r\nR00JR N041Y N040C 1P\r\nL00K7 SOURCE N041Y 1N\r\nX00LG TJ TCASE 0 Z00CL\r\nX$M00GX N03YZ N03ZV N0413 N03WU TJ Z00D8 PARAMS: N03WZ=0.76 N042O=7 N043O=6 N03XZ=1400 N03Y3=0.001 N03Y9=180 N03YB=0.0 N03YC=0.0\r\nG00MD 0 TJ VALUE={IF(TIME\u003E0,LIMIT(ABS(V(N03WU,0)),0,1E10),0)}\r\nR00MH TJ 0 1E6\r\n.ENDS\r\n\r\n.SUBCKT Z006W TJ TCASE N043P\r\nR024L TJ N043R 3.853E-03\r\nR024T N043R N043W 1.428E-02\r\nR0262 N043W N044C 3.416E-02\r\nR0269 N044C TCASE 9.191E-02\r\nC026C TJ N043P 9.422E-04\r\nC026D N043R N043P 3.497E-03\r\nC0277 N043W N043P 1.430E-02\r\nC027C N044C N043P 3.457E-02\r\n.ENDS\r\n\r\n.SUBCKT Z007R TJ TCASE N043P\r\nR024L TJ N043R 6.088E-03\r\nR024T N043R N043W 2.217E-02\r\nR0262 N043W N044C 5.591E-02\r\nR0269 N044C TCASE 1.065E-01\r\nC026C TJ N043P 6.351E-04\r\nC026D N043R N043P 2.436E-03\r\nC0277 N043W N043P 1.028E-02\r\nC027C N044C N043P 2.298E-02\r\n.ENDS\r\n\r\n.SUBCKT Z007W TJ TCASE N043P\r\nR024L TJ N043R 1.295E-02\r\nR024T N043R N043W 3.729E-02\r\nR0262 N043W N044C 1.050E-01\r\nR0269 N044C TCASE 9.275E-02\r\nC026C TJ N043P 6.322E-04\r\nC026D N043R N043P 2.441E-03\r\nC0277 N043W N043P 9.346E-03\r\nC027C N044C N043P 2.451E-02\r\n.ENDS\r\n\r\n.SUBCKT Z008H TJ TCASE N043P\r\nR024L TJ N043R 1.505E-02\r\nR024T N043R N043W 4.806E-02\r\nR0262 N043W N044C 1.401E-01\r\nR0269 N044C TCASE 9.301E-02\r\nC026C TJ N043P 4.570E-04\r\nC026D N043R N043P 1.883E-03\r\nC0277 N043W N043P 7.670E-03\r\nC027C N044C N043P 2.679E-02\r\n.ENDS\r\n\r\n.SUBCKT Z008N TJ TCASE N043P\r\nR024L TJ N043R 1.603E-02\r\nR024T N043R N043W 5.393E-02\r\nR0262 N043W N044C 1.561E-01\r\nR0269 N044C TCASE 1.087E-01\r\nC026C TJ N043P 3.589E04\r\nC026D N043R N043P 1.457E-03\r\nC0277 N043W N043P 6.146E-03\r\nC027C N044C N043P 2.360E-02\r\n.ENDS\r\n\r\n.SUBCKT Z008S TJ TCASE N043P\r\nR024L TJ N043R 2.345E-02\r\nR024T N043R N043W 8.049E-02\r\nR0262 N043W N044C 2.160E-01\r\nR0269 N044C TCASE 1.414E-01\r\nC026C TJ N043P 2.194E-04\r\nC026D N043R N043P 8.701E-04\r\nC0277 N043W N043P 3.637E-03\r\nC027C N044C N043P 1.948E-02\r\n.ENDS\r\n\r\n.SUBCKT Z009N TJ TCASE N043P\r\nR024L TJ N043R 2.920E-02\r\nR024T N043R N043W 1.035E-01\r\nR0262 N043W N044C 2.587E-01\r\nR0269 N044C TCASE 1.708E-01\r\nC026C TJ N043P 1.567E-04\r\nC026D N043R N043P 6.153E-04\r\nC0277 N043W N043P 2.576E-03\r\nC027C N044C N043P 1.629E-02\r\n.ENDS\r\n\r\n.SUBCKT Z009T TJ TCASE N043P\r\nR024L TJ N043R 4.317E-02\r\nR024T N043R N043W 1.520E-01\r\nR0262 N043W N044C 3.212E-01\r\nR0269 N044C TCASE 2.116E-01\r\nC026C TJ N043P 1.051E-04\r\nC026D N043R N043P 4.072E-04\r\nC0277 N043W N043P 1.661E-03\r\nC027C N044C N043P 1.319E-02\r\n.ENDS\r\n\r\n.SUBCKT Z009U TJ TCASE N043P\r\nR024L TJ N043R 6.366E-02\r\nR024T N043R N043W 2.279E-01\r\nR0262 N043W N044C 3.873E-01\r\nR0269 N044C TCASE 2.559E-01\r\nC026C TJ N043P 7.009E-05\r\nC026D N043R N043P 2.725E-04\r\nC0277 N043W N043P 1.140E-03\r\nC027C N044C N043P 1.067E-02\r\n.ENDS\r\n\r\n.SUBCKT Z00BK TJ TCASE N043P\r\nR024L TJ N043R 1.026E-01\r\nR024T N043R N043W 3.723E-01\r\nR0262 N043W N044C 4.614E-01\r\nR0269 N044C TCASE 2.983E-01\r\nC026C TJ N043P 4.522E-05\r\nC026D N043R N043P 1.772E-04\r\nC0277 N043W N043P 8.708E-04\r\nC027C N044C N043P 8.827E-03\r\n.ENDS\r\n\r\n.SUBCKT Z00CL TJ TCASE N043P\r\nR024L TJ N043R 1.311E-01\r\nR024T N043R N043W 4.799E-01\r\nR0262 N043W N044C 5.053E-01\r\nR0269 N044C TCASE 3.193E-01\r\nC026C TJ N043P 3.471E-05\r\nC026D N043R N043P 1.353E-04\r\nC0277 N043W N043P 7.776E-04\r\nC027C N044C N043P 8.118E-03\r\n.ENDS\r\n\r\n.SUBCKT Z00D8 N03YZ N03ZV N0413 N045F TJ PARAMS: N03WZ=100 N042O=100 N043O=100 N03XZ=100 N03Y3=100 N03Y9=100 N03YB=100 N03YC=100\r\n.PARAM N046Q={N03WZ}\r\n.PARAM N047C={N03XZ}\r\n.PARAM N047J={0}\r\n.PARAM N047Q={1.0}\r\n.PARAM N0491={1.0}\r\n.PARAM N04C9={0.0}\r\n.PARAM N04CO={N03YB}\r\n.PARAM N04DB={0.8}\r\n.PARAM N04DZ={1.05}\r\n.PARAM N04E0={1.0}\r\n.PARAM N04EZ={N03YC}\r\n.PARAM N04F7={0.0}\r\nX03CX N04FL N04FO N04FW Z00FM PARAMS: N04GV={N04DB*N046Q}\r\nR03D4 N04FL N04FW 10G\r\nR03DO N03YZ N04FW 10M\r\nX03E0 N04HB N04FO Z00FB PARAMS: N04HD={N04E0*N046Q}\r\nR03E5 N04HB N04FO 10G\r\nR03EW N03YZ N04HB 1500M\r\nX03EY N04FL N03YZ N04HI Z00E5 PARAMS: N04I5={N04DZ*N046Q}\r\nR03F0 N04FL N04HI 10G\r\nR03GT N04HI N04FO 10M\r\nG03H4 N04I7 N04FO VALUE={LIMIT(V(N04IB)*DDT(V(N04HB,N04FO))*CDS*(1-0.00125*V(N04HB,N04FO)),0,1E9)}\r\nV03HF N04I7 N04IE DC=0\r\nR03IL N04IE N04FO 10G\r\nR03JX N03YZ N04IE 2000M\r\n.PARAM N04IR={0.00008\u002B0.0005}\r\n.PARAM N04J4={0.0000048*N03Y9}\r\n.PARAM N04JS={0}\r\n.PARAM N04K8={0.8}\r\n.PARAM N04KA={15}\r\n.PARAM N04KX={12}\r\n.PARAM N04KZ={750}\r\nE03K9 N04L4 0 VALUE={(((-TANH(N04K8*V(N03ZV,N0413)\u002BN04JS)\u002B1))/2)*(N04IR*I(V03R2)/N046Q)}\r\nR03KF N04L4 0 1E6\r\nG03MD N04L4 N04IB VALUE={IF(V(N04HB,N0413)\u003E0,V(N04L4,N04IB)/N04KX,V(N04L4,N04IB)/N04KA)}\r\nC03O2 N04IB 0 1E-8\r\nG03O3 N04IB 0 VALUE={IF(V(N04HB,N0413)\u003EN04KZ,1E4*V(N04IB),0)}\r\nR03OX N04IB 0 1E9\r\n.PARAM N04LT={4E-7*(N03Y3\u002BN04J4*(25-25.0))}\r\n.PARAM CDS={N046Q*N04LT}\r\nV03PD N03ZV N04LU DC=0\r\nG03PF N04LU N04FL VALUE={IF(I(V03PD)\u003E0,V(N04LU,N04FL)/N042O,V(N04LU,N04FL)/N043O)}\r\nX$M00GX N03YZ N04FL N04FO TJ Z00DK PARAMS: N04LZ={N047Q} N04M5={N0491} N04M8={N04CO} N04NE={N046Q} N04NQ={N047C} N04OQ={N04EZ} N04PR={N04F7}\r\nV03PS N04FO N0413 DC=0\r\nX$M03QQ N03YZ N04FL N04PZ TJ Z00E2 PARAMS: N04LZ={N047Q} N04M5={N0491} N04M8={N04CO} N04NE={N046Q} N04Q7={N04C9}\r\nV03R2 N0413 N04PZ DC=0\r\nG03R9 0 N045F VALUE={LIMIT(I(V03PS)*(V(N03YZ,N0413)),-10000K,10000K)}\r\nR03RC 0 N045F 1\r\n.ENDS\r\n\r\n.SUBCKT Z00DK N03YZ N03ZV N0413 TJ PARAMS: N04LZ=100 N04M5=100 N04M8=100 N04NE=100 N04NQ=100 N04OQ=100 N04PR=100\r\n.FUNC N04RI(N04RT){IF(N04RT\u003E=0,IF(N04RT\u003E50,(N04RT-49)*EXP(50),EXP(N04RT)),IF(ABS(N04RT)\u003E50,1/((ABS(N04RT)-49)*EXP(50)),1/EXP(ABS(N04RT))))}\r\n.FUNC N04RY(N04RT){(1-N04RI(-2*N04RT))/(1\u002BN04RI(-2*N04RT))}\r\n.FUNC N04TZ(N04RT){0.5*(N04RI(N04RT)\u002BN04RI(-N04RT))}\r\n.FUNC N04V5(N04VK,N04VO,N04WL)={N04WL-VGSTH(N04VK,N04VO,N04WL)}\r\n.FUNC VGSTH(N04VK,N04VO,N04WL)={N04WT\u002BN04YO*N04RI(N04YZ*(N04VK-25))-N04Z5(N04VK,N04VO,N04WL)\u002BN04M8 }\r\n.FUNC N04Z5(N04VK,N04VO,N04WL)={N04ZC*N04VO\u002BN04ZL*N04RY(N04ZM*N04VO)}\r\n.FUNC N0507(N04VK,N04VO,N04WL)={((N04V5(N04VK,N04VO,N04WL)\u002B0.00001\u002BN050K*LOG(2*N04TZ(N04V5(N04VK,N04VO,N04WL)/N050K))))/2}\r\n.FUNC N050O(N04VK,N04VO,N04WL)={N04M5*(N0513\u002BN0514)*(N0507(N04VK,N04VO,N04WL)**(N0518\u002BN051N*N04RY(N04VO**N0528)))}\r\n.FUNC N053S(N04VK,N04VO,N04WL)={1/((N0513\u002BN0514)*N0507(N04VK,N04VO,N04WL)**N054G)}\r\n.FUNC N054O(N04VK)={N054T\u002BN0553*(N04VK\u002B50)**2.0}\r\n.FUNC N055C(N04VK,N04VO,N04WL)={N050O(N04VK,N04VO,N04WL)*N04RY(N04VO/(N050O(N04VK,N04VO,N04WL)*N053S(N04VK,N04VO,N04WL)))}\r\n.FUNC N055J(N04VK,N04VO,N04WL)={N055C(N04VK,N04VO,N04WL)\u002BN04RI(0.25*(N04VO-VBR))}\r\n.FUNC N0564(N04VK,N04VO)={N04VO/(N054O(N04VK))}\r\n.PARAM N04ZC={0.00208}\r\n\u002BN04ZL={0.0}\r\n\u002BN04ZM={0.02}\r\n\u002BN04WT={1.02559}\r\n\u002BN04YO={4.9739}\r\n\u002BN04YZ={-0.00115}\r\n\u002BN0513={0.21}\r\n\u002BN0514={N04OQ}\r\n\u002BN054G={1.6532}\r\n\u002BN0528={0.2}\r\n\u002BN051N={1.0}\r\n\u002BN0518={1.45}\r\n\u002BN0553={0.0000056}\r\n\u002BN054T={0.071}\r\n\u002BVBR={N04NQ}\r\n\u002BN050K={2}\r\n\u002BN0572={0.0}\r\nG03RM N057G N0413 VALUE={N04NE*N055J(V(TJ,0),V(N057G,N0413),V(N03ZV,N0413))}\r\nG03RU N03YZ N057G VALUE={N04NE*N04LZ*N0564(V(TJ,0),V(N03YZ,N057G))}\r\nR03S3 N057G 0 1E9\r\n.ENDS\r\n\r\n.SUBCKT Z00E2 N03YZ N03ZV N0413 TJ PARAMS: N04LZ=100 N04M5=100 N04M8=100 N04NE=100 N04Q7=100\r\n.FUNC N04RI(N04RT){IF(N04RT\u003E=0,IF(N04RT\u003E50,(N04RT-49)*EXP(50),EXP(N04RT)),IF(ABS(N04RT)\u003E50,1/((ABS(N04RT)-49)*EXP(50)),1/EXP(ABS(N04RT))))}\r\n.FUNC N04RY(N04RT){(1-N04RI(-2*N04RT))/(1\u002BN04RI(-2*N04RT))}\r\n.FUNC N057Q(N04VO,N04VK,N04WL)={(N057V\u002BN0587*(N04VK-25))*(-N04VO-N0588(N04VK,N04WL))**N058F}\r\n.FUNC N0588(N04VK,N04WL)={N058G-(N058H-N058K*(N04VK-25))*(1\u002BN04RY(N0590*N04WL\u002BN059J))\u002BN04Q7}\r\n.PARAM N057V={0.8}\r\n\u002BN058F={2.0}\r\n\u002BN058G={2.7}\r\n\u002BN0587={0.002}\r\n\u002BN058H={0.4}\r\n\u002BN058K={0.0004}\r\n\u002BN0590={1.0}\r\n\u002BN059J={1.0}\r\n\u002BN0513={1.15}\r\n\u002BN054G={1.0}\r\nG03UF N03YZ N0413 VALUE={N04NE*IF(V(N03ZV,N0413)\u003E25,1E-12,IF(V(N03YZ,N0413)\u003E-N0588(V(TJ,0),V(N03ZV,N0413)),1E-12,-N057Q(V(N03YZ,N0413),V(TJ,0),V(N03ZV,N0413))))}\r\n.ENDS\r\n\r\n.SUBCKT Z00E5 N03ZV N03YZ N0413 PARAMS: N04I5=100\r\n.FUNC N04RI(N04RT){IF(N04RT\u003E=0,IF(N04RT\u003E50,(N04RT-49)*EXP(50),EXP(N04RT)),IF(ABS(N04RT)\u003E50,1/((ABS(N04RT)-49)*EXP(50)),1/EXP(ABS(N04RT))))}\r\n.FUNC N04RY(N04RT){(1-N04RI(-2*N04RT))/(1\u002BN04RI(-2*N04RT))}\r\n.PARAM N059O={0.0528}\r\n\u002BN059V={5.5E-09}\r\n\u002BN059Z={1.12E-13}\r\n\u002BN05A0={3.1314}\r\n\u002BN05A2={2.4E-10}\r\n\u002BN05A4={0.31818}\r\n\u002BN05AJ={0.5}\r\n\u002BN05B0={7}\r\n\u002BN05DB={0.6}\r\n\u002BN05DH={2.0E-9}\r\n.FUNC N05DL(N05DN)={N059V }\r\n.FUNC N05EI(N05DN)={-N059Z*N05DN }\r\n.FUNC N05EM(N05DN)={N05A2*(N04RY(N05A4*(N05DN-N05A0))\u002B1.0)}\r\n.FUNC CGS(N05DN)={N05DL(N05DN)\u002BN05EI(N05DN)\u002BN05EM(N05DN)}\r\nG03VP N03ZV N0413 VALUE={N059O*N04I5*DDT(V(N03ZV,N0413))*(CGS(V(N03YZ,N0413))\u002BN05AJ*N05DH*(N04RY(N05DB*(V(N03ZV,N0413)-N05B0))\u002B1.0))}\r\n.ENDS Z00E5\r\n\r\n.SUBCKT Z00FB N03YZ N0413 PARAMS: N04HD=100\r\n.FUNC N04RI(N04RT){IF(N04RT\u003E=0,IF(N04RT\u003E50,(N04RT-49)*EXP(50),EXP(N04RT)),IF(ABS(N04RT)\u003E50,1/((ABS(N04RT)-49)*EXP(50)),1/EXP(ABS(N04RT))))}\r\n.FUNC N04RY(N04RT){(1-N04RI(-2*N04RT))/(1\u002BN04RI(-2*N04RT))}\r\n.PARAM N05EO={11.5}\r\n.PARAM N05G9={4.9895E-12}\r\n.PARAM N05GJ={2.2862E-12}\r\n.PARAM N05GO={-0.0038244}\r\n.PARAM N05I8={1.2317E-11}\r\n.PARAM N05IE={-0.14349}\r\n.PARAM N05IK={1.0575}\r\n.PARAM N05J3={4.3346E-12}\r\n.PARAM N05J4={-0.030623}\r\n.PARAM N05JP={18.7637}\r\n.PARAM N05KG={-4.0274E-12}\r\n.PARAM N05KK={-0.41425}\r\n.FUNC N05KV(N05DN)={N05G9 }\r\n.FUNC N05L8(N05DN)={N05GJ*N04RI(N05GO*N05DN)}\r\n.FUNC N05OO(N05DN)={N05I8*N04RI(N05IE*N05DN)}\r\n.FUNC N05P9(N05DN)={N05J3*N04RI(N05J4*(N05DN-N05IK))}\r\n.FUNC N05PA(N05DN)={N05KG*0.5*(-N04RY(N05KK*(N05DN-N05JP))\u002B1.0)}\r\n.FUNC CDS(N05DN)={N05KV(N05DN)\u002BN05L8(N05DN)\u002BN05OO(N05DN)\u002BN05P9(N05DN)\u002BN05PA(N05DN)}\r\nG03H4 N03YZ N0413 VALUE={N04HD*N05EO*DDT(V(N03YZ,N0413))*IF(V(N03YZ,N0413)\u003E0,CDS(V(N03YZ,N0413)),CDS(0.0))}\r\n.ENDS Z00FB\r\n\r\n.SUBCKT Z00FM N03ZV N0413 N03YZ PARAMS: N04GV=100\r\n.FUNC N04RI(N04RT){IF(N04RT\u003E=0,IF(N04RT\u003E50,(N04RT-49)*EXP(50),EXP(N04RT)),IF(ABS(N04RT)\u003E50,1/((ABS(N04RT)-49)*EXP(50)),1/EXP(ABS(N04RT))))}\r\n.FUNC N04RY(N04RT){(1-N04RI(-2*N04RT))/(1\u002BN04RI(-2*N04RT))}\r\n.PARAM N05PC={1.0}\r\n.PARAM N05PS={10.1246E-13}\r\n.PARAM N05PY={4.312E-11}\r\n.PARAM N05Q1={-0.35325}\r\n.PARAM N05Q2={1.4227E-12}\r\n.PARAM N05QI={-0.0046989}\r\n.PARAM N05RH={2.8161E-12}\r\n.PARAM N05RP={-0.036418}\r\n.PARAM N05RQ={15.7629}\r\n.PARAM N05S4={9.291E-12}\r\n.PARAM N05S7={0.45656}\r\n.PARAM N05SD={11.9961}\r\n.PARAM N05SO={1.2487E-11}\r\n.PARAM N05TW={0.14317}\r\n.FUNC N05U9(N05DN)={N05PS }\r\n.FUNC N05VY(N05DN)={N05PY*N04RI(N05Q1*N05DN)}\r\n.FUNC N05W4(N05DN)={N05Q2*N04RI(N05QI*N05DN)}\r\n.FUNC N05WD(N05DN)={N05RH*N04RI(N05RP*N05DN)}\r\n.FUNC N05WG(N05DN)={N05S4*0.5*(-N04RY(N05S7*(N05DN-N05RQ))\u002B1.0)}\r\n.FUNC N05XJ(N05DN)={N05SO*0.5*(-N04RY(N05TW*(N05DN-N05SD))\u002B1.0)}\r\n.FUNC CGD(N05DN)={N05U9(N05DN)\u002BN05VY(N05DN)\u002BN05W4(N05DN)\u002BN05WD(N05DN)\u002BN05WG(N05DN)\u002BN05XJ(N05DN)}\r\nG03WR N03ZV N03YZ VALUE={N04GV*N05PC*DDT(V(N03ZV,N03YZ))*IF(V(N03YZ,N0413)\u003E0,CGD(V(N03YZ,N0413)),CGD(0.0))}\r\n  .ENDS Z00FM\r\n",
+              "Node_names": "D G S SS TJ TC",
+              "Scope_names": "",
+              "Name": "N2"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Netlist": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 5",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              },
+              "Node_names": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 7",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              },
+              "Scope_names": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 6",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              },
+              "Name": {
+                "IsVisible": true,
+                "Suffix": "",
+                "RelativeLocation": "3 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              }
+            }
+          },
+          {
+            "LibraryName": "Electrical Connector Label",
+            "Top": 3,
+            "Left": 10,
+            "Angle": 180,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "SS_HS",
+            "ID": "9c5ed720-175d-41d9-8e0e-5170527e40b9",
+            "Parameters": {
+              "Name": "SS_HS"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              }
+            }
+          },
+          {
+            "LibraryName": "Electrical Connector Label",
+            "Top": -1,
+            "Left": 10,
+            "Angle": 180,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "G_HS",
+            "ID": "664e39f4-48d8-48c4-9e0c-dd34a73f90c7",
+            "Parameters": {
+              "Name": "G_HS"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              }
+            }
+          },
+          {
+            "LibraryName": "Electrical Connector Label",
+            "Top": 28,
+            "Left": 12,
+            "Angle": 180,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "SS_LS",
+            "ID": "dcddb1d7-9bf1-4da0-a84f-3b72691530fa",
+            "Parameters": {
+              "Name": "SS_LS"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              }
+            }
+          },
+          {
+            "LibraryName": "Electrical Connector Label",
+            "Top": 24,
+            "Left": 12,
+            "Angle": 180,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "G_LS",
+            "ID": "583bd937-c1c7-4fe3-b762-a5380ad94b4d",
+            "Parameters": {
+              "Name": "G_LS"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              }
+            }
+          },
+          {
+            "LibraryName": "Detailed Diode",
+            "Top": 50,
+            "Left": 36,
+            "Angle": 180,
+            "HF": false,
+            "VF": false,
+            "Disabled": true,
+            "Name": "Dg_off",
+            "ID": "85552218-2747-4210-8566-be67177fd71e",
+            "Parameters": {
+              "Vf_If_Matrix": "[-1 -1E-5; 0 0 ; 0.10 0.03; 0.80 0.04;0.89 0.18;0.95 0.59;1.04 2.19;1.35 9.24;1.77 20.03]",
+              "C_Vr_Matrix": "[0 160p; 1 160p]",
+              "Vinit": "0",
+              "Name": "Dg_off"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Vf_If_Matrix": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "2 0",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              },
+              "C_Vr_Matrix": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "2 1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              },
+              "Vinit": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "2 2",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              },
+              "Name": {
+                "IsVisible": true,
+                "Suffix": "",
+                "RelativeLocation": "2 2",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 14,
+                "Color": "#0081BC"
+              }
+            }
+          },
+          {
+            "LibraryName": "Detailed Diode",
+            "Top": 65,
+            "Left": 36,
+            "Angle": 180,
+            "HF": false,
+            "VF": false,
+            "Disabled": true,
+            "Name": "D1",
+            "ID": "c86c700f-79e6-41f3-873e-0eea592fe924",
+            "Parameters": {
+              "Vf_If_Matrix": "[-1 -1E-5; 0 0 ; 0.10 0.03; 0.80 0.04;0.89 0.18;0.95 0.59;1.04 2.19;1.35 9.24;1.77 20.03]",
+              "C_Vr_Matrix": "[0 160p; 1 160p]",
+              "Vinit": "0",
+              "Name": "D1"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Vf_If_Matrix": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "2 0",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              },
+              "C_Vr_Matrix": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "2 1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              },
+              "Vinit": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "2 2",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              },
+              "Name": {
+                "IsVisible": true,
+                "Suffix": "",
+                "RelativeLocation": "2 2",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 14,
+                "Color": "#0081BC"
+              }
+            }
+          },
+          {
+            "LibraryName": "DC Voltage Source",
+            "Top": 7,
+            "Left": -26,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "Temp_source",
+            "ID": "94807633-dc8b-435f-8133-eae53991d5d9",
+            "Parameters": {
+              "Voltage": "175",
+              "Name": "Temp_source"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Voltage": {
+                "IsVisible": true,
+                "Suffix": "",
+                "RelativeLocation": "2 2",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              },
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "4 3",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 2,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              }
+            }
+          },
+          {
+            "LibraryName": "Ground",
+            "Top": 15,
+            "Left": -25,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "Ground3",
+            "ID": "83331f13-ed3e-47a7-acae-a4dd749af0d3",
+            "Parameters": {
+              "Name": "Ground3"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "4 3",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 2,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              }
+            }
+          },
+          {
+            "LibraryName": "Electrical Connector Label",
+            "Top": 6,
+            "Left": -17,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "Tc",
+            "ID": "630c6547-7dbf-407d-9aa9-cd0433419acb",
+            "Parameters": {
+              "Name": "Tc"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              }
+            }
+          },
+          {
+            "LibraryName": "AC Current Source (Sinus)",
+            "Top": 11,
+            "Left": 35,
+            "Angle": 90,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "AC1",
+            "ID": "4bc4ab79-166f-4f32-af38-f99f7de05dc7",
+            "Parameters": {
+              "Frequency": "fsw",
+              "Amplitude": "iac",
+              "Phase": "-phase_shift",
+              "Name": "AC1"
+            },
+            "EnabledScopes": [
+              "Current"
+            ],
+            "ParametersDisplayAttributes": {
+              "Frequency": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "2 2",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              },
+              "Amplitude": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "2 3",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              },
+              "Phase": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "2 4",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              },
+              "Name": {
+                "IsVisible": true,
+                "Suffix": "",
+                "RelativeLocation": "4 3",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 2,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              }
+            }
+          },
+          {
+            "LibraryName": "DC Voltage Source",
+            "Top": 1,
+            "Left": -4,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "DC1",
+            "ID": "973970eb-64ed-4b44-87f9-eb6e4e289bd2",
+            "Parameters": {
+              "Voltage": "udc / 2",
+              "Name": "DC1"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Voltage": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "2 2",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              },
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "4 3",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 2,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              }
+            }
+          },
+          {
+            "LibraryName": "DC Voltage Source",
+            "Top": 24,
+            "Left": -4,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "DC2",
+            "ID": "0e1a3182-7a38-4df8-a973-8a668ebf4c50",
+            "Parameters": {
+              "Voltage": "udc / 2",
+              "Name": "DC2"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Voltage": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "2 2",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              },
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "4 3",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 2,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              }
+            }
+          },
+          {
+            "LibraryName": "Rectangle",
+            "Top": 11,
+            "Left": 33,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "Rect2",
+            "ID": "f65e970c-f37e-4af9-9d3f-8dba2312f2bb",
+            "Parameters": {
+              "BorderWidth": "2",
+              "BorderColor": "#00F0FF",
+              "PersistentWidth": "7",
+              "PersistentHeight": "8",
+              "Name": "Rect2"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "BorderWidth": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 2",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "Black"
+              },
+              "BorderColor": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "2 6",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "Black"
+              },
+              "PersistentWidth": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "2 1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "Black"
+              },
+              "PersistentHeight": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 4",
+                "UnrotatedWidth": 4,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "Black"
+              },
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "2 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "Black"
+              }
+            }
+          },
+          {
+            "LibraryName": "Differential Voltage Probe",
+            "Top": 72,
+            "Left": 43,
+            "Angle": 90,
+            "HF": false,
+            "VF": true,
+            "Disabled": false,
+            "Name": "VGS_LS",
+            "ID": "8d55c1fb-dbaa-4ef5-b3dd-08f7561474cb",
+            "Parameters": {
+              "Gain": "1",
+              "SamplingTime": "none",
+              "Name": "VGS_LS"
+            },
+            "EnabledScopes": [
+              "Voltage"
+            ],
+            "ParametersDisplayAttributes": {
+              "Gain": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "2 2",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              },
+              "SamplingTime": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "2 3",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              },
+              "Name": {
+                "IsVisible": true,
+                "Suffix": "",
+                "RelativeLocation": "1 -3",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 3,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              }
+            }
+          },
+          {
+            "LibraryName": "Constant",
+            "Top": 75,
+            "Left": 53,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "C3",
+            "ID": "6d2c3d59-1649-4ab8-87ab-323fceef8098",
+            "Parameters": {
+              "Value": "3.2",
+              "SamplingTime": "none",
+              "Name": "C3"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Value": {
+                "IsVisible": true,
+                "Suffix": "",
+                "RelativeLocation": "1 1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 2,
+                "FontSize": 12,
+                "Color": "#04B404"
+              },
+              "SamplingTime": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 4",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              },
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              }
+            }
+          },
+          {
+            "LibraryName": "Sum",
+            "Top": 72,
+            "Left": 59,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "SUM3",
+            "ID": "ad4f3b4c-8167-4987-9ae7-574e6133ed08",
+            "Parameters": {
+              "NumberOfInputs": "2",
+              "Gains": "[1 -1]",
+              "SamplingTime": "none",
+              "Name": "SUM3"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "NumberOfInputs": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 4",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              },
+              "Gains": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "0 5",
+                "UnrotatedWidth": 3,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              },
+              "SamplingTime": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 6",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              },
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              }
+            }
+          },
+          {
+            "LibraryName": "Zero-Crossing Detector",
+            "Top": 72,
+            "Left": 65,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "vgs_edge",
+            "ID": "ae18e247-1d7d-4b89-8589-e7f928aa6648",
+            "Parameters": {
+              "SamplingTime": "none",
+              "Name": "vgs_edge"
+            },
+            "EnabledScopes": [
+              "Out"
+            ],
+            "ParametersDisplayAttributes": {
+              "SamplingTime": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 4",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              },
+              "Name": {
+                "IsVisible": true,
+                "Suffix": "",
+                "RelativeLocation": "1 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              }
+            }
+          },
+          {
+            "LibraryName": "Electrical Connector Label",
+            "Top": 7,
+            "Left": 10,
+            "Angle": 0,
+            "HF": true,
+            "VF": false,
+            "Disabled": false,
+            "Name": "Tc",
+            "ID": "a3c30f40-3b37-4fb0-b660-14f5dd92cd83",
+            "Parameters": {
+              "Name": "Tc"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              }
+            }
+          },
+          {
+            "LibraryName": "Electrical Connector Label",
+            "Top": 32,
+            "Left": 12,
+            "Angle": 0,
+            "HF": true,
+            "VF": false,
+            "Disabled": false,
+            "Name": "Tc",
+            "ID": "33adb301-07d1-4fab-a77c-86ae94ca2f83",
+            "Parameters": {
+              "Name": "Tc"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              }
+            }
+          },
+          {
+            "LibraryName": "Voltage Meter",
+            "Top": 30,
+            "Left": 11,
+            "Angle": 180,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "Tj",
+            "ID": "9760ef68-7117-4e20-8278-575cf6807f73",
+            "Parameters": {
+              "SamplingTime": "none",
+              "Name": "Tj"
+            },
+            "EnabledScopes": [
+              "Voltage"
+            ],
+            "ParametersDisplayAttributes": {
+              "SamplingTime": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "2 3",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              },
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "0 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              }
+            }
+          }
+        ],
+        "Connectors": [
+          {
+            "Segments": [
+              {
+                "StartX": 26,
+                "StartY": 1,
+                "EndX": 26,
+                "EndY": -7
+              },
+              {
+                "StartX": 18,
+                "StartY": -7,
+                "EndX": 18,
+                "EndY": -6
+              },
+              {
+                "StartX": 14,
+                "StartY": -6,
+                "EndX": 18,
+                "EndY": -6
+              },
+              {
+                "StartX": 14,
+                "StartY": -2,
+                "EndX": 14,
+                "EndY": -6
+              },
+              {
+                "StartX": 17,
+                "StartY": -7,
+                "EndX": 18,
+                "EndY": -7
+              },
+              {
+                "StartX": 18,
+                "StartY": -7,
+                "EndX": 26,
+                "EndY": -7
+              }
+            ],
+            "Name": "C20"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": -5,
+                "StartY": 56,
+                "EndX": -1,
+                "EndY": 56
+              }
+            ],
+            "Name": "C1"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 8,
+                "StartY": 62,
+                "EndX": 8,
+                "EndY": 56
+              },
+              {
+                "StartX": 7,
+                "StartY": 56,
+                "EndX": 8,
+                "EndY": 56
+              },
+              {
+                "StartX": 8,
+                "StartY": 56,
+                "EndX": 9,
+                "EndY": 56
+              }
+            ],
+            "Name": "C2"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 8,
+                "StartY": 66,
+                "EndX": 8,
+                "EndY": 71
+              },
+              {
+                "StartX": 9,
+                "StartY": 71,
+                "EndX": 8,
+                "EndY": 71
+              }
+            ],
+            "Name": "C5"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 17,
+                "StartY": 56,
+                "EndX": 18,
+                "EndY": 56
+              },
+              {
+                "StartX": 18,
+                "StartY": 56,
+                "EndX": 18,
+                "EndY": 57
+              },
+              {
+                "StartX": 19,
+                "StartY": 57,
+                "EndX": 18,
+                "EndY": 57
+              }
+            ],
+            "Name": "C4"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 17,
+                "StartY": 60,
+                "EndX": 18,
+                "EndY": 60
+              },
+              {
+                "StartX": 18,
+                "StartY": 59,
+                "EndX": 18,
+                "EndY": 60
+              },
+              {
+                "StartX": 19,
+                "StartY": 59,
+                "EndX": 18,
+                "EndY": 59
+              }
+            ],
+            "Name": "C6"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 17,
+                "StartY": 71,
+                "EndX": 18,
+                "EndY": 71
+              },
+              {
+                "StartX": 18,
+                "StartY": 71,
+                "EndX": 18,
+                "EndY": 72
+              },
+              {
+                "StartX": 19,
+                "StartY": 72,
+                "EndX": 18,
+                "EndY": 72
+              }
+            ],
+            "Name": "C9"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 17,
+                "StartY": 75,
+                "EndX": 18,
+                "EndY": 75
+              },
+              {
+                "StartX": 18,
+                "StartY": 74,
+                "EndX": 18,
+                "EndY": 75
+              },
+              {
+                "StartX": 19,
+                "StartY": 74,
+                "EndX": 18,
+                "EndY": 74
+              }
+            ],
+            "Name": "C14"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 25,
+                "StartY": 54,
+                "EndX": 27,
+                "EndY": 54
+              }
+            ],
+            "Name": "C15"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 25,
+                "StartY": 62,
+                "EndX": 27,
+                "EndY": 62
+              }
+            ],
+            "Name": "C16"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 25,
+                "StartY": 69,
+                "EndX": 27,
+                "EndY": 69
+              }
+            ],
+            "Name": "C18"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 25,
+                "StartY": 77,
+                "EndX": 27,
+                "EndY": 77
+              }
+            ],
+            "Name": "C19"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 35,
+                "StartY": 51,
+                "EndX": 35,
+                "EndY": 54
+              },
+              {
+                "StartX": 36,
+                "StartY": 51,
+                "EndX": 35,
+                "EndY": 51
+              },
+              {
+                "StartX": 33,
+                "StartY": 54,
+                "EndX": 35,
+                "EndY": 54
+              },
+              {
+                "StartX": 35,
+                "StartY": 54,
+                "EndX": 36,
+                "EndY": 54
+              }
+            ],
+            "Name": "C22"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 45,
+                "StartY": 60,
+                "EndX": 45,
+                "EndY": 62
+              },
+              {
+                "StartX": 33,
+                "StartY": 62,
+                "EndX": 45,
+                "EndY": 62
+              },
+              {
+                "StartX": 45,
+                "StartY": 62,
+                "EndX": 46,
+                "EndY": 62
+              }
+            ],
+            "Name": "C24"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 35,
+                "StartY": 66,
+                "EndX": 35,
+                "EndY": 69
+              },
+              {
+                "StartX": 36,
+                "StartY": 66,
+                "EndX": 35,
+                "EndY": 66
+              },
+              {
+                "StartX": 33,
+                "StartY": 69,
+                "EndX": 35,
+                "EndY": 69
+              },
+              {
+                "StartX": 35,
+                "StartY": 69,
+                "EndX": 36,
+                "EndY": 69
+              }
+            ],
+            "Name": "C27"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 45,
+                "StartY": 75,
+                "EndX": 45,
+                "EndY": 77
+              },
+              {
+                "StartX": 33,
+                "StartY": 77,
+                "EndX": 45,
+                "EndY": 77
+              },
+              {
+                "StartX": 45,
+                "StartY": 77,
+                "EndX": 46,
+                "EndY": 77
+              }
+            ],
+            "Name": "C30"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 45,
+                "StartY": 56,
+                "EndX": 45,
+                "EndY": 54
+              },
+              {
+                "StartX": 43,
+                "StartY": 51,
+                "EndX": 43,
+                "EndY": 54
+              },
+              {
+                "StartX": 42,
+                "StartY": 51,
+                "EndX": 43,
+                "EndY": 51
+              },
+              {
+                "StartX": 45,
+                "StartY": 54,
+                "EndX": 46,
+                "EndY": 54
+              },
+              {
+                "StartX": 42,
+                "StartY": 54,
+                "EndX": 43,
+                "EndY": 54
+              },
+              {
+                "StartX": 43,
+                "StartY": 54,
+                "EndX": 45,
+                "EndY": 54
+              }
+            ],
+            "Name": "C28"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 43,
+                "StartY": 66,
+                "EndX": 43,
+                "EndY": 69
+              },
+              {
+                "StartX": 42,
+                "StartY": 66,
+                "EndX": 43,
+                "EndY": 66
+              },
+              {
+                "StartX": 45,
+                "StartY": 71,
+                "EndX": 45,
+                "EndY": 69
+              },
+              {
+                "StartX": 42,
+                "StartY": 69,
+                "EndX": 43,
+                "EndY": 69
+              },
+              {
+                "StartX": 43,
+                "StartY": 69,
+                "EndX": 45,
+                "EndY": 69
+              },
+              {
+                "StartX": 45,
+                "StartY": 69,
+                "EndX": 46,
+                "EndY": 69
+              }
+            ],
+            "Name": "C29"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 8,
+                "StartY": -7,
+                "EndX": 13,
+                "EndY": -7
+              }
+            ],
+            "Name": "C3"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": -5,
+                "StartY": 16,
+                "EndX": -2,
+                "EndY": 16
+              },
+              {
+                "StartX": -2,
+                "StartY": 9,
+                "EndX": -2,
+                "EndY": 16
+              },
+              {
+                "StartX": -2,
+                "StartY": 16,
+                "EndX": -2,
+                "EndY": 24
+              }
+            ],
+            "Name": "C13"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 18,
+                "StartY": 19,
+                "EndX": 18,
+                "EndY": 21
+              },
+              {
+                "StartX": 14,
+                "StartY": 21,
+                "EndX": 18,
+                "EndY": 21
+              },
+              {
+                "StartX": 16,
+                "StartY": 23,
+                "EndX": 14,
+                "EndY": 23
+              },
+              {
+                "StartX": 14,
+                "StartY": 21,
+                "EndX": 14,
+                "EndY": 23
+              }
+            ],
+            "Name": "C8"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 26,
+                "StartY": 5,
+                "EndX": 26,
+                "EndY": 12
+              },
+              {
+                "StartX": 27,
+                "StartY": 24,
+                "EndX": 27,
+                "EndY": 15
+              },
+              {
+                "StartX": 18,
+                "StartY": 15,
+                "EndX": 18,
+                "EndY": 12
+              },
+              {
+                "StartX": 9,
+                "StartY": 15,
+                "EndX": 18,
+                "EndY": 15
+              },
+              {
+                "StartX": 5,
+                "StartY": 2,
+                "EndX": 5,
+                "EndY": 12
+              },
+              {
+                "StartX": 14,
+                "StartY": 2,
+                "EndX": 5,
+                "EndY": 2
+              },
+              {
+                "StartX": 18,
+                "StartY": 15,
+                "EndX": 27,
+                "EndY": 15
+              },
+              {
+                "StartX": 27,
+                "StartY": 15,
+                "EndX": 33,
+                "EndY": 15
+              },
+              {
+                "StartX": 5,
+                "StartY": 12,
+                "EndX": 18,
+                "EndY": 12
+              },
+              {
+                "StartX": 18,
+                "StartY": 12,
+                "EndX": 26,
+                "EndY": 12
+              }
+            ],
+            "Name": "C17"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 27,
+                "StartY": 28,
+                "EndX": 27,
+                "EndY": 39
+              },
+              {
+                "StartX": 16,
+                "StartY": 27,
+                "EndX": 10,
+                "EndY": 27
+              },
+              {
+                "StartX": 10,
+                "StartY": 27,
+                "EndX": 10,
+                "EndY": 39
+              },
+              {
+                "StartX": 6,
+                "StartY": 39,
+                "EndX": 10,
+                "EndY": 39
+              },
+              {
+                "StartX": 10,
+                "StartY": 39,
+                "EndX": 27,
+                "EndY": 39
+              }
+            ],
+            "Name": "C12"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": -24,
+                "StartY": 7,
+                "EndX": -17,
+                "EndY": 7
+              }
+            ],
+            "Name": "C10"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 44,
+                "StartY": 15,
+                "EndX": 41,
+                "EndY": 15
+              }
+            ],
+            "Name": "C23"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 2,
+                "StartY": -7,
+                "EndX": -2,
+                "EndY": -7
+              },
+              {
+                "StartX": -2,
+                "StartY": -7,
+                "EndX": -2,
+                "EndY": 1
+              }
+            ],
+            "Name": "C25"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 0,
+                "StartY": 39,
+                "EndX": -2,
+                "EndY": 39
+              },
+              {
+                "StartX": -2,
+                "StartY": 39,
+                "EndX": -2,
+                "EndY": 32
+              }
+            ],
+            "Name": "C7"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 46,
+                "StartY": 73,
+                "EndX": 59,
+                "EndY": 73
+              }
+            ],
+            "Name": "C26"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 57,
+                "StartY": 77,
+                "EndX": 58,
+                "EndY": 77
+              },
+              {
+                "StartX": 58,
+                "StartY": 77,
+                "EndX": 58,
+                "EndY": 75
+              },
+              {
+                "StartX": 58,
+                "StartY": 75,
+                "EndX": 59,
+                "EndY": 75
+              }
+            ],
+            "Name": "C31"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 65,
+                "StartY": 74,
+                "EndX": 63,
+                "EndY": 74
+              }
+            ],
+            "Name": "C32"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 15,
+                "StartY": 31,
+                "EndX": 16,
+                "EndY": 31
+              }
+            ],
+            "Name": "C11"
+          }
+        ],
+        "Name": "Top Circuit - Copy - Copy - Copy - Copy - Copy - Copy - Copy - Copy",
+        "Variables": [
+          {
+            "Name": "fsw",
+            "Value": "100k"
+          },
+          {
+            "Name": "dead_time",
+            "Value": "200n"
+          },
+          {
+            "Name": "udc",
+            "Value": "800"
+          },
+          {
+            "Name": "iac",
+            "Value": "130"
+          },
+          {
+            "Name": "phase_shift",
+            "Value": "30"
+          },
+          {
+            "Name": "Rg_ext",
+            "Value": "2.3"
+          },
+          {
+            "Name": "Lg_lead",
+            "Value": "1n"
+          }
+        ],
+        "VariableFile": ""
+      },
+      "TransientAnalysis": {
+        "EndTime": "3 / 100k",
+        "FixedTimeStep": false,
+        "SaveInitialPoint": false,
+        "CompressScopes": true,
+        "StopAtSteadyState": false,
+        "TimeStep": "2n",
+        "BaseFrequencyParameterEnabled": true,
+        "NumberOfBasePeriodsSavedParameterEnabled": true,
+        "BaseFrequency": "100k",
+        "NumberOfBasePeriodsSaved": "2"
+      }
+    }
+  ],
+  "Libraries": [],
+  "TestBenches": [],
+  "ThermalData": [
+    {
+      "Name": "Infineon IMBG120R008M2H",
+      "Manufacturer": "",
+      "PartNumber": "",
+      "Comment": "",
+      "ConductionLossesGateDependency": false,
+      "SemiconductorType": "MosfetThermalDataSemiconductorType",
+      "ThermalImpedanceType": "NoThermalNetworkType",
+      "ConductionLosses": [],
+      "ConductionLossesGateOff": [],
+      "TurnOnLosses": [],
+      "TurnOffLosses": [],
+      "CustomVariables": [],
+      "Constants": [],
+      "Custom1DTables": [],
+      "Custom2DTables": [],
+      "Custom3DTables": [],
+      "ConductionLossComputationMethod": 1,
+      "ConductionLossComputationFormula": "",
+      "ConductionLossComputationMethodGateOff": 1,
+      "ConductionLossComputationFormulaGateOff": "",
+      "TurnOnLossComputationMethod": "LookUpTableComputationMethodType",
+      "TurnOnLossComputationFormula": "",
+      "TurnOffLossComputationMethod": "LookUpTableComputationMethodType",
+      "TurnOffLossComputationFormula": "",
+      "ThermalImpedanceDataSerialized": "[0]",
+      "ID": "a9ac9f7f-8e75-4a7e-8d53-662b8798a925"
+    },
+    {
+      "Name": "Infineon IMBG120R008M2H",
+      "Manufacturer": "",
+      "PartNumber": "",
+      "Comment": "",
+      "ConductionLossesGateDependency": false,
+      "SemiconductorType": "MosfetThermalDataSemiconductorType",
+      "ThermalImpedanceType": "NoThermalNetworkType",
+      "ConductionLosses": [],
+      "ConductionLossesGateOff": [],
+      "TurnOnLosses": [],
+      "TurnOffLosses": [],
+      "CustomVariables": [],
+      "Constants": [],
+      "Custom1DTables": [],
+      "Custom2DTables": [],
+      "Custom3DTables": [],
+      "ConductionLossComputationMethod": 1,
+      "ConductionLossComputationFormula": "",
+      "ConductionLossComputationMethodGateOff": 1,
+      "ConductionLossComputationFormulaGateOff": "",
+      "TurnOnLossComputationMethod": "LookUpTableComputationMethodType",
+      "TurnOnLossComputationFormula": "",
+      "TurnOffLossComputationMethod": "LookUpTableComputationMethodType",
+      "TurnOffLossComputationFormula": "",
+      "ThermalImpedanceDataSerialized": "[0]",
+      "ID": "6f9936c3-b1ba-4198-9872-bd17ef92045e"
+    },
+    {
+      "Name": "Infineon IMBG120R008M2H",
+      "Manufacturer": "",
+      "PartNumber": "",
+      "Comment": "",
+      "ConductionLossesGateDependency": false,
+      "SemiconductorType": "MosfetThermalDataSemiconductorType",
+      "ThermalImpedanceType": "NoThermalNetworkType",
+      "ConductionLosses": [],
+      "ConductionLossesGateOff": [],
+      "TurnOnLosses": [],
+      "TurnOffLosses": [],
+      "CustomVariables": [],
+      "Constants": [],
+      "Custom1DTables": [],
+      "Custom2DTables": [],
+      "Custom3DTables": [],
+      "ConductionLossComputationMethod": 1,
+      "ConductionLossComputationFormula": "",
+      "ConductionLossComputationMethodGateOff": 1,
+      "ConductionLossComputationFormulaGateOff": "",
+      "TurnOnLossComputationMethod": "LookUpTableComputationMethodType",
+      "TurnOnLossComputationFormula": "",
+      "TurnOffLossComputationMethod": "LookUpTableComputationMethodType",
+      "TurnOffLossComputationFormula": "",
+      "ThermalImpedanceDataSerialized": "[0]",
+      "ID": "eb75caab-74e3-40ed-bde0-11f84b9ed928"
+    },
+    {
+      "Name": "Infineon IMBG120R008M2H",
+      "Manufacturer": "",
+      "PartNumber": "",
+      "Comment": "",
+      "ConductionLossesGateDependency": false,
+      "SemiconductorType": "MosfetThermalDataSemiconductorType",
+      "ThermalImpedanceType": "NoThermalNetworkType",
+      "ConductionLosses": [],
+      "ConductionLossesGateOff": [],
+      "TurnOnLosses": [],
+      "TurnOffLosses": [],
+      "CustomVariables": [],
+      "Constants": [],
+      "Custom1DTables": [],
+      "Custom2DTables": [],
+      "Custom3DTables": [],
+      "ConductionLossComputationMethod": 1,
+      "ConductionLossComputationFormula": "",
+      "ConductionLossComputationMethodGateOff": 1,
+      "ConductionLossComputationFormulaGateOff": "",
+      "TurnOnLossComputationMethod": "LookUpTableComputationMethodType",
+      "TurnOnLossComputationFormula": "",
+      "TurnOffLossComputationMethod": "LookUpTableComputationMethodType",
+      "TurnOffLossComputationFormula": "",
+      "ThermalImpedanceDataSerialized": "[0]",
+      "ID": "6403e54a-dcaf-4d11-9c4a-bde775715767"
+    },
+    {
+      "Name": "Infineon IMBG120R008M2H",
+      "Manufacturer": "",
+      "PartNumber": "",
+      "Comment": "",
+      "ConductionLossesGateDependency": false,
+      "SemiconductorType": "MosfetThermalDataSemiconductorType",
+      "ThermalImpedanceType": "NoThermalNetworkType",
+      "ConductionLosses": [
+        {
+          "Temperature": 100,
+          "IVSerialized": "[9.94267599 0.14839030335508596; 19.89988547 0.2968054984866626; 29.86612158 0.4455832107646529; 49.7895723 0.7433822127769645; 69.71268863 1.0417273099535578; 89.63641329 1.3412894950697023; 119.52123212 1.7923677956153483; 149.4385635 2.2460776985636812; 179.33011658 2.702923648440162; 249.13070417 3.7834077570352633; -3552.40350905 1942.3665746750012; 358.97015909 5.534469928971191]"
+        },
+        {
+          "Temperature": 175,
+          "IVSerialized": "[9.96303854 0.21494673522244057; 19.9420017 0.430067789125701; 29.92721933 0.6455753082273077; 49.89111259 1.076928192306866; 69.85491892 1.5093909382060815; 89.8191325 1.9430352477682504; 119.765305 2.596636797842848; 149.7339187 3.2544531054067534; 179.6843927 3.917250174343451; 249.638825 5.489133682443253; 299.60803034 6.638334939283311; 359.61908865 8.053811958758445]"
+        }
+      ],
+      "ConductionLossesGateOff": [],
+      "TurnOnLosses": [],
+      "TurnOffLosses": [
+        {
+          "Temperature": 100,
+          "Voltage": 800,
+          "EISerialized": "[4.869992494478538 2.266721890295489E-05; 9.757740784166913 8.338859854458957E-06; 14.645374156330831 1.5025403952334974E-05; 24.420298287276864 2.9248750325847517E-05; 34.19457219949936 4.788663608124895E-05; 43.96785622117102 7.549021908309503E-05; 58.625190319708395 0.00014449894483513034; 73.27761110271797 0.0002343332016314639; 87.92147203148875 0.0003471162709683161; 119.88508547437846 0.0006624414119384835; 145.20500408795488 -0.05725911479627066; 167.50903741657874 0.001284328121815355]"
+        },
+        {
+          "Temperature": 175,
+          "Voltage": 800,
+          "EISerialized": "[4.870527324590398 2.496319403036137E-05; 9.758839356770409 8.209042944353737E-06; 14.647053080619003 1.496852238706268E-05; 24.423242009337173 2.9128533634281196E-05; 34.19894439023517 4.7480114903954325E-05; 43.974067933236825 7.775080093218626E-05; 58.63520701758114 0.00014626963907727122; 73.29376469510146 0.00023798818505532324; 87.94843671986087 0.000354859520317313; 122.11032268131703 0.0006738896681334119; 144.19737413185226 0.0009447287481904832; 170.33975737779565 0.0012988041910864442]"
+        }
+      ],
+      "CustomVariables": [],
+      "Constants": [],
+      "Custom1DTables": [],
+      "Custom2DTables": [],
+      "Custom3DTables": [],
+      "ConductionLossComputationMethod": 1,
+      "ConductionLossComputationFormula": "",
+      "ConductionLossComputationMethodGateOff": 1,
+      "ConductionLossComputationFormulaGateOff": "",
+      "TurnOnLossComputationMethod": "LookUpTableComputationMethodType",
+      "TurnOnLossComputationFormula": "",
+      "TurnOffLossComputationMethod": "LookUpTableComputationMethodType",
+      "TurnOffLossComputationFormula": "",
+      "ThermalImpedanceDataSerialized": "[0]",
+      "ID": "718f716f-6b5a-46f4-8496-e1f0b0c8021b"
+    },
+    {
+      "Name": "Infineon IMBG120R008M2H",
+      "Manufacturer": "",
+      "PartNumber": "",
+      "Comment": "",
+      "ConductionLossesGateDependency": false,
+      "SemiconductorType": "MosfetThermalDataSemiconductorType",
+      "ThermalImpedanceType": "NoThermalNetworkType",
+      "ConductionLosses": [
+        {
+          "Temperature": 100,
+          "IVSerialized": "[9.94267599 0.14839030335508596; 19.89988547 0.2968054984866626; 29.86612158 0.4455832107646529; 49.7895723 0.7433822127769645; 69.71268863 1.0417273099535578; 89.63641329 1.3412894950697023; 119.52123212 1.7923677956153483; 149.4385635 2.2460776985636812; 179.33011658 2.702923648440162; 249.13070417 3.7834077570352633; -3552.40350905 1942.3665746750012; 358.97015909 5.534469928971191]"
+        },
+        {
+          "Temperature": 175,
+          "IVSerialized": "[9.96303854 0.21494673522244057; 19.9420017 0.430067789125701; 29.92721933 0.6455753082273077; 49.89111259 1.076928192306866; 69.85491892 1.5093909382060815; 89.8191325 1.9430352477682504; 119.765305 2.596636797842848; 149.7339187 3.2544531054067534; 179.6843927 3.917250174343451; 249.638825 5.489133682443253; 299.60803034 6.638334939283311; 359.61908865 8.053811958758445]"
+        }
+      ],
+      "ConductionLossesGateOff": [],
+      "TurnOnLosses": [],
+      "TurnOffLosses": [
+        {
+          "Temperature": 100,
+          "Voltage": 800,
+          "EISerialized": "[4.869992494478538 2.266721890295489E-05; 9.757740784166913 8.338859854458957E-06; 14.645374156330831 1.5025403952334974E-05; 24.420298287276864 2.9248750325847517E-05; 34.19457219949936 4.788663608124895E-05; 43.96785622117102 7.549021908309503E-05; 58.625190319708395 0.00014449894483513034; 73.27761110271797 0.0002343332016314639; 87.92147203148875 0.0003471162709683161; 119.88508547437846 0.0006624414119384835; 145.20500408795488 -0.05725911479627066; 167.50903741657874 0.001284328121815355]"
+        },
+        {
+          "Temperature": 175,
+          "Voltage": 800,
+          "EISerialized": "[4.870527324590398 2.496319403036137E-05; 9.758839356770409 8.209042944353737E-06; 14.647053080619003 1.496852238706268E-05; 24.423242009337173 2.9128533634281196E-05; 34.19894439023517 4.7480114903954325E-05; 43.974067933236825 7.775080093218626E-05; 58.63520701758114 0.00014626963907727122; 73.29376469510146 0.00023798818505532324; 87.94843671986087 0.000354859520317313; 122.11032268131703 0.0006738896681334119; 144.19737413185226 0.0009447287481904832; 170.33975737779565 0.0012988041910864442]"
+        }
+      ],
+      "CustomVariables": [],
+      "Constants": [],
+      "Custom1DTables": [],
+      "Custom2DTables": [],
+      "Custom3DTables": [],
+      "ConductionLossComputationMethod": 1,
+      "ConductionLossComputationFormula": "",
+      "ConductionLossComputationMethodGateOff": 1,
+      "ConductionLossComputationFormulaGateOff": "",
+      "TurnOnLossComputationMethod": "LookUpTableComputationMethodType",
+      "TurnOnLossComputationFormula": "",
+      "TurnOffLossComputationMethod": "LookUpTableComputationMethodType",
+      "TurnOffLossComputationFormula": "",
+      "ThermalImpedanceDataSerialized": "[0]",
+      "ID": "a771e09f-acd1-43c4-ac7b-fa2a13f3da79"
+    },
+    {
+      "Name": "Infineon IMBG120R008M2H",
+      "Manufacturer": "",
+      "PartNumber": "",
+      "Comment": "",
+      "ConductionLossesGateDependency": false,
+      "SemiconductorType": "MosfetThermalDataSemiconductorType",
+      "ThermalImpedanceType": "NoThermalNetworkType",
+      "ConductionLosses": [
+        {
+          "Temperature": 100,
+          "IVSerialized": "[9.94267599 0.14839030335508596; 19.89988547 0.2968054984866626; 29.86612158 0.4455832107646529; 49.7895723 0.7433822127769645; 69.71268863 1.0417273099535578; 89.63641329 1.3412894950697023; 119.52123212 1.7923677956153483; 149.4385635 2.2460776985636812; 179.33011658 2.702923648440162; 249.13070417 3.7834077570352633; -3552.40350905 1942.3665746750012; 358.97015909 5.534469928971191]"
+        },
+        {
+          "Temperature": 175,
+          "IVSerialized": "[9.96303854 0.21494673522244057; 19.9420017 0.430067789125701; 29.92721933 0.6455753082273077; 49.89111259 1.076928192306866; 69.85491892 1.5093909382060815; 89.8191325 1.9430352477682504; 119.765305 2.596636797842848; 149.7339187 3.2544531054067534; 179.6843927 3.917250174343451; 249.638825 5.489133682443253; 299.60803034 6.638334939283311; 359.61908865 8.053811958758445]"
+        }
+      ],
+      "ConductionLossesGateOff": [],
+      "TurnOnLosses": [],
+      "TurnOffLosses": [
+        {
+          "Temperature": 100,
+          "Voltage": 800,
+          "EISerialized": "[4.869992494478538 2.266721890295489E-05; 9.757740784166913 8.338859854458957E-06; 14.645374156330831 1.5025403952334974E-05; 24.420298287276864 2.9248750325847517E-05; 34.19457219949936 4.788663608124895E-05; 43.96785622117102 7.549021908309503E-05; 58.625190319708395 0.00014449894483513034; 73.27761110271797 0.0002343332016314639; 87.92147203148875 0.0003471162709683161; 119.88508547437846 0.0006624414119384835; 145.20500408795488 -0.05725911479627066; 167.50903741657874 0.001284328121815355]"
+        },
+        {
+          "Temperature": 175,
+          "Voltage": 800,
+          "EISerialized": "[4.870527324590398 2.496319403036137E-05; 9.758839356770409 8.209042944353737E-06; 14.647053080619003 1.496852238706268E-05; 24.423242009337173 2.9128533634281196E-05; 34.19894439023517 4.7480114903954325E-05; 43.974067933236825 7.775080093218626E-05; 58.63520701758114 0.00014626963907727122; 73.29376469510146 0.00023798818505532324; 87.94843671986087 0.000354859520317313; 122.11032268131703 0.0006738896681334119; 144.19737413185226 0.0009447287481904832; 170.33975737779565 0.0012988041910864442]"
+        }
+      ],
+      "CustomVariables": [],
+      "Constants": [],
+      "Custom1DTables": [],
+      "Custom2DTables": [],
+      "Custom3DTables": [],
+      "ConductionLossComputationMethod": 1,
+      "ConductionLossComputationFormula": "",
+      "ConductionLossComputationMethodGateOff": 1,
+      "ConductionLossComputationFormulaGateOff": "",
+      "TurnOnLossComputationMethod": "LookUpTableComputationMethodType",
+      "TurnOnLossComputationFormula": "",
+      "TurnOffLossComputationMethod": "LookUpTableComputationMethodType",
+      "TurnOffLossComputationFormula": "",
+      "ThermalImpedanceDataSerialized": "[0]",
+      "ID": "8e14764c-29ff-4bb2-8ab3-29ecfc08638c"
+    },
+    {
+      "Name": "Infineon IMBG120R008M2H",
+      "Manufacturer": "",
+      "PartNumber": "",
+      "Comment": "",
+      "ConductionLossesGateDependency": false,
+      "SemiconductorType": "MosfetThermalDataSemiconductorType",
+      "ThermalImpedanceType": "NoThermalNetworkType",
+      "ConductionLosses": [
+        {
+          "Temperature": 100,
+          "IVSerialized": "[9.94267599 0.14839030335508596; 19.89988547 0.2968054984866626; 29.86612158 0.4455832107646529; 49.7895723 0.7433822127769645; 69.71268863 1.0417273099535578; 89.63641329 1.3412894950697023; 119.52123212 1.7923677956153483; 149.4385635 2.2460776985636812; 179.33011658 2.702923648440162; 249.13070417 3.7834077570352633; -3552.40350905 1942.3665746750012; 358.97015909 5.534469928971191]"
+        },
+        {
+          "Temperature": 175,
+          "IVSerialized": "[9.96303854 0.21494673522244057; 19.9420017 0.430067789125701; 29.92721933 0.6455753082273077; 49.89111259 1.076928192306866; 69.85491892 1.5093909382060815; 89.8191325 1.9430352477682504; 119.765305 2.596636797842848; 149.7339187 3.2544531054067534; 179.6843927 3.917250174343451; 249.638825 5.489133682443253; 299.60803034 6.638334939283311; 359.61908865 8.053811958758445]"
+        }
+      ],
+      "ConductionLossesGateOff": [],
+      "TurnOnLosses": [],
+      "TurnOffLosses": [
+        {
+          "Temperature": 100,
+          "Voltage": 800,
+          "EISerialized": "[4.869992494478538 2.266721890295489E-05; 9.757740784166913 8.338859854458957E-06; 14.645374156330831 1.5025403952334974E-05; 24.420298287276864 2.9248750325847517E-05; 34.19457219949936 4.788663608124895E-05; 43.96785622117102 7.549021908309503E-05; 58.625190319708395 0.00014449894483513034; 73.27761110271797 0.0002343332016314639; 87.92147203148875 0.0003471162709683161; 119.88508547437846 0.0006624414119384835; 145.20500408795488 -0.05725911479627066; 167.50903741657874 0.001284328121815355]"
+        },
+        {
+          "Temperature": 175,
+          "Voltage": 800,
+          "EISerialized": "[4.870527324590398 2.496319403036137E-05; 9.758839356770409 8.209042944353737E-06; 14.647053080619003 1.496852238706268E-05; 24.423242009337173 2.9128533634281196E-05; 34.19894439023517 4.7480114903954325E-05; 43.974067933236825 7.775080093218626E-05; 58.63520701758114 0.00014626963907727122; 73.29376469510146 0.00023798818505532324; 87.94843671986087 0.000354859520317313; 122.11032268131703 0.0006738896681334119; 144.19737413185226 0.0009447287481904832; 170.33975737779565 0.0012988041910864442]"
+        }
+      ],
+      "CustomVariables": [],
+      "Constants": [],
+      "Custom1DTables": [],
+      "Custom2DTables": [],
+      "Custom3DTables": [],
+      "ConductionLossComputationMethod": 1,
+      "ConductionLossComputationFormula": "",
+      "ConductionLossComputationMethodGateOff": 1,
+      "ConductionLossComputationFormulaGateOff": "",
+      "TurnOnLossComputationMethod": "LookUpTableComputationMethodType",
+      "TurnOnLossComputationFormula": "",
+      "TurnOffLossComputationMethod": "LookUpTableComputationMethodType",
+      "TurnOffLossComputationFormula": "",
+      "ThermalImpedanceDataSerialized": "[0]",
+      "ID": "a4383637-dacf-4d60-9fae-0a80460f4b59"
+    },
+    {
+      "Name": "Infineon IMBG120R008M2H",
+      "Manufacturer": "",
+      "PartNumber": "",
+      "Comment": "",
+      "ConductionLossesGateDependency": false,
+      "SemiconductorType": "MosfetThermalDataSemiconductorType",
+      "ThermalImpedanceType": "NoThermalNetworkType",
+      "ConductionLosses": [
+        {
+          "Temperature": 100,
+          "IVSerialized": "[9.94267599 0.14839030335508596; 19.89988547 0.2968054984866626; 29.86612158 0.4455832107646529; 49.7895723 0.7433822127769645; 69.71268863 1.0417273099535578; 89.63641329 1.3412894950697023; 119.52123212 1.7923677956153483; 149.4385635 2.2460776985636812; 179.33011658 2.702923648440162; 249.13070417 3.7834077570352633; -3552.40350905 1942.3665746750012; 358.97015909 5.534469928971191]"
+        },
+        {
+          "Temperature": 175,
+          "IVSerialized": "[9.96303854 0.21494673522244057; 19.9420017 0.430067789125701; 29.92721933 0.6455753082273077; 49.89111259 1.076928192306866; 69.85491892 1.5093909382060815; 89.8191325 1.9430352477682504; 119.765305 2.596636797842848; 149.7339187 3.2544531054067534; 179.6843927 3.917250174343451; 249.638825 5.489133682443253; 299.60803034 6.638334939283311; 359.61908865 8.053811958758445]"
+        }
+      ],
+      "ConductionLossesGateOff": [],
+      "TurnOnLosses": [],
+      "TurnOffLosses": [
+        {
+          "Temperature": 100,
+          "Voltage": 800,
+          "EISerialized": "[4.869992494478538 2.266721890295489E-05; 9.757740784166913 8.338859854458957E-06; 14.645374156330831 1.5025403952334974E-05; 24.420298287276864 2.9248750325847517E-05; 34.19457219949936 4.788663608124895E-05; 43.96785622117102 7.549021908309503E-05; 58.625190319708395 0.00014449894483513034; 73.27761110271797 0.0002343332016314639; 87.92147203148875 0.0003471162709683161; 119.88508547437846 0.0006624414119384835; 145.20500408795488 -0.05725911479627066; 167.50903741657874 0.001284328121815355]"
+        },
+        {
+          "Temperature": 175,
+          "Voltage": 800,
+          "EISerialized": "[4.870527324590398 2.496319403036137E-05; 9.758839356770409 8.209042944353737E-06; 14.647053080619003 1.496852238706268E-05; 24.423242009337173 2.9128533634281196E-05; 34.19894439023517 4.7480114903954325E-05; 43.974067933236825 7.775080093218626E-05; 58.63520701758114 0.00014626963907727122; 73.29376469510146 0.00023798818505532324; 87.94843671986087 0.000354859520317313; 122.11032268131703 0.0006738896681334119; 144.19737413185226 0.0009447287481904832; 170.33975737779565 0.0012988041910864442]"
+        }
+      ],
+      "CustomVariables": [],
+      "Constants": [],
+      "Custom1DTables": [],
+      "Custom2DTables": [],
+      "Custom3DTables": [],
+      "ConductionLossComputationMethod": 1,
+      "ConductionLossComputationFormula": "",
+      "ConductionLossComputationMethodGateOff": 1,
+      "ConductionLossComputationFormulaGateOff": "",
+      "TurnOnLossComputationMethod": "LookUpTableComputationMethodType",
+      "TurnOnLossComputationFormula": "",
+      "TurnOffLossComputationMethod": "LookUpTableComputationMethodType",
+      "TurnOffLossComputationFormula": "",
+      "ThermalImpedanceDataSerialized": "[0]",
+      "ID": "d63ece7b-fd49-40d1-9f99-1887dc5354a7"
+    },
+    {
+      "Name": "Infineon IMBG120R008M2H",
+      "Manufacturer": "",
+      "PartNumber": "",
+      "Comment": "",
+      "ConductionLossesGateDependency": false,
+      "SemiconductorType": "MosfetThermalDataSemiconductorType",
+      "ThermalImpedanceType": "NoThermalNetworkType",
+      "ConductionLosses": [
+        {
+          "Temperature": 100,
+          "IVSerialized": "[9.94267599 0.14839030335508596; 19.89988547 0.2968054984866626; 29.86612158 0.4455832107646529; 49.7895723 0.7433822127769645; 69.71268863 1.0417273099535578; 89.63641329 1.3412894950697023; 119.52123212 1.7923677956153483; 149.4385635 2.2460776985636812; 179.33011658 2.702923648440162; 249.13070417 3.7834077570352633; -3552.40350905 1942.3665746750012; 358.97015909 5.534469928971191]"
+        },
+        {
+          "Temperature": 175,
+          "IVSerialized": "[9.96303854 0.21494673522244057; 19.9420017 0.430067789125701; 29.92721933 0.6455753082273077; 49.89111259 1.076928192306866; 69.85491892 1.5093909382060815; 89.8191325 1.9430352477682504; 119.765305 2.596636797842848; 149.7339187 3.2544531054067534; 179.6843927 3.917250174343451; 249.638825 5.489133682443253; 299.60803034 6.638334939283311; 359.61908865 8.053811958758445]"
+        }
+      ],
+      "ConductionLossesGateOff": [],
+      "TurnOnLosses": [],
+      "TurnOffLosses": [
+        {
+          "Temperature": 100,
+          "Voltage": 800,
+          "EISerialized": "[4.869992494478538 2.266721890295489E-05; 9.757740784166913 8.338859854458957E-06; 14.645374156330831 1.5025403952334974E-05; 24.420298287276864 2.9248750325847517E-05; 34.19457219949936 4.788663608124895E-05; 43.96785622117102 7.549021908309503E-05; 58.625190319708395 0.00014449894483513034; 73.27761110271797 0.0002343332016314639; 87.92147203148875 0.0003471162709683161; 119.88508547437846 0.0006624414119384835; 145.20500408795488 -0.05725911479627066; 167.50903741657874 0.001284328121815355]"
+        },
+        {
+          "Temperature": 175,
+          "Voltage": 800,
+          "EISerialized": "[4.870527324590398 2.496319403036137E-05; 9.758839356770409 8.209042944353737E-06; 14.647053080619003 1.496852238706268E-05; 24.423242009337173 2.9128533634281196E-05; 34.19894439023517 4.7480114903954325E-05; 43.974067933236825 7.775080093218626E-05; 58.63520701758114 0.00014626963907727122; 73.29376469510146 0.00023798818505532324; 87.94843671986087 0.000354859520317313; 122.11032268131703 0.0006738896681334119; 144.19737413185226 0.0009447287481904832; 170.33975737779565 0.0012988041910864442]"
+        }
+      ],
+      "CustomVariables": [],
+      "Constants": [],
+      "Custom1DTables": [],
+      "Custom2DTables": [],
+      "Custom3DTables": [],
+      "ConductionLossComputationMethod": 1,
+      "ConductionLossComputationFormula": "",
+      "ConductionLossComputationMethodGateOff": 1,
+      "ConductionLossComputationFormulaGateOff": "",
+      "TurnOnLossComputationMethod": "LookUpTableComputationMethodType",
+      "TurnOnLossComputationFormula": "",
+      "TurnOffLossComputationMethod": "LookUpTableComputationMethodType",
+      "TurnOffLossComputationFormula": "",
+      "ThermalImpedanceDataSerialized": "[0]",
+      "ID": "90d056e0-405f-4b6d-a601-9384526a4e5a"
+    },
+    {
+      "Name": "Infineon IMBG120R008M2H",
+      "Manufacturer": "",
+      "PartNumber": "",
+      "Comment": "",
+      "ConductionLossesGateDependency": false,
+      "SemiconductorType": "MosfetThermalDataSemiconductorType",
+      "ThermalImpedanceType": "NoThermalNetworkType",
+      "ConductionLosses": [
+        {
+          "Temperature": 100,
+          "IVSerialized": "[9.94267599 0.14839030335508596; 19.89988547 0.2968054984866626; 29.86612158 0.4455832107646529; 49.7895723 0.7433822127769645; 69.71268863 1.0417273099535578; 89.63641329 1.3412894950697023; 129.48293509 1.9433055401527781; 159.4024175 2.3979774772657265; 179.33011658 2.702923648440162; 249.13070417 3.7834077570352633; 308.98888057 4.729141855945329; 358.97015909 5.534469928971191]"
+        },
+        {
+          "Temperature": 175,
+          "IVSerialized": "[9.96303854 0.21494673522244057; 19.9420017 0.430067789125701; 29.92721933 0.6455753082273077; 49.89111259 1.076928192306866; 69.85491892 1.5093909382060815; 89.8191325 1.9430352477682504; 129.74806017 2.815384632276391; 159.71702709 3.4748194360409457; 179.6843927 3.917250174343451; 249.638825 5.489133682443253; 309.63442199 6.871363939015907; 359.61908865 8.053811958758445]"
+        }
+      ],
+      "ConductionLossesGateOff": [],
+      "TurnOnLosses": [],
+      "TurnOffLosses": [
+        {
+          "Temperature": 100,
+          "Voltage": 800,
+          "EISerialized": "[4.869992494478538 2.266721890295489E-05; 9.757740784166913 8.338859854458957E-06; 14.645374156330831 1.5025403952334974E-05; 24.420298287276864 2.9248750325847517E-05; 34.19457219949936 4.788663608124895E-05; 43.96785622117102 7.549021908309503E-05; 63.51000726956556 0.00017211171732216127; 78.16011207815927 0.00027172236637853326; 87.92147203148875 0.0003471162709683161; 119.88508547437846 0.0006624414119384835; 145.73915363281697 0.0009979630001159126; 167.50903741657874 0.001284328121815355]"
+        },
+        {
+          "Temperature": 175,
+          "Voltage": 800,
+          "EISerialized": "[4.870527324590398 2.496319403036137E-05; 9.758839356770409 8.209042944353737E-06; 14.647053080619003 1.496852238706268E-05; 24.423242009337173 2.9128533634281196E-05; 34.19894439023517 4.7480114903954325E-05; 43.974067933236825 7.775080093218626E-05; 63.521731331731985 0.00017693601524066565; 78.17917042181716 0.0002769185578638993; 87.94843671986087 0.000354859520317313; 122.11032268131703 0.0006738896681334119; 148.85424551072015 0.0010041599695330382; 170.33975737779565 0.0012988041910864442]"
+        }
+      ],
+      "CustomVariables": [],
+      "Constants": [],
+      "Custom1DTables": [],
+      "Custom2DTables": [],
+      "Custom3DTables": [],
+      "ConductionLossComputationMethod": 1,
+      "ConductionLossComputationFormula": "",
+      "ConductionLossComputationMethodGateOff": 1,
+      "ConductionLossComputationFormulaGateOff": "",
+      "TurnOnLossComputationMethod": "LookUpTableComputationMethodType",
+      "TurnOnLossComputationFormula": "",
+      "TurnOffLossComputationMethod": "LookUpTableComputationMethodType",
+      "TurnOffLossComputationFormula": "",
+      "ThermalImpedanceDataSerialized": "[0]",
+      "ID": "967cb321-e5de-4cd6-8018-99b970effa24"
+    },
+    {
+      "Name": "Infineon IMBG120R008M2H",
+      "Manufacturer": "",
+      "PartNumber": "",
+      "Comment": "",
+      "ConductionLossesGateDependency": false,
+      "SemiconductorType": "MosfetThermalDataSemiconductorType",
+      "ThermalImpedanceType": "NoThermalNetworkType",
+      "ConductionLosses": [
+        {
+          "Temperature": 100,
+          "IVSerialized": "[9.94267599 0.14839030335508596; 19.89988547 0.2968054984866626; 29.86612158 0.4455832107646529; 49.7895723 0.7433822127769645; 69.71268863 1.0417273099535578; 89.63641329 1.3412894950697023; 129.48293509 1.9433055401527781; 159.4024175 2.3979774772657265; 179.33011658 2.702923648440162; 249.13070417 3.7834077570352633; 308.98888057 4.729141855945329; 358.97015909 5.534469928971191]"
+        },
+        {
+          "Temperature": 175,
+          "IVSerialized": "[9.96303854 0.21494673522244057; 19.9420017 0.430067789125701; 29.92721933 0.6455753082273077; 49.89111259 1.076928192306866; 69.85491892 1.5093909382060815; 89.8191325 1.9430352477682504; 129.74806017 2.815384632276391; 159.71702709 3.4748194360409457; 179.6843927 3.917250174343451; 249.638825 5.489133682443253; 309.63442199 6.871363939015907; 359.61908865 8.053811958758445]"
+        }
+      ],
+      "ConductionLossesGateOff": [],
+      "TurnOnLosses": [],
+      "TurnOffLosses": [
+        {
+          "Temperature": 100,
+          "Voltage": 800,
+          "EISerialized": "[4.869992494478538 2.266721890295489E-05; 9.757740784166913 8.338859854458957E-06; 14.645374156330831 1.5025403952334974E-05; 24.420298287276864 2.9248750325847517E-05; 34.19457219949936 4.788663608124895E-05; 43.96785622117102 7.549021908309503E-05; 63.51000726956556 0.00017211171732216127; 78.16011207815927 0.00027172236637853326; 87.92147203148875 0.0003471162709683161; 119.88508547437846 0.0006624414119384835; 145.73915363281697 0.0009979630001159126; 167.50903741657874 0.001284328121815355]"
+        },
+        {
+          "Temperature": 175,
+          "Voltage": 800,
+          "EISerialized": "[4.870527324590398 2.496319403036137E-05; 9.758839356770409 8.209042944353737E-06; 14.647053080619003 1.496852238706268E-05; 24.423242009337173 2.9128533634281196E-05; 34.19894439023517 4.7480114903954325E-05; 43.974067933236825 7.775080093218626E-05; 63.521731331731985 0.00017693601524066565; 78.17917042181716 0.0002769185578638993; 87.94843671986087 0.000354859520317313; 122.11032268131703 0.0006738896681334119; 148.85424551072015 0.0010041599695330382; 170.33975737779565 0.0012988041910864442]"
+        }
+      ],
+      "CustomVariables": [],
+      "Constants": [],
+      "Custom1DTables": [],
+      "Custom2DTables": [],
+      "Custom3DTables": [],
+      "ConductionLossComputationMethod": 1,
+      "ConductionLossComputationFormula": "",
+      "ConductionLossComputationMethodGateOff": 1,
+      "ConductionLossComputationFormulaGateOff": "",
+      "TurnOnLossComputationMethod": "LookUpTableComputationMethodType",
+      "TurnOnLossComputationFormula": "",
+      "TurnOffLossComputationMethod": "LookUpTableComputationMethodType",
+      "TurnOffLossComputationFormula": "",
+      "ThermalImpedanceDataSerialized": "[0]",
+      "ID": "100d0079-7983-430f-8d5b-4395cb8c6b61"
+    },
+    {
+      "Name": "Untitled",
+      "Manufacturer": "",
+      "PartNumber": "",
+      "Comment": "",
+      "ConductionLossesGateDependency": false,
+      "SemiconductorType": "MosfetThermalDataSemiconductorType",
+      "ThermalImpedanceType": "NoThermalNetworkType",
+      "ConductionLosses": [],
+      "ConductionLossesGateOff": [],
+      "TurnOnLosses": [],
+      "TurnOffLosses": [],
+      "CustomVariables": [],
+      "Constants": [],
+      "Custom1DTables": [],
+      "Custom2DTables": [],
+      "Custom3DTables": [],
+      "ConductionLossComputationMethod": 1,
+      "ConductionLossComputationFormula": "",
+      "ConductionLossComputationMethodGateOff": 1,
+      "ConductionLossComputationFormulaGateOff": "",
+      "TurnOnLossComputationMethod": "LookUpTableComputationMethodType",
+      "TurnOnLossComputationFormula": "",
+      "TurnOffLossComputationMethod": "LookUpTableComputationMethodType",
+      "TurnOffLossComputationFormula": "",
+      "ThermalImpedanceDataSerialized": "[0]",
+      "ID": "04696630-bb99-49ef-8b1a-48ba389b91a9"
+    },
+    {
+      "Name": "Untitled",
+      "Manufacturer": "",
+      "PartNumber": "",
+      "Comment": "",
+      "ConductionLossesGateDependency": false,
+      "SemiconductorType": "MosfetThermalDataSemiconductorType",
+      "ThermalImpedanceType": "NoThermalNetworkType",
+      "ConductionLosses": [],
+      "ConductionLossesGateOff": [],
+      "TurnOnLosses": [],
+      "TurnOffLosses": [],
+      "CustomVariables": [],
+      "Constants": [],
+      "Custom1DTables": [],
+      "Custom2DTables": [],
+      "Custom3DTables": [],
+      "ConductionLossComputationMethod": 1,
+      "ConductionLossComputationFormula": "",
+      "ConductionLossComputationMethodGateOff": 1,
+      "ConductionLossComputationFormulaGateOff": "",
+      "TurnOnLossComputationMethod": "LookUpTableComputationMethodType",
+      "TurnOnLossComputationFormula": "",
+      "TurnOffLossComputationMethod": "LookUpTableComputationMethodType",
+      "TurnOffLossComputationFormula": "",
+      "ThermalImpedanceDataSerialized": "[0]",
+      "ID": "f72c9e07-3e3a-434a-be40-030fa25625e0"
+    },
+    {
+      "Name": "Infineon IMBG120R008M2H",
+      "Manufacturer": "",
+      "PartNumber": "",
+      "Comment": "",
+      "ConductionLossesGateDependency": false,
+      "SemiconductorType": "MosfetThermalDataSemiconductorType",
+      "ThermalImpedanceType": "NoThermalNetworkType",
+      "ConductionLosses": [
+        {
+          "Temperature": 100,
+          "IVSerialized": "[9.94267599 -1.3845029799622785E-05; 19.89988547 1.9344139145008514E-05; 29.86612158 3.953865973014055E-05; 49.7895723 0.00010301808666280743; 69.71268863 0.00019836153808260428; 89.63641329 0.00032715645384336203; 129.48293509 0.0006812027245655257; 159.4024175 0.001025396628603418; 179.33011658 0.0012931994312640601; 249.13070417 0.002488692003284034; 308.98888057 0.0038028766331827486; 358.97015909 0.005160431583265499]"
+        },
+        {
+          "Temperature": 175,
+          "IVSerialized": "[9.96303854 -1.4387604577418411E-05; 19.9420017 2.5988525118140278E-05; 29.92721933 5.4257972775530015E-05; 49.89111259 0.0001440653823622131; 69.85491892 0.0002795909580701495; 89.8191325 0.00046086793396112524; 129.74806017 0.00095867891627083; 159.71702709 0.0014504474488498112; 179.6843927 0.0018316927367268685; 249.638825 0.003534313225939891; 309.63442199 0.005447485153875383; 359.61908865 0.007390479244651436]"
+        }
+      ],
+      "ConductionLossesGateOff": [],
+      "TurnOnLosses": [],
+      "TurnOffLosses": [
+        {
+          "Temperature": 100,
+          "Voltage": 800,
+          "EISerialized": "[4.869992494478538 2.266721890295489E-05; 9.757740784166913 8.338859854458957E-06; 14.645374156330831 1.5025403952334974E-05; 24.420298287276864 2.9248750325847517E-05; 34.19457219949936 4.788663608124895E-05; 43.96785622117102 7.549021908309503E-05; 63.51000726956556 0.00017211171732216127; 78.16011207815927 0.00027172236637853326; 87.92147203148875 0.0003471162709683161; 119.88508547437846 0.0006624414119384835; 145.73915363281697 0.0009979630001159126; 167.50903741657874 0.001284328121815355]"
+        },
+        {
+          "Temperature": 175,
+          "Voltage": 800,
+          "EISerialized": "[4.870527324590398 2.496319403036137E-05; 9.758839356770409 8.209042944353737E-06; 14.647053080619003 1.496852238706268E-05; 24.423242009337173 2.9128533634281196E-05; 34.19894439023517 4.7480114903954325E-05; 43.974067933236825 7.775080093218626E-05; 63.521731331731985 0.00017693601524066565; 78.17917042181716 0.0002769185578638993; 87.94843671986087 0.000354859520317313; 122.11032268131703 0.0006738896681334119; 148.85424551072015 0.0010041599695330382; 170.33975737779565 0.0012988041910864442]"
+        }
+      ],
+      "CustomVariables": [],
+      "Constants": [],
+      "Custom1DTables": [],
+      "Custom2DTables": [],
+      "Custom3DTables": [],
+      "ConductionLossComputationMethod": 1,
+      "ConductionLossComputationFormula": "",
+      "ConductionLossComputationMethodGateOff": 1,
+      "ConductionLossComputationFormulaGateOff": "",
+      "TurnOnLossComputationMethod": "LookUpTableComputationMethodType",
+      "TurnOnLossComputationFormula": "",
+      "TurnOffLossComputationMethod": "LookUpTableComputationMethodType",
+      "TurnOffLossComputationFormula": "",
+      "ThermalImpedanceDataSerialized": "[0]",
+      "ID": "e29d8925-e2e8-41da-b803-6ca8b6d539e5"
+    },
+    {
+      "Name": "Infineon IMBG120R008M2H",
+      "Manufacturer": "",
+      "PartNumber": "",
+      "Comment": "",
+      "ConductionLossesGateDependency": false,
+      "SemiconductorType": "MosfetThermalDataSemiconductorType",
+      "ThermalImpedanceType": "NoThermalNetworkType",
+      "ConductionLosses": [
+        {
+          "Temperature": 100,
+          "IVSerialized": "[9.94267599 -1.3845029799622785E-05; 19.89988547 1.9344139145008514E-05; 29.86612158 3.953865973014055E-05; 49.7895723 0.00010301808666280743; 69.71268863 0.00019836153808260428; 89.63641329 0.00032715645384336203; 129.48293509 0.0006812027245655257; 159.4024175 0.001025396628603418; 179.33011658 0.0012931994312640601; 249.13070417 0.002488692003284034; 308.98888057 0.0038028766331827486; 358.97015909 0.005160431583265499]"
+        },
+        {
+          "Temperature": 175,
+          "IVSerialized": "[9.96303854 -1.4387604577418411E-05; 19.9420017 2.5988525118140278E-05; 29.92721933 5.4257972775530015E-05; 49.89111259 0.0001440653823622131; 69.85491892 0.0002795909580701495; 89.8191325 0.00046086793396112524; 129.74806017 0.00095867891627083; 159.71702709 0.0014504474488498112; 179.6843927 0.0018316927367268685; 249.638825 0.003534313225939891; 309.63442199 0.005447485153875383; 359.61908865 0.007390479244651436]"
+        }
+      ],
+      "ConductionLossesGateOff": [],
+      "TurnOnLosses": [],
+      "TurnOffLosses": [
+        {
+          "Temperature": 100,
+          "Voltage": 800,
+          "EISerialized": "[4.869992494478538 2.266721890295489E-05; 9.757740784166913 8.338859854458957E-06; 14.645374156330831 1.5025403952334974E-05; 24.420298287276864 2.9248750325847517E-05; 34.19457219949936 4.788663608124895E-05; 43.96785622117102 7.549021908309503E-05; 63.51000726956556 0.00017211171732216127; 78.16011207815927 0.00027172236637853326; 87.92147203148875 0.0003471162709683161; 119.88508547437846 0.0006624414119384835; 145.73915363281697 0.0009979630001159126; 167.50903741657874 0.001284328121815355]"
+        },
+        {
+          "Temperature": 175,
+          "Voltage": 800,
+          "EISerialized": "[4.870527324590398 2.496319403036137E-05; 9.758839356770409 8.209042944353737E-06; 14.647053080619003 1.496852238706268E-05; 24.423242009337173 2.9128533634281196E-05; 34.19894439023517 4.7480114903954325E-05; 43.974067933236825 7.775080093218626E-05; 63.521731331731985 0.00017693601524066565; 78.17917042181716 0.0002769185578638993; 87.94843671986087 0.000354859520317313; 122.11032268131703 0.0006738896681334119; 148.85424551072015 0.0010041599695330382; 170.33975737779565 0.0012988041910864442]"
+        }
+      ],
+      "CustomVariables": [],
+      "Constants": [],
+      "Custom1DTables": [],
+      "Custom2DTables": [],
+      "Custom3DTables": [],
+      "ConductionLossComputationMethod": 1,
+      "ConductionLossComputationFormula": "",
+      "ConductionLossComputationMethodGateOff": 1,
+      "ConductionLossComputationFormulaGateOff": "",
+      "TurnOnLossComputationMethod": "LookUpTableComputationMethodType",
+      "TurnOnLossComputationFormula": "",
+      "TurnOffLossComputationMethod": "LookUpTableComputationMethodType",
+      "TurnOffLossComputationFormula": "",
+      "ThermalImpedanceDataSerialized": "[]",
+      "ID": "1f9fb467-526e-4a83-a78d-25c77088ee14"
+    }
+  ]
+}
