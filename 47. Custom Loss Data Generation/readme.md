@@ -60,7 +60,7 @@ To address this challenge, we aim to generate custom loss data for power switche
   - Switching Frequencies: $f_1 = 100\,\mathrm{kHz},\ f_2 = 200\,\mathrm{kHz}$
 
 - **Simulation Process**:
-  1. For each temperature and load current, run simulations at \( f_1 \) and \( f_2 \).
+  1. For each temperature and load current, run simulations at $f_1$ and $f_2$.
   2. Extract voltage (Vds) and current (Id) waveforms.
   3. Compute total energy losses using numerical integration of the instantaneous power.
   4. Save results into a human readable text file
@@ -75,24 +75,30 @@ To separate conduction and switching losses, we use the two-frequency method:
 
 1. **Assumption**: Conduction losses are independent of switching frequency, while switching losses are directly proportional to the switching frequency.
 2. **Procedure**:
-   - Run simulations at two different switching frequencies (e.g., \( f_1 \) and \( f_2 = 2f_1 \)).
-   - Measure the total energy losses \( E_{\text{total},1} \) and \( E_{\text{total},2} \) at these frequencies.
+   - Run simulations at two different switching frequencies (e.g., $f_1$ and $f_2 = 2f_1$).
+   - Measure the total energy losses $E_{\text{total},1}$ and $E_{\text{total},2}$ at these frequencies.
 3. **Calculations**:
    - **Switching Losses per Cycle**:
-     \[
+
+     $$
      E_{\text{switching}} = \frac{E_{\text{total},2} - E_{\text{total},1}}{f_2 - f_1}
-     \]
+     $$
+
    - **Conduction Losses per Cycle**:
-     \[
+
+     $$
      E_{\text{conduction}} = \frac{f_2 E_{\text{total},1} - f_1 E_{\text{total},2}}{f_2 - f_1}
-     \]
-   - For \( f_2 = 2f_1 \), these simplify to:
-     \[
+     $$
+
+   - For $f_2 = 2f_1$, these simplify to:
+
+     $$
      E_{\text{switching}} = E_{\text{total},2} - E_{\text{total},1}
-     \]
-     \[
+     $$
+
+     $$
      E_{\text{conduction}} = 2E_{\text{total},1} - E_{\text{total},2}
-     \]
+     $$
 
 ![Loss Data](fig/3_loss_data.png)
 
