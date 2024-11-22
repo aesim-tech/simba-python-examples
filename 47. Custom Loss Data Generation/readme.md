@@ -73,11 +73,13 @@ To address this challenge, we aim to generate custom loss data for power switche
 
 To separate conduction and switching losses, we use the two-frequency method:
 
-1. **Assumption**: Conduction losses are independent of switching frequency, while switching losses are directly proportional to the switching frequency.
-2. **Procedure**:
+1. **Assumption**:
+   - Conduction losses are independent of switching frequency, while switching losses are directly proportional to the switching frequency.
+   - Junction temperature variation is small enough to be considered as constant during these few switching periods (1 at 100 kHz and 2 at 200 kHz).
+3. **Procedure**:
    - Run simulations at two different switching frequencies (e.g., $f_1$ and $f_2 = 2f_1$).
    - Measure the total energy losses $E_{\text{total},1}$ and $E_{\text{total},2}$ at these frequencies.
-3. **Calculations**:
+4. **Calculations**:
    - **Switching Losses per Cycle**:
 
      $$E_{\text{switching}} = \frac{E_{\text{total},2} - E_{\text{total},1}}{f_2 - f_1}$$
