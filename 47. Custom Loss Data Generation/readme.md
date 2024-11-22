@@ -80,25 +80,17 @@ To separate conduction and switching losses, we use the two-frequency method:
 3. **Calculations**:
    - **Switching Losses per Cycle**:
 
-     $$
-     E_{\text{switching}} = \frac{E_{\text{total},2} - E_{\text{total},1}}{f_2 - f_1}
-     $$
+     $$E_{\text{switching}} = \frac{E_{\text{total},2} - E_{\text{total},1}}{f_2 - f_1}$$
 
    - **Conduction Losses per Cycle**:
 
-     $$
-     E_{\text{conduction}} = \frac{f_2 E_{\text{total},1} - f_1 E_{\text{total},2}}{f_2 - f_1}
-     $$
+     $$E_{\text{conduction}} = \frac{f_2 E_{\text{total},1} - f_1 E_{\text{total},2}}{f_2 - f_1}$$
 
    - For $f_2 = 2f_1$, these simplify to:
 
-     $$
-     E_{\text{switching}} = E_{\text{total},2} - E_{\text{total},1}
-     $$
+     $$E_{\text{switching}} = E_{\text{total},2} - E_{\text{total},1}$$
 
-     $$
-     E_{\text{conduction}} = 2E_{\text{total},1} - E_{\text{total},2}
-     $$
+     $$E_{\text{conduction}} = 2E_{\text{total},1} - E_{\text{total},2}$$
 
 ![Loss Data](fig/3_loss_data.png)
 
