@@ -51,12 +51,13 @@ To address this challenge, we aim to generate custom loss data for power switche
   - Both high-side and low-side switches are implemented using the manufacturer's detailed SPICE model (Infineon SiC 1200V Mosfet IMBG120R008M2H)
 
 ![Switching Leg](fig/1_loss_data_schematic.png)
+
 *Figure 1: Schematic of the circuit used for ZVS loss characterization.*
 
 - **Parameters**:
-  - Temperatures: \( T = \{100^\circ \text{C}, 175^\circ \text{C}\} \)
+  - Temperatures: $T = \{100^\circ\,\mathrm{C},\ 175^\circ\,\mathrm{C}\}$
   - Load Currents: From 10 A to 360 A
-  - Switching Frequencies: \( f_1 = 100 \text{kHz}, f_2 = 200 \text{kHz} \)
+  - Switching Frequencies: $f_1 = 100\,\mathrm{kHz},\ f_2 = 200\,\mathrm{kHz}$
 
 - **Simulation Process**:
   1. For each temperature and load current, run simulations at \( f_1 \) and \( f_2 \).
@@ -65,6 +66,7 @@ To address this challenge, we aim to generate custom loss data for power switche
   4. Save results into a human readable text file
 
 ![Simulation waveforms](fig/2_waveform.png)
+
 *Figure 2: MOSFET voltage and Current waveforms*
 
 #### Two-Frequency Method for Loss Separation
@@ -93,6 +95,7 @@ To separate conduction and switching losses, we use the two-frequency method:
      \]
 
 ![Loss Data](fig/3_loss_data.png)
+
 *Figure 3: Generated Thermal Data.*
 
 
@@ -111,7 +114,6 @@ The generated thermal data are then loaded into a LLC Full-Bridge converter mode
 ![LLC Full-Bridge Converter](fig/4_llc_fullbridge.png)
 
 *Figure 4: Schematic of the LLC full-bridge converter using the generated thermal data.*
-
 
 ![LLC Simulation Waveforms](fig/5_llc_waveforms.png)
 
