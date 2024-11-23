@@ -1,9 +1,11 @@
 ---
 tags:
   - Python
-  - Power Electronics
-  - ZVS
-  - Thermal Analysis
+  - DC-AC
+  - Power Supplies
+  - Thermal
+  - Spice
+  - Parallel Computing
 ---
 
 ### Python Script Overview
