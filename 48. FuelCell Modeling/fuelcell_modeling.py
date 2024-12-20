@@ -1,5 +1,7 @@
 """
-Script to compare Fuel Cell Model with C-code and PWL resistor
+This python script proposes an approach for fuel cell modeling in SIMBA
+- A first step proposes an extraction of model parameters from experimental curves
+- A second step proposes the implementation of 3 different models (with C-Code, a PWL resistor and 3rd model which includes a dynamic)
 """
 # %%
 import os
@@ -8,35 +10,42 @@ import pandas as pd
 from scipy.optimize import curve_fit
 from aesim.simba import ProjectRepository
 
-# %%###########################
-# 1- Fuel Cell Characteristics
-###############################
+# %%############################################
+# 1- Get main parameters of the Fuel Cell Models
+###############################################
 
-print('1- Fuel Cell Characteristics')
+print('1- Main parameters of Fuel Cell Models')
 
 current_folder = os.path.dirname(os.path.abspath(__file__))
 data = pd.read_csv(os.path.join(current_folder  , "fuelcell_vi_curve.csv"))
 data_current = data['Current (A)'].to_numpy()
-data_voltage = data['Voltage (V)'].to_numpy()
-ncells = 455
-rated_average_cell_voltage = 0.645
-Vfuelcell = rated_average_cell_voltage * ncells
+data_stack_voltage = data['Voltage (V)'].to_numpy()
+ncells = 440
+data_voltage = data_stack_voltage / ncells
 
-# Estimate unknown parameters
-Eth = 1.1       # given open-circuit voltage
-iLim = 800      # typical limit current (1.5 - 2 A / cm²)
-area = 420      # estimated from the limit current (cm²)
-CdL = 2.09      # typical double layer capacitor (5 mF / cm²)
+# Assume an open-circuit voltage
+Eth = 1.1
 
-def get_fuelcell_voltage(ifc, A, io, B, rohm):
+# Extract parameters from polarization curve
+def get_fuelcell_voltage(ifc, A, io, B, rohm, iLim):
     vfc = Eth - A * np.log(ifc / io) + B * np.log(1 - ifc / iLim) - rohm * ifc
     return vfc
 
-[A, io, B, rohm], _ = curve_fit(get_fuelcell_voltage, data_current, data_voltage, bounds=((1e-9, 1e-9, 1e-9, 1e-6), (1e-1, 1e-1, 1e-1, 1e-2)))
-print('A = ', A)
-print('io = ', io)
-print('B = ', B)
-print('rohm =', rohm)
+[A, io, B, rohm, iLim], _ = curve_fit(get_fuelcell_voltage, data_current, data_voltage, bounds=((1e-9, 1e-9, 1e-9, 1e-6, max(data_current)), (1e-1, 1, 3e-1, 1e-1, 2*max(data_current))))
+
+# Evaluate unknown parameters
+jLim = 1.5                  # typical limit current density (1 to 2 A / cm²)
+area = iLim / jLim          # estimate area (cm²)
+double_layer_cm2 = 5e-3     # typical double layer capacitor (5 mF / cm²)
+CdL = 5e-3 * area           # estimate double layer capacitor
+
+# Resume found characteristics
+print("A = {0:.4f} V/A".format(A))
+print("io = {0:.4f} A".format(io))
+print("B = {0:.4f} V/A".format(B))
+print("rohm = {0:.2e} Ohms".format(rohm))
+print("iLim = {0:.0f} A" .format(iLim))
+print("Estimated area = {0:.0f} cm²".format(area))
 
 model_voltage = Eth  - A * np.log(data_current / io) + B * np.log(1 - data_current / iLim) - rohm * data_current
 
@@ -51,8 +60,14 @@ ax.legend()
 ax.grid()
 plt.show()
 
-# Compute sum of activation and diffusion losses
 
+# %%###########################################################
+# 2- Get PWL resistor to model activation and diffusion losses
+###############################################################
+
+print('2- Get PWL resistor to model activation and diffusion losses in 2nd and 3rd model')
+
+# Compute sum of activation and diffusion losses
 def compute_non_linear_losses(i):
     return  A * np.log(i/io) - B * np.log(1 - i/iLim)
 
@@ -90,14 +105,12 @@ def get_pwfl_breakpoints(x, y, number_of_line_segments):
 
 iLinspace = np.linspace(10*io, iLim/1.05, int(1e4))
 non_linear_losses = compute_non_linear_losses(iLinspace)
-
 [iBreakpoints, _, _] = get_pwfl_breakpoints(iLinspace, non_linear_losses, 11)
-non_linear_losses_points = compute_non_linear_losses(iBreakpoints)
-
+vBreakpoints = compute_non_linear_losses(iBreakpoints)
 
 fig, ax = plt.subplots()
 ax.plot(iLinspace, non_linear_losses, color='darkblue', label='non linear model')
-ax.plot(iBreakpoints, non_linear_losses_points, color='orange', linestyle='--', marker='o', markersize=4, label='non linear losses points')
+ax.plot(iBreakpoints, vBreakpoints, color='orange', linestyle='--', marker='o', markersize=4, label='non linear losses points')
 ax.set_title('Activation and Diffusion Voltage Drops')
 ax.set_ylabel('Drop voltage (V)')
 ax.set_xlabel('Current (A)')
@@ -105,13 +118,27 @@ ax.legend()
 ax.grid()
 plt.show()
 
+parameter_file = os.path.join(current_folder,"fuelcell_parameters.txt")
+with open(parameter_file, "w") as file:
+    # Écrire les scalaires
+    file.write(f"Eth = {Eth}\n")
+    file.write(f"A = {A}\n")
+    file.write(f"io = {io}\n")
+    file.write(f"B = {B}\n")
+    file.write(f"iLim = {iLim}\n")
+    file.write(f"rohm = {rohm}\n")
+    file.write(f"iBreakpoints = {iBreakpoints.tolist()}\n")
+    file.write(f"vBreakpoints = {vBreakpoints.tolist()}\n")
+    file.write(f"ncells = {ncells}\n")
+    file.write(f"area = {area}\n")
+    file.write(f"CdL = {CdL}\n")
 
 # %%###################
-# 2- Simba circuits
+# 3- Simba Models
 #######################
-print('2- Config of Simba circuits')
+print('3- Config of Simba Models')
 
-project = ProjectRepository(os.path.join(current_folder , "fuelcell_modeling_2024-05.jsimba"))
+project = ProjectRepository(os.path.join(current_folder , "fuelcell_modeling.jsimba"))
 models = [project.GetDesignByName('1-FuelCell-Ccode'),
           project.GetDesignByName('2-FuelCell-PWLresistor'),
           project.GetDesignByName('3-FuelCell-DynamicModel')]
@@ -128,22 +155,22 @@ models[0].Circuit.SetVariableValue("iLim", str(iLim))
 print('Set parameters in 2nd Model with PWL resistor')
 models[1].Circuit.SetVariableValue("rohm", str(rohm))
 Rd = models[1].Circuit.GetDeviceByName('Rd')
-Rd.VoltageCurrentMatrix = np.vstack((non_linear_losses_points, iBreakpoints)).T.tolist()
+Rd.VoltageCurrentMatrix = np.vstack((vBreakpoints, iBreakpoints)).T.tolist()
 
 # Fuel cell parameters model 3
 print('Set parameters in 3rd Model : Dynamic')
 models[2].Circuit.SetVariableValue("rohm", str(rohm))
 models[2].Circuit.SetVariableValue("CdL", str(CdL))
 Rd = models[2].Circuit.GetDeviceByName('Rd')
-Rd.VoltageCurrentMatrix = np.vstack((non_linear_losses_points, iBreakpoints)).T.tolist()
+Rd.VoltageCurrentMatrix = np.vstack((vBreakpoints, iBreakpoints)).T.tolist()
 
 project.Save()
 
 
 # %%###################
-# 3- Simulation
+# 4- Simulation
 #######################
-print('3- Simulation')
+print('4- Simulation')
 
 jobs = []
 for model in models:
@@ -155,9 +182,9 @@ for model in models:
 
 
 # %%###################
-# 4- Plot waveforms
+# 5- Plot vi curves
 #######################
-print('4- Plot waveforms')
+print('5- Plot vi curves')
 
 from bokeh.plotting import figure
 from bokeh.io import show, output_notebook
