@@ -17,7 +17,7 @@ This python script proposes different implementations of fuel cell modeling and 
 
 ## Fuel Cell Models
 
-The fuel cell models considered here rely on the following expression of a fuel cell voltage $V_{fc}$ depending on fuel cell current $i_{fc}$:
+The fuel cell models considered here rely on the following expression - derived from [^1] - of a fuel cell voltage $V_{fc}$ depending on fuel cell current $i_{fc}$:
 
 $$V_{fc} = E_{th} - \dfrac{RT}{\alpha nF} \ln\left(\dfrac{i_{fc}}{i_0}\right) + \dfrac{RT}{\beta nF} \ln \left(1 - \dfrac{i_{fc}}{i_{lim}}\right) - R_{ohm}.i_{fc} $$
 
@@ -82,7 +82,7 @@ def compute_non_linear_losses(i):
 ```
 
 To properly model the non-linear losses with a PWL resistor, its voltage-current segments must be carefully chosen.
-For this, the ideal locations of the current breakpoints (for a given number of breakpoints) is determined with a customized *pwl* function named *get_pwfl_breakpoints()* based on this [PiecewiseLinFit](https://github.com/cjekel/piecewise_linear_fit_py){:target="_blank"} function from *pwl* module.
+For this, the ideal locations of the current breakpoints (for a given number of breakpoints) is determined with a customized *pwl* function named `get_pwfl_breakpoints()` based on this [PiecewiseLinFit](https://github.com/cjekel/piecewise_linear_fit_py){:target="_blank"} function from *pwl* module.
 
 It can be used as follows:
 
@@ -101,13 +101,37 @@ vBreakpoints = compute_non_linear_losses(iBreakpoints)
 The figure below shows the comparison between the mathematical expression to model the non-linear diffusion and activation losses and the determined breakpoints which will be used to define the PWL resistor.
 
 
+![Non linear losses pWL resistor](fig/non_linear_losses_pwl_resistor.png)
 
-![fuel cell experimental data and model](fig/non_linear_losses_pwl_resistor.png)
 
 ## Comparison of the different implementations of Fuel Cell Models
 
+### Fuel Cell Model with a controlled voltage source by a C-code
 
+This model implementation is illustrated in the figure below:
 
-## Fuel Cell Model with a controlled voltage source by a C-code
+![C-code model](fig/c-code_model.png)
 
-## Fuel Cell Model with a PWL resistor
+### Fuel Cell Model with a PWL resistor
+
+This model implementation is illustrated in the figure below:
+
+![PWL resistor model](fig/pwl_resistor_model.png)
+
+### Fuel Cell Model with the dynamic of the double layer capacitor
+
+This model implementation is illustrated in the figure below. It can be interested to consider the doubler layer capacitor as this last one will have a high impact on the filtering of the current harmonics applied to the fuel cell [^2].
+
+![double Layer model](fig/double_layer_model.png)
+
+### Result comparison
+
+The figure below shows the results obtained with these three different implementations.
+
+![Fuel Cell Model Comparison](fig/fuelcell_models_comparison.png)
+
+For the dynamic model, the "hysteresis" loops at low and high currents are due to the interaction between the non-linear losses (respectively action losses at low currents and diffusion losses at high currents) and the double layer capacitor.
+
+[^1]: XXX Larminie & Dicks.
+
+[^2]: G. Fontes, C. Turpin, S. Astier, et T. A. Meynard, ["Interactions Between Fuel Cells and Power Converters: Influence of Current Harmonics on a Fuel Cell Stack", IEEE Transactions on Power Electronics, vol. 22, n°2, mars 2007](https://doi.org/10.1109/TPEL.2006.890008)
