@@ -74,38 +74,15 @@ def compute_non_linear_losses(i):
 def get_pwfl_breakpoints(x, y, number_of_line_segments):
     # import libraries
     import pwlf
-    from scipy.optimize import minimize
     # initialize piecewise linear fit with your x and y data
     my_pwlf = pwlf.PiecewiseLinFit(x, y)
-
-    # initialize custom optimization
-    my_pwlf.use_custom_opt(number_of_line_segments)
-
-    # i have number_of_line_segments - 1 number of variables
-    # let's guess the correct location of the two unknown variables
-    # (the program defaults to have end segments at x0= min(x) and xn=max(x)
-    xGuess = np.linspace(x[1], x[-2], number_of_line_segments-1)
-
-    res = minimize(my_pwlf.fit_with_breaks_opt, xGuess)
-
-    # set up the break point locations
-    x0 = np.zeros(number_of_line_segments + 1)
-    x0[0] = np.min(x)
-    x0[-1] = np.max(x)
-    x0[1:-1] = res.x
-
-    # calculate the parameters based on the optimal break point locations
-    my_pwlf.fit_with_breaks(x0)
-
-    # predict for the determined points
-    xHat = np.linspace(min(x), max(x), num=10000)
-    yHat = my_pwlf.predict(xHat)
-
-    return x0, xHat, yHat
+    # fit the data for the number of line segments
+    res = my_pwlf.fitfast(number_of_line_segments)
+    return res
 
 iLinspace = np.linspace(10*io, iLim/1.05, int(1e4))
 non_linear_losses = compute_non_linear_losses(iLinspace)
-[iBreakpoints, _, _] = get_pwfl_breakpoints(iLinspace, non_linear_losses, 11)
+iBreakpoints = get_pwfl_breakpoints(iLinspace, non_linear_losses, 11)
 vBreakpoints = compute_non_linear_losses(iBreakpoints)
 
 fig, ax = plt.subplots()
@@ -117,21 +94,6 @@ ax.set_xlabel('Current (A)')
 ax.legend()
 ax.grid()
 plt.show()
-
-parameter_file = os.path.join(current_folder,"fuelcell_parameters.txt")
-with open(parameter_file, "w") as file:
-    # Écrire les scalaires
-    file.write(f"Eth = {Eth}\n")
-    file.write(f"A = {A}\n")
-    file.write(f"io = {io}\n")
-    file.write(f"B = {B}\n")
-    file.write(f"iLim = {iLim}\n")
-    file.write(f"rohm = {rohm}\n")
-    file.write(f"iBreakpoints = {iBreakpoints.tolist()}\n")
-    file.write(f"vBreakpoints = {vBreakpoints.tolist()}\n")
-    file.write(f"ncells = {ncells}\n")
-    file.write(f"area = {area}\n")
-    file.write(f"CdL = {CdL}\n")
 
 # %%###################
 # 3- Simba Models
