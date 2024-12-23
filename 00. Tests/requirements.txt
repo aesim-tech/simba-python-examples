@@ -11,3 +11,4 @@ pytest
 notebook
 pandas
 bokeh
+pwlf
