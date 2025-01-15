@@ -45,7 +45,7 @@ circuit = design.Circuit
 fundamental_frequency = 100e3  # Fundamental switching frequency in Hz
 
 #%% Configure Simulation Options
-design.TransientAnalysis.TimeStep = '2n'  # Time step of 2 nanoseconds
+design.TransientAnalysis.TimeStep = '5n'  # Time step of 2 nanoseconds
 simulation_end_time = 3 / fundamental_frequency  # Simulate for 3 periods
 design.TransientAnalysis.EndTime = f'{simulation_end_time}'
 design.TransientAnalysis.NumberOfBasePeriodsSavedParameterEnabled = True
