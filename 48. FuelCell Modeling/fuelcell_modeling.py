@@ -107,20 +107,24 @@ models = [project.GetDesignByName('1-FuelCell-Ccode'),
 
 # Fuel cell parameters model 1
 print('Set parameters in 1st Model with C-code')
+models[0].Circuit.SetVariableValue("Eth", str(Eth))
 models[0].Circuit.SetVariableValue("rohm", str(rohm))
 models[0].Circuit.SetVariableValue("A", str(A))
 models[0].Circuit.SetVariableValue("io", str(io))
 models[0].Circuit.SetVariableValue("B", str(B))
 models[0].Circuit.SetVariableValue("iLim", str(iLim))
+models[0].Circuit.SetVariableValue("ncells", str(1))
 
 # Fuel cell parameters model 2
 print('Set parameters in 2nd Model with PWL resistor')
+models[1].Circuit.SetVariableValue("Eth", str(Eth))
 models[1].Circuit.SetVariableValue("rohm", str(rohm))
 Rd = models[1].Circuit.GetDeviceByName('Rd')
 Rd.VoltageCurrentMatrix = np.vstack((vBreakpoints, iBreakpoints)).T.tolist()
 
 # Fuel cell parameters model 3
 print('Set parameters in 3rd Model : Dynamic')
+models[2].Circuit.SetVariableValue("Eth", str(Eth))
 models[2].Circuit.SetVariableValue("rohm", str(rohm))
 models[2].Circuit.SetVariableValue("CdL", str(CdL))
 Rd = models[2].Circuit.GetDeviceByName('Rd')

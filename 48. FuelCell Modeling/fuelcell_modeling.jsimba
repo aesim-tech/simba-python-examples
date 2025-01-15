@@ -7,312 +7,6 @@
         "Id": "3f30f226-2a93-4286-960a-6da9c7f44742",
         "Devices": [
           {
-            "LibraryName": "Constant",
-            "Top": 7,
-            "Left": -46,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Disabled": false,
-            "Name": "C1",
-            "ID": "d4379062-248e-46e9-a0ef-b82f40c61f1f",
-            "Parameters": {
-              "Value": "B",
-              "SamplingTime": "none",
-              "Name": "C1"
-            },
-            "EnabledScopes": [],
-            "ParametersDisplayAttributes": {
-              "Value": {
-                "IsVisible": true,
-                "Suffix": "",
-                "RelativeLocation": "1 1",
-                "UnrotatedWidth": 2,
-                "UnrotatedHeight": 2,
-                "FontSize": 12,
-                "Color": "#04B404"
-              },
-              "SamplingTime": {
-                "IsVisible": false,
-                "Suffix": "",
-                "RelativeLocation": "1 4",
-                "UnrotatedWidth": 2,
-                "UnrotatedHeight": 1,
-                "FontSize": 12,
-                "Color": "#04B404"
-              },
-              "Name": {
-                "IsVisible": false,
-                "Suffix": "",
-                "RelativeLocation": "1 -1",
-                "UnrotatedWidth": 2,
-                "UnrotatedHeight": 1,
-                "FontSize": 12,
-                "Color": "#04B404"
-              }
-            }
-          },
-          {
-            "LibraryName": "Constant",
-            "Top": 4,
-            "Left": -40,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Disabled": false,
-            "Name": "C2",
-            "ID": "88c2d4ef-90e4-4b16-83f1-a7bd40359cc5",
-            "Parameters": {
-              "Value": "io",
-              "SamplingTime": "none",
-              "Name": "C2"
-            },
-            "EnabledScopes": [],
-            "ParametersDisplayAttributes": {
-              "Value": {
-                "IsVisible": true,
-                "Suffix": "",
-                "RelativeLocation": "1 1",
-                "UnrotatedWidth": 2,
-                "UnrotatedHeight": 2,
-                "FontSize": 12,
-                "Color": "#04B404"
-              },
-              "SamplingTime": {
-                "IsVisible": false,
-                "Suffix": "",
-                "RelativeLocation": "1 4",
-                "UnrotatedWidth": 2,
-                "UnrotatedHeight": 1,
-                "FontSize": 12,
-                "Color": "#04B404"
-              },
-              "Name": {
-                "IsVisible": false,
-                "Suffix": "",
-                "RelativeLocation": "1 -1",
-                "UnrotatedWidth": 2,
-                "UnrotatedHeight": 1,
-                "FontSize": 12,
-                "Color": "#04B404"
-              }
-            }
-          },
-          {
-            "LibraryName": "Constant",
-            "Top": 12,
-            "Left": -40,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Disabled": false,
-            "Name": "C3",
-            "ID": "0b71b985-b442-40c8-8492-446f0215794b",
-            "Parameters": {
-              "Value": "iLim",
-              "SamplingTime": "none",
-              "Name": "C3"
-            },
-            "EnabledScopes": [],
-            "ParametersDisplayAttributes": {
-              "Value": {
-                "IsVisible": true,
-                "Suffix": "",
-                "RelativeLocation": "1 1",
-                "UnrotatedWidth": 2,
-                "UnrotatedHeight": 2,
-                "FontSize": 12,
-                "Color": "#04B404"
-              },
-              "SamplingTime": {
-                "IsVisible": false,
-                "Suffix": "",
-                "RelativeLocation": "1 4",
-                "UnrotatedWidth": 2,
-                "UnrotatedHeight": 1,
-                "FontSize": 12,
-                "Color": "#04B404"
-              },
-              "Name": {
-                "IsVisible": false,
-                "Suffix": "",
-                "RelativeLocation": "1 -1",
-                "UnrotatedWidth": 2,
-                "UnrotatedHeight": 1,
-                "FontSize": 12,
-                "Color": "#04B404"
-              }
-            }
-          },
-          {
-            "LibraryName": "Constant",
-            "Top": 1,
-            "Left": -35,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Disabled": false,
-            "Name": "C4",
-            "ID": "48eea259-b778-4018-a95c-aa14f7bec55c",
-            "Parameters": {
-              "Value": "A",
-              "SamplingTime": "none",
-              "Name": "C4"
-            },
-            "EnabledScopes": [],
-            "ParametersDisplayAttributes": {
-              "Value": {
-                "IsVisible": true,
-                "Suffix": "",
-                "RelativeLocation": "1 1",
-                "UnrotatedWidth": 2,
-                "UnrotatedHeight": 2,
-                "FontSize": 12,
-                "Color": "#04B404"
-              },
-              "SamplingTime": {
-                "IsVisible": false,
-                "Suffix": "",
-                "RelativeLocation": "1 4",
-                "UnrotatedWidth": 2,
-                "UnrotatedHeight": 1,
-                "FontSize": 12,
-                "Color": "#04B404"
-              },
-              "Name": {
-                "IsVisible": false,
-                "Suffix": "",
-                "RelativeLocation": "1 -1",
-                "UnrotatedWidth": 2,
-                "UnrotatedHeight": 1,
-                "FontSize": 12,
-                "Color": "#04B404"
-              }
-            }
-          },
-          {
-            "LibraryName": "Constant",
-            "Top": 13,
-            "Left": -33,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Disabled": false,
-            "Name": "C5",
-            "ID": "817932f4-cfa9-434f-ae24-2eea3550e882",
-            "Parameters": {
-              "Value": "rohm",
-              "SamplingTime": "none",
-              "Name": "C5"
-            },
-            "EnabledScopes": [],
-            "ParametersDisplayAttributes": {
-              "Value": {
-                "IsVisible": true,
-                "Suffix": "",
-                "RelativeLocation": "1 1",
-                "UnrotatedWidth": 2,
-                "UnrotatedHeight": 2,
-                "FontSize": 12,
-                "Color": "#04B404"
-              },
-              "SamplingTime": {
-                "IsVisible": false,
-                "Suffix": "",
-                "RelativeLocation": "1 4",
-                "UnrotatedWidth": 2,
-                "UnrotatedHeight": 1,
-                "FontSize": 12,
-                "Color": "#04B404"
-              },
-              "Name": {
-                "IsVisible": false,
-                "Suffix": "",
-                "RelativeLocation": "1 -1",
-                "UnrotatedWidth": 2,
-                "UnrotatedHeight": 1,
-                "FontSize": 12,
-                "Color": "#04B404"
-              }
-            }
-          },
-          {
-            "LibraryName": "C Code",
-            "Top": 2,
-            "Left": -26,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Disabled": false,
-            "Name": "C6",
-            "ID": "010636bb-47a4-403a-a5c8-d39e5d400eea",
-            "Parameters": {
-              "NumberOfInputs": "6",
-              "NumberOfOutputs": "1",
-              "OptionalAdditionalIncludeDirectory": "",
-              "Code": "#include \u0022simba_library.h\u0022 \r\n#include \u003Cstdlib.h\u003E\r\n#include \u003Cmath.h\u003E\r\n\r\n\r\n\r\n/*\r\n * Type: model_data \r\n * --------------------\r\n * \tDefine in the model_data structure the variables required by your model\r\n */\r\ntypedef struct{\r\n    // Insert model variables here.\r\n} model_data;\r\n\r\n\r\n/*\r\n * Variable: data \r\n * --------------------\r\n *\tActual model data.\r\n */\r\nmodel_data data; \r\n\r\n/*\r\n * Function: initialize\r\n * ----------------------------\r\n *\tCalled once at the beginning of the simulation. \r\n *\tAll the variables used in the model must be initialized.\r\n *\r\n */\r\nvoid initialize() {\r\n}\r\n\r\n/*\r\n * Function: calculate_outputs\r\n * ----------------------------\r\n *\tCalled once at each time step to calculate model outputs. \r\n *\r\n *\toutputs: array of outputs to be calculated. Array size is equal to the number of outputs. \r\n *\tinputs: array of inputs values. Array size is equal to the number of inputs. \r\n *\ttime: current simulation time \r\n *\ttime_step: current simulation time-step\r\n *\t\r\n *\tNotes:\r\n *\t\t- A crash may occur if input/outputs arrays are accessed out of bounds.\r\n *\t\t- In the case of zero-crossing interpolation (switching), a time-step is added at the zero-crossing time (even using the fixed-time step solver).\r\n */\r\nvoid calculate_outputs(double* outputs, double* inputs, double time, double time_step) {\r\n\t\r\n\t//double tafel_slope = 0.0435; // tafel slope = R x T / (2 alpha x F)\r\n\t//double io = 0.04;\r\n\t//double diff_tafel_slope = 0.127; // diff tafel slope = R x T / (2 beta x F)\r\n\t//double iLim = 1000;\r\n\t//double rohm = 1.389e-5;\r\n\tdouble eth = 1.1;\r\n\t\r\n\tdouble i = inputs[0];\r\n\tdouble A = inputs[1];\r\n\tdouble io = inputs[2];\r\n\tdouble B = inputs[3];\r\n\tdouble iLim = inputs[4];\r\n\tdouble rohm = inputs[5];\r\n\t\r\n\tif (i \u003C io) {\r\n\t\toutputs[0] = eth;\r\n\t}\r\n\telse {\r\n\t\toutputs[0] = (eth - A * log(i / io) \u002B B * log(1 - i / iLim)- rohm * i);\r\n\t}\r\n\r\n}\r\n\r\n/*\r\n * Function: terminate\r\n * ----------------------------\r\n *\tCalled once at the end of the simulation. \r\n *\tThe resources allocated in the initialize function must be released here.\r\n *\r\n */\r\nvoid terminate() {\r\n}\r\n\r\n/*\r\n * Function: snapshot (DO NOT MODIFY)\r\n * ----------------------------\r\n *\tWith the predictive time-step solver, the simulation time does not elapses linearly.\r\n *\tThe C Code model needs to support time-travel and a snapshot mechanism is implemented. \r\n *\tThe predictive time-step solver uses it to restore a model to a previous state when needed. \r\n *\t\r\n *\t Notes:\r\n *\t\t- If you think you need to modify this function, think again and don\u0027t modify it. \r\n *\t\t- If you think you really need to modify this function and SIMBA crashes, contact us and we will be pleased to help.\r\n */\r\nvoid* snapshot(snapshot_mode mode, void* snapshot_ptr) {\r\n\tmodel_data* model_data_ptr;\r\n\tswitch (mode) {\r\n\t\tcase SNAPSHOT_CREATE: // Create and return a snapshot of the current model state\r\n\t\t\tmodel_data_ptr = (model_data*)malloc(sizeof(model_data));\r\n\t\t\tif (model_data_ptr == 0) return 0;\r\n\t\t\t*model_data_ptr = data;\r\n\t\t\treturn (void*)model_data_ptr;\r\n\r\n\t\tcase SNAPSHOT_UPDATE:  // Update existing snapshot with current model data\r\n\t\t\tmodel_data_ptr = (model_data*)snapshot_ptr;\r\n\t\t\t*model_data_ptr = data;\r\n\t\t\treturn snapshot_ptr;\r\n\r\n\t\tcase SNAPSHOT_LOAD:  // Restore model data \r\n\t\t\tmodel_data_ptr = (model_data*)snapshot_ptr;\r\n\t\t\tdata = *model_data_ptr;\r\n\t\t\treturn snapshot_ptr;\r\n\r\n\t\tcase SNAPSHOT_DELETE: // Free the resources allocated in SNAPSHOT_CREATE\r\n\t\t\tfree(snapshot_ptr);\r\n\t\t\treturn 0;\r\n\t}\r\n}",
-              "SamplingTime": "none",
-              "Name": "C6"
-            },
-            "EnabledScopes": [],
-            "ParametersDisplayAttributes": {
-              "NumberOfInputs": {
-                "IsVisible": false,
-                "Suffix": "",
-                "RelativeLocation": "4 9",
-                "UnrotatedWidth": 2,
-                "UnrotatedHeight": 1,
-                "FontSize": 12,
-                "Color": "#3C3C3C"
-              },
-              "NumberOfOutputs": {
-                "IsVisible": false,
-                "Suffix": "",
-                "RelativeLocation": "4 10",
-                "UnrotatedWidth": 2,
-                "UnrotatedHeight": 1,
-                "FontSize": 12,
-                "Color": "#3C3C3C"
-              },
-              "OptionalAdditionalIncludeDirectory": {
-                "IsVisible": false,
-                "Suffix": "",
-                "RelativeLocation": "4 11",
-                "UnrotatedWidth": 2,
-                "UnrotatedHeight": 1,
-                "FontSize": 12,
-                "Color": "#3C3C3C"
-              },
-              "Code": {
-                "IsVisible": false,
-                "Suffix": "",
-                "RelativeLocation": "4 12",
-                "UnrotatedWidth": 2,
-                "UnrotatedHeight": 1,
-                "FontSize": 12,
-                "Color": "#3C3C3C"
-              },
-              "SamplingTime": {
-                "IsVisible": false,
-                "Suffix": "",
-                "RelativeLocation": "4 12",
-                "UnrotatedWidth": 2,
-                "UnrotatedHeight": 1,
-                "FontSize": 12,
-                "Color": "#3C3C3C"
-              },
-              "Name": {
-                "IsVisible": false,
-                "Suffix": "",
-                "RelativeLocation": "4 0",
-                "UnrotatedWidth": 2,
-                "UnrotatedHeight": 1,
-                "FontSize": 12,
-                "Color": "#3C3C3C"
-              }
-            }
-          },
-          {
             "LibraryName": "Controlled Voltage Source",
             "Top": 5,
             "Left": -12,
@@ -541,135 +235,407 @@
                 "Color": "#0081BC"
               }
             }
+          },
+          {
+            "LibraryName": "Constant",
+            "Top": 7,
+            "Left": -49,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "C1",
+            "ID": "1d198403-efed-4280-80f6-161a7fd4e518",
+            "Parameters": {
+              "Value": "B",
+              "SamplingTime": "none",
+              "Name": "C1"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Value": {
+                "IsVisible": true,
+                "Suffix": "",
+                "RelativeLocation": "1 1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 2,
+                "FontSize": 12,
+                "Color": "#04B404"
+              },
+              "SamplingTime": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 4",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              },
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              }
+            }
+          },
+          {
+            "LibraryName": "Constant",
+            "Top": 4,
+            "Left": -43,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "C2",
+            "ID": "8640fa6f-1c2e-40b6-8660-568ce43689de",
+            "Parameters": {
+              "Value": "io",
+              "SamplingTime": "none",
+              "Name": "C2"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Value": {
+                "IsVisible": true,
+                "Suffix": "",
+                "RelativeLocation": "1 1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 2,
+                "FontSize": 12,
+                "Color": "#04B404"
+              },
+              "SamplingTime": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 4",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              },
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              }
+            }
+          },
+          {
+            "LibraryName": "Constant",
+            "Top": 12,
+            "Left": -43,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "C3",
+            "ID": "01af8399-875d-4db8-8d37-d8dff7d0d206",
+            "Parameters": {
+              "Value": "iLim",
+              "SamplingTime": "none",
+              "Name": "C3"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Value": {
+                "IsVisible": true,
+                "Suffix": "",
+                "RelativeLocation": "1 1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 2,
+                "FontSize": 12,
+                "Color": "#04B404"
+              },
+              "SamplingTime": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 4",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              },
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              }
+            }
+          },
+          {
+            "LibraryName": "Constant",
+            "Top": 1,
+            "Left": -38,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "C4",
+            "ID": "0dd65a4d-9249-4609-a635-4cc8e276a998",
+            "Parameters": {
+              "Value": "A",
+              "SamplingTime": "none",
+              "Name": "C4"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Value": {
+                "IsVisible": true,
+                "Suffix": "",
+                "RelativeLocation": "1 1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 2,
+                "FontSize": 12,
+                "Color": "#04B404"
+              },
+              "SamplingTime": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 4",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              },
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              }
+            }
+          },
+          {
+            "LibraryName": "Constant",
+            "Top": -4,
+            "Left": -37,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "C5",
+            "ID": "097a992c-2f43-4c4a-b8f7-1184cb686a08",
+            "Parameters": {
+              "Value": "Eth",
+              "SamplingTime": "none",
+              "Name": "C5"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Value": {
+                "IsVisible": true,
+                "Suffix": "",
+                "RelativeLocation": "1 1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 2,
+                "FontSize": 12,
+                "Color": "#04B404"
+              },
+              "SamplingTime": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 4",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              },
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              }
+            }
+          },
+          {
+            "LibraryName": "Constant",
+            "Top": 13,
+            "Left": -36,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "C6",
+            "ID": "c7a6ed2e-1b66-4179-85d3-0b1f67178812",
+            "Parameters": {
+              "Value": "rohm",
+              "SamplingTime": "none",
+              "Name": "C6"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Value": {
+                "IsVisible": true,
+                "Suffix": "",
+                "RelativeLocation": "1 1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 2,
+                "FontSize": 12,
+                "Color": "#04B404"
+              },
+              "SamplingTime": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 4",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              },
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              }
+            }
+          },
+          {
+            "LibraryName": "Constant",
+            "Top": 18,
+            "Left": -35,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "C7",
+            "ID": "66c267c2-7b4b-47d5-b903-4b63dcd9ab1a",
+            "Parameters": {
+              "Value": "ncells",
+              "SamplingTime": "none",
+              "Name": "C7"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Value": {
+                "IsVisible": true,
+                "Suffix": "",
+                "RelativeLocation": "1 1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 2,
+                "FontSize": 12,
+                "Color": "#04B404"
+              },
+              "SamplingTime": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 4",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              },
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              }
+            }
+          },
+          {
+            "LibraryName": "C Code",
+            "Top": 1,
+            "Left": -29,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "C8",
+            "ID": "ba30f31e-e2d7-45dc-9dd5-5f2c305d8d42",
+            "Parameters": {
+              "NumberOfInputs": "8",
+              "NumberOfOutputs": "1",
+              "OptionalAdditionalIncludeDirectory": "",
+              "Code": "#include \u0022simba_library.h\u0022 \r\n#include \u003Cstdlib.h\u003E\r\n#include \u003Cmath.h\u003E\r\n\r\n\r\n\r\n/*\r\n * Type: model_data \r\n * --------------------\r\n * \tDefine in the model_data structure the variables required by your model\r\n */\r\ntypedef struct{\r\n    // Insert model variables here.\r\n} model_data;\r\n\r\n\r\n/*\r\n * Variable: data \r\n * --------------------\r\n *\tActual model data.\r\n */\r\nmodel_data data; \r\n\r\n/*\r\n * Function: initialize\r\n * ----------------------------\r\n *\tCalled once at the beginning of the simulation. \r\n *\tAll the variables used in the model must be initialized.\r\n *\r\n */\r\nvoid initialize() {\r\n}\r\n\r\n/*\r\n * Function: calculate_outputs\r\n * ----------------------------\r\n *\tCalled once at each time step to calculate model outputs. \r\n *\r\n *\toutputs: array of outputs to be calculated. Array size is equal to the number of outputs. \r\n *\tinputs: array of inputs values. Array size is equal to the number of inputs. \r\n *\ttime: current simulation time \r\n *\ttime_step: current simulation time-step\r\n *\t\r\n *\tNotes:\r\n *\t\t- A crash may occur if input/outputs arrays are accessed out of bounds.\r\n *\t\t- In the case of zero-crossing interpolation (switching), a time-step is added at the zero-crossing time (even using the fixed-time step solver).\r\n */\r\nvoid calculate_outputs(double* outputs, double* inputs, double time, double time_step) {\r\n\t\r\n\tdouble i = inputs[0];\r\n\tdouble Eth = inputs[1];\r\n\tdouble A = inputs[2];\r\n\tdouble io = inputs[3];\r\n\tdouble B = inputs[4];\r\n\tdouble iLim = inputs[5];\r\n\tdouble rohm = inputs[6];\r\n\tdouble ncells = inputs[7];\r\n\t\r\n\tif (i \u003C io) {\r\n\t\toutputs[0] = ncells * Eth;\r\n\t}\r\n\telse {\r\n\t\toutputs[0] = ncells * (Eth - A * log(i / io) \u002B B * log(1 - i / iLim) - rohm * i);\r\n\t}\r\n\r\n}\r\n\r\n/*\r\n * Function: terminate\r\n * ----------------------------\r\n *\tCalled once at the end of the simulation. \r\n *\tThe resources allocated in the initialize function must be released here.\r\n *\r\n */\r\nvoid terminate() {\r\n}\r\n\r\n/*\r\n * Function: snapshot (DO NOT MODIFY)\r\n * ----------------------------\r\n *\tWith the predictive time-step solver, the simulation time does not elapses linearly.\r\n *\tThe C Code model needs to support time-travel and a snapshot mechanism is implemented. \r\n *\tThe predictive time-step solver uses it to restore a model to a previous state when needed. \r\n *\t\r\n *\t Notes:\r\n *\t\t- If you think you need to modify this function, think again and don\u0027t modify it. \r\n *\t\t- If you think you really need to modify this function and SIMBA crashes, contact us and we will be pleased to help.\r\n */\r\nvoid* snapshot(snapshot_mode mode, void* snapshot_ptr) {\r\n\tmodel_data* model_data_ptr;\r\n\tswitch (mode) {\r\n\t\tcase SNAPSHOT_CREATE: // Create and return a snapshot of the current model state\r\n\t\t\tmodel_data_ptr = (model_data*)malloc(sizeof(model_data));\r\n\t\t\tif (model_data_ptr == 0) return 0;\r\n\t\t\t*model_data_ptr = data;\r\n\t\t\treturn (void*)model_data_ptr;\r\n\r\n\t\tcase SNAPSHOT_UPDATE:  // Update existing snapshot with current model data\r\n\t\t\tmodel_data_ptr = (model_data*)snapshot_ptr;\r\n\t\t\t*model_data_ptr = data;\r\n\t\t\treturn snapshot_ptr;\r\n\r\n\t\tcase SNAPSHOT_LOAD:  // Restore model data \r\n\t\t\tmodel_data_ptr = (model_data*)snapshot_ptr;\r\n\t\t\tdata = *model_data_ptr;\r\n\t\t\treturn snapshot_ptr;\r\n\r\n\t\tcase SNAPSHOT_DELETE: // Free the resources allocated in SNAPSHOT_CREATE\r\n\t\t\tfree(snapshot_ptr);\r\n\t\t\treturn 0;\r\n\t}\r\n}",
+              "SamplingTime": "none",
+              "Name": "C8"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "NumberOfInputs": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "4 9",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#3C3C3C"
+              },
+              "NumberOfOutputs": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "4 10",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#3C3C3C"
+              },
+              "OptionalAdditionalIncludeDirectory": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "4 11",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#3C3C3C"
+              },
+              "Code": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "4 12",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#3C3C3C"
+              },
+              "SamplingTime": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "4 12",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#3C3C3C"
+              },
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "4 0",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#3C3C3C"
+              }
+            }
           }
         ],
         "Connectors": [
-          {
-            "Segments": [
-              {
-                "StartX": -42,
-                "StartY": 9,
-                "EndX": -26,
-                "EndY": 9
-              }
-            ],
-            "Name": "C1"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": -36,
-                "StartY": 6,
-                "EndX": -35,
-                "EndY": 6
-              },
-              {
-                "StartX": -35,
-                "StartY": 6,
-                "EndX": -35,
-                "EndY": 8
-              },
-              {
-                "StartX": -26,
-                "StartY": 8,
-                "EndX": -35,
-                "EndY": 8
-              }
-            ],
-            "Name": "C2"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": -36,
-                "StartY": 14,
-                "EndX": -35,
-                "EndY": 14
-              },
-              {
-                "StartX": -35,
-                "StartY": 10,
-                "EndX": -35,
-                "EndY": 14
-              },
-              {
-                "StartX": -26,
-                "StartY": 10,
-                "EndX": -35,
-                "EndY": 10
-              }
-            ],
-            "Name": "C6"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": -31,
-                "StartY": 3,
-                "EndX": -30,
-                "EndY": 3
-              },
-              {
-                "StartX": -30,
-                "StartY": 3,
-                "EndX": -30,
-                "EndY": 7
-              },
-              {
-                "StartX": -26,
-                "StartY": 7,
-                "EndX": -30,
-                "EndY": 7
-              }
-            ],
-            "Name": "C7"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": -29,
-                "StartY": 15,
-                "EndX": -27,
-                "EndY": 15
-              },
-              {
-                "StartX": -27,
-                "StartY": 11,
-                "EndX": -27,
-                "EndY": 15
-              },
-              {
-                "StartX": -26,
-                "StartY": 11,
-                "EndX": -27,
-                "EndY": 11
-              }
-            ],
-            "Name": "C8"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": -27,
-                "StartY": 1,
-                "EndX": -27,
-                "EndY": 6
-              },
-              {
-                "StartX": -11,
-                "StartY": 1,
-                "EndX": -27,
-                "EndY": 1
-              },
-              {
-                "StartX": -26,
-                "StartY": 6,
-                "EndX": -27,
-                "EndY": 6
-              }
-            ],
-            "Name": "C9"
-          },
           {
             "Segments": [
               {
@@ -738,6 +704,189 @@
               }
             ],
             "Name": "C3"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": -45,
+                "StartY": 9,
+                "EndX": -29,
+                "EndY": 9
+              }
+            ],
+            "Name": "C1"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": -39,
+                "StartY": 6,
+                "EndX": -38,
+                "EndY": 6
+              },
+              {
+                "StartX": -38,
+                "StartY": 6,
+                "EndX": -38,
+                "EndY": 8
+              },
+              {
+                "StartX": -29,
+                "StartY": 8,
+                "EndX": -38,
+                "EndY": 8
+              }
+            ],
+            "Name": "C2"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": -39,
+                "StartY": 14,
+                "EndX": -38,
+                "EndY": 14
+              },
+              {
+                "StartX": -38,
+                "StartY": 10,
+                "EndX": -38,
+                "EndY": 14
+              },
+              {
+                "StartX": -29,
+                "StartY": 10,
+                "EndX": -38,
+                "EndY": 10
+              }
+            ],
+            "Name": "C6"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": -34,
+                "StartY": 3,
+                "EndX": -33,
+                "EndY": 3
+              },
+              {
+                "StartX": -33,
+                "StartY": 3,
+                "EndX": -33,
+                "EndY": 7
+              },
+              {
+                "StartX": -29,
+                "StartY": 7,
+                "EndX": -33,
+                "EndY": 7
+              }
+            ],
+            "Name": "C4"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": -33,
+                "StartY": -2,
+                "EndX": -31,
+                "EndY": -2
+              },
+              {
+                "StartX": -31,
+                "StartY": -2,
+                "EndX": -31,
+                "EndY": 6
+              },
+              {
+                "StartX": -29,
+                "StartY": 6,
+                "EndX": -31,
+                "EndY": 6
+              }
+            ],
+            "Name": "C7"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": -32,
+                "StartY": 15,
+                "EndX": -31,
+                "EndY": 15
+              },
+              {
+                "StartX": -31,
+                "StartY": 11,
+                "EndX": -31,
+                "EndY": 15
+              },
+              {
+                "StartX": -29,
+                "StartY": 11,
+                "EndX": -31,
+                "EndY": 11
+              }
+            ],
+            "Name": "C9"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": -31,
+                "StartY": 20,
+                "EndX": -30,
+                "EndY": 20
+              },
+              {
+                "StartX": -30,
+                "StartY": 12,
+                "EndX": -30,
+                "EndY": 20
+              },
+              {
+                "StartX": -29,
+                "StartY": 12,
+                "EndX": -30,
+                "EndY": 12
+              }
+            ],
+            "Name": "C11"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": -29,
+                "StartY": 5,
+                "EndX": -30,
+                "EndY": 5
+              },
+              {
+                "StartX": -11,
+                "StartY": 1,
+                "EndX": -30,
+                "EndY": 1
+              },
+              {
+                "StartX": -30,
+                "StartY": 1,
+                "EndX": -30,
+                "EndY": 5
+              }
+            ],
+            "Name": "C13"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": -13,
+                "StartY": 9,
+                "EndX": -12,
+                "EndY": 9
+              }
+            ],
+            "Name": "C8"
           }
         ],
         "Name": "Top Circuit",
@@ -761,6 +910,14 @@
           {
             "Name": "iLim",
             "Value": "729.9999993067903"
+          },
+          {
+            "Name": "Eth",
+            "Value": "1.1"
+          },
+          {
+            "Name": "ncells",
+            "Value": "1"
           }
         ],
         "VariableFile": ""
@@ -960,11 +1117,11 @@
             "HF": false,
             "VF": false,
             "Disabled": false,
-            "Name": "DC2",
+            "Name": "Eth",
             "ID": "143d6cdc-0aa0-4c2c-ab81-0a230bbe7dd2",
             "Parameters": {
-              "Voltage": "1.1",
-              "Name": "DC2"
+              "Voltage": "Eth",
+              "Name": "Eth"
             },
             "EnabledScopes": [],
             "ParametersDisplayAttributes": {
@@ -999,7 +1156,7 @@
             "Name": "Rd",
             "ID": "ce4b38a4-788f-481a-be9d-59de679a1212",
             "Parameters": {
-              "VoltageCurrentMatrix": "[0.10018216097326706 0.727054464314759; 0.16935799343770042 3.5322962068274544; 0.22300592678997394 11.744545086719961; 0.268401325476061 30.858279429316866; 0.3107929839159004 69.38341330021814; 0.35647214653347115 141.6169121378318; 0.4803837520571274 411.0486813538743; 0.5384716122011843 512.4720651258726; 0.5960221541810713 585.4147557576232; 0.6549759516486298 636.5500926438797; 0.7171340773721202 671.7105611988429; 0.7841418030044961 695.2380945778955]",
+              "VoltageCurrentMatrix": "[0.10018216097326706 0.727054464314759; 0.1823173203755772 4.736703881551001; 0.24388722117415745 18.475890680495002; 0.296338658808765 53.353460701780925; 0.34983119119709455 129.1878520493958; 0.47781012157763547 405.9073535598966; 0.5271724915118585 494.999886756775; 0.5745787081538117 561.2208550057774; 0.6229572037779607 611.3464728590312; 0.6729068831212764 648.3654110741957; 0.7264943367520669 675.748967679764; 0.7841418030044961 695.2380945778955]",
               "Name": "Rd"
             },
             "EnabledScopes": [],
@@ -1068,7 +1225,7 @@
             "ParametersDisplayAttributes": {
               "Value": {
                 "IsVisible": true,
-                "Suffix": "\u03A9",
+                "Suffix": " \u03A9",
                 "RelativeLocation": "2 2",
                 "UnrotatedWidth": 2,
                 "UnrotatedHeight": 1,
@@ -1076,7 +1233,7 @@
                 "Color": "#0081BC"
               },
               "Name": {
-                "IsVisible": true,
+                "IsVisible": false,
                 "Suffix": "",
                 "RelativeLocation": "2 -1",
                 "UnrotatedWidth": 2,
@@ -1180,6 +1337,10 @@
           {
             "Name": "rohm",
             "Value": "1.8739472362633808e-05"
+          },
+          {
+            "Name": "Eth",
+            "Value": "1.1"
           }
         ],
         "VariableFile": ""
@@ -1372,42 +1533,6 @@
             }
           },
           {
-            "LibraryName": "DC Voltage Source",
-            "Top": 15,
-            "Left": -5,
-            "Angle": 0,
-            "HF": false,
-            "VF": false,
-            "Disabled": false,
-            "Name": "DC2",
-            "ID": "57ea6381-3da7-4134-a0fc-7c3a74b17eda",
-            "Parameters": {
-              "Voltage": "1.1",
-              "Name": "DC2"
-            },
-            "EnabledScopes": [],
-            "ParametersDisplayAttributes": {
-              "Voltage": {
-                "IsVisible": false,
-                "Suffix": "",
-                "RelativeLocation": "2 2",
-                "UnrotatedWidth": 2,
-                "UnrotatedHeight": 1,
-                "FontSize": 12,
-                "Color": "#0081BC"
-              },
-              "Name": {
-                "IsVisible": true,
-                "Suffix": "",
-                "RelativeLocation": "4 3",
-                "UnrotatedWidth": 2,
-                "UnrotatedHeight": 2,
-                "FontSize": 12,
-                "Color": "#0081BC"
-              }
-            }
-          },
-          {
             "LibraryName": "Piecewise Linear Resistor",
             "Top": 11,
             "Left": -6,
@@ -1418,7 +1543,7 @@
             "Name": "Rd",
             "ID": "ed0521b3-0cb2-4ef9-9360-77f72d99d4b7",
             "Parameters": {
-              "VoltageCurrentMatrix": "[0.10018216097326706 0.727054464314759; 0.16935799343770042 3.5322962068274544; 0.22300592678997394 11.744545086719961; 0.268401325476061 30.858279429316866; 0.3107929839159004 69.38341330021814; 0.35647214653347115 141.6169121378318; 0.4803837520571274 411.0486813538743; 0.5384716122011843 512.4720651258726; 0.5960221541810713 585.4147557576232; 0.6549759516486298 636.5500926438797; 0.7171340773721202 671.7105611988429; 0.7841418030044961 695.2380945778955]",
+              "VoltageCurrentMatrix": "[0.10018216097326706 0.727054464314759; 0.1823173203755772 4.736703881551001; 0.24388722117415745 18.475890680495002; 0.296338658808765 53.353460701780925; 0.34983119119709455 129.1878520493958; 0.47781012157763547 405.9073535598966; 0.5271724915118585 494.999886756775; 0.5745787081538117 561.2208550057774; 0.6229572037779607 611.3464728590312; 0.6729068831212764 648.3654110741957; 0.7264943367520669 675.748967679764; 0.7841418030044961 695.2380945778955]",
               "Name": "Rd"
             },
             "EnabledScopes": [],
@@ -1513,17 +1638,17 @@
             "HF": false,
             "VF": false,
             "Disabled": false,
-            "Name": "C1",
+            "Name": "CdL",
             "ID": "7e4781e3-478d-4076-882e-4f6d7793210d",
             "Parameters": {
               "Value": "CdL",
               "Vinit": "1.1",
-              "Name": "C1"
+              "Name": "CdL"
             },
             "EnabledScopes": [],
             "ParametersDisplayAttributes": {
               "Value": {
-                "IsVisible": true,
+                "IsVisible": false,
                 "Suffix": "F",
                 "RelativeLocation": "2 2",
                 "UnrotatedWidth": 2,
@@ -1550,6 +1675,42 @@
                 "Color": "#0081BC"
               }
             }
+          },
+          {
+            "LibraryName": "DC Voltage Source",
+            "Top": 16,
+            "Left": -5,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "Eth",
+            "ID": "57ea6381-3da7-4134-a0fc-7c3a74b17eda",
+            "Parameters": {
+              "Voltage": "Eth",
+              "Name": "Eth"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Voltage": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "2 2",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              },
+              "Name": {
+                "IsVisible": true,
+                "Suffix": "",
+                "RelativeLocation": "4 3",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 2,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              }
+            }
           }
         ],
         "Connectors": [
@@ -1562,26 +1723,32 @@
                 "EndY": 9
               },
               {
-                "StartX": -3,
+                "StartX": 5,
                 "StartY": 23,
                 "EndX": 5,
-                "EndY": 23
+                "EndY": 24
+              },
+              {
+                "StartX": -3,
+                "StartY": 24,
+                "EndX": 5,
+                "EndY": 24
               },
               {
                 "StartX": 5,
-                "StartY": 23,
+                "StartY": 24,
                 "EndX": 20,
-                "EndY": 23
+                "EndY": 24
               },
               {
                 "StartX": 20,
                 "StartY": 9,
                 "EndX": 20,
-                "EndY": 23
+                "EndY": 24
               },
               {
                 "StartX": 20,
-                "StartY": 23,
+                "StartY": 24,
                 "EndX": 20,
                 "EndY": 25
               }
@@ -1662,6 +1829,17 @@
               }
             ],
             "Name": "C4"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": -3,
+                "StartY": 15,
+                "EndX": -3,
+                "EndY": 16
+              }
+            ],
+            "Name": "C1"
           }
         ],
         "Name": "Top Circuit - Copy - Copy - Copy",
@@ -1673,6 +1851,10 @@
           {
             "Name": "CdL",
             "Value": "2.4333333310226344"
+          },
+          {
+            "Name": "Eth",
+            "Value": "1.1"
           }
         ],
         "VariableFile": ""
