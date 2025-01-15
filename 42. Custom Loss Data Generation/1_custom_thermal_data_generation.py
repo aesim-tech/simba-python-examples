@@ -45,7 +45,7 @@ circuit = design.Circuit
 fundamental_frequency = 100e3  # Fundamental switching frequency in Hz
 
 #%% Configure Simulation Options
-design.TransientAnalysis.TimeStep = '5n'  # Time step of 2 nanoseconds
+design.TransientAnalysis.TimeStep = '2n'  # Time step of 2 nanoseconds
 simulation_end_time = 3 / fundamental_frequency  # Simulate for 3 periods
 design.TransientAnalysis.EndTime = f'{simulation_end_time}'
 design.TransientAnalysis.NumberOfBasePeriodsSavedParameterEnabled = True
@@ -59,7 +59,7 @@ temperatures = [100, 175]  # Device temperatures in degrees Celsius
 dc_bus_voltage = 800  # DC bus voltage in volts
 
 # Load currents for simulations in amperes
-load_currents = [10, 20, 30, 50, 70, 90, 130, 160, 180, 250, 310, 360]
+load_currents = [10, 20, 30, 50, 70, 90, 130, 160, 180, 250, 300, 360]
 
 #%% Retrieve Devices from the Circuit
 temperature_source = circuit.GetDeviceByName('Temp_source')  # Temperature source device
