@@ -1080,7 +1080,7 @@
             "Name": "C3",
             "ID": "49250ced-b912-423e-8670-a52f8ca6eaef",
             "Parameters": {
-              "Value": "-180",
+              "Value": "-90",
               "SamplingTime": "none",
               "Name": "C3"
             },
@@ -1228,7 +1228,7 @@
             "Name": "C4",
             "ID": "70f143c2-afd6-4730-b3f3-8fa8b10dad75",
             "Parameters": {
-              "Value": "-180",
+              "Value": "-90",
               "SamplingTime": "none",
               "Name": "C4"
             },
@@ -3983,16 +3983,16 @@
           },
           {
             "Name": "tdead",
-            "Value": "0"
+            "Value": "100n"
           }
         ],
         "VariableFile": ""
       },
       "TransientAnalysis": {
-        "EndTime": "0.03",
+        "EndTime": "0.5",
         "FixedTimeStep": false,
         "SaveInitialPoint": true,
-        "CompressScopes": false,
+        "CompressScopes": true,
         "StopAtSteadyState": false,
         "TimeStep": "2n",
         "BaseFrequencyParameterEnabled": false,
@@ -4314,7 +4314,7 @@
             "Name": "C3",
             "ID": "2103b5b2-a99f-4daf-8bcc-11f4ad197516",
             "Parameters": {
-              "Value": "-180",
+              "Value": "-90",
               "SamplingTime": "none",
               "Name": "C3"
             },
@@ -4462,7 +4462,7 @@
             "Name": "C4",
             "ID": "87a32fa8-8ca9-4258-a04b-4796b64ad5d0",
             "Parameters": {
-              "Value": "-180",
+              "Value": "-90",
               "SamplingTime": "none",
               "Name": "C4"
             },
