@@ -917,7 +917,7 @@
           },
           {
             "Name": "ncells",
-            "Value": "1"
+            "Value": "440"
           }
         ],
         "VariableFile": ""
@@ -1120,22 +1120,22 @@
             "Name": "Eth",
             "ID": "143d6cdc-0aa0-4c2c-ab81-0a230bbe7dd2",
             "Parameters": {
-              "Voltage": "Eth",
+              "Voltage": "Eth_stack",
               "Name": "Eth"
             },
             "EnabledScopes": [],
             "ParametersDisplayAttributes": {
               "Voltage": {
-                "IsVisible": false,
-                "Suffix": "",
-                "RelativeLocation": "2 2",
-                "UnrotatedWidth": 2,
-                "UnrotatedHeight": 1,
+                "IsVisible": true,
+                "Suffix": " V",
+                "RelativeLocation": "3 1",
+                "UnrotatedWidth": 3,
+                "UnrotatedHeight": 2,
                 "FontSize": 12,
                 "Color": "#0081BC"
               },
               "Name": {
-                "IsVisible": true,
+                "IsVisible": false,
                 "Suffix": "",
                 "RelativeLocation": "4 3",
                 "UnrotatedWidth": 2,
@@ -1153,11 +1153,11 @@
             "HF": false,
             "VF": false,
             "Disabled": false,
-            "Name": "Rd",
+            "Name": "Rpwl_stack",
             "ID": "ce4b38a4-788f-481a-be9d-59de679a1212",
             "Parameters": {
-              "VoltageCurrentMatrix": "[0.10018216097326706 0.727054464314759; 0.1823173203755772 4.736703881551001; 0.24388722117415745 18.475890680495002; 0.296338658808765 53.353460701780925; 0.34983119119709455 129.1878520493958; 0.47781012157763547 405.9073535598966; 0.5271724915118585 494.999886756775; 0.5745787081538117 561.2208550057774; 0.6229572037779607 611.3464728590312; 0.6729068831212764 648.3654110741957; 0.7264943367520669 675.748967679764; 0.7841418030044961 695.2380945778955]",
-              "Name": "Rd"
+              "VoltageCurrentMatrix": "[44.08015082823751 0.727054464314759; 74.88744338165125 3.600320969096982; 98.53912599049686 11.99118742721582; 118.3483537448927 31.220136282581514; 136.8429084314877 69.6448909825517; 156.8945454842652 141.82065467209645; 211.52453036956328 411.7514979876192; 237.1087925639798 513.0886518831664; 262.2011612024656 585.2985758991302; 288.0066081151806 636.2579956062573; 315.42887096932236 671.5986760472256; 345.02239332197826 695.2380945778955]",
+              "Name": "Rpwl_stack"
             },
             "EnabledScopes": [],
             "ParametersDisplayAttributes": {
@@ -1175,7 +1175,7 @@
                 "Suffix": "",
                 "RelativeLocation": "2 2",
                 "UnrotatedWidth": 2,
-                "UnrotatedHeight": 1,
+                "UnrotatedHeight": 4,
                 "FontSize": 12,
                 "Color": "#0081BC"
               }
@@ -1218,7 +1218,7 @@
             "Name": "R1",
             "ID": "ca1c1d2d-f0ee-4fbd-b75e-442838f28ffe",
             "Parameters": {
-              "Value": "rohm",
+              "Value": "rohm_stack",
               "Name": "R1"
             },
             "EnabledScopes": [],
@@ -1226,9 +1226,9 @@
               "Value": {
                 "IsVisible": true,
                 "Suffix": " \u03A9",
-                "RelativeLocation": "2 2",
+                "RelativeLocation": "2 3",
                 "UnrotatedWidth": 2,
-                "UnrotatedHeight": 1,
+                "UnrotatedHeight": 3,
                 "FontSize": 12,
                 "Color": "#0081BC"
               },
@@ -1335,12 +1335,12 @@
         "Name": "Top Circuit - Copy - Copy",
         "Variables": [
           {
-            "Name": "rohm",
-            "Value": "1.8739472362633808e-05"
+            "Name": "rohm_stack",
+            "Value": "0.008245367839558876"
           },
           {
-            "Name": "Eth",
-            "Value": "1.1"
+            "Name": "Eth_stack",
+            "Value": "484.00000000000006"
           }
         ],
         "VariableFile": ""
@@ -1540,11 +1540,11 @@
             "HF": false,
             "VF": false,
             "Disabled": false,
-            "Name": "Rd",
+            "Name": "Rpwl_stack",
             "ID": "ed0521b3-0cb2-4ef9-9360-77f72d99d4b7",
             "Parameters": {
-              "VoltageCurrentMatrix": "[0.10018216097326706 0.727054464314759; 0.1823173203755772 4.736703881551001; 0.24388722117415745 18.475890680495002; 0.296338658808765 53.353460701780925; 0.34983119119709455 129.1878520493958; 0.47781012157763547 405.9073535598966; 0.5271724915118585 494.999886756775; 0.5745787081538117 561.2208550057774; 0.6229572037779607 611.3464728590312; 0.6729068831212764 648.3654110741957; 0.7264943367520669 675.748967679764; 0.7841418030044961 695.2380945778955]",
-              "Name": "Rd"
+              "VoltageCurrentMatrix": "[44.08015082823751 0.727054464314759; 74.88744338165125 3.600320969096982; 98.53912599049686 11.99118742721582; 118.3483537448927 31.220136282581514; 136.8429084314877 69.6448909825517; 156.8945454842652 141.82065467209645; 211.52453036956328 411.7514979876192; 237.1087925639798 513.0886518831664; 262.2011612024656 585.2985758991302; 288.0066081151806 636.2579956062573; 315.42887096932236 671.5986760472256; 345.02239332197826 695.2380945778955]",
+              "Name": "Rpwl_stack"
             },
             "EnabledScopes": [],
             "ParametersDisplayAttributes": {
@@ -1560,9 +1560,9 @@
               "Name": {
                 "IsVisible": true,
                 "Suffix": "",
-                "RelativeLocation": "2 2",
+                "RelativeLocation": "2 3",
                 "UnrotatedWidth": 2,
-                "UnrotatedHeight": 1,
+                "UnrotatedHeight": 3,
                 "FontSize": 12,
                 "Color": "#0081BC"
               }
@@ -1605,22 +1605,22 @@
             "Name": "R1",
             "ID": "267bb7e3-fa3c-4df6-b939-fe11dc20be99",
             "Parameters": {
-              "Value": "rohm",
+              "Value": "rohm_stack",
               "Name": "R1"
             },
             "EnabledScopes": [],
             "ParametersDisplayAttributes": {
               "Value": {
                 "IsVisible": true,
-                "Suffix": "\u03A9",
+                "Suffix": " \u03A9",
                 "RelativeLocation": "2 2",
                 "UnrotatedWidth": 2,
-                "UnrotatedHeight": 1,
+                "UnrotatedHeight": 4,
                 "FontSize": 12,
                 "Color": "#0081BC"
               },
               "Name": {
-                "IsVisible": true,
+                "IsVisible": false,
                 "Suffix": "",
                 "RelativeLocation": "2 -1",
                 "UnrotatedWidth": 2,
@@ -1638,21 +1638,21 @@
             "HF": false,
             "VF": false,
             "Disabled": false,
-            "Name": "CdL",
+            "Name": "CdL_stack",
             "ID": "7e4781e3-478d-4076-882e-4f6d7793210d",
             "Parameters": {
-              "Value": "CdL",
-              "Vinit": "1.1",
-              "Name": "CdL"
+              "Value": "CdL_stack",
+              "Vinit": "Eth_stack",
+              "Name": "CdL_stack"
             },
             "EnabledScopes": [],
             "ParametersDisplayAttributes": {
               "Value": {
-                "IsVisible": false,
-                "Suffix": "F",
-                "RelativeLocation": "2 2",
+                "IsVisible": true,
+                "Suffix": " F",
+                "RelativeLocation": "1 -3",
                 "UnrotatedWidth": 2,
-                "UnrotatedHeight": 1,
+                "UnrotatedHeight": 3,
                 "FontSize": 12,
                 "Color": "#0081BC"
               },
@@ -1666,7 +1666,7 @@
                 "Color": "#0081BC"
               },
               "Name": {
-                "IsVisible": true,
+                "IsVisible": false,
                 "Suffix": "",
                 "RelativeLocation": "2 -1",
                 "UnrotatedWidth": 2,
@@ -1684,25 +1684,25 @@
             "HF": false,
             "VF": false,
             "Disabled": false,
-            "Name": "Eth",
+            "Name": "Eth stack",
             "ID": "57ea6381-3da7-4134-a0fc-7c3a74b17eda",
             "Parameters": {
-              "Voltage": "Eth",
-              "Name": "Eth"
+              "Voltage": "Eth_stack",
+              "Name": "Eth stack"
             },
             "EnabledScopes": [],
             "ParametersDisplayAttributes": {
               "Voltage": {
-                "IsVisible": false,
-                "Suffix": "",
-                "RelativeLocation": "2 2",
-                "UnrotatedWidth": 2,
+                "IsVisible": true,
+                "Suffix": " V",
+                "RelativeLocation": "3 2",
+                "UnrotatedWidth": 4,
                 "UnrotatedHeight": 1,
                 "FontSize": 12,
                 "Color": "#0081BC"
               },
               "Name": {
-                "IsVisible": true,
+                "IsVisible": false,
                 "Suffix": "",
                 "RelativeLocation": "4 3",
                 "UnrotatedWidth": 2,
@@ -1846,15 +1846,27 @@
         "Variables": [
           {
             "Name": "rohm",
-            "Value": "1.8739472362633808e-05"
+            "Value": "0.008245367839558876"
           },
           {
             "Name": "CdL",
-            "Value": "2.4333333310226344"
+            "Value": "0.005530303025051442"
           },
           {
             "Name": "Eth",
-            "Value": "1.1"
+            "Value": "484.00000000000006"
+          },
+          {
+            "Name": "Eth_stack",
+            "Value": "484.00000000000006"
+          },
+          {
+            "Name": "rohm_stack",
+            "Value": "0.008245367839558876"
+          },
+          {
+            "Name": "CdL_stack",
+            "Value": "0.005530303025051442"
           }
         ],
         "VariableFile": ""

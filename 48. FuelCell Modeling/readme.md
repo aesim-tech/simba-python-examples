@@ -8,8 +8,9 @@ tags:
 
 [Download **python script**](fuelcell_modeling.py)
 
+[Download **Simba model**](fuelcell_modeling.jsimba)
 
-[Download **Simba model**](fuelcel_modeling.jsimba)
+[Download **Python Library requirements**](requirements.txt)
 
 
 This python script proposes different implementations of fuel cell modeling and methods to extract their parameters from a typical $(v, i)$ experimental polarization curve.
@@ -17,7 +18,7 @@ This python script proposes different implementations of fuel cell modeling and 
 
 ## Fuel Cell Models
 
-The fuel cell models considered here rely on the following expression - derived from [^1] - of a fuel cell voltage $V_{fc}$ depending on fuel cell current $i_{fc}$:
+The fuel cell models considered here rely on the following expression of a fuel cell voltage $V_{fc}$ depending on fuel cell current $i_{fc}$ (derived from a classical expression of a fuell cell polarization curve [^1]):
 
 $$V_{fc} = E_{th} - \dfrac{RT}{\alpha nF} \ln\left(\dfrac{i_{fc}}{i_0}\right) + \dfrac{RT}{\beta nF} \ln \left(1 - \dfrac{i_{fc}}{i_{lim}}\right) - R_{ohm}.i_{fc} $$
 
@@ -48,13 +49,13 @@ Three different implementations of fuel cell models are proposed here:
 
 ## Extraction of Fuel Cell Model Parameters
 
-### Get main parameters: $A, i_0, B, i_{lim}, R_{ohm}$
+### Get main parameters of the fuel cell voltage expression
 
 This step aims to determine the parameters of the fuel cell voltage expression (written above) from a typical $(v, i)$ polarization curve. It uses the [curve_fit](https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.curve_fit.html){:target="_blank"} function (based on non-linear least squares) from Scipy.optimize module.
 
 The principle is simple and an extract of the code is shown below:
 
-* the function `get_fuelcell_voltage` is defined to compute the fuel cell voltage from model parameters $A, i_0, B, i_{lim}, R_{ohm}$ and the fuel cell current $i_{fc}$,
+* the function `get_fuelcell_voltage` is defined to compute the fuel cell voltage from model parameters $A$, $i_0$, $B$, $i_{lim}$, $R_{ohm}$ and the fuel cell current $i_{fc}$,
 * the `curve_fit` function is then used to determine parameters to fit the experimental data, *data_current* and *data_voltage*.
 
 ```py
@@ -70,7 +71,7 @@ The figure below shows experimental data and model outputs:
 ![fuel cell experimental data and model](fig/fuelcell_experiment_model.png)
 
 
-### Get PWL resistor to model activation and diffusion losses in 2nd and 3rd models
+### Get PWL resistor to model activation and diffusion losses (2nd and 3rd models)
 
 This step aims to get a PWL resistor to model non-linear losses such as activation or diffusion losses. Here, a single PWL resistor is used to model both activation and diffusion losses.
 
@@ -82,7 +83,7 @@ def compute_non_linear_losses(i):
 ```
 
 To properly model the non-linear losses with a PWL resistor, its voltage-current segments must be carefully chosen.
-For this, the ideal locations of the current breakpoints (for a given number of breakpoints) is determined with a customized *pwl* function named `get_pwfl_breakpoints()` based on this [PiecewiseLinFit](https://github.com/cjekel/piecewise_linear_fit_py){:target="_blank"} function from *pwl* module.
+For this, the ideal locations of the current breakpoints (for a given number of breakpoints) is determined with a customized *pwl* function named `get_pwfl_breakpoints()` based on this [PiecewiseLinFit](https://github.com/cjekel/piecewise_linear_fit_py){:target="_blank"} function from *pwlf* module.
 
 It can be used as follows:
 
@@ -110,17 +111,20 @@ The figure below shows the comparison between the mathematical expression to mod
 
 This model implementation is illustrated in the figure below:
 
+!!! info
+    This model implementation is considered for the whole fuel cell stack and it involves the parameter of the number of cells *ncells*.
+
 ![C-code model](fig/c-code_model.png)
 
 ### Fuel Cell Model with a PWL resistor
 
-This model implementation is illustrated in the figure below:
+This model implementation is considered for the whole fuel cell stack and is illustrated in the figure below:
 
 ![PWL resistor model](fig/pwl_resistor_model.png)
 
 ### Fuel Cell Model with the dynamic of the double layer capacitor
 
-This model implementation is illustrated in the figure below. It can be interested to consider the doubler layer capacitor as this last one will have a high impact on the filtering of the current harmonics applied to the fuel cell [^2].
+This model implementation is considered for the fuel cell stack and is illustrated in the figure below. It can be interested to consider the doubler layer capacitor as this last one will have a high impact on the filtering of the current harmonics applied to the fuel cell [^2].
 
 ![double Layer model](fig/double_layer_model.png)
 
@@ -128,10 +132,10 @@ This model implementation is illustrated in the figure below. It can be interest
 
 The figure below shows the results obtained with these three different implementations.
 
-![Fuel Cell Model Comparison](fig/fuelcell_models_comparison.png)
+![Fuel Cell Model Comparison](fig/fuelcell_stack_models_comparison.png)
 
 For the dynamic model, the "hysteresis" loops at low and high currents are due to the interaction between the non-linear losses (respectively action losses at low currents and diffusion losses at high currents) and the double layer capacitor.
 
-[^1]: XXX Larminie & Dicks.
+[^1]: A. Dicks, D. Rand, ["Fuel Cell Systems Explained", Wiley & Sons, 2018.](https://doi.org/10.1002/9781118706992)
 
 [^2]: G. Fontes, C. Turpin, S. Astier, et T. A. Meynard, ["Interactions Between Fuel Cells and Power Converters: Influence of Current Harmonics on a Fuel Cell Stack", IEEE Transactions on Power Electronics, vol. 22, n°2, mars 2007](https://doi.org/10.1109/TPEL.2006.890008)

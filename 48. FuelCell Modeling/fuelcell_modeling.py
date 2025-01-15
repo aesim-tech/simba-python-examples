@@ -21,7 +21,7 @@ data = pd.read_csv(os.path.join(current_folder  , "fuelcell_vi_curve.csv"))
 data_current = data['Current (A)'].to_numpy()
 data_stack_voltage = data['Voltage (V)'].to_numpy()
 ncells = 440
-data_voltage = data_stack_voltage / ncells
+data_cell_voltage = data_stack_voltage / ncells
 
 # Assume an open-circuit voltage
 Eth = 1.1
@@ -31,7 +31,7 @@ def get_fuelcell_voltage(ifc, A, io, B, rohm, iLim):
     vfc = Eth - A * np.log(ifc / io) + B * np.log(1 - ifc / iLim) - rohm * ifc
     return vfc
 
-[A, io, B, rohm, iLim], _ = curve_fit(get_fuelcell_voltage, data_current, data_voltage, bounds=((1e-9, 1e-9, 1e-9, 1e-6, max(data_current)), (1e-1, 1, 3e-1, 1e-1, 2*max(data_current))))
+[A, io, B, rohm, iLim], _ = curve_fit(get_fuelcell_voltage, data_current, data_cell_voltage, bounds=((1e-9, 1e-9, 1e-9, 1e-6, max(data_current)), (1e-1, 1, 3e-1, 1e-1, 2*max(data_current))))
 
 # Evaluate unknown parameters
 jLim = 1.5                  # typical limit current density (1 to 2 A / cm²)
@@ -51,7 +51,7 @@ model_voltage = Eth  - A * np.log(data_current / io) + B * np.log(1 - data_curre
 
 import matplotlib.pyplot as plt
 fig, ax = plt.subplots()
-ax.plot(data_current, data_voltage, color='red', linestyle='', marker='o', markersize=4, label='data')
+ax.plot(data_current, data_cell_voltage, color='red', linestyle='', marker='o', markersize=4, label='data')
 ax.plot(data_current, model_voltage, color='darkblue', label='model')
 ax.set_ylabel('Voltage (V)')
 ax.set_xlabel('Current (A)')
@@ -113,22 +113,22 @@ models[0].Circuit.SetVariableValue("A", str(A))
 models[0].Circuit.SetVariableValue("io", str(io))
 models[0].Circuit.SetVariableValue("B", str(B))
 models[0].Circuit.SetVariableValue("iLim", str(iLim))
-models[0].Circuit.SetVariableValue("ncells", str(1))
+models[0].Circuit.SetVariableValue("ncells", str(ncells))
 
 # Fuel cell parameters model 2
 print('Set parameters in 2nd Model with PWL resistor')
-models[1].Circuit.SetVariableValue("Eth", str(Eth))
-models[1].Circuit.SetVariableValue("rohm", str(rohm))
-Rd = models[1].Circuit.GetDeviceByName('Rd')
-Rd.VoltageCurrentMatrix = np.vstack((vBreakpoints, iBreakpoints)).T.tolist()
+models[1].Circuit.SetVariableValue("Eth_stack", str(Eth * ncells))
+models[1].Circuit.SetVariableValue("rohm_stack", str(rohm * ncells))
+Rpwl = models[1].Circuit.GetDeviceByName('Rpwl_stack')
+Rpwl.VoltageCurrentMatrix = np.vstack((vBreakpoints * ncells, iBreakpoints)).T.tolist()
 
 # Fuel cell parameters model 3
 print('Set parameters in 3rd Model : Dynamic')
-models[2].Circuit.SetVariableValue("Eth", str(Eth))
-models[2].Circuit.SetVariableValue("rohm", str(rohm))
-models[2].Circuit.SetVariableValue("CdL", str(CdL))
-Rd = models[2].Circuit.GetDeviceByName('Rd')
-Rd.VoltageCurrentMatrix = np.vstack((vBreakpoints, iBreakpoints)).T.tolist()
+models[2].Circuit.SetVariableValue("Eth_stack", str(Eth * ncells))
+models[2].Circuit.SetVariableValue("rohm_stack", str(rohm * ncells))
+models[2].Circuit.SetVariableValue("CdL_stack", str(CdL / ncells))
+Rpwl = models[2].Circuit.GetDeviceByName('Rpwl_stack')
+Rpwl.VoltageCurrentMatrix = np.vstack((vBreakpoints * ncells, iBreakpoints)).T.tolist()
 
 project.Save()
 
