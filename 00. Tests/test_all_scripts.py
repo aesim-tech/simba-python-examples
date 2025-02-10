@@ -36,11 +36,13 @@ def run_python_script(path):
 def run_jupyter_notebook(path):
     original_cwd = os.getcwd()  # Save the original current working directory
     notebook_dir = os.path.dirname(path)  # Get the notebook's directory
+    env = os.environ.copy()
+    env["SIMBA_SCRIPT_TEST"] = "True"
 
     try:
         os.chdir(notebook_dir)  # Change to the notebook's directory
 
-        with open(path) as f:
+        with open(path, encoding='utf-8') as f:
             nb = nbformat.read(f, as_version=4)
             ep = ExecutePreprocessor(timeout=600, kernel_name='python3')
 
