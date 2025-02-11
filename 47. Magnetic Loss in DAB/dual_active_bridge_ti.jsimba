@@ -1042,11 +1042,11 @@
             "HF": false,
             "VF": false,
             "Disabled": false,
-            "Name": "DC1",
+            "Name": "Vin",
             "ID": "c1302228-a882-4191-a8ab-b174b9ca455d",
             "Parameters": {
               "Voltage": "800",
-              "Name": "DC1"
+              "Name": "Vin"
             },
             "EnabledScopes": [],
             "ParametersDisplayAttributes": {
@@ -4998,11 +4998,11 @@
             "HF": false,
             "VF": false,
             "Disabled": false,
-            "Name": "DC1",
+            "Name": "Vin",
             "ID": "9d27b672-b14a-41aa-88f0-41b45dd45374",
             "Parameters": {
               "Voltage": "800",
-              "Name": "DC1"
+              "Name": "Vin"
             },
             "EnabledScopes": [],
             "ParametersDisplayAttributes": {
@@ -11777,11 +11777,11 @@
             "HF": false,
             "VF": false,
             "Disabled": false,
-            "Name": "DC1",
+            "Name": "Vin",
             "ID": "02326124-3f63-4140-9d9b-45b8bb372edb",
             "Parameters": {
               "Voltage": "800",
-              "Name": "DC1"
+              "Name": "Vin"
             },
             "EnabledScopes": [],
             "ParametersDisplayAttributes": {

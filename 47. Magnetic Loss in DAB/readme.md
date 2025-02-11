@@ -111,7 +111,7 @@ Yet, even when considering the worst case the total evaluated loss of the transf
 
 ### Evaluation of efficiency and loss coefficient
 
-The evaluated efficiency and loss coefficient in this example are respectively 98.55 % and 1.45 %. In the application note [^1], the efficiency and loss coefficient were respectively 98 % and 2 %.
+The evaluated efficiency and loss coefficient in this example are respectively 98.4 % and 1.6 %. In the application note [^1], the efficiency and loss coefficient were respectively 98 % and 2 %.
 
 These differences can be explained with the error of loss evaluation in the inductor and the transformer and especially of AC copper losses.
 
