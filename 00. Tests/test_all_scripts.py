@@ -36,8 +36,6 @@ def run_python_script(path):
 def run_jupyter_notebook(path):
     original_cwd = os.getcwd()  # Save the original current working directory
     notebook_dir = os.path.dirname(path)  # Get the notebook's directory
-    env = os.environ.copy()
-    env["SIMBA_SCRIPT_TEST"] = "True"
 
     try:
         os.chdir(notebook_dir)  # Change to the notebook's directory

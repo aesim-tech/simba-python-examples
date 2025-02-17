@@ -7,7 +7,7 @@ tags:
 
 # Loss Evaluation in a Dual Active Bridge (DAB) Converter
 
-[Download **python script**](dual_active_bridge_ti.ipynb)
+[Download **python script**](dual_active_bridge_ti.py)
 
 [Download **Simba model**](dual_active_bridge_ti.jsimba)
 

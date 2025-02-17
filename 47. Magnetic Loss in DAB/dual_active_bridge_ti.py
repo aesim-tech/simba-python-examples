@@ -1,24 +1,19 @@
 """
-This file defines the function which will be used in the python notebook to:
-- run SIMBA simulations and save results
-- calculate the magnetic losses,
-- calculate powerswitch losses,
+Python notebook / script to compute magnetic losses of the transformer and powerswitch losses in a Dual Active Bridge (DAB) converter
 """
-
+#%%
 import os
 import numpy as np
 from scipy.interpolate import interp1d
 import matplotlib.pyplot as plt
 from aesim.simba import ProjectRepository
-import pandas as pd
-import datetime
 
+#%% #########
+# PRE-PROCESS
+#############
 
-###############
-#  PRE-PROCESS
-###############
+print("Loss data for DMR44 and define magnetic loss function")
 
-# Loss data for DMR44
 ## Data for 100 kHz and 25°C
 data_100k_25C_x = [50.43988739093397, 81.06823664212065, 153.55415016812432, 296.20911241965206]
 data_100k_25C_y = [26.941434246171102, 79.9673347137438, 329.4574652351894, 1440.70827878885]
@@ -66,7 +61,7 @@ def compute_loss_density(flux_density: float, frequency: float, temperature: flo
 
 def plot_magnetic_loss_data():
     """ plot the magnetic loss data """
-    plt.figure(figsize=(8, 6))
+    plt.figure()
     plt.loglog(data_100k_25C_x, data_100k_25C_y, 'r', label = '100kHz, 25°C')
     plt.loglog(data_100k_100C_x, data_100k_100C_y, 'r--', label = '100kHz, 100°C')
     plt.loglog(data_200k_25C_x, data_200k_25C_y, 'b', label = '200kHz, 25°C')
@@ -79,46 +74,20 @@ def plot_magnetic_loss_data():
     plt.legend()
     plt.show()
 
-# Magnetic E-core volume and equivalent inductance
-def compute_single_ecore_volume(A: float=64, B: float=18, C: float = 50)-> float:
-    """
-    compute the volume of a magnetic E-core (mm3)
-    A: width of the core (mm)
-    B: height of the core (mm)
-    C: thickness of the core (mm)
-    """
-    base = A * B / 2 * C                         # volume of the base of the e-core (mm3)
-    legs = 2 * (B * C * B / 2)                   # 1 central leg + 2 side legs = 2 central legs
-    single_ecore_volume = base + legs            # volume of 1 e-core (mm3)
-    return single_ecore_volume
+flux_density = 200  # flux_density 200 mT
+frequency = 100e3  # Frequency 150 kHz
+temperature = 100  # Temperature 60°C
+print(f"The interpolated loss density at:\n - B = {flux_density} mT,\n - frequency = {frequency/1e3:0.0f} kHz,\n - temperature = {temperature}°C,\nis {compute_loss_density(flux_density, frequency, temperature):0.0f} mW / cm3\n")
 
-def compute_equivalent_Lm(Nt: float, Le: float, Ac: float, ur: list)->list:
-    """
-    compute the equivalent inductance of the magnetic core for a given Le, Ac and lits of ur
-    Npri: number of turns
-    Le: magnetic path length (m)
-    Ac: core section (m²)
-    ur: relative permeability (SI)
-    """
-    uo = 4 * np.pi * 1e-7
-    R = Le / Ac / (uo * np.array(ur))
-    Lm = Nt**2 / R
-    return Lm.tolist()
+flux_density = 0  # flux_density 100 mT
+frequency = 300e3  # Frequency 150 kHz
+temperature = 60  # Temperature 60°C
+print(f"The interpolated loss density at:\n - B = {flux_density} mT,\n - frequency = {frequency/1e3:0.0f} kHz,\n - temperature = {temperature}°C,\nis {compute_loss_density(flux_density, frequency, temperature):0.0f} mW / cm3")
+
+plot_magnetic_loss_data()
 
 
-#############
-# SIMULATION
-#############
-
-def steadystate_signal(horizon_time: float, *signals):
-    timepoints_list = []
-    for signal in signals:
-        timepoints_list.extend(signal.TimePoints)
-    timepoints = sorted(timepoints_list)
-    steadystate_maskarray = np.array(timepoints) > (timepoints[-1] - horizon_time)
-    steadystate_time = np.array(timepoints)[steadystate_maskarray]
-    steadystate_datapoints_list = [np.interp(steadystate_time, signal.TimePoints, signal.DataPoints) for signal in signals]
-    return steadystate_time, *steadystate_datapoints_list
+print("Simulation methods and Signal Computation")
 
 def run_simulation(Vin, fsw, phase_shift, Lm, Rlk, Rpri, Rsec):
     # For unit tests only
@@ -178,6 +147,16 @@ def run_mag_model_simulation(fsw, phase_shift):
         raise Exception(job_mag.Summary())
     return job_mag.GetSignalByName('flux - Out')
 
+def steadystate_signal(horizon_time: float, *signals):
+    timepoints_list = []
+    for signal in signals:
+        timepoints_list.extend(signal.TimePoints)
+    timepoints = sorted(timepoints_list)
+    steadystate_maskarray = np.array(timepoints) > (timepoints[-1] - horizon_time)
+    steadystate_time = np.array(timepoints)[steadystate_maskarray]
+    steadystate_datapoints_list = [np.interp(steadystate_time, signal.TimePoints, signal.DataPoints) for signal in signals]
+    return steadystate_time, *steadystate_datapoints_list
+
 def compute_fft(time, signal, fstep):
     N = 10000
     time_resamp = np.linspace(time[0], time[-1], N, endpoint=False)
@@ -194,22 +173,8 @@ def compute_rms(time, data):
     rms_value = np.sqrt(np.sum(squared_data * dt) / np.sum(dt))
     return rms_value
 
-##############
-# POST-PROCESS
-##############
 
-# Display Junction temperatures and total powerswitch loss
-def compute_powerswitch_losses(res):
-    plt.figure()
-    for signal in [res['Tj_T1'], res['Tj_D1'], res['Tj_T5'], res['Tj_D5']]:
-        plt.plot(signal.TimePoints, signal.DataPoints, label=signal.Name)
-    plt.xlabel('Time (s)')
-    plt.ylabel('Junction Temperature (°C)')
-    plt.legend(loc='upper left')
-    plt.grid(True)
-    powerswitch_loss = res['switch_loss'].DataPoints[-1]
-    print(f"Total Powerswitch Loss: {powerswitch_loss:.2f} W")
-    return powerswitch_loss
+print("Loss Computation Methods")
 
 # compute dc copper losses of inductor, primary and secondary windings
 def compute_dc_copper_losses(time, iPri, iSec, Rpri, Rsec, Rlk):   
@@ -236,7 +201,7 @@ def compute_flux_density(time: np.ndarray, iLm: np.ndarray, Lm: float, Npri: flo
     freqs = freqs[:max_index]
     fft_flux_densities_estimated = fft_flux_densities_estimated[:max_index]
     
-    plt.figure(figsize=(8, 6))
+    plt.figure()
     plt.subplot(2, 1, 1)
     plt.plot(time, flux_density_estimated, color='blue', linestyle='-', linewidth=1.5, label='Signal')
     plt.title('Flux density (B)')
@@ -284,26 +249,65 @@ def compute_efficiency(core_Loss, dcLoss_inductor, dcLoss_pri, dcLoss_sec, power
     loss_coeff = 1 - efficiency
     print(f"Loss coefficient: {loss_coeff * 100:.2f}%")
 
+#%%##########
+# SIMULATION
+#############
 
+# Compute transformer volume based on 2 E-core E64/18/50
+A = 64                          # width of the core (mm)
+B = 18                          # height of the core (mm)
+C = 50                          # thickness of the core (mm)
+base = A * B / 2 * C            # volume of the base of the e-core (mm3)
+legs = 2 * (B * C * B / 2)      # 1 central leg + 2 side legs = 2 central legs
+single_ecore_volume = base + legs
+core_volume = 2 * single_ecore_volume
+print(f'Core volume: {core_volume / 1e3 :0.1f} cm3')
 
-##### OLD
+# Compute equivalent magnetizing inductor
+Ac = 0.000516                   # core section m²
+Le = 0.112                      # magnetic path length (m)
+ur = [2400, 2200]               # relative permeability µi and µe (SI)
+Npri = 24
+uo = 4 * np.pi * 1e-7
+R = Le / Ac / (uo * np.array(ur))
+Lm = Npri**2 / R
+print(f'Magnetizing inductor: {Lm[0] * 1e3:.2f} mH for µe = µi = {ur[0]}')
+print(f'Magnetizing inductor: {Lm[1] * 1e3:.2f} mH for µe = {ur[1]}')
 
-def check_magnetic_simulation(results):
+# Simulate 
+Vin = 800
+fsw = 100e3
+phase_shift = 23
+Rlk = 23e-3
+Rpri = 43e-3
+Rsec = 16e-3
+res = run_simulation(Vin, fsw, phase_shift, Lm[0], Rlk, Rpri, Rsec)
 
-    run_mag_model_simulation(fsw, phase_shift)
-    # Compute FFT of the flux density from the magnetic model of the transformer
-    flux_density = flux / Ac
-    freqs, fft_flux_densities = compute_fft(time_mag, flux_density, fsw)
-    max_index = 10
-    freqs = freqs[:max_index]
-    fft_flux_densities = fft_flux_densities[:max_index]
+#%%###########
+# POST-PROCESS
+##############
 
-    # Display on the same graph results obtained with electrical and magnetic models
-    plt.figure(figsize=(8, 6))
-    plt.stem(freqs[1:], fft_flux_densities_estimated[1:], label='estimated')
-    plt.stem(freqs[1:], fft_flux_densities[1:], 'orange', markerfmt='orange', label='simulated')
-    plt.legend()
-    plt.title('FFT Flux density without DC component: estimated and simulated')
-    plt.xlabel('Frequency [Hz]')
-    plt.grid(True)
-    plt.legend(fontsize=11)
+# Powerswitch losses and junction temperatures
+plt.figure()
+for signal in [res['Tj_T1'], res['Tj_D1'], res['Tj_T5'], res['Tj_D5']]:
+    plt.plot(signal.TimePoints, signal.DataPoints, label=signal.Name)
+plt.xlabel('Time (s)')
+plt.ylabel('Junction Temperature (°C)')
+plt.legend(loc='upper left')
+plt.grid(True)
+plt.show()
+powerswitch_loss = res['switch_loss'].DataPoints[-1]
+print(f"Total Powerswitch Loss: {powerswitch_loss:.2f} W\n")
+
+# DC Copper Losses
+time, iPri, iSec, iLm = steadystate_signal(1 / fsw, res['iPri'], res['iSec'], res['iLm'])
+dcLoss_inductor, dcLoss_pri, dcLoss_sec = compute_dc_copper_losses(time, iPri, iSec, Rpri, Rsec, Rlk)
+
+# Core Magnetic Losses
+flux_density, freqs, fft_flux_densities = compute_flux_density(time, iLm, Lm[0], Npri, Ac, fsw)
+temperature = 100
+core_Loss1 = compute_magnetic_losses_fftmethod(freqs, fft_flux_densities, temperature, core_volume)
+core_Loss2 = compute_magnetic_losses_maxmethod(flux_density, fft_flux_densities, temperature, Ac, fsw, core_volume)
+
+# Efficiency and Loss coefficient
+compute_efficiency(core_Loss2, dcLoss_inductor, dcLoss_pri, dcLoss_sec, powerswitch_loss)
