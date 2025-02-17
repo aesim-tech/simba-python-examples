@@ -40,7 +40,7 @@ def run_jupyter_notebook(path):
     try:
         os.chdir(notebook_dir)  # Change to the notebook's directory
 
-        with open(path) as f:
+        with open(path, encoding='utf-8') as f:
             nb = nbformat.read(f, as_version=4)
             ep = ExecutePreprocessor(timeout=600, kernel_name='python3')
 
