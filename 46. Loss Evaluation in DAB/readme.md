@@ -2,6 +2,8 @@
 tags:
   - Python
   - Power Supplies
+  - Thermal
+  - Magnetics
   - Converter Design
 ---
 
