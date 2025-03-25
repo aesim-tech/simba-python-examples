@@ -224,6 +224,7 @@
         "FixedTimeStep": false,
         "SaveInitialPoint": true,
         "CompressScopes": true,
+        "DualStageElectroThermalAnalysis": false,
         "StopAtSteadyState": false,
         "TimeStep": "1E-06",
         "BaseFrequencyParameterEnabled": false,
@@ -550,6 +551,7 @@
         "FixedTimeStep": false,
         "SaveInitialPoint": true,
         "CompressScopes": true,
+        "DualStageElectroThermalAnalysis": false,
         "StopAtSteadyState": false,
         "TimeStep": "1E-06",
         "BaseFrequencyParameterEnabled": false,
@@ -876,6 +878,7 @@
         "FixedTimeStep": false,
         "SaveInitialPoint": true,
         "CompressScopes": true,
+        "DualStageElectroThermalAnalysis": false,
         "StopAtSteadyState": false,
         "TimeStep": "1E-06",
         "BaseFrequencyParameterEnabled": false,
@@ -1202,6 +1205,334 @@
         "FixedTimeStep": false,
         "SaveInitialPoint": true,
         "CompressScopes": true,
+        "DualStageElectroThermalAnalysis": false,
+        "StopAtSteadyState": false,
+        "TimeStep": "1E-06",
+        "BaseFrequencyParameterEnabled": false,
+        "NumberOfBasePeriodsSavedParameterEnabled": false,
+        "BaseFrequency": "60",
+        "NumberOfBasePeriodsSaved": "1"
+      }
+    },
+    {
+      "Id": "9a8ab8a9-b6f7-49f2-8161-d3d532c1eaa2",
+      "Name": "Design 2 with subcircuit",
+      "Circuit": {
+        "Id": "24dc5026-1363-4fac-996b-0c8241d99865",
+        "Devices": [
+          {
+            "LibraryName": "Ground",
+            "Top": 20,
+            "Left": 22,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "Ground1",
+            "ID": "9cddea80-9bce-4d2e-bdb7-bea72738f903",
+            "Parameters": {
+              "Name": "Ground1"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "4 3",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 2,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              }
+            }
+          },
+          {
+            "LibraryName": "DC Voltage Source",
+            "Top": 9,
+            "Left": 14,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "DC1",
+            "ID": "927515a4-cedb-4497-8b5d-a3e2dcb0c00c",
+            "Parameters": {
+              "Voltage": "1",
+              "Name": "DC1"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Voltage": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "2 2",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              },
+              "Name": {
+                "IsVisible": true,
+                "Suffix": "",
+                "RelativeLocation": "4 3",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 2,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              }
+            }
+          },
+          {
+            "LibraryName": "Sub_module",
+            "Top": 4,
+            "Left": 22,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "Sc1",
+            "ID": "2dbe0a34-2da9-4c19-8de4-eae1d4f9d964",
+            "Parameters": {
+              "Name": "Sc1",
+              "DefinitionName": "Sub_module"
+            },
+            "EnabledScopes": [],
+            "SubcircuitDefinition": {
+              "Id": "0bc9b99d-fae9-4afd-ad63-05e68bd4c32d",
+              "Devices": [
+                {
+                  "LibraryName": "Resistor",
+                  "Top": 0,
+                  "Left": 0,
+                  "Angle": 0,
+                  "HF": false,
+                  "VF": false,
+                  "Disabled": false,
+                  "Name": "R1",
+                  "ID": "1e9be41d-2de5-4177-8efe-cd6ba4d4ecda",
+                  "Parameters": {
+                    "Value": "3.7",
+                    "Name": "R1"
+                  },
+                  "EnabledScopes": [],
+                  "ParametersDisplayAttributes": {
+                    "Value": {
+                      "IsVisible": true,
+                      "Suffix": "\u03A9",
+                      "RelativeLocation": "2 2",
+                      "UnrotatedWidth": 2,
+                      "UnrotatedHeight": 1,
+                      "FontSize": 12,
+                      "Color": "#0081BC"
+                    },
+                    "Name": {
+                      "IsVisible": true,
+                      "Suffix": "",
+                      "RelativeLocation": "2 -1",
+                      "UnrotatedWidth": 2,
+                      "UnrotatedHeight": 1,
+                      "FontSize": 12,
+                      "Color": "#0081BC"
+                    }
+                  }
+                },
+                {
+                  "LibraryName": "Resistor",
+                  "Top": 5,
+                  "Left": 7,
+                  "Angle": 90,
+                  "HF": false,
+                  "VF": false,
+                  "Disabled": false,
+                  "Name": "R2",
+                  "ID": "c62a7fe9-9a64-4732-b4e7-bb7387346cb1",
+                  "Parameters": {
+                    "Value": "6",
+                    "Name": "R2"
+                  },
+                  "EnabledScopes": [
+                    "Voltage",
+                    "Current"
+                  ],
+                  "ParametersDisplayAttributes": {
+                    "Value": {
+                      "IsVisible": false,
+                      "Suffix": "",
+                      "RelativeLocation": "1 2",
+                      "UnrotatedWidth": 2,
+                      "UnrotatedHeight": 1,
+                      "FontSize": 12,
+                      "Color": "Black"
+                    },
+                    "Name": {
+                      "IsVisible": true,
+                      "Suffix": "",
+                      "RelativeLocation": "2 -1",
+                      "UnrotatedWidth": 2,
+                      "UnrotatedHeight": 1,
+                      "FontSize": 12,
+                      "Color": "#0081BC"
+                    }
+                  }
+                },
+                {
+                  "LibraryName": "Electrical Pin",
+                  "Top": 0,
+                  "Left": -2,
+                  "Angle": 0,
+                  "HF": false,
+                  "VF": false,
+                  "Disabled": false,
+                  "Name": "Pin1",
+                  "ID": "fe45790e-2ec3-4f7f-98ef-efd0f7f0fca6",
+                  "Parameters": {
+                    "Name": "Pin1"
+                  },
+                  "EnabledScopes": [],
+                  "ParametersDisplayAttributes": {
+                    "Name": {
+                      "IsVisible": true,
+                      "Suffix": "",
+                      "RelativeLocation": "0 -1",
+                      "UnrotatedWidth": 2,
+                      "UnrotatedHeight": 1,
+                      "FontSize": 12,
+                      "Color": "#0081BC"
+                    }
+                  }
+                },
+                {
+                  "LibraryName": "Electrical Pin",
+                  "Top": 9,
+                  "Left": 9,
+                  "Angle": 270,
+                  "HF": false,
+                  "VF": false,
+                  "Disabled": false,
+                  "Name": "Pin2",
+                  "ID": "fe410545-ef89-41d8-9d07-50a9ad3ee7e4",
+                  "Parameters": {
+                    "Name": "Pin2"
+                  },
+                  "EnabledScopes": [],
+                  "ParametersDisplayAttributes": {
+                    "Name": {
+                      "IsVisible": true,
+                      "Suffix": "",
+                      "RelativeLocation": "0 -1",
+                      "UnrotatedWidth": 2,
+                      "UnrotatedHeight": 1,
+                      "FontSize": 12,
+                      "Color": "#0081BC"
+                    }
+                  }
+                }
+              ],
+              "Connectors": [
+                {
+                  "Segments": [
+                    {
+                      "StartX": 10,
+                      "StartY": 3,
+                      "EndX": 10,
+                      "EndY": 1
+                    },
+                    {
+                      "StartX": 6,
+                      "StartY": 1,
+                      "EndX": 10,
+                      "EndY": 1
+                    }
+                  ],
+                  "Name": "C2"
+                }
+              ],
+              "Name": "Sub_module",
+              "Variables": [],
+              "VariableFile": ""
+            },
+            "SubcircuitDefinitionID": "0bc9b99d-fae9-4afd-ad63-05e68bd4c32d",
+            "SubcircuitDefinitionID": "0bc9b99d-fae9-4afd-ad63-05e68bd4c32d",
+            "ParametersDisplayAttributes": {
+              "Name": {
+                "IsVisible": true,
+                "Suffix": "",
+                "RelativeLocation": "3 5",
+                "UnrotatedWidth": 4,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "Black"
+              },
+              "DefinitionName": {
+                "IsVisible": true,
+                "Suffix": "",
+                "RelativeLocation": "3 3",
+                "UnrotatedWidth": 4,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "Black"
+              }
+            }
+          }
+        ],
+        "Connectors": [
+          {
+            "Segments": [
+              {
+                "StartX": 23,
+                "StartY": 20,
+                "EndX": 23,
+                "EndY": 18
+              },
+              {
+                "StartX": 16,
+                "StartY": 17,
+                "EndX": 16,
+                "EndY": 18
+              },
+              {
+                "StartX": 27,
+                "StartY": 14,
+                "EndX": 27,
+                "EndY": 18
+              },
+              {
+                "StartX": 16,
+                "StartY": 18,
+                "EndX": 23,
+                "EndY": 18
+              },
+              {
+                "StartX": 23,
+                "StartY": 18,
+                "EndX": 27,
+                "EndY": 18
+              }
+            ],
+            "Name": "C2"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 16,
+                "StartY": 9,
+                "EndX": 22,
+                "EndY": 9
+              }
+            ],
+            "Name": "C1"
+          }
+        ],
+        "Name": "Top Circuit - Copy",
+        "Variables": [],
+        "VariableFile": ""
+      },
+      "TransientAnalysis": {
+        "EndTime": "0.05",
+        "FixedTimeStep": false,
+        "SaveInitialPoint": true,
+        "CompressScopes": true,
+        "DualStageElectroThermalAnalysis": false,
         "StopAtSteadyState": false,
         "TimeStep": "1E-06",
         "BaseFrequencyParameterEnabled": false,

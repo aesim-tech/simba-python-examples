@@ -23,7 +23,6 @@ number_of_speed_points = 15    # Total number of simulations is number_of_speed_
 number_of_current_points = 15   # Total number of simulations is number_of_speed_points * number_of_current_points (we can put 2 for faster results but less accurate)
 relative_minimum_speed = 0.2    # fraction of max_speed_ref
 relative_minimum_current = 0.2  # fraction of max_torque_ref
-simulation_time = 0.5             # time simulated in each run
 
 # Get motor parameters from Simba file
 current_folder = os.path.dirname(os.path.abspath(__file__))
@@ -81,7 +80,6 @@ def run_simulation(id_ref, iq_ref, speed_ref, case_temperature, Rg, sim_number, 
     if log: print ("\n{0}> Running Full Model... (Id_ref={1:.2f} A Iq_ref={2:.2f} A speed_ref={3:.2f} RPM)".format(sim_number, id_ref, iq_ref, speed_ref))
 
     # Run Simulation
-    simba_full_design.TransientAnalysis.EndTime = simulation_time
     job = simba_full_design.TransientAnalysis.NewJob()
     status = job.Run()
     
@@ -95,9 +93,8 @@ def run_simulation(id_ref, iq_ref, speed_ref, case_temperature, Rg, sim_number, 
     motor_losses = job.GetSignalByName('JmagRTMotor1 - Total Loss (average)').DataPoints[-1]
     actual_torque = job.GetSignalByName('JmagRTMotor1 - Te').DataPoints[-1]
     actual_speed_rpm = job.GetSignalByName('speed_rpm - Out').DataPoints[-1]
-    input_power = job.GetSignalByName('Input Power:average - Out').DataPoints[-1]
-    
-    Pout= job.GetSignalByName('Pout - Out').DataPoints[-1]
+    input_power = job.GetSignalByName('Pin - P').DataPoints[-1]
+    output_power= job.GetSignalByName('Pout - Out').DataPoints[-1]
 
     if (actual_speed_rpm < 0): return; # ERROR 
 
@@ -110,7 +107,7 @@ def run_simulation(id_ref, iq_ref, speed_ref, case_temperature, Rg, sim_number, 
     total_losses = inverter_losses + motor_losses
     efficiency = 1 - total_losses / (total_losses + input_power)
     if log: print ('{0}> Efficiency = {1:.2f}%  Input Power {2:.2f}W total_losses  {3:.2f}W'.format(sim_number, 100*efficiency, input_power, total_losses))
-    result_dict[sim_number] = [inverter_losses, motor_losses, actual_torque, actual_speed_rpm, efficiency, input_power, Pout]
+    result_dict[sim_number] = [inverter_losses, motor_losses, actual_torque, actual_speed_rpm, efficiency, input_power, output_power]
 
 def run_simulation_star(args):
     """

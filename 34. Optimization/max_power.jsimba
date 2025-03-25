@@ -79,7 +79,7 @@
             "Name": "R2",
             "ID": "c64f20dd-8915-4361-8389-4e0625807a0b",
             "Parameters": {
-              "Value": "3.000879055150673",
+              "Value": "3.0008712258027934",
               "Name": "R2"
             },
             "EnabledScopes": [
@@ -224,6 +224,7 @@
         "FixedTimeStep": false,
         "SaveInitialPoint": true,
         "CompressScopes": true,
+        "DualStageElectroThermalAnalysis": false,
         "StopAtSteadyState": false,
         "TimeStep": "1E-06",
         "BaseFrequencyParameterEnabled": false,
