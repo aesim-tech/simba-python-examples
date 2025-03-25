@@ -1163,10 +1163,10 @@
               "Name": "T1"
             },
             "EnabledScopes": [
+              "Average Conduction Losses (W)",
+              "Average Switching Losses (W)",
               "Average Total Losses (W)",
               "In",
-              "Instantaneous Conduction Losses (W)",
-              "Instantaneous Switching Energy (J)",
               "Junction Temperature (\u00B0)"
             ],
             "ThermalDataID": "a47be73f-abe1-4ea8-a8c7-0d8f58bee995",
@@ -1220,9 +1220,7 @@
               "Ron": "75m",
               "Name": "T2"
             },
-            "EnabledScopes": [
-              "In"
-            ],
+            "EnabledScopes": [],
             "ThermalDataID": "a47be73f-abe1-4ea8-a8c7-0d8f58bee995",
             "LossCalculationFrequency": "fsw",
             "InitialTemperature": "Tc",
@@ -1277,8 +1275,6 @@
             },
             "EnabledScopes": [
               "Average Total Losses (W)",
-              "Instantaneous Conduction Losses (W)",
-              "Instantaneous Switching Energy (J)",
               "Junction Temperature (\u00B0)"
             ],
             "ThermalDataID": "2bb3db88-9b9a-403f-b955-177b5deb51b3",
@@ -1768,9 +1764,9 @@
               "Name": "T5"
             },
             "EnabledScopes": [
+              "Average Conduction Losses (W)",
+              "Average Switching Losses (W)",
               "Average Total Losses (W)",
-              "Instantaneous Conduction Losses (W)",
-              "Instantaneous Switching Energy (J)",
               "Junction Temperature (\u00B0)"
             ],
             "ThermalDataID": "4d0eca77-1ae6-45db-8450-10e67f1308bb",
@@ -3944,10 +3940,11 @@
         "VariableFile": ""
       },
       "TransientAnalysis": {
-        "EndTime": "0.6",
+        "EndTime": "0.01",
         "FixedTimeStep": false,
-        "SaveInitialPoint": false,
+        "SaveInitialPoint": true,
         "CompressScopes": true,
+        "DualStageElectroThermalAnalysis": true,
         "StopAtSteadyState": false,
         "TimeStep": "2n",
         "BaseFrequencyParameterEnabled": true,
@@ -8061,13 +8058,14 @@
       "TransientAnalysis": {
         "EndTime": "0.5",
         "FixedTimeStep": false,
-        "SaveInitialPoint": false,
+        "SaveInitialPoint": true,
         "CompressScopes": true,
-        "StopAtSteadyState": false,
+        "DualStageElectroThermalAnalysis": true,
+        "StopAtSteadyState": true,
         "TimeStep": "2n",
         "BaseFrequencyParameterEnabled": true,
         "NumberOfBasePeriodsSavedParameterEnabled": false,
-        "BaseFrequency": "100k",
+        "BaseFrequency": "fsw",
         "NumberOfBasePeriodsSaved": "1"
       }
     },
@@ -11525,6 +11523,7 @@
         "FixedTimeStep": false,
         "SaveInitialPoint": false,
         "CompressScopes": true,
+        "DualStageElectroThermalAnalysis": false,
         "StopAtSteadyState": false,
         "TimeStep": "2n",
         "BaseFrequencyParameterEnabled": false,
@@ -15368,6 +15367,7 @@
         "FixedTimeStep": false,
         "SaveInitialPoint": false,
         "CompressScopes": true,
+        "DualStageElectroThermalAnalysis": false,
         "StopAtSteadyState": false,
         "TimeStep": "2n",
         "BaseFrequencyParameterEnabled": false,

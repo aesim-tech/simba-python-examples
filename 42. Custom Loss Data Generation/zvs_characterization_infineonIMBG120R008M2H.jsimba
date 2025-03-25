@@ -3054,6 +3054,7 @@
         "FixedTimeStep": false,
         "SaveInitialPoint": false,
         "CompressScopes": true,
+        "DualStageElectroThermalAnalysis": false,
         "StopAtSteadyState": false,
         "TimeStep": "2n",
         "BaseFrequencyParameterEnabled": true,
@@ -3711,8 +3712,56 @@
       "TurnOnLossComputationFormula": "",
       "TurnOffLossComputationMethod": "LookUpTableComputationMethodType",
       "TurnOffLossComputationFormula": "",
-      "ThermalImpedanceDataSerialized": "[]",
+      "ThermalImpedanceDataSerialized": "[0]",
       "ID": "1f9fb467-526e-4a83-a78d-25c77088ee14"
+    },
+    {
+      "Name": "Infineon IMBG120R008M2H",
+      "Manufacturer": "",
+      "PartNumber": "",
+      "Comment": "",
+      "ConductionLossesGateDependency": false,
+      "SemiconductorType": "MosfetThermalDataSemiconductorType",
+      "ThermalImpedanceType": "NoThermalNetworkType",
+      "ConductionLosses": [
+        {
+          "Temperature": 100,
+          "IVSerialized": "[9.95716823 -7.809064381892334E-06; 19.91671761 2.037835782443176E-05; 29.88436806 2.4845247979141694E-05; 49.80903477 0.0001034765203390348; 69.71377705 0.00020261884356979546; 89.65807649 0.0003282341425984421; 129.54129379 0.0006876630679715735; 159.38839223 0.0010231172464027277; 179.36573933 0.001272766958200779; 249.18568435 0.0024762500211036676; 308.9853168 0.0038048164903542025; 358.91593485 0.005162392606708794]"
+        },
+        {
+          "Temperature": 175,
+          "IVSerialized": "[9.97861362 -7.81777305461549E-06; 19.95959192 2.731247057142968E-05; 29.94052138 5.56962881631418E-05; 49.90137029 0.00014525467136300847; 69.86423892 0.0002821932648727024; 89.84267038 0.00046912847283583415; 129.74981477 0.0009772116232422176; 159.72206485 0.0014445956573776297; 179.68760554 0.0018319192100367775; 249.65424645 0.0035101463588690634; 309.67395819 0.00632239052934464; 359.6148925 0.007363088431716205]"
+        }
+      ],
+      "ConductionLossesGateOff": [],
+      "TurnOnLosses": [],
+      "TurnOffLosses": [
+        {
+          "Temperature": 100,
+          "Voltage": 800,
+          "EISerialized": "[4.91381242350073 1.9185101592468975E-05; 9.824712998868678 1.3124347549561293E-05; 14.615630684290508 3.1130883687571125E-05; 24.579334273390856 4.545318771869084E-05; 34.41180747228046 7.385391214715043E-05; 44.244016331216756 0.00011775274652808235; 63.907374822321685 0.00022088826794807576; 78.64810241202862 0.0003304929073819269; 88.48361660539624 0.00042002857554511224; 122.87996206626929 0.0007457748336680819; 152.33385909775993 0.0010883733703144554; 176.83716814426873 0.0013973212039822]"
+        },
+        {
+          "Temperature": 175,
+          "Voltage": 800,
+          "EISerialized": "[4.914017998571012 2.0974699984794282E-05; 9.830734605563407 1.2807046170927258E-05; 14.747420393110673 2.2880728438049027E-05; 24.57976496025026 4.5043456640054907E-05; 34.41379214045881 7.277097722470339E-05; 44.246707813068014 0.00011356332538734631; 63.91183961550993 0.00022605547658725552; 78.6599143175215 0.0003412152656782617; 88.49149374233775 0.0004169542171082474; 122.89784493439328 0.0007687651900681498; 152.37240487473176 0.0007665923620473192; 176.93357256495517 0.001423313798787287]"
+        }
+      ],
+      "CustomVariables": [],
+      "Constants": [],
+      "Custom1DTables": [],
+      "Custom2DTables": [],
+      "Custom3DTables": [],
+      "ConductionLossComputationMethod": 1,
+      "ConductionLossComputationFormula": "",
+      "ConductionLossComputationMethodGateOff": 1,
+      "ConductionLossComputationFormulaGateOff": "",
+      "TurnOnLossComputationMethod": "LookUpTableComputationMethodType",
+      "TurnOnLossComputationFormula": "",
+      "TurnOffLossComputationMethod": "LookUpTableComputationMethodType",
+      "TurnOffLossComputationFormula": "",
+      "ThermalImpedanceDataSerialized": "[]",
+      "ID": "fa96d382-691c-4ab7-bbbd-8576a7d29f5b"
     }
   ]
 }

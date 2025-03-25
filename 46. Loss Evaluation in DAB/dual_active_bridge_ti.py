@@ -106,6 +106,7 @@ def run_simulation(Vin, fsw, phase_shift, Lm, Rlk, Rpri, Rsec):
     design.TransientAnalysis.CompressScopes = True
     design.TransientAnalysis.TimeStep = 2e-9
     design.TransientAnalysis.EndTime = endtime
+    design.TransientAnalysis.DualStageElectroThermalAnalysis = True
     design.Circuit.GetDeviceByName('Vin').Value = Vin
     design.Circuit.GetDeviceByName('Lm').Value = float(np.format_float_scientific(Lm, precision=3))
     design.Circuit.GetDeviceByName('Rlk').Value = Rlk
