@@ -73,7 +73,7 @@ if os.environ.get("SIMBA_SCRIPT_TEST"): #Excluded from unit test
     
 # Load dataframe
 script_folder = os.path.realpath(os.path.dirname(__file__))
-filename = "montecarlo_parallel_mosfets_2023-11-13"
+filename = "montecarlo_parallel_mosfets_2025-03-26"
 df = pd.read_pickle(os.path.join(script_folder, filename + ".pkl" ))
 
 #%% Plot results from dataframe
