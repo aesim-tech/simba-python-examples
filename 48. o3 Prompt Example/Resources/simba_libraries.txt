@@ -1,0 +1,857 @@
+Model Name: "Controlled Switch"
+Library: Electrical\Switches
+Dimensions: [6;4]
+Pins:
+- "P" (Type: Electrical, Location: [0;2], Direction: West)
+- "N" (Type: Electrical, Location: [6;2], Direction: East)
+- "In" (Type: ControlIn, Location: [3;0], Direction: North)
+---
+
+Model Name: "Controlled Switch with Threshold"
+Library: Electrical\Switches
+Dimensions: [6;4]
+Pins:
+- "P" (Type: Electrical, Location: [0;2], Direction: West)
+- "N" (Type: Electrical, Location: [6;2], Direction: East)
+- "In" (Type: ControlIn, Location: [3;0], Direction: North)
+Parameters:
+- "OnValue"
+- "OffValue"
+- "Ron"
+---
+
+Model Name: "Switch"
+Library: Electrical\Switches
+Dimensions: [6;2]
+Pins:
+- "P" (Type: Electrical, Location: [0;1], Direction: West)
+- "N" (Type: Electrical, Location: [6;1], Direction: East)
+Parameters:
+- "State"
+- "T1"
+---
+
+Model Name: "AC Current Source (Sinus)"
+Library: Electrical\Sources
+Dimensions: [4;8]
+Pins:
+- "P" (Type: Electrical, Location: [2;0], Direction: North)
+- "N" (Type: Electrical, Location: [2;8], Direction: South)
+Parameters:
+- "Frequency"
+- "Amplitude"
+- "Phase"
+---
+
+Model Name: "AC Voltage Source (Sinus)"
+Library: Electrical\Sources
+Dimensions: [4;8]
+Pins:
+- "P" (Type: Electrical, Location: [2;0], Direction: North)
+- "N" (Type: Electrical, Location: [2;8], Direction: South)
+Parameters:
+- "Frequency"
+- "Amplitude"
+- "Phase"
+---
+
+Model Name: "Controlled Current Source"
+Library: Electrical\Sources
+Dimensions: [4;8]
+Pins:
+- "P" (Type: Electrical, Location: [2;0], Direction: North)
+- "N" (Type: Electrical, Location: [2;8], Direction: South)
+- "In" (Type: ControlIn, Location: [0;4], Direction: West)
+---
+
+Model Name: "Controlled Voltage Source"
+Library: Electrical\Sources
+Dimensions: [4;8]
+Pins:
+- "P" (Type: Electrical, Location: [2;0], Direction: North)
+- "N" (Type: Electrical, Location: [2;8], Direction: South)
+- "In" (Type: ControlIn, Location: [0;4], Direction: West)
+---
+
+Model Name: "Controlled Voltage Source (small)"
+Library: Electrical\Sources
+Dimensions: [4;2]
+Pins:
+- "P" (Type: Electrical, Location: [4;1], Direction: East)
+- "In" (Type: ControlIn, Location: [0;1], Direction: West)
+---
+
+Model Name: "Current Controlled Current Source"
+Library: Electrical\Sources
+Dimensions: [4;8]
+Pins:
+- "M" (Type: Electrical, Location: [2;0], Direction: North)
+- "K" (Type: Electrical, Location: [0;2], Direction: West)
+- "N" (Type: Electrical, Location: [2;8], Direction: South)
+- "L" (Type: Electrical, Location: [0;6], Direction: West)
+Parameters:
+- "Gain"
+---
+
+Model Name: "Current Controlled Voltage Source"
+Library: Electrical\Sources
+Dimensions: [4;8]
+Pins:
+- "M" (Type: Electrical, Location: [2;0], Direction: North)
+- "K" (Type: Electrical, Location: [0;2], Direction: West)
+- "N" (Type: Electrical, Location: [2;8], Direction: South)
+- "L" (Type: Electrical, Location: [0;6], Direction: West)
+Parameters:
+- "Gain"
+---
+
+Model Name: "DC Current Source"
+Library: Electrical\Sources
+Dimensions: [4;8]
+Pins:
+- "P" (Type: Electrical, Location: [2;0], Direction: North)
+- "N" (Type: Electrical, Location: [2;8], Direction: South)
+Parameters:
+- "Current"
+---
+
+Model Name: "DC Voltage Source"
+Library: Electrical\Sources
+Dimensions: [4;8]
+Pins:
+- "P" (Type: Electrical, Location: [2;0], Direction: North)
+- "N" (Type: Electrical, Location: [2;8], Direction: South)
+Parameters:
+- "Voltage"
+---
+
+Model Name: "Ground"
+Library: Electrical\Sources
+Dimensions: [2;2]
+Pins:
+- "G" (Type: Electrical, Location: [1;0], Direction: North)
+---
+
+Model Name: "Nonlinear Current Source (Generic)"
+Library: Electrical\Sources
+Dimensions: [4;8]
+Pins:
+- "P" (Type: Electrical, Location: [2;0], Direction: North)
+- "N" (Type: Electrical, Location: [2;8], Direction: South)
+- "V1" (Type: Electrical, Location: [0;4], Direction: West)
+- "I1p" (Type: Electrical, Location: [4;2], Direction: East)
+- "I1n" (Type: Electrical, Location: [4;6], Direction: East)
+Parameters:
+- "Expression"
+- "NumberOfVoltageVariables"
+- "NumberOfCurrentVariables"
+---
+
+Model Name: "Nonlinear Voltage Source (Generic)"
+Library: Electrical\Sources
+Dimensions: [4;8]
+Pins:
+- "P" (Type: Electrical, Location: [2;0], Direction: North)
+- "N" (Type: Electrical, Location: [2;8], Direction: South)
+- "V1" (Type: Electrical, Location: [0;4], Direction: West)
+- "I1p" (Type: Electrical, Location: [4;2], Direction: East)
+- "I1n" (Type: Electrical, Location: [4;6], Direction: East)
+Parameters:
+- "Expression"
+- "NumberOfVoltageVariables"
+- "NumberOfCurrentVariables"
+---
+
+Model Name: "Nonlinear Voltage Source (Product)"
+Library: Electrical\Sources
+Dimensions: [4;8]
+Pins:
+- "M" (Type: Electrical, Location: [2;0], Direction: North)
+- "K" (Type: Electrical, Location: [0;2], Direction: West)
+- "N" (Type: Electrical, Location: [2;8], Direction: South)
+- "L" (Type: Electrical, Location: [0;6], Direction: West)
+- "O" (Type: Electrical, Location: [4;2], Direction: East)
+- "P" (Type: Electrical, Location: [4;6], Direction: East)
+Parameters:
+- "Gain"
+---
+
+Model Name: "Piecewise Linear Current Source"
+Library: Electrical\Sources
+Dimensions: [4;8]
+Pins:
+- "P" (Type: Electrical, Location: [2;0], Direction: North)
+- "N" (Type: Electrical, Location: [2;8], Direction: South)
+Parameters:
+- "TimeValueMatrix"
+---
+
+Model Name: "Piecewise Linear Voltage Source"
+Library: Electrical\Sources
+Dimensions: [4;8]
+Pins:
+- "P" (Type: Electrical, Location: [2;0], Direction: North)
+- "N" (Type: Electrical, Location: [2;8], Direction: South)
+Parameters:
+- "TimeValueMatrix"
+---
+
+Model Name: "Current Pulse Source"
+Library: Electrical\Sources
+Dimensions: [4;8]
+Pins:
+- "P" (Type: Electrical, Location: [2;0], Direction: North)
+- "N" (Type: Electrical, Location: [2;8], Direction: South)
+Parameters:
+- "InitialValue"
+- "PulsedValue"
+- "Delay"
+- "RiseTime"
+- "FallTime"
+- "OnTime"
+- "Period"
+- "NbOfCycles"
+---
+
+Model Name: "Voltage Pulse Source"
+Library: Electrical\Sources
+Dimensions: [4;8]
+Pins:
+- "P" (Type: Electrical, Location: [2;0], Direction: North)
+- "N" (Type: Electrical, Location: [2;8], Direction: South)
+Parameters:
+- "InitialValue"
+- "PulsedValue"
+- "Delay"
+- "RiseTime"
+- "FallTime"
+- "OnTime"
+- "Period"
+- "NbOfCycles"
+---
+
+Model Name: "Current Step Source"
+Library: Electrical\Sources
+Dimensions: [4;8]
+Pins:
+- "P" (Type: Electrical, Location: [2;0], Direction: North)
+- "N" (Type: Electrical, Location: [2;8], Direction: South)
+Parameters:
+- "InitialValue"
+- "FinalValue"
+- "StepTime"
+---
+
+Model Name: "Voltage Step Source"
+Library: Electrical\Sources
+Dimensions: [4;8]
+Pins:
+- "P" (Type: Electrical, Location: [2;0], Direction: North)
+- "N" (Type: Electrical, Location: [2;8], Direction: South)
+Parameters:
+- "InitialValue"
+- "FinalValue"
+- "StepTime"
+---
+
+Model Name: "Voltage Controlled Voltage Source (Variable Gain)"
+Library: Electrical\Sources
+Dimensions: [4;8]
+Pins:
+- "M" (Type: Electrical, Location: [2;0], Direction: North)
+- "K" (Type: Electrical, Location: [0;2], Direction: West)
+- "N" (Type: Electrical, Location: [2;8], Direction: South)
+- "L" (Type: Electrical, Location: [0;6], Direction: West)
+- "In" (Type: ControlIn, Location: [4;4], Direction: East)
+---
+
+Model Name: "Voltage Controlled Current Source"
+Library: Electrical\Sources
+Dimensions: [4;8]
+Pins:
+- "M" (Type: Electrical, Location: [2;0], Direction: North)
+- "K" (Type: Electrical, Location: [0;2], Direction: West)
+- "N" (Type: Electrical, Location: [2;8], Direction: South)
+- "L" (Type: Electrical, Location: [0;6], Direction: West)
+Parameters:
+- "Gain"
+---
+
+Model Name: "Voltage Controlled Voltage Source"
+Library: Electrical\Sources
+Dimensions: [4;8]
+Pins:
+- "M" (Type: Electrical, Location: [2;0], Direction: North)
+- "K" (Type: Electrical, Location: [0;2], Direction: West)
+- "N" (Type: Electrical, Location: [2;8], Direction: South)
+- "L" (Type: Electrical, Location: [0;6], Direction: West)
+Parameters:
+- "Gain"
+---
+
+Model Name: "Detailed Diode"
+Library: Electrical\Semiconductors
+Dimensions: [6;2]
+Pins:
+- "Anode" (Type: Electrical, Location: [0;1], Direction: West)
+- "Cathode" (Type: Electrical, Location: [6;1], Direction: East)
+Parameters:
+- "Vf_If_Matrix"
+- "C_Vr_Matrix"
+- "Vinit"
+---
+
+Model Name: "Detailed MOSFET (Datasheet)"
+Library: Electrical\Semiconductors
+Dimensions: [4;6]
+Pins:
+- "Drain" (Type: Electrical, Location: [2;0], Direction: North)
+- "Source" (Type: Electrical, Location: [2;6], Direction: South)
+- "Gate" (Type: Electrical, Location: [0;3], Direction: West)
+Parameters:
+- "Rg"
+- "VgsIdMatrix"
+- "VgsIdMatrix_Vds"
+- "VdsIdMatrix"
+- "VdsIdMatrix_Vgs"
+- "Ciss"
+- "Coss"
+- "Crss"
+- "VgsInit"
+- "VdsInit"
+- "Vsd_Is_BodyDiodeMatrix"
+---
+
+Model Name: "Detailed MOSFET (SPICE VDMOS)"
+Library: Electrical\Semiconductors
+Dimensions: [4;6]
+Pins:
+- "Drain" (Type: Electrical, Location: [2;0], Direction: North)
+- "Source" (Type: Electrical, Location: [2;6], Direction: South)
+- "Gate" (Type: Electrical, Location: [0;3], Direction: West)
+Parameters:
+- "Spice_Netlist"
+- "VgsInit"
+- "VdsInit"
+---
+
+Model Name: "Ideal Diode"
+Library: Electrical\Semiconductors
+Dimensions: [6;2]
+Pins:
+- "Anode" (Type: Electrical, Location: [0;1], Direction: West)
+- "Cathode" (Type: Electrical, Location: [6;1], Direction: East)
+Parameters:
+- "Rd"
+- "Vf"
+- "InitialTemperature"
+- "ShowJunctionTemperatureControlPin"
+- "LossCalculationFrequency"
+---
+
+Model Name: "Ideal IGBT"
+Library: Electrical\Semiconductors
+Dimensions: [4;6]
+Pins:
+- "Collector" (Type: Electrical, Location: [2;0], Direction: North)
+- "Emitter" (Type: Electrical, Location: [2;6], Direction: South)
+- "Gate" (Type: ControlIn, Location: [0;3], Direction: West)
+Parameters:
+- "Ron"
+- "Vf"
+- "InitialTemperature"
+- "ShowJunctionTemperatureControlPin"
+- "LossCalculationFrequency"
+---
+
+Model Name: "Ideal MOSFET"
+Library: Electrical\Semiconductors
+Dimensions: [4;6]
+Pins:
+- "P" (Type: Electrical, Location: [2;0], Direction: North)
+- "N" (Type: Electrical, Location: [2;6], Direction: South)
+- "In" (Type: ControlIn, Location: [0;3], Direction: West)
+Parameters:
+- "Ron"
+- "InitialTemperature"
+- "ShowJunctionTemperatureControlPin"
+- "LossCalculationFrequency"
+---
+
+Model Name: "Ideal MOSFET with Diode"
+Library: Electrical\Semiconductors
+Dimensions: [4;6]
+Pins:
+- "Drain" (Type: Electrical, Location: [2;0], Direction: North)
+- "Source" (Type: Electrical, Location: [2;6], Direction: South)
+- "Gate" (Type: ControlIn, Location: [0;3], Direction: West)
+Parameters:
+- "Ron"
+- "Rdon"
+- "Vdf"
+- "InitialTemperature"
+- "ShowJunctionTemperatureControlPin"
+- "LossCalculationFrequency"
+---
+
+Model Name: "Ideal Thyristor"
+Library: Electrical\Semiconductors
+Dimensions: [6;2]
+Pins:
+- "Anode" (Type: Electrical, Location: [0;1], Direction: West)
+- "Cathode" (Type: Electrical, Location: [6;1], Direction: East)
+- "In" (Type: ControlIn, Location: [5;0], Direction: North)
+---
+
+Model Name: "Current Meter"
+Library: Electrical\Probes
+Dimensions: [4;2]
+Pins:
+- "P" (Type: Electrical, Location: [0;1], Direction: West)
+- "N" (Type: Electrical, Location: [4;1], Direction: East)
+Parameters:
+- "SamplingTime"
+---
+
+Model Name: "Current Probe"
+Library: Electrical\Probes
+Dimensions: [4;2]
+Pins:
+- "P" (Type: Electrical, Location: [0;1], Direction: West)
+- "N" (Type: Electrical, Location: [4;1], Direction: East)
+- "Out" (Type: ControlOut, Location: [2;2], Direction: South)
+Parameters:
+- "Gain"
+- "SamplingTime"
+---
+
+Model Name: "Differential Voltage Meter"
+Library: Electrical\Probes
+Dimensions: [4;2]
+Pins:
+- "P" (Type: Electrical, Location: [0;1], Direction: West)
+- "N" (Type: Electrical, Location: [4;1], Direction: East)
+Parameters:
+- "SamplingTime"
+---
+
+Model Name: "Differential Voltage Probe"
+Library: Electrical\Probes
+Dimensions: [4;2]
+Pins:
+- "P" (Type: Electrical, Location: [0;1], Direction: West)
+- "N" (Type: Electrical, Location: [4;1], Direction: East)
+- "Out" (Type: ControlOut, Location: [2;2], Direction: South)
+Parameters:
+- "Gain"
+- "SamplingTime"
+---
+
+Model Name: "Power Probe"
+Library: Electrical\Probes
+Dimensions: [5;4]
+Pins:
+- "L1" (Type: Electrical, Location: [0;1], Direction: West)
+- "L2" (Type: Electrical, Location: [0;3], Direction: West)
+- "R1" (Type: Electrical, Location: [5;1], Direction: East)
+- "R2" (Type: Electrical, Location: [5;3], Direction: East)
+- "P" (Type: ControlOut, Location: [1;4], Direction: South)
+- "Q" (Type: ControlOut, Location: [2;4], Direction: South)
+- "S" (Type: ControlOut, Location: [3;4], Direction: South)
+- "PF" (Type: ControlOut, Location: [4;4], Direction: South)
+Parameters:
+- "Frequency"
+- "SamplingTime"
+---
+
+Model Name: "Power Probe (3 Phases)"
+Library: Electrical\Probes
+Dimensions: [8;8]
+Pins:
+- "L_A" (Type: Electrical, Location: [0;2], Direction: West)
+- "L_B" (Type: Electrical, Location: [0;4], Direction: West)
+- "L_C" (Type: Electrical, Location: [0;6], Direction: West)
+- "R_A" (Type: Electrical, Location: [8;2], Direction: East)
+- "R_B" (Type: Electrical, Location: [8;4], Direction: East)
+- "R_C" (Type: Electrical, Location: [8;6], Direction: East)
+- "P" (Type: ControlOut, Location: [2;8], Direction: South)
+- "Q" (Type: ControlOut, Location: [4;8], Direction: South)
+- "S" (Type: ControlOut, Location: [6;8], Direction: South)
+Parameters:
+- "Frequency"
+- "SamplingTime"
+---
+
+Model Name: "Voltage Meter"
+Library: Electrical\Probes
+Dimensions: [4;2]
+Pins:
+- "P" (Type: Electrical, Location: [0;1], Direction: West)
+Parameters:
+- "SamplingTime"
+---
+
+Model Name: "Voltage Probe"
+Library: Electrical\Probes
+Dimensions: [4;2]
+Pins:
+- "P" (Type: Electrical, Location: [0;1], Direction: West)
+- "Out" (Type: ControlOut, Location: [4;1], Direction: East)
+Parameters:
+- "Gain"
+- "SamplingTime"
+---
+
+Model Name: "Capacitor"
+Library: Electrical\RLC
+Dimensions: [6;2]
+Pins:
+- "P" (Type: Electrical, Location: [0;1], Direction: West)
+- "N" (Type: Electrical, Location: [6;1], Direction: East)
+Parameters:
+- "Value"
+- "Vinit"
+---
+
+Model Name: "Common-Mode Choke"
+Library: Electrical\RLC
+Dimensions: [6;4]
+Pins:
+- "W1P" (Type: Electrical, Location: [0;1], Direction: West)
+- "W1N" (Type: Electrical, Location: [6;1], Direction: East)
+- "W2P" (Type: Electrical, Location: [0;3], Direction: West)
+- "W2N" (Type: Electrical, Location: [6;3], Direction: East)
+Parameters:
+- "CommonModeInductance"
+- "LeakageInductance"
+- "WindingResistance"
+---
+
+Model Name: "Controlled Capacitor"
+Library: Electrical\RLC
+Dimensions: [6;2]
+Pins:
+- "P" (Type: Electrical, Location: [0;1], Direction: West)
+- "N" (Type: Electrical, Location: [6;1], Direction: East)
+- "In" (Type: ControlIn, Location: [3;0], Direction: North)
+Parameters:
+- "Vinit"
+---
+
+Model Name: "Controlled Resistor"
+Library: Electrical\RLC
+Dimensions: [6;2]
+Pins:
+- "P" (Type: Electrical, Location: [0;1], Direction: West)
+- "N" (Type: Electrical, Location: [6;1], Direction: East)
+- "In" (Type: ControlIn, Location: [3;0], Direction: North)
+---
+
+Model Name: "Inductor (Coupled)"
+Library: Electrical\RLC
+Dimensions: [6;6]
+Pins:
+- "W1P" (Type: Electrical, Location: [0;1], Direction: West)
+- "W1N" (Type: Electrical, Location: [6;1], Direction: East)
+- "W2P" (Type: Electrical, Location: [0;3], Direction: West)
+- "W2N" (Type: Electrical, Location: [6;3], Direction: East)
+- "W3P" (Type: Electrical, Location: [0;5], Direction: West)
+- "W3N" (Type: Electrical, Location: [6;5], Direction: East)
+Parameters:
+- "NumberOfWindings"
+- "Inductance"
+- "Iinit"
+---
+
+Model Name: "Inductor"
+Library: Electrical\RLC
+Dimensions: [6;2]
+Pins:
+- "P" (Type: Electrical, Location: [0;1], Direction: West)
+- "N" (Type: Electrical, Location: [6;1], Direction: East)
+Parameters:
+- "Value"
+- "Iinit"
+---
+
+Model Name: "Piecewise Linear Resistor"
+Library: Electrical\RLC
+Dimensions: [6;2]
+Pins:
+- "P" (Type: Electrical, Location: [0;1], Direction: West)
+- "N" (Type: Electrical, Location: [6;1], Direction: East)
+Parameters:
+- "VoltageCurrentMatrix"
+---
+
+Model Name: "Resistor"
+Library: Electrical\RLC
+Dimensions: [6;2]
+Pins:
+- "P" (Type: Electrical, Location: [0;1], Direction: West)
+- "N" (Type: Electrical, Location: [6;1], Direction: East)
+Parameters:
+- "Value"
+---
+
+Model Name: "Resistor (Thermal Losses)"
+Library: Electrical\RLC
+Dimensions: [6;2]
+Pins:
+- "P" (Type: Electrical, Location: [0;1], Direction: West)
+- "N" (Type: Electrical, Location: [6;1], Direction: East)
+- "resistor_losses_source" (Type: Thermal, Location: [3;0], Direction: North)
+Parameters:
+- "Value"
+- "LossCalculationFrequency"
+---
+
+Model Name: "Saturable Capacitor"
+Library: Electrical\RLC
+Dimensions: [6;2]
+Pins:
+- "P" (Type: Electrical, Location: [0;1], Direction: West)
+- "N" (Type: Electrical, Location: [6;1], Direction: East)
+Parameters:
+- "ApparentCapacitance"
+- "Vinit"
+---
+
+Model Name: "Saturable Inductor"
+Library: Electrical\RLC
+Dimensions: [6;2]
+Pins:
+- "P" (Type: Electrical, Location: [0;1], Direction: West)
+- "N" (Type: Electrical, Location: [6;1], Direction: East)
+Parameters:
+- "ApparentInductance"
+- "Iinit"
+---
+
+Model Name: "AC Sweep Perturbation"
+Library: Control\Sources
+Dimensions: [4;4]
+Pins:
+- "Out" (Type: ControlOut, Location: [4;2], Direction: East)
+Parameters:
+- "SamplingTime"
+---
+
+Model Name: "Constant"
+Library: Control\Sources
+Dimensions: [4;4]
+Pins:
+- "Out" (Type: ControlOut, Location: [4;2], Direction: East)
+Parameters:
+- "Value"
+- "SamplingTime"
+---
+
+Model Name: "Controlled PWM Generator"
+Library: Control\Sources
+Dimensions: [8;6]
+Pins:
+- "Frequency" (Type: ControlIn, Location: [0;1], Direction: West)
+- "DutyCycle" (Type: ControlIn, Location: [0;3], Direction: West)
+- "PhaseShift" (Type: ControlIn, Location: [0;5], Direction: West)
+- "Out" (Type: ControlOut, Location: [8;3], Direction: East)
+Parameters:
+- "RiseTime"
+- "FallTime"
+- "MinimalFrequency"
+- "SamplingTime"
+---
+
+Model Name: "Controlled Sawtooth Wave Generator"
+Library: Control\Sources
+Dimensions: [8;6]
+Pins:
+- "Frequency" (Type: ControlIn, Location: [0;2], Direction: West)
+- "PhaseShift" (Type: ControlIn, Location: [0;4], Direction: West)
+- "Out" (Type: ControlOut, Location: [8;3], Direction: East)
+Parameters:
+- "MinimalFrequency"
+- "SamplingTime"
+---
+
+Model Name: "Controlled Triangular Wave Generator"
+Library: Control\Sources
+Dimensions: [8;6]
+Pins:
+- "Frequency" (Type: ControlIn, Location: [0;3], Direction: West)
+- "Out" (Type: ControlOut, Location: [8;3], Direction: East)
+Parameters:
+- "MinimalFrequency"
+- "DutyCycle"
+- "SamplingTime"
+---
+
+Model Name: "Piecewise Linear"
+Library: Control\Sources
+Dimensions: [4;4]
+Pins:
+- "Out" (Type: ControlOut, Location: [4;2], Direction: East)
+Parameters:
+- "TimeValueMatrix"
+- "SamplingTime"
+---
+
+Model Name: "Sawtooth Wave"
+Library: Control\Sources
+Dimensions: [4;4]
+Pins:
+- "Out" (Type: ControlOut, Location: [4;2], Direction: East)
+Parameters:
+- "Amplitude"
+- "Frequency"
+- "Offset"
+- "PhaseShift"
+- "SamplingTime"
+---
+
+Model Name: "Sinusoidal Wave"
+Library: Control\Sources
+Dimensions: [4;4]
+Pins:
+- "Out" (Type: ControlOut, Location: [4;2], Direction: East)
+Parameters:
+- "Amplitude"
+- "Frequency"
+- "Offset"
+- "PhaseShift"
+- "SamplingTime"
+---
+
+Model Name: "Square Wave"
+Library: Control\Sources
+Dimensions: [4;4]
+Pins:
+- "Out" (Type: ControlOut, Location: [4;2], Direction: East)
+Parameters:
+- "Amplitude"
+- "Frequency"
+- "DutyCycle"
+- "Offset"
+- "PhaseShift"
+- "SamplingTime"
+---
+
+Model Name: "Step"
+Library: Control\Sources
+Dimensions: [4;4]
+Pins:
+- "Out" (Type: ControlOut, Location: [4;2], Direction: East)
+Parameters:
+- "InitialValue"
+- "FinalValue"
+- "StepTime"
+- "SamplingTime"
+---
+
+Model Name: "Triangular Wave"
+Library: Control\Sources
+Dimensions: [4;4]
+Pins:
+- "Out" (Type: ControlOut, Location: [4;2], Direction: East)
+Parameters:
+- "Amplitude"
+- "Frequency"
+- "DutyCycle"
+- "Offset"
+- "PhaseShift"
+- "SamplingTime"
+---
+
+Model Name: "Monostable"
+Library: Control\Logic
+Dimensions: [4;6]
+Pins:
+- "Rising" (Type: ControlIn, Location: [0;2], Direction: West)
+- "Falling" (Type: ControlIn, Location: [0;4], Direction: West)
+- "PulseWidth" (Type: ControlIn, Location: [2;6], Direction: South)
+- "Q" (Type: ControlOut, Location: [4;2], Direction: East)
+- "notQ" (Type: ControlOut, Location: [4;4], Direction: East)
+Parameters:
+- "SamplingTime"
+---
+
+Model Name: "AND"
+Library: Control\Logic
+Dimensions: [4;4]
+Pins:
+- "In1" (Type: ControlIn, Location: [0;1], Direction: West)
+- "In2" (Type: ControlIn, Location: [0;3], Direction: West)
+- "Out" (Type: ControlOut, Location: [4;2], Direction: East)
+Parameters:
+- "SamplingTime"
+---
+
+Model Name: "J-K Flip-Flop"
+Library: Control\Logic
+Dimensions: [4;6]
+Pins:
+- "J" (Type: ControlIn, Location: [0;2], Direction: West)
+- "K" (Type: ControlIn, Location: [0;4], Direction: West)
+- "clock" (Type: ControlIn, Location: [0;3], Direction: West)
+- "Q" (Type: ControlOut, Location: [4;2], Direction: East)
+- "notQ" (Type: ControlOut, Location: [4;4], Direction: East)
+Parameters:
+- "SamplingTime"
+---
+
+Model Name: "Not"
+Library: Control\Logic
+Dimensions: [4;4]
+Pins:
+- "In" (Type: ControlIn, Location: [0;2], Direction: West)
+- "Out" (Type: ControlOut, Location: [4;2], Direction: East)
+Parameters:
+- "SamplingTime"
+---
+
+Model Name: "OR"
+Library: Control\Logic
+Dimensions: [4;4]
+Pins:
+- "In1" (Type: ControlIn, Location: [0;1], Direction: West)
+- "In2" (Type: ControlIn, Location: [0;3], Direction: West)
+- "Out" (Type: ControlOut, Location: [4;2], Direction: East)
+Parameters:
+- "SamplingTime"
+---
+
+Model Name: "Signal Selector"
+Library: Control\Logic
+Dimensions: [8;4]
+Pins:
+- "i1" (Type: ControlIn, Location: [0;1], Direction: West)
+- "i2" (Type: ControlIn, Location: [0;3], Direction: West)
+- "Selector" (Type: ControlIn, Location: [4;4], Direction: South)
+- "Out" (Type: ControlOut, Location: [8;2], Direction: East)
+Parameters:
+- "NumberOfInputs"
+- "SamplingTime"
+---
+
+Model Name: "Set-Reset Flip-Flop"
+Library: Control\Logic
+Dimensions: [4;6]
+Pins:
+- "S" (Type: ControlIn, Location: [0;2], Direction: West)
+- "R" (Type: ControlIn, Location: [0;4], Direction: West)
+- "Q" (Type: ControlOut, Location: [4;2], Direction: East)
+- "notQ" (Type: ControlOut, Location: [4;4], Direction: East)
+Parameters:
+- "SamplingTime"
+---
+
+Model Name: "XOR"
+Library: Control\Logic
+Dimensions: [4;4]
+Pins:
+- "In1" (Type: ControlIn, Location: [0;1], Direction: West)
+- "In2" (Type: ControlIn, Location: [0;3], Direction: West)
+- "Out" (Type: ControlOut, Location: [4;2], Direction: East)
+Parameters:
+- "SamplingTime"
+---
