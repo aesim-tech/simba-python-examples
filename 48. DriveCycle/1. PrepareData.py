@@ -16,7 +16,7 @@ injecté dans une source PWL ou FromFile dans votre design Simba.
 # ╚══════════════════════════════════════════════════════════════════════╝
 
 # Fichier CSV d’entrée : doit contenir deux colonnes nommées TIME_S et SPEED_MPS
-CSV_INPUT_PATH       = "class2-4-ExtraHigh.csv"
+CSV_INPUT_PATH       = "class2-2-Medium.csv"
 
 # Noms des colonnes attendues dans le CSV
 COL_TIME_S           = "TIME_S"       # [s]
@@ -28,7 +28,7 @@ SAMPLING_TIME_S      = 1            # [s]
 # Paramètres véhicule / chaîne de traction
 VEHICLE_MASS_KG      = 1_500          # [kg]
 WHEEL_RADIUS_M       = 0.30           # [m]
-GEAR_RATIO           = 5.0            # Démultiplication totale (roue ← moteur)
+GEAR_RATIO           = 7.0            # Démultiplication totale (roue ← moteur)
 DRIVELINE_EFF        = 0.97           # Rendement mécanique (≈ essieu + pont)
 
 # Résistances roulage & aérodynamiques

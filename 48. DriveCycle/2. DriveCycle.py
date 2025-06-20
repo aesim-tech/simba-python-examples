@@ -228,7 +228,7 @@ def main():
 
     results = [None] * n_points  # pre-allocate list for random arrival order
 
-    max_workers = os.cpu_count() or 4
+    max_workers = License.NumberOfAvailableParallelSimulationLicense()
     with ProcessPoolExecutor(max_workers=max_workers) as pool, tqdm(total=n_points) as pbar:
         futures = {}
         submit_idx = 0
