@@ -28,7 +28,7 @@ SAMPLING_TIME_S      = 1            # [s]
 # Paramètres véhicule / chaîne de traction
 VEHICLE_MASS_KG      = 1_500          # [kg]
 WHEEL_RADIUS_M       = 0.30           # [m]
-GEAR_RATIO           = 9.0            # Démultiplication totale (roue ← moteur)
+GEAR_RATIO           = 5.0            # Démultiplication totale (roue ← moteur)
 DRIVELINE_EFF        = 0.97           # Rendement mécanique (≈ essieu + pont)
 
 # Résistances roulage & aérodynamiques
@@ -39,8 +39,8 @@ DRAG_COEFF           = 0.25           # Cx
 ROAD_GRADE_PCT       = 0.0            # Pente (+ = montée) in %
 
 # Paramètres filtre accélération (Savitzky-Golay)
-SG_WINDOW            = 7             # Doit être impair ; adaptez à SAMPLING_TIME
-SG_POLY              = 3
+SG_WINDOW            = 1             # Doit être impair ; adaptez à SAMPLING_TIME
+SG_POLY              = 1
 
 # Fichiers de sortie
 CSV_OUTPUT_PATH      = "prepared_drive_cycle.csv"

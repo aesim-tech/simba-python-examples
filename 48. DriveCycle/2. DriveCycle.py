@@ -147,7 +147,7 @@ def main():
         # ───────────────────────────────────────────────────────────────────────
 
         # approximate phase current magnitude from torque via kt
-        kt = 1.0                           # [Nm/A] – replace by your machine's
+        kt = 0.6                           # [Nm/A] 
         Ia = abs(torque / kt)
 
         Id, Iq = select_id_iq(Ia, rpm,
