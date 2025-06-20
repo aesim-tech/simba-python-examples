@@ -26,7 +26,7 @@ COL_SPEED_KPH        = "SPEED_KPH"    # [m/s]
 SAMPLING_TIME_S      = 1            # [s]
 
 # Paramètres véhicule / chaîne de traction
-VEHICLE_MASS_KG      = 1_700          # [kg]
+VEHICLE_MASS_KG      = 1_500          # [kg]
 WHEEL_RADIUS_M       = 0.30           # [m]
 GEAR_RATIO           = 9.0            # Démultiplication totale (roue ← moteur)
 DRIVELINE_EFF        = 0.97           # Rendement mécanique (≈ essieu + pont)
@@ -35,7 +35,7 @@ DRIVELINE_EFF        = 0.97           # Rendement mécanique (≈ essieu + pont)
 CRR                  = 0.012          # Coeff. roulement (sans dimension)
 AIR_DENSITY_KGPM3    = 1.225          # [kg/m³]
 FRONTAL_AREA_M2      = 2.2            # [m²]
-DRAG_COEFF           = 0.29           # Cx
+DRAG_COEFF           = 0.25           # Cx
 ROAD_GRADE_PCT       = 0.0            # Pente (+ = montée) in %
 
 # Paramètres filtre accélération (Savitzky-Golay)
