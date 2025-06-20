@@ -23,7 +23,7 @@ HERE = os.path.abspath(os.path.dirname(__file__))
 RESULT_PKL = os.path.join(HERE, "drive_cycle_results.pkl")
 
 # Vehicle / driveline parameters (must reflect simulation settings)
-GEAR_RATIO = 5.0            # Total reduction wheel ← motor (dimensionless)
+GEAR_RATIO = 7.0            # Total reduction wheel ← motor (dimensionless)
 WHEEL_RADIUS_M = 0.30       # [m]
 
 

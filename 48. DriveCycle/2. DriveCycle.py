@@ -20,7 +20,6 @@ Notes
 * The script uses `concurrent.futures.ProcessPoolExecutor`; adjust
   `max_workers` if you want to limit CPU usage.
 
-© 2025 – adapted for parallel execution by ChatGPT
 """
 
 import os
@@ -193,8 +192,14 @@ def simulate_point(idx: int, row_dict: dict, tj_init: float) -> tuple[int, dict]
     act_speed  = job.GetSignalByName(SIG_SPEED_RPM).DataPoints[-1]
 
     total_loss = inv_loss + mot_loss
-    eff        = 100.0 * pout / (pout + total_loss) if (pout + total_loss) else np.nan
 
+        # --- Efficiency (handles motoring & regen) -------------------------------
+    if abs(pout) < 1e-3 and total_loss < 1e-3:
+        eff = np.nan                          # completely idle → undefined
+    else:
+        eff = abs(pout) / (abs(pout) + total_loss)  # 0…1
+
+        eff = eff * 100 #pct
     return idx, {
         "time_s"              : row_dict["time_s"],
         "motor_rpm_cmd"       : rpm,

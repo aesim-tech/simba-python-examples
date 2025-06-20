@@ -39,8 +39,8 @@ DRAG_COEFF           = 0.25           # Cx
 ROAD_GRADE_PCT       = 0.0            # Pente (+ = montée) in %
 
 # Paramètres filtre accélération (Savitzky-Golay)
-SG_WINDOW            = 1             # Doit être impair ; adaptez à SAMPLING_TIME
-SG_POLY              = 1
+SG_WINDOW            = 11             # Doit être impair ; adaptez à SAMPLING_TIME
+SG_POLY              = 7
 
 # Fichiers de sortie
 CSV_OUTPUT_PATH      = "prepared_drive_cycle.csv"
