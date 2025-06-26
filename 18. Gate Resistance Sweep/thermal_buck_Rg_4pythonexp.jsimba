@@ -13,12 +13,36 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "DC1",
             "ID": "eca659c1-14a2-4047-a9a5-6be0ac550ee1",
             "Parameters": {
-              "Voltage": "600"
+              "Voltage": "600",
+              "Name": "DC1"
             },
-            "EnabledScopes": []
+            "EnabledScopes": [
+              "Current"
+            ],
+            "ParametersDisplayAttributes": {
+              "Voltage": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "2 2",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              },
+              "Name": {
+                "IsVisible": true,
+                "Suffix": "",
+                "RelativeLocation": "4 3",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 2,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              }
+            }
           },
           {
             "LibraryName": "Ground",
@@ -27,10 +51,24 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "Ground1",
             "ID": "2abe7088-e838-4d3a-9549-c2272f3852a3",
-            "Parameters": {},
-            "EnabledScopes": []
+            "Parameters": {
+              "Name": "Ground1"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "4 3",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 2,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              }
+            }
           },
           {
             "LibraryName": "Square Wave",
@@ -39,6 +77,7 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "C1",
             "ID": "fec2b43c-33b5-4ae4-b833-585d317fdf5a",
             "Parameters": {
@@ -47,28 +86,147 @@
               "DutyCycle": "0.5",
               "Offset": "0",
               "PhaseShift": "0",
-              "SamplingTime": "none"
+              "SamplingTime": "none",
+              "Name": "C1"
             },
-            "EnabledScopes": []
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Amplitude": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 4",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              },
+              "Frequency": {
+                "IsVisible": false,
+                "Suffix": "Hz",
+                "RelativeLocation": "1 5",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              },
+              "DutyCycle": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 6",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              },
+              "Offset": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 7",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              },
+              "PhaseShift": {
+                "IsVisible": false,
+                "Suffix": "\u00B0",
+                "RelativeLocation": "1 8",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              },
+              "SamplingTime": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 9",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              },
+              "Name": {
+                "IsVisible": true,
+                "Suffix": "",
+                "RelativeLocation": "1 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#04B404"
+              }
+            }
           },
           {
-            "LibraryName": "Diode",
+            "LibraryName": "Ideal Diode",
             "Top": 19,
             "Left": 9,
             "Angle": 270,
             "HF": false,
             "VF": true,
+            "Disabled": false,
             "Name": "D1",
             "ID": "5c0539e0-d96f-40d7-8fae-848c26fea75d",
             "Parameters": {
               "Rd": "0",
               "Vf": "0",
-              "LossCalculationFrequency": "fsw"
+              "Name": "D1"
             },
             "EnabledScopes": [],
-            "ThermalDataID": "b1762f48-e074-4677-800b-9b71fa753c58",
+            "ThermalDataID": "658350e4-072b-4f31-99d3-0c9bd55c7e3a",
             "LossCalculationFrequency": "fsw",
-            "CustomVariables": []
+            "InitialTemperature": "25",
+            "ShowJunctionTemperatureControlPin": "0",
+            "CustomVariables": [
+              {
+                "Name": "v",
+                "Value": "0.0",
+                "Description": ""
+              },
+              {
+                "Name": "i",
+                "Value": "0.0",
+                "Description": ""
+              },
+              {
+                "Name": "T",
+                "Value": "0.0",
+                "Description": ""
+              },
+              {
+                "Name": "Rgon",
+                "Value": "0.0",
+                "Description": "Gate (on) resistance"
+              }
+            ],
+            "ParametersDisplayAttributes": {
+              "Rd": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "2 0",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              },
+              "Vf": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "2 1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              },
+              "Name": {
+                "IsVisible": true,
+                "Suffix": "",
+                "RelativeLocation": "2 2",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              }
+            }
           },
           {
             "LibraryName": "Inductor",
@@ -77,15 +235,46 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "L1",
             "ID": "41641eb9-1154-46c0-9886-c75adf63a6c0",
             "Parameters": {
               "Value": "1.2m",
-              "Iinit": "0"
+              "Iinit": "0",
+              "Name": "L1"
             },
             "EnabledScopes": [
               "Current"
-            ]
+            ],
+            "ParametersDisplayAttributes": {
+              "Value": {
+                "IsVisible": true,
+                "Suffix": "H",
+                "RelativeLocation": "2 2",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              },
+              "Iinit": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "2 4",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              },
+              "Name": {
+                "IsVisible": true,
+                "Suffix": "",
+                "RelativeLocation": "2 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              }
+            }
           },
           {
             "LibraryName": "Thermal Capacitor",
@@ -94,15 +283,46 @@
             "Angle": 90,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "C2",
             "ID": "cb50b386-2412-4f73-b7e0-8e675b7143fb",
             "Parameters": {
               "Value": "0.05",
-              "Vinit": "25"
+              "Vinit": "25",
+              "Name": "C2"
             },
             "EnabledScopes": [
               "Temperature"
-            ]
+            ],
+            "ParametersDisplayAttributes": {
+              "Value": {
+                "IsVisible": true,
+                "Suffix": "J/K ",
+                "RelativeLocation": "0 4",
+                "UnrotatedWidth": 4,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#E59400"
+              },
+              "Vinit": {
+                "IsVisible": false,
+                "Suffix": "\u00B0",
+                "RelativeLocation": "2 5",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#E59400"
+              },
+              "Name": {
+                "IsVisible": true,
+                "Suffix": "",
+                "RelativeLocation": "2 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#E59400"
+              }
+            }
           },
           {
             "LibraryName": "Ground (Thermal)",
@@ -111,10 +331,24 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "Ground2",
             "ID": "0a98b685-3bdc-4028-b7cf-cf5969d1f5b4",
-            "Parameters": {},
-            "EnabledScopes": []
+            "Parameters": {
+              "Name": "Ground2"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "4 3",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 2,
+                "FontSize": 12,
+                "Color": "#E59400"
+              }
+            }
           },
           {
             "LibraryName": "Thermal Resistor",
@@ -123,12 +357,34 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "R1",
             "ID": "7b4227b7-aa10-4c23-b031-4390aa94842a",
             "Parameters": {
-              "Value": "0.1"
+              "Value": "0.1",
+              "Name": "R1"
             },
-            "EnabledScopes": []
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Value": {
+                "IsVisible": true,
+                "Suffix": "K/W ",
+                "RelativeLocation": "2 2",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#E59400"
+              },
+              "Name": {
+                "IsVisible": true,
+                "Suffix": "",
+                "RelativeLocation": "2 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#E59400"
+              }
+            }
           },
           {
             "LibraryName": "Capacitor",
@@ -137,13 +393,44 @@
             "Angle": 90,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "C3",
             "ID": "6fedd4c1-aead-4d44-82f1-8b2c039c1e22",
             "Parameters": {
               "Value": "100u",
-              "Vinit": "0"
+              "Vinit": "0",
+              "Name": "C3"
             },
-            "EnabledScopes": []
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Value": {
+                "IsVisible": true,
+                "Suffix": "F",
+                "RelativeLocation": "2 2",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              },
+              "Vinit": {
+                "IsVisible": false,
+                "Suffix": "V",
+                "RelativeLocation": "2 3",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              },
+              "Name": {
+                "IsVisible": true,
+                "Suffix": "",
+                "RelativeLocation": "2 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              }
+            }
           },
           {
             "LibraryName": "Constant Temperature",
@@ -152,12 +439,34 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "T1",
             "ID": "383deb1d-a19e-450b-a3be-d5eac54f920b",
             "Parameters": {
-              "Temperature": "25"
+              "Temperature": "25",
+              "Name": "T1"
             },
-            "EnabledScopes": []
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Temperature": {
+                "IsVisible": true,
+                "Suffix": "\u00B0 ",
+                "RelativeLocation": "2 1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#E59400"
+              },
+              "Name": {
+                "IsVisible": true,
+                "Suffix": "",
+                "RelativeLocation": "4 3",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 2,
+                "FontSize": 12,
+                "Color": "#E59400"
+              }
+            }
           },
           {
             "LibraryName": "Ground (Thermal)",
@@ -166,10 +475,24 @@
             "Angle": 0,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "Ground3",
             "ID": "bda75b53-914b-4f49-994d-ad596a2a36e5",
-            "Parameters": {},
-            "EnabledScopes": []
+            "Parameters": {
+              "Name": "Ground3"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "4 3",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 2,
+                "FontSize": 12,
+                "Color": "#E59400"
+              }
+            }
           },
           {
             "LibraryName": "Resistor",
@@ -178,27 +501,50 @@
             "Angle": 90,
             "HF": false,
             "VF": false,
+            "Disabled": false,
             "Name": "R2",
             "ID": "3ac8fc23-9d33-4299-a2ae-42d8d622a888",
             "Parameters": {
-              "Value": "4"
+              "Value": "4",
+              "Name": "R2"
             },
             "EnabledScopes": [
               "Voltage"
-            ]
+            ],
+            "ParametersDisplayAttributes": {
+              "Value": {
+                "IsVisible": true,
+                "Suffix": "\u03A9",
+                "RelativeLocation": "2 2",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              },
+              "Name": {
+                "IsVisible": true,
+                "Suffix": "",
+                "RelativeLocation": "2 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              }
+            }
           },
           {
-            "LibraryName": "MOSFET",
+            "LibraryName": "Ideal MOSFET",
             "Top": 5,
             "Left": 10,
             "Angle": 0,
             "HF": false,
             "VF": false,
-            "Name": "MOSFET1",
+            "Disabled": false,
+            "Name": "MOS1",
             "ID": "112ba93c-8cbc-4ec8-acb2-c387c99efdd1",
             "Parameters": {
               "Ron": "0",
-              "LossCalculationFrequency": "fsw"
+              "Name": "MOS1"
             },
             "EnabledScopes": [
               "Average Conduction Losses (W)",
@@ -208,13 +554,35 @@
             ],
             "ThermalDataID": "d205a2da-d605-45c7-b19b-7ca8fdacf778",
             "LossCalculationFrequency": "fsw",
+            "InitialTemperature": "25",
+            "ShowJunctionTemperatureControlPin": "0",
             "CustomVariables": [
               {
                 "Name": "Rg",
                 "Value": "2.5",
                 "Description": "External gate resistance"
               }
-            ]
+            ],
+            "ParametersDisplayAttributes": {
+              "Ron": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 0",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              },
+              "Name": {
+                "IsVisible": true,
+                "Suffix": "",
+                "RelativeLocation": "2 1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 2,
+                "FontSize": 12,
+                "Color": "#0081BC"
+              }
+            }
           }
         ],
         "Connectors": [
@@ -410,11 +778,15 @@
             "Name": "fsw",
             "Value": "50k"
           }
-        ]
+        ],
+        "VariableFile": ""
       },
       "TransientAnalysis": {
-        "EndTime": "0.05",
+        "EndTime": "2",
         "FixedTimeStep": false,
+        "SaveInitialPoint": true,
+        "CompressScopes": true,
+        "DualStageElectroThermalAnalysis": true,
         "StopAtSteadyState": true,
         "TimeStep": "5E-08",
         "BaseFrequencyParameterEnabled": true,
@@ -673,6 +1045,7 @@
       "Custom1DTables": [],
       "Custom2DTables": [],
       "Custom3DTables": [],
+      "Custom4DTables": [],
       "ConductionLossComputationMethod": 1,
       "ConductionLossComputationFormula": null,
       "ConductionLossComputationMethodGateOff": 1,
@@ -685,68 +1058,148 @@
       "ID": "d205a2da-d605-45c7-b19b-7ca8fdacf778"
     },
     {
-      "Name": "Infineon IGW15T120 (Diode)",
+      "Name": "Infineon IDWD75N120D7 (Diode)",
       "Manufacturer": "Infineon",
-      "PartNumber": "IGW15T120",
-      "Comment": "",
+      "PartNumber": "IDWD75N120D7",
+      "Comment": "Disclaimer: \nPlease be advised that the losses incurred during diode reverse recovery are highly dependent on the diF/dt values, which are determined by the di/dt of the switch. \nThe Erec values defined in this model are based on measured data with the switch, \u0022IKW75N1200CH7\u0022 and are influenced by the set-up parasitics as well. \nIn this model, the discrete Rg values of \u00228, 10.1, 22.1 and 30.8\u0022 [Ohms] correspond to diF/dt values of \u00221516, 1475, 1123, and 971\u0022 [A/usec], respectively. It must be noted that different switches in different set-ups will result in different di/dt values, which will, in turn, cause varying Erec losses for the same Rgs defined above. \nTo obtain a closer approximation of the Erec data for the diode, it is recommended that the corresponding Rg value be used, given that the di/dt in the application is a known parameter. This may result in a closer correspondence between the simulated values and actual Erec losses for the diode. \nsupport@infineon.com\nVersion 1.0 \nDate: 2024-02-09 \nModule: IDWD75E120D7 with IKW75N120CH7 \nPackage:PG-TO247-2 \nInfineon\nPLECS XML Diode Model\n\n%% Model Parameters: \nvar_bp=0 \nvar_device=0 \nvar_TIM=0 \nRCCEE=0 \nVCES=1.7 \nIC_NOM=75 \nVCE_NOM=600 \nRgonnom=8 \nRgoffnom=8 \nRthjc=0.467 \nRthch = 0 \nTvjop_max=175 \nvar_advanced = 0 \n%% End of Model Parameters0 \nAdditional Comment: \n",
       "ConductionLossesGateDependency": false,
       "SemiconductorType": "DiodeThermalDataSemiconductorType",
       "ThermalImpedanceType": "FosterThermalNetworkType",
       "ConductionLosses": [
         {
           "Temperature": 25,
-          "IVSerialized": "[0 0.706466077; 1.5 0.97433232; 3.75 1.153524159; 7.5 1.365090494; 15 1.676778748; 30 2.135970748; 60 2.812471351]"
+          "IVSerialized": "[0 0; 0.014 0.2; 0.027 0.4; 0.168 0.6; 0.686 0.8; 2.296 1; 5.481 1.2; 10.404 1.4; 17.261 1.6; 25.854 1.8; 36.084 2; 47.862 2.2; 61.045 2.4; 75.543 2.6; 91.201 2.8; 107.889 3; 125.417 3.2]"
         },
         {
-          "Temperature": 150,
-          "IVSerialized": "[0 0.466530121; 1.5 0.763166327; 3.75 0.985344709; 7.5 1.258437204; 15 1.675279532; 30 2.31153842; 60 3.282709877]"
+          "Temperature": 175,
+          "IVSerialized": "[0 0; 0.014 0.09; 0.027 0.174; 0.168 0.288; 0.686 0.453; 2.296 0.647; 5.481 0.847; 10.404 1.05; 17.261 1.261; 25.854 1.478; 36.084 1.697; 47.862 1.919; 61.045 2.143; 75.543 2.37; 91.201 2.595; 107.889 2.823; 125.417 3.047]"
         }
       ],
       "ConductionLossesGateOff": [],
       "TurnOnLosses": [
         {
-          "Temperature": 25,
+          "Temperature": 0,
           "Voltage": 0,
           "EISerialized": "[0 0]"
         }
       ],
       "TurnOffLosses": [
         {
-          "Temperature": 25,
-          "Voltage": -600,
-          "EISerialized": "[0 0; 1.5 9.081E-05; 3.75 0.0001637; 7.5 0.0002556; 15 0.0003991; 30 0.0006232; 60 0.0009731]"
-        },
-        {
-          "Temperature": 25,
+          "Temperature": 0,
           "Voltage": 0,
-          "EISerialized": "[0 0; 1.5 0; 3.75 0; 7.5 0; 15 0; 30 0; 60 0]"
-        },
-        {
-          "Temperature": 150,
-          "Voltage": -600,
-          "EISerialized": "[0 6.989E-05; 1.5 0.0003168; 3.75 0.0004801; 7.5 0.0006723; 15 0.0009545; 30 0.001369; 60 0.001977]"
-        },
-        {
-          "Temperature": 150,
-          "Voltage": 0,
-          "EISerialized": "[0 0; 1.5 0; 3.75 0; 7.5 0; 15 0; 30 0; 60 0]"
+          "EISerialized": "[0 0]"
         }
       ],
-      "CustomVariables": [],
+      "CustomVariables": [
+        {
+          "Name": "v",
+          "Value": "",
+          "Description": ""
+        },
+        {
+          "Name": "i",
+          "Value": "",
+          "Description": ""
+        },
+        {
+          "Name": "T",
+          "Value": "",
+          "Description": ""
+        },
+        {
+          "Name": "Rgon",
+          "Value": "",
+          "Description": "Gate (on) resistance"
+        }
+      ],
       "Constants": [],
-      "Custom1DTables": [],
+      "Custom1DTables": [
+        {
+          "Name": "e_rg_rec",
+          "Xaxis": [
+            8,
+            10.1,
+            22.1,
+            30
+          ],
+          "Data": [
+            2.1586,
+            2.1234,
+            1.8914,
+            1.8294
+          ]
+        },
+        {
+          "Name": "e_i_rec",
+          "Xaxis": [
+            0,
+            18.8,
+            37.5,
+            75,
+            112,
+            150
+          ],
+          "Data": [
+            0,
+            1.0738,
+            1.5774,
+            2.1586,
+            2.6114,
+            2.9154
+          ]
+        },
+        {
+          "Name": "e_tj_rec",
+          "Xaxis": [
+            -40,
+            25,
+            75,
+            125,
+            150,
+            175
+          ],
+          "Data": [
+            0.2604,
+            0.7014,
+            0.897,
+            1.3104,
+            1.6198,
+            2.1586
+          ]
+        },
+        {
+          "Name": "e_v_rec",
+          "Xaxis": [
+            0,
+            400,
+            500,
+            600,
+            700,
+            800
+          ],
+          "Data": [
+            0,
+            1.3652,
+            1.7564,
+            2.1586,
+            2.5368,
+            2.9122
+          ]
+        }
+      ],
       "Custom2DTables": [],
       "Custom3DTables": [],
-      "ConductionLossComputationMethod": 1,
-      "ConductionLossComputationFormula": null,
+      "Custom4DTables": [],
+      "ConductionLossComputationMethod": 2,
+      "ConductionLossComputationFormula": "max(v,0)",
       "ConductionLossComputationMethodGateOff": 1,
       "ConductionLossComputationFormulaGateOff": "",
       "TurnOnLossComputationMethod": "LookUpTableComputationMethodType",
       "TurnOnLossComputationFormula": null,
-      "TurnOffLossComputationMethod": "LookUpTableComputationMethodType",
-      "TurnOffLossComputationFormula": null,
-      "ThermalImpedanceDataSerialized": "[0.36 0.073; 0.477 0.00813; 0.434 0.00109; 0.224 0.000155]",
-      "ID": "b1762f48-e074-4677-800b-9b71fa753c58"
+      "TurnOffLossComputationMethod": "FormulaComputationMethodType",
+      "TurnOffLossComputationFormula": "max(lookup(\u0027e_rg_rec\u0027, Rgon)*lookup(\u0027e_tj_rec\u0027, T)*lookup(\u0027e_i_rec\u0027, i)*lookup(\u0027e_v_rec\u0027, -v)/(lookup(\u0027e_i_rec\u0027, 75)^3)*1e-3,0)",
+      "ThermalImpedanceDataSerialized": "[0.10135307 0.0002917121; 0.1331785 0.0023579971; 0.1090999 0.0113097992; 0.11625705 0.0161243163; 0.006687798 0.2776475351]",
+      "ID": "658350e4-072b-4f31-99d3-0c9bd55c7e3a"
     }
   ]
 }

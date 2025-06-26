@@ -61,7 +61,7 @@ project = ProjectRepository(file_path)
 design = project.GetDesignByName('Design')
 # design = DesignExamples.Buck_Thermal()
 design.TransientAnalysis.StopAtSteadyState = True
-mosfet = design.Circuit.GetDeviceByName('MOSFET1')
+mosfet = design.Circuit.GetDeviceByName('MOS1')
 for scope in mosfet.Scopes:
     if scope.Name == 'Junction Temperature (°)' or scope.Name == 'Average Total Losses (W)':
         scope.Enabled = True
@@ -74,8 +74,10 @@ for Rg in Rg_list:
     mosfet.CustomVariables[0].Value = str(Rg)
     job = design.TransientAnalysis.NewJob()
     status = job.Run()
-    Tj = job.GetSignalByName('MOSFET1 - Junction Temperature (°)').DataPoints[-1]
-    Loss = job.GetSignalByName('MOSFET1 - Average Total Losses (W)').DataPoints[-1]
+    if str(status) != "OK": 
+        raise RuntimeError(f"Rg={Rg}\n{job.Summary()}")
+    Tj = job.GetSignalByName('MOS1 - Junction Temperature (°)').DataPoints[-1]
+    Loss = job.GetSignalByName('MOS1 - Average Total Losses (W)').DataPoints[-1]
     junction_temps.append(Tj)
     Losses.append(Loss)
 
