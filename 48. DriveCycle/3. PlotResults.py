@@ -73,32 +73,36 @@ def main() -> None:
 
     # ── Figure layout ─────────────────────────────────────────────────────── #
     fig, axs = plt.subplots(
-        4, 1, figsize=(12, 10), sharex=True,
-        gridspec_kw={"hspace": 0.25}
-    )
+         5, 1, figsize=(12, 12), sharex=True,
+         gridspec_kw={"hspace": 0.25}
+     )
     fig.suptitle("Electric Drive – Drive-cycle summary", fontsize=16, weight="bold")
 
     # 1) Vehicle speed ------------------------------------------------------- #
     axs[0].plot(t, v_kph, color="C0", linewidth=1.8)
     axs[0].set_ylabel("Speed [km/h]")
 
-    # 2) Losses: inverter & motor ------------------------------------------- #
-    axs[1].plot(t, df["inv_loss_W"], label="Inverter", color="C1", linewidth=1.6)
-    axs[1].plot(t, df["mot_loss_W"], label="Motor",    color="C2", linewidth=1.6)
-    axs[1].fill_between(t, df["inv_loss_W"], alpha=0.15, color="C1")
-    axs[1].fill_between(t, df["mot_loss_W"], alpha=0.15, color="C2")
-    axs[1].set_ylabel("Losses [W]")
-    axs[1].legend(loc="upper right", frameon=False)
+    # 2) Output power -------------------------------------------------------- #
+    axs[1].plot(t, df["output_power_W"] / 1_000, color="C5", linewidth=1.6)
+    axs[1].set_ylabel("P\u2099\u2090\u2093 [kW]")
 
-    # 3) Efficiency ---------------------------------------------------------- #
-    axs[2].plot(t, df["efficiency_pct"], color="C3", linewidth=1.6)
-    axs[2].set_ylabel("Efficiency [%]")
-    axs[2].set_ylim(0, 100)
+    # 3) Losses: inverter & motor ------------------------------------------- #
+    axs[2].plot(t, df["inv_loss_W"], label="Inverter", color="C1", linewidth=1.6)
+    axs[2].plot(t, df["mot_loss_W"], label="Motor",    color="C2", linewidth=1.6)
+    axs[2].fill_between(t, df["inv_loss_W"], alpha=0.15, color="C1")
+    axs[2].fill_between(t, df["mot_loss_W"], alpha=0.15, color="C2")
+    axs[2].set_ylabel("Losses [W]")
+    axs[2].legend(loc="upper right", frameon=False)
 
-    # 4) Junction temperature ------------------------------------------------ #
-    axs[3].plot(t, df["Tj_C"], color="C4", linewidth=1.6)
-    axs[3].set_ylabel("Tj [°C]")
-    axs[3].set_xlabel("Time [s]")
+    # 4) Efficiency ---------------------------------------------------------- #
+    axs[3].plot(t, df["efficiency_pct"], color="C3", linewidth=1.6)
+    axs[3].set_ylabel("Efficiency [%]")
+    axs[3].set_ylim(0, 100)
+
+    # 5) Junction temperature ------------------------------------------------ #
+    axs[4].plot(t, df["Tj_C"], color="C4", linewidth=1.6)
+    axs[4].set_ylabel("Tj [°C]")
+    axs[4].set_xlabel("Time [s]")
 
     # ── Final layout tweaks ──────────────────────────────────────────────── #
     fig.align_ylabels(axs)
