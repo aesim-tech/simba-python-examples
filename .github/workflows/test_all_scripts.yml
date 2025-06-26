@@ -1,6 +1,12 @@
 name: Automated Unit Tests
-
-on: [push, pull_request, workflow_dispatch]
+on:
+  # Run when code is pushed directly to the main branch
+  push:
+    branches: [main]
+  # Run when a pull-request’s target branch is main
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
 
 jobs:
   test:
