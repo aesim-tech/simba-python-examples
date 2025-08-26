@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+
 """
 Run SIMBA drive-cycle operating points **in parallel** (like the efficiency-map
 example) while cascading junction temperature (Tj).
@@ -34,7 +34,7 @@ from tqdm import tqdm
 from aesim.simba import ProjectRepository, License
 
 ###############################################################################
-# User-tunable constants (identical to original script)                       #
+# User-tunable constants                                                      #
 ###############################################################################
 CASE_TEMPERATURE_C   = 80.0     # [°C]
 BUS_VOLTAGE_V        = 500.0    # [V]
@@ -65,7 +65,7 @@ CYCLE_PATH  = os.path.join(HERE, "prepared_drive_cycle.csv")
 OUT_PKL     = os.path.join(HERE, "drive_cycle_results.pkl")
 
 ###############################################################################
-# Helper – MTPA + flux-weakening Id/Iq calculator (unchanged)                 #
+# Helper – MTPA + flux-weakening Id/Iq calculator                             #
 ###############################################################################
 
 def select_id_iq(current_a: float, speed_rpm: float, *, Vdc_V=BUS_VOLTAGE_V,
