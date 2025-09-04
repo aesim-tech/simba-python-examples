@@ -29,4 +29,4 @@ jobs:
       working-directory: 00. Tests
       env:
         SIMBA_DEPLOYMENT_KEY: ${{ secrets.SIMBA_DEPLOYMENT_KEY }}
-      run: pytest -x -v
+      run: pytest -x -v --timeout=600

@@ -1,5 +1,5 @@
 tqdm
-aesim.simba >= 2024.3.21a1
+aesim.simba >= 2025.6.28
 numpy
 matplotlib
 scipy
@@ -12,3 +12,4 @@ notebook
 pandas
 bokeh
 pwlf
+pytest-timeout
