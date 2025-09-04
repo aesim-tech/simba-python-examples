@@ -62,6 +62,8 @@ def run_tests_in_folder(folder_path):
     for file in os.listdir(folder_path):
         full_path = os.path.join(folder_path, file)
         if file.endswith(".py"):
+            if file =="DistributionPV.py" or file.endswith("plot.py"): # Skip UI and plot scripts
+                continue
             run_python_script(full_path)
         elif file.endswith(".ipynb"):
             run_jupyter_notebook(full_path)
