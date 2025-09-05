@@ -63,7 +63,8 @@ def run_simulation(id_ref, iq_ref, rpm_speed_ref, fpwm, modulation_key, sim_numb
     status = job.Run()
     if str(status) != "OK" or log: 
         print (job.Summary())
-
+        return
+    
     # Get inverter Losses
     conduction_losses = sum([job.GetSignalByName('T' + str(n) + ' - Average Conduction Losses (W)').DataPoints[-1] for n in range(1, 7)])
     switching_losses = sum([job.GetSignalByName('T' + str(n) + ' - Average Switching Losses (W)').DataPoints[-1] for n in range(1, 7)])
