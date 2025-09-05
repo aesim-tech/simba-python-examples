@@ -38,12 +38,12 @@ def run_python_script(path):
         result = subprocess.check_output([python_command, path], stderr=subprocess.STDOUT, universal_newlines=True, env=env)
         end_time = time.time()
         execution_time = end_time - start_time
-        print(f"✓ {os.path.basename(path)} executed successfully in {execution_time:.2f}s")
+        print(f"[OK] {os.path.basename(path)} executed successfully in {execution_time:.2f}s")
         return result
     except subprocess.CalledProcessError as e:
         end_time = time.time()
         execution_time = end_time - start_time
-        print(f"✗ {os.path.basename(path)} failed after {execution_time:.2f}s")
+        print(f"[FAIL] {os.path.basename(path)} failed after {execution_time:.2f}s")
         print("--- Script output ---")
         if e.output:
             print(e.output)
@@ -68,11 +68,11 @@ def run_jupyter_notebook(path):
                 ep.preprocess(nb, {'metadata': {'path': notebook_dir}})
                 end_time = time.time()
                 execution_time = end_time - start_time
-                print(f"✓ {os.path.basename(path)} executed successfully in {execution_time:.2f}s")
+                print(f"[OK] {os.path.basename(path)} executed successfully in {execution_time:.2f}s")
             except CellExecutionError as e:
                 end_time = time.time()
                 execution_time = end_time - start_time
-                print(f"✗ {os.path.basename(path)} failed after {execution_time:.2f}s")
+                print(f"[FAIL] {os.path.basename(path)} failed after {execution_time:.2f}s")
                 print(f"Error executing {os.path.basename(path)}: {e}")
                 raise
 
@@ -82,11 +82,11 @@ def run_jupyter_notebook(path):
 def run_tests_in_folder(folder_path):
 
     if ('JMAG' in folder_path or '44. Modulation Strategies Motor Drive' in folder_path) and not sys.platform.startswith('win'):
-        print(f"⏭️  Skipping {os.path.basename(folder_path)} (JMAG only works on Windows)")
+        print(f"[SKIP]  Skipping {os.path.basename(folder_path)} (JMAG only works on Windows)")
         return # JMAG works only on windows
 
     folder_name = os.path.basename(folder_path)
-    print(f"\n📁 Testing folder: {folder_name}")
+    print(f"\n[FOLDER] Testing folder: {folder_name}")
 
     script_count = 0
     for file in os.listdir(folder_path):
@@ -101,7 +101,7 @@ def run_tests_in_folder(folder_path):
             run_jupyter_notebook(full_path)
 
     if script_count == 0:
-        print(f"📂 {folder_name} - No scripts to test")
+        print(f"[DIR] {folder_name} - No scripts to test")
 
 # Assuming each subfolder in the current directory represents a separate test case
 current_folder = os.path.dirname(os.path.abspath(__file__))
@@ -116,9 +116,9 @@ def test_all_scripts(folder):
         run_tests_in_folder(folder)
         end_time = time.time()
         execution_time = end_time - start_time
-        print(f"✅ {os.path.basename(folder)} completed in {execution_time:.2f}s")
+        print(f"[PASS] {os.path.basename(folder)} completed in {execution_time:.2f}s")
     except Exception as e:
         end_time = time.time()
         execution_time = end_time - start_time
-        print(f"❌ {os.path.basename(folder)} failed after {execution_time:.2f}s")
+        print(f"[ERROR] {os.path.basename(folder)} failed after {execution_time:.2f}s")
         raise
