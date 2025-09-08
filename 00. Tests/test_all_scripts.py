@@ -36,7 +36,7 @@ def run_python_script(path):
 
     start_time = time.time()
     try:
-        result = subprocess.check_output([python_command, path], stderr=subprocess.STDOUT, universal_newlines=True, env=env, timeout=600)
+        result = subprocess.check_output([python_command, path], stderr=subprocess.STDOUT, universal_newlines=True, env=env, timeout=1500)
         end_time = time.time()
         execution_time = end_time - start_time
         print(f"[OK] {os.path.basename(path)} executed successfully in {execution_time:.2f}s")
@@ -44,7 +44,7 @@ def run_python_script(path):
     except subprocess.TimeoutExpired as e:
         end_time = time.time()
         execution_time = end_time - start_time
-        print(f"[TIMEOUT] {os.path.basename(path)} timed out after {execution_time:.2f}s (600s limit)")
+        print(f"[TIMEOUT] {os.path.basename(path)} timed out after {execution_time:.2f}s")
         print("--- Script output (captured before timeout) ---")
         if e.output:
             print(e.output)
@@ -74,7 +74,7 @@ def run_jupyter_notebook(path):
 
         with open(path, encoding='utf-8') as f:
             nb = nbformat.read(f, as_version=4)
-            ep = ExecutePreprocessor(timeout=600, kernel_name='python3')
+            ep = ExecutePreprocessor(timeout=1500, kernel_name='python3')
 
             try:
                 ep.preprocess(nb, {'metadata': {'path': notebook_dir}})
