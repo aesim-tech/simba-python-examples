@@ -9,6 +9,7 @@ from datetime import datetime
 import threading, tqdm  # tqdm is for the progress bar
 import matplotlib.pyplot as plt
 import numpy as np
+import os
 
 number_of_parallel_simulations = License.NumberOfAvailableParallelSimulationLicense() # Number of available parallel simulation license
 semaphore = threading.Semaphore(number_of_parallel_simulations)
@@ -65,6 +66,11 @@ def run_job(simulation_number, duty_cycle, calculated_voltages):
 if __name__ == "__main__":  # Called only in main thread.
     print("1. Initialization")
     numberOfPoints = 200  # Run 200 simulations
+
+    # Reduce simulation points for testing
+    if os.environ.get("SIMBA_SCRIPT_TEST"): # Accelerate simulation in test environment.
+        numberOfPoints = 10
+
     duty_cycles = np.arange(0.00, 0.9, 0.9 / numberOfPoints).tolist()
     calculated_voltages = [None] * len(duty_cycles)
     threads = []

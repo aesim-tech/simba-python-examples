@@ -31,15 +31,27 @@ def run_python_script(path):
     env = os.environ.copy()
     env["MPLBACKEND"] = "Agg"
     env["SIMBA_SCRIPT_TEST"] = "True"
+    
     python_command = get_python_command()
 
     start_time = time.time()
     try:
-        result = subprocess.check_output([python_command, path], stderr=subprocess.STDOUT, universal_newlines=True, env=env)
+        result = subprocess.check_output([python_command, path], stderr=subprocess.STDOUT, universal_newlines=True, env=env, timeout=600)
         end_time = time.time()
         execution_time = end_time - start_time
         print(f"[OK] {os.path.basename(path)} executed successfully in {execution_time:.2f}s")
         return result
+    except subprocess.TimeoutExpired as e:
+        end_time = time.time()
+        execution_time = end_time - start_time
+        print(f"[TIMEOUT] {os.path.basename(path)} timed out after {execution_time:.2f}s (600s limit)")
+        print("--- Script output (captured before timeout) ---")
+        if e.output:
+            print(e.output)
+        else:
+            print("No output captured before timeout")
+        print("--- End script output ---")
+        raise
     except subprocess.CalledProcessError as e:
         end_time = time.time()
         execution_time = end_time - start_time

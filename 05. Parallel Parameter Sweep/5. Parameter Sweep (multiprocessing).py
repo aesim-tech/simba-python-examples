@@ -9,6 +9,7 @@ from datetime import datetime
 import multiprocessing, tqdm #tqdm is for the progress bar
 import matplotlib.pyplot as plt
 import numpy as np
+import os
 
 #############################
 #         PARAMETERS        #
@@ -16,9 +17,14 @@ import numpy as np
 
 # %% Set main parameters
 number_of_parallel_simulations =  License.NumberOfAvailableParallelSimulationLicense() # Number of available parallel simulation license
+
 duty_cycle_min = 0
 duty_cycle_max = 0.9
 numberOfPoints = 200    # Run 200 simulations
+
+# Reduce simulation points for testing
+if os.environ.get("SIMBA_SCRIPT_TEST"): # Accelerate simulation in test environment.
+    numberOfPoints = 10
 
 
 #############################
