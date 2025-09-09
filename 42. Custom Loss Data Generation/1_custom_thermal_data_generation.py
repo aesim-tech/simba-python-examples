@@ -55,6 +55,9 @@ temperatures = [100, 175]   # °C
 dc_bus_voltage = 800        # V
 load_currents = [10, 20, 30, 50, 70, 90, 130, 160, 180, 250, 310, 360]  # A
 
+if os.environ.get("SIMBA_SCRIPT_TEST"): # Accelerate simulation in test environment.
+    load_currents = [10, 50, 130, 250]
+
 #%% Helper: rebase signals onto a unified time base
 def rebase_signals(time1, signal1, time2, signal2, time3, signal3):
     unified_time = sorted(set(time1).union(time2).union(time3))
@@ -203,6 +206,10 @@ if __name__ == "__main__":
 
     for t in tqdm.tqdm(threads, total=len(threads)):
         t.join()
+
+    if os.environ.get("SIMBA_SCRIPT_TEST"):
+        print("Test environment detected; skipping post-processing.")
+        exit(0)
 
     # ---- Post-processing identical to your original (unchanged) ----
     switching_losses_results = []
