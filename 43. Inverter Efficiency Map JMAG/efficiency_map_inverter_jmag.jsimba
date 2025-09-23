@@ -3492,9 +3492,9 @@
                   "Name": "PID2",
                   "ID": "bd35c867-c00b-4611-a839-4fb03c7b2c10",
                   "Parameters": {
-                    "Kp": "Kd",
+                    "Kp": "KpD",
                     "Kd": "0",
-                    "Ki": "Kd/td",
+                    "Ki": "Ki",
                     "SamplingTime": "auto",
                     "Name": "PID2"
                   },
@@ -4102,9 +4102,9 @@
                   "Name": "PID1",
                   "ID": "62c8aa01-b8b3-4eaa-95e1-c8c09a7b6a46",
                   "Parameters": {
-                    "Kp": "Kq",
+                    "Kp": "KpD",
                     "Kd": "0",
-                    "Ki": "Kq/tq",
+                    "Ki": "Ki",
                     "SamplingTime": "auto",
                     "Name": "PID1"
                   },
@@ -4491,6 +4491,15 @@
               "UseFilterInductance": "0",
               "FilterInductanceValue": "1.0u",
               "ACCopperLossType": "0",
+              "NumCoilsInSlotHeight": "5",
+              "NumCoilsInSlotWidth": "1",
+              "NumSlotsPerPhase": "16",
+              "SlotWidth": "0.0055",
+              "ConductorSectionType": "0",
+              "CoilWidth": "0.0045",
+              "CoilHeight": "0.0035",
+              "StackLength": "0.2",
+              "Conductivity": "59770000",
               "RotorSkewType": "0",
               "StatorSkewType": "0",
               "RotorSkewAngle": "0.0",
@@ -4507,7 +4516,7 @@
               "TurnCorr2": "1",
               "InterpolationType": "0",
               "TemperatureCorrection": "0",
-              "RttFilePath": "C:\\Users\\manu\\source\\repos\\simba-python-examples\\43. Inverter Efficiency Map JMAG\\100k_D_D_I-.rtt",
+              "RttFilePath": "100k_D_D_I-.rtt",
               "AccuracyType": "1",
               "J": "J",
               "B": "B",
@@ -4551,6 +4560,87 @@
                 "Color": "Black"
               },
               "ACCopperLossType": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "2 10",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "Black"
+              },
+              "NumCoilsInSlotHeight": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "2 10",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "Black"
+              },
+              "NumCoilsInSlotWidth": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "2 10",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "Black"
+              },
+              "NumSlotsPerPhase": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "2 10",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "Black"
+              },
+              "SlotWidth": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "2 10",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "Black"
+              },
+              "ConductorSectionType": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "2 10",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "Black"
+              },
+              "CoilWidth": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "2 10",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "Black"
+              },
+              "CoilHeight": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "2 10",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "Black"
+              },
+              "StackLength": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "2 10",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "Color": "Black"
+              },
+              "Conductivity": {
                 "IsVisible": false,
                 "Suffix": "",
                 "RelativeLocation": "2 10",
@@ -4706,11 +4796,11 @@
               "RttFilePath": {
                 "IsVisible": false,
                 "Suffix": "",
-                "RelativeLocation": "2 2",
+                "RelativeLocation": "1 2",
                 "UnrotatedWidth": 2,
                 "UnrotatedHeight": 1,
                 "FontSize": 12,
-                "Color": "#0081BC"
+                "Color": "Black"
               },
               "AccuracyType": {
                 "IsVisible": false,
@@ -6878,24 +6968,24 @@
             "Value": "200"
           },
           {
-            "Name": "Kq",
-            "Value": "1.883955592154"
-          },
-          {
-            "Name": "tq",
-            "Value": "0.0007849047928447576"
-          },
-          {
-            "Name": "Kd",
-            "Value": "3.1405926535900006"
-          },
-          {
-            "Name": "td",
-            "Value": "0.00023660843342575467"
-          },
-          {
             "Name": "Tcase",
             "Value": "80"
+          },
+          {
+            "Name": "fbw",
+            "Value": "fpwm/10"
+          },
+          {
+            "Name": "KpD",
+            "Value": "2*pi*fbw*Ld"
+          },
+          {
+            "Name": "KpQ",
+            "Value": "2*pi*fbw*Lq"
+          },
+          {
+            "Name": "Ki",
+            "Value": "2*pi*fbw*Rs"
           }
         ],
         "VariableFile": ""
@@ -7185,6 +7275,7 @@
       "Custom1DTables": [],
       "Custom2DTables": [],
       "Custom3DTables": [],
+      "Custom4DTables": [],
       "ConductionLossComputationMethod": 1,
       "ConductionLossComputationFormula": null,
       "ConductionLossComputationMethodGateOff": 1,
