@@ -1,7 +1,8 @@
 ---
 tags:
-  - DC-AC
   - Python
+  - DC-AC
+  - Power Supplies
   - Thermal
 ---
 
@@ -84,3 +85,8 @@ As the apparent switching frequency of the 3-Level topologies is the same, the s
 ### Powerswitch losses and junction temperatures
 
 The figure below shows the conduction and switching losses and the junction temperatures of the main powerswitches for each topology: NPC, T-type and FC.
+
+![loss n temperatures](fig/loss_and_temperature.png)
+
+
+This shows how different topologies can be compared for this kind of benchmark.

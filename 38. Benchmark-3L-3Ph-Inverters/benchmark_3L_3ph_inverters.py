@@ -12,7 +12,6 @@ number_of_parallel_simulations = License.NumberOfAvailableParallelSimulationLice
 # Define topologies, switches and result dataframes
 
 topos = ['3L-NPC', '3L-T-type', '3L-FC']
-#topos = ['3L-NPC', '3L-T-type']
 switches = dict()
 switches['3L-NPC'] = ['T1', 'T2', 'D1', 'D2', 'D5']
 switches['3L-T-type'] = ['T1', 'T2', 'T3', 'D1', 'D2', 'D3']
@@ -21,6 +20,9 @@ all_switches = list(set(switches['3L-NPC'] + switches['3L-T-type'] + switches['3
 
 if os.environ.get("SIMBA_SCRIPT_TEST"): # To accelerate unit tests
     topos = ['3L-NPC']
+    end_time = 0.08
+else:
+    end_time = 1.2
 
 #############################
 #           METHODS         #
@@ -41,7 +43,7 @@ def run_simulation(topo, sim_number, manager_result_dict, lock):
     # Load design and run simulation
     design = project.GetDesignByName(topo)
     design.Circuit.SetVariableValue('ma', str(0.8))
-    design.TransientAnalysis.EndTime = 1.2
+    design.TransientAnalysis.EndTime = end_time
     design.TransientAnalysis.TimeStep = 5e-8
     job = design.TransientAnalysis.NewJob()
     status = job.Run()
