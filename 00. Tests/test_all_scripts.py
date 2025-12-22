@@ -67,10 +67,13 @@ def run_python_script(path):
 def run_jupyter_notebook(path):
     original_cwd = os.getcwd()  # Save the original current working directory
     notebook_dir = os.path.dirname(path)  # Get the notebook's directory
+    env_updates = {"MPLBACKEND": "Agg", "SIMBA_SCRIPT_TEST": "True"}
+    previous_env = {key: os.environ.get(key) for key in env_updates}
 
     start_time = time.time()
     try:
         os.chdir(notebook_dir)  # Change to the notebook's directory
+        os.environ.update(env_updates)
 
         with open(path, encoding='utf-8') as f:
             nb = nbformat.read(f, as_version=4)
@@ -89,6 +92,11 @@ def run_jupyter_notebook(path):
                 raise
 
     finally:
+        for key, value in previous_env.items():
+            if value is None:
+                os.environ.pop(key, None)
+            else:
+                os.environ[key] = value
         os.chdir(original_cwd)  # Revert back to the original directory
 
 def run_tests_in_folder(folder_path):

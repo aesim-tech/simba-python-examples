@@ -132,7 +132,7 @@
             "Name": "C2",
             "ID": "86bdcf7c-0c08-4776-ad6a-55741922022f",
             "Parameters": {
-              "Value": "47\u00B5",
+              "Value": "47u",
               "Vinit": "0"
             },
             "EnabledScopes": [
@@ -534,7 +534,8 @@
         "BaseFrequencyParameterEnabled": false,
         "NumberOfBasePeriodsSavedParameterEnabled": false,
         "BaseFrequency": 0,
-        "NumberOfBasePeriodsSaved": 0
+        "NumberOfBasePeriodsSaved": 0,
+        "CompressScopes": false
       }
     }
   ],
