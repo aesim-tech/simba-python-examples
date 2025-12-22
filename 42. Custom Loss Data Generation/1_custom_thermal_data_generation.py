@@ -134,7 +134,7 @@ def run_simulation(sim_index, temperature, load_current, switching_frequency, re
 
     # Instantaneous power and total energy loss over the simulated window
     instantaneous_power = vds_r * i_r
-    total_energy_loss = float(np.trapz(instantaneous_power, time_array))
+    total_energy_loss = float(np.trapezoid(instantaneous_power, time_array))
 
     # Switched current when Vgs < 3.2 V (threshold assumption)
     idxs = np.where(vgs_r < 3.2)[0]
