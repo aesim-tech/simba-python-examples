@@ -4,11 +4,7 @@ import matplotlib.pyplot as plt
 import os
 
 # Load SIMBA project
-# DAB = DesignExamples.DCDC_Dual_Active_Bridge_Converter()
-script_folder = os.path.realpath(os.path.dirname(__file__))
-file_path = os.path.join(script_folder, "dcdc_dual_active_bridge_converter.jsimba")
-project = ProjectRepository(file_path)
-DAB = project.GetDesignByName('DAB') # patch waiting April version and update of DAB example
+DAB = DesignExamples.DCDC_Dual_Active_Bridge_Converter()
 
 # Get the job object and solve the system
 job = DAB.TransientAnalysis.NewJob()
