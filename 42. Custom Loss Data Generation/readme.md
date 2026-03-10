@@ -77,7 +77,7 @@ To address this challenge, we aim to generate custom loss data for power switche
          - Junction temperature variation is small enough to be considered as constant during these few switching periods (1 at 100 kHz and 2 at 200 kHz).
     2. **Procedure**:
          - Run simulations at two different switching frequencies (e.g., $f_1$ and $f_2 = 2f_1$).
-         - Measure the total energy losses $E_{\text{total},1}$ and $E_{\text{total},2}$ at these frequencies.
+         - Compute the total energy losses $E_{\text{total},1}$ and $E_{\text{total},2}$, as the integrals of $v(t)i(t)$ over a cycle $T$ for each frequency, e.g: $E_{\text{total},1} = \int_T{v(t)i(t)dt}$.
     3. **Calculations**:
         - Switching Losses per Cycle:
   
@@ -87,7 +87,7 @@ To address this challenge, we aim to generate custom loss data for power switche
         
             $$E_{\text{cond}} = \frac{f_2 E_{\text{total},1} - f_1 E_{\text{total},2}}{f_2 - f_1}$$
 
-        - For $f_2 = 2f_1$, these simplify to:
+        - For $f_2 = 2f_1$ and $T = 1/f_1$, these simplify to:
 
             $$E_{\text{sw}} = E_{\text{total},2} - E_{\text{total},1}$$
 
