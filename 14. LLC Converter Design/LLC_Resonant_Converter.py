@@ -45,35 +45,16 @@ G_DC_MAX = VO_MAX/(N*VIN_MIN)
 LN_RANGE = [1, 2, 3, 5, 6, 7, 9, 10]
 #LN_RANGE = [1, 5, 7, 10]
 Q_RANGE = [0.1, 0.13, 0.17, 0.2, 0.25, 0.3, 0.35, 0.4, 0.7, 1]
-FIN_RANGE= np.logspace(-1, 0.5, num=100)
+FIN_RANGE= np.round(np.logspace(-1, 0.5, num=100), 4)
 
 if os.environ.get("SIMBA_SCRIPT_TEST"): # Accelerate simulation in test environment.
     LN_RANGE = [7]
     Q_RANGE = [0.4]
-    FIN_RANGE= np.logspace(-1, 0.5, num=4)
+    FIN_RANGE = np.logspace(-1, 0.5, num=4).tolist()
 
 #############################
 #           METHODS         #
 #############################
-
-def steadystate_signal(horizon_time, time, *signals):
-    """
-    Calculate and return the steady-state portion of the given signals based on the specified horizon time.
-    
-    Args:
-    horizon_time (float): The time window to consider for the steady-state portion of the signals.
-    time (numpy.ndarray): 1D array of time values corresponding to the signals.
-    *signals (numpy.ndarray): One or more 1D arrays containing the signal values.
-
-    Returns:
-    tuple: A tuple containing the following elements:
-        - steadystate_time (numpy.ndarray): 1D array of time values in the steady-state portion.
-        - steadystate_signal_list (list): A list of 1D arrays representing the steady-state portion of each input signal.
-    """
-    steadystate_maskarray = np.ma.where(time > time[-1] - horizon_time)
-    steadystate_time = time[steadystate_maskarray]
-    steadystate_signal_list = [signal[steadystate_maskarray] for signal in signals]
-    return steadystate_time, *steadystate_signal_list
 
 def run_simulation(Lr, Cr, Lm, fin, sim_number, result_dict, lock):
     """
@@ -81,7 +62,7 @@ def run_simulation(Lr, Cr, Lm, fin, sim_number, result_dict, lock):
     """
 
     log = False # if true, log simulation results
-    if log: print ("\n{0}> Running LLC Open loop... (Lr={1:.2f} Cr={2:.2f} Lm={3:.2f})".format(sim_number, Lr, Cr, Lm))
+    if log: print ("\n{0}> Running LLC Open loop... (Lr={1:.2e} Cr={2:2e} Lm={3:.2e})".format(sim_number, Lr, Cr, Lm))
 
     # Read the jsimba file
     script_folder = os.path.realpath(os.path.dirname(__file__)) 
@@ -106,7 +87,9 @@ def run_simulation(Lr, Cr, Lm, fin, sim_number, result_dict, lock):
     LLC_open_loop.TransientAnalysis.TimeStep = 2e-8
     LLC_open_loop.TransientAnalysis.StopAtSteadyState = True
     LLC_open_loop.TransientAnalysis.BaseFrequency = fsw
+    LLC_open_loop.TransientAnalysis.NumberOfBasePeriodsSaved = 2
     LLC_open_loop.TransientAnalysis.BaseFrequencyParameterEnabled = True
+    LLC_open_loop.TransientAnalysis.CompressScopes = True
     simba_vin.Voltage = VIN_RATED
     simba_Rout.Value = RO
     simba_fres.value = F_RES
@@ -120,23 +103,17 @@ def run_simulation(Lr, Cr, Lm, fin, sim_number, result_dict, lock):
     job = LLC_open_loop.TransientAnalysis.NewJob()
     status = job.Run()
     if str(status) != "OK": 
-        print ("\nSimulation {0} Failed > (Lr={1:.2f} Cr={2:.2f} Lm={3:.2f})".format(sim_number, Lr, Cr, Lm))
+        print ("\nSimulation {0} Failed > (Lr={1:2e} Cr={2:.2e} Lm={3:.2e})".format(sim_number, Lr, Cr, Lm))
         print (job.Summary()[:-1])
         result_dict[sim_number] = [fin, math.nan]
         return; # ERROR 
 
     if log: print (job.Summary()[:-1])
 
-    #extract steady state results
-    horizon_time = 3 / fsw
+    # Get results calculate the average of the steady state output voltage using the trapezoidal rule
     vout_signal = job.GetSignalByName('Ro - Instantaneous Voltage')
-    time, vout_res = steadystate_signal(
-        horizon_time,
-        np.array(vout_signal.TimePoints),
-        np.array(vout_signal.DataPoints)
-        )
-    
-    # calculate the average of the steady state output voltage using the trapezoidal rule
+    time = vout_signal.TimePoints
+    vout_res = vout_signal.DataPoints
     t1 = time[0]
     t2 = time[-1]
     vout_sum = 0
@@ -147,6 +124,7 @@ def run_simulation(Lr, Cr, Lm, fin, sim_number, result_dict, lock):
     if log: print ("\n{0}> vout_average={1:.3f}".format(sim_number, vout_average))
 
     result_dict[sim_number] = [fin, vout_average]
+    job.Dispose() # free memory
 
 
 def run_simulation_star(args):
@@ -177,7 +155,7 @@ if __name__ == "__main__": # Called only in main thread.
             Cr = 1/(2*np.pi*F_RES*Q*RO_RATED_PRI)
             Lm = L*Lr
             for fin in FIN_RANGE:
-                pool_args.append((Lr, Cr, Lm, fin,  i, result_dict, lock));
+                pool_args.append((Lr, Cr, Lm, float(fin),  i, result_dict, lock));
                 i=i+1
 
     # Run Actual Simulation
