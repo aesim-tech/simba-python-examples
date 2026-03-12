@@ -10,6 +10,6 @@ ipywidgets
 pytest
 notebook
 pandas
-bokeh
+bokeh>=3.9,<4
 pwlf
 pytest-timeout
