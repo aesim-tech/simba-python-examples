@@ -25,9 +25,13 @@ TOOLTIPS = [       #allows to display interactively t and vout values by using x
     ("index", "$index"),
     ("(t, Vmosfet)", "($x, $y)"),
     ]
-p = figure(title=" converter", 
-           x_axis_label='time (s)', 
+p = figure(
+           width=800,
+           height=300,
+           title=" converter",
+           x_axis_label='time (s)',
            y_axis_label='Vds (V)',
+           tools='pan,wheel_zoom,box_zoom,reset,save',
            active_drag='box_zoom',
            tooltips = TOOLTIPS)
 p.line(t, Vds, legend_label="Mosfet Vds voltage", line_width=1)

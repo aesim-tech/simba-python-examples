@@ -171,6 +171,7 @@ TOOLTIPS = [
 p1 = figure(width = 600, height = 400, 
                              title = 'Fuel Cell Models',
                              x_axis_label = 'current (A)', y_axis_label = 'Voltage (V)',
+                             tools='pan,wheel_zoom,box_zoom,reset,save',
                              active_drag='box_zoom',
                              tooltips = TOOLTIPS)
 p1.line(fc_current[0], fc_voltage[0], color='limegreen', legend_label='C-code')
