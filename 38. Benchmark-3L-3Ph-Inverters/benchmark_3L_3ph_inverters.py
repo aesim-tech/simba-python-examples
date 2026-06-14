@@ -11,12 +11,13 @@ number_of_parallel_simulations = License.NumberOfAvailableParallelSimulationLice
 
 # Define topologies, switches and result dataframes
 
-topos = ['3L-NPC', '3L-T-type', '3L-FC']
+topos = ['3L-NPC', '3L-T-type', '3L-FC', '3L-ANPC']
 switches = dict()
 switches['3L-NPC'] = ['T1', 'T2', 'D1', 'D2', 'D5']
 switches['3L-T-type'] = ['T1', 'T2', 'T3', 'D1', 'D2', 'D3']
 switches['3L-FC'] = ['T1', 'T2', 'D1', 'D2']
-all_switches = list(set(switches['3L-NPC'] + switches['3L-T-type'] + switches['3L-FC']))
+switches['3L-ANPC'] = ['T1', 'T1b', 'T3', 'D1', 'D1b', 'D3']
+all_switches = list(set(switches['3L-NPC'] + switches['3L-T-type'] + switches['3L-FC'] + switches['3L-ANPC']))
 
 if os.environ.get("SIMBA_SCRIPT_TEST"): # To accelerate unit tests
     topos = ['3L-NPC']
