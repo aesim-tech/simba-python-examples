@@ -76,8 +76,14 @@ def get_pwfl_breakpoints(x, y, number_of_line_segments):
     import pwlf
     # initialize piecewise linear fit with your x and y data
     my_pwlf = pwlf.PiecewiseLinFit(x, y)
-    # fit the data for the number of line segments
-    res = my_pwlf.fitfast(number_of_line_segments)
+    res = my_pwlf.fitfast(
+        number_of_line_segments,
+        factr=1e2,
+        pgtol=1e-5,
+        epsilon=1e-8,
+        maxfun=15000,
+        maxiter=15000,
+    )
     return res
 
 iLinspace = np.linspace(10*io, iLim/1.05, int(1e4))
