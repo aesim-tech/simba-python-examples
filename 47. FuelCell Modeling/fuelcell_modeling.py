@@ -72,13 +72,8 @@ def compute_non_linear_losses(i):
     return  A * np.log(i/io) - B * np.log(1 - i/iLim)
 
 def get_pwfl_breakpoints(x, y, number_of_line_segments):
-    # import libraries
-    import pwlf
-    # initialize piecewise linear fit with your x and y data
-    my_pwlf = pwlf.PiecewiseLinFit(x, y)
-    # fit the data for the number of line segments
-    res = my_pwlf.fitfast(number_of_line_segments)
-    return res
+    target_losses = np.linspace(y[0], y[-1], number_of_line_segments + 1)
+    return np.interp(target_losses, y, x)
 
 iLinspace = np.linspace(10*io, iLim/1.05, int(1e4))
 non_linear_losses = compute_non_linear_losses(iLinspace)
