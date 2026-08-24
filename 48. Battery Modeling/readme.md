@@ -25,6 +25,7 @@ The battery model considers following equations:
 $$V_{batt} = OCV - R_{int} \times i_{batt} - R_{pol} \times i_{filtered}$$
 
 where:
+
 * $R_{int}$ is the constant internal resistance,
 * $OCV$ is the Open-Circuit Voltage,
 * $R_{pol}$ a polarisation resistance.
@@ -33,17 +34,21 @@ where:
     This model uses a filtered current ($i_{filtered}$) flowing through the polarisation resistance, to model the slow dynamic behaviour of the voltage for a current variation. This filtered current is obtained by filtering the battery current $i_{batt}$ through a filter with a time constant $T_f$ which is set to 30 s by default.
 
 Open-circuit Voltage ($OCV$) and polarisation resistance ($R_{pol}$) both depend on the State of Charge (or State Of Discharge). The OCV is given by:
+
 $$OCV = E_0 + A \times exp(-B \times sod) - K \left(\dfrac{1}{soc+soc_{limit}} - 1 \right)$$
 
 Whereas $R_{pol}$ depends on the charge / discharge mode.
 
 In discharge, it is given by:
+
 $$R_{pol} = K \left(\dfrac{1}{soc+soc_{limit}}\right)$$
 
 In charge, the polarisation resistance increases until the battery is almost fully charged. It is given by:
+
 $$R_{pol} = K \left(\dfrac{1}{sod - 0.1}\right)$$
 
 where:
+
 * $soc$ is the state of charge [0, 1],
 * $sod$ is the state of discharge ($sod = 1 - soc$),
 * $E_0$, $A$, $B$, $K$ are empirical parameters to be defined to fit experimental ,
