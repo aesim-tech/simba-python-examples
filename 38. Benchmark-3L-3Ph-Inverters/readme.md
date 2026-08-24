@@ -24,7 +24,8 @@ This example proposes a python script which provides a thermal benchmark of thre
 
 * a Neutral Point Clamped (NPC),
 * a T-Type,
-* a Flying Capacitor (FC).
+* a Flying Capacitor (FC),
+* an Active Neutral Point Clamped.
 
 The figures below show these different topologies.
 
@@ -34,6 +35,8 @@ The requirements are:
 * Power: 40.9 kW,
 * Fundamental frequency: 50 Hz,
 * Apparent Switching frequency: 15 kHz.
+
+All the topologies are compared with the same AC load and control which has been considered in open-loop.
 
 !!! note "note"
     The *apparent* switching frequency is the switching frequency of the AC voltage waveform. It is twice the *real* switching frequency of devices for the FC topology and it is the *real* switching frequency of devices for the NPC and T-type topologies (but for these last ones, the powerswitches only operate during a half period of the fundamental!)
@@ -50,11 +53,13 @@ The requirements are:
 
 ![fc](fig/fc.png)
 
-All the topologies are compared with the same AC load and control which has been considered in open-loop.
+!!! info "info"
+    For the Flying Capacitor Topology, a Phase Disposition (PD) strategy - which allows a lower *weight Total Harmonic Distorsion (wTHD)* of the phase-phase voltage - has been implemented with a state machine in a C-code.
+
+### The ANPC topology
 
 !!! info "info"
-    For the Flying Capacitor Topology, a Phase Disposition (PD) strategy - which allows a lower wTHD of the phase-phase voltage - has been implemented with a state machine in a C-code.
-
+    For the ANPC Topology, a State Machine has been implemented.
 
 ## Thermal description
 
@@ -62,7 +67,7 @@ Modules from Infineon module are considered:
 
 * the reference [F3L100R07W2H3_B11](datasheets/Infineon-F3L100R07W2H3_B11-DataSheet-v01_00-EN.pdf) for the NPC module,
 * the reference [F3L200R12W2H3_B11](datasheets/infineon-f3l200r12w2h3-b11-ds-ja.pdf) for the T-Type module,
-* the reference [IKZ75N65El5](datasheets/infineon-ikz75n65el5-datasheet-en.pdf) for the FC topology.
+* the reference [IKZ75N65El5](datasheets/infineon-ikz75n65el5-datasheet-en.pdf) for the FC and ANPC topologies.
 
 The case temperature has been considered constant and has been set to 100 °C.
 
