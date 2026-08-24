@@ -55,7 +55,7 @@ print(f"  Eo   = {Eo:8.4f} V")
 print(f"  A    = {A:8.6f}")
 print(f"  B    = {B:8.4f}")
 print(f"  K    = {K:12.6e}")
-print(f"  Rint = {Rint:8.6f} \u2126")
+print(f"  Rint = {Rint:8.6f} Ω")
 
 fig, ax = plt.subplots()
 ax.scatter(sod, voltage, color='black', alpha=0.6)
