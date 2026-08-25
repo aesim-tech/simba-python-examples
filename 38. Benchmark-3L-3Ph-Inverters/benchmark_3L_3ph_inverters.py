@@ -18,12 +18,14 @@ switches['3L-T-type'] = ['T1', 'T2', 'T3', 'D1', 'D2', 'D3']
 switches['3L-FC'] = ['T1', 'T2', 'D1', 'D2']
 switches['3L-ANPC'] = ['T1', 'T1b', 'T3', 'D1', 'D1b', 'D3']
 all_switches = list(set(switches['3L-NPC'] + switches['3L-T-type'] + switches['3L-FC'] + switches['3L-ANPC']))
+fsw = 15e3
 
 if os.environ.get("SIMBA_SCRIPT_TEST"): # To accelerate unit tests
     topos = ['3L-NPC']
-    end_time = 0.08
+    end_time = [0.06, 0.06]
 else:
-    end_time = 1.2
+    end_time = [0.06, 1.2]
+    
 
 #############################
 #           METHODS         #
@@ -44,8 +46,9 @@ def run_simulation(topo, sim_number, manager_result_dict, lock):
     # Load design and run simulation
     design = project.GetDesignByName(topo)
     design.Circuit.SetVariableValue('ma', str(0.8))
-    design.TransientAnalysis.EndTime = end_time
-    design.TransientAnalysis.TimeStep = 5e-8
+    design.TransientAnalysis.DualStageElectroThermalAnalysis = True
+    design.TransientAnalysis.ElectroThermalAnalysisEndTime = end_time
+    design.TransientAnalysis.ElectroThermalAnalysisTimeStep = [5e-8, 1 / fsw]
     job = design.TransientAnalysis.NewJob()
     status = job.Run()
     if str(status) != "OK" or log: 

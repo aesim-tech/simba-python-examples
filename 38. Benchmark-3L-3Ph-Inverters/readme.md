@@ -25,7 +25,7 @@ This example proposes a python script which provides a thermal benchmark of thre
 * a Neutral Point Clamped (NPC),
 * a T-Type,
 * a Flying Capacitor (FC),
-* an Active Neutral Point Clamped.
+* an Active Neutral Point Clamped (ANPC).
 
 The figures below show these different topologies.
 
@@ -58,6 +58,8 @@ All the topologies are compared with the same AC load and control which has been
 
 ### The ANPC topology
 
+![anpc](fig/anpc.png)
+
 !!! info "info"
     For the ANPC Topology, a State Machine has been implemented.
 
@@ -71,6 +73,15 @@ Modules from Infineon module are considered:
 
 The case temperature has been considered constant and has been set to 100 °C.
 
+!!! tip "important"
+    The **Dual Stage ElectroThermal (DSET) analysis** has been enabled in this example. Therefore, in this example *Time Step* and *End Time* parameters are defined for both the *electrical stage* and the *thermal stage* analysis.
+
+    | Simulation stage  | **Time Step (s)** | **End Time (s)**  |
+    |-------------------|-------------------|-------------------|
+    | Electrical        | 5e-8              | 0.06              |
+    | Electrical        | $T_{sw}$          | 1.2               |
+
+    where $T_{sw}$ is the switching period, $T_{sw} = 1 / f_{sw}$ with $f_{sw}$ = 15 kHz.
 
 ## Results
 
@@ -89,9 +100,8 @@ As the apparent switching frequency of the 3-Level topologies is the same, the s
 
 ### Powerswitch losses and junction temperatures
 
-The figure below shows the conduction and switching losses and the junction temperatures of the main powerswitches for each topology: NPC, T-type and FC.
+The figure below shows the conduction and switching losses and the junction temperatures of the main powerswitches for each topology: NPC, T-type, FC and ANPC.
 
 ![loss n temperatures](fig/loss_and_temperature.png)
-
 
 This shows how different topologies can be compared for this kind of benchmark.

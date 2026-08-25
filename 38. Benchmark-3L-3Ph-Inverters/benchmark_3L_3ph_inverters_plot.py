@@ -12,7 +12,7 @@ import pandas as pd
 print("Load dataframe")
 
 script_folder = os.path.realpath(os.path.dirname(__file__))
-filename = "benchmark_3L_2025-10-21"
+filename = "benchmark_3L_2026-08-25"
 df = pd.read_pickle(os.path.join(script_folder, filename + ".pkl" ))
 
 topos = set(df['topo'])
@@ -43,7 +43,7 @@ for topo in topos:
 width = 0.7 / (num_bars + 1)  # the width of the bars
 
 fig, axs = plt.subplots(nrows=len(topos), ncols=1, constrained_layout=True)
-fig.set_size_inches(12, 7)
+fig.set_size_inches(14, 10)
 fig.set_constrained_layout_pads(hspace=0.12)
 colors = [cm.cividis(i/5) for i in range(6)]
 
