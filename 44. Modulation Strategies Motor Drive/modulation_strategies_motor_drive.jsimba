@@ -545,46 +545,6 @@
             }
           },
           {
-            "LibraryName": "Park Transform",
-            "Top": 35,
-            "Left": 34,
-            "Angle": 180,
-            "HF": false,
-            "VF": false,
-            "Disabled": false,
-            "Name": "PARK1",
-            "ID": "19eeb364-0d72-45dc-8e3a-dc9092c3f9b5",
-            "Parameters": {
-              "Name": "PARK1",
-              "SamplingTime": "auto"
-            },
-            "EnabledScopes": [],
-            "ParametersDisplayAttributes": {
-              "Name": {
-                "IsVisible": true,
-                "Suffix": "",
-                "RelativeLocation": "3 -1",
-                "UnrotatedWidth": 2,
-                "UnrotatedHeight": 1,
-                "FontSize": 12,
-                "HorizontalTextAlignment": 1,
-                "VerticalTextAlignment": 1,
-                "Color": "#04B404"
-              },
-              "SamplingTime": {
-                "IsVisible": false,
-                "Suffix": "",
-                "RelativeLocation": "3 8",
-                "UnrotatedWidth": 2,
-                "UnrotatedHeight": 1,
-                "FontSize": 12,
-                "HorizontalTextAlignment": 1,
-                "VerticalTextAlignment": 1,
-                "Color": "#04B404"
-              }
-            }
-          },
-          {
             "LibraryName": "Current Probe",
             "Top": -8,
             "Left": 35,
@@ -771,90 +731,6 @@
                 "HorizontalTextAlignment": 1,
                 "VerticalTextAlignment": 1,
                 "Color": "#0081BC"
-              }
-            }
-          },
-          {
-            "LibraryName": "Control Output Connector Label",
-            "Top": 36,
-            "Left": 42,
-            "Angle": 0,
-            "HF": true,
-            "VF": false,
-            "Disabled": false,
-            "Name": "I_C",
-            "ID": "c7ea4a56-d84e-4cc3-900a-4e4f5695943c",
-            "Parameters": {
-              "Name": "I_C"
-            },
-            "EnabledScopes": [],
-            "ParametersDisplayAttributes": {
-              "Name": {
-                "IsVisible": false,
-                "Suffix": "",
-                "RelativeLocation": "1 -1",
-                "UnrotatedWidth": 2,
-                "UnrotatedHeight": 1,
-                "FontSize": 12,
-                "HorizontalTextAlignment": 1,
-                "VerticalTextAlignment": 1,
-                "Color": "#04B404"
-              }
-            }
-          },
-          {
-            "LibraryName": "Control Output Connector Label",
-            "Top": 38,
-            "Left": 42,
-            "Angle": 0,
-            "HF": true,
-            "VF": false,
-            "Disabled": false,
-            "Name": "I_B",
-            "ID": "c81b3761-0173-4528-9bf9-c54a4b0259ad",
-            "Parameters": {
-              "Name": "I_B"
-            },
-            "EnabledScopes": [],
-            "ParametersDisplayAttributes": {
-              "Name": {
-                "IsVisible": false,
-                "Suffix": "",
-                "RelativeLocation": "1 -1",
-                "UnrotatedWidth": 2,
-                "UnrotatedHeight": 1,
-                "FontSize": 12,
-                "HorizontalTextAlignment": 1,
-                "VerticalTextAlignment": 1,
-                "Color": "#04B404"
-              }
-            }
-          },
-          {
-            "LibraryName": "Control Output Connector Label",
-            "Top": 40,
-            "Left": 42,
-            "Angle": 0,
-            "HF": true,
-            "VF": false,
-            "Disabled": false,
-            "Name": "I_A",
-            "ID": "821d6151-0299-481c-93c9-37b6e7f6d64e",
-            "Parameters": {
-              "Name": "I_A"
-            },
-            "EnabledScopes": [],
-            "ParametersDisplayAttributes": {
-              "Name": {
-                "IsVisible": false,
-                "Suffix": "",
-                "RelativeLocation": "1 -1",
-                "UnrotatedWidth": 2,
-                "UnrotatedHeight": 1,
-                "FontSize": 12,
-                "HorizontalTextAlignment": 1,
-                "VerticalTextAlignment": 1,
-                "Color": "#04B404"
               }
             }
           },
@@ -7136,17 +7012,17 @@
             }
           },
           {
-            "LibraryName": "Control Input Connector Label",
-            "Top": 40,
-            "Left": 21,
+            "LibraryName": "Control Output Connector Label",
+            "Top": 36,
+            "Left": 22,
             "Angle": 0,
-            "HF": true,
+            "HF": false,
             "VF": false,
             "Disabled": false,
-            "Name": "Id_meas",
-            "ID": "52dd32ce-b45f-405a-8fa1-e9e522102086",
+            "Name": "I_C",
+            "ID": "f8b5d7aa-89cd-4e43-93f7-485981597544",
             "Parameters": {
-              "Name": "Id_meas"
+              "Name": "I_C"
             },
             "EnabledScopes": [],
             "ParametersDisplayAttributes": {
@@ -7164,17 +7040,45 @@
             }
           },
           {
-            "LibraryName": "Control Input Connector Label",
+            "LibraryName": "Control Output Connector Label",
             "Top": 38,
-            "Left": 21,
+            "Left": 22,
             "Angle": 0,
-            "HF": true,
+            "HF": false,
             "VF": false,
             "Disabled": false,
-            "Name": "Iq_meas",
-            "ID": "eaba3bbc-17f9-4761-bfcb-e2a86031154b",
+            "Name": "I_B",
+            "ID": "a62cbefc-8de0-409e-a83d-51ce150a71ee",
             "Parameters": {
-              "Name": "Iq_meas"
+              "Name": "I_B"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "HorizontalTextAlignment": 1,
+                "VerticalTextAlignment": 1,
+                "Color": "#04B404"
+              }
+            }
+          },
+          {
+            "LibraryName": "Control Output Connector Label",
+            "Top": 40,
+            "Left": 22,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "I_A",
+            "ID": "6a139682-6419-4b00-b5b8-84386cda5e7e",
+            "Parameters": {
+              "Name": "I_A"
             },
             "EnabledScopes": [],
             "ParametersDisplayAttributes": {
@@ -7193,86 +7097,19 @@
           },
           {
             "LibraryName": "First-Order Transfer Function",
-            "Top": 37,
-            "Left": 25,
+            "Top": 33,
+            "Left": 28,
             "Angle": 0,
-            "HF": true,
+            "HF": false,
             "VF": false,
             "Disabled": false,
             "Name": "TF1",
-            "ID": "7839b994-7907-4ce0-ae5f-e5a3d75f89a7",
+            "ID": "112d1a77-e82d-4691-b9ab-7cd8b36b3fa1",
             "Parameters": {
               "K": "1",
               "Name": "TF1",
               "SamplingTime": "none",
-              "Tau": "10 / fpwm"
-            },
-            "EnabledScopes": [],
-            "ScopeSignalNames": {
-              "Out": "iq_meas_f"
-            },
-            "ParametersDisplayAttributes": {
-              "K": {
-                "IsVisible": false,
-                "Suffix": "",
-                "RelativeLocation": "1 4",
-                "UnrotatedWidth": 2,
-                "UnrotatedHeight": 1,
-                "FontSize": 12,
-                "HorizontalTextAlignment": 1,
-                "VerticalTextAlignment": 1,
-                "Color": "#04B404"
-              },
-              "Name": {
-                "IsVisible": false,
-                "Suffix": "",
-                "RelativeLocation": "1 -1",
-                "UnrotatedWidth": 2,
-                "UnrotatedHeight": 1,
-                "FontSize": 12,
-                "HorizontalTextAlignment": 1,
-                "VerticalTextAlignment": 1,
-                "Color": "#04B404"
-              },
-              "SamplingTime": {
-                "IsVisible": false,
-                "Suffix": "",
-                "RelativeLocation": "1 6",
-                "UnrotatedWidth": 2,
-                "UnrotatedHeight": 1,
-                "FontSize": 12,
-                "HorizontalTextAlignment": 1,
-                "VerticalTextAlignment": 1,
-                "Color": "#04B404"
-              },
-              "Tau": {
-                "IsVisible": false,
-                "Suffix": "",
-                "RelativeLocation": "1 5",
-                "UnrotatedWidth": 2,
-                "UnrotatedHeight": 1,
-                "FontSize": 12,
-                "HorizontalTextAlignment": 1,
-                "VerticalTextAlignment": 1,
-                "Color": "#04B404"
-              }
-            }
-          },
-          {
-            "LibraryName": "First-Order Transfer Function",
-            "Top": 39,
-            "Left": 30,
-            "Angle": 0,
-            "HF": true,
-            "VF": false,
-            "Disabled": false,
-            "Name": "TF2",
-            "ID": "94b209e4-f7e6-4733-b551-904082eb5af0",
-            "Parameters": {
-              "K": "1",
-              "Name": "TF2",
-              "SamplingTime": "none",
-              "Tau": "10 / fpwm"
+              "Tau": "1 / (2*pi*fbw * sqrt(10))"
             },
             "EnabledScopes": [],
             "ScopeSignalNames": {
@@ -7316,6 +7153,240 @@
                 "IsVisible": false,
                 "Suffix": "",
                 "RelativeLocation": "1 5",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "HorizontalTextAlignment": 1,
+                "VerticalTextAlignment": 1,
+                "Color": "#04B404"
+              }
+            }
+          },
+          {
+            "LibraryName": "First-Order Transfer Function",
+            "Top": 37,
+            "Left": 28,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "TF2",
+            "ID": "f18b7d5c-e691-417e-80f9-3e9074174a5e",
+            "Parameters": {
+              "K": "1",
+              "Name": "TF2",
+              "SamplingTime": "none",
+              "Tau": "1 / (2*pi*fbw * sqrt(10))"
+            },
+            "EnabledScopes": [],
+            "ScopeSignalNames": {
+              "Out": "id_meas_f"
+            },
+            "ParametersDisplayAttributes": {
+              "K": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 4",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "HorizontalTextAlignment": 1,
+                "VerticalTextAlignment": 1,
+                "Color": "#04B404"
+              },
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "HorizontalTextAlignment": 1,
+                "VerticalTextAlignment": 1,
+                "Color": "#04B404"
+              },
+              "SamplingTime": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 6",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "HorizontalTextAlignment": 1,
+                "VerticalTextAlignment": 1,
+                "Color": "#04B404"
+              },
+              "Tau": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 5",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "HorizontalTextAlignment": 1,
+                "VerticalTextAlignment": 1,
+                "Color": "#04B404"
+              }
+            }
+          },
+          {
+            "LibraryName": "First-Order Transfer Function",
+            "Top": 41,
+            "Left": 28,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "TF3",
+            "ID": "e15312bb-c45a-4aef-a795-1f37e4aa67c5",
+            "Parameters": {
+              "K": "1",
+              "Name": "TF3",
+              "SamplingTime": "none",
+              "Tau": "1 / (2*pi*fbw * sqrt(10))"
+            },
+            "EnabledScopes": [],
+            "ScopeSignalNames": {
+              "Out": "id_meas_f"
+            },
+            "ParametersDisplayAttributes": {
+              "K": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 4",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "HorizontalTextAlignment": 1,
+                "VerticalTextAlignment": 1,
+                "Color": "#04B404"
+              },
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "HorizontalTextAlignment": 1,
+                "VerticalTextAlignment": 1,
+                "Color": "#04B404"
+              },
+              "SamplingTime": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 6",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "HorizontalTextAlignment": 1,
+                "VerticalTextAlignment": 1,
+                "Color": "#04B404"
+              },
+              "Tau": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 5",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "HorizontalTextAlignment": 1,
+                "VerticalTextAlignment": 1,
+                "Color": "#04B404"
+              }
+            }
+          },
+          {
+            "LibraryName": "Park Transform",
+            "Top": 35,
+            "Left": 34,
+            "Angle": 180,
+            "HF": true,
+            "VF": false,
+            "Disabled": false,
+            "Name": "PARK1",
+            "ID": "67566bc5-7906-408f-ba0c-ddd91077f782",
+            "Parameters": {
+              "Name": "PARK1",
+              "SamplingTime": "auto"
+            },
+            "EnabledScopes": [],
+            "ScopeSignalNames": {
+              "D": "id_meas",
+              "Q": "iq_meas"
+            },
+            "ParametersDisplayAttributes": {
+              "Name": {
+                "IsVisible": true,
+                "Suffix": "",
+                "RelativeLocation": "3 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "HorizontalTextAlignment": 1,
+                "VerticalTextAlignment": 1,
+                "Color": "#04B404"
+              },
+              "SamplingTime": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "3 8",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "HorizontalTextAlignment": 1,
+                "VerticalTextAlignment": 1,
+                "Color": "#04B404"
+              }
+            }
+          },
+          {
+            "LibraryName": "Control Input Connector Label",
+            "Top": 38,
+            "Left": 42,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "Iq_meas",
+            "ID": "f6b7f8a1-d951-47c9-80e5-61cee1d76fee",
+            "Parameters": {
+              "Name": "Iq_meas"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "HorizontalTextAlignment": 1,
+                "VerticalTextAlignment": 1,
+                "Color": "#04B404"
+              }
+            }
+          },
+          {
+            "LibraryName": "Control Input Connector Label",
+            "Top": 40,
+            "Left": 42,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "Id_meas",
+            "ID": "a76cf886-61a3-40c3-b3bb-2bc45b7d077a",
+            "Parameters": {
+              "Name": "Id_meas"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 -1",
                 "UnrotatedWidth": 2,
                 "UnrotatedHeight": 1,
                 "FontSize": 12,
@@ -7421,7 +7492,7 @@
                 "EndY": 35
               }
             ],
-            "Name": "C14"
+            "Name": "C34"
           },
           {
             "Segments": [
@@ -8017,9 +8088,32 @@
           {
             "Segments": [
               {
-                "StartX": 29,
+                "StartX": 26,
+                "StartY": 37,
+                "EndX": 27,
+                "EndY": 37
+              },
+              {
+                "StartX": 27,
+                "StartY": 35,
+                "EndX": 27,
+                "EndY": 37
+              },
+              {
+                "StartX": 28,
+                "StartY": 35,
+                "EndX": 27,
+                "EndY": 35
+              }
+            ],
+            "Name": "C14"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 26,
                 "StartY": 39,
-                "EndX": 34,
+                "EndX": 28,
                 "EndY": 39
               }
             ],
@@ -8028,13 +8122,82 @@
           {
             "Segments": [
               {
-                "StartX": 25,
+                "StartX": 26,
                 "StartY": 41,
-                "EndX": 30,
+                "EndX": 27,
+                "EndY": 41
+              },
+              {
+                "StartX": 27,
+                "StartY": 41,
+                "EndX": 27,
+                "EndY": 43
+              },
+              {
+                "StartX": 28,
+                "StartY": 43,
+                "EndX": 27,
+                "EndY": 43
+              }
+            ],
+            "Name": "C36"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 32,
+                "StartY": 35,
+                "EndX": 33,
+                "EndY": 35
+              },
+              {
+                "StartX": 33,
+                "StartY": 35,
+                "EndX": 33,
+                "EndY": 37
+              },
+              {
+                "StartX": 34,
+                "StartY": 37,
+                "EndX": 33,
+                "EndY": 37
+              }
+            ],
+            "Name": "C37"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 32,
+                "StartY": 39,
+                "EndX": 34,
+                "EndY": 39
+              }
+            ],
+            "Name": "C38"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 32,
+                "StartY": 43,
+                "EndX": 33,
+                "EndY": 43
+              },
+              {
+                "StartX": 33,
+                "StartY": 41,
+                "EndX": 33,
+                "EndY": 43
+              },
+              {
+                "StartX": 34,
+                "StartY": 41,
+                "EndX": 33,
                 "EndY": 41
               }
             ],
-            "Name": "C34"
+            "Name": "C40"
           }
         ],
         "Name": "Top Circuit - Copy",
@@ -8723,46 +8886,6 @@
             }
           },
           {
-            "LibraryName": "Park Transform",
-            "Top": 35,
-            "Left": 34,
-            "Angle": 180,
-            "HF": false,
-            "VF": false,
-            "Disabled": false,
-            "Name": "PARK1",
-            "ID": "e422d834-afef-4fda-9fa7-dfdcf4c30bff",
-            "Parameters": {
-              "Name": "PARK1",
-              "SamplingTime": "auto"
-            },
-            "EnabledScopes": [],
-            "ParametersDisplayAttributes": {
-              "Name": {
-                "IsVisible": true,
-                "Suffix": "",
-                "RelativeLocation": "3 -1",
-                "UnrotatedWidth": 2,
-                "UnrotatedHeight": 1,
-                "FontSize": 12,
-                "HorizontalTextAlignment": 1,
-                "VerticalTextAlignment": 1,
-                "Color": "#04B404"
-              },
-              "SamplingTime": {
-                "IsVisible": false,
-                "Suffix": "",
-                "RelativeLocation": "3 8",
-                "UnrotatedWidth": 2,
-                "UnrotatedHeight": 1,
-                "FontSize": 12,
-                "HorizontalTextAlignment": 1,
-                "VerticalTextAlignment": 1,
-                "Color": "#04B404"
-              }
-            }
-          },
-          {
             "LibraryName": "Current Probe",
             "Top": -8,
             "Left": 35,
@@ -8949,90 +9072,6 @@
                 "HorizontalTextAlignment": 1,
                 "VerticalTextAlignment": 1,
                 "Color": "#0081BC"
-              }
-            }
-          },
-          {
-            "LibraryName": "Control Output Connector Label",
-            "Top": 36,
-            "Left": 42,
-            "Angle": 0,
-            "HF": true,
-            "VF": false,
-            "Disabled": false,
-            "Name": "I_C",
-            "ID": "05295e12-6e02-4c42-bae5-edbc29c4ec96",
-            "Parameters": {
-              "Name": "I_C"
-            },
-            "EnabledScopes": [],
-            "ParametersDisplayAttributes": {
-              "Name": {
-                "IsVisible": false,
-                "Suffix": "",
-                "RelativeLocation": "1 -1",
-                "UnrotatedWidth": 2,
-                "UnrotatedHeight": 1,
-                "FontSize": 12,
-                "HorizontalTextAlignment": 1,
-                "VerticalTextAlignment": 1,
-                "Color": "#04B404"
-              }
-            }
-          },
-          {
-            "LibraryName": "Control Output Connector Label",
-            "Top": 38,
-            "Left": 42,
-            "Angle": 0,
-            "HF": true,
-            "VF": false,
-            "Disabled": false,
-            "Name": "I_B",
-            "ID": "1104eb47-5d29-4bcc-b9a8-9100d674d2ce",
-            "Parameters": {
-              "Name": "I_B"
-            },
-            "EnabledScopes": [],
-            "ParametersDisplayAttributes": {
-              "Name": {
-                "IsVisible": false,
-                "Suffix": "",
-                "RelativeLocation": "1 -1",
-                "UnrotatedWidth": 2,
-                "UnrotatedHeight": 1,
-                "FontSize": 12,
-                "HorizontalTextAlignment": 1,
-                "VerticalTextAlignment": 1,
-                "Color": "#04B404"
-              }
-            }
-          },
-          {
-            "LibraryName": "Control Output Connector Label",
-            "Top": 40,
-            "Left": 42,
-            "Angle": 0,
-            "HF": true,
-            "VF": false,
-            "Disabled": false,
-            "Name": "I_A",
-            "ID": "326d500f-7fdd-4515-8f65-120195d7a248",
-            "Parameters": {
-              "Name": "I_A"
-            },
-            "EnabledScopes": [],
-            "ParametersDisplayAttributes": {
-              "Name": {
-                "IsVisible": false,
-                "Suffix": "",
-                "RelativeLocation": "1 -1",
-                "UnrotatedWidth": 2,
-                "UnrotatedHeight": 1,
-                "FontSize": 12,
-                "HorizontalTextAlignment": 1,
-                "VerticalTextAlignment": 1,
-                "Color": "#04B404"
               }
             }
           },
@@ -13844,20 +13883,132 @@
             }
           },
           {
-            "LibraryName": "First-Order Transfer Function",
-            "Top": 39,
-            "Left": 30,
+            "LibraryName": "Ground",
+            "Top": 5,
+            "Left": -3,
             "Angle": 0,
-            "HF": true,
+            "HF": false,
             "VF": false,
             "Disabled": false,
-            "Name": "TF2",
-            "ID": "65e9aed5-d713-45b6-bf60-c834f8991112",
+            "Name": "Ground1",
+            "ID": "2a0d6751-7c04-47c2-b728-e11f538d37f3",
+            "Parameters": {
+              "Name": "Ground1"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "4 3",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 2,
+                "FontSize": 12,
+                "HorizontalTextAlignment": 1,
+                "VerticalTextAlignment": 1,
+                "Color": "#0081BC"
+              }
+            }
+          },
+          {
+            "LibraryName": "Control Output Connector Label",
+            "Top": 36,
+            "Left": 22,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "I_C",
+            "ID": "583fad09-674f-4998-8465-e408aa80629f",
+            "Parameters": {
+              "Name": "I_C"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "HorizontalTextAlignment": 1,
+                "VerticalTextAlignment": 1,
+                "Color": "#04B404"
+              }
+            }
+          },
+          {
+            "LibraryName": "Control Output Connector Label",
+            "Top": 38,
+            "Left": 22,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "I_B",
+            "ID": "cf10d3ff-69bf-4c4f-b887-49efc6f3480a",
+            "Parameters": {
+              "Name": "I_B"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "HorizontalTextAlignment": 1,
+                "VerticalTextAlignment": 1,
+                "Color": "#04B404"
+              }
+            }
+          },
+          {
+            "LibraryName": "Control Output Connector Label",
+            "Top": 40,
+            "Left": 22,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "I_A",
+            "ID": "6fd76b48-a774-4755-b66b-7d25479e2cb1",
+            "Parameters": {
+              "Name": "I_A"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "HorizontalTextAlignment": 1,
+                "VerticalTextAlignment": 1,
+                "Color": "#04B404"
+              }
+            }
+          },
+          {
+            "LibraryName": "First-Order Transfer Function",
+            "Top": 33,
+            "Left": 28,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "TF1",
+            "ID": "431a374c-925a-4e42-b441-8c50c571697c",
             "Parameters": {
               "K": "1",
-              "Name": "TF2",
+              "Name": "TF1",
               "SamplingTime": "none",
-              "Tau": "10 / fpwm"
+              "Tau": "1 / (2*pi*fbw * sqrt(10))"
             },
             "EnabledScopes": [],
             "ScopeSignalNames": {
@@ -13911,80 +14062,24 @@
             }
           },
           {
-            "LibraryName": "Control Input Connector Label",
-            "Top": 38,
-            "Left": 21,
-            "Angle": 0,
-            "HF": true,
-            "VF": false,
-            "Disabled": false,
-            "Name": "Iq_meas",
-            "ID": "80f7061e-45fb-4079-b6c0-4fd10c67ff43",
-            "Parameters": {
-              "Name": "Iq_meas"
-            },
-            "EnabledScopes": [],
-            "ParametersDisplayAttributes": {
-              "Name": {
-                "IsVisible": false,
-                "Suffix": "",
-                "RelativeLocation": "1 -1",
-                "UnrotatedWidth": 2,
-                "UnrotatedHeight": 1,
-                "FontSize": 12,
-                "HorizontalTextAlignment": 1,
-                "VerticalTextAlignment": 1,
-                "Color": "#04B404"
-              }
-            }
-          },
-          {
-            "LibraryName": "Control Input Connector Label",
-            "Top": 40,
-            "Left": 21,
-            "Angle": 0,
-            "HF": true,
-            "VF": false,
-            "Disabled": false,
-            "Name": "Id_meas",
-            "ID": "3ddbff25-b1ac-4c72-a700-a604b7ee10da",
-            "Parameters": {
-              "Name": "Id_meas"
-            },
-            "EnabledScopes": [],
-            "ParametersDisplayAttributes": {
-              "Name": {
-                "IsVisible": false,
-                "Suffix": "",
-                "RelativeLocation": "1 -1",
-                "UnrotatedWidth": 2,
-                "UnrotatedHeight": 1,
-                "FontSize": 12,
-                "HorizontalTextAlignment": 1,
-                "VerticalTextAlignment": 1,
-                "Color": "#04B404"
-              }
-            }
-          },
-          {
             "LibraryName": "First-Order Transfer Function",
             "Top": 37,
-            "Left": 25,
+            "Left": 28,
             "Angle": 0,
-            "HF": true,
+            "HF": false,
             "VF": false,
             "Disabled": false,
-            "Name": "TF1",
-            "ID": "47707f51-a6a2-4e63-8fba-4f15923767d8",
+            "Name": "TF2",
+            "ID": "be8fbb8f-555a-422d-a154-afb0a6b0cf2b",
             "Parameters": {
               "K": "1",
-              "Name": "TF1",
+              "Name": "TF2",
               "SamplingTime": "none",
-              "Tau": "10 / fpwm"
+              "Tau": "1 / (2*pi*fbw * sqrt(10))"
             },
             "EnabledScopes": [],
             "ScopeSignalNames": {
-              "Out": "iq_meas_f"
+              "Out": "id_meas_f"
             },
             "ParametersDisplayAttributes": {
               "K": {
@@ -14034,30 +14129,169 @@
             }
           },
           {
-            "LibraryName": "Ground",
-            "Top": 5,
-            "Left": -3,
+            "LibraryName": "First-Order Transfer Function",
+            "Top": 41,
+            "Left": 28,
             "Angle": 0,
             "HF": false,
             "VF": false,
             "Disabled": false,
-            "Name": "Ground1",
-            "ID": "2a0d6751-7c04-47c2-b728-e11f538d37f3",
+            "Name": "TF3",
+            "ID": "6a9ea724-0989-449e-a692-683a6609400d",
             "Parameters": {
-              "Name": "Ground1"
+              "K": "1",
+              "Name": "TF3",
+              "SamplingTime": "none",
+              "Tau": "1 / (2*pi*fbw * sqrt(10))"
+            },
+            "EnabledScopes": [],
+            "ScopeSignalNames": {
+              "Out": "id_meas_f"
+            },
+            "ParametersDisplayAttributes": {
+              "K": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 4",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "HorizontalTextAlignment": 1,
+                "VerticalTextAlignment": 1,
+                "Color": "#04B404"
+              },
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "HorizontalTextAlignment": 1,
+                "VerticalTextAlignment": 1,
+                "Color": "#04B404"
+              },
+              "SamplingTime": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 6",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "HorizontalTextAlignment": 1,
+                "VerticalTextAlignment": 1,
+                "Color": "#04B404"
+              },
+              "Tau": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 5",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "HorizontalTextAlignment": 1,
+                "VerticalTextAlignment": 1,
+                "Color": "#04B404"
+              }
+            }
+          },
+          {
+            "LibraryName": "Park Transform",
+            "Top": 35,
+            "Left": 34,
+            "Angle": 180,
+            "HF": true,
+            "VF": false,
+            "Disabled": false,
+            "Name": "PARK1",
+            "ID": "eedde0ba-5cfd-428e-94d6-e6e92ad08392",
+            "Parameters": {
+              "Name": "PARK1",
+              "SamplingTime": "auto"
+            },
+            "EnabledScopes": [],
+            "ScopeSignalNames": {
+              "D": "id_meas",
+              "Q": "iq_meas"
+            },
+            "ParametersDisplayAttributes": {
+              "Name": {
+                "IsVisible": true,
+                "Suffix": "",
+                "RelativeLocation": "3 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "HorizontalTextAlignment": 1,
+                "VerticalTextAlignment": 1,
+                "Color": "#04B404"
+              },
+              "SamplingTime": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "3 8",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "HorizontalTextAlignment": 1,
+                "VerticalTextAlignment": 1,
+                "Color": "#04B404"
+              }
+            }
+          },
+          {
+            "LibraryName": "Control Input Connector Label",
+            "Top": 38,
+            "Left": 42,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "Iq_meas",
+            "ID": "8a986021-fcd2-4c53-bb60-f21182c347ca",
+            "Parameters": {
+              "Name": "Iq_meas"
             },
             "EnabledScopes": [],
             "ParametersDisplayAttributes": {
               "Name": {
                 "IsVisible": false,
                 "Suffix": "",
-                "RelativeLocation": "4 3",
+                "RelativeLocation": "1 -1",
                 "UnrotatedWidth": 2,
-                "UnrotatedHeight": 2,
+                "UnrotatedHeight": 1,
                 "FontSize": 12,
                 "HorizontalTextAlignment": 1,
                 "VerticalTextAlignment": 1,
-                "Color": "#0081BC"
+                "Color": "#04B404"
+              }
+            }
+          },
+          {
+            "LibraryName": "Control Input Connector Label",
+            "Top": 40,
+            "Left": 42,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "Id_meas",
+            "ID": "aaa929ea-4256-42bc-a097-f685c050f686",
+            "Parameters": {
+              "Name": "Id_meas"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "HorizontalTextAlignment": 1,
+                "VerticalTextAlignment": 1,
+                "Color": "#04B404"
               }
             }
           }
@@ -14147,7 +14381,7 @@
                 "EndY": 35
               }
             ],
-            "Name": "C14"
+            "Name": "C13"
           },
           {
             "Segments": [
@@ -14735,28 +14969,6 @@
           {
             "Segments": [
               {
-                "StartX": 30,
-                "StartY": 41,
-                "EndX": 25,
-                "EndY": 41
-              }
-            ],
-            "Name": "C13"
-          },
-          {
-            "Segments": [
-              {
-                "StartX": 34,
-                "StartY": 39,
-                "EndX": 29,
-                "EndY": 39
-              }
-            ],
-            "Name": "C36"
-          },
-          {
-            "Segments": [
-              {
                 "StartX": -2,
                 "StartY": -1,
                 "EndX": -2,
@@ -14788,6 +15000,120 @@
               }
             ],
             "Name": "C11"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 26,
+                "StartY": 37,
+                "EndX": 27,
+                "EndY": 37
+              },
+              {
+                "StartX": 27,
+                "StartY": 35,
+                "EndX": 27,
+                "EndY": 37
+              },
+              {
+                "StartX": 28,
+                "StartY": 35,
+                "EndX": 27,
+                "EndY": 35
+              }
+            ],
+            "Name": "C14"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 26,
+                "StartY": 39,
+                "EndX": 28,
+                "EndY": 39
+              }
+            ],
+            "Name": "C36"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 26,
+                "StartY": 41,
+                "EndX": 27,
+                "EndY": 41
+              },
+              {
+                "StartX": 27,
+                "StartY": 41,
+                "EndX": 27,
+                "EndY": 43
+              },
+              {
+                "StartX": 28,
+                "StartY": 43,
+                "EndX": 27,
+                "EndY": 43
+              }
+            ],
+            "Name": "C37"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 32,
+                "StartY": 35,
+                "EndX": 33,
+                "EndY": 35
+              },
+              {
+                "StartX": 33,
+                "StartY": 35,
+                "EndX": 33,
+                "EndY": 37
+              },
+              {
+                "StartX": 34,
+                "StartY": 37,
+                "EndX": 33,
+                "EndY": 37
+              }
+            ],
+            "Name": "C38"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 32,
+                "StartY": 39,
+                "EndX": 34,
+                "EndY": 39
+              }
+            ],
+            "Name": "C39"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 32,
+                "StartY": 43,
+                "EndX": 33,
+                "EndY": 43
+              },
+              {
+                "StartX": 33,
+                "StartY": 41,
+                "EndX": 33,
+                "EndY": 43
+              },
+              {
+                "StartX": 34,
+                "StartY": 41,
+                "EndX": 33,
+                "EndY": 41
+              }
+            ],
+            "Name": "C41"
           }
         ],
         "Name": "Top Circuit - Copy - Copy",
@@ -17202,7 +17528,12 @@
                           "NumberOfInputs": "2",
                           "SamplingTime": "none"
                         },
-                        "EnabledScopes": [],
+                        "EnabledScopes": [
+                          "Out"
+                        ],
+                        "ScopeSignalNames": {
+                          "Out": "offset"
+                        },
                         "ParametersDisplayAttributes": {
                           "Gains": {
                             "IsVisible": false,
@@ -19541,7 +19872,7 @@
                       "Color": "#04B404"
                     },
                     "Name": {
-                      "IsVisible": true,
+                      "IsVisible": false,
                       "Suffix": "",
                       "RelativeLocation": "1 -1",
                       "UnrotatedWidth": 2,
@@ -19566,34 +19897,6 @@
                       "IsVisible": false,
                       "Suffix": "",
                       "RelativeLocation": "1 6",
-                      "UnrotatedWidth": 2,
-                      "UnrotatedHeight": 1,
-                      "FontSize": 12,
-                      "HorizontalTextAlignment": 1,
-                      "VerticalTextAlignment": 1,
-                      "Color": "#04B404"
-                    }
-                  }
-                },
-                {
-                  "LibraryName": "Control Out Pin",
-                  "Top": 1,
-                  "Left": 25,
-                  "Angle": 0,
-                  "HF": false,
-                  "VF": false,
-                  "Disabled": false,
-                  "Name": "Vd",
-                  "ID": "8f78be67-ae10-4d03-8c7c-63ab19a75360",
-                  "Parameters": {
-                    "Name": "Vd"
-                  },
-                  "EnabledScopes": [],
-                  "ParametersDisplayAttributes": {
-                    "Name": {
-                      "IsVisible": true,
-                      "Suffix": "",
-                      "RelativeLocation": "0 -1",
                       "UnrotatedWidth": 2,
                       "UnrotatedHeight": 1,
                       "FontSize": 12,
@@ -19870,6 +20173,34 @@
                       "Color": "#04B404"
                     }
                   }
+                },
+                {
+                  "LibraryName": "Control Out Pin",
+                  "Top": 1,
+                  "Left": 34,
+                  "Angle": 0,
+                  "HF": false,
+                  "VF": false,
+                  "Disabled": false,
+                  "Name": "Vd",
+                  "ID": "8f78be67-ae10-4d03-8c7c-63ab19a75360",
+                  "Parameters": {
+                    "Name": "Vd"
+                  },
+                  "EnabledScopes": [],
+                  "ParametersDisplayAttributes": {
+                    "Name": {
+                      "IsVisible": true,
+                      "Suffix": "",
+                      "RelativeLocation": "0 -1",
+                      "UnrotatedWidth": 2,
+                      "UnrotatedHeight": 1,
+                      "FontSize": 12,
+                      "HorizontalTextAlignment": 1,
+                      "VerticalTextAlignment": 1,
+                      "Color": "#04B404"
+                    }
+                  }
                 }
               ],
               "Connectors": [
@@ -19894,17 +20225,6 @@
                     }
                   ],
                   "Name": "C2"
-                },
-                {
-                  "Segments": [
-                    {
-                      "StartX": 23,
-                      "StartY": 2,
-                      "EndX": 25,
-                      "EndY": 2
-                    }
-                  ],
-                  "Name": "C3"
                 },
                 {
                   "Segments": [
@@ -19951,6 +20271,17 @@
                     }
                   ],
                   "Name": "C5"
+                },
+                {
+                  "Segments": [
+                    {
+                      "StartX": 23,
+                      "StartY": 2,
+                      "EndX": 34,
+                      "EndY": 2
+                    }
+                  ],
+                  "Name": "C6"
                 }
               ],
               "Name": "Current Controller        (D-axis)",
@@ -20705,7 +21036,7 @@
                 {
                   "LibraryName": "Control Out Pin",
                   "Top": 5,
-                  "Left": 33,
+                  "Left": 39,
                   "Angle": 0,
                   "HF": false,
                   "VF": false,
@@ -20824,17 +21155,6 @@
                 {
                   "Segments": [
                     {
-                      "StartX": 32,
-                      "StartY": 6,
-                      "EndX": 33,
-                      "EndY": 6
-                    }
-                  ],
-                  "Name": "C8"
-                },
-                {
-                  "Segments": [
-                    {
                       "StartX": 26,
                       "StartY": -5,
                       "EndX": 26,
@@ -20854,6 +21174,17 @@
                     }
                   ],
                   "Name": "C9"
+                },
+                {
+                  "Segments": [
+                    {
+                      "StartX": 32,
+                      "StartY": 6,
+                      "EndX": 39,
+                      "EndY": 6
+                    }
+                  ],
+                  "Name": "C8"
                 }
               ],
               "Name": "Current Controller        (Q-axis)",
@@ -21538,7 +21869,7 @@
             "Top": 35,
             "Left": 34,
             "Angle": 180,
-            "HF": false,
+            "HF": true,
             "VF": false,
             "Disabled": false,
             "Name": "PARK1",
@@ -21578,11 +21909,67 @@
             }
           },
           {
-            "LibraryName": "Control Output Connector Label",
-            "Top": 36,
+            "LibraryName": "Control Input Connector Label",
+            "Top": 38,
             "Left": 42,
             "Angle": 0,
-            "HF": true,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "Iq_meas",
+            "ID": "bebd765f-68db-49bd-a4a3-c6e4db322f4a",
+            "Parameters": {
+              "Name": "Iq_meas"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "HorizontalTextAlignment": 1,
+                "VerticalTextAlignment": 1,
+                "Color": "#04B404"
+              }
+            }
+          },
+          {
+            "LibraryName": "Control Input Connector Label",
+            "Top": 40,
+            "Left": 42,
+            "Angle": 0,
+            "HF": false,
+            "VF": false,
+            "Disabled": false,
+            "Name": "Id_meas",
+            "ID": "49f7b45a-42c4-49a3-9f6a-96f59975c58f",
+            "Parameters": {
+              "Name": "Id_meas"
+            },
+            "EnabledScopes": [],
+            "ParametersDisplayAttributes": {
+              "Name": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 -1",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "HorizontalTextAlignment": 1,
+                "VerticalTextAlignment": 1,
+                "Color": "#04B404"
+              }
+            }
+          },
+          {
+            "LibraryName": "Control Output Connector Label",
+            "Top": 36,
+            "Left": 22,
+            "Angle": 0,
+            "HF": false,
             "VF": false,
             "Disabled": false,
             "Name": "I_C",
@@ -21608,9 +21995,9 @@
           {
             "LibraryName": "Control Output Connector Label",
             "Top": 38,
-            "Left": 42,
+            "Left": 22,
             "Angle": 0,
-            "HF": true,
+            "HF": false,
             "VF": false,
             "Disabled": false,
             "Name": "I_B",
@@ -21636,9 +22023,9 @@
           {
             "LibraryName": "Control Output Connector Label",
             "Top": 40,
-            "Left": 42,
+            "Left": 22,
             "Angle": 0,
-            "HF": true,
+            "HF": false,
             "VF": false,
             "Disabled": false,
             "Name": "I_A",
@@ -21663,19 +22050,19 @@
           },
           {
             "LibraryName": "First-Order Transfer Function",
-            "Top": 39,
-            "Left": 30,
+            "Top": 37,
+            "Left": 28,
             "Angle": 0,
-            "HF": true,
+            "HF": false,
             "VF": false,
             "Disabled": false,
             "Name": "TF2",
-            "ID": "0a5b8d36-b66a-485f-a002-b2ec9483b574",
+            "ID": "1db8b90a-b675-4cde-8a41-df84329a50c3",
             "Parameters": {
               "K": "1",
               "Name": "TF2",
               "SamplingTime": "none",
-              "Tau": "10 / fpwm"
+              "Tau": "1 / (2*pi*fbw * sqrt(10))"
             },
             "EnabledScopes": [],
             "ScopeSignalNames": {
@@ -21729,20 +22116,37 @@
             }
           },
           {
-            "LibraryName": "Control Input Connector Label",
-            "Top": 38,
-            "Left": 21,
+            "LibraryName": "First-Order Transfer Function",
+            "Top": 41,
+            "Left": 28,
             "Angle": 0,
-            "HF": true,
+            "HF": false,
             "VF": false,
             "Disabled": false,
-            "Name": "Iq_meas",
-            "ID": "bebd765f-68db-49bd-a4a3-c6e4db322f4a",
+            "Name": "TF3",
+            "ID": "ee988bf1-2355-4611-ba23-2214fcdf64e6",
             "Parameters": {
-              "Name": "Iq_meas"
+              "K": "1",
+              "Name": "TF3",
+              "SamplingTime": "none",
+              "Tau": "1 / (2*pi*fbw * sqrt(10))"
             },
             "EnabledScopes": [],
+            "ScopeSignalNames": {
+              "Out": "id_meas_f"
+            },
             "ParametersDisplayAttributes": {
+              "K": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 4",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "HorizontalTextAlignment": 1,
+                "VerticalTextAlignment": 1,
+                "Color": "#04B404"
+              },
               "Name": {
                 "IsVisible": false,
                 "Suffix": "",
@@ -21753,28 +22157,22 @@
                 "HorizontalTextAlignment": 1,
                 "VerticalTextAlignment": 1,
                 "Color": "#04B404"
-              }
-            }
-          },
-          {
-            "LibraryName": "Control Input Connector Label",
-            "Top": 40,
-            "Left": 21,
-            "Angle": 0,
-            "HF": true,
-            "VF": false,
-            "Disabled": false,
-            "Name": "Id_meas",
-            "ID": "49f7b45a-42c4-49a3-9f6a-96f59975c58f",
-            "Parameters": {
-              "Name": "Id_meas"
-            },
-            "EnabledScopes": [],
-            "ParametersDisplayAttributes": {
-              "Name": {
+              },
+              "SamplingTime": {
                 "IsVisible": false,
                 "Suffix": "",
-                "RelativeLocation": "1 -1",
+                "RelativeLocation": "1 6",
+                "UnrotatedWidth": 2,
+                "UnrotatedHeight": 1,
+                "FontSize": 12,
+                "HorizontalTextAlignment": 1,
+                "VerticalTextAlignment": 1,
+                "Color": "#04B404"
+              },
+              "Tau": {
+                "IsVisible": false,
+                "Suffix": "",
+                "RelativeLocation": "1 5",
                 "UnrotatedWidth": 2,
                 "UnrotatedHeight": 1,
                 "FontSize": 12,
@@ -21786,23 +22184,23 @@
           },
           {
             "LibraryName": "First-Order Transfer Function",
-            "Top": 37,
-            "Left": 25,
+            "Top": 33,
+            "Left": 28,
             "Angle": 0,
-            "HF": true,
+            "HF": false,
             "VF": false,
             "Disabled": false,
             "Name": "TF1",
-            "ID": "45d914d9-5c7e-422f-a359-c76a9a9f014d",
+            "ID": "864ad675-cfbb-4c48-ab2f-f58a325ac0c4",
             "Parameters": {
               "K": "1",
               "Name": "TF1",
               "SamplingTime": "none",
-              "Tau": "10 / fpwm"
+              "Tau": "1 / (2*pi*fbw * sqrt(10))"
             },
             "EnabledScopes": [],
             "ScopeSignalNames": {
-              "Out": "iq_meas_f"
+              "Out": "id_meas_f"
             },
             "ParametersDisplayAttributes": {
               "K": {
@@ -22538,29 +22936,121 @@
                 "EndY": 35
               }
             ],
+            "Name": "C31"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 26,
+                "StartY": 37,
+                "EndX": 27,
+                "EndY": 37
+              },
+              {
+                "StartX": 27,
+                "StartY": 35,
+                "EndX": 27,
+                "EndY": 37
+              },
+              {
+                "StartX": 28,
+                "StartY": 35,
+                "EndX": 27,
+                "EndY": 35
+              }
+            ],
             "Name": "C14"
           },
           {
             "Segments": [
               {
-                "StartX": 30,
-                "StartY": 41,
-                "EndX": 25,
-                "EndY": 41
+                "StartX": 26,
+                "StartY": 39,
+                "EndX": 28,
+                "EndY": 39
               }
             ],
-            "Name": "C31"
+            "Name": "C33"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 26,
+                "StartY": 41,
+                "EndX": 27,
+                "EndY": 41
+              },
+              {
+                "StartX": 27,
+                "StartY": 41,
+                "EndX": 27,
+                "EndY": 43
+              },
+              {
+                "StartX": 28,
+                "StartY": 43,
+                "EndX": 27,
+                "EndY": 43
+              }
+            ],
+            "Name": "C34"
           },
           {
             "Segments": [
               {
                 "StartX": 34,
                 "StartY": 39,
-                "EndX": 29,
+                "EndX": 32,
                 "EndY": 39
               }
             ],
-            "Name": "C33"
+            "Name": "C35"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 34,
+                "StartY": 41,
+                "EndX": 33,
+                "EndY": 41
+              },
+              {
+                "StartX": 33,
+                "StartY": 41,
+                "EndX": 33,
+                "EndY": 43
+              },
+              {
+                "StartX": 33,
+                "StartY": 43,
+                "EndX": 32,
+                "EndY": 43
+              }
+            ],
+            "Name": "C36"
+          },
+          {
+            "Segments": [
+              {
+                "StartX": 34,
+                "StartY": 37,
+                "EndX": 33,
+                "EndY": 37
+              },
+              {
+                "StartX": 33,
+                "StartY": 37,
+                "EndX": 33,
+                "EndY": 35
+              },
+              {
+                "StartX": 33,
+                "StartY": 35,
+                "EndX": 32,
+                "EndY": 35
+              }
+            ],
+            "Name": "C37"
           }
         ],
         "Name": "Top Circuit - Copy - Copy",
@@ -22587,7 +23077,7 @@
           },
           {
             "Name": "fbw",
-            "Value": "450"
+            "Value": "1k"
           },
           {
             "Name": "Rphase",
