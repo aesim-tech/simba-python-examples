@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<CircuitElement file="JFT069_ExternalSpeed.jcf" name="untitled">
+	<Terminal id="1" name="TerminalV1" port="in">
+		<Jmag condition="voltage_function" id="2">
+		</Jmag>
+	</Terminal>
+	<Terminal id="2" name="TerminalV2" port="in">
+		<Jmag condition="voltage_function" id="3">
+		</Jmag>
+	</Terminal>
+	<Terminal id="3" name="TerminalV3" port="in">
+		<Jmag condition="voltage_function" id="4">
+		</Jmag>
+	</Terminal>
+	<Terminal id="4" name="TerminalCP1" port="out">
+		<Jmag condition="current" id="5">
+		</Jmag>
+	</Terminal>
+	<Terminal id="5" name="TerminalCP2" port="out">
+		<Jmag condition="current" id="6">
+		</Jmag>
+	</Terminal>
+	<Terminal id="6" name="TerminalCP3" port="out">
+		<Jmag condition="current" id="7">
+		</Jmag>
+	</Terminal>
+	<Terminal id="7" name="TerminalRotor" port="out">
+		<Jmag condition="force" id="1">
+			<Component>
+				torque
+			</Component>
+		</Jmag>
+	</Terminal>
+	<Terminal id="8" name="TerminalMotion" port="in">
+		<Jmag condition="displacement" id="1">
+			<Component>
+				dtheta
+			</Component>
+		</Jmag>
+	</Terminal>
+</CircuitElement>
